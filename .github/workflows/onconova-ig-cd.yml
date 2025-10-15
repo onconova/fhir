@@ -1,0 +1,43 @@
+#
+name: Continuous Deployment
+
+on:
+  push:
+    branches:
+      - main
+    tags-ignore: ['**']
+
+env:
+  REGISTRY: ghcr.io
+  REPOSITORY: ${{ github.repository }}
+  RELEASE_TAG: ${{ github.event.release.tag_name }}
+
+jobs:
+  deploy-ig-to-ghpages:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16.x'
+  
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+
+      - name: Install dependencies
+        run: |
+          npm install -g fsh-sushi
+          gem install jekyll bundler
+
+      - name: Build IG
+        run: |
+          ./_updatePublisher.sh -y
+          ./_genonce.sh 
+
