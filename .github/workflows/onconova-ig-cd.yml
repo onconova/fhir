@@ -41,3 +41,9 @@ jobs:
           ./_updatePublisher.sh -y
           ./_genonce.sh 
 
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          user_name: 'github-actions[bot]'
