@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
   "name" : "OnconovaAdverseEvent",
   "title" : "Adverse Event Profile",
   "status" : "active",
-  "date" : "2025-10-15T14:58:32+00:00",
+  "date" : "2025-10-15T15:04:18+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

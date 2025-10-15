@@ -63,7 +63,7 @@ This value set expansion contains 64 concepts.
   "name" : "TNMDistantMetastasisCategories",
   "title" : "TNM Distant Metastasis Categories Value Set",
   "status" : "active",
-  "date" : "2025-10-15T14:58:32+00:00",
+  "date" : "2025-10-15T15:04:18+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

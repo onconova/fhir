@@ -54,7 +54,7 @@ This value set contains 2 concepts
   "name" : "AdverseEventMitigationManagements",
   "title" : "Adverse Event Mitigation - Management",
   "status" : "active",
-  "date" : "2025-10-15T14:58:32+00:00",
+  "date" : "2025-10-15T15:04:18+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

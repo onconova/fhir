@@ -56,7 +56,7 @@ This value set expansion contains 4 concepts.
   "name" : "TNMResidualTumorCategories",
   "title" : "TNM Residual Tumor Categories Value Set",
   "status" : "active",
-  "date" : "2025-10-15T14:58:32+00:00",
+  "date" : "2025-10-15T15:04:18+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
