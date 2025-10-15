@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-cancer-
   "name" : "CancerMorphology",
   "title" : "Cancer Morphology",
   "status" : "active",
-  "date" : "2025-10-15T14:38:38+00:00",
+  "date" : "2025-10-15T14:58:32+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
