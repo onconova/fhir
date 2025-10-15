@@ -7,11 +7,6 @@ on:
       - main
     tags-ignore: ['**']
 
-env:
-  REGISTRY: ghcr.io
-  REPOSITORY: ${{ github.repository }}
-  RELEASE_TAG: ${{ github.event.release.tag_name }}
-
 jobs:
   deploy-ig-to-ghpages:
     runs-on: ubuntu-latest
