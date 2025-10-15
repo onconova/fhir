@@ -38,6 +38,8 @@ jobs:
 
       - name: Build IG
         run: |
+          chmod +x ./_updatePublisher.sh
+          chmod +x ./_genonce.sh
           ./_updatePublisher.sh -y
           ./_genonce.sh 
 
@@ -47,3 +49,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
           user_name: 'github-actions[bot]'
+          user_email: '41898282+github-actions[bot]@users.noreply.github.com'
