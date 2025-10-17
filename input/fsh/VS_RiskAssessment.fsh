@@ -2,9 +2,6 @@ ValueSet: CancerRiskAssessmentValues
 Id: onconova-vs-cancer-risk-assessment-values
 Title: "Risk Assessment Values"
 Description: "A non-exhaustive value set containing codes that result from risk assessments, i.e., the risk level of the cancer."
-* ^url = "https://simplifier.net/onconova/ValueSets/onconova-cancer-risk-assessment-values"
-* ^version = "0.0.1"
-* ^status = #draft
 
 * $NCIT#C136965 "FLIPI Score 0-1, Low Risk"
 * $NCIT#C136967 "FLIPI Score 2, Intermediate Risk"
