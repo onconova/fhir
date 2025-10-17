@@ -9,6 +9,7 @@ Adds minimal constraints to the mCODE [`ECOGPerformanceStatus` profile](http://h
 """ 
 
 * status = #final
+* effective[x] only dateTime
 * subject only Reference(OnconovaCancerPatient)
 * focus only Reference(OnconovaPrimaryCancerCondition)
 
@@ -23,6 +24,10 @@ Adds minimal constraints to the mCODE [`ECOGPerformanceStatus` profile](http://h
 * insert NotUsed(issued)
 * insert NotUsed(partOf)
 * insert NotUsed(basedOn)
+
+// Constraints
+* obeys o-obs-req-1 and o-obs-req-2
+
 
 Profile: OnconovaKarnofskyPerformanceStatus
 Parent: KarnofskyPerformanceStatus
@@ -35,6 +40,7 @@ Adds minimal constraints to the mCODE [KarnofskyPerformanceStatus profile](http:
 """ 
 
 * status = #final
+* effective[x] only dateTime
 * subject only Reference(OnconovaCancerPatient)
 * focus only Reference(OnconovaPrimaryCancerCondition)
 
@@ -49,3 +55,17 @@ Adds minimal constraints to the mCODE [KarnofskyPerformanceStatus profile](http:
 * insert NotUsed(issued)
 * insert NotUsed(partOf)
 * insert NotUsed(basedOn)
+
+// Constraints
+* obeys o-obs-req-1 and o-obs-req-2
+
+
+Invariant: o-obs-req-1
+Description: "The subject element is required and must be provided."
+Expression: "subject.exists() and subject.resolve().is(Patient)"
+Severity: #error
+
+Invariant: o-obs-req-2
+Description: "The effectiveDateTime element is required and must be provided."
+Expression: "effectiveDateTime.exists() and effectiveDateTime.hasValue()"
+Severity: #error
