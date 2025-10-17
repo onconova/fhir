@@ -45,6 +45,31 @@ This profile extends the base mCODE [CancerRelatedMedicationAdministration profi
 * insert NotUsed(partOf)
 * insert NotUsed(reasonCode)
 
+* obeys o-med-req-1 and 
+    o-med-req-2 and 
+    o-med-req-3 and 
+    o-med-req-4
+
+Invariant: o-med-req-1
+Description: "The subject element is required and must be provided."
+Expression: "subject.exists() and subject.resolve().is(Patient)"
+Severity: #error
+
+Invariant: o-med-req-2
+Description: "The effectivePeriod element is required and must be provided."
+Expression: "effectivePeriod.exists() and effectivePeriod.hasValue()"
+Severity: #error
+
+Invariant: o-med-req-3
+Description: "The treatmentIntent extension is required and must be provided."
+Expression: "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent').exists()"
+Severity: #error
+
+Invariant: o-med-req-4
+Description: "The medicationCodeableConcept element is required and must be provided."
+Expression: "medicationCodeableConcept.exists() and medicationCodeableConcept.coding.exists()"
+Severity: #error
+
 
 //================
 // Extension
@@ -74,3 +99,4 @@ Id: onconova-ext-is-primary-therapy
 Title: "Is Primary Therapy"
 Description: "Indicates whether this medication administration is the primary therapy within a therapy line."
 * value[x] only boolean
+
