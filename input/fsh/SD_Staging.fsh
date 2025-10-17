@@ -9,6 +9,8 @@ It constrains the mCODE [CancerStage profile](http://hl7.org/fhir/us/mcode/Struc
 """      
 * status = #final
 * subject only Reference(OnconovaCancerPatient)
+* effective[x] only dateTime
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
 
 Profile: OnconovaTNMStageGroup 
 Parent: TNMStageGroup
@@ -20,7 +22,9 @@ A profile representing the TNM stage group for a cancer patient.
 It extends the base mCODE [TNMStageGroup profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-stage-group) to expand the TNM subcategories and include specific constraints and extensions relevant to Onconova.
 """      
 * status = #final
+* effective[x] only dateTime
 * subject only Reference(OnconovaCancerPatient)
+* effective[x] only dateTime
 * hasMember only Reference(
     TNMCategory
 )
@@ -45,6 +49,7 @@ It extends the base mCODE [TNMStageGroup profile](http://hl7.org/fhir/us/mcode/S
 * hasMember contains venousInvasionCategory 0..1 
 * hasMember[venousInvasionCategory] only Reference(OnconovaTNMVenousInvasionCategory)
 
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
 
 Profile: OnconovaTNMPrimaryTumorCategory 
 Parent: TNMPrimaryTumorCategory
@@ -57,7 +62,9 @@ This profile extends the base mCODE [TNMPrimaryTumorCategory profile](http://hl7
 """      
 * status = #final
 * subject only Reference(OnconovaCancerPatient)
+* effective[x] only dateTime
 * valueCodeableConcept from TNMPrimaryTumorCategories (required)
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
 
 
 Profile: OnconovaTNMDistantMetastasesCategory 
@@ -71,8 +78,9 @@ This profile extends the base mCODE [TNMDistantMetastasesCategory profile](http:
 """
 * status = #final   
 * subject only Reference(OnconovaCancerPatient)
+* effective[x] only dateTime
 * valueCodeableConcept from TNMDistantMetastasisCategories (required)
-
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
 
 Profile: OnconovaTNMRegionalNodesCategory 
 Parent: TNMRegionalNodesCategory
@@ -85,7 +93,9 @@ This profile extends the base mCODE [TNMRegionalNodesCategory profile](http://hl
 """
 * status = #final
 * subject only Reference(OnconovaCancerPatient)
+* effective[x] only dateTime
 * valueCodeableConcept from TNMRegionalNodesCategories (required)
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
 
 Profile: OnconovaTNMLymphaticInvasionCategory 
 Parent: TNMCategory
@@ -98,8 +108,10 @@ This profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us
 """
 * status = #final
 * subject only Reference(OnconovaCancerPatient)
+* effective[x] only dateTime
 * code = $SNOMED#385414009 "Lymphatic (small vessel) tumor invasion finding (finding)"
 * valueCodeableConcept from TNMLymphaticInvasionCategories (required)
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
 
 Profile: OnconovaTNMPerineuralInvasionCategory 
 Parent: TNMCategory
@@ -112,8 +124,10 @@ This profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us
 """
 * status = #final   
 * subject only Reference(OnconovaCancerPatient)
+* effective[x] only dateTime
 * code = $SNOMED#396394004 "Perineural invasion finding (finding)"
 * valueCodeableConcept from TNMPerineuralInvasionCategories (required)
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
 
 Profile: OnconovaTNMResidualTumorCategory 
 Parent: TNMCategory
@@ -126,8 +140,10 @@ This profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us
 """
 * status = #final   
 * subject only Reference(OnconovaCancerPatient)
+* effective[x] only dateTime
 * code = $SNOMED#37161004 "Finding of residual tumor (finding)"
 * valueCodeableConcept from TNMResidualTumorCategories (required)
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
 
 Profile: OnconovaTNMSerumTumorMarkerLevelCategory
 Parent: TNMCategory 
@@ -140,8 +156,10 @@ This profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us
 """
 * status = #final   
 * subject only Reference(OnconovaCancerPatient)
+* effective[x] only dateTime
 * code = $SNOMED#396701002  "Finding of serum tumor marker level (finding)"
 * valueCodeableConcept from TNMSerumTumorMarkerLevelCategories (required)
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
 
 Profile: OnconovaTNMVenousInvasionCategory
 Parent: TNMCategory 
@@ -154,8 +172,10 @@ This profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us
 """   
 * status = #final   
 * subject only Reference(OnconovaCancerPatient)
+* effective[x] only dateTime
 * code = $SNOMED#369732007 "Venous (large vessel) tumor invasion finding (finding)"
 * valueCodeableConcept from TNMVenousInvasionCategories (required)
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
 
 Profile: OnconovaTNMGradeCategory 
 Parent: TNMCategory
@@ -168,5 +188,23 @@ This profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us
 """
 * status = #final   
 * subject only Reference(OnconovaCancerPatient)
+* effective[x] only dateTime
 * code from TNMGradeCategoryMethods (required)
 * valueCodeableConcept from TNMGradeCategories (required)   
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
+
+
+Invariant: o-stg-req-1
+Description: "The subject element is required and must be provided."
+Expression: "subject.exists() and subject.resolve().is(Patient)"
+Severity: #error
+
+Invariant: o-stg-req-2
+Description: "The effectiveDateTime element is required and must be provided."
+Expression: "effectiveDateTime.exists() and effectiveDateTime.hasValue()"
+Severity: #error
+
+Invariant: o-stg-req-3
+Description: "The valueCodeableConcept element is required and must be provided."
+Expression: "valueCodeableConcept.exists() and valueCodeableConcept.coding.exists()"
+Severity: #error
