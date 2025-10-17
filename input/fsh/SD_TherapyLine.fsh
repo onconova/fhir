@@ -37,6 +37,32 @@ Due to its abstract conceptual nature, it is based on a FHIR `List` to capture t
 * insert NotUsed(source)
 * insert NotUsed(date)
 
+// Constraints
+* obeys o-lin-req-1 and 
+    o-lin-req-2 and 
+    o-lin-req-3 and 
+    o-lin-req-4
+
+Invariant: o-lin-req-1
+Description: "The subject element is required and must be provided."
+Expression: "subject.exists() and subject.resolve().is(Patient)"
+Severity: #error
+
+Invariant: o-lin-req-2
+Description: "The effectivePeriod element is required and must be provided."
+Expression: "effectivePeriod.exists() and effectivePeriod.hasValue()"
+Severity: #error
+
+Invariant: o-lin-req-3
+Description: "The therapyLineNumber extension is required and must be provided."
+Expression: "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-number').exists()"
+Severity: #error
+
+Invariant: o-lin-req-4
+Description: "The therapyLineIntent extension is required and must be provided."
+Expression: "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-intent').exists()"
+Severity: #error
+
 //================
 // Extensions
 //================
