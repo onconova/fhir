@@ -17,3 +17,28 @@ This profile extends the base mCODE [RadiotherapyCourseSummary profile](http://h
 
 // Constrain the valuesets
 * statusReason from TreatmentTerminationReasons (required)
+
+* obeys o-rad-req-1 and 
+    o-rad-req-2 and 
+    o-rad-req-3 and 
+    o-rad-req-4
+
+Invariant: o-rad-req-1
+Description: "The subject element is required and must be provided."
+Expression: "subject.exists() and subject.resolve().is(Patient)"
+Severity: #error
+
+Invariant: o-rad-req-2
+Description: "The performedPeriod element is required and must be provided."
+Expression: "performedPeriod.exists() and performedPeriod.hasValue()"
+Severity: #error
+
+Invariant: o-rad-req-3
+Description: "The actualNumberOfSessions extension is required and must be provided."
+Expression: "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-sessions').exists()"
+Severity: #error
+
+Invariant: o-rad-req-4
+Description: "The treatmentIntent extension is required and must be provided."
+Expression: "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent').exists()"
+Severity: #error
