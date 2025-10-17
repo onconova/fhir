@@ -33,6 +33,32 @@ It constrains the mCODE [CancerDiseaseStatus profile](http://hl7.org/fhir/us/mco
 * insert NotUsed(encounter)
 * insert NotUsed(component)
 
+// Constraints
+* obeys o-res-req-1 and 
+    o-res-req-2 and 
+    o-res-req-3 and 
+    o-res-req-4
+
+Invariant: o-res-req-1
+Description: "The subject element is required and must be provided."
+Expression: "subject.exists() and subject.resolve().is(Patient)"
+Severity: #error
+
+Invariant: o-res-req-2
+Description: "The effectiveDateTime element is required and must be provided."
+Expression: "effectiveDateTime.exists() and effectiveDateTime.hasValue()"
+Severity: #error
+
+Invariant: o-res-req-3
+Description: "The valueCodeableConcept element is required and must be provided."
+Expression: "valueCodeableConcept.exists() and valueCodeableConcept.coding.exists()"
+Severity: #error
+
+Invariant: o-res-req-4
+Description: "The method element is required and must be provided."
+Expression: "method.exists() and method.hasValue()"
+Severity: #error
+
 //==================
 // Extensions
 //==================
