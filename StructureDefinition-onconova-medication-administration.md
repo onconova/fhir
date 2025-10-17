@@ -1,4 +1,4 @@
-# Medication Administration Profile - Onconova Implementation Guide v0.1.0
+# Medication Administration Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaMedicationAdministration |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaMedicationAdministration |
 
  
 A profile representing a medication administered to a cancer patient during a systemic therapy (e.g., chemotherapy, immunotherapy), including details about the medication and dosage. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
   "resourceType" : "StructureDefinition",
   "id" : "onconova-medication-administration",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaMedicationAdministration",
   "title" : "Medication Administration Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -94,7 +94,37 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
     "element" : [
       {
         "id" : "MedicationAdministration",
-        "path" : "MedicationAdministration"
+        "path" : "MedicationAdministration",
+        "constraint" : [
+          {
+            "key" : "o-med-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+          },
+          {
+            "key" : "o-med-req-2",
+            "severity" : "error",
+            "human" : "The effectivePeriod element is required and must be provided.",
+            "expression" : "effectivePeriod.exists() and effectivePeriod.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+          },
+          {
+            "key" : "o-med-req-3",
+            "severity" : "error",
+            "human" : "The treatmentIntent extension is required and must be provided.",
+            "expression" : "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+          },
+          {
+            "key" : "o-med-req-4",
+            "severity" : "error",
+            "human" : "The medicationCodeableConcept element is required and must be provided.",
+            "expression" : "medicationCodeableConcept.exists() and medicationCodeableConcept.coding.exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+          }
+        ]
       },
       {
         "id" : "MedicationAdministration.extension:combinedWith",
@@ -107,7 +137,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with|0.2.0"
             ]
           }
         ]
@@ -123,7 +153,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cycles|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cycles|0.2.0"
             ]
           }
         ]
@@ -139,7 +169,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.2.0"
             ]
           }
         ]
@@ -155,7 +185,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adjunctive-role|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adjunctive-role|0.2.0"
             ]
           }
         ]
@@ -171,7 +201,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-is-primary-therapy|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-is-primary-therapy|0.2.0"
             ]
           }
         ]
@@ -187,7 +217,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
         "path" : "MedicationAdministration.statusReason",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons|0.2.0"
         }
       },
       {
@@ -217,7 +247,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents|0.2.0"
         }
       },
       {
@@ -227,7 +257,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
           }
         ]
@@ -272,8 +302,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.1.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
             ]
           }
         ]

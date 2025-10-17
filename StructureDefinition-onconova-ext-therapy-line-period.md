@@ -1,4 +1,4 @@
-# Therapy Line Period - Onconova Implementation Guide v0.1.0
+# Therapy Line Period - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-period | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:TherapyLinePeriod |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-period | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:TherapyLinePeriod |
 
 The period during which the therapy line was performed.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-therapy
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-therapy-line-period",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-period",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "TherapyLinePeriod",
   "title" : "Therapy Line Period",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

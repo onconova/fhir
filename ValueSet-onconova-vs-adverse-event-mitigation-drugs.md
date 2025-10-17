@@ -1,4 +1,4 @@
-# Adverse Event Mitigation - Drugs - Onconova Implementation Guide v0.1.0
+# Adverse Event Mitigation - Drugs - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-drugs | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:AdverseEventMitigationDrugs |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-drugs | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:AdverseEventMitigationDrugs |
 
  
 Drugs or medication categories used in the mitigation process of an adverse event. 
@@ -50,11 +50,11 @@ This value set contains 4 concepts
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-adverse-event-mitigation-drugs",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-drugs",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "AdverseEventMitigationDrugs",
   "title" : "Adverse Event Mitigation - Drugs",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

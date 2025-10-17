@@ -1,4 +1,4 @@
-# CTCAE Grade - Onconova Implementation Guide v0.1.0
+# CTCAE Grade - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-ctc-grade | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:CTCGrade |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-ctc-grade | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:CTCGrade |
 
 The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE).
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-ctc-gra
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-ctc-grade",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-ctc-grade",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "CTCGrade",
   "title" : "CTCAE Grade",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-ctc-gra
             "severity" : "error",
             "human" : "The CTCAE grade must be between 1 and 5, inclusive.",
             "expression" : "valueInteger() >= 1 and valueInteger() <= 5",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-ctc-grade|0.1.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-ctc-grade|0.2.0"
           }
         ]
       },

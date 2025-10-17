@@ -1,4 +1,4 @@
-# Combined With - Onconova Implementation Guide v0.1.0
+# Combined With - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:CombinedWith |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:CombinedWith |
 
 Indicates that this medication administration was given in combination with another medication administration.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-combine
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-combined-with",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "CombinedWith",
   "title" : "Combined With",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -104,7 +104,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-combine
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
             ]
           }
         ]

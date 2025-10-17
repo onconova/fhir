@@ -1,4 +1,4 @@
-# Comorbidity Panels Code System - Onconova Implementation Guide v0.1.0
+# Comorbidity Panels Code System - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:ComorbidityPanelsSystem |
+| *Official URL*:http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:ComorbidityPanelsSystem |
 
  
 A code system for comorbidity panels relevant to cancer patients. 
@@ -27,11 +27,11 @@ A code system for comorbidity panels relevant to cancer patients.
   "resourceType" : "CodeSystem",
   "id" : "onconova-cs-comorbidity-panels",
   "url" : "http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "ComorbidityPanelsSystem",
   "title" : "Comorbidity Panels Code System",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

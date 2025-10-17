@@ -1,4 +1,4 @@
-# Recurrence Of - Onconova Implementation Guide v0.1.0
+# Recurrence Of - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:RecurrenceOf |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:RecurrenceOf |
 
 Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition.
 
@@ -19,7 +19,7 @@ Indicates that the condition is a recurrence of a previous condition, and provid
 
 **Usages:**
 
-* Use this Extension: [Primary Cancer Condition Profile](StructureDefinition-onconova-primary-cancer-condition.md)
+* Use this Extension: [Primary Cancer Condition Profile](StructureDefinition-onconova-primary-cancer-condition.md) and [Secondary Cancer Condition Profile](StructureDefinition-onconova-secondary-cancer-condition.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-ext-recurrence-of)
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-recurre
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-recurrence-of",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "RecurrenceOf",
   "title" : "Recurrence Of",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -85,16 +85,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-recurre
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Recurrence Of",
-        "definition" : "Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition.",
-        "constraint" : [
-          {
-            "key" : "recurrence-reference",
-            "severity" : "error",
-            "human" : "If the Condition.clinicalStatus extension is 'recurrence', the recurrenceOf extension must be present.",
-            "expression" : "%resource.clinicalStatus.exists() and %resource.clinicalStatus = 'recurrence' implies exists() valueReference.exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of|0.1.0"
-          }
-        ]
+        "definition" : "Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition."
       },
       {
         "id" : "Extension.extension",

@@ -14,6 +14,9 @@
     <sch:rule context="f:Observation">
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-gene-panel|0.2.0']) &lt;= 1">extension with URL = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-gene-panel|0.2.0': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-hgvs-version|0.2.0']) &gt;= 1">extension with URL = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-hgvs-version|0.2.0': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-hgvs-version|0.2.0']) &lt;= 1">extension with URL = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-hgvs-version|0.2.0': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

@@ -1,4 +1,4 @@
-# Home - Onconova Implementation Guide v0.1.0
+# Home - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,18 +7,18 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:Onconova |
+| *Official URL*:http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:Onconova |
 
-**Onconova** is an open-source precision oncology platform focused on enabling advanced cancer research, clinical decision support, and data-driven care. The FHIR interface exposes key resources, profiles, and value sets to facilitate standardized data exchange and integration with EHRs, registries, and analytics platforms.
+**Onconova** is an open-source precision oncology platform focused on enabling advanced cancer research. The FHIR interface exposes key resources, profiles, and value sets to facilitate standardized data exchange and integration with EHRs, registries, and analytics platforms.
 
-This implementation guide provides a comprehensive overview of the FHIR-based server interface to Onconova, supporting interoperability, data exchange, and integration with clinical and research systems. It complements the [OpenAPI specification](https://luisfabib.github.io/onconova/latest/guide/api/specification/) and is designed for healthcare organizations, developers, and integrators seeking to leverage Onconova's oncology data.
+This implementation guide provides a comprehensive overview of the FHIR-based server interface to Onconova, supporting interoperability, data exchange, and integration with clinical and research systems. It complements the [OpenAPI specification](https://onconova.github.io/docs/latest/guide/api/specification/) and is designed for healthcare organizations, developers, and integrators seeking to leverage Onconova's oncology data.
 
 This FHIR interface is designed to align with the [**minimal Common Oncology Data Elements (mCODE)**STU4 Implementation Guide](http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode), leveraging established, community-driven standards for oncology data. The Onconova IG refines and constrains mCODE resources to ensure consistent data elements and terminology bindings. Additionally, it defines new profiles to address oncology use cases not yet covered by the mCODE IG.
 
 -------
 
-**Onconova is an open source project and welcomes all contributors. The source code for this IG is maintained in the[Onconova Github](https://github.com/luisfabib/onconova). All of the profiling work is done using FHIR Shorthand and SUSHI. All content is subject to change.**
+**Onconova is an open source project and welcomes all contributors. The source code for this IG is maintained in the[Onconova Github](https://github.com/onconova/fhir). All of the profiling work is done using FHIR Shorthand and SUSHI. All content is subject to change.**
 
 
 
@@ -29,11 +29,11 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
   "resourceType" : "ImplementationGuide",
   "id" : "onconova.fhir",
   "url" : "http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -1209,7 +1209,7 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
           "reference" : "StructureDefinition/onconova-cancer-patient"
         },
         "name" : "Cancer Patient Profile",
-        "description" : "A profile representing a cancer patient with specific extensions and constraints for the Onconova use case. Due to the research-scope of Onconova, the patient information is anonymized and identifying data elements are not provided. \n\nIt constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient) to ensure anonymity of the patient information and to introduce additional Onconova-specific case information. Any `Patient` resource complying with the US Core `Patient` or mCODE `CancerPatient` profiles will also comply with this profile.",
+        "description" : "A profile representing a cancer patient with specific extensions and constraints for the Onconova use case.  \n\nIt constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient) to ensure anonymity of the patient information and to introduce additional Onconova-specific case information. Any `Patient` resource complying with the US Core `Patient` or mCODE `CancerPatient` profiles will also comply with this profile.",
         "exampleBoolean" : false
       },
       {
@@ -1482,6 +1482,20 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-gene-panel"
+        },
+        "name" : "Gene Panel",
+        "description" : "Name of the commercial or registered gene panel used for genomic testing.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1490,6 +1504,20 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
         },
         "name" : "Genomic Variant Profile",
         "description" : "A profile representing a genomic variant identified for a cancer patient. \n\nThis profile extends the base mCODE [GenomicVariant profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-variant) (which in turn profiles the Genomics Reporting [Variant profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant)) to include specific constraints and extensions relevant to Onconova.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-hgvs-version"
+        },
+        "name" : "HGVS Version",
+        "description" : "The version of the HGVS nomenclature used for representing the variant.",
         "exampleBoolean" : false
       },
       {
@@ -1755,7 +1783,7 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
           "reference" : "StructureDefinition/onconova-primary-cancer-condition"
         },
         "name" : "Primary Cancer Condition Profile",
-        "description" : "A profile that records the primary cancer condition, the original or first neoplasm in the body (Definition from: [NCI Dictionary of Cancer Terms](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)). Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary.\n\nIt constrains the mCODE [PrimaryCancerCCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition) to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.",
+        "description" : "A profile that records the primary cancer condition, the original or first neoplasm in the body (Definition from: [NCI Dictionary of Cancer Terms](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)). Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary.\n\nIt constrains the mCODE [PrimaryCancerCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition) to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.\n\nThis profile can be used to represent the Onconova neoplastic entities of relationship `primary`, `local_recurrence`, and `regional_recurrence`. Local and regional recurrences are indicated using extensions to denote that the condition is a recurrence of a previous condition, and to specify the type of recurrence (local or regional). For example, a local recurrence would be represented as a PrimaryCancerCondition with:\n```\n{\n    clinicalStatus: {\n        coding: [\n            {\n                system: \"http://snomed.info/sct\",\n                code: \"recurrence\",\n                display: \"Recurrence\"\n            }\n        ],\n    },\n    _clinicalStatus {\n        extension: [\n            {\n                url: \"http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type\",\n                valueCodeableConcept: {\n                    coding: [\n                        {\n                            system: \"http://snomed.info/sct\",\n                            code: \"255470001\",\n                            display: \"Local (qualifier value)\"\n                        }\n                    ]\n                }\n            }\n        ]\n    },\n}\n```",
         "exampleBoolean" : false
       },
       {
@@ -1812,6 +1840,34 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
         },
         "name" : "Recurrence Of",
         "description" : "Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-recurrence-type"
+        },
+        "name" : "Recurrence Type",
+        "description" : "Indicates the type of recurrence for the condition (local or regional).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onconova-vs-recurrence-type"
+        },
+        "name" : "Recurrence Type Value Set",
+        "description" : "A value set representing the types of cancer recurrence, specifically local and regional recurrences.",
         "exampleBoolean" : false
       },
       {

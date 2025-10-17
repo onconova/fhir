@@ -1,4 +1,4 @@
-# Therapy Line Progression Date - Onconova Implementation Guide v0.1.0
+# Therapy Line Progression Date - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-date | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:TherapyLineProgressionDate |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-date | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:TherapyLineProgressionDate |
 
 The date when disease progression was observed during or after the therapy line.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-therapy
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-therapy-line-progression-date",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-date",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "TherapyLineProgressionDate",
   "title" : "Therapy Line Progression Date",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

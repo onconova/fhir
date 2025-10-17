@@ -1,4 +1,4 @@
-# Cancer Family Member History - Onconova Implementation Guide v0.1.0
+# Cancer Family Member History - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaCancerFamilyMemberHistory |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaCancerFamilyMemberHistory |
 
  
 A profile recording of a family member's history of cancer. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
   "resourceType" : "StructureDefinition",
   "id" : "onconova-cancer-family-member-history",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaCancerFamilyMemberHistory",
   "title" : "Cancer Family Member History",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -89,12 +89,47 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
     "element" : [
       {
         "id" : "FamilyMemberHistory",
-        "path" : "FamilyMemberHistory"
+        "path" : "FamilyMemberHistory",
+        "constraint" : [
+          {
+            "key" : "o-fam-req-1",
+            "severity" : "error",
+            "human" : "The patient element is required and must be provided.",
+            "expression" : "patient.exists() and patient.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history|0.2.0"
+          },
+          {
+            "key" : "o-fam-req-2",
+            "severity" : "error",
+            "human" : "The date element is required and must be provided.",
+            "expression" : "date.exists() and date.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history|0.2.0"
+          },
+          {
+            "key" : "o-fam-req-3",
+            "severity" : "error",
+            "human" : "The relationship element is required and must be provided.",
+            "expression" : "relationship.exists() and relationship.coding.exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history|0.2.0"
+          }
+        ]
       },
       {
         "id" : "FamilyMemberHistory.status",
         "path" : "FamilyMemberHistory.status",
         "patternCode" : "completed"
+      },
+      {
+        "id" : "FamilyMemberHistory.patient",
+        "path" : "FamilyMemberHistory.patient",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
+            ]
+          }
+        ]
       },
       {
         "id" : "FamilyMemberHistory.name",
@@ -194,7 +229,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-morphology|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-morphology|0.2.0"
             ]
           }
         ],
@@ -210,7 +245,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-topography|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-topography|0.2.0"
             ]
           }
         ],

@@ -1,4 +1,4 @@
-# Age at Diagnosis - Onconova Implementation Guide v0.1.0
+# Age at Diagnosis - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age-at-diagnosis | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:AgeAtDiagnosis |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age-at-diagnosis | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:AgeAtDiagnosis |
 
 The approximate age of the patient at the time of diagnosis of the disease.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-age-at-
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-age-at-diagnosis",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age-at-diagnosis",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "AgeAtDiagnosis",
   "title" : "Age at Diagnosis",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -102,7 +102,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-age-at-
         "path" : "Extension.value[x]",
         "type" : [
           {
-            "code" : "Range"
+            "code" : "integer"
           }
         ]
       }

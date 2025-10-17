@@ -1,4 +1,4 @@
-# Overall Survival - Onconova Implementation Guide v0.1.0
+# Overall Survival - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-overall-survival | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OverallSurvival |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-overall-survival | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OverallSurvival |
 
 The duration of time from either the date of diagnosis or the start of treatment for a disease, such as cancer, that patients diagnosed with the disease are still alive. In a clinical trial, measuring the overall survival is one way to see how well a new treatment works.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-overall
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-overall-survival",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-overall-survival",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OverallSurvival",
   "title" : "Overall Survival",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

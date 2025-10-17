@@ -1,4 +1,4 @@
-# Cancer Risk Assessment Methods - Onconova Implementation Guide v0.1.0
+# Cancer Risk Assessment Methods - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-methods | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:CancerRiskAssessmentMethods |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-methods | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:CancerRiskAssessmentMethods |
 
  
 A value set containing codes for various cancer risk assessment methods. 
@@ -48,11 +48,11 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-cancer-risk-assessment-methods",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-methods",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "CancerRiskAssessmentMethods",
   "title" : "Cancer Risk Assessment Methods",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

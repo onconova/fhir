@@ -1,4 +1,4 @@
-# Molecular Tumor Board Molecular Comparison - Onconova Implementation Guide v0.1.0
+# Molecular Tumor Board Molecular Comparison - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-molecular-comparison | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:MolecularTumorBoardMolecularComparison |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-molecular-comparison | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:MolecularTumorBoardMolecularComparison |
 
 A comparison of molecular findings discussed during the molecular tumor board review.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-molecular-tumor-board-molecular-comparison",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-molecular-comparison",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "MolecularTumorBoardMolecularComparison",
   "title" : "Molecular Tumor Board Molecular Comparison",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -146,8 +146,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.1.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
             ]
           }
         ]

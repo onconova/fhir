@@ -1,4 +1,4 @@
-# onconova.fhir#0.1.0: Onconova Implementation Guide
+# onconova.fhir#0.2.0: Onconova Implementation Guide
 
 ## Pages
 
@@ -37,6 +37,7 @@
 * [ICD-O-3 Topography](ValueSet-onconova-vs-icdo3-topography.md)
 * [Observation Body Sites Value Set](ValueSet-onconova-vs-observation-bodysites.md)
 * [Recreational Drugs](ValueSet-onconova-vs-recreational-drugs.md)
+* [Recurrence Type Value Set](ValueSet-onconova-vs-recurrence-type.md)
 * [Smoking status](ValueSet-onconova-vs-smoking-status.md)
 * [TNM Distant Metastasis Categories Value Set](ValueSet-onconova-vs-tnm-distant-metastasis-categories.md)
 * [TNM Grade Categories Value Set](ValueSet-onconova-vs-tnm-grade-categories.md)
@@ -105,6 +106,8 @@
 * [Cycles](StructureDefinition-onconova-ext-cycles.md)
 * [Data Completion Rate](StructureDefinition-onconova-ext-data-completion-rate.md)
 * [End of Records](StructureDefinition-onconova-ext-end-of-records.md)
+* [Gene Panel](StructureDefinition-onconova-ext-gene-panel.md)
+* [HGVS Version](StructureDefinition-onconova-ext-hgvs-version.md)
 * [Is Primary Therapy](StructureDefinition-onconova-ext-is-primary-therapy.md)
 * [Molecular Tumor Board CUP Characterization](StructureDefinition-onconova-ext-molecular-tumor-board-cup-characterization.md)
 * [Molecular Tumor Board Molecular Comparison](StructureDefinition-onconova-ext-molecular-tumor-board-molecular-comparison.md)
@@ -112,6 +115,7 @@
 * [Overall Survival](StructureDefinition-onconova-ext-overall-survival.md)
 * [Recist Is Interpreted](StructureDefinition-onconova-ext-recist-is-interpreted.md)
 * [Recurrence Of](StructureDefinition-onconova-ext-recurrence-of.md)
+* [Recurrence Type](StructureDefinition-onconova-ext-recurrence-type.md)
 * [Risk Assessment Score](StructureDefinition-onconova-ext-risk-assessment-score.md)
 * [Therapy Line Intent](StructureDefinition-onconova-ext-therapy-line-intent.md)
 * [Therapy Line Number](StructureDefinition-onconova-ext-therapy-line-number.md)

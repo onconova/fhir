@@ -1,4 +1,4 @@
-# Cancer Risk Assessment Profile - Onconova Implementation Guide v0.1.0
+# Cancer Risk Assessment Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaCancerRiskAssessment |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaCancerRiskAssessment |
 
  
 A profile representing a risk assessment performed for a cancer patient, including the method used, the resulting risk level, and an optional numerical score. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
   "resourceType" : "StructureDefinition",
   "id" : "onconova-cancer-risk-assessment",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaCancerRiskAssessment",
   "title" : "Cancer Risk Assessment Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -99,7 +99,37 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "constraint" : [
+          {
+            "key" : "o-ria-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment|0.2.0"
+          },
+          {
+            "key" : "o-ria-req-2",
+            "severity" : "error",
+            "human" : "The effectiveDateTime element is required and must be provided.",
+            "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment|0.2.0"
+          },
+          {
+            "key" : "o-ria-req-3",
+            "severity" : "error",
+            "human" : "The code element is required and must be provided.",
+            "expression" : "code.exists() and code.coding.exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment|0.2.0"
+          },
+          {
+            "key" : "o-ria-req-4",
+            "severity" : "error",
+            "human" : "The valueCodeableConcept element is required and must be provided.",
+            "expression" : "valueCodeableConcept.exists() and valueCodeableConcept.coding.exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Observation.extension",
@@ -125,10 +155,22 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-risk-assessment-score|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-risk-assessment-score|0.2.0"
             ]
           }
         ]
+      },
+      {
+        "id" : "Observation.basedOn",
+        "path" : "Observation.basedOn",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.partOf",
+        "path" : "Observation.partOf",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       },
       {
         "id" : "Observation.status",
@@ -140,7 +182,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
         "path" : "Observation.code",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-methods|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-methods|0.2.0"
         }
       },
       {
@@ -150,18 +192,60 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
           }
         ]
+      },
+      {
+        "id" : "Observation.encounter",
+        "path" : "Observation.encounter",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.performer",
+        "path" : "Observation.performer",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       },
       {
         "id" : "Observation.value[x]",
         "path" : "Observation.value[x]",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://simplifier.net/onconova/ValueSets/onconova-cancer-risk-assessment-values|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-values|0.2.0"
         }
+      },
+      {
+        "id" : "Observation.dataAbsentReason",
+        "path" : "Observation.dataAbsentReason",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.interpretation",
+        "path" : "Observation.interpretation",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.hasMember",
+        "path" : "Observation.hasMember",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.derivedFrom",
+        "path" : "Observation.derivedFrom",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.component",
+        "path" : "Observation.component",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       }
     ]
   }

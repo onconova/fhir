@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Home - Onconova Implementation Guide v0.1.0</title>
+    <title>Home - Onconova Implementation Guide v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Onconova Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
             </span>
@@ -136,7 +136,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Onconova Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://onconova.github.io/fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Onconova Implementation Guide - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://onconova.github.io/fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -151,7 +151,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir|0.1.0"/></span>
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir|0.2.0"/></span>
       </td>
     </tr>
 
@@ -167,7 +167,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Active
           
-            as of 2025-10-15
+            as of 2025-10-17
           
         
       </td>
@@ -195,15 +195,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<p><strong>Onconova</strong> is an open-source precision oncology platform focused on enabling advanced cancer research, clinical decision support, and data-driven care. The FHIR interface exposes key resources, profiles, and value sets to facilitate standardized data exchange and integration with EHRs, registries, and analytics platforms.</p>
+<p><strong>Onconova</strong> is an open-source precision oncology platform focused on enabling advanced cancer research. The FHIR interface exposes key resources, profiles, and value sets to facilitate standardized data exchange and integration with EHRs, registries, and analytics platforms.</p>
 
-<p>This implementation guide provides a comprehensive overview of the FHIR-based server interface to Onconova, supporting interoperability, data exchange, and integration with clinical and research systems. It complements the <a href="https://luisfabib.github.io/onconova/latest/guide/api/specification/">OpenAPI specification</a> and is designed for healthcare organizations, developers, and integrators seeking to leverage Onconova's oncology data.</p>
+<p>This implementation guide provides a comprehensive overview of the FHIR-based server interface to Onconova, supporting interoperability, data exchange, and integration with clinical and research systems. It complements the <a href="https://onconova.github.io/docs/latest/guide/api/specification/">OpenAPI specification</a> and is designed for healthcare organizations, developers, and integrators seeking to leverage Onconova's oncology data.</p>
 
 <p>This FHIR interface is designed to align with the <a href="http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"><strong>minimal Common Oncology Data Elements (mCODE)</strong> STU4 Implementation Guide</a>, leveraging established, community-driven standards for oncology data. The Onconova IG refines and constrains mCODE resources to ensure consistent data elements and terminology bindings. Additionally, it defines new profiles to address oncology use cases not yet covered by the mCODE IG.</p>
 
 <hr />
 
-<p><em>Onconova is an open source project and welcomes all contributors. The source code for this IG is maintained in the <a href="https://github.com/luisfabib/onconova">Onconova Github</a>. All of the profiling work is done using FHIR Shorthand and SUSHI. All content is subject to change.</em></p>
+<p><em>Onconova is an open source project and welcomes all contributors. The source code for this IG is maintained in the <a href="https://github.com/onconova/fhir">Onconova Github</a>. All of the profiling work is done using FHIR Shorthand and SUSHI. All content is subject to change.</em></p>
 
 
 
@@ -223,7 +223,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 15, 2025 15:05+0000">2025-10-15</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 17, 2025 13:45+0000">2025-10-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,4 +1,4 @@
-# Primary Cancer Condition Profile - Onconova Implementation Guide v0.1.0
+# Primary Cancer Condition Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,12 +8,46 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaPrimaryCancerCondition |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaPrimaryCancerCondition |
 
  
 A profile that records the primary cancer condition, the original or first neoplasm in the body (Definition from:[NCI Dictionary of Cancer Terms](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)). Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary. 
-It constrains the mCODE[PrimaryCancerCCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition)to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes. 
+It constrains the mCODE[PrimaryCancerCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition)to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes. 
+This profile can be used to represent the Onconova neoplastic entities of relationship`primary`,`local_recurrence`, and`regional_recurrence`. Local and regional recurrences are indicated using extensions to denote that the condition is a recurrence of a previous condition, and to specify the type of recurrence (local or regional). For example, a local recurrence would be represented as a PrimaryCancerCondition with: 
+
+```
+{
+    clinicalStatus: {
+        coding: [
+            {
+                system: "http://snomed.info/sct",
+                code: "recurrence",
+                display: "Recurrence"
+            }
+        ],
+    },
+    _clinicalStatus {
+        extension: [
+            {
+                url: "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type",
+                valueCodeableConcept: {
+                    coding: [
+                        {
+                            system: "http://snomed.info/sct",
+                            code: "255470001",
+                            display: "Local (qualifier value)"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+}
+
+```
+
+ 
 
 **Usages:**
 
@@ -39,11 +73,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-primary-can
   "resourceType" : "StructureDefinition",
   "id" : "onconova-primary-cancer-condition",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaPrimaryCancerCondition",
   "title" : "Primary Cancer Condition Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -56,7 +90,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-primary-can
       ]
     }
   ],
-  "description" : "A profile that records the primary cancer condition, the original or first neoplasm in the body (Definition from: [NCI Dictionary of Cancer Terms](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)). Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary.\n\nIt constrains the mCODE [PrimaryCancerCCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition) to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.",
+  "description" : "A profile that records the primary cancer condition, the original or first neoplasm in the body (Definition from: [NCI Dictionary of Cancer Terms](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)). Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary.\n\nIt constrains the mCODE [PrimaryCancerCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition) to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.\n\nThis profile can be used to represent the Onconova neoplastic entities of relationship `primary`, `local_recurrence`, and `regional_recurrence`. Local and regional recurrences are indicated using extensions to denote that the condition is a recurrence of a previous condition, and to specify the type of recurrence (local or regional). For example, a local recurrence would be represented as a PrimaryCancerCondition with:\n```\n{\n    clinicalStatus: {\n        coding: [\n            {\n                system: \"http://snomed.info/sct\",\n                code: \"recurrence\",\n                display: \"Recurrence\"\n            }\n        ],\n    },\n    _clinicalStatus {\n        extension: [\n            {\n                url: \"http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type\",\n                valueCodeableConcept: {\n                    coding: [\n                        {\n                            system: \"http://snomed.info/sct\",\n                            code: \"255470001\",\n                            display: \"Local (qualifier value)\"\n                        }\n                    ]\n                }\n            }\n        ]\n    },\n}\n```",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -99,7 +133,51 @@ Other representations of profile: [CSV](StructureDefinition-onconova-primary-can
     "element" : [
       {
         "id" : "Condition",
-        "path" : "Condition"
+        "path" : "Condition",
+        "constraint" : [
+          {
+            "key" : "o-con-1",
+            "severity" : "error",
+            "human" : "If clinicalStatus is 'recurrence', the recurrenceOf extension must be provided.",
+            "expression" : "clinicalStatus.exists() and clinicalStatus.coding.code = 'recurrence' implies extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0"
+          },
+          {
+            "key" : "o-con-2",
+            "severity" : "error",
+            "human" : "If clinicalStatus is 'recurrence', the type of recurrence must be provided.",
+            "expression" : "clinicalStatus.exists() and clinicalStatus.coding.code = 'recurrence' implies clinicalStatus.extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0"
+          },
+          {
+            "key" : "o-con-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0"
+          },
+          {
+            "key" : "o-con-req-2",
+            "severity" : "error",
+            "human" : "The assertedDate extension is required and must be provided.",
+            "expression" : "extension('http://hl7.org/fhir/StructureDefinition/condition-assertedDate').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0"
+          },
+          {
+            "key" : "o-con-req-3",
+            "severity" : "error",
+            "human" : "The bodySite element is required and must be provided.",
+            "expression" : "bodySite.exists() and bodySite.coding.exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0"
+          },
+          {
+            "key" : "o-con-req-4",
+            "severity" : "error",
+            "human" : "The histologyMorphologyBehavior extension is required and must be provided.",
+            "expression" : "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-histology-morphology-behavior').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Condition.extension",
@@ -117,7 +195,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-primary-can
         "path" : "Condition.extension.value[x]",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-morphology-behavior|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-morphology-behavior|0.2.0"
         }
       },
       {
@@ -130,7 +208,22 @@ Other representations of profile: [CSV](StructureDefinition-onconova-primary-can
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of|0.2.0"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Condition.clinicalStatus.extension:recurrenceType",
+        "path" : "Condition.clinicalStatus.extension",
+        "sliceName" : "recurrenceType",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type|0.2.0"
             ]
           }
         ]
@@ -166,7 +259,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-primary-can
         "min" : 1,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography|0.2.0"
         }
       },
       {
@@ -176,7 +269,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-primary-can
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
           }
         ]

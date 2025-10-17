@@ -1,4 +1,4 @@
-# Anonymized Entry - Onconova Implementation Guide v0.1.0
+# Anonymized Entry - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:AnonymizedEntry |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:AnonymizedEntry |
 
 Value not provided to maintain the anonymization of the patient's data and conform to data protection regulations for research data.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-anonymi
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-anonymized-entry",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "AnonymizedEntry",
   "title" : "Anonymized Entry",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

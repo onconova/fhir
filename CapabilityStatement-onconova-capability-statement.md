@@ -1,4 +1,4 @@
-# Onconova FHIR REST Capability Statement - Onconova Implementation Guide v0.1.0
+# Onconova FHIR REST Capability Statement - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/CapabilityStatement/onconova-capability-statement | *Version*:0.1.0 |
+| *Official URL*:http://onconova.github.io/fhir/CapabilityStatement/onconova-capability-statement | *Version*:0.2.0 |
 | Draft as of 2025-09-25 | *Computable Name*:OnconovaCapabilityStatement |
 
  
@@ -18,7 +18,7 @@ Supports the retrieval of the[mCODE Patient Bundle](http://hl7.org/fhir/us/mcode
 
 ## Onconova FHIR REST Capability Statement
 
-* Implementation Guide Version: 0.1.0 
+* Implementation Guide Version: 0.2.0 
 * FHIR Version: 4.0.1 
 * Supported Formats: `json`
 * Published on: 2025-09-25 
@@ -84,13 +84,13 @@ The summary table lists the resources that are part of this configuration, and f
 
 | | | | | | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [Patient](#Patient1-1) | [http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0](StructureDefinition-onconova-cancer-patient.md) | y |  | y | y | y |  |  |  |  |
-| [Condition](#Condition1-2) | Supported Profiles  [Primary Cancer Condition Profileversion: 0.1.0)](StructureDefinition-onconova-primary-cancer-condition.md)  [Secondary Cancer Condition Profileversion: 0.1.0)](StructureDefinition-onconova-secondary-cancer-condition.md) | y |  | y | y | y |  |  |  |  |
-| [Observation](#Observation1-3) | Supported Profiles  [Tumor Marker Profileversion: 0.1.0)](StructureDefinition-onconova-tumor-marker.md)  [Cancer Risk Assessment Profileversion: 0.1.0)](StructureDefinition-onconova-cancer-risk-assessment.md)  [Genomic Variant Profileversion: 0.1.0)](StructureDefinition-onconova-genomic-variant.md)  [Tumor Mutational Burden Profileversion: 0.1.0)](StructureDefinition-onconova-tumor-mutational-burden.md)  [Microsatellite Instability Profileversion: 0.1.0)](StructureDefinition-onconova-microsatellite-instability.md)  [Loss of Heterozygosity Profileversion: 0.1.0)](StructureDefinition-onconova-loss-of-heterozygosity.md)  [Homologous Recombination Deficiency Profileversion: 0.1.0)](StructureDefinition-onconova-homologous-recombination-deficiency.md)  [Tumor Neoantigen Burden Profileversion: 0.1.0)](StructureDefinition-onconova-tumor-neoantigen-burden.md)  [Aneuploid Score Profileversion: 0.1.0)](StructureDefinition-onconova-aneuploid-score.md)  [Cancer Stageversion: 0.1.0)](StructureDefinition-onconova-cancer-stage.md)  [TNM Stage Groupversion: 0.1.0)](StructureDefinition-onconova-tnm-stage-group.md)  [Comorbidities Profileversion: 0.1.0)](StructureDefinition-onconova-comorbidities.md)  [Lifestyle Profileversion: 0.1.0)](StructureDefinition-onconova-lifestyle.md)  [Karnofsky Performance Status Profileversion: 0.1.0)](StructureDefinition-onconova-Karnofsky-performance-status.md)  [ECOG Performance Status Profileversion: 0.1.0)](StructureDefinition-onconova-ecog-performance-status.md)  [Imaging Disease Status Profileversion: 0.1.0)](StructureDefinition-onconova-imaging-disease-status.md)  [TNM Primary Tumor Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-primary-tumor-category.md)  [TNM Distant Metastases Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-distant-metastases-category.md)  [TNM Regional Nodes Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-regional-nodes-category.md)  [TNM Lymphatic Invasion Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-lymphatic-invasion-category.md)  [TNM Perineural Invasion Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-perineural-invasion-category.md)  [TNM Residual Tumor Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-residual-tumor-category.md)  [TNM Grade Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-grade-category.md)  [Serum Tumor Marker Level Categoryversion: 0.1.0)](StructureDefinition-onconova-serous-tumor-marker-level-category.md)  [Venous Invasion Categoryversion: 0.1.0)](StructureDefinition-onconova-venous-invasion-category.md)  [Observation Body Height Profileversion: 4.0.1)](http://hl7.org/fhir/R4/bodyheight.html)  [Observation Body Weight Profileversion: 4.0.1)](http://hl7.org/fhir/R4/bodyweight.html)  [Observation Body Temperature Profileversion: 4.0.1)](http://hl7.org/fhir/R4/bodytemp.html)  [Observation Body Mass Index Profileversion: 4.0.1)](http://hl7.org/fhir/R4/bmi.html)  [Observation Blood Pressure Profileversion: 4.0.1)](http://hl7.org/fhir/R4/bp.html) | y |  | y | y | y |  |  |  |  |
-| [Procedure](#Procedure1-4) | Supported Profiles  [Surgical Procedure Profileversion: 0.1.0)](StructureDefinition-onconova-surgical-procedure.md)  [Radiotherapy Summary Profileversion: 0.1.0)](StructureDefinition-onconova-radiotherapy-summary.md)  [Tumor Board Reviewversion: 0.1.0)](StructureDefinition-onconova-tumor-board-review.md)  [Molecular Tumor Board Reviewversion: 0.1.0)](StructureDefinition-onconova-molecular-tumor-board-review.md) | y |  | y | y | y |  |  |  |  |
-| [MedicationAdministration](#MedicationAdministration1-5) | Supported Profiles  [Medication Administration Profileversion: 0.1.0)](StructureDefinition-onconova-medication-administration.md) | y |  | y | y | y |  |  |  |  |
-| [FamilyHistory](#FamilyHistory1-6) | Supported Profiles  [Cancer Family Member Historyversion: 0.1.0)](StructureDefinition-onconova-cancer-family-member-history.md) | y |  | y | y | y |  |  |  |  |
-| [List](#List1-7) | Supported Profiles  [Therapy Line Profileversion: 0.1.0)](StructureDefinition-onconova-therapy-line.md) | y |  |  |  |  |  |  |  |  |
+| [Patient](#Patient1-1) | [http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0](StructureDefinition-onconova-cancer-patient.md) | y |  | y | y | y |  |  |  |  |
+| [Condition](#Condition1-2) | Supported Profiles  [Primary Cancer Condition Profileversion: 0.2.0)](StructureDefinition-onconova-primary-cancer-condition.md)  [Secondary Cancer Condition Profileversion: 0.2.0)](StructureDefinition-onconova-secondary-cancer-condition.md) | y |  | y | y | y |  |  |  |  |
+| [Observation](#Observation1-3) | Supported Profiles  [Tumor Marker Profileversion: 0.2.0)](StructureDefinition-onconova-tumor-marker.md)  [Cancer Risk Assessment Profileversion: 0.2.0)](StructureDefinition-onconova-cancer-risk-assessment.md)  [Genomic Variant Profileversion: 0.2.0)](StructureDefinition-onconova-genomic-variant.md)  [Tumor Mutational Burden Profileversion: 0.2.0)](StructureDefinition-onconova-tumor-mutational-burden.md)  [Microsatellite Instability Profileversion: 0.2.0)](StructureDefinition-onconova-microsatellite-instability.md)  [Loss of Heterozygosity Profileversion: 0.2.0)](StructureDefinition-onconova-loss-of-heterozygosity.md)  [Homologous Recombination Deficiency Profileversion: 0.2.0)](StructureDefinition-onconova-homologous-recombination-deficiency.md)  [Tumor Neoantigen Burden Profileversion: 0.2.0)](StructureDefinition-onconova-tumor-neoantigen-burden.md)  [Aneuploid Score Profileversion: 0.2.0)](StructureDefinition-onconova-aneuploid-score.md)  [Cancer Stageversion: 0.2.0)](StructureDefinition-onconova-cancer-stage.md)  [TNM Stage Groupversion: 0.2.0)](StructureDefinition-onconova-tnm-stage-group.md)  [Comorbidities Profileversion: 0.2.0)](StructureDefinition-onconova-comorbidities.md)  [Lifestyle Profileversion: 0.2.0)](StructureDefinition-onconova-lifestyle.md)  [Karnofsky Performance Status Profileversion: 0.2.0)](StructureDefinition-onconova-Karnofsky-performance-status.md)  [ECOG Performance Status Profileversion: 0.2.0)](StructureDefinition-onconova-ecog-performance-status.md)  [Imaging Disease Status Profileversion: 0.2.0)](StructureDefinition-onconova-imaging-disease-status.md)  [TNM Primary Tumor Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-primary-tumor-category.md)  [TNM Distant Metastases Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-distant-metastases-category.md)  [TNM Regional Nodes Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-regional-nodes-category.md)  [TNM Lymphatic Invasion Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-lymphatic-invasion-category.md)  [TNM Perineural Invasion Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-perineural-invasion-category.md)  [TNM Residual Tumor Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-residual-tumor-category.md)  [TNM Grade Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-grade-category.md)  [Serum Tumor Marker Level Categoryversion: 0.2.0)](StructureDefinition-onconova-serous-tumor-marker-level-category.md)  [Venous Invasion Categoryversion: 0.2.0)](StructureDefinition-onconova-venous-invasion-category.md)  [Observation Body Height Profileversion: 4.0.1)](http://hl7.org/fhir/R4/bodyheight.html)  [Observation Body Weight Profileversion: 4.0.1)](http://hl7.org/fhir/R4/bodyweight.html)  [Observation Body Temperature Profileversion: 4.0.1)](http://hl7.org/fhir/R4/bodytemp.html)  [Observation Body Mass Index Profileversion: 4.0.1)](http://hl7.org/fhir/R4/bmi.html)  [Observation Blood Pressure Profileversion: 4.0.1)](http://hl7.org/fhir/R4/bp.html) | y |  | y | y | y |  |  |  |  |
+| [Procedure](#Procedure1-4) | Supported Profiles  [Surgical Procedure Profileversion: 0.2.0)](StructureDefinition-onconova-surgical-procedure.md)  [Radiotherapy Summary Profileversion: 0.2.0)](StructureDefinition-onconova-radiotherapy-summary.md)  [Tumor Board Reviewversion: 0.2.0)](StructureDefinition-onconova-tumor-board-review.md)  [Molecular Tumor Board Reviewversion: 0.2.0)](StructureDefinition-onconova-molecular-tumor-board-review.md) | y |  | y | y | y |  |  |  |  |
+| [MedicationAdministration](#MedicationAdministration1-5) | Supported Profiles  [Medication Administration Profileversion: 0.2.0)](StructureDefinition-onconova-medication-administration.md) | y |  | y | y | y |  |  |  |  |
+| [FamilyHistory](#FamilyHistory1-6) | Supported Profiles  [Cancer Family Member Historyversion: 0.2.0)](StructureDefinition-onconova-cancer-family-member-history.md) | y |  | y | y | y |  |  |  |  |
+| [List](#List1-7) | Supported Profiles  [Therapy Line Profileversion: 0.2.0)](StructureDefinition-onconova-therapy-line.md) | y |  |  |  |  |  |  |  |  |
 
 -------
 
@@ -98,7 +98,7 @@ The summary table lists the resources that are part of this configuration, and f
 
 Base System Profile
 
-[Cancer Patient Profileversion: 0.1.0)](StructureDefinition-onconova-cancer-patient.md)
+[Cancer Patient Profileversion: 0.2.0)](StructureDefinition-onconova-cancer-patient.md)
 
 Profile Conformance
 
@@ -127,8 +127,8 @@ Interaction summary
 * Supports `create`, `read`, `update`, `delete`.
 
 Supported Profiles
-[Primary Cancer Condition Profileversion: 0.1.0)](StructureDefinition-onconova-primary-cancer-condition.md)
-[Secondary Cancer Condition Profileversion: 0.1.0)](StructureDefinition-onconova-secondary-cancer-condition.md)
+[Primary Cancer Condition Profileversion: 0.2.0)](StructureDefinition-onconova-primary-cancer-condition.md)
+[Secondary Cancer Condition Profileversion: 0.2.0)](StructureDefinition-onconova-secondary-cancer-condition.md)
 
 #### Resource Conformance: supported Observation
 
@@ -145,31 +145,31 @@ Interaction summary
 * Supports `create`, `read`, `update`, `delete`.
 
 Supported Profiles
-[Tumor Marker Profileversion: 0.1.0)](StructureDefinition-onconova-tumor-marker.md)
-[Cancer Risk Assessment Profileversion: 0.1.0)](StructureDefinition-onconova-cancer-risk-assessment.md)
-[Genomic Variant Profileversion: 0.1.0)](StructureDefinition-onconova-genomic-variant.md)
-[Tumor Mutational Burden Profileversion: 0.1.0)](StructureDefinition-onconova-tumor-mutational-burden.md)
-[Microsatellite Instability Profileversion: 0.1.0)](StructureDefinition-onconova-microsatellite-instability.md)
-[Loss of Heterozygosity Profileversion: 0.1.0)](StructureDefinition-onconova-loss-of-heterozygosity.md)
-[Homologous Recombination Deficiency Profileversion: 0.1.0)](StructureDefinition-onconova-homologous-recombination-deficiency.md)
-[Tumor Neoantigen Burden Profileversion: 0.1.0)](StructureDefinition-onconova-tumor-neoantigen-burden.md)
-[Aneuploid Score Profileversion: 0.1.0)](StructureDefinition-onconova-aneuploid-score.md)
-[Cancer Stageversion: 0.1.0)](StructureDefinition-onconova-cancer-stage.md)
-[TNM Stage Groupversion: 0.1.0)](StructureDefinition-onconova-tnm-stage-group.md)
-[Comorbidities Profileversion: 0.1.0)](StructureDefinition-onconova-comorbidities.md)
-[Lifestyle Profileversion: 0.1.0)](StructureDefinition-onconova-lifestyle.md)
-[Karnofsky Performance Status Profileversion: 0.1.0)](StructureDefinition-onconova-Karnofsky-performance-status.md)
-[ECOG Performance Status Profileversion: 0.1.0)](StructureDefinition-onconova-ecog-performance-status.md)
-[Imaging Disease Status Profileversion: 0.1.0)](StructureDefinition-onconova-imaging-disease-status.md)
-[TNM Primary Tumor Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-primary-tumor-category.md)
-[TNM Distant Metastases Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-distant-metastases-category.md)
-[TNM Regional Nodes Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-regional-nodes-category.md)
-[TNM Lymphatic Invasion Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-lymphatic-invasion-category.md)
-[TNM Perineural Invasion Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-perineural-invasion-category.md)
-[TNM Residual Tumor Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-residual-tumor-category.md)
-[TNM Grade Categoryversion: 0.1.0)](StructureDefinition-onconova-tnm-grade-category.md)
-[Serum Tumor Marker Level Categoryversion: 0.1.0)](StructureDefinition-onconova-serous-tumor-marker-level-category.md)
-[Venous Invasion Categoryversion: 0.1.0)](StructureDefinition-onconova-venous-invasion-category.md)
+[Tumor Marker Profileversion: 0.2.0)](StructureDefinition-onconova-tumor-marker.md)
+[Cancer Risk Assessment Profileversion: 0.2.0)](StructureDefinition-onconova-cancer-risk-assessment.md)
+[Genomic Variant Profileversion: 0.2.0)](StructureDefinition-onconova-genomic-variant.md)
+[Tumor Mutational Burden Profileversion: 0.2.0)](StructureDefinition-onconova-tumor-mutational-burden.md)
+[Microsatellite Instability Profileversion: 0.2.0)](StructureDefinition-onconova-microsatellite-instability.md)
+[Loss of Heterozygosity Profileversion: 0.2.0)](StructureDefinition-onconova-loss-of-heterozygosity.md)
+[Homologous Recombination Deficiency Profileversion: 0.2.0)](StructureDefinition-onconova-homologous-recombination-deficiency.md)
+[Tumor Neoantigen Burden Profileversion: 0.2.0)](StructureDefinition-onconova-tumor-neoantigen-burden.md)
+[Aneuploid Score Profileversion: 0.2.0)](StructureDefinition-onconova-aneuploid-score.md)
+[Cancer Stageversion: 0.2.0)](StructureDefinition-onconova-cancer-stage.md)
+[TNM Stage Groupversion: 0.2.0)](StructureDefinition-onconova-tnm-stage-group.md)
+[Comorbidities Profileversion: 0.2.0)](StructureDefinition-onconova-comorbidities.md)
+[Lifestyle Profileversion: 0.2.0)](StructureDefinition-onconova-lifestyle.md)
+[Karnofsky Performance Status Profileversion: 0.2.0)](StructureDefinition-onconova-Karnofsky-performance-status.md)
+[ECOG Performance Status Profileversion: 0.2.0)](StructureDefinition-onconova-ecog-performance-status.md)
+[Imaging Disease Status Profileversion: 0.2.0)](StructureDefinition-onconova-imaging-disease-status.md)
+[TNM Primary Tumor Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-primary-tumor-category.md)
+[TNM Distant Metastases Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-distant-metastases-category.md)
+[TNM Regional Nodes Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-regional-nodes-category.md)
+[TNM Lymphatic Invasion Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-lymphatic-invasion-category.md)
+[TNM Perineural Invasion Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-perineural-invasion-category.md)
+[TNM Residual Tumor Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-residual-tumor-category.md)
+[TNM Grade Categoryversion: 0.2.0)](StructureDefinition-onconova-tnm-grade-category.md)
+[Serum Tumor Marker Level Categoryversion: 0.2.0)](StructureDefinition-onconova-serous-tumor-marker-level-category.md)
+[Venous Invasion Categoryversion: 0.2.0)](StructureDefinition-onconova-venous-invasion-category.md)
 [Observation Body Height Profileversion: 4.0.1)](http://hl7.org/fhir/R4/bodyheight.html)
 [Observation Body Weight Profileversion: 4.0.1)](http://hl7.org/fhir/R4/bodyweight.html)
 [Observation Body Temperature Profileversion: 4.0.1)](http://hl7.org/fhir/R4/bodytemp.html)
@@ -191,10 +191,10 @@ Interaction summary
 * Supports `create`, `read`, `update`, `delete`.
 
 Supported Profiles
-[Surgical Procedure Profileversion: 0.1.0)](StructureDefinition-onconova-surgical-procedure.md)
-[Radiotherapy Summary Profileversion: 0.1.0)](StructureDefinition-onconova-radiotherapy-summary.md)
-[Tumor Board Reviewversion: 0.1.0)](StructureDefinition-onconova-tumor-board-review.md)
-[Molecular Tumor Board Reviewversion: 0.1.0)](StructureDefinition-onconova-molecular-tumor-board-review.md)
+[Surgical Procedure Profileversion: 0.2.0)](StructureDefinition-onconova-surgical-procedure.md)
+[Radiotherapy Summary Profileversion: 0.2.0)](StructureDefinition-onconova-radiotherapy-summary.md)
+[Tumor Board Reviewversion: 0.2.0)](StructureDefinition-onconova-tumor-board-review.md)
+[Molecular Tumor Board Reviewversion: 0.2.0)](StructureDefinition-onconova-molecular-tumor-board-review.md)
 
 #### Resource Conformance: supported MedicationAdministration
 
@@ -211,7 +211,7 @@ Interaction summary
 * Supports `create`, `read`, `update`, `delete`.
 
 Supported Profiles
-[Medication Administration Profileversion: 0.1.0)](StructureDefinition-onconova-medication-administration.md)
+[Medication Administration Profileversion: 0.2.0)](StructureDefinition-onconova-medication-administration.md)
 
 #### Resource Conformance: supported FamilyHistory
 
@@ -228,7 +228,7 @@ Interaction summary
 * Supports `create`, `read`, `update`, `delete`.
 
 Supported Profiles
-[Cancer Family Member Historyversion: 0.1.0)](StructureDefinition-onconova-cancer-family-member-history.md)
+[Cancer Family Member Historyversion: 0.2.0)](StructureDefinition-onconova-cancer-family-member-history.md)
 
 #### Resource Conformance: supported List
 
@@ -245,7 +245,7 @@ Interaction summary
 * Supports `read`.
 
 Supported Profiles
-[Therapy Line Profileversion: 0.1.0)](StructureDefinition-onconova-therapy-line.md)
+[Therapy Line Profileversion: 0.2.0)](StructureDefinition-onconova-therapy-line.md)
 
 
 
@@ -256,7 +256,7 @@ Supported Profiles
   "resourceType" : "CapabilityStatement",
   "id" : "onconova-capability-statement",
   "url" : "http://onconova.github.io/fhir/CapabilityStatement/onconova-capability-statement",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaCapabilityStatement",
   "title" : "Onconova FHIR REST Capability Statement",
   "status" : "draft",
@@ -293,7 +293,7 @@ Supported Profiles
       "resource" : [
         {
           "type" : "Patient",
-          "profile" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0",
+          "profile" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0",
           "interaction" : [
             {
               "code" : "create"
@@ -314,8 +314,8 @@ Supported Profiles
         {
           "type" : "Condition",
           "supportedProfile" : [
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.1.0"
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
           ],
           "interaction" : [
             {
@@ -337,31 +337,31 @@ Supported Profiles
         {
           "type" : "Observation",
           "supportedProfile" : [
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-mutational-burden|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-microsatellite-instability|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-loss-of-heterozygosity|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-neoantigen-burden|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-aneuploid-score|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-stage|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-stage-group|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-comorbidities|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-lifestyle|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-Karnofsky-performance-status|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-ecog-performance-status|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-imaging-disease-status|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-primary-tumor-category|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-distant-metastases-category|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-regional-nodes-category|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-lymphatic-invasion-category|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-perineural-invasion-category|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-residual-tumor-category|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-grade-category|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-serous-tumor-marker-level-category|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-venous-invasion-category|0.1.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-mutational-burden|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-microsatellite-instability|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-loss-of-heterozygosity|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-neoantigen-burden|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-aneuploid-score|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-stage|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-stage-group|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-comorbidities|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-lifestyle|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-Karnofsky-performance-status|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-ecog-performance-status|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-imaging-disease-status|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-primary-tumor-category|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-distant-metastases-category|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-regional-nodes-category|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-lymphatic-invasion-category|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-perineural-invasion-category|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-residual-tumor-category|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-grade-category|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-serous-tumor-marker-level-category|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-venous-invasion-category|0.2.0",
             "http://hl7.org/fhir/StructureDefinition/bodyheight|4.0.1",
             "http://hl7.org/fhir/StructureDefinition/bodyweight|4.0.1",
             "http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1",
@@ -388,10 +388,10 @@ Supported Profiles
         {
           "type" : "Procedure",
           "supportedProfile" : [
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review|0.1.0",
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review|0.1.0"
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review|0.2.0",
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review|0.2.0"
           ],
           "interaction" : [
             {
@@ -413,7 +413,7 @@ Supported Profiles
         {
           "type" : "MedicationAdministration",
           "supportedProfile" : [
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.1.0"
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
           ],
           "interaction" : [
             {
@@ -435,7 +435,7 @@ Supported Profiles
         {
           "type" : "FamilyHistory",
           "supportedProfile" : [
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history|0.1.0"
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history|0.2.0"
           ],
           "interaction" : [
             {
@@ -457,7 +457,7 @@ Supported Profiles
         {
           "type" : "List",
           "supportedProfile" : [
-            "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line|0.1.0"
+            "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line|0.2.0"
           ],
           "interaction" : [
             {

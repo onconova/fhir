@@ -1,4 +1,4 @@
-# Adverse Event Mitigation - Onconova Implementation Guide v0.1.0
+# Adverse Event Mitigation - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:AdverseEventMitigation |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:AdverseEventMitigation |
 
 Details about an action taken to mitigate or manage the adverse event.
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-adverse-event-mitigation",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "AdverseEventMitigation",
   "title" : "Adverse Event Mitigation",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -94,21 +94,21 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
             "severity" : "error",
             "human" : "If the mitigation category is 'Drug', then only mitigation drug must be specified.",
             "expression" : "extension('category').valueCodeableConcept.coding.code = 'C49158' implies (extension('drug').exists() and not extension('procedure').exists() and not extension('adjustment').exists())",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation|0.1.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation|0.2.0"
           },
           {
             "key" : "adjustment-mitigation",
             "severity" : "error",
             "human" : "If the mitigation category is 'Adjustment', then only mitigation adjustment must be specified.",
             "expression" : "extension('category').valueCodeableConcept.coding.code = 'C49157' implies (extension('adjustment').exists() and not extension('procedure').exists() and not extension('drug').exists())",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation|0.1.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation|0.2.0"
           },
           {
             "key" : "procedural-mitigation",
             "severity" : "error",
             "human" : "If the mitigation category is 'Procedure', then only mitigation procedure must be specified.",
             "expression" : "extension('category').valueCodeableConcept.coding.code = 'C49159' implies (extension('procedure').exists() and not extension('adjustment').exists() and not extension('drug').exists())",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation|0.1.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation|0.2.0"
           }
         ]
       },
@@ -146,7 +146,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-categories|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-categories|0.2.0"
         }
       },
       {
@@ -178,7 +178,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments|0.2.0"
         }
       },
       {
@@ -210,7 +210,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-drugs|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-drugs|0.2.0"
         }
       },
       {
@@ -242,7 +242,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-procedures|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-procedures|0.2.0"
         }
       },
       {
@@ -274,7 +274,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-managements|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-managements|0.2.0"
         }
       },
       {

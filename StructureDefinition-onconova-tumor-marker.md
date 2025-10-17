@@ -1,4 +1,4 @@
-# Tumor Marker Profile - Onconova Implementation Guide v0.1.0
+# Tumor Marker Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaTumorMarker |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaTumorMarker |
 
  
 A profile representing a tumor marker observation for a cancer patient, including the type of tumor marker and its value. 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
   "resourceType" : "StructureDefinition",
   "id" : "onconova-tumor-marker",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaTumorMarker",
   "title" : "Tumor Marker Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -100,7 +100,30 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "constraint" : [
+          {
+            "key" : "o-tma-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker|0.2.0"
+          },
+          {
+            "key" : "o-tma-req-2",
+            "severity" : "error",
+            "human" : "The effectiveDateTime element is required and must be provided.",
+            "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker|0.2.0"
+          },
+          {
+            "key" : "o-tma-req-3",
+            "severity" : "error",
+            "human" : "The tumorMarkerAnalyte element is required and must be provided.",
+            "expression" : "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Observation.extension",
@@ -117,7 +140,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte|0.2.0"
             ]
           }
         ]
@@ -129,8 +152,27 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.effective[x]",
+        "path" : "Observation.effective[x]",
+        "type" : [
+          {
+            "extension" : [
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean" : true
+              },
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean" : true
+              }
+            ],
+            "code" : "dateTime"
           }
         ]
       }

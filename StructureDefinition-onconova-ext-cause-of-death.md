@@ -1,4 +1,4 @@
-# Cause of Death - Onconova Implementation Guide v0.1.0
+# Cause of Death - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cause-of-death | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:CauseOfDeath |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cause-of-death | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:CauseOfDeath |
 
 The cause of death for the patient.
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-cause-o
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-cause-of-death",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cause-of-death",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "CauseOfDeath",
   "title" : "Cause of Death",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -109,7 +109,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-cause-o
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-causes-of-death|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-causes-of-death|0.2.0"
         }
       }
     ]

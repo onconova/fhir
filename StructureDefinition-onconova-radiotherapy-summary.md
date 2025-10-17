@@ -1,4 +1,4 @@
-# Radiotherapy Summary Profile - Onconova Implementation Guide v0.1.0
+# Radiotherapy Summary Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaRadiotherapySummary |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaRadiotherapySummary |
 
  
 A profile representing a summary of a course of radiotherapy delivered to a patient. It records the treatment intent, termination reason, modalities, techniques, number of sessions, and doses delivered to one or more body volumes. Whether the course has been fully delivered or stopped is indicated in the status element. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-radiotherap
   "resourceType" : "StructureDefinition",
   "id" : "onconova-radiotherapy-summary",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaRadiotherapySummary",
   "title" : "Radiotherapy Summary Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -89,7 +89,37 @@ Other representations of profile: [CSV](StructureDefinition-onconova-radiotherap
     "element" : [
       {
         "id" : "Procedure",
-        "path" : "Procedure"
+        "path" : "Procedure",
+        "constraint" : [
+          {
+            "key" : "o-rad-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary|0.2.0"
+          },
+          {
+            "key" : "o-rad-req-2",
+            "severity" : "error",
+            "human" : "The performedPeriod element is required and must be provided.",
+            "expression" : "performedPeriod.exists() and performedPeriod.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary|0.2.0"
+          },
+          {
+            "key" : "o-rad-req-3",
+            "severity" : "error",
+            "human" : "The actualNumberOfSessions extension is required and must be provided.",
+            "expression" : "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-sessions').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary|0.2.0"
+          },
+          {
+            "key" : "o-rad-req-4",
+            "severity" : "error",
+            "human" : "The treatmentIntent extension is required and must be provided.",
+            "expression" : "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Procedure.extension:therapyLine",
@@ -102,7 +132,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-radiotherap
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.2.0"
             ]
           }
         ]
@@ -112,7 +142,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-radiotherap
         "path" : "Procedure.statusReason",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons|0.2.0"
         }
       },
       {
@@ -122,7 +152,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-radiotherap
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
           }
         ]

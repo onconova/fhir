@@ -1,4 +1,4 @@
-# Lifestyle Profile - Onconova Implementation Guide v0.1.0
+# Lifestyle Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-lifestyle | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaLifestyle |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-lifestyle | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaLifestyle |
 
  
 A profile representing a (reported) observation on certain lifestyle characteristics of a cancer patient (e.g. smoking, drinking, and sleeping habits, environmental exposures, etc.). 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
   "resourceType" : "StructureDefinition",
   "id" : "onconova-lifestyle",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-lifestyle",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaLifestyle",
   "title" : "Lifestyle Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -99,7 +99,23 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "constraint" : [
+          {
+            "key" : "o-lif-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-lifestyle|0.2.0"
+          },
+          {
+            "key" : "o-lif-req-2",
+            "severity" : "error",
+            "human" : "The effectiveDateTime element is required and must be provided.",
+            "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-lifestyle|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Observation.status",
@@ -126,7 +142,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
           }
         ]
@@ -142,6 +158,21 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
         "path" : "Observation.encounter",
         "short" : "Not used in this profile",
         "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.effective[x]",
+        "path" : "Observation.effective[x]",
+        "type" : [
+          {
+            "extension" : [
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean" : true
+              }
+            ],
+            "code" : "dateTime"
+          }
+        ]
       },
       {
         "id" : "Observation.issued",
@@ -238,7 +269,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-smoking-status|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-smoking-status|0.2.0"
         }
       },
       {
@@ -424,7 +455,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-recreational-drugs|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-recreational-drugs|0.2.0"
         }
       },
       {
@@ -460,7 +491,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-exposure-agents|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-exposure-agents|0.2.0"
         }
       }
     ]

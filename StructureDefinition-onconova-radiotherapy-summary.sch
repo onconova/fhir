@@ -15,7 +15,7 @@
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent|4.0.0']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent|4.0.0': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-termination-reason|4.0.0']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-termination-reason|4.0.0': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-sessions|4.0.0']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-sessions|4.0.0': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.1.0']) &lt;= 1">extension with URL = 'http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.1.0': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.2.0']) &lt;= 1">extension with URL = 'http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.2.0': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

@@ -1,4 +1,4 @@
-# Molecular Tumor Board Therapeutic Recommendation - Onconova Implementation Guide v0.1.0
+# Molecular Tumor Board Therapeutic Recommendation - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:MolecularTumorBoardTherapeuticRecommendation |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:MolecularTumorBoardTherapeuticRecommendation |
 
 A therapeutic recommendation or follow-up action resulting from a molecular tumor board review.
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-molecular-tumor-board-therapeutic-recommendation",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "MolecularTumorBoardTherapeuticRecommendation",
   "title" : "Molecular Tumor Board Therapeutic Recommendation",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -94,7 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
             "severity" : "error",
             "human" : "Either clinical trial or medication SHALL be present",
             "expression" : "extension('clinicalTrial').exists() or extension('medication').exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation|0.1.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation|0.2.0"
           }
         ]
       },
@@ -153,7 +153,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents|0.2.0"
         }
       },
       {
@@ -181,14 +181,14 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker|0.1.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant|0.1.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-mutational-burden|0.1.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-microsatellite-instability|0.1.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-loss-of-heterozygosity|0.1.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency|0.1.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-neoantigen-burden|0.1.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-aneuploid-score|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker|0.2.0",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant|0.2.0",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-mutational-burden|0.2.0",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-microsatellite-instability|0.2.0",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-loss-of-heterozygosity|0.2.0",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency|0.2.0",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-neoantigen-burden|0.2.0",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-aneuploid-score|0.2.0"
             ]
           }
         ]
@@ -221,7 +221,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-expected-drug-effects|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-expected-drug-effects|0.2.0"
         }
       },
       {

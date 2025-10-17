@@ -1,4 +1,4 @@
-# Molecular Tumor Board Review - Onconova Implementation Guide v0.1.0
+# Molecular Tumor Board Review - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaMolecularTumorBoardReview |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaMolecularTumorBoardReview |
 
  
 A profile representing a specialized molecular tumor board review for a cancer patient. This profile extends the`OnconovaTumorBoardReview`profile to specify that the review is focused on molecular diagnostics and recommendations. 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
   "resourceType" : "StructureDefinition",
   "id" : "onconova-molecular-tumor-board-review",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaMolecularTumorBoardReview",
   "title" : "Molecular Tumor Board Review",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -82,13 +82,29 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
   "kind" : "resource",
   "abstract" : false,
   "type" : "Procedure",
-  "baseDefinition" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review|0.1.0",
+  "baseDefinition" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review|0.2.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
         "id" : "Procedure",
-        "path" : "Procedure"
+        "path" : "Procedure",
+        "constraint" : [
+          {
+            "key" : "o-tub-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review|0.2.0"
+          },
+          {
+            "key" : "o-tub-req-2",
+            "severity" : "error",
+            "human" : "The performedDateTime element is required and must be provided.",
+            "expression" : "performedDateTime.exists() and performedDateTime.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Procedure.extension",
@@ -115,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation|0.2.0"
             ]
           }
         ],
@@ -131,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-molecular-comparison|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-molecular-comparison|0.2.0"
             ]
           }
         ],
@@ -147,7 +163,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization|0.2.0"
             ]
           }
         ],

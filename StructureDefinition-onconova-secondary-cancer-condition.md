@@ -1,4 +1,4 @@
-# Secondary Cancer Condition Profile - Onconova Implementation Guide v0.1.0
+# Secondary Cancer Condition Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaSecondaryCancerCondition |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaSecondaryCancerCondition |
 
  
 A profile recording the a secondary neoplasm, including location and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms). 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
   "resourceType" : "StructureDefinition",
   "id" : "onconova-secondary-cancer-condition",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaSecondaryCancerCondition",
   "title" : "Secondary Cancer Condition Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -99,7 +99,51 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
     "element" : [
       {
         "id" : "Condition",
-        "path" : "Condition"
+        "path" : "Condition",
+        "constraint" : [
+          {
+            "key" : "o-con-1",
+            "severity" : "error",
+            "human" : "If clinicalStatus is 'recurrence', the recurrenceOf extension must be provided.",
+            "expression" : "clinicalStatus.exists() and clinicalStatus.coding.code = 'recurrence' implies extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
+          },
+          {
+            "key" : "o-con-2",
+            "severity" : "error",
+            "human" : "If clinicalStatus is 'recurrence', the type of recurrence must be provided.",
+            "expression" : "clinicalStatus.exists() and clinicalStatus.coding.code = 'recurrence' implies clinicalStatus.extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
+          },
+          {
+            "key" : "o-con-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
+          },
+          {
+            "key" : "o-con-req-2",
+            "severity" : "error",
+            "human" : "The assertedDate extension is required and must be provided.",
+            "expression" : "extension('http://hl7.org/fhir/StructureDefinition/condition-assertedDate').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
+          },
+          {
+            "key" : "o-con-req-3",
+            "severity" : "error",
+            "human" : "The bodySite element is required and must be provided.",
+            "expression" : "bodySite.exists() and bodySite.coding.exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
+          },
+          {
+            "key" : "o-con-req-4",
+            "severity" : "error",
+            "human" : "The histologyMorphologyBehavior extension is required and must be provided.",
+            "expression" : "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-histology-morphology-behavior').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Condition.extension",
@@ -117,7 +161,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
         "path" : "Condition.extension.value[x]",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-morphology-behavior|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-morphology-behavior|0.2.0"
         }
       },
       {
@@ -132,7 +176,37 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Condition.extension:recurrenceOf",
+        "path" : "Condition.extension",
+        "sliceName" : "recurrenceOf",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of|0.2.0"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Condition.clinicalStatus.extension:recurrenceType",
+        "path" : "Condition.clinicalStatus.extension",
+        "sliceName" : "recurrenceType",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type|0.2.0"
             ]
           }
         ]
@@ -168,7 +242,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
         "min" : 1,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography|0.2.0"
         }
       },
       {
@@ -178,7 +252,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
           }
         ]

@@ -1,4 +1,4 @@
-# Genomic Variant Profile - Onconova Implementation Guide v0.1.0
+# Genomic Variant Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaGenomicVariant |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaGenomicVariant |
 
  
 A profile representing a genomic variant identified for a cancer patient. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
   "resourceType" : "StructureDefinition",
   "id" : "onconova-genomic-variant",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaGenomicVariant",
   "title" : "Genomic Variant Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -99,7 +99,74 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "constraint" : [
+          {
+            "key" : "o-var-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant|0.2.0"
+          },
+          {
+            "key" : "o-var-req-2",
+            "severity" : "error",
+            "human" : "The effectiveDateTime element is required and must be provided.",
+            "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant|0.2.0"
+          },
+          {
+            "key" : "o-var-req-3",
+            "severity" : "error",
+            "human" : "The genes extension is required and must be provided.",
+            "expression" : "component.where(code.coding.code = '48018-6').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant|0.2.0"
+          },
+          {
+            "key" : "o-var-req-4",
+            "severity" : "error",
+            "human" : "At least one HGVS representation (coding, protein, or genomic) must be provided.",
+            "expression" : "component.where(code.coding.code = '48004-6').exists() or component.where(code.coding.code = '81290-9').exists() or component.where(code.coding.code = '48005-3').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant|0.2.0"
+          }
+        ]
+      },
+      {
+        "id" : "Observation.extension",
+        "path" : "Observation.extension",
+        "min" : 1
+      },
+      {
+        "id" : "Observation.extension:genePanel",
+        "path" : "Observation.extension",
+        "sliceName" : "genePanel",
+        "short" : "Gene Panel",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-gene-panel|0.2.0"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.extension:hgvsVersion",
+        "path" : "Observation.extension",
+        "sliceName" : "hgvsVersion",
+        "short" : "HGVS Version",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-hgvs-version|0.2.0"
+            ]
+          }
+        ]
       },
       {
         "id" : "Observation.status",
@@ -113,8 +180,17 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.effective[x]",
+        "path" : "Observation.effective[x]",
+        "type" : [
+          {
+            "code" : "dateTime"
           }
         ]
       },
@@ -124,9 +200,40 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
         "min" : 2
       },
       {
+        "id" : "Observation.component:coding-hgvs",
+        "path" : "Observation.component",
+        "sliceName" : "coding-hgvs"
+      },
+      {
+        "id" : "Observation.component:coding-hgvs.value[x]",
+        "path" : "Observation.component.value[x]",
+        "short" : "A valid HGVS-formatted (version >=21.1) 'c.' string, e.g. NM_005228.5:c.2369C>T"
+      },
+      {
+        "id" : "Observation.component:genomic-hgvs",
+        "path" : "Observation.component",
+        "sliceName" : "genomic-hgvs"
+      },
+      {
+        "id" : "Observation.component:genomic-hgvs.value[x]",
+        "path" : "Observation.component.value[x]",
+        "short" : "A valid HGVS-formatted (version >=21.1) 'g.' string, e.g. NC_000016.9:g.2124200_2138612dup"
+      },
+      {
+        "id" : "Observation.component:protein-hgvs",
+        "path" : "Observation.component",
+        "sliceName" : "protein-hgvs"
+      },
+      {
+        "id" : "Observation.component:protein-hgvs.value[x]",
+        "path" : "Observation.component.value[x]",
+        "short" : "A valid HGVS-formatted (version >=21.1) 'p.' string, e.g. NP_000050.2:p.(Asn1836Lys)"
+      },
+      {
         "id" : "Observation.component:nucleotidesCount",
         "path" : "Observation.component",
         "sliceName" : "nucleotidesCount",
+        "short" : "Length of of the variant in nNucleotides",
         "min" : 1,
         "max" : "1",
         "mustSupport" : true
@@ -156,15 +263,16 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:geneFeature",
+        "id" : "Observation.component:geneRegion",
         "path" : "Observation.component",
-        "sliceName" : "geneFeature",
+        "sliceName" : "geneRegion",
+        "short" : "Region (exon, intron, etc.) of the gene affected by the variant",
         "min" : 1,
         "max" : "1",
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:geneFeature.code",
+        "id" : "Observation.component:geneRegion.code",
         "path" : "Observation.component.code",
         "patternCodeableConcept" : {
           "coding" : [
@@ -178,7 +286,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:geneFeature.value[x]",
+        "id" : "Observation.component:geneRegion.value[x]",
         "path" : "Observation.component.value[x]",
         "type" : [
           {

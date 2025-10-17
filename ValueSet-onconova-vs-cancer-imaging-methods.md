@@ -1,4 +1,4 @@
-# Cancer Imaging Methods - Onconova Implementation Guide v0.1.0
+# Cancer Imaging Methods - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-imaging-methods | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:CancerImagingMethods |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-imaging-methods | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:CancerImagingMethods |
 
  
 Codes representing various imaging methods used in cancer diagnosis and monitoring. 
@@ -50,11 +50,11 @@ This value set contains 9 concepts
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-cancer-imaging-methods",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-imaging-methods",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "CancerImagingMethods",
   "title" : "Cancer Imaging Methods",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

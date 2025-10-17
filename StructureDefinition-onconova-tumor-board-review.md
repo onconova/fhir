@@ -1,4 +1,4 @@
-# Tumor Board Review - Onconova Implementation Guide v0.1.0
+# Tumor Board Review - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaTumorBoardReview |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaTumorBoardReview |
 
  
 A profile representing a tumor board review for a cancer patient. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
   "resourceType" : "StructureDefinition",
   "id" : "onconova-tumor-board-review",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaTumorBoardReview",
   "title" : "Tumor Board Review",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -89,7 +89,23 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
     "element" : [
       {
         "id" : "Procedure",
-        "path" : "Procedure"
+        "path" : "Procedure",
+        "constraint" : [
+          {
+            "key" : "o-tub-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review|0.2.0"
+          },
+          {
+            "key" : "o-tub-req-2",
+            "severity" : "error",
+            "human" : "The performedDateTime element is required and must be provided.",
+            "expression" : "performedDateTime.exists() and performedDateTime.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Procedure.basedOn",
@@ -139,7 +155,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-board-specialization|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-board-specialization|0.2.0"
             ]
           }
         ],
@@ -152,7 +168,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
           }
         ]
@@ -203,8 +219,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.1.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
             ]
           }
         ]
@@ -241,7 +257,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations|0.2.0"
         }
       }
     ]

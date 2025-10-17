@@ -1,4 +1,4 @@
-# Age - Onconova Implementation Guide v0.1.0
+# Age - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:AgeExtension |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:AgeExtension |
 
 The approximate age of the patient.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-age.csv
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-age",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "AgeExtension",
   "title" : "Age",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -102,7 +102,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-age.csv
         "path" : "Extension.value[x]",
         "type" : [
           {
-            "code" : "Range"
+            "code" : "integer"
           }
         ]
       }

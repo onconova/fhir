@@ -1,4 +1,4 @@
-# Surgical Procedure Profile - Onconova Implementation Guide v0.1.0
+# Surgical Procedure Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaSurgicalProcedure |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaSurgicalProcedure |
 
  
 A profile representing a surgical procedure performed on a cancer patient, including details about the procedure, its intent, and relevant dates. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
   "resourceType" : "StructureDefinition",
   "id" : "onconova-surgical-procedure",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaSurgicalProcedure",
   "title" : "Surgical Procedure Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -89,7 +89,37 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
     "element" : [
       {
         "id" : "Procedure",
-        "path" : "Procedure"
+        "path" : "Procedure",
+        "constraint" : [
+          {
+            "key" : "o-sur-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+          },
+          {
+            "key" : "o-sur-req-2",
+            "severity" : "error",
+            "human" : "The performedDateTime element is required and must be provided.",
+            "expression" : "performedDateTime.exists() and performedDateTime.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+          },
+          {
+            "key" : "o-sur-req-3",
+            "severity" : "error",
+            "human" : "The code element is required and must be provided.",
+            "expression" : "code.exists() and code.coding.exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+          },
+          {
+            "key" : "o-sur-req-4",
+            "severity" : "error",
+            "human" : "The treatmentIntent extension is required and must be provided.",
+            "expression" : "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent').exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Procedure.extension:therapyLine",
@@ -102,7 +132,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.2.0"
             ]
           }
         ]
@@ -137,7 +167,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
           }
         ]
@@ -147,6 +177,21 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
         "path" : "Procedure.encounter",
         "short" : "Not used in this profile",
         "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Procedure.performed[x]",
+        "path" : "Procedure.performed[x]",
+        "type" : [
+          {
+            "extension" : [
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean" : true
+              }
+            ],
+            "code" : "dateTime"
+          }
+        ]
       },
       {
         "id" : "Procedure.recorder",
@@ -185,8 +230,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.1.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
             ]
           }
         ]

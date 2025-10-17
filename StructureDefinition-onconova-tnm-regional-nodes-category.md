@@ -1,4 +1,4 @@
-# TNM Regional Nodes Category - Onconova Implementation Guide v0.1.0
+# TNM Regional Nodes Category - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-regional-nodes-category | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaTNMRegionalNodesCategory |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-regional-nodes-category | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaTNMRegionalNodesCategory |
 
  
 A profile representing the TNM regional nodes category for a cancer patient. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-regiona
   "resourceType" : "StructureDefinition",
   "id" : "onconova-tnm-regional-nodes-category",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-regional-nodes-category",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaTNMRegionalNodesCategory",
   "title" : "TNM Regional Nodes Category",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -99,7 +99,30 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-regiona
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "constraint" : [
+          {
+            "key" : "o-stg-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-regional-nodes-category|0.2.0"
+          },
+          {
+            "key" : "o-stg-req-2",
+            "severity" : "error",
+            "human" : "The effectiveDateTime element is required and must be provided.",
+            "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-regional-nodes-category|0.2.0"
+          },
+          {
+            "key" : "o-stg-req-3",
+            "severity" : "error",
+            "human" : "The valueCodeableConcept element is required and must be provided.",
+            "expression" : "valueCodeableConcept.exists() and valueCodeableConcept.coding.exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-regional-nodes-category|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Observation.status",
@@ -113,8 +136,23 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-regiona
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.effective[x]",
+        "path" : "Observation.effective[x]",
+        "type" : [
+          {
+            "extension" : [
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean" : true
+              }
+            ],
+            "code" : "dateTime"
           }
         ]
       },
@@ -123,7 +161,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-regiona
         "path" : "Observation.value[x]",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-regional-nodes-categories|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-regional-nodes-categories|0.2.0"
         }
       }
     ]

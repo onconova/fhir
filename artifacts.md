@@ -1,4 +1,4 @@
-# Artifacts Summary - Onconova Implementation Guide v0.1.0
+# Artifacts Summary - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -24,7 +24,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Adverse Event Profile](StructureDefinition-onconova-adverse-event.md) | A profile representing an adverse event experienced by a cancer patient as a result of an antineoplastic treatment, structured according to the Common Terminology Criteria for Adverse Events (CTCAE). This resource is used to capture and standardize the documentation of adverse events occurring during cancer care, including the type of event, its CTCAE grade, and any mitigation actions taken.The profile constrains the base FHIR`AdverseEvent`resource to ensure consistent use of CTCAE codes and grades, and supports linkage to related treatments such as medications, radiotherapy, or surgical procedures documented in Onconova. The profile also provides extensions for recording mitigation strategies, supporting detailed tracking and management of adverse events in cancer patients. |
 | [Aneuploid Score Profile](StructureDefinition-onconova-aneuploid-score.md) | A profile representing aneuploid score for a cancer patient.This profile extends the GenomicsReporting IG[GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base)to include specific constraints and extensions relevant to Onconova. |
 | [Cancer Family Member History](StructureDefinition-onconova-cancer-family-member-history.md) | A profile recording of a family member's history of cancer.This profile is based on the core FHIR`FamilyMemberHistory`resource rather than the mCODE[HistoryOfMetastaticCancer profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-history-of-metastatic-cancer)to allow for a broader range of cancer history documentation (not limited to metastatic cancer). It includes constraints to ensure that at least one cancer condition is recorded, along with optional extensions for cancer morphology and topography. |
-| [Cancer Patient Profile](StructureDefinition-onconova-cancer-patient.md) | A profile representing a cancer patient with specific extensions and constraints for the Onconova use case. Due to the research-scope of Onconova, the patient information is anonymized and identifying data elements are not provided.It constrains the mCODE[CancerPatient profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient)to ensure anonymity of the patient information and to introduce additional Onconova-specific case information. Any`Patient`resource complying with the US Core`Patient`or mCODE`CancerPatient`profiles will also comply with this profile. |
+| [Cancer Patient Profile](StructureDefinition-onconova-cancer-patient.md) | A profile representing a cancer patient with specific extensions and constraints for the Onconova use case.It constrains the mCODE[CancerPatient profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient)to ensure anonymity of the patient information and to introduce additional Onconova-specific case information. Any`Patient`resource complying with the US Core`Patient`or mCODE`CancerPatient`profiles will also comply with this profile. |
 | [Cancer Risk Assessment Profile](StructureDefinition-onconova-cancer-risk-assessment.md) | A profile representing a risk assessment performed for a cancer patient, including the method used, the resulting risk level, and an optional numerical score.It constraints the mCODE[CancerRiskAssessment profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-risk-assessment)and expands the valuesets for cancer risk assessment methods and values. |
 | [Cancer Stage](StructureDefinition-onconova-cancer-stage.md) | A profile representing the cancer stage for a cancer patient.It constrains the mCODE[CancerStage profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-stage)to include specific constraints and extensions relevant to Onconova. |
 | [Comorbidities Profile](StructureDefinition-onconova-comorbidities.md) | A profile representing comorbidities for a cancer patient, i.e. other health conditions that exist alongside the primary cancer diagnosis. Supports existing comorbidity panels such as the Charlson Comorbidity Index (CCI) and Elixhauser Comorbidity Index (ECI) with comorbidity indexes.The profile constrains the mCODE[Comorbidities profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities)to ensure consistent use of ICD-10 codes for documenting comorbid conditions, and to link the comorbidity information to the Onconova primary cancer condition profile. |
@@ -38,7 +38,37 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Medication Administration Profile](StructureDefinition-onconova-medication-administration.md) | A profile representing a medication administered to a cancer patient during a systemic therapy (e.g., chemotherapy, immunotherapy), including details about the medication and dosage.This profile extends the base mCODE[CancerRelatedMedicationAdministration profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration)to introduce additional information about the systemic therapy (e.g. number of cycles, therapeutic role, etc.) and to introduce references to other medication administration given simultaneously to represent combination therapies. |
 | [Microsatellite Instability Profile](StructureDefinition-onconova-microsatellite-instability.md) | A profile representing microsatellite instability for a cancer patient.This profile extends the GenomicsReporting IG[MicrosatelliteInstability profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/msi)to include specific constraints and extensions relevant to Onconova. |
 | [Molecular Tumor Board Review](StructureDefinition-onconova-molecular-tumor-board-review.md) | A profile representing a specialized molecular tumor board review for a cancer patient. This profile extends the`OnconovaTumorBoardReview`profile to specify that the review is focused on molecular diagnostics and recommendations. |
-| [Primary Cancer Condition Profile](StructureDefinition-onconova-primary-cancer-condition.md) | A profile that records the primary cancer condition, the original or first neoplasm in the body (Definition from:[NCI Dictionary of Cancer Terms](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)). Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary.It constrains the mCODE[PrimaryCancerCCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition)to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes. |
+| [Primary Cancer Condition Profile](StructureDefinition-onconova-primary-cancer-condition.md) | A profile that records the primary cancer condition, the original or first neoplasm in the body (Definition from:[NCI Dictionary of Cancer Terms](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)). Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary.It constrains the mCODE[PrimaryCancerCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition)to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.This profile can be used to represent the Onconova neoplastic entities of relationship`primary`,`local_recurrence`, and`regional_recurrence`. Local and regional recurrences are indicated using extensions to denote that the condition is a recurrence of a previous condition, and to specify the type of recurrence (local or regional). For example, a local recurrence would be represented as a PrimaryCancerCondition with:```
+{
+    clinicalStatus: {
+        coding: [
+            {
+                system: "http://snomed.info/sct",
+                code: "recurrence",
+                display: "Recurrence"
+            }
+        ],
+    },
+    _clinicalStatus {
+        extension: [
+            {
+                url: "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type",
+                valueCodeableConcept: {
+                    coding: [
+                        {
+                            system: "http://snomed.info/sct",
+                            code: "255470001",
+                            display: "Local (qualifier value)"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+}
+
+```
+ |
 | [Radiotherapy Summary Profile](StructureDefinition-onconova-radiotherapy-summary.md) | A profile representing a summary of a course of radiotherapy delivered to a patient. It records the treatment intent, termination reason, modalities, techniques, number of sessions, and doses delivered to one or more body volumes. Whether the course has been fully delivered or stopped is indicated in the status element.This profile extends the base mCODE[RadiotherapyCourseSummary profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary)to include specific constraints and requirements for Onconova. |
 | [Secondary Cancer Condition Profile](StructureDefinition-onconova-secondary-cancer-condition.md) | A profile recording the a secondary neoplasm, including location and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms).It constrains the mCODE[SecondaryCancerCCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition)to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes. |
 | [Serum Tumor Marker Level Category](StructureDefinition-onconova-serous-tumor-marker-level-category.md) | A profile representing the serum tumor marker level category for a cancer patient.This profile extends the base mCODE[TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category)to specify the new TNM category. |
@@ -78,6 +108,8 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Cycles](StructureDefinition-onconova-ext-cycles.md) | Indicates the total number of cycles for this medication administration. |
 | [Data Completion Rate](StructureDefinition-onconova-ext-data-completion-rate.md) | The percentage of data elements categories that have been completed for a patient. |
 | [End of Records](StructureDefinition-onconova-ext-end-of-records.md) | Indicates the last known record date of a patient. |
+| [Gene Panel](StructureDefinition-onconova-ext-gene-panel.md) | Name of the commercial or registered gene panel used for genomic testing. |
+| [HGVS Version](StructureDefinition-onconova-ext-hgvs-version.md) | The version of the HGVS nomenclature used for representing the variant. |
 | [Is Primary Therapy](StructureDefinition-onconova-ext-is-primary-therapy.md) | Indicates whether this medication administration is the primary therapy within a therapy line. |
 | [Molecular Tumor Board CUP Characterization](StructureDefinition-onconova-ext-molecular-tumor-board-cup-characterization.md) | A characterization of the tumor board review focused on cancer of unknown primary (CUP) origin. |
 | [Molecular Tumor Board Molecular Comparison](StructureDefinition-onconova-ext-molecular-tumor-board-molecular-comparison.md) | A comparison of molecular findings discussed during the molecular tumor board review. |
@@ -85,6 +117,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Overall Survival](StructureDefinition-onconova-ext-overall-survival.md) | The duration of time from either the date of diagnosis or the start of treatment for a disease, such as cancer, that patients diagnosed with the disease are still alive. In a clinical trial, measuring the overall survival is one way to see how well a new treatment works. |
 | [Recist Is Interpreted](StructureDefinition-onconova-ext-recist-is-interpreted.md) | Indicates that whether the RECIST was interpreted from a radiology report rather than extracted. |
 | [Recurrence Of](StructureDefinition-onconova-ext-recurrence-of.md) | Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition. |
+| [Recurrence Type](StructureDefinition-onconova-ext-recurrence-type.md) | Indicates the type of recurrence for the condition (local or regional). |
 | [Risk Assessment Score](StructureDefinition-onconova-ext-risk-assessment-score.md) | The numerical score of the risk assessment. |
 | [Therapy Line Intent](StructureDefinition-onconova-ext-therapy-line-intent.md) | The intent of the therapy line, such as curative or palliative. |
 | [Therapy Line Number](StructureDefinition-onconova-ext-therapy-line-number.md) | The number representing the sequence of the therapy line in the overall treatment regimen. |
@@ -121,6 +154,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [ICD-O-3 Topography](ValueSet-onconova-vs-icdo3-topography.md) | A value set of ICD-O-3 topography codes. |
 | [Observation Body Sites Value Set](ValueSet-onconova-vs-observation-bodysites.md) | Bodysites related to an observation |
 | [Recreational Drugs](ValueSet-onconova-vs-recreational-drugs.md) | Substances that people use to alter their mental state, often for pleasure or leisure, with effects ranging from relaxation and euphoria to hallucinations and altered perceptions. |
+| [Recurrence Type Value Set](ValueSet-onconova-vs-recurrence-type.md) | A value set representing the types of cancer recurrence, specifically local and regional recurrences. |
 | [Risk Assessment Values](ValueSet-onconova-vs-cancer-risk-assessment-values.md) | A non-exhaustive value set containing codes that result from risk assessments, i.e., the risk level of the cancer. |
 | [Smoking status](ValueSet-onconova-vs-smoking-status.md) | Smoking status of a patient |
 | [TNM Distant Metastasis Categories Value Set](ValueSet-onconova-vs-tnm-distant-metastasis-categories.md) | TNM Distant Metastasis Categories Value Set |

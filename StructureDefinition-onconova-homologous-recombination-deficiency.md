@@ -1,4 +1,4 @@
-# Homologous Recombination Deficiency Profile - Onconova Implementation Guide v0.1.0
+# Homologous Recombination Deficiency Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaHomologousRecombinationDeficiency |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaHomologousRecombinationDeficiency |
 
  
 A profile representing homologous recombination deficiency for a cancer patient. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-homologous-
   "resourceType" : "StructureDefinition",
   "id" : "onconova-homologous-recombination-deficiency",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaHomologousRecombinationDeficiency",
   "title" : "Homologous Recombination Deficiency Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -99,7 +99,30 @@ Other representations of profile: [CSV](StructureDefinition-onconova-homologous-
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "constraint" : [
+          {
+            "key" : "o-sig-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency|0.2.0"
+          },
+          {
+            "key" : "o-sig-req-2",
+            "severity" : "error",
+            "human" : "The effectiveDateTime element is required and must be provided.",
+            "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency|0.2.0"
+          },
+          {
+            "key" : "o-sig-req-3",
+            "severity" : "error",
+            "human" : "The valueQuantity element is required and must be provided.",
+            "expression" : "valueQuantity.exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Observation.status",
@@ -126,8 +149,17 @@ Other representations of profile: [CSV](StructureDefinition-onconova-homologous-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.effective[x]",
+        "path" : "Observation.effective[x]",
+        "type" : [
+          {
+            "code" : "dateTime"
           }
         ]
       },

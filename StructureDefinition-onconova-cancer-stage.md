@@ -1,4 +1,4 @@
-# Cancer Stage - Onconova Implementation Guide v0.1.0
+# Cancer Stage - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-stage | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaCancerStage |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-stage | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaCancerStage |
 
  
 A profile representing the cancer stage for a cancer patient. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-stag
   "resourceType" : "StructureDefinition",
   "id" : "onconova-cancer-stage",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-stage",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaCancerStage",
   "title" : "Cancer Stage",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -99,7 +99,30 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-stag
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "constraint" : [
+          {
+            "key" : "o-stg-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-stage|0.2.0"
+          },
+          {
+            "key" : "o-stg-req-2",
+            "severity" : "error",
+            "human" : "The effectiveDateTime element is required and must be provided.",
+            "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-stage|0.2.0"
+          },
+          {
+            "key" : "o-stg-req-3",
+            "severity" : "error",
+            "human" : "The valueCodeableConcept element is required and must be provided.",
+            "expression" : "valueCodeableConcept.exists() and valueCodeableConcept.coding.exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-stage|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Observation.status",
@@ -113,8 +136,23 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-stag
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.effective[x]",
+        "path" : "Observation.effective[x]",
+        "type" : [
+          {
+            "extension" : [
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean" : true
+              }
+            ],
+            "code" : "dateTime"
           }
         ]
       }

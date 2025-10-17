@@ -84,7 +84,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-tnm-lymphatic-invasion-categories",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "TNMLymphaticInvasionCategories",
       "title" : "TNM Lymphatic Invasion Categories Value Set",
@@ -96,7 +96,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-tnm-perineural-invasion-categories",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "TNMPerineuralInvasionCategories",
       "title" : "TNM Perineural Invasion Categories Value Set",
@@ -108,7 +108,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-tnm-residual-tumor-categories",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "TNMResidualTumorCategories",
       "title" : "TNM Residual Tumor Categories Value Set",
@@ -120,7 +120,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adjunctive-therapy-roles",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "AdjunctiveTherapyRoles",
       "title" : "Adjunctive Therapy Roles",
@@ -132,7 +132,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-categories",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "AdverseEventMitigationCategories",
       "title" : "Adverse Event Mitigation Categories",
@@ -144,7 +144,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-drugs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "AdverseEventMitigationDrugs",
       "title" : "Adverse Event Mitigation - Drugs",
@@ -159,7 +159,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-managements",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "AdverseEventMitigationManagements",
       "title" : "Adverse Event Mitigation - Management",
@@ -171,7 +171,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-procedures",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "AdverseEventMitigationProcedures",
       "title" : "Adverse Event Mitigation - Procedures",
@@ -186,7 +186,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "AdverseEventMitigationTreatmentAdjustments",
       "title" : "Adverse Event Mitigation - Treatment Adjustment",
@@ -198,7 +198,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "AntineoplasticAgents",
       "title" : "Antineoplastic Agents",
@@ -211,7 +211,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-imaging-methods",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "CancerImagingMethods",
       "title" : "Cancer Imaging Methods",
@@ -223,7 +223,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-methods",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "CancerRiskAssessmentMethods",
       "title" : "Cancer Risk Assessment Methods",
@@ -234,8 +234,20 @@
       "StructureDefinition-onconova-cancer-risk-assessment.html" : "Cancer Risk Assessment Profile"
     },
     {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-values",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "CancerRiskAssessmentValues",
+      "title" : "Risk Assessment Values",
+      "description" : "A non-exhaustive value set containing codes that result from risk assessments, i.e., the risk level of the cancer.",
+      "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"],
+      "uses" : {
+      },
+      "StructureDefinition-onconova-cancer-risk-assessment.html" : "Cancer Risk Assessment Profile"
+    },
+    {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-causes-of-death",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "CausesOfDeath",
       "title" : "Cause of Death Value Set",
@@ -250,7 +262,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-comorbidity-panels",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "ComorbidityPanels",
       "title" : "Comorbidity Panels",
@@ -264,7 +276,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-ctc-adverse-events",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "CTCAdverseEvents",
       "title" : "CTC Adverse Events",
@@ -276,7 +288,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-expected-drug-effects",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "ExpectedDrugEffects",
       "title" : "Expected Drug Effects",
@@ -288,7 +300,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-exposure-agents",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "ExposureAgents",
       "title" : "Exposure Agents",
@@ -300,7 +312,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "ICD10Conditions",
       "title" : "ICD-10 Codes",
@@ -312,7 +324,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-morphology-behavior",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "ICDO3MorphologyBehavior",
       "title" : "ICD-O-3 Morphology Behavior",
@@ -321,12 +333,12 @@
       "uses" : {
       },
       "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile",
-      "StructureDefinition-onconova-ext-cancer-morphology.html" : "Cancer Morphology",
-      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile"
+      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile",
+      "StructureDefinition-onconova-ext-cancer-morphology.html" : "Cancer Morphology"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "ICDO3Topography",
       "title" : "ICD-O-3 Topography",
@@ -335,12 +347,12 @@
       "uses" : {
       },
       "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile",
-      "StructureDefinition-onconova-ext-cancer-topography.html" : "Cancer Topography",
-      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile"
+      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile",
+      "StructureDefinition-onconova-ext-cancer-topography.html" : "Cancer Topography"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-observation-bodysites",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "ObservationBodySites",
       "title" : "Observation Body Sites Value Set",
@@ -352,7 +364,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-recreational-drugs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "RecreationalDrugs",
       "title" : "Recreational Drugs",
@@ -363,8 +375,20 @@
       "StructureDefinition-onconova-lifestyle.html" : "Lifestyle Profile"
     },
     {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-recurrence-type",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "RecurrenceTypeVS",
+      "title" : "Recurrence Type Value Set",
+      "description" : "A value set representing the types of cancer recurrence, specifically local and regional recurrences.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onconova-ext-recurrence-type.html" : "Recurrence Type"
+    },
+    {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-smoking-status",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "SmokingStatus",
       "title" : "Smoking status",
@@ -376,7 +400,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-distant-metastasis-categories",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "TNMDistantMetastasisCategories",
       "title" : "TNM Distant Metastasis Categories Value Set",
@@ -388,7 +412,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-grade-categories",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "TNMGradeCategories",
       "title" : "TNM Grade Categories Value Set",
@@ -400,7 +424,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-grade-category-methods",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "TNMGradeCategoryMethods",
       "title" : "TNM Grade Category Methods Value Set",
@@ -412,7 +436,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-primary-tumor-categories",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "TNMPrimaryTumorCategories",
       "title" : "TNM Primary Tumor Categories",
@@ -424,7 +448,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-regional-nodes-categories",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "TNMRegionalNodesCategories",
       "title" : "TNM Regional Nodes Categories Value Set",
@@ -436,7 +460,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-serum-tumor-marker-level-categories",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "TNMSerumTumorMarkerLevelCategories",
       "title" : "TNM Serum Tumor Marker Level Categories Value Set",
@@ -448,7 +472,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-venous-invasion-categories",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "TNMVenousInvasionCategories",
       "title" : "TNM Venous Invasion Categories Value Set",
@@ -460,7 +484,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "TreatmentTerminationReasons",
       "title" : "Treatment Termination Reasons",
@@ -473,7 +497,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "OnconovaTumorBoardRecommendations",
       "title" : "Tumor Board Recommendations",
@@ -485,7 +509,7 @@
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-marker-analytes",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "active",
       "name" : "TumorMarkerAnalytes",
       "title" : "Tumor Marker Analytes",
@@ -497,18 +521,6 @@
       "uses" : {
       },
       "StructureDefinition-onconova-ext-tumor-marker-analyte.html" : "Tumor Marker Analyte"
-    },
-    {
-      "url" : "https://simplifier.net/onconova/ValueSets/onconova-cancer-risk-assessment-values",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CancerRiskAssessmentValues",
-      "title" : "Risk Assessment Values",
-      "description" : "A non-exhaustive value set containing codes that result from risk assessments, i.e., the risk level of the cancer.",
-      "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"],
-      "uses" : {
-      },
-      "StructureDefinition-onconova-cancer-risk-assessment.html" : "Cancer Risk Assessment Profile"
     }
   ]
 }

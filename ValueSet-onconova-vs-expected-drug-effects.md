@@ -1,4 +1,4 @@
-# Expected Drug Effects - Onconova Implementation Guide v0.1.0
+# Expected Drug Effects - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-expected-drug-effects | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:ExpectedDrugEffects |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-expected-drug-effects | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:ExpectedDrugEffects |
 
  
 A value set of expected drug effects. 
@@ -50,11 +50,11 @@ This value set contains 2 concepts
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-expected-drug-effects",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-expected-drug-effects",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "ExpectedDrugEffects",
   "title" : "Expected Drug Effects",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

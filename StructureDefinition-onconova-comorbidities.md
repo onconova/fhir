@@ -1,4 +1,4 @@
-# Comorbidities Profile - Onconova Implementation Guide v0.1.0
+# Comorbidities Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-comorbidities | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaComorbidities |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-comorbidities | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaComorbidities |
 
  
 A profile representing comorbidities for a cancer patient, i.e. other health conditions that exist alongside the primary cancer diagnosis. Supports existing comorbidity panels such as the Charlson Comorbidity Index (CCI) and Elixhauser Comorbidity Index (ECI) with comorbidity indexes. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-comorbiditi
   "resourceType" : "StructureDefinition",
   "id" : "onconova-comorbidities",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-comorbidities",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaComorbidities",
   "title" : "Comorbidities Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -99,7 +99,37 @@ Other representations of profile: [CSV](StructureDefinition-onconova-comorbiditi
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "constraint" : [
+          {
+            "key" : "com-1",
+            "severity" : "error",
+            "human" : "If an index score is provided, then the comorbidity panel method must also be provided.",
+            "expression" : "valueQuantity.exists() implies method.exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-comorbidities|0.2.0"
+          },
+          {
+            "key" : "com-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-comorbidities|0.2.0"
+          },
+          {
+            "key" : "com-req-2",
+            "severity" : "error",
+            "human" : "The effectiveDateTime element is required and must be provided.",
+            "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-comorbidities|0.2.0"
+          },
+          {
+            "key" : "com-req-3",
+            "severity" : "error",
+            "human" : "The focus element is required and must be provided.",
+            "expression" : "focus.exists() and focus.resolve().is(Condition)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-comorbidities|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Observation.extension:comorbidConditionPresent",
@@ -133,7 +163,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-comorbiditi
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions|0.2.0"
         }
       },
       {
@@ -146,7 +176,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-comorbiditi
         "path" : "Observation.extension.value[x]",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions|0.2.0"
         }
       },
       {
@@ -173,7 +203,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-comorbiditi
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
           }
         ]
@@ -185,7 +215,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-comorbiditi
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0"
             ]
           }
         ]
@@ -197,10 +227,50 @@ Other representations of profile: [CSV](StructureDefinition-onconova-comorbiditi
         "definition" : "Not used in this profile"
       },
       {
+        "id" : "Observation.effective[x]",
+        "path" : "Observation.effective[x]",
+        "type" : [
+          {
+            "extension" : [
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean" : true
+              }
+            ],
+            "code" : "dateTime"
+          }
+        ]
+      },
+      {
         "id" : "Observation.issued",
         "path" : "Observation.issued",
         "short" : "Not used in this profile",
         "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.value[x]",
+        "path" : "Observation.value[x]",
+        "short" : "Comorbidity Index Score",
+        "type" : [
+          {
+            "extension" : [
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean" : true
+              },
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean" : true
+              }
+            ],
+            "code" : "Quantity"
+          }
+        ]
+      },
+      {
+        "id" : "Observation.value[x].unit",
+        "path" : "Observation.value[x].unit",
+        "patternString" : "1"
       },
       {
         "id" : "Observation.interpretation",
@@ -213,7 +283,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-comorbiditi
         "path" : "Observation.method",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-comorbidity-panels|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-comorbidity-panels|0.2.0"
         }
       },
       {

@@ -1,4 +1,4 @@
-# Imaging Disease Status Profile - Onconova Implementation Guide v0.1.0
+# Imaging Disease Status Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-imaging-disease-status | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaImagingDiseaseStatus |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-imaging-disease-status | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaImagingDiseaseStatus |
 
  
 A profile representing the imaging-based disease status of a cancer patient. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-imaging-dis
   "resourceType" : "StructureDefinition",
   "id" : "onconova-imaging-disease-status",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-imaging-disease-status",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaImagingDiseaseStatus",
   "title" : "Imaging Disease Status Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -99,7 +99,37 @@ Other representations of profile: [CSV](StructureDefinition-onconova-imaging-dis
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "constraint" : [
+          {
+            "key" : "o-res-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-imaging-disease-status|0.2.0"
+          },
+          {
+            "key" : "o-res-req-2",
+            "severity" : "error",
+            "human" : "The effectiveDateTime element is required and must be provided.",
+            "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-imaging-disease-status|0.2.0"
+          },
+          {
+            "key" : "o-res-req-3",
+            "severity" : "error",
+            "human" : "The valueCodeableConcept element is required and must be provided.",
+            "expression" : "valueCodeableConcept.exists() and valueCodeableConcept.coding.exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-imaging-disease-status|0.2.0"
+          },
+          {
+            "key" : "o-res-req-4",
+            "severity" : "error",
+            "human" : "The method element is required and must be provided.",
+            "expression" : "method.exists() and method.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-imaging-disease-status|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Observation.extension:evidenceType",
@@ -156,7 +186,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-imaging-dis
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
           }
         ]
@@ -168,8 +198,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-imaging-dis
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.1.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
             ]
           }
         ]
@@ -191,7 +221,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-imaging-dis
         "path" : "Observation.bodySite",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-observation-bodysites|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-observation-bodysites|0.2.0"
         }
       },
       {
@@ -199,7 +229,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-imaging-dis
         "path" : "Observation.method",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-imaging-methods|0.1.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-imaging-methods|0.2.0"
         }
       },
       {

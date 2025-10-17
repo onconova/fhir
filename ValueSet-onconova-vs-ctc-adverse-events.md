@@ -1,4 +1,4 @@
-# CTC Adverse Events - Onconova Implementation Guide v0.1.0
+# CTC Adverse Events - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-ctc-adverse-events | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:CTCAdverseEvents |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-ctc-adverse-events | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:CTCAdverseEvents |
 
  
 Common Terminology Criteria for Adverse Events (CTCAE) is a standard classification and severity grading scale for adverse events in clinical trials and oncology practice. 
@@ -50,11 +50,11 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-ctc-adverse-events",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-ctc-adverse-events",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "CTCAdverseEvents",
   "title" : "CTC Adverse Events",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - Onconova Implementation Guide v0.1.0</title>
+    <title>Artifacts Summary - Onconova Implementation Guide v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Onconova Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
             </span>
@@ -136,7 +136,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Onconova Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://onconova.github.io/fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Onconova Implementation Guide - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://onconova.github.io/fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -230,7 +230,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/onconova-cancer-patient">Cancer Patient Profile</a>
             </td>
             <td>
-<p>A profile representing a cancer patient with specific extensions and constraints for the Onconova use case. Due to the research-scope of Onconova, the patient information is anonymized and identifying data elements are not provided.</p>
+<p>A profile representing a cancer patient with specific extensions and constraints for the Onconova use case.</p>
 
 <p>It constrains the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient">CancerPatient profile</a> to ensure anonymity of the patient information and to introduce additional Onconova-specific case information. Any <code class="language-plaintext highlighter-rouge">Patient</code> resource complying with the US Core <code class="language-plaintext highlighter-rouge">Patient</code> or mCODE <code class="language-plaintext highlighter-rouge">CancerPatient</code> profiles will also comply with this profile.</p>
 </td>
@@ -384,7 +384,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td>
 <p>A profile that records the primary cancer condition, the original or first neoplasm in the body (Definition from: <a href="https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor">NCI Dictionary of Cancer Terms</a>). Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary.</p>
 
-<p>It constrains the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition">PrimaryCancerCCondition profile</a> to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.</p>
+<p>It constrains the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition">PrimaryCancerCondition profile</a> to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.</p>
+
+<p>This profile can be used to represent the Onconova neoplastic entities of relationship <code class="language-plaintext highlighter-rouge">primary</code>, <code class="language-plaintext highlighter-rouge">local_recurrence</code>, and <code class="language-plaintext highlighter-rouge">regional_recurrence</code>. Local and regional recurrences are indicated using extensions to denote that the condition is a recurrence of a previous condition, and to specify the type of recurrence (local or regional). For example, a local recurrence would be represented as a PrimaryCancerCondition with:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    clinicalStatus: {
+        coding: [
+            {
+                system: "http://snomed.info/sct",
+                code: "recurrence",
+                display: "Recurrence"
+            }
+        ],
+    },
+    _clinicalStatus {
+        extension: [
+            {
+                url: "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type",
+                valueCodeableConcept: {
+                    coding: [
+                        {
+                            system: "http://snomed.info/sct",
+                            code: "255470001",
+                            display: "Local (qualifier value)"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+}
+</code></pre></div></div>
 </td>
          </tr>
          <tr>
@@ -723,6 +753,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-onconova-ext-gene-panel.html"
+                  title="StructureDefinition/onconova-ext-gene-panel">Gene Panel</a>
+            </td>
+            <td>
+<p>Name of the commercial or registered gene panel used for genomic testing.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onconova-ext-hgvs-version.html"
+                  title="StructureDefinition/onconova-ext-hgvs-version">HGVS Version</a>
+            </td>
+            <td>
+<p>The version of the HGVS nomenclature used for representing the variant.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-onconova-ext-is-primary-therapy.html"
                   title="StructureDefinition/onconova-ext-is-primary-therapy">Is Primary Therapy</a>
             </td>
@@ -782,6 +830,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onconova-ext-recurrence-type.html"
+                  title="StructureDefinition/onconova-ext-recurrence-type">Recurrence Type</a>
+            </td>
+            <td>
+<p>Indicates the type of recurrence for the condition (local or regional).</p>
 </td>
          </tr>
          <tr>
@@ -1055,6 +1112,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-onconova-vs-recurrence-type.html"
+                  title="ValueSet/onconova-vs-recurrence-type">Recurrence Type Value Set</a>
+            </td>
+            <td>
+<p>A value set representing the types of cancer recurrence, specifically local and regional recurrences.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-cancer-risk-assessment-values.html"
                   title="ValueSet/onconova-vs-cancer-risk-assessment-values">Risk Assessment Values</a>
             </td>
@@ -1234,7 +1300,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 15, 2025 15:05+0000">2025-10-15</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 17, 2025 13:45+0000">2025-10-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

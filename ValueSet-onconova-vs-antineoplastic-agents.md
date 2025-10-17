@@ -1,4 +1,4 @@
-# Antineoplastic Agents - Onconova Implementation Guide v0.1.0
+# Antineoplastic Agents - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:AntineoplasticAgents |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:AntineoplasticAgents |
 
  
 A value set of antineoplastic agents. 
@@ -51,11 +51,11 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-antineoplastic-agents",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "AntineoplasticAgents",
   "title" : "Antineoplastic Agents",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

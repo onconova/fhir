@@ -1,4 +1,4 @@
-# Karnofsky Performance Status Profile - Onconova Implementation Guide v0.1.0
+# Karnofsky Performance Status Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-Karnofsky-performance-status | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaKarnofskyPerformanceStatus |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-Karnofsky-performance-status | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaKarnofskyPerformanceStatus |
 
  
 A profile representing the Karnofsky performance status score for a cancer patient. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-Karnofsky-p
   "resourceType" : "StructureDefinition",
   "id" : "onconova-Karnofsky-performance-status",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-Karnofsky-performance-status",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaKarnofskyPerformanceStatus",
   "title" : "Karnofsky Performance Status Profile",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -99,7 +99,23 @@ Other representations of profile: [CSV](StructureDefinition-onconova-Karnofsky-p
     "element" : [
       {
         "id" : "Observation",
-        "path" : "Observation"
+        "path" : "Observation",
+        "constraint" : [
+          {
+            "key" : "o-obs-req-1",
+            "severity" : "error",
+            "human" : "The subject element is required and must be provided.",
+            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-Karnofsky-performance-status|0.2.0"
+          },
+          {
+            "key" : "o-obs-req-2",
+            "severity" : "error",
+            "human" : "The effectiveDateTime element is required and must be provided.",
+            "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-Karnofsky-performance-status|0.2.0"
+          }
+        ]
       },
       {
         "id" : "Observation.basedOn",
@@ -125,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-Karnofsky-p
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
             ]
           }
         ]
@@ -139,7 +155,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-Karnofsky-p
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.1.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0"
             ]
           }
         ]
@@ -149,6 +165,25 @@ Other representations of profile: [CSV](StructureDefinition-onconova-Karnofsky-p
         "path" : "Observation.encounter",
         "short" : "Not used in this profile",
         "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.effective[x]",
+        "path" : "Observation.effective[x]",
+        "type" : [
+          {
+            "extension" : [
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean" : true
+              },
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean" : true
+              }
+            ],
+            "code" : "dateTime"
+          }
+        ]
       },
       {
         "id" : "Observation.issued",

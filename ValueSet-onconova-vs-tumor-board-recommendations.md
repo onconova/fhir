@@ -1,4 +1,4 @@
-# Tumor Board Recommendations - Onconova Implementation Guide v0.1.0
+# Tumor Board Recommendations - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations | *Version*:0.1.0 |
-| Active as of 2025-10-15 | *Computable Name*:OnconovaTumorBoardRecommendations |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations | *Version*:0.2.0 |
+| Active as of 2025-10-17 | *Computable Name*:OnconovaTumorBoardRecommendations |
 
  
 A value set of recommendations that may be made by a tumor board for a cancer patient. 
@@ -53,11 +53,11 @@ This value set contains 21 concepts
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-tumor-board-recommendations",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OnconovaTumorBoardRecommendations",
   "title" : "Tumor Board Recommendations",
   "status" : "active",
-  "date" : "2025-10-15T15:04:18+00:00",
+  "date" : "2025-10-17T13:44:17+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
