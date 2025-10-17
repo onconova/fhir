@@ -10,6 +10,8 @@ This profile extends the GenomicsReporting IG [TumorMutationalBurden profile](ht
 
 * status = #final
 * subject only Reference(OnconovaCancerPatient)
+* effective[x] only dateTime
+* obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-3
 
 Profile: OnconovaMicrosatelliteInstability
 Parent: MSI
@@ -22,6 +24,8 @@ This profile extends the GenomicsReporting IG [MicrosatelliteInstability profile
 """
 * status = #final
 * subject only Reference(OnconovaCancerPatient)
+* effective[x] only dateTime
+* obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-4
 
 
 Profile: OnconovaLossOfHeterozygosity
@@ -37,11 +41,13 @@ This profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.
 * status = #final
 * subject only Reference(OnconovaCancerPatient)
 * code = $NCIT#C18016 "Loss of Heterozygosity"
+* effective[x] only dateTime
 * value[x] only Quantity
 * valueQuantity 1..1
 * valueQuantity.system = $UCUM
 * valueQuantity.code = $UCUM#%
 * insert NotUsed(interpretation)
+* obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-3
 
 
 Profile: OnconovaHomologousRecombinationDeficiency
@@ -56,11 +62,13 @@ This profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.
 * status = #final
 * subject only Reference(OnconovaCancerPatient)
 * code = $NCIT#C120465 "Homologous Recombination Deficiency"
+* effective[x] only dateTime
 * value[x] only Quantity
 * valueQuantity 1..1
 * valueQuantity.system = $UCUM
 * valueQuantity.code = $UCUM#1
 * interpretation from https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL2038-9 (required)
+* obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-3
 
 
 Profile: OnconovaTumorNeoantigenBurden
@@ -75,11 +83,13 @@ This profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.
 * status = #final
 * subject only Reference(OnconovaCancerPatient)
 * code = $TBD#tumor-neoantigen-burden "Tumor Neoantigen Burden"
+* effective[x] only dateTime
 * value[x] only Quantity 
 * valueQuantity 1..1 
 * valueQuantity.system = $UCUM
 * valueQuantity.code = $UCUM#1/1000000{Neoantigen}
 * insert NotUsed(interpretation)
+* obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-3
 
 
 Profile: OnconovaAneuploidScore
@@ -94,8 +104,35 @@ This profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.
 * status = #final
 * subject only Reference(OnconovaCancerPatient)
 * code = $TBD#aneuploid-score "Aneuploid Score"
+* effective[x] only dateTime
 * value[x] only Quantity
 * valueQuantity 1..1
 * valueQuantity.system = $UCUM
 * valueQuantity.code = $UCUM#1
 * insert NotUsed(interpretation)
+* obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-3
+
+
+//==============================
+// Invariants 
+//==============================
+
+Invariant: o-sig-req-1
+Description: "The subject element is required and must be provided."
+Expression: "subject.exists() and subject.resolve().is(Patient)"
+Severity: #error
+
+Invariant: o-sig-req-2
+Description: "The effectiveDateTime element is required and must be provided."
+Expression: "effectiveDateTime.exists() and effectiveDateTime.hasValue()"
+Severity: #error
+
+Invariant: o-sig-req-3
+Description: "The valueQuantity element is required and must be provided."
+Expression: "valueQuantity.exists()"
+Severity: #error
+
+Invariant: o-sig-req-4
+Description: "The valueCodeableConcept element is required and must be provided."
+Expression: "valueCodeableConcept.exists() and valueCodeableConcept.coding.exists()"
+Severity: #error

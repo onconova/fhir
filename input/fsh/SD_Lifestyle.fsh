@@ -10,6 +10,7 @@ It directly profiles the base FHIR `Observation` resource as this resource is no
 
 * subject only Reference(OnconovaCancerPatient)
 * status = #final
+* effective[x] only dateTime
 * code = $LOINC#LA32823-9 "Lifestyle"
 
 // Initiate slicing of components
@@ -69,3 +70,15 @@ It directly profiles the base FHIR `Observation` resource as this resource is no
 * insert NotUsed(device)    
 * insert NotUsed(referenceRange)
 * insert NotUsed(hasMember)
+
+* obeys o-lif-req-1 and o-lif-req-2
+
+Invariant: o-lif-req-1
+Description: "The subject element is required and must be provided."
+Expression: "subject.exists() and subject.resolve().is(Patient)"
+Severity: #error
+
+Invariant: o-lif-req-2
+Description: "The effectiveDateTime element is required and must be provided."
+Expression: "effectiveDateTime.exists() and effectiveDateTime.hasValue()"
+Severity: #error

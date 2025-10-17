@@ -7,6 +7,9 @@ A profile representing an adverse event experienced by a cancer patient as a res
 
 The profile constrains the base FHIR `AdverseEvent` resource to ensure consistent use of CTCAE codes and grades, and supports linkage to related treatments such as medications, radiotherapy, or surgical procedures documented in Onconova. The profile also provides extensions for recording mitigation strategies, supporting detailed tracking and management of adverse events in cancer patients.
 """
+
+* outcome MS
+
 // Reference Onconova resources
 * subject only Reference(OnconovaCancerPatient)
 * suspectEntity.instance only Reference(OnconovaMedicationAdministration or OnconovaRadiotherapySummary or OnconovaSurgicalProcedure)
@@ -38,31 +41,48 @@ The profile constrains the base FHIR `AdverseEvent` resource to ensure consisten
 * insert NotUsed(contributor)
 
 // Invariants 
-* obeys subject-required and
-    date-required and
-    event-required and
-    grade-required
+* obeys ae-req-1 and
+    ae-req-2 and
+    ae-req-3 and
+    ae-req-4 and
+    ae-req-5 and
+    ae-req-6 and
+    ae-req-7
 
-Invariant: subject-required
+Invariant: ae-req-1
 Description: "The subject element is required and must be provided."
 Expression: "subject.exists() and subject.resolve().is(Patient)"
 Severity: #error
 
-Invariant: date-required
+Invariant: ae-req-2
 Description: "The date element is required and must be provided."
 Expression: "date.exists() and date.hasValue()"
 Severity: #error
 
-Invariant: event-required
+Invariant: ae-req-3
 Description: "The event element is required and must be provided."
 Expression: "event.exists() and event.coding.exists()"
 Severity: #error
 
-Invariant: grade-required
+Invariant: ae-req-4
 Description: "The CTC Grade extension is required and must be provided."
-Expression: "extension($UCUM).exists(valueInteger.hasValue())"
+Expression: "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-ctc-grade').exists()"
 Severity: #error
 
+Invariant: ae-req-5
+Description: "The outcome is required and must be provided."
+Expression: "outcome.exists() and outcome.coding.exists()"
+Severity: #error
+
+Invariant: ae-req-6
+Description: "If suspectedEntity is provided, then at least one instance must exist."
+Expression: "suspectEntity.exists() implies (suspectEntity.count() > 0 and suspectEntity.instance.exists())"
+Severity: #error
+
+Invariant: ae-req-7
+Description: "If adverseEventMitigation extension is provided, then at least one instance must exist."
+Expression: "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation').exists() implies extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation').count() > 0"
+Severity: #error
 
 
 // ============================

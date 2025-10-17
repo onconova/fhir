@@ -9,6 +9,7 @@ It extends the base mCODE [CancerRelatedSurgicalProcedure profile](http://hl7.or
 """
 * status = #completed 
 * subject only Reference(OnconovaCancerPatient)
+* performed[x] only dateTime
 * reasonReference only Reference(OnconovaPrimaryCancerCondition or OnconovaSecondaryCancerCondition)
 
 // Add extension for referencing the therapy line
@@ -32,3 +33,29 @@ It extends the base mCODE [CancerRelatedSurgicalProcedure profile](http://hl7.or
 * insert NotUsed(focalDevice)
 * insert NotUsed(usedReference)
 * insert NotUsed(usedCode)
+
+// Constraints
+* obeys o-sur-req-1 and 
+    o-sur-req-2 and 
+    o-sur-req-3 and 
+    o-sur-req-4
+
+Invariant: o-sur-req-1
+Description: "The subject element is required and must be provided."
+Expression: "subject.exists() and subject.resolve().is(Patient)"
+Severity: #error
+
+Invariant: o-sur-req-2
+Description: "The performedDateTime element is required and must be provided."
+Expression: "performedDateTime.exists() and performedDateTime.hasValue()"
+Severity: #error
+
+Invariant: o-sur-req-3
+Description: "The code element is required and must be provided."
+Expression: "code.exists() and code.coding.exists()"
+Severity: #error
+
+Invariant: o-sur-req-4
+Description: "The treatmentIntent extension is required and must be provided."
+Expression: "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent').exists()"
+Severity: #error

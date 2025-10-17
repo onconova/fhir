@@ -36,6 +36,9 @@ This profile extends the base FHIR `Procedure` resource since there is no equiva
 * insert NotUsed(complicationDetail) 
 * insert NotUsed(reasonCode)
 
+// Constraints
+* obeys o-tub-req-1 and o-tub-req-2
+
 
 Profile: OnconovaMolecularTumorBoardReview
 Parent: OnconovaTumorBoardReview
@@ -59,6 +62,27 @@ A profile representing a specialized molecular tumor board review for a cancer p
 * extension contains MolecularTumorBoardCUPCharacterization named cupCharacterization 0..1 MS
 * extension ^short = "CUP characterization(s)"
 
+// Constraints
+* obeys o-tub-req-1 and o-tub-req-2
+
+//==================
+// Invariants 
+//==================
+
+Invariant: o-tub-req-1
+Description: "The subject element is required and must be provided."
+Expression: "subject.exists() and subject.resolve().is(Patient)"
+Severity: #error
+
+Invariant: o-tub-req-2
+Description: "The performedDateTime element is required and must be provided."
+Expression: "performedDateTime.exists() and performedDateTime.hasValue()"
+Severity: #error
+
+
+//==================
+// Extensions 
+//==================
 
 Extension: TumorBoardSpecialization
 Id: onconova-ext-tumor-board-specialization
@@ -66,10 +90,6 @@ Title: "Tumor Board Specialization"
 Description: "The specialization or focus area of the tumor board conducting the review, such as hematologic malignancies or solid tumors."
 * value[x] only CodeableConcept
 
-
-//==================
-// Extensions 
-//==================
 
 Extension: MolecularTumorBoardTherapeuticRecommendation
 Id: onconova-ext-molecular-tumor-board-therapeutic-recommendation
