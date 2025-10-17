@@ -55,7 +55,7 @@ Severity: #error
 
 Invariant: com-req-3
 Description: "The focus element is required and must be provided."
-Expression: "focus.exists() and focus.resolve().is(OnconovaPrimaryCancerCondition)"
+Expression: "focus.exists() and focus.resolve().is(Condition)"
 Severity: #error
 
 Invariant: com-1

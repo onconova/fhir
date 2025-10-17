@@ -12,6 +12,10 @@ This profile is based on the core FHIR `FamilyMemberHistory` resource rather tha
 * status = #completed
 * deceased[x] only boolean
 
+
+// Reference Onconova resources
+* patient only Reference(OnconovaCancerPatient)
+
 // Slice the condition element to include cancer conditions
 * condition 1..* MS
 * condition ^slicing.discriminator.type = #value
@@ -33,3 +37,21 @@ This profile is based on the core FHIR `FamilyMemberHistory` resource rather tha
 * insert NotUsed(estimatedAge)
 * insert NotUsed(reasonCode)
 * insert NotUsed(reasonReference)
+
+// Constraints
+* obeys o-fam-req-1 and o-fam-req-2 and o-fam-req-3
+
+Invariant: o-fam-req-1
+Description: "The patient element is required and must be provided."
+Expression: "patient.exists() and patient.resolve().is(Patient)"
+Severity: #error
+
+Invariant: o-fam-req-2
+Description: "The date element is required and must be provided."
+Expression: "date.exists() and date.hasValue()"
+Severity: #error
+
+Invariant: o-fam-req-3
+Description: "The relationship element is required and must be provided."
+Expression: "relationship.exists() and relationship.coding.exists()"
+Severity: #error
