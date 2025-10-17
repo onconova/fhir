@@ -41,10 +41,13 @@ The profile constrains the base FHIR `AdverseEvent` resource to ensure consisten
 * insert NotUsed(contributor)
 
 // Invariants 
-* obeys subject-required and
-    date-required and
-    event-required and
-    grade-required
+* obeys ae-req-1 and
+    ae-req-2 and
+    ae-req-3 and
+    ae-req-4 and
+    ae-req-5 and
+    ae-req-6 and
+    ae-req-7
 
 Invariant: ae-req-1
 Description: "The subject element is required and must be provided."
