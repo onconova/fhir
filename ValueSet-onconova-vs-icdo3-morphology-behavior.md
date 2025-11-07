@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-morphology-behavior | *Version*:0.2.0 |
-| Active as of 2025-10-17 | *Computable Name*:ICDO3MorphologyBehavior |
+| Active as of 2025-11-07 | *Computable Name*:ICDO3MorphologyBehavior |
 
  
 A value set of ICD-O-3 morphology behavior codes. 
@@ -56,7 +56,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "ICDO3MorphologyBehavior",
   "title" : "ICD-O-3 Morphology Behavior",
   "status" : "active",
-  "date" : "2025-10-17T13:44:17+00:00",
+  "date" : "2025-11-07T05:59:36+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

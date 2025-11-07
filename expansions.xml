@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="f1770456-b2c4-4a03-9630-421cda548706"/>
+  <id value="3346e1d2-23b7-4711-aafb-effca007c2c5"/>
   <meta>
-    <lastUpdated value="2025-10-17T13:45:38.917+00:00"/>
+    <lastUpdated value="2025-11-07T05:59:36.990+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -126,10 +126,10 @@
         <name value="TNMLymphaticInvasionCategories"/>
         <title value="TNM Lymphatic Invasion Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b4821826-2f4b-45e5-ac3d-834ac6bc5410"/>
-          <timestamp value="2025-10-17T13:48:23+00:00"/>
+          <identifier value="urn:uuid:e6539c9a-2630-4470-b0aa-a1b27b0f8fb8"/>
+          <timestamp value="2025-11-07T06:03:42+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -154,10 +154,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -264,10 +260,10 @@
         <name value="TNMPerineuralInvasionCategories"/>
         <title value="TNM Perineural Invasion Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c7d5ecd9-5115-4b76-94df-7abfcb09c5c0"/>
-          <timestamp value="2025-10-17T13:48:24+00:00"/>
+          <identifier value="urn:uuid:a480b8b8-b05b-4746-b33a-3744a605e9d5"/>
+          <timestamp value="2025-11-07T06:03:42+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -292,10 +288,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -432,13 +424,13 @@
         <name value="TNMResidualTumorCategories"/>
         <title value="TNM Residual Tumor Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:c1a249ce-5380-4a31-92ad-4d4441241f30"/>
-          <timestamp value="2025-10-17T13:48:29+00:00"/>
+          <identifier value="urn:uuid:403ec8c3-33ea-4e42-ae4b-b2bd6f005a83"/>
+          <timestamp value="2025-11-07T06:03:48+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -462,10 +454,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -545,10 +533,10 @@
         <name value="AdjunctiveTherapyRoles"/>
         <title value="Adjunctive Therapy Roles"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:69209081-2720-4b38-b38c-c20b22effaeb"/>
-          <timestamp value="2025-10-17T13:48:33.387Z"/>
+          <identifier value="urn:uuid:28d89fbb-7c91-4146-ad00-ea8598a010c0"/>
+          <timestamp value="2025-11-07T06:03:51.815Z"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -577,10 +565,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
           </parameter>
           <contains>
@@ -627,10 +611,10 @@
         <name value="AdverseEventMitigationCategories"/>
         <title value="Adverse Event Mitigation Categories"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8e3a8ff2-1023-43cc-9030-9aef180b7681"/>
-          <timestamp value="2025-10-17T13:48:34.408Z"/>
+          <identifier value="urn:uuid:87ad90d0-cd13-4fff-bb0e-4e239d57c5d1"/>
+          <timestamp value="2025-11-07T06:03:52.706Z"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -659,10 +643,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
           </parameter>
         </expansion>
@@ -789,10 +769,10 @@
         <name value="AdverseEventMitigationDrugs"/>
         <title value="Adverse Event Mitigation - Drugs"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7139af7f-d4d7-4168-9735-9858c12c04d7"/>
-          <timestamp value="2025-10-17T13:48:35.964Z"/>
+          <identifier value="urn:uuid:98784b33-e41b-44f5-b67a-c05733daca6d"/>
+          <timestamp value="2025-11-07T06:03:54.065Z"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -824,15 +804,7 @@
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
           </parameter>
           <contains>
@@ -939,10 +911,10 @@
         <name value="AdverseEventMitigationManagements"/>
         <title value="Adverse Event Mitigation - Management"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0986c9ea-33af-43fd-b217-b61a829c2c31"/>
-          <timestamp value="2025-10-17T13:48:36+00:00"/>
+          <identifier value="urn:uuid:0e592cd3-351c-4d82-83cc-194916584bf8"/>
+          <timestamp value="2025-11-07T06:03:54+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -967,10 +939,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -1016,6 +984,11 @@
                   <b>Inactive</b>
                 </td>
                 <td>
+                  <b>
+                    <a href="http://hl7.org/fhir/concept-properties#status">status</a>
+                  </b>
+                </td>
+                <td>
                   <b>JSON</b>
                 </td>
                 <td>
@@ -1031,6 +1004,7 @@
                   <a href="http://snomed.info/id/387713003">387713003</a>
                 </td>
                 <td>Surgical procedure (procedure)</td>
+                <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -1053,6 +1027,7 @@
                 </td>
                 <td>Administration of blood product</td>
                 <td/>
+                <td/>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;116762002&quot;, &quot;display&quot;: &quot;Administration of blood product&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -1073,6 +1048,7 @@
                   <a href="http://snomed.info/id/31847002">31847002</a>
                 </td>
                 <td>Hyperthermia treatment</td>
+                <td>inactive</td>
                 <td>inactive</td>
                 <td>
                   <span class="copy-text-inline">
@@ -1095,6 +1071,7 @@
                 </td>
                 <td>Cryotherapy</td>
                 <td/>
+                <td/>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;26782000&quot;, &quot;display&quot;: &quot;Cryotherapy&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -1115,6 +1092,7 @@
                   <a href="http://snomed.info/id/75516001">75516001</a>
                 </td>
                 <td>Psychotherapy</td>
+                <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -1137,6 +1115,7 @@
                 </td>
                 <td>Other</td>
                 <td/>
+                <td/>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;74964007&quot;, &quot;display&quot;: &quot;Other&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -1156,10 +1135,10 @@
         <name value="AdverseEventMitigationProcedures"/>
         <title value="Adverse Event Mitigation - Procedures"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0f1cd708-b7da-4473-9403-4a756bf42f7d"/>
-          <timestamp value="2025-10-17T13:48:38.320Z"/>
+          <identifier value="urn:uuid:5999a3d5-1b52-4283-b57a-f1c53ec497c5"/>
+          <timestamp value="2025-11-07T06:03:56.019Z"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -1191,17 +1170,13 @@
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
             <name value="used-codesystem"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
           </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
-          </parameter>
+          <property>
+            <code value="status"/>
+            <uri value="http://hl7.org/fhir/concept-properties#status"/>
+          </property>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="387713003"/>
@@ -1217,6 +1192,10 @@
             <inactive value="true"/>
             <code value="31847002"/>
             <display value="Hyperthermia treatment"/>
+            <property>
+              <code value="status"/>
+              <valueCode value="inactive"/>
+            </property>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -1337,10 +1316,10 @@
         <name value="AdverseEventMitigationTreatmentAdjustments"/>
         <title value="Adverse Event Mitigation - Treatment Adjustment"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:174efc33-d011-4637-8792-295ac29cc32c"/>
-          <timestamp value="2025-10-17T13:48:38+00:00"/>
+          <identifier value="urn:uuid:4c043dd1-f3b2-4c43-9ead-69c9186263ad"/>
+          <timestamp value="2025-11-07T06:03:56+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1365,10 +1344,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -1610,10 +1585,10 @@
         <name value="CancerImagingMethods"/>
         <title value="Cancer Imaging Methods"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:813994a8-8aba-4f9e-962c-62c6fad57f70"/>
-          <timestamp value="2025-10-17T13:47:56+00:00"/>
+          <identifier value="urn:uuid:3e84c2d4-8651-4fbb-8c3f-b61fdaa1ac15"/>
+          <timestamp value="2025-11-07T06:03:17+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -1638,10 +1613,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -1771,10 +1742,10 @@
         <name value="CausesOfDeath"/>
         <title value="Cause of Death Value Set"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:d1f71530-8b60-439c-8052-2a4eba290dd8"/>
-          <timestamp value="2025-10-17T13:48:40.987Z"/>
+          <identifier value="urn:uuid:2e3d678c-d56e-4090-9d1d-923a42583e06"/>
+          <timestamp value="2025-11-07T06:03:58.503Z"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1806,15 +1777,7 @@
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
-          </parameter>
-          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -1938,10 +1901,10 @@
         <name value="ComorbidityPanels"/>
         <title value="Comorbidity Panels"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4cc1be17-e83e-484f-bbbf-5901ea29f4ed"/>
-          <timestamp value="2025-10-17T13:47:50+00:00"/>
+          <identifier value="urn:uuid:d4b9b607-6272-49ec-b2e1-7bf55cf8c4d7"/>
+          <timestamp value="2025-11-07T06:03:11+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2063,10 +2026,10 @@
         <name value="ExpectedDrugEffects"/>
         <title value="Expected Drug Effects"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b238903d-e80d-4c8b-bdfe-29e2d74c61bd"/>
-          <timestamp value="2025-10-17T13:48:42+00:00"/>
+          <identifier value="urn:uuid:73c93448-5b24-4f55-9d29-50e06721d05e"/>
+          <timestamp value="2025-11-07T06:03:59+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2091,10 +2054,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -20151,10 +20110,10 @@
         <name value="ICD10Conditions"/>
         <title value="ICD-10 Codes"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:80845ac1-c6cf-4bc3-b542-af578ed0e0c3"/>
-          <timestamp value="2025-10-17T13:48:43.665Z"/>
+          <identifier value="urn:uuid:50fcaa58-882f-4268-bb58-c1a12e6998d8"/>
+          <timestamp value="2025-11-07T06:04:00.878Z"/>
           <offset value="0"/>
           <parameter>
             <name value="limitedExpansion"/>
@@ -20178,10 +20137,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
           </parameter>
           <contains>
@@ -25268,15 +25223,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/38266002">38266002</a>
                 </td>
-                <td>Entire body</td>
+                <td>Entire body as a whole</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;38266002&quot;, &quot;display&quot;: &quot;Entire body&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;38266002&quot;, &quot;display&quot;: &quot;Entire body as a whole&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;38266002&quot;&gt;&lt;display value=&quot;Entire body&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;38266002&quot;&gt;&lt;display value=&quot;Entire body as a whole&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -26008,15 +25963,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/54019009">54019009</a>
                 </td>
-                <td>Submandibular gland</td>
+                <td>Submandibular salivary structure</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;54019009&quot;, &quot;display&quot;: &quot;Submandibular gland&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;54019009&quot;, &quot;display&quot;: &quot;Submandibular salivary structure&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;54019009&quot;&gt;&lt;display value=&quot;Submandibular gland&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;54019009&quot;&gt;&lt;display value=&quot;Submandibular salivary structure&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -26128,15 +26083,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/54735007">54735007</a>
                 </td>
-                <td>Sacrum</td>
+                <td>Sacral bone</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;54735007&quot;, &quot;display&quot;: &quot;Sacrum&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;54735007&quot;, &quot;display&quot;: &quot;Sacral bone&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;54735007&quot;&gt;&lt;display value=&quot;Sacrum&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;54735007&quot;&gt;&lt;display value=&quot;Sacral bone&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -26368,15 +26323,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/397364003">397364003</a>
                 </td>
-                <td>Superficial femoral vein</td>
+                <td>Subsartorial vein</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;397364003&quot;, &quot;display&quot;: &quot;Superficial femoral vein&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;397364003&quot;, &quot;display&quot;: &quot;Subsartorial vein&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;397364003&quot;&gt;&lt;display value=&quot;Superficial femoral vein&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;397364003&quot;&gt;&lt;display value=&quot;Subsartorial vein&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -26948,15 +26903,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/110535000">110535000</a>
                 </td>
-                <td>Radius and ulna</td>
+                <td>Radius and ulna (combined site) (body structure)</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;110535000&quot;, &quot;display&quot;: &quot;Radius and ulna&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;110535000&quot;, &quot;display&quot;: &quot;Radius and ulna (combined site) (body structure)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;110535000&quot;&gt;&lt;display value=&quot;Radius and ulna&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;110535000&quot;&gt;&lt;display value=&quot;Radius and ulna (combined site) (body structure)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -27728,15 +27683,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/416319003">416319003</a>
                 </td>
-                <td>Neck, Chest, Abdomen and Pelvis</td>
+                <td>Neck, chest, abdomen, and pelvis</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;416319003&quot;, &quot;display&quot;: &quot;Neck, Chest, Abdomen and Pelvis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;416319003&quot;, &quot;display&quot;: &quot;Neck, chest, abdomen, and pelvis&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;416319003&quot;&gt;&lt;display value=&quot;Neck, Chest, Abdomen and Pelvis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;416319003&quot;&gt;&lt;display value=&quot;Neck, chest, abdomen, and pelvis&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -27848,15 +27803,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/243977002">243977002</a>
                 </td>
-                <td>Morisons pouch</td>
+                <td>Rutherford Morison pouch</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;243977002&quot;, &quot;display&quot;: &quot;Morisons pouch&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;243977002&quot;, &quot;display&quot;: &quot;Rutherford Morison pouch&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;243977002&quot;&gt;&lt;display value=&quot;Morisons pouch&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;243977002&quot;&gt;&lt;display value=&quot;Rutherford Morison pouch&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -28128,15 +28083,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/52612000">52612000</a>
                 </td>
-                <td>Lumbar region</td>
+                <td>Lumbar region back structure</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;52612000&quot;, &quot;display&quot;: &quot;Lumbar region&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;52612000&quot;, &quot;display&quot;: &quot;Lumbar region back structure&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;52612000&quot;&gt;&lt;display value=&quot;Lumbar region&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;52612000&quot;&gt;&lt;display value=&quot;Lumbar region back structure&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -29068,15 +29023,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/774007">774007</a>
                 </td>
-                <td>Head and Neck</td>
+                <td>Head and neck structure</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;774007&quot;, &quot;display&quot;: &quot;Head and Neck&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;774007&quot;, &quot;display&quot;: &quot;Head and neck structure&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;774007&quot;&gt;&lt;display value=&quot;Head and Neck&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;774007&quot;&gt;&lt;display value=&quot;Head and neck structure&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -30108,15 +30063,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/64688005">64688005</a>
                 </td>
-                <td>Coccyx</td>
+                <td>Os coccyx</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;64688005&quot;, &quot;display&quot;: &quot;Coccyx&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;64688005&quot;, &quot;display&quot;: &quot;Os coccyx&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;64688005&quot;&gt;&lt;display value=&quot;Coccyx&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;64688005&quot;&gt;&lt;display value=&quot;Os coccyx&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -31248,10 +31203,10 @@
         <name value="ObservationBodySites"/>
         <title value="Observation Body Sites Value Set"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:f0e191df-20a0-4fcd-8fc3-0f2b6cffbf29"/>
-          <timestamp value="2025-10-17T13:47:55+00:00"/>
+          <identifier value="urn:uuid:bdaf1451-f8b9-4d50-b08d-ed04d538e3e0"/>
+          <timestamp value="2025-11-07T06:03:16+00:00"/>
           <total value="301"/>
           <offset value="0"/>
           <parameter>
@@ -31278,10 +31233,6 @@
             <name value="used-codesystem"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="13881006"/>
@@ -31295,7 +31246,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="38266002"/>
-            <display value="Entire body"/>
+            <display value="Entire body as a whole"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -31480,7 +31431,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="54019009"/>
-            <display value="Submandibular gland"/>
+            <display value="Submandibular salivary structure"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -31510,7 +31461,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="54735007"/>
-            <display value="Sacrum"/>
+            <display value="Sacral bone"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -31570,7 +31521,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="397364003"/>
-            <display value="Superficial femoral vein"/>
+            <display value="Subsartorial vein"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -31715,7 +31666,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="110535000"/>
-            <display value="Radius and ulna"/>
+            <display value="Radius and ulna (combined site) (body structure)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -31910,7 +31861,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="416319003"/>
-            <display value="Neck, Chest, Abdomen and Pelvis"/>
+            <display value="Neck, chest, abdomen, and pelvis"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -31940,7 +31891,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="243977002"/>
-            <display value="Morisons pouch"/>
+            <display value="Rutherford Morison pouch"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -32010,7 +31961,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="52612000"/>
-            <display value="Lumbar region"/>
+            <display value="Lumbar region back structure"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -32245,7 +32196,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="774007"/>
-            <display value="Head and Neck"/>
+            <display value="Head and neck structure"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -32505,7 +32456,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="64688005"/>
-            <display value="Coccyx"/>
+            <display value="Os coccyx"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -33251,10 +33202,10 @@
         <name value="RecreationalDrugs"/>
         <title value="Recreational Drugs"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:29c400df-f5c4-4446-9647-da13d54599a3"/>
-          <timestamp value="2025-10-17T13:47:58+00:00"/>
+          <identifier value="urn:uuid:a888bec9-dc88-4b98-96f0-891ca2cda8db"/>
+          <timestamp value="2025-11-07T06:03:18+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -33279,10 +33230,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -33474,10 +33421,10 @@
         <name value="RecurrenceTypeVS"/>
         <title value="Recurrence Type Value Set"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:adfb7491-6a75-4d18-a0cd-3f8921e52882"/>
-          <timestamp value="2025-10-17T13:48:46+00:00"/>
+          <identifier value="urn:uuid:74d83e5e-f050-4228-9f34-bd362d713990"/>
+          <timestamp value="2025-11-07T06:04:02+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -33502,10 +33449,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -33682,10 +33625,10 @@
         <name value="SmokingStatus"/>
         <title value="Smoking status"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8cbf5dc4-c8df-469b-9c8f-a2da3ff3608e"/>
-          <timestamp value="2025-10-17T13:47:56+00:00"/>
+          <identifier value="urn:uuid:44fa2e37-9ef8-4def-8f76-76f9df783225"/>
+          <timestamp value="2025-11-07T06:03:17+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -33710,10 +33653,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -35081,13 +35020,13 @@
         <name value="TNMDistantMetastasisCategories"/>
         <title value="TNM Distant Metastasis Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:fcfe9f68-7f14-4d64-8f82-2590401cac02"/>
-          <timestamp value="2025-10-17T13:48:20+00:00"/>
+          <identifier value="urn:uuid:a89ba5c8-dfad-4b77-bf1d-f19f0bc4a8d6"/>
+          <timestamp value="2025-11-07T06:03:39+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -35115,10 +35054,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <parameter>
@@ -35669,10 +35604,10 @@
         <name value="TNMGradeCategories"/>
         <title value="TNM Grade Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c3bc707e-8855-4c48-81e8-1b39bbb430c2"/>
-          <timestamp value="2025-10-17T13:48:22+00:00"/>
+          <identifier value="urn:uuid:7c80f00b-849c-4b9c-9a18-48ed910abd9b"/>
+          <timestamp value="2025-11-07T06:03:41+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -35697,10 +35632,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -35852,10 +35783,10 @@
         <name value="TNMGradeCategoryMethods"/>
         <title value="TNM Grade Category Methods Value Set"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9e0ff68b-4e22-4357-b062-61f2be02deb7"/>
-          <timestamp value="2025-10-17T13:48:22+00:00"/>
+          <identifier value="urn:uuid:d8b2178b-ac16-425c-b2dc-a1563e985604"/>
+          <timestamp value="2025-11-07T06:03:41+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -35880,10 +35811,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -39896,13 +39823,13 @@
         <name value="TNMPrimaryTumorCategories"/>
         <title value="TNM Primary Tumor Categories"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:fa731eea-ac27-4c63-a244-a74d306adcb7"/>
-          <timestamp value="2025-10-17T13:48:24+00:00"/>
+          <identifier value="urn:uuid:52ad810a-6554-4fd9-8e3c-e3a69ce99ff1"/>
+          <timestamp value="2025-11-07T06:03:43+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -39930,10 +39857,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <parameter>
@@ -42940,13 +42863,13 @@
         <name value="TNMRegionalNodesCategories"/>
         <title value="TNM Regional Nodes Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:c9035de6-92b2-4497-912a-1d0e717afdc2"/>
-          <timestamp value="2025-10-17T13:48:27+00:00"/>
+          <identifier value="urn:uuid:25612cc0-6c8b-423e-82ff-f579807434e8"/>
+          <timestamp value="2025-11-07T06:03:45+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -42974,10 +42897,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <parameter>
@@ -43618,10 +43537,10 @@
         <name value="TNMSerumTumorMarkerLevelCategories"/>
         <title value="TNM Serum Tumor Marker Level Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:30a60ef9-de13-445a-8a55-902e78541048"/>
-          <timestamp value="2025-10-17T13:48:19+00:00"/>
+          <identifier value="urn:uuid:74c0c0d6-f2b8-4a8c-9306-1f4f9cc70a55"/>
+          <timestamp value="2025-11-07T06:03:38+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -43646,10 +43565,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -43801,10 +43716,10 @@
         <name value="TNMVenousInvasionCategories"/>
         <title value="TNM Venous Invasion Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:f2fbf637-1c31-4b23-bf77-d2a609a3224e"/>
-          <timestamp value="2025-10-17T13:48:31+00:00"/>
+          <identifier value="urn:uuid:d91d295f-0d7a-457d-8f71-ce2596e0fdc7"/>
+          <timestamp value="2025-11-07T06:03:50+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -43829,10 +43744,6 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <contains>
@@ -44329,10 +44240,10 @@
         <name value="OnconovaTumorBoardRecommendations"/>
         <title value="Tumor Board Recommendations"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:1c686212-6785-485f-a006-90e1b33eff4a"/>
-          <timestamp value="2025-10-17T13:48:47+00:00"/>
+          <identifier value="urn:uuid:0c780f1b-2e80-414d-afcf-660c1881f9a8"/>
+          <timestamp value="2025-11-07T06:04:03+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -44360,19 +44271,11 @@
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
-          </parameter>
-          <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.81"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://loinc.org|2.81"/>
           </parameter>
           <contains>
@@ -45364,10 +45267,10 @@
         <name value="TumorMarkerAnalytes"/>
         <title value="Tumor Marker Analytes"/>
         <status value="active"/>
-        <date value="2025-10-17T13:44:17+00:00"/>
+        <date value="2025-11-07T05:59:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a7e42f21-5be6-4806-8e9a-e7edabd59d65"/>
-          <timestamp value="2025-10-17T13:48:49.262Z"/>
+          <identifier value="urn:uuid:c3a74d25-b0a7-4294-bda6-81bc2d979366"/>
+          <timestamp value="2025-11-07T06:04:05.003Z"/>
           <total value="42"/>
           <offset value="0"/>
           <parameter>
@@ -45399,15 +45302,7 @@
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
-          </parameter>
-          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.81"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
             <valueUri value="http://loinc.org|2.81"/>
           </parameter>
           <contains>

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-exposure-agents | *Version*:0.2.0 |
-| Active as of 2025-10-17 | *Computable Name*:ExposureAgents |
+| Active as of 2025-11-07 | *Computable Name*:ExposureAgents |
 
  
 Agents to which a patient may have been exposed. 
@@ -54,7 +54,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "ExposureAgents",
   "title" : "Exposure Agents",
   "status" : "active",
-  "date" : "2025-10-17T13:44:17+00:00",
+  "date" : "2025-11-07T05:59:36+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

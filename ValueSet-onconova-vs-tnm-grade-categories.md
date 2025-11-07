@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-grade-categories | *Version*:0.2.0 |
-| Active as of 2025-10-17 | *Computable Name*:TNMGradeCategories |
+| Active as of 2025-11-07 | *Computable Name*:TNMGradeCategories |
 
  
 TNM Grade Categories Value Set 
@@ -54,7 +54,7 @@ This value set contains 9 concepts
   "name" : "TNMGradeCategories",
   "title" : "TNM Grade Categories Value Set",
   "status" : "active",
-  "date" : "2025-10-17T13:44:17+00:00",
+  "date" : "2025-11-07T05:59:36+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

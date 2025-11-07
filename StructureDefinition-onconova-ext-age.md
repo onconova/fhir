@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age | *Version*:0.2.0 |
-| Active as of 2025-10-17 | *Computable Name*:AgeExtension |
+| Active as of 2025-11-07 | *Computable Name*:AgeExtension |
 
 The approximate age of the patient.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-age.csv
   "name" : "AgeExtension",
   "title" : "Age",
   "status" : "active",
-  "date" : "2025-10-17T13:44:17+00:00",
+  "date" : "2025-11-07T05:59:36+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

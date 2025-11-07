@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line | *Version*:0.2.0 |
-| Active as of 2025-10-17 | *Computable Name*:OnconovaTherapyLine |
+| Active as of 2025-11-07 | *Computable Name*:OnconovaTherapyLine |
 
  
 A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
   "name" : "OnconovaTherapyLine",
   "title" : "Therapy Line Profile",
   "status" : "active",
-  "date" : "2025-10-17T13:44:17+00:00",
+  "date" : "2025-11-07T05:59:36+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
