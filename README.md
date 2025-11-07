@@ -21,13 +21,13 @@ Before you begin, ensure you have the following installed:
 
 1. Clone this repository:
 	```shell
-	git clone https://github.com/onconova/onconova-fhir-ig.git
+	git clone https://github.com/onconova/fhir.git onconova-fhir-ig
 	cd onconova-fhir-ig
 	```
 2. Install FHIR SUSHI and IG Publisher:
 	```shell
 	npm install -g fsh-sushi
-	./fhir/ig/_updatePublisher.sh
+	source _updatePublisher.sh -y
 	```
 
 ## Build IG
