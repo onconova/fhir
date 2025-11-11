@@ -83,7 +83,7 @@ Extension: OverallSurvival
 Id: onconova-ext-overall-survival
 Title: "Overall Survival"
 Description: "The duration of time from either the date of diagnosis or the start of treatment for a disease, such as cancer, that patients diagnosed with the disease are still alive. In a clinical trial, measuring the overall survival is one way to see how well a new treatment works."
-* value[x] only decimal 
+* value[x] only duration 
 
 // Extension: Age
 // Captures the approximate age of the patient
