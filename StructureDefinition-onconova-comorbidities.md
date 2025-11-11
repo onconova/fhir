@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-comorbidities | *Version*:0.2.0 |
-| Active as of 2025-11-07 | *Computable Name*:OnconovaComorbidities |
+| Active as of 2025-11-11 | *Computable Name*:OnconovaComorbidities |
 
  
 A profile representing comorbidities for a cancer patient, i.e. other health conditions that exist alongside the primary cancer diagnosis. Supports existing comorbidity panels such as the Charlson Comorbidity Index (CCI) and Elixhauser Comorbidity Index (ECI) with comorbidity indexes. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-comorbiditi
   "name" : "OnconovaComorbidities",
   "title" : "Comorbidities Profile",
   "status" : "active",
-  "date" : "2025-11-07T05:59:36+00:00",
+  "date" : "2025-11-11T12:30:26+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

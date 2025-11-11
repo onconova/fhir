@@ -10,7 +10,7 @@
   "name" : "OnconovaCancerPatient",
   "title" : "Cancer Patient Profile",
   "status" : "active",
-  "date" : "2025-11-07T05:59:36+00:00",
+  "date" : "2025-11-11T12:30:26+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -136,7 +136,7 @@
         "key" : "o-pat-req-3",
         "severity" : "error",
         "human" : "The gender element is required and must be provided",
-        "expression" : "gender.exists() and gender.coding.exists()",
+        "expression" : "gender.exists()",
         "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
       },
       {
@@ -5013,7 +5013,7 @@
         "key" : "o-pat-req-3",
         "severity" : "error",
         "human" : "The gender element is required and must be provided",
-        "expression" : "gender.exists() and gender.coding.exists()",
+        "expression" : "gender.exists()",
         "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
       },
       {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-unknown-entry | *Version*:0.2.0 |
-| Active as of 2025-11-07 | *Computable Name*:UnknownEntry |
+| Active as of 2025-11-11 | *Computable Name*:UnknownEntry |
 
 Value is not collected and cannot be provided by Onconova.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-unknown
   "name" : "UnknownEntry",
   "title" : "Unknown Entry",
   "status" : "active",
-  "date" : "2025-11-07T05:59:36+00:00",
+  "date" : "2025-11-11T12:30:26+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

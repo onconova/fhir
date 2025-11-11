@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-marker-analytes | *Version*:0.2.0 |
-| Active as of 2025-11-07 | *Computable Name*:TumorMarkerAnalytes |
+| Active as of 2025-11-11 | *Computable Name*:TumorMarkerAnalytes |
 
  
 Codes representing analytes for tumor markers. 
@@ -54,7 +54,7 @@ This value set contains 42 concepts
   "name" : "TumorMarkerAnalytes",
   "title" : "Tumor Marker Analytes",
   "status" : "active",
-  "date" : "2025-11-07T05:59:36+00:00",
+  "date" : "2025-11-11T12:30:26+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

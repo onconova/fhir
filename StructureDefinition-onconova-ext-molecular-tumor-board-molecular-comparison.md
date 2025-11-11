@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-molecular-comparison | *Version*:0.2.0 |
-| Active as of 2025-11-07 | *Computable Name*:MolecularTumorBoardMolecularComparison |
+| Active as of 2025-11-11 | *Computable Name*:MolecularTumorBoardMolecularComparison |
 
 A comparison of molecular findings discussed during the molecular tumor board review.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
   "name" : "MolecularTumorBoardMolecularComparison",
   "title" : "Molecular Tumor Board Molecular Comparison",
   "status" : "active",
-  "date" : "2025-11-07T05:59:36+00:00",
+  "date" : "2025-11-11T12:30:26+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

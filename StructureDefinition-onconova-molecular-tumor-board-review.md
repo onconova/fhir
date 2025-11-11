@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review | *Version*:0.2.0 |
-| Active as of 2025-11-07 | *Computable Name*:OnconovaMolecularTumorBoardReview |
+| Active as of 2025-11-11 | *Computable Name*:OnconovaMolecularTumorBoardReview |
 
  
 A profile representing a specialized molecular tumor board review for a cancer patient. This profile extends the`OnconovaTumorBoardReview`profile to specify that the review is focused on molecular diagnostics and recommendations. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
   "name" : "OnconovaMolecularTumorBoardReview",
   "title" : "Molecular Tumor Board Review",
   "status" : "active",
-  "date" : "2025-11-07T05:59:36+00:00",
+  "date" : "2025-11-11T12:30:26+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
