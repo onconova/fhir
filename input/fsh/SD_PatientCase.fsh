@@ -152,7 +152,7 @@ Severity: #error
 
 Invariant: o-pat-req-3
 Description: "The gender element is required and must be provided"
-Expression: "gender.exists() and gender.coding.exists()"
+Expression: "gender.exists()"
 Severity: #error
 
 Invariant: o-pat-req-4
