@@ -35,7 +35,9 @@ It constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/Str
 * deceased[x] only dateTime
 
 // Add anonymized entry extension to name
-* name.extension contains AnonymizedEntry named anonymizedEntry 1..* // Allow multiple anonymized entry extensions
+* name.extension contains anonymizedEntry
+* name.extension[anonymizedEntry].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.extension[anonymizedEntry].valueCode = #masked
 
 // Add custom extensions for clinical data
 * extension contains
@@ -62,13 +64,6 @@ It constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/Str
 //==================
 // Extensions
 //==================
-
-Extension: AnonymizedEntry
-Id: onconova-ext-anonymized-entry 
-Title: "Anonymized Entry"
-Description: "Value not provided to maintain the anonymization of the patient's data and conform to data protection regulations for research data."
-* value[x] only code
-* value[x] = #masked
 
 Extension: UnknownEntry
 Id: onconova-ext-unknown-entry
