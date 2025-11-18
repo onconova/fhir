@@ -1,3 +1,5 @@
+Alias: $DataAbsentReason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
+
 Profile: OnconovaCancerPatient
 Parent: CancerPatient
 Id: onconova-cancer-patient
@@ -35,10 +37,13 @@ It constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/Str
 * deceased[x] only dateTime
 
 // Add anonymized entry extension to name
-* name.extension contains AnonymizedEntry named anonymizedEntry 1..* // Allow multiple anonymized entry extensions
+* name.extension contains $DataAbsentReason named anonymizedEntry 1..*
+* name.extension[anonymizedEntry].valueCode = #masked
 
 // Add custom extensions for clinical data
 * extension contains
+    VitalStatus named vitalStatus 0..1 and 
+    ConsentStatus named consentStatus 0..1 and 
     OverallSurvival named overallSurvival 0..1 and
     AgeExtension named age 0..1 and
     AgeAtDiagnosis named ageAtDiagnosis 0..1 and
@@ -48,6 +53,7 @@ It constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/Str
     EndOfRecords named endOfRecords 0..1
 
 // Annotate unused elements for this profile
+* insert NotUsed(name) // No name information
 * insert NotUsed(telecom) // No telecom information
 * insert NotUsed(address) // No address information
 * insert NotUsed(contact) // No contact information
@@ -62,13 +68,6 @@ It constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/Str
 //==================
 // Extensions
 //==================
-
-Extension: AnonymizedEntry
-Id: onconova-ext-anonymized-entry 
-Title: "Anonymized Entry"
-Description: "Value not provided to maintain the anonymization of the patient's data and conform to data protection regulations for research data."
-* value[x] only code
-* value[x] = #masked
 
 Extension: UnknownEntry
 Id: onconova-ext-unknown-entry
@@ -101,6 +100,23 @@ Title: "End of Records"
 Description: "Indicates the last known record date of a patient."
 * value[x] only date
 
+// Extension: ConsentStatus
+// Captures the last known consent status of the patient
+Extension: ConsentStatus
+Id: onconova-ext-consent-status
+Title: "Consent status"
+Description: "The status of whether the patient has given or revoked consent for reasearch use."
+* value[x] only code 
+* valueCode from ConsentStatus (required)
+
+// Extension: VitalStatus
+// Captures the last known vital status of the patient
+Extension: VitalStatus
+Id: onconova-ext-vital-status
+Title: "Vital status"
+Description: "The status of whether the patient is alive or deceased or unknown."
+* value[x] only CodeableConcept 
+* valueCodeableConcept from VitalStatus (required)
 
 // Extension: AgeAtDiagnosis
 // Captures the approximate age of the patient at diagnosis
