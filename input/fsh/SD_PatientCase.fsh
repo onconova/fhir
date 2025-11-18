@@ -41,6 +41,8 @@ It constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/Str
 
 // Add custom extensions for clinical data
 * extension contains
+    VitalStatus named vitalStatus 0..1 and 
+    ConsentStatus named consentStatus 0..1 and 
     OverallSurvival named overallSurvival 0..1 and
     AgeExtension named age 0..1 and
     AgeAtDiagnosis named ageAtDiagnosis 0..1 and
@@ -96,6 +98,23 @@ Title: "End of Records"
 Description: "Indicates the last known record date of a patient."
 * value[x] only date
 
+// Extension: ConsentStatus
+// Captures the last known consent status of the patient
+Extension: ConsentStatus
+Id: onconova-ext-consent-status
+Title: "Consent status"
+Description: "The status of whether the patient has given or revoked consent for reasearch use."
+* value[x] only code 
+* valueCode from ConsentStatus (required)
+
+// Extension: VitalStatus
+// Captures the last known vital status of the patient
+Extension: VitalStatus
+Id: onconova-ext-vital-status
+Title: "Vital status"
+Description: "The status of whether the patient is alive or deceased or unknown."
+* value[x] only CodeableConcept 
+* valueCodeableConcept from VitalStatus (required)
 
 // Extension: AgeAtDiagnosis
 // Captures the approximate age of the patient at diagnosis
