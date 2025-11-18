@@ -35,7 +35,7 @@ It constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/Str
 * deceased[x] only dateTime
 
 // Add anonymized entry extension to name
-* name.extension contains anonymizedEntry
+* name.extension contains anonymizedEntry 1..*
 * name.extension[anonymizedEntry].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * name.extension[anonymizedEntry].valueCode = #masked
 
