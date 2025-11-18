@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient | *Version*:0.2.0 |
-| Active as of 2025-11-11 | *Computable Name*:OnconovaCancerPatient |
+| Active as of 2025-11-18 | *Computable Name*:OnconovaCancerPatient |
 
  
 A profile representing a cancer patient with specific extensions and constraints for the Onconova use case. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-pati
   "name" : "OnconovaCancerPatient",
   "title" : "Cancer Patient Profile",
   "status" : "active",
-  "date" : "2025-11-11T12:47:38+00:00",
+  "date" : "2025-11-18T09:06:42+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -123,6 +123,36 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-pati
             "human" : "The birthDate element is required and must be provided",
             "expression" : "birthDate.exists() and birthDate.hasValue()",
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
+          }
+        ]
+      },
+      {
+        "id" : "Patient.extension:vitalStatus",
+        "path" : "Patient.extension",
+        "sliceName" : "vitalStatus",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status|0.2.0"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Patient.extension:consentStatus",
+        "path" : "Patient.extension",
+        "sliceName" : "consentStatus",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-consent-status|0.2.0"
+            ]
           }
         ]
       },
@@ -300,6 +330,12 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-pati
         "short" : "Clinical center or institution assigning the identifier"
       },
       {
+        "id" : "Patient.name",
+        "path" : "Patient.name",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
         "id" : "Patient.name.extension",
         "path" : "Patient.name.extension",
         "min" : 1
@@ -314,10 +350,15 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-pati
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry|0.2.0"
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0"
             ]
           }
         ]
+      },
+      {
+        "id" : "Patient.name.extension:anonymizedEntry.value[x]",
+        "path" : "Patient.name.extension.value[x]",
+        "patternCode" : "masked"
       },
       {
         "id" : "Patient.telecom",

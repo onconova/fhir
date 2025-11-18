@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "onconova-cs-consent-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem onconova-cs-consent-status</b></p><a name=\"onconova-cs-consent-status\"> </a><a name=\"hconconova-cs-consent-status\"> </a><p>This  code system <code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">valid<a name=\"onconova-cs-consent-status-valid\"> </a></td><td>Valid</td></tr><tr><td style=\"white-space:nowrap\">revoked<a name=\"onconova-cs-consent-status-revoked\"> </a></td><td>Revoked</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"onconova-cs-consent-status-unknown\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url" : "http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status",
+  "version" : "0.2.0",
+  "name" : "ConsentStatusCodeSystem",
+  "title" : "Consent Status Code System",
+  "status" : "active",
+  "date" : "2025-11-18T09:06:42+00:00",
+  "publisher" : "Onconova",
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
+  "description" : "A code system for consent status relevant to Onconova patients.",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "valid",
+    "display" : "Valid"
+  },
+  {
+    "code" : "revoked",
+    "display" : "Revoked"
+  },
+  {
+    "code" : "unknown",
+    "display" : "Unknown"
+  }]
+}

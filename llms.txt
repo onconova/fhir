@@ -10,6 +10,7 @@
 ### CodeSystems
 
 * [Comorbidity Panels Code System](CodeSystem-onconova-cs-comorbidity-panels.md)
+* [Consent Status Code System](CodeSystem-onconova-cs-consent-status.md)
 * [To Be Determined Codes](CodeSystem-onconova-cs-tbd.md)
 
 ### ValueSets
@@ -29,6 +30,7 @@
 * [Risk Assessment Values](ValueSet-onconova-vs-cancer-risk-assessment-values.md)
 * [Cause of Death Value Set](ValueSet-onconova-vs-causes-of-death.md)
 * [Comorbidity Panels](ValueSet-onconova-vs-comorbidity-panels.md)
+* [Consent Status Value Set](ValueSet-onconova-vs-consent-status.md)
 * [CTC Adverse Events](ValueSet-onconova-vs-ctc-adverse-events.md)
 * [Expected Drug Effects](ValueSet-onconova-vs-expected-drug-effects.md)
 * [Exposure Agents](ValueSet-onconova-vs-exposure-agents.md)
@@ -49,6 +51,7 @@
 * [Treatment Termination Reasons](ValueSet-onconova-vs-treatment-termination-reasons.md)
 * [Tumor Board Recommendations](ValueSet-onconova-vs-tumor-board-recommendations.md)
 * [Tumor Marker Analytes](ValueSet-onconova-vs-tumor-marker-analytes.md)
+* [Vital Status Value Set](ValueSet-onconova-vs-vital-status.md)
 
 ### Resource Profiles
 
@@ -96,11 +99,11 @@
 * [Adverse Event Mitigation](StructureDefinition-onconova-ext-adverse-event-mitigation.md)
 * [Age at Diagnosis](StructureDefinition-onconova-ext-age-at-diagnosis.md)
 * [Age](StructureDefinition-onconova-ext-age.md)
-* [Anonymized Entry](StructureDefinition-onconova-ext-anonymized-entry.md)
 * [Cancer Morphology](StructureDefinition-onconova-ext-cancer-morphology.md)
 * [Cancer Topography](StructureDefinition-onconova-ext-cancer-topography.md)
 * [Cause of Death](StructureDefinition-onconova-ext-cause-of-death.md)
 * [Combined With](StructureDefinition-onconova-ext-combined-with.md)
+* [Consent status](StructureDefinition-onconova-ext-consent-status.md)
 * [Contributors](StructureDefinition-onconova-ext-contributors.md)
 * [CTCAE Grade](StructureDefinition-onconova-ext-ctc-grade.md)
 * [Cycles](StructureDefinition-onconova-ext-cycles.md)
@@ -125,6 +128,7 @@
 * [Tumor Board Specialization](StructureDefinition-onconova-ext-tumor-board-specialization.md)
 * [Tumor Marker Analyte](StructureDefinition-onconova-ext-tumor-marker-analyte.md)
 * [Unknown Entry](StructureDefinition-onconova-ext-unknown-entry.md)
+* [Vital status](StructureDefinition-onconova-ext-vital-status.md)
 
 ### CapabilityStatements
 

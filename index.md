@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir | *Version*:0.2.0 |
-| Active as of 2025-11-11 | *Computable Name*:Onconova |
+| Active as of 2025-11-18 | *Computable Name*:Onconova |
 
 **Onconova** is an open-source precision oncology platform focused on enabling advanced cancer research. The FHIR interface exposes key resources, profiles, and value sets to facilitate standardized data exchange and integration with EHRs, registries, and analytics platforms.
 
@@ -33,7 +33,7 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-11T12:47:38+00:00",
+  "date" : "2025-11-18T09:06:42+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -61,7 +61,7 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "6.5.0"
+      "version" : "7.0.0"
     },
     {
       "id" : "hl7ext",
@@ -1132,20 +1132,6 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-anonymized-entry"
-        },
-        "name" : "Anonymized Entry",
-        "description" : "Value not provided to maintain the anonymization of the patient's data and conform to data protection regulations for research data.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -1350,6 +1336,48 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
         },
         "name" : "Comorbidity Panels Code System",
         "description" : "A code system for comorbidity panels relevant to cancer patients.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-consent-status"
+        },
+        "name" : "Consent status",
+        "description" : "The status of whether the patient has given or revoked consent for reasearch use.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/onconova-cs-consent-status"
+        },
+        "name" : "Consent Status Code System",
+        "description" : "A code system for consent status relevant to Onconova patients.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onconova-vs-consent-status"
+        },
+        "name" : "Consent Status Value Set",
+        "description" : "The consent status of a patient",
         "exampleBoolean" : false
       },
       {
@@ -2470,6 +2498,34 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
         },
         "name" : "Venous Invasion Category",
         "description" : "A profile representing the venous invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-vital-status"
+        },
+        "name" : "Vital status",
+        "description" : "The status of whether the patient is alive or deceased or unknown.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onconova-vs-vital-status"
+        },
+        "name" : "Vital Status Value Set",
+        "description" : "The vital status of a patient",
         "exampleBoolean" : false
       }
     ],

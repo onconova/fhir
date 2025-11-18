@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker | *Version*:0.2.0 |
-| Active as of 2025-11-11 | *Computable Name*:OnconovaTumorMarker |
+| Active as of 2025-11-18 | *Computable Name*:OnconovaTumorMarker |
 
  
 A profile representing a tumor marker observation for a cancer patient, including the type of tumor marker and its value. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
   "name" : "OnconovaTumorMarker",
   "title" : "Tumor Marker Profile",
   "status" : "active",
-  "date" : "2025-11-11T12:47:38+00:00",
+  "date" : "2025-11-18T09:06:42+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

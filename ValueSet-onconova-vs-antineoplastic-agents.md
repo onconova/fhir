@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents | *Version*:0.2.0 |
-| Active as of 2025-11-11 | *Computable Name*:AntineoplasticAgents |
+| Active as of 2025-11-18 | *Computable Name*:AntineoplasticAgents |
 
  
 A value set of antineoplastic agents. 
@@ -21,7 +21,7 @@ A value set of antineoplastic agents.
 
 ### Logical Definition (CLD)
 
-* Include codes from[`http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl`](http://terminology.hl7.org/6.5.0/CodeSystem-v3-nciThesaurus.html)version Not Stated (use latest from terminology server) where Concept_In_Subset = C128784
+* Include codes from[`http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl`](http://terminology.hl7.org/6.2.0/CodeSystem-v3-nciThesaurus.html)version Not Stated (use latest from terminology server) where Concept_In_Subset = C128784
 
  
 
@@ -55,7 +55,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "AntineoplasticAgents",
   "title" : "Antineoplastic Agents",
   "status" : "active",
-  "date" : "2025-11-11T12:47:38+00:00",
+  "date" : "2025-11-18T09:06:42+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

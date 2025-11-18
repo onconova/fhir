@@ -93,13 +93,6 @@
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry",
-      "title": "Anonymized Entry",
-      "types": [
-        "code"
-      ]
-    },
-    {
       "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-morphology",
       "title": "Cancer Morphology",
       "types": [
@@ -125,6 +118,13 @@
       "title": "Combined With",
       "types": [
         "Reference"
+      ]
+    },
+    {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-consent-status",
+      "title": "Consent status",
+      "types": [
+        "code"
       ]
     },
     {
@@ -452,6 +452,13 @@
       "types": [
         "code"
       ]
+    },
+    {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status",
+      "title": "Vital status",
+      "types": [
+        "CodeableConcept"
+      ]
     }
   ],
   "profiles": {
@@ -528,6 +535,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/condition-related|5.2.0": [
       "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0": [
+      "Patient.name"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -656,9 +666,6 @@
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age|0.2.0": [
       "Patient"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry|0.2.0": [
-      "Patient.name"
-    ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-morphology|0.2.0": [
       "FamilyMemberHistory.condition"
     ],
@@ -670,6 +677,9 @@
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with|0.2.0": [
       "MedicationAdministration"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-consent-status|0.2.0": [
+      "Patient"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-contributors|0.2.0": [
       "Patient"
@@ -736,6 +746,9 @@
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte|0.2.0": [
       "Observation"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status|0.2.0": [
+      "Patient"
     ]
   }
 }

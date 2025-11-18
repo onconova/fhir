@@ -14,6 +14,13 @@
     "name" : "ComorbidityPanelsSystem"
   },
   {
+    "id" : "onconova-cs-consent-status",
+    "type" : "CodeSystem",
+    "url" : "http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status",
+    "version" : "0.2.0",
+    "name" : "ConsentStatusCodeSystem"
+  },
+  {
     "id" : "onconova-cs-tbd",
     "type" : "CodeSystem",
     "url" : "http://onconova.github.io/fhir/CodeSystem/onconova-cs-tbd",
@@ -126,13 +133,6 @@
     "name" : "AgeAtDiagnosis"
   },
   {
-    "id" : "onconova-ext-anonymized-entry",
-    "type" : "StructureDefinition",
-    "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry",
-    "version" : "0.2.0",
-    "name" : "AnonymizedEntry"
-  },
-  {
     "id" : "onconova-ext-cancer-morphology",
     "type" : "StructureDefinition",
     "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-morphology",
@@ -159,6 +159,13 @@
     "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with",
     "version" : "0.2.0",
     "name" : "CombinedWith"
+  },
+  {
+    "id" : "onconova-ext-consent-status",
+    "type" : "StructureDefinition",
+    "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-consent-status",
+    "version" : "0.2.0",
+    "name" : "ConsentStatus"
   },
   {
     "id" : "onconova-ext-contributors",
@@ -327,6 +334,13 @@
     "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-unknown-entry",
     "version" : "0.2.0",
     "name" : "UnknownEntry"
+  },
+  {
+    "id" : "onconova-ext-vital-status",
+    "type" : "StructureDefinition",
+    "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status",
+    "version" : "0.2.0",
+    "name" : "VitalStatus"
   },
   {
     "id" : "onconova-genomic-variant",
@@ -623,6 +637,13 @@
     "name" : "ComorbidityPanels"
   },
   {
+    "id" : "onconova-vs-consent-status",
+    "type" : "ValueSet",
+    "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-consent-status",
+    "version" : "0.2.0",
+    "name" : "ConsentStatus"
+  },
+  {
     "id" : "onconova-vs-ctc-adverse-events",
     "type" : "ValueSet",
     "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-ctc-adverse-events",
@@ -761,5 +782,12 @@
     "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-marker-analytes",
     "version" : "0.2.0",
     "name" : "TumorMarkerAnalytes"
+  },
+  {
+    "id" : "onconova-vs-vital-status",
+    "type" : "ValueSet",
+    "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-vital-status",
+    "version" : "0.2.0",
+    "name" : "VitalStatus"
   }
 ]

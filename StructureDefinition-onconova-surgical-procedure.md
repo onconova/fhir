@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure | *Version*:0.2.0 |
-| Active as of 2025-11-11 | *Computable Name*:OnconovaSurgicalProcedure |
+| Active as of 2025-11-18 | *Computable Name*:OnconovaSurgicalProcedure |
 
  
 A profile representing a surgical procedure performed on a cancer patient, including details about the procedure, its intent, and relevant dates. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
   "name" : "OnconovaSurgicalProcedure",
   "title" : "Surgical Procedure Profile",
   "status" : "active",
-  "date" : "2025-11-11T12:47:38+00:00",
+  "date" : "2025-11-18T09:06:42+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

@@ -1,17 +1,17 @@
-# Anonymized Entry - Onconova Implementation Guide v0.2.0
+# Vital status - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Anonymized Entry**
+* **Vital status**
 
-## Extension: Anonymized Entry 
+## Extension: Vital status 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry | *Version*:0.2.0 |
-| Active as of 2025-11-11 | *Computable Name*:AnonymizedEntry |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status | *Version*:0.2.0 |
+| Active as of 2025-11-18 | *Computable Name*:VitalStatus |
 
-Value not provided to maintain the anonymization of the patient's data and conform to data protection regulations for research data.
+The status of whether the patient is alive or deceased or unknown.
 
 **Context of Use**
 
@@ -21,7 +21,7 @@ Value not provided to maintain the anonymization of the patient's data and confo
 
 * Use this Extension: [Cancer Patient Profile](StructureDefinition-onconova-cancer-patient.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-ext-anonymized-entry)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-ext-vital-status)
 
 ### Formal Views of Extension Content
 
@@ -29,7 +29,9 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
  
 
-Other representations of profile: [CSV](StructureDefinition-onconova-ext-anonymized-entry.csv), [Excel](StructureDefinition-onconova-ext-anonymized-entry.xlsx), [Schematron](StructureDefinition-onconova-ext-anonymized-entry.sch) 
+Other representations of profile: [CSV](StructureDefinition-onconova-ext-vital-status.csv), [Excel](StructureDefinition-onconova-ext-vital-status.xlsx), [Schematron](StructureDefinition-onconova-ext-vital-status.sch) 
+
+#### Terminology Bindings
 
 #### Constraints
 
@@ -40,13 +42,13 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-anonymi
 ```json
 {
   "resourceType" : "StructureDefinition",
-  "id" : "onconova-ext-anonymized-entry",
-  "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry",
+  "id" : "onconova-ext-vital-status",
+  "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status",
   "version" : "0.2.0",
-  "name" : "AnonymizedEntry",
-  "title" : "Anonymized Entry",
+  "name" : "VitalStatus",
+  "title" : "Vital status",
   "status" : "active",
-  "date" : "2025-11-11T12:47:38+00:00",
+  "date" : "2025-11-18T09:06:42+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -59,7 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-anonymi
       ]
     }
   ],
-  "description" : "Value not provided to maintain the anonymization of the patient's data and conform to data protection regulations for research data.",
+  "description" : "The status of whether the patient is alive or deceased or unknown.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -84,8 +86,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-anonymi
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Anonymized Entry",
-        "definition" : "Value not provided to maintain the anonymization of the patient's data and conform to data protection regulations for research data."
+        "short" : "Vital status",
+        "definition" : "The status of whether the patient is alive or deceased or unknown."
       },
       {
         "id" : "Extension.extension",
@@ -95,17 +97,20 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-anonymi
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry"
+        "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status"
       },
       {
         "id" : "Extension.value[x]",
         "path" : "Extension.value[x]",
         "type" : [
           {
-            "code" : "code"
+            "code" : "CodeableConcept"
           }
         ],
-        "patternCode" : "masked"
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-vital-status|0.2.0"
+        }
       }
     ]
   }

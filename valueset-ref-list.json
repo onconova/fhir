@@ -206,8 +206,8 @@
       "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"],
       "uses" : {
       },
-      "StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.html" : "Molecular Tumor Board Therapeutic Recommendation",
-      "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile"
+      "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile",
+      "StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.html" : "Molecular Tumor Board Therapeutic Recommendation"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-imaging-methods",
@@ -275,6 +275,20 @@
       "StructureDefinition-onconova-comorbidities.html" : "Comorbidities Profile"
     },
     {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-consent-status",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "ConsentStatus",
+      "title" : "Consent Status Value Set",
+      "description" : "The consent status of a patient",
+      "systems" : [
+        "http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-onconova-ext-consent-status.html" : "Consent status"
+    },
+    {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-ctc-adverse-events",
       "version" : "0.2.0",
       "status" : "active",
@@ -332,9 +346,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
       "uses" : {
       },
+      "StructureDefinition-onconova-ext-cancer-morphology.html" : "Cancer Morphology",
       "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile",
-      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile",
-      "StructureDefinition-onconova-ext-cancer-morphology.html" : "Cancer Morphology"
+      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography",
@@ -521,6 +535,18 @@
       "uses" : {
       },
       "StructureDefinition-onconova-ext-tumor-marker-analyte.html" : "Tumor Marker Analyte"
+    },
+    {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-vital-status",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "VitalStatus",
+      "title" : "Vital Status Value Set",
+      "description" : "The vital status of a patient",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onconova-ext-vital-status.html" : "Vital status"
     }
   ]
 }

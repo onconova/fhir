@@ -849,6 +849,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","(USCDI) The individual's gender identity","An individual's personal sense of being a man, woman, boy, girl, nonbinary, or something else.","This represents an individual's identity, ascertained by asking them what that identity is.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"onconova-cancer-patient","Patient.extension:vitalStatus","Patient.extension","vitalStatus","","",0,1,"","","","Extension {[CanonicalType[http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status|0.2.0]]} {[]}
+","Vital status","The status of whether the patient is alive or deceased or unknown.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"onconova-cancer-patient","Patient.extension:consentStatus","Patient.extension","consentStatus","","",0,1,"","","","Extension {[CanonicalType[http://onconova.github.io/fhir/StructureDefinition/onconova-ext-consent-status|0.2.0]]} {[]}
+","Consent status","The status of whether the patient has given or revoked consent for reasearch use.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "onconova-cancer-patient","Patient.extension:overallSurvival","Patient.extension","overallSurvival","","",0,1,"","","","Extension {[CanonicalType[http://onconova.github.io/fhir/StructureDefinition/onconova-ext-overall-survival|0.2.0]]} {[]}
 ","Overall Survival","The duration of time from either the date of diagnosis or the start of treatment for a disease, such as cancer, that patients diagnosed with the disease are still alive. In a clinical trial, measuring the overall survival is one way to see how well a new treatment works.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -982,7 +988,7 @@ It is often used to filter patient lists to exclude inactive patients
 Deceased patients may also be marked as inactive for the same reasons, but may be active for some time after death.","If a record is inactive, and linked to an active record, then future patient/record updates should occur on the other patient.","Need to be able to mark a patient record as not to be used because it was created in error.","","This resource is generally assumed to be active if no value is provided for the active element","","","","","",,,,,"",,,,"Patient.active",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onconova-cancer-patient","Patient.name","Patient.name","","","",1,*,"Y","","Y","HumanName {[]} {[]}
-","(USCDI) A name associated with the patient","A name associated with the individual.","A patient may have multiple names with different uses or applicable periods. For animals, the name is a ""HumanName"" in the sense that is assigned and used by humans and has the same patterns.","Need to be able to track the patient by multiple names. Examples are your official name and a partner name.","","","","","","","",,,,,"",,,,"Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Not used in this profile","Not used in this profile","A patient may have multiple names with different uses or applicable periods. For animals, the name is a ""HumanName"" in the sense that is assigned and used by humans and has the same patterns.","Need to be able to track the patient by multiple names. Examples are your official name and a partner name.","","","","","","","",,,,,"",,,,"Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 us-core-6:At least name.given and/or name.family are present or, if neither is available, the Data Absent Reason Extension is present. {(family.exists() or given.exists()) xor extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()}"
 "onconova-cancer-patient","Patient.name.id","Patient.name.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -990,9 +996,22 @@ us-core-6:At least name.given and/or name.family are present or, if neither is a
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"onconova-cancer-patient","Patient.name.extension:anonymizedEntry","Patient.name.extension","anonymizedEntry","","",1,*,"","","","Extension {[CanonicalType[http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry|0.2.0]]} {[]}
-","Anonymized Entry","Value not provided to maintain the anonymization of the patient's data and conform to data protection regulations for research data.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"onconova-cancer-patient","Patient.name.extension:anonymizedEntry","Patient.name.extension","anonymizedEntry","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0]]} {[]}
+","unknown | asked | temp | notasked | masked | unsupported | astext | error","Provides a reason why the expected value or elements in the element that is extended are missing.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"onconova-cancer-patient","Patient.name.extension:anonymizedEntry.id","Patient.name.extension.id","","","",0,1,"","","","id {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
+",""
+"onconova-cancer-patient","Patient.name.extension:anonymizedEntry.extension","Patient.name.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"onconova-cancer-patient","Patient.name.extension:anonymizedEntry.url","Patient.name.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/data-absent-reason""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"onconova-cancer-patient","Patient.name.extension:anonymizedEntry.value[x]","Patient.name.extension.value[x]","","","",1,1,"","","","code {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","",,"required","","http://hl7.org/fhir/ValueSet/data-absent-reason|4.0.1","",,,,"Extension.value[x]",0,1,"ext-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "onconova-cancer-patient","Patient.name.use","Patient.name.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","(USCDI) usual | official | temp | nickname | anonymous | old | maiden","Identifies the purpose for this name.","Applications can assume that a name is current unless it explicitly says that it is temporary or old.","Allows the appropriate name for a particular context of use to be selected from among a set of names.","","","","","","","",,"required","The use of a human name.","http://hl7.org/fhir/ValueSet/name-use|4.0.1","",,,,"HumanName.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -2138,21 +2157,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "onconova-ext-age","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","integer {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"onconova-ext-anonymized-entry","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Anonymized Entry","Value not provided to maintain the anonymization of the patient's data and conform to data protection regulations for research data.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"onconova-ext-anonymized-entry","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"onconova-ext-anonymized-entry","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"onconova-ext-anonymized-entry","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"onconova-ext-anonymized-entry","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","code {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""masked""/>","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
 "onconova-ext-cancer-morphology","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Cancer Morphology","The morphology of the cancer, represented by a ICD-O-3 code.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -2212,6 +2216,21 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "onconova-ext-combined-with","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0]]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"onconova-ext-consent-status","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Consent status","The status of whether the patient has given or revoked consent for reasearch use.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"onconova-ext-consent-status","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"onconova-ext-consent-status","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"onconova-ext-consent-status","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://onconova.github.io/fhir/StructureDefinition/onconova-ext-consent-status""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"onconova-ext-consent-status","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","code {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://onconova.github.io/fhir/ValueSet/onconova-vs-consent-status|0.2.0","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onconova-ext-contributors","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Contributors","The individuals or organizations that contributed to the patient's care.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
@@ -2713,6 +2732,21 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://onconova.github.io/fhir/StructureDefinition/onconova-ext-unknown-entry""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "onconova-ext-unknown-entry","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","code {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""unknown""/>","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"onconova-ext-vital-status","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Vital status","The status of whether the patient is alive or deceased or unknown.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"onconova-ext-vital-status","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"onconova-ext-vital-status","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"onconova-ext-vital-status","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"onconova-ext-vital-status","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://onconova.github.io/fhir/ValueSet/onconova-vs-vital-status|0.2.0","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "onconova-genomic-variant","Observation","Observation","","Vital Signs
 MeasurementResultsTests","",0,*,"","","","null {[]} {[]}

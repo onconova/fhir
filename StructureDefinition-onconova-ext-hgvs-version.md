@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-hgvs-version | *Version*:0.2.0 |
-| Active as of 2025-11-11 | *Computable Name*:HgvsVersion |
+| Active as of 2025-11-18 | *Computable Name*:HgvsVersion |
 
 The version of the HGVS nomenclature used for representing the variant.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-hgvs-ve
   "name" : "HgvsVersion",
   "title" : "HGVS Version",
   "status" : "active",
-  "date" : "2025-11-11T12:47:38+00:00",
+  "date" : "2025-11-18T09:06:42+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

@@ -98,12 +98,12 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Adverse Event Mitigation](StructureDefinition-onconova-ext-adverse-event-mitigation.md) | Details about an action taken to mitigate or manage the adverse event. |
 | [Age](StructureDefinition-onconova-ext-age.md) | The approximate age of the patient. |
 | [Age at Diagnosis](StructureDefinition-onconova-ext-age-at-diagnosis.md) | The approximate age of the patient at the time of diagnosis of the disease. |
-| [Anonymized Entry](StructureDefinition-onconova-ext-anonymized-entry.md) | Value not provided to maintain the anonymization of the patient's data and conform to data protection regulations for research data. |
 | [CTCAE Grade](StructureDefinition-onconova-ext-ctc-grade.md) | The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE). |
 | [Cancer Morphology](StructureDefinition-onconova-ext-cancer-morphology.md) | The morphology of the cancer, represented by a ICD-O-3 code. |
 | [Cancer Topography](StructureDefinition-onconova-ext-cancer-topography.md) | The topography of the cancer, represented by a ICD-O-3 code. |
 | [Cause of Death](StructureDefinition-onconova-ext-cause-of-death.md) | The cause of death for the patient. |
 | [Combined With](StructureDefinition-onconova-ext-combined-with.md) | Indicates that this medication administration was given in combination with another medication administration. |
+| [Consent status](StructureDefinition-onconova-ext-consent-status.md) | The status of whether the patient has given or revoked consent for reasearch use. |
 | [Contributors](StructureDefinition-onconova-ext-contributors.md) | The individuals or organizations that contributed to the patient's care. |
 | [Cycles](StructureDefinition-onconova-ext-cycles.md) | Indicates the total number of cycles for this medication administration. |
 | [Data Completion Rate](StructureDefinition-onconova-ext-data-completion-rate.md) | The percentage of data elements categories that have been completed for a patient. |
@@ -128,6 +128,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Tumor Board Specialization](StructureDefinition-onconova-ext-tumor-board-specialization.md) | The specialization or focus area of the tumor board conducting the review, such as hematologic malignancies or solid tumors. |
 | [Tumor Marker Analyte](StructureDefinition-onconova-ext-tumor-marker-analyte.md) | The specific analyte or substance being measured as a tumor marker, such as PSA, CA-125, or CEA. |
 | [Unknown Entry](StructureDefinition-onconova-ext-unknown-entry.md) | Value is not collected and cannot be provided by Onconova. |
+| [Vital status](StructureDefinition-onconova-ext-vital-status.md) | The status of whether the patient is alive or deceased or unknown. |
 
 ### Terminology: Value Sets 
 
@@ -147,6 +148,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Cancer Risk Assessment Methods](ValueSet-onconova-vs-cancer-risk-assessment-methods.md) | A value set containing codes for various cancer risk assessment methods. |
 | [Cause of Death Value Set](ValueSet-onconova-vs-causes-of-death.md) | The causes of death that are relevant for a cancer patient. |
 | [Comorbidity Panels](ValueSet-onconova-vs-comorbidity-panels.md) | A collection of comorbidity panels relevant to cancer patients. |
+| [Consent Status Value Set](ValueSet-onconova-vs-consent-status.md) | The consent status of a patient |
 | [Expected Drug Effects](ValueSet-onconova-vs-expected-drug-effects.md) | A value set of expected drug effects. |
 | [Exposure Agents](ValueSet-onconova-vs-exposure-agents.md) | Agents to which a patient may have been exposed. |
 | [ICD-10 Codes](ValueSet-onconova-vs-icd-10-conditions.md) | This value set includes sample ICD-10 codes. |
@@ -170,6 +172,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Treatment Termination Reasons](ValueSet-onconova-vs-treatment-termination-reasons.md) | Codes representing reasons for terminating a treatment in oncology. |
 | [Tumor Board Recommendations](ValueSet-onconova-vs-tumor-board-recommendations.md) | A value set of recommendations that may be made by a tumor board for a cancer patient. |
 | [Tumor Marker Analytes](ValueSet-onconova-vs-tumor-marker-analytes.md) | Codes representing analytes for tumor markers. |
+| [Vital Status Value Set](ValueSet-onconova-vs-vital-status.md) | The vital status of a patient |
 
 ### Terminology: Code Systems 
 
@@ -178,5 +181,6 @@ These define new code systems used by systems conforming to this implementation 
 | | |
 | :--- | :--- |
 | [Comorbidity Panels Code System](CodeSystem-onconova-cs-comorbidity-panels.md) | A code system for comorbidity panels relevant to cancer patients. |
+| [Consent Status Code System](CodeSystem-onconova-cs-consent-status.md) | A code system for consent status relevant to Onconova patients. |
 | [To Be Determined Codes](CodeSystem-onconova-cs-tbd.md) | A code system for codes that are yet to be determined. |
 

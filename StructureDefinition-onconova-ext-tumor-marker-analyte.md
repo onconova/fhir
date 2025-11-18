@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte | *Version*:0.2.0 |
-| Active as of 2025-11-11 | *Computable Name*:TumorMarkerAnalyte |
+| Active as of 2025-11-18 | *Computable Name*:TumorMarkerAnalyte |
 
 The specific analyte or substance being measured as a tumor marker, such as PSA, CA-125, or CEA.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-tumor-m
   "name" : "TumorMarkerAnalyte",
   "title" : "Tumor Marker Analyte",
   "status" : "active",
-  "date" : "2025-11-11T12:47:38+00:00",
+  "date" : "2025-11-18T09:06:42+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

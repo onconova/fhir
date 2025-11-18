@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-data-completion-rate | *Version*:0.2.0 |
-| Active as of 2025-11-11 | *Computable Name*:DataCompletionRate |
+| Active as of 2025-11-18 | *Computable Name*:DataCompletionRate |
 
 The percentage of data elements categories that have been completed for a patient.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-data-co
   "name" : "DataCompletionRate",
   "title" : "Data Completion Rate",
   "status" : "active",
-  "date" : "2025-11-11T12:47:38+00:00",
+  "date" : "2025-11-18T09:06:42+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

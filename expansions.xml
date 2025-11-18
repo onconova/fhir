@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="91aa0b11-8659-40a2-bb31-688fc331a3bf"/>
+  <id value="b81880b7-613b-4aee-84f7-8b645d47978e"/>
   <meta>
-    <lastUpdated value="2025-11-11T12:47:38.471+00:00"/>
+    <lastUpdated value="2025-11-18T09:06:42.391+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -126,10 +126,10 @@
         <name value="TNMLymphaticInvasionCategories"/>
         <title value="TNM Lymphatic Invasion Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:72c6e96a-cc08-4b28-bbcd-fe627ec79cc7"/>
-          <timestamp value="2025-11-11T12:50:37+00:00"/>
+          <identifier value="urn:uuid:3ff27df3-6ca9-449d-bbe1-483b4e3a150e"/>
+          <timestamp value="2025-11-18T09:10:51+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -260,10 +260,10 @@
         <name value="TNMPerineuralInvasionCategories"/>
         <title value="TNM Perineural Invasion Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:441cffab-2fe5-42be-a8a3-3242de57e8dd"/>
-          <timestamp value="2025-11-11T12:50:37+00:00"/>
+          <identifier value="urn:uuid:793e8c9b-0b09-491f-860c-a2410535d1a8"/>
+          <timestamp value="2025-11-18T09:10:51+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -424,13 +424,13 @@
         <name value="TNMResidualTumorCategories"/>
         <title value="TNM Residual Tumor Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:1be39f56-f7e8-417e-80e5-9ceab8b230bf"/>
-          <timestamp value="2025-11-11T12:50:41+00:00"/>
+          <identifier value="urn:uuid:a3d2e11a-0870-41b5-9c6f-e015b13b2216"/>
+          <timestamp value="2025-11-18T09:10:57+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -533,10 +533,10 @@
         <name value="AdjunctiveTherapyRoles"/>
         <title value="Adjunctive Therapy Roles"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:e6f54398-a723-4a2f-8449-dfefce9973e4"/>
-          <timestamp value="2025-11-11T12:50:43.973Z"/>
+          <identifier value="urn:uuid:b4a60773-81cc-49da-9a35-dcf5cf571388"/>
+          <timestamp value="2025-11-18T09:11:01.472Z"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -611,10 +611,10 @@
         <name value="AdverseEventMitigationCategories"/>
         <title value="Adverse Event Mitigation Categories"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:1152e562-98aa-4ef5-b66d-69dc58a383ba"/>
-          <timestamp value="2025-11-11T12:50:44.504Z"/>
+          <identifier value="urn:uuid:9b5daf37-ec20-4768-88bf-557dcc3d3a45"/>
+          <timestamp value="2025-11-18T09:11:02.426Z"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -769,10 +769,10 @@
         <name value="AdverseEventMitigationDrugs"/>
         <title value="Adverse Event Mitigation - Drugs"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:da0a77ab-e7c4-4b2a-a78c-457fab7e2677"/>
-          <timestamp value="2025-11-11T12:50:45.223Z"/>
+          <identifier value="urn:uuid:da3daaab-1238-465d-b45c-05a9bfc2a53e"/>
+          <timestamp value="2025-11-18T09:11:03.863Z"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -911,10 +911,10 @@
         <name value="AdverseEventMitigationManagements"/>
         <title value="Adverse Event Mitigation - Management"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3a8df6a6-6f1b-471d-ab87-ef599d83b090"/>
-          <timestamp value="2025-11-11T12:50:45+00:00"/>
+          <identifier value="urn:uuid:ff9192d8-07ab-4aee-ab6c-f94d3c0e6197"/>
+          <timestamp value="2025-11-18T09:11:04+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1135,10 +1135,10 @@
         <name value="AdverseEventMitigationProcedures"/>
         <title value="Adverse Event Mitigation - Procedures"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:78e84c1a-556b-467b-aa91-6b20e623c735"/>
-          <timestamp value="2025-11-11T12:50:46.426Z"/>
+          <identifier value="urn:uuid:005881e9-d3dd-4e88-ba71-6c87378cbdcc"/>
+          <timestamp value="2025-11-18T09:11:05.894Z"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -1316,10 +1316,10 @@
         <name value="AdverseEventMitigationTreatmentAdjustments"/>
         <title value="Adverse Event Mitigation - Treatment Adjustment"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:11d6f954-9333-4e7c-8ed9-598069edf882"/>
-          <timestamp value="2025-11-11T12:50:46+00:00"/>
+          <identifier value="urn:uuid:e37388cc-0e2c-41f2-a644-ce8cc1b6d4a2"/>
+          <timestamp value="2025-11-18T09:11:05+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1585,10 +1585,10 @@
         <name value="CancerImagingMethods"/>
         <title value="Cancer Imaging Methods"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:f42297ac-662e-411a-b87e-c31f1495e234"/>
-          <timestamp value="2025-11-11T12:50:20+00:00"/>
+          <identifier value="urn:uuid:42f6c4be-2781-4ef0-99f9-c4995aaed86e"/>
+          <timestamp value="2025-11-18T09:10:25+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -1742,10 +1742,10 @@
         <name value="CausesOfDeath"/>
         <title value="Cause of Death Value Set"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:17cc41a6-e2ee-4256-963f-3dd625ddade1"/>
-          <timestamp value="2025-11-11T12:50:47.832Z"/>
+          <identifier value="urn:uuid:c690cd8c-fefb-4b61-acbb-c20988da64d4"/>
+          <timestamp value="2025-11-18T09:11:08.457Z"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1901,10 +1901,10 @@
         <name value="ComorbidityPanels"/>
         <title value="Comorbidity Panels"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:84633ccf-e57f-4ec8-862b-03c822408595"/>
-          <timestamp value="2025-11-11T12:50:15+00:00"/>
+          <identifier value="urn:uuid:90534d4e-e363-4101-8cc6-7da924edb825"/>
+          <timestamp value="2025-11-18T09:10:19+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1941,6 +1941,158 @@
             <system value="http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels"/>
             <code value="nci"/>
             <display value="NCI Comorbidity Panel"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://onconova.github.io/fhir/ValueSet/onconova-vs-consent-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-onconova-cs-consent-status.html">codesystem Consent Status Code System v0.2.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status-valid"> </a>
+                  <code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onconova-cs-consent-status.html#onconova-cs-consent-status-valid">valid</a>
+                </td>
+                <td>Valid</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;valid&quot;, &quot;display&quot;: &quot;Valid&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;valid&quot;&gt;&lt;display value=&quot;Valid&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status-revoked"> </a>
+                  <code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onconova-cs-consent-status.html#onconova-cs-consent-status-revoked">revoked</a>
+                </td>
+                <td>Revoked</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;revoked&quot;, &quot;display&quot;: &quot;Revoked&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;revoked&quot;&gt;&lt;display value=&quot;Revoked&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status-unknown"> </a>
+                  <code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-onconova-cs-consent-status.html#onconova-cs-consent-status-unknown">unknown</a>
+                </td>
+                <td>Unknown</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;unknown&quot;, &quot;display&quot;: &quot;Unknown&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;unknown&quot;&gt;&lt;display value=&quot;Unknown&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://onconova.github.io/fhir/ValueSet/onconova-vs-consent-status"/>
+        <version value="0.2.0"/>
+        <name value="ConsentStatus"/>
+        <title value="Consent Status Value Set"/>
+        <status value="active"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:8f8fb93c-2226-42bd-aee7-cfd99a4b11cf"/>
+          <timestamp value="2025-11-18T09:11:08+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status"/>
+            <code value="valid"/>
+            <display value="Valid"/>
+          </contains>
+          <contains>
+            <system value="http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status"/>
+            <code value="revoked"/>
+            <display value="Revoked"/>
+          </contains>
+          <contains>
+            <system value="http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -2026,10 +2178,10 @@
         <name value="ExpectedDrugEffects"/>
         <title value="Expected Drug Effects"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:624c8015-bebe-47bd-bc88-90ae1704007e"/>
-          <timestamp value="2025-11-11T12:50:48+00:00"/>
+          <identifier value="urn:uuid:85710eb5-25ab-41e9-b191-ba97f8a44bc9"/>
+          <timestamp value="2025-11-18T09:11:09+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -20110,10 +20262,10 @@
         <name value="ICD10Conditions"/>
         <title value="ICD-10 Codes"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:11c779ef-fe45-4af9-9132-5174a48c0c09"/>
-          <timestamp value="2025-11-11T12:50:49.160Z"/>
+          <identifier value="urn:uuid:370ab415-68f7-479f-8845-6d039bf404ca"/>
+          <timestamp value="2025-11-18T09:11:10.941Z"/>
           <offset value="0"/>
           <parameter>
             <name value="limitedExpansion"/>
@@ -31203,10 +31355,10 @@
         <name value="ObservationBodySites"/>
         <title value="Observation Body Sites Value Set"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b06cd311-4e92-4fae-9167-568616bb2b5c"/>
-          <timestamp value="2025-11-11T12:50:20+00:00"/>
+          <identifier value="urn:uuid:1e1e357c-290f-4c23-bb3c-3a7199f3c255"/>
+          <timestamp value="2025-11-18T09:10:24+00:00"/>
           <total value="301"/>
           <offset value="0"/>
           <parameter>
@@ -33202,10 +33354,10 @@
         <name value="RecreationalDrugs"/>
         <title value="Recreational Drugs"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0983e3b5-0539-49a4-a828-a476ea5f84cf"/>
-          <timestamp value="2025-11-11T12:50:21+00:00"/>
+          <identifier value="urn:uuid:2332018d-283e-412d-8bad-64ad1c57db69"/>
+          <timestamp value="2025-11-18T09:10:27+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -33421,10 +33573,10 @@
         <name value="RecurrenceTypeVS"/>
         <title value="Recurrence Type Value Set"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6b56af1d-b774-4b11-9b80-91f62b120e97"/>
-          <timestamp value="2025-11-11T12:50:50+00:00"/>
+          <identifier value="urn:uuid:03321670-b7ae-4226-86c0-adefc1235216"/>
+          <timestamp value="2025-11-18T09:11:12+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -33625,10 +33777,10 @@
         <name value="SmokingStatus"/>
         <title value="Smoking status"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3e08b33e-647d-4761-9659-7ede003c7855"/>
-          <timestamp value="2025-11-11T12:50:21+00:00"/>
+          <identifier value="urn:uuid:bd0083a3-5fbd-4036-b81e-1c846ba28ecb"/>
+          <timestamp value="2025-11-18T09:10:25+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -35020,13 +35172,13 @@
         <name value="TNMDistantMetastasisCategories"/>
         <title value="TNM Distant Metastasis Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:3bcb21e6-d3d8-46d8-bdfe-463d84fdf1ae"/>
-          <timestamp value="2025-11-11T12:50:35+00:00"/>
+          <identifier value="urn:uuid:61cb52f7-5c61-49e8-8fe3-824ed4d0a418"/>
+          <timestamp value="2025-11-18T09:10:48+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -35604,10 +35756,10 @@
         <name value="TNMGradeCategories"/>
         <title value="TNM Grade Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6e656e4c-c32f-48be-a84d-a414ae383ee5"/>
-          <timestamp value="2025-11-11T12:50:36+00:00"/>
+          <identifier value="urn:uuid:c394e519-afac-4cb8-9749-67b2f04c9f28"/>
+          <timestamp value="2025-11-18T09:10:50+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -35783,10 +35935,10 @@
         <name value="TNMGradeCategoryMethods"/>
         <title value="TNM Grade Category Methods Value Set"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4e9e81e7-4653-47e4-a080-dbed97b23e63"/>
-          <timestamp value="2025-11-11T12:50:36+00:00"/>
+          <identifier value="urn:uuid:0d0a7075-619b-49f6-ad42-073fe44276ba"/>
+          <timestamp value="2025-11-18T09:10:50+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -39823,13 +39975,13 @@
         <name value="TNMPrimaryTumorCategories"/>
         <title value="TNM Primary Tumor Categories"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:b4d5d98f-e01a-4dc6-a195-00246eacf440"/>
-          <timestamp value="2025-11-11T12:50:38+00:00"/>
+          <identifier value="urn:uuid:c8332899-f379-4533-a319-a07964faaec9"/>
+          <timestamp value="2025-11-18T09:10:52+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -42863,13 +43015,13 @@
         <name value="TNMRegionalNodesCategories"/>
         <title value="TNM Regional Nodes Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:4a51fdf9-4c75-4fd9-8389-ef23b2cc7e9e"/>
-          <timestamp value="2025-11-11T12:50:39+00:00"/>
+          <identifier value="urn:uuid:ef790d73-4fc3-4ded-9062-e5469650d6d0"/>
+          <timestamp value="2025-11-18T09:10:55+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -43537,10 +43689,10 @@
         <name value="TNMSerumTumorMarkerLevelCategories"/>
         <title value="TNM Serum Tumor Marker Level Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:452c0ab6-9316-444f-b8df-901cbe7d8be5"/>
-          <timestamp value="2025-11-11T12:50:34+00:00"/>
+          <identifier value="urn:uuid:ddb6c0a0-471e-4c18-8aa5-fee71584f6ba"/>
+          <timestamp value="2025-11-18T09:10:47+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -43716,10 +43868,10 @@
         <name value="TNMVenousInvasionCategories"/>
         <title value="TNM Venous Invasion Categories Value Set"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3a2ea50e-9ad5-4d38-94d8-308198ecf558"/>
-          <timestamp value="2025-11-11T12:50:42+00:00"/>
+          <identifier value="urn:uuid:9d7fab42-ccc6-4a93-913b-420c1fdf33c0"/>
+          <timestamp value="2025-11-18T09:10:59+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -44240,10 +44392,10 @@
         <name value="OnconovaTumorBoardRecommendations"/>
         <title value="Tumor Board Recommendations"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:11f9cc7e-c79e-488d-acf9-8a7d609cbbff"/>
-          <timestamp value="2025-11-11T12:50:51+00:00"/>
+          <identifier value="urn:uuid:0188ecbe-8f15-4af7-ab31-08811b45923e"/>
+          <timestamp value="2025-11-18T09:11:13+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -45267,10 +45419,10 @@
         <name value="TumorMarkerAnalytes"/>
         <title value="Tumor Marker Analytes"/>
         <status value="active"/>
-        <date value="2025-11-11T12:47:38+00:00"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:30772a6f-1419-4251-80ba-d51df95c0171"/>
-          <timestamp value="2025-11-11T12:50:52.160Z"/>
+          <identifier value="urn:uuid:38e03677-456a-42ff-b8b8-57243524574d"/>
+          <timestamp value="2025-11-18T09:11:15.176Z"/>
           <total value="42"/>
           <offset value="0"/>
           <parameter>
@@ -45514,6 +45666,155 @@
             <system value="http://loinc.org"/>
             <code value="LP38067-2"/>
             <display value="Epstein Barr virus DNA"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://onconova.github.io/fhir/ValueSet/onconova-vs-vital-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-438949009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/438949009">438949009</a>
+                </td>
+                <td>Alive (finding)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;438949009&quot;, &quot;display&quot;: &quot;Alive (finding)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;438949009&quot;&gt;&lt;display value=&quot;Alive (finding)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-419099009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/419099009">419099009</a>
+                </td>
+                <td>Dead (finding)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;419099009&quot;, &quot;display&quot;: &quot;Dead (finding)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;419099009&quot;&gt;&lt;display value=&quot;Dead (finding)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-261665006"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/261665006">261665006</a>
+                </td>
+                <td>Unknown</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;261665006&quot;, &quot;display&quot;: &quot;Unknown&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;261665006&quot;&gt;&lt;display value=&quot;Unknown&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://onconova.github.io/fhir/ValueSet/onconova-vs-vital-status"/>
+        <version value="0.2.0"/>
+        <name value="VitalStatus"/>
+        <title value="Vital Status Value Set"/>
+        <status value="active"/>
+        <date value="2025-11-18T09:06:42+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:7ecb0f9f-f60f-4bf0-86bc-3d4acf55fa90"/>
+          <timestamp value="2025-11-18T09:11:15+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="438949009"/>
+            <display value="Alive (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="419099009"/>
+            <display value="Dead (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="261665006"/>
+            <display value="Unknown"/>
           </contains>
         </expansion>
       </ValueSet>

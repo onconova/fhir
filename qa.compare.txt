@@ -1,12 +1,13 @@
 Onconova : Validation Results
 =========================================
 
-err = 32, warn = 206, info = 5485
+err = 32, warn = 212, info = 5508
 $--
 Generated $--. FHIR version $-- for onconova.fhir#$-- (canonical = http://onconova.github.io/fhir)
  Build Errors : 1 / 4 / 0
  /home/runner/work/fhir/fhir/fsh-generated/resources/CapabilityStatement-onconova-capability-statement : 4 / 0 / 43
  /home/runner/work/fhir/fhir/fsh-generated/resources/CodeSystem-onconova-cs-comorbidity-panels : 0 / 2 / 2
+ /home/runner/work/fhir/fhir/fsh-generated/resources/CodeSystem-onconova-cs-consent-status : 0 / 2 / 2
  /home/runner/work/fhir/fhir/fsh-generated/resources/CodeSystem-onconova-cs-tbd : 0 / 2 / 2
  /home/runner/work/fhir/fhir/fsh-generated/resources/ImplementationGuide-onconova.fhir : 4 / 2 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-ext-therapy-line-reference : 0 / 2 / 9
@@ -14,7 +15,7 @@ Generated $--. FHIR version $-- for onconova.fhir#$-- (canonical = http://oncono
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-adverse-event : 0 / 1 / 86
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-aneuploid-score : 0 / 1 / 151
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-cancer-family-member-history : 0 / 1 / 72
- /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-cancer-patient : 2 / 1 / 192
+ /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-cancer-patient : 2 / 1 / 204
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-cancer-risk-assessment : 0 / 1 / 128
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-cancer-stage : 0 / 1 / 121
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-comorbidities : 0 / 1 / 148
@@ -23,11 +24,11 @@ Generated $--. FHIR version $-- for onconova.fhir#$-- (canonical = http://oncono
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-adverse-event-mitigation : 0 / 1 / 48
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-age : 0 / 2 / 7
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-age-at-diagnosis : 0 / 2 / 7
- /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-anonymized-entry : 0 / 2 / 7
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-cancer-morphology : 1 / 1 / 9
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-cancer-topography : 1 / 1 / 9
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-cause-of-death : 0 / 2 / 9
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-combined-with : 0 / 2 / 9
+ /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-consent-status : 0 / 2 / 9
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-contributors : 0 / 2 / 7
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-ctc-grade : 0 / 1 / 9
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-cycles : 0 / 2 / 7
@@ -52,6 +53,7 @@ Generated $--. FHIR version $-- for onconova.fhir#$-- (canonical = http://oncono
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-tumor-board-specialization : 0 / 2 / 7
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-tumor-marker-analyte : 0 / 2 / 9
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-unknown-entry : 0 / 2 / 7
+ /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-vital-status : 0 / 2 / 9
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-genomic-variant : 0 / 22 / 547
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-homologous-recombination-deficiency : 0 / 5 / 150
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-imaging-disease-status : 0 / 1 / 128
@@ -94,6 +96,7 @@ Generated $--. FHIR version $-- for onconova.fhir#$-- (canonical = http://oncono
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-cancer-risk-assessment-values : 1 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-causes-of-death : 0 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-comorbidity-panels : 0 / 1 / 1
+ /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-consent-status : 0 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-ctc-adverse-events : 1 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-expected-drug-effects : 0 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-exposure-agents : 1 / 1 / 1
@@ -114,6 +117,7 @@ Generated $--. FHIR version $-- for onconova.fhir#$-- (canonical = http://oncono
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-treatment-termination-reasons : 2 / 2 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-tumor-board-recommendations : 3 / 9 / 37
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-tumor-marker-analytes : 0 / 1 / 2
+ /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-vital-status : 0 / 1 / 1
 </table>
 == n/a ==
 ERROR: CapabilityStatement-onconova-capability-statement.html#/html/body/div/div/div/div/div/div/div/div/div/div/div/a at Line 252, column 17742: The link 'http://hl7.org/fhir/R4/familyhistory.html' for "FamilyHistory" cannot be resolved
@@ -172,6 +176,10 @@ ERROR: CapabilityStatement.text.div: Hyperlink 'http://hl7.org/fhir/R4/familyhis
 INFORMATION: CodeSystem/onconova-cs-comorbidity-panels: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/onconova-cs-comorbidity-panels: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/onconova-cs-comorbidity-panels: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-onconova-cs-consent-status.json ==
+INFORMATION: CodeSystem/onconova-cs-consent-status: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/onconova-cs-consent-status: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/onconova-cs-consent-status: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-onconova-cs-tbd.json ==
 INFORMATION: CodeSystem/onconova-cs-tbd: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/onconova-cs-tbd: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
@@ -656,163 +664,175 @@ INFORMATION: StructureDefinition.snapshot.element[12].constraint[1].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[13].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity to 6.1.0
 INFORMATION: StructureDefinition.snapshot.element[13].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[13].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[14].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-overall-survival to 0.2.0
+INFORMATION: StructureDefinition.snapshot.element[14].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[14].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[14].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[15].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age to 0.2.0
+INFORMATION: StructureDefinition.snapshot.element[15].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-consent-status to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[15].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[15].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[16].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age-at-diagnosis to 0.2.0
+INFORMATION: StructureDefinition.snapshot.element[16].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-overall-survival to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[16].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[16].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[17].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-data-completion-rate to 0.2.0
+INFORMATION: StructureDefinition.snapshot.element[17].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[17].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[17].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[18].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-contributors to 0.2.0
+INFORMATION: StructureDefinition.snapshot.element[18].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age-at-diagnosis to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[18].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[18].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[19].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cause-of-death to 0.2.0
+INFORMATION: StructureDefinition.snapshot.element[19].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-data-completion-rate to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[19].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[19].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[20].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-end-of-records to 0.2.0
+INFORMATION: StructureDefinition.snapshot.element[20].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-contributors to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[20].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[20].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[21].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cause-of-death to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[21].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[21].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[22].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-end-of-records to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[22].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[22].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[23].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[23].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[24].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[24].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[25].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[26].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[26].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/identifier-type to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[26].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[27].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[28].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[28].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/identifier-type to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[29].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[30].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[30].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[31].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[32].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[32].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[33].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[33].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[34].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[35].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[35].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/identifier-type to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[35].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[36].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[37].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[37].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/identifier-type to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[38].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[39].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[39].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[40].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[41].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[41].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[42].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[42].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[43].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[44].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[44].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/identifier-type to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[44].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[45].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[46].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[46].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/identifier-type to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[47].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[48].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[48].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[49].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[50].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[50].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[50].constraint[1].source: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient to 6.1.0
+INFORMATION: StructureDefinition.snapshot.element[51].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[52].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[52].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[53].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry to 0.2.0
-INFORMATION: StructureDefinition.snapshot.element[53].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[53].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[52].constraint[1].source: Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient to 6.1.0
 INFORMATION: StructureDefinition.snapshot.element[54].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[54].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[55].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0
 INFORMATION: StructureDefinition.snapshot.element[55].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[56].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[55].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[57].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[58].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[57].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[59].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[59].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[60].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[61].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[62].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[63].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[63].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[64].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[64].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/contact-point-system to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[65].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[66].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[66].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/contact-point-use to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[67].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[68].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[69].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[69].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/administrative-gender to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[69].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[70].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[70].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/contact-point-system to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[71].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[72].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[72].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/contact-point-use to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[73].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[74].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[74].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[75].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[75].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/administrative-gender to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[76].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[77].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[78].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[79].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[80].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[80].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[81].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[81].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state to 6.1.0
 INFORMATION: StructureDefinition.snapshot.element[82].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[83].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[84].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[85].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[85].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/marital-status to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[86].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[87].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[87].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state to 6.1.0
 INFORMATION: StructureDefinition.snapshot.element[88].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[88].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[89].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[90].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[90].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[91].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[91].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[91].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/marital-status to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[92].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[92].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/patient-contactrelationship to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[93].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[94].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[95].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[94].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[96].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[97].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[96].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[97].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[97].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[98].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[98].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/patient-contactrelationship to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[99].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[100].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[101].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[101].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[102].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[102].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[103].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[103].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[103].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/core/ValueSet/simple-language to 6.1.0
 INFORMATION: StructureDefinition.snapshot.element[104].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[105].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[105].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Practitioner to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[105].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/PractitionerRole to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[105].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[106].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[106].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[107].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[107].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[108].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[108].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[109].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[109].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[109].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/core/ValueSet/simple-language to 6.1.0
 INFORMATION: StructureDefinition.snapshot.element[110].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[110].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[111].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[111].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/RelatedPerson to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[111].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[111].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Practitioner to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[111].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/PractitionerRole to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[111].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[112].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[112].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[113].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[115].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[115].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[116].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[116].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[117].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[117].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/RelatedPerson to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[117].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[118].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[0].constraint[0].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient to 0.2.0
 INFORMATION: StructureDefinition.differential.element[0].constraint[1].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient to 0.2.0
 INFORMATION: StructureDefinition.differential.element[0].constraint[2].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient to 0.2.0
 INFORMATION: StructureDefinition.differential.element[0].constraint[3].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient to 0.2.0
-INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-overall-survival to 0.2.0
-INFORMATION: StructureDefinition.differential.element[2].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age to 0.2.0
-INFORMATION: StructureDefinition.differential.element[3].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age-at-diagnosis to 0.2.0
-INFORMATION: StructureDefinition.differential.element[4].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-data-completion-rate to 0.2.0
-INFORMATION: StructureDefinition.differential.element[5].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-contributors to 0.2.0
-INFORMATION: StructureDefinition.differential.element[6].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cause-of-death to 0.2.0
-INFORMATION: StructureDefinition.differential.element[7].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-end-of-records to 0.2.0
-INFORMATION: StructureDefinition.differential.element[16].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry to 0.2.0
-ERROR: StructureDefinition/onconova-cancer-patient: StructureDefinition.snapshot.element[35].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Accession Identifier' for http://terminology.hl7.org/CodeSystem/v2-0203#ACSN. Valid display is 'Accession ID' (for the language(s) 'en-US')
-ERROR: StructureDefinition/onconova-cancer-patient: StructureDefinition.differential.element[10].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Accession Identifier' for http://terminology.hl7.org/CodeSystem/v2-0203#ACSN. Valid display is 'Accession ID' (for the language(s) 'en-US')
-INFORMATION: StructureDefinition/onconova-cancer-patient: StructureDefinition.differential.element[8].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-INFORMATION: StructureDefinition/onconova-cancer-patient: StructureDefinition.snapshot.element[22].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status to 0.2.0
+INFORMATION: StructureDefinition.differential.element[2].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-consent-status to 0.2.0
+INFORMATION: StructureDefinition.differential.element[3].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-overall-survival to 0.2.0
+INFORMATION: StructureDefinition.differential.element[4].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age to 0.2.0
+INFORMATION: StructureDefinition.differential.element[5].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age-at-diagnosis to 0.2.0
+INFORMATION: StructureDefinition.differential.element[6].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-data-completion-rate to 0.2.0
+INFORMATION: StructureDefinition.differential.element[7].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-contributors to 0.2.0
+INFORMATION: StructureDefinition.differential.element[8].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cause-of-death to 0.2.0
+INFORMATION: StructureDefinition.differential.element[9].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-end-of-records to 0.2.0
+INFORMATION: StructureDefinition.differential.element[19].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/data-absent-reason to 5.2.0
+ERROR: StructureDefinition/onconova-cancer-patient: StructureDefinition.snapshot.element[37].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Accession Identifier' for http://terminology.hl7.org/CodeSystem/v2-0203#ACSN. Valid display is 'Accession ID' (for the language(s) 'en-US')
+ERROR: StructureDefinition/onconova-cancer-patient: StructureDefinition.differential.element[12].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Accession Identifier' for http://terminology.hl7.org/CodeSystem/v2-0203#ACSN. Valid display is 'Accession ID' (for the language(s) 'en-US')
+INFORMATION: StructureDefinition/onconova-cancer-patient: StructureDefinition.differential.element[10].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/onconova-cancer-patient: StructureDefinition.snapshot.element[24].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onconova-cancer-risk-assessment.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-risk-assessment to 4.0.0
@@ -1404,15 +1424,6 @@ INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinne
 INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 WARNING: StructureDefinition/onconova-ext-age-at-diagnosis: StructureDefinition.context[0]: Review the extension type for onconova-ext-age-at-diagnosis: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age-at-diagnosis'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-onconova-ext-anonymized-entry.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-WARNING: StructureDefinition/onconova-ext-anonymized-entry: StructureDefinition.context[0]: Review the extension type for onconova-ext-anonymized-entry: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-anonymized-entry'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-onconova-ext-cancer-morphology.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1457,6 +1468,17 @@ INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinne
 INFORMATION: StructureDefinition.differential.element[3].type[0].targetProfile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration to 0.2.0
 WARNING: StructureDefinition/onconova-ext-combined-with: StructureDefinition.context[0]: Review the extension type for onconova-ext-combined-with: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-onconova-ext-consent-status.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-consent-status to 0.2.0
+INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-consent-status to 0.2.0
+WARNING: StructureDefinition/onconova-ext-consent-status: StructureDefinition.context[0]: Review the extension type for onconova-ext-consent-status: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-consent-status'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-onconova-ext-contributors.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1758,6 +1780,17 @@ INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinne
 INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 WARNING: StructureDefinition/onconova-ext-unknown-entry: StructureDefinition.context[0]: Review the extension type for onconova-ext-unknown-entry: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-unknown-entry'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-onconova-ext-vital-status.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-vital-status to 0.2.0
+INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-vital-status to 0.2.0
+WARNING: StructureDefinition/onconova-ext-vital-status: StructureDefinition.context[0]: Review the extension type for onconova-ext-vital-status: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-onconova-genomic-variant.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-variant to 4.0.0
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/DomainResource to 4.0.1
@@ -5799,6 +5832,8 @@ ERROR: ValueSet.where(id = 'onconova-vs-cancer-risk-assessment-values'): Error f
 WARNING: ValueSet/onconova-vs-causes-of-death: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-onconova-vs-comorbidity-panels.json ==
 WARNING: ValueSet/onconova-vs-comorbidity-panels: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-onconova-vs-consent-status.json ==
+WARNING: ValueSet/onconova-vs-consent-status: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-onconova-vs-ctc-adverse-events.json ==
 WARNING: ValueSet/onconova-vs-ctc-adverse-events: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: ValueSet.where(id = 'onconova-vs-ctc-adverse-events'): Error from https://tx.fhir.org/r4: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/MDRAE' could not be found, so the value set cannot be expanded
@@ -5949,3 +5984,5 @@ WARNING: ValueSet/onconova-vs-tumor-board-recommendations: ValueSet: Published v
 == fsh-generated/resources/ValueSet-onconova-vs-tumor-marker-analytes.json ==
 INFORMATION: ValueSet/onconova-vs-tumor-marker-analytes: ValueSet.compose.include[1].concept[14]: The display 'Tumor necrosis factor binding protein 1' is not valid in the Code system 'Tumor necrosis factor binding protein 1'. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 WARNING: ValueSet/onconova-vs-tumor-marker-analytes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-onconova-vs-vital-status.json ==
+WARNING: ValueSet/onconova-vs-vital-status: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
