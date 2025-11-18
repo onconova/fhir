@@ -1,3 +1,5 @@
+Alias: $DataAbsentReason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
+
 Profile: OnconovaCancerPatient
 Parent: CancerPatient
 Id: onconova-cancer-patient
@@ -35,7 +37,7 @@ It constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/Str
 * deceased[x] only dateTime
 
 // Add anonymized entry extension to name
-* name.extension contains DataAbsentReason named anonymizedEntry 1..*
+* name.extension contains $DataAbsentReason named anonymizedEntry 1..*
 * name.extension[anonymizedEntry].valueCode = #masked
 
 // Add custom extensions for clinical data
