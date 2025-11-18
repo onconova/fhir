@@ -35,8 +35,7 @@ It constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/Str
 * deceased[x] only dateTime
 
 // Add anonymized entry extension to name
-* name.extension contains anonymizedEntry 1..*
-* name.extension[anonymizedEntry].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.extension contains DataAbsentReason named anonymizedEntry 1..*
 * name.extension[anonymizedEntry].valueCode = #masked
 
 // Add custom extensions for clinical data
@@ -52,6 +51,7 @@ It constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/Str
     EndOfRecords named endOfRecords 0..1
 
 // Annotate unused elements for this profile
+* insert NotUsed(name) // No name information
 * insert NotUsed(telecom) // No telecom information
 * insert NotUsed(address) // No address information
 * insert NotUsed(contact) // No contact information
