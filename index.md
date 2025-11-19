@@ -33,7 +33,7 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-19T13:56:54+00:00",
+  "date" : "2025-11-19T14:47:01+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -1584,6 +1584,20 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
           }
         ],
         "reference" : {
+          "reference" : "ValueSet/onconova-vs-icdo3-differentiation"
+        },
+        "name" : "ICD-O-3 Differentiation",
+        "description" : "A value set of ICD-O-3 differentiation codes.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
           "reference" : "ValueSet/onconova-vs-icdo3-morphology-behavior"
         },
         "name" : "ICD-O-3 Morphology Behavior",
@@ -1868,6 +1882,20 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
         },
         "name" : "Recurrence Of",
         "description" : "Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-differentiation"
+        },
+        "name" : "Recurrence Type",
+        "description" : "THe histological differentiation of the tumor.",
         "exampleBoolean" : false
       },
       {

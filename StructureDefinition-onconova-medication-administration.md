@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
   "name" : "OnconovaMedicationAdministration",
   "title" : "Medication Administration Profile",
   "status" : "active",
-  "date" : "2025-11-19T13:56:54+00:00",
+  "date" : "2025-11-19T14:47:01+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

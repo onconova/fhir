@@ -194,6 +194,15 @@
       "systems" : ["http://hl7.org/fhir/sid/icd-10"]
     },
     {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-differentiation",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "ICDO3Differentiation",
+      "title" : "ICD-O-3 Differentiation",
+      "description" : "A value set of ICD-O-3 differentiation codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"]
+    },
+    {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-morphology-behavior",
       "version" : "0.2.0",
       "status" : "active",

@@ -50,7 +50,7 @@ A collection of comorbidity panels relevant to cancer patients.
   "name" : "ComorbidityPanels",
   "title" : "Comorbidity Panels",
   "status" : "active",
-  "date" : "2025-11-19T13:56:54+00:00",
+  "date" : "2025-11-19T14:47:01+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

@@ -54,7 +54,7 @@ This value set contains 3 concepts
   "name" : "AdverseEventMitigationTreatmentAdjustments",
   "title" : "Adverse Event Mitigation - Treatment Adjustment",
   "status" : "active",
-  "date" : "2025-11-19T13:56:54+00:00",
+  "date" : "2025-11-19T14:47:01+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

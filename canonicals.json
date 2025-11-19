@@ -196,6 +196,13 @@
     "name" : "DataCompletionRate"
   },
   {
+    "id" : "onconova-ext-differentiation",
+    "type" : "StructureDefinition",
+    "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-differentiation",
+    "version" : "0.2.0",
+    "name" : "Differentiation"
+  },
+  {
     "id" : "onconova-ext-end-of-records",
     "type" : "StructureDefinition",
     "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-end-of-records",
@@ -670,6 +677,13 @@
     "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions",
     "version" : "0.2.0",
     "name" : "ICD10Conditions"
+  },
+  {
+    "id" : "onconova-vs-icdo3-differentiation",
+    "type" : "ValueSet",
+    "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-differentiation",
+    "version" : "0.2.0",
+    "name" : "ICDO3Differentiation"
   },
   {
     "id" : "onconova-vs-icdo3-morphology-behavior",

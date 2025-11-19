@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
   "name" : "OnconovaSecondaryCancerCondition",
   "title" : "Secondary Cancer Condition Profile",
   "status" : "active",
-  "date" : "2025-11-19T13:56:54+00:00",
+  "date" : "2025-11-19T14:47:01+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -163,6 +163,21 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
             "code" : "Reference",
             "targetProfile" : [
               "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Condition.extension:differentiation",
+        "path" : "Condition.extension",
+        "sliceName" : "differentiation",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-differentiation|0.2.0"
             ]
           }
         ]

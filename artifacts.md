@@ -117,6 +117,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Overall Survival](StructureDefinition-onconova-ext-overall-survival.md) | The duration of time from either the date of diagnosis or the start of treatment for a disease, such as cancer, that patients diagnosed with the disease are still alive. In a clinical trial, measuring the overall survival is one way to see how well a new treatment works. |
 | [Recist Is Interpreted](StructureDefinition-onconova-ext-recist-is-interpreted.md) | Indicates that whether the RECIST was interpreted from a radiology report rather than extracted. |
 | [Recurrence Of](StructureDefinition-onconova-ext-recurrence-of.md) | Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition. |
+| [Recurrence Type](StructureDefinition-onconova-ext-differentiation.md) | THe histological differentiation of the tumor. |
 | [Recurrence Type](StructureDefinition-onconova-ext-recurrence-type.md) | Indicates the type of recurrence for the condition (local or regional). |
 | [Risk Assessment Score](StructureDefinition-onconova-ext-risk-assessment-score.md) | The numerical score of the risk assessment. |
 | [Therapy Line Intent](StructureDefinition-onconova-ext-therapy-line-intent.md) | The intent of the therapy line, such as curative or palliative. |
@@ -152,6 +153,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Expected Drug Effects](ValueSet-onconova-vs-expected-drug-effects.md) | A value set of expected drug effects. |
 | [Exposure Agents](ValueSet-onconova-vs-exposure-agents.md) | Agents to which a patient may have been exposed. |
 | [ICD-10 Codes](ValueSet-onconova-vs-icd-10-conditions.md) | This value set includes sample ICD-10 codes. |
+| [ICD-O-3 Differentiation](ValueSet-onconova-vs-icdo3-differentiation.md) | A value set of ICD-O-3 differentiation codes. |
 | [ICD-O-3 Morphology Behavior](ValueSet-onconova-vs-icdo3-morphology-behavior.md) | A value set of ICD-O-3 morphology behavior codes. |
 | [ICD-O-3 Topography](ValueSet-onconova-vs-icdo3-topography.md) | A value set of ICD-O-3 topography codes. |
 | [Observation Body Sites Value Set](ValueSet-onconova-vs-observation-bodysites.md) | Bodysites related to an observation |

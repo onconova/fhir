@@ -156,6 +156,13 @@
       ]
     },
     {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-differentiation",
+      "title": "Recurrence Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-end-of-records",
       "title": "End of Records",
       "types": [
@@ -692,6 +699,9 @@
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-data-completion-rate|0.2.0": [
       "Patient"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-differentiation|0.2.0": [
+      "Condition"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-end-of-records|0.2.0": [
       "Patient"

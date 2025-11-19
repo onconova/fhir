@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-ext-therapy-line-ref
   "name" : "TherapyLineReference",
   "title" : "Therapy Line Reference",
   "status" : "active",
-  "date" : "2025-11-19T13:56:54+00:00",
+  "date" : "2025-11-19T14:47:01+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
