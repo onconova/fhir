@@ -5,6 +5,13 @@ Description: "A value set of ICD-O-3 morphology behavior codes."
 
 * include codes from system http://terminology.hl7.org/CodeSystem/icd-o-3
 
+ValueSet: ICDO3Differentiation
+Id: onconova-vs-icdo3-differentiation
+Title: "ICD-O-3 Differentiation"
+Description: "A value set of ICD-O-3 differentiation codes."
+
+* include codes from system http://terminology.hl7.org/CodeSystem/icd-o-3
+
 
 ValueSet: ICDO3Topography
 Id: onconova-vs-icdo3-topography

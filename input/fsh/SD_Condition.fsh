@@ -46,6 +46,9 @@ This profile can be used to represent the Onconova neoplastic entities of relati
 * extension[histologyMorphologyBehavior] 1..1
 * extension[histologyMorphologyBehavior].valueCodeableConcept from ICDO3MorphologyBehavior (required)
 
+// Add differentiation as an extension
+* extension contains Differentiation named differentiation 0..1 
+
 // Constratin the cancer topography to use ICD-O-3 codes and be required 
 * bodySite 1..*
 * bodySite from ICDO3Topography (required)
@@ -93,6 +96,9 @@ It constrains the mCODE [SecondaryCancerCCondition profile](http://hl7.org/fhir/
 * extension[histologyMorphologyBehavior] 1..1
 * extension[histologyMorphologyBehavior].valueCodeableConcept from ICDO3MorphologyBehavior (required)
 
+// Add differentiation as an extension
+* extension contains Differentiation named differentiation 0..1 
+
 // Constratin the cancer topography to use ICD-O-3 codes and be required 
 * bodySite 1..*
 * bodySite from ICDO3Topography (required)
@@ -116,6 +122,15 @@ It constrains the mCODE [SecondaryCancerCCondition profile](http://hl7.org/fhir/
 // ================ 
 // Extensions
 // ================
+
+
+Extension: Differentiation
+Id: onconova-ext-differentiation
+Title: "Recurrence Type"
+Description: "THe histological differentiation of the tumor."
+* value[x] only CodeableConcept
+* valueCodeableConcept from ICDO3Differentiation (required)
+
 
 Extension: RecurrenceOf
 Id: onconova-ext-recurrence-of
