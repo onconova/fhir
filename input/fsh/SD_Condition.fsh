@@ -93,10 +93,6 @@ It constrains the mCODE [SecondaryCancerCCondition profile](http://hl7.org/fhir/
 * extension[histologyMorphologyBehavior] 1..1
 * extension[histologyMorphologyBehavior].valueCodeableConcept from ICDO3MorphologyBehavior (required)
 
-// Add extension to indicate whether the condition is a recurrence of a previous condition
-* extension contains RecurrenceOf named recurrenceOf 0..1 
-* clinicalStatus.extension contains RecurrenceType named recurrenceType 0..1
-
 // Constratin the cancer topography to use ICD-O-3 codes and be required 
 * bodySite 1..*
 * bodySite from ICDO3Topography (required)
@@ -112,9 +108,7 @@ It constrains the mCODE [SecondaryCancerCCondition profile](http://hl7.org/fhir/
 * insert NotUsed(severity)
 
 // Constraints 
-* obeys o-con-1 and 
-    o-con-2 and
-    o-con-req-1 and
+* obeys o-con-req-1 and
     o-con-req-2 and
     o-con-req-3 and 
     o-con-req-4
