@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition | *Version*:0.2.0 |
-| Active as of 2025-11-18 | *Computable Name*:OnconovaSecondaryCancerCondition |
+| Active as of 2025-11-19 | *Computable Name*:OnconovaSecondaryCancerCondition |
 
  
 A profile recording the a secondary neoplasm, including location and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms). 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
   "name" : "OnconovaSecondaryCancerCondition",
   "title" : "Secondary Cancer Condition Profile",
   "status" : "active",
-  "date" : "2025-11-18T09:06:42+00:00",
+  "date" : "2025-11-19T13:56:54+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -101,20 +101,6 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
         "id" : "Condition",
         "path" : "Condition",
         "constraint" : [
-          {
-            "key" : "o-con-1",
-            "severity" : "error",
-            "human" : "If clinicalStatus is 'recurrence', the recurrenceOf extension must be provided.",
-            "expression" : "clinicalStatus.exists() and clinicalStatus.coding.code = 'recurrence' implies extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of').exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
-          },
-          {
-            "key" : "o-con-2",
-            "severity" : "error",
-            "human" : "If clinicalStatus is 'recurrence', the type of recurrence must be provided.",
-            "expression" : "clinicalStatus.exists() and clinicalStatus.coding.code = 'recurrence' implies clinicalStatus.extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type').exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
-          },
           {
             "key" : "o-con-req-1",
             "severity" : "error",
@@ -177,36 +163,6 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
             "code" : "Reference",
             "targetProfile" : [
               "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Condition.extension:recurrenceOf",
-        "path" : "Condition.extension",
-        "sliceName" : "recurrenceOf",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of|0.2.0"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Condition.clinicalStatus.extension:recurrenceType",
-        "path" : "Condition.clinicalStatus.extension",
-        "sliceName" : "recurrenceType",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type|0.2.0"
             ]
           }
         ]

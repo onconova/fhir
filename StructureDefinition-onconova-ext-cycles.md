@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cycles | *Version*:0.2.0 |
-| Active as of 2025-11-18 | *Computable Name*:Cycles |
+| Active as of 2025-11-19 | *Computable Name*:Cycles |
 
 Indicates the total number of cycles for this medication administration.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-cycles.
   "name" : "Cycles",
   "title" : "Cycles",
   "status" : "active",
-  "date" : "2025-11-18T09:06:42+00:00",
+  "date" : "2025-11-19T13:56:54+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

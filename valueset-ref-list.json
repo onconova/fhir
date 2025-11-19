@@ -346,9 +346,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
       "uses" : {
       },
+      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile",
       "StructureDefinition-onconova-ext-cancer-morphology.html" : "Cancer Morphology",
-      "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile",
-      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile"
+      "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography",
@@ -360,9 +360,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
       "uses" : {
       },
-      "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile",
       "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile",
-      "StructureDefinition-onconova-ext-cancer-topography.html" : "Cancer Topography"
+      "StructureDefinition-onconova-ext-cancer-topography.html" : "Cancer Topography",
+      "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-observation-bodysites",

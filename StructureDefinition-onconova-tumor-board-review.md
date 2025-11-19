@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review | *Version*:0.2.0 |
-| Active as of 2025-11-18 | *Computable Name*:OnconovaTumorBoardReview |
+| Active as of 2025-11-19 | *Computable Name*:OnconovaTumorBoardReview |
 
  
 A profile representing a tumor board review for a cancer patient. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
   "name" : "OnconovaTumorBoardReview",
   "title" : "Tumor Board Review",
   "status" : "active",
-  "date" : "2025-11-18T09:06:42+00:00",
+  "date" : "2025-11-19T13:56:54+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

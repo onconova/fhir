@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of | *Version*:0.2.0 |
-| Active as of 2025-11-18 | *Computable Name*:RecurrenceOf |
+| Active as of 2025-11-19 | *Computable Name*:RecurrenceOf |
 
 Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition.
 
@@ -19,7 +19,7 @@ Indicates that the condition is a recurrence of a previous condition, and provid
 
 **Usages:**
 
-* Use this Extension: [Primary Cancer Condition Profile](StructureDefinition-onconova-primary-cancer-condition.md) and [Secondary Cancer Condition Profile](StructureDefinition-onconova-secondary-cancer-condition.md)
+* Use this Extension: [Primary Cancer Condition Profile](StructureDefinition-onconova-primary-cancer-condition.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-ext-recurrence-of)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-recurre
   "name" : "RecurrenceOf",
   "title" : "Recurrence Of",
   "status" : "active",
-  "date" : "2025-11-18T09:06:42+00:00",
+  "date" : "2025-11-19T13:56:54+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

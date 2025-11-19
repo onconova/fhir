@@ -1,9 +1,9 @@
 Onconova : Validation Results
 =========================================
 
-err = 32, warn = 212, info = 5508
+err = 32, warn = 212, info = 5492
 IG Publisher Version: 2.0.26
-Generated Tue Nov 18 09:12:43 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2.0 (canonical = http://onconova.github.io/fhir)
+Generated Wed Nov 19 14:01:53 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2.0 (canonical = http://onconova.github.io/fhir)
  Build Errors : 1 / 4 / 0
  /home/runner/work/fhir/fhir/fsh-generated/resources/CapabilityStatement-onconova-capability-statement : 4 / 0 / 43
  /home/runner/work/fhir/fhir/fsh-generated/resources/CodeSystem-onconova-cs-comorbidity-panels : 0 / 2 / 2
@@ -64,7 +64,7 @@ Generated Tue Nov 18 09:12:43 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-molecular-tumor-board-review : 0 / 5 / 78
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-primary-cancer-condition : 0 / 1 / 125
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-radiotherapy-summary : 0 / 2 / 164
- /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-secondary-cancer-condition : 0 / 1 / 135
+ /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-secondary-cancer-condition : 0 / 1 / 119
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-serous-tumor-marker-level-category : 0 / 1 / 121
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-surgical-procedure : 0 / 1 / 138
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-therapy-line : 0 / 3 / 64
@@ -3691,8 +3691,6 @@ INFORMATION: StructureDefinition.snapshot.element[0].constraint[8].source: Pinne
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[9].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[10].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[11].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition to 0.2.0
-INFORMATION: StructureDefinition.snapshot.element[0].constraint[12].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition to 0.2.0
-INFORMATION: StructureDefinition.snapshot.element[0].constraint[13].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[3].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -3718,100 +3716,86 @@ INFORMATION: StructureDefinition.snapshot.element[16].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[16].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[18].type[0].targetProfile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[18].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[19].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[19].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[19].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[20].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[20].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[21].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[21].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/condition-clinical to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[22].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[22].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/condition-clinical to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[22].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/condition-ver-status to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[23].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[23].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/condition-category to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[24].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[24].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[25].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type to 0.2.0
+INFORMATION: StructureDefinition.snapshot.element[24].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-problem-or-health-concern to 6.1.0
 INFORMATION: StructureDefinition.snapshot.element[25].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[25].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[25].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-condition-category to 6.1.0
 INFORMATION: StructureDefinition.snapshot.element[26].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[26].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/condition-severity to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[27].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[27].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/mcode/ValueSet/mcode-secondary-cancer-disorder-vs to 4.0.0
 INFORMATION: StructureDefinition.snapshot.element[28].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[28].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/condition-ver-status to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[29].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[29].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/condition-category to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[28].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[30].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[30].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-problem-or-health-concern to 6.1.0
+INFORMATION: StructureDefinition.snapshot.element[30].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[31].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier to 4.0.0
 INFORMATION: StructureDefinition.snapshot.element[31].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[31].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-condition-category to 6.1.0
+INFORMATION: StructureDefinition.snapshot.element[31].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[32].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier to 4.0.0
 INFORMATION: StructureDefinition.snapshot.element[32].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[32].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/condition-severity to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[32].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[33].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[33].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/mcode/ValueSet/mcode-secondary-cancer-disorder-vs to 4.0.0
 INFORMATION: StructureDefinition.snapshot.element[34].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[34].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography to 0.2.0
+INFORMATION: StructureDefinition.snapshot.element[35].type[0].targetProfile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient to 0.2.0
+INFORMATION: StructureDefinition.snapshot.element[35].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[36].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Encounter to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[36].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[36].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[37].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier to 4.0.0
 INFORMATION: StructureDefinition.snapshot.element[37].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[37].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[38].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier to 4.0.0
 INFORMATION: StructureDefinition.snapshot.element[38].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[38].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[39].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[40].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Practitioner to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[40].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/PractitionerRole to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[40].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[40].type[0].targetProfile[3]: Pinned the version of http://hl7.org/fhir/StructureDefinition/RelatedPerson to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[40].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[41].type[0].targetProfile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient to 0.2.0
+INFORMATION: StructureDefinition.snapshot.element[41].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Practitioner to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[41].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/PractitionerRole to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[41].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[41].type[0].targetProfile[3]: Pinned the version of http://hl7.org/fhir/StructureDefinition/RelatedPerson to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[41].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[42].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Encounter to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[42].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[43].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[42].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Condition to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[42].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[44].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[44].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[45].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[46].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Practitioner to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[46].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/PractitionerRole to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[46].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[46].type[0].targetProfile[3]: Pinned the version of http://hl7.org/fhir/StructureDefinition/RelatedPerson to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[45].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[46].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[47].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Practitioner to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[47].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/PractitionerRole to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[47].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[47].type[0].targetProfile[3]: Pinned the version of http://hl7.org/fhir/StructureDefinition/RelatedPerson to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[46].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/condition-stage to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[47].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/ClinicalImpression to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[47].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/DiagnosticReport to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[47].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Observation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[47].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[48].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Condition to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[48].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[50].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[50].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[48].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[48].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/condition-stage-type to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[49].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Condition to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[49].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[51].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[51].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[52].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[52].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/condition-stage to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[53].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/ClinicalImpression to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[53].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/DiagnosticReport to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[53].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Observation to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[52].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[53].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[53].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/mcode/ValueSet/mcode-cancer-disease-status-evidence-type-vs to 4.0.0
+INFORMATION: StructureDefinition.snapshot.element[54].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Resource to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[54].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[54].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/condition-stage-type to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[55].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Condition to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[55].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[57].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[57].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[58].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[58].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[59].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[59].binding.valueSet: Pinned the version of http://hl7.org/fhir/us/mcode/ValueSet/mcode-cancer-disease-status-evidence-type-vs to 4.0.0
-INFORMATION: StructureDefinition.snapshot.element[60].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Resource to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[60].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[61].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[55].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[0].constraint[0].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition to 0.2.0
 INFORMATION: StructureDefinition.differential.element[0].constraint[1].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition to 0.2.0
 INFORMATION: StructureDefinition.differential.element[0].constraint[2].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition to 0.2.0
 INFORMATION: StructureDefinition.differential.element[0].constraint[3].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition to 0.2.0
-INFORMATION: StructureDefinition.differential.element[0].constraint[4].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition to 0.2.0
-INFORMATION: StructureDefinition.differential.element[0].constraint[5].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition to 0.2.0
 INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-morphology-behavior to 0.2.0
 INFORMATION: StructureDefinition.differential.element[5].type[0].targetProfile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition to 0.2.0
-INFORMATION: StructureDefinition.differential.element[6].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of to 0.2.0
-INFORMATION: StructureDefinition.differential.element[7].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type to 0.2.0
-INFORMATION: StructureDefinition.differential.element[11].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography to 0.2.0
-INFORMATION: StructureDefinition.differential.element[12].type[0].targetProfile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient to 0.2.0
-INFORMATION: StructureDefinition/onconova-secondary-cancer-condition: StructureDefinition.snapshot.element[29].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition.differential.element[9].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography to 0.2.0
+INFORMATION: StructureDefinition.differential.element[10].type[0].targetProfile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient to 0.2.0
+INFORMATION: StructureDefinition/onconova-secondary-cancer-condition: StructureDefinition.snapshot.element[23].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onconova-serous-tumor-marker-level-category.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category to 4.0.0

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type | *Version*:0.2.0 |
-| Active as of 2025-11-18 | *Computable Name*:RecurrenceType |
+| Active as of 2025-11-19 | *Computable Name*:RecurrenceType |
 
 Indicates the type of recurrence for the condition (local or regional).
 
@@ -19,7 +19,7 @@ Indicates the type of recurrence for the condition (local or regional).
 
 **Usages:**
 
-* Use this Extension: [Primary Cancer Condition Profile](StructureDefinition-onconova-primary-cancer-condition.md) and [Secondary Cancer Condition Profile](StructureDefinition-onconova-secondary-cancer-condition.md)
+* Use this Extension: [Primary Cancer Condition Profile](StructureDefinition-onconova-primary-cancer-condition.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-ext-recurrence-type)
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-recurre
   "name" : "RecurrenceType",
   "title" : "Recurrence Type",
   "status" : "active",
-  "date" : "2025-11-18T09:06:42+00:00",
+  "date" : "2025-11-19T13:56:54+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

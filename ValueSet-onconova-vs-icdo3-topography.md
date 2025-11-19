@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography | *Version*:0.2.0 |
-| Active as of 2025-11-18 | *Computable Name*:ICDO3Topography |
+| Active as of 2025-11-19 | *Computable Name*:ICDO3Topography |
 
  
 A value set of ICD-O-3 topography codes. 
@@ -56,7 +56,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "ICDO3Topography",
   "title" : "ICD-O-3 Topography",
   "status" : "active",
-  "date" : "2025-11-18T09:06:42+00:00",
+  "date" : "2025-11-19T13:56:54+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
