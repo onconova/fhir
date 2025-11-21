@@ -197,6 +197,18 @@
       "StructureDefinition-onconova-ext-adverse-event-mitigation.html" : "Adverse Event Mitigation"
     },
     {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-amino-acid-change-type",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "AminoAcidChangeTypeVS",
+      "title" : "Amino Acid Change Type Value Set",
+      "description" : "Amino acid change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes",
+      "systems" : ["http://sequenceontology.org", "http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-onconova-genomic-variant.html" : "Genomic Variant Profile"
+    },
+    {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents",
       "version" : "0.2.0",
       "status" : "active",
@@ -261,6 +273,18 @@
       "StructureDefinition-onconova-ext-cause-of-death.html" : "Cause of Death"
     },
     {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-clinical-relevance",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "ClinicalRelevanceVS",
+      "title" : "Clinical Relevance Value Set",
+      "description" : "Clinical relevance of a genomic variant",
+      "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"],
+      "uses" : {
+      },
+      "StructureDefinition-onconova-genomic-variant.html" : "Genomic Variant Profile"
+    },
+    {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-comorbidity-panels",
       "version" : "0.2.0",
       "status" : "active",
@@ -299,6 +323,21 @@
       "uses" : {
       },
       "StructureDefinition-onconova-adverse-event.html" : "Adverse Event Profile"
+    },
+    {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-dna-change-type",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "DNAChangeTypeVS",
+      "title" : "Coding DNA Change Type Value Set",
+      "description" : "Coding DNA change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes",
+      "systems" : [
+        "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "http://sequenceontology.org"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-onconova-genomic-variant.html" : "Genomic Variant Profile"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-expected-drug-effects",
@@ -358,9 +397,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
       "uses" : {
       },
-      "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile",
       "StructureDefinition-onconova-ext-cancer-morphology.html" : "Cancer Morphology",
-      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile"
+      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile",
+      "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography",
@@ -372,9 +411,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
       "uses" : {
       },
-      "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile",
       "StructureDefinition-onconova-ext-cancer-topography.html" : "Cancer Topography",
-      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile"
+      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile",
+      "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-observation-bodysites",
@@ -518,8 +557,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-onconova-radiotherapy-summary.html" : "Radiotherapy Summary Profile",
-      "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile"
+      "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile",
+      "StructureDefinition-onconova-radiotherapy-summary.html" : "Radiotherapy Summary Profile"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations",

@@ -170,17 +170,10 @@
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-gene-panel",
-      "title": "Gene Panel",
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-assessment-date",
+      "title": "Genomic Assessment Date",
       "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-hgvs-version",
-      "title": "HGVS Version",
-      "types": [
-        "string"
+        "dateTime"
       ]
     },
     {
@@ -706,10 +699,7 @@
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-end-of-records|0.2.0": [
       "Patient"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-gene-panel|0.2.0": [
-      "Observation"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-hgvs-version|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-assessment-date|0.2.0": [
       "Observation"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-is-primary-therapy|0.2.0": [

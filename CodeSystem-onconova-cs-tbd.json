@@ -3,14 +3,14 @@
   "id" : "onconova-cs-tbd",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem onconova-cs-tbd</b></p><a name=\"onconova-cs-tbd\"> </a><a name=\"hconconova-cs-tbd\"> </a><p>This  code system <code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-tbd</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">aneuploid-score<a name=\"onconova-cs-tbd-aneuploid-score\"> </a></td><td>Aneuploid Score</td></tr><tr><td style=\"white-space:nowrap\">tumor-neoantigen-burden<a name=\"onconova-cs-tbd-tumor-neoantigen-burden\"> </a></td><td>Tumor Neoantigen Burden</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem onconova-cs-tbd</b></p><a name=\"onconova-cs-tbd\"> </a><a name=\"hconconova-cs-tbd\"> </a><p>This  code system <code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-tbd</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">aneuploid-score<a name=\"onconova-cs-tbd-aneuploid-score\"> </a></td><td>Aneuploid Score</td></tr><tr><td style=\"white-space:nowrap\">tumor-neoantigen-burden<a name=\"onconova-cs-tbd-tumor-neoantigen-burden\"> </a></td><td>Tumor Neoantigen Burden</td></tr><tr><td style=\"white-space:nowrap\">rna-hgvs<a name=\"onconova-cs-tbd-rna-hgvs\"> </a></td><td>Transcript RNA change (rHGVS)</td></tr></table></div>"
   },
   "url" : "http://onconova.github.io/fhir/CodeSystem/onconova-cs-tbd",
   "version" : "0.2.0",
   "name" : "ToBeDeterminedCodes",
   "title" : "To Be Determined Codes",
   "status" : "active",
-  "date" : "2025-11-21T06:40:28+00:00",
+  "date" : "2025-11-21T12:46:13+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -21,7 +21,7 @@
   }],
   "description" : "A code system for codes that are yet to be determined.",
   "content" : "complete",
-  "count" : 2,
+  "count" : 3,
   "concept" : [{
     "code" : "aneuploid-score",
     "display" : "Aneuploid Score"
@@ -29,5 +29,9 @@
   {
     "code" : "tumor-neoantigen-burden",
     "display" : "Tumor Neoantigen Burden"
+  },
+  {
+    "code" : "rna-hgvs",
+    "display" : "Transcript RNA change (rHGVS)"
   }]
 }

@@ -33,7 +33,7 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-21T06:40:28+00:00",
+  "date" : "2025-11-21T12:46:13+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -1118,6 +1118,20 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onconova-vs-amino-acid-change-type"
+        },
+        "name" : "Amino Acid Change Type Value Set",
+        "description" : "Amino acid change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1280,6 +1294,34 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
         },
         "name" : "Cause of Death Value Set",
         "description" : "The causes of death that are relevant for a cancer patient.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onconova-vs-clinical-relevance"
+        },
+        "name" : "Clinical Relevance Value Set",
+        "description" : "Clinical relevance of a genomic variant",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onconova-vs-dna-change-type"
+        },
+        "name" : "Coding DNA Change Type Value Set",
+        "description" : "Coding DNA change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes",
         "exampleBoolean" : false
       },
       {
@@ -1514,10 +1556,10 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-gene-panel"
+          "reference" : "StructureDefinition/onconova-ext-genomic-assessment-date"
         },
-        "name" : "Gene Panel",
-        "description" : "Name of the commercial or registered gene panel used for genomic testing.",
+        "name" : "Genomic Assessment Date",
+        "description" : "Date at which the genomic variant was assessed and/or reported.",
         "exampleBoolean" : false
       },
       {
@@ -1532,20 +1574,6 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
         },
         "name" : "Genomic Variant Profile",
         "description" : "A profile representing a genomic variant identified for a cancer patient. \n\nThis profile extends the base mCODE [GenomicVariant profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-variant) (which in turn profiles the Genomics Reporting [Variant profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant)) to include specific constraints and extensions relevant to Onconova.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-hgvs-version"
-        },
-        "name" : "HGVS Version",
-        "description" : "The version of the HGVS nomenclature used for representing the variant.",
         "exampleBoolean" : false
       },
       {

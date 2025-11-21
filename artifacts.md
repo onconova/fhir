@@ -108,8 +108,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Cycles](StructureDefinition-onconova-ext-cycles.md) | Indicates the total number of cycles for this medication administration. |
 | [Data Completion Rate](StructureDefinition-onconova-ext-data-completion-rate.md) | The percentage of data elements categories that have been completed for a patient. |
 | [End of Records](StructureDefinition-onconova-ext-end-of-records.md) | Indicates the last known record date of a patient. |
-| [Gene Panel](StructureDefinition-onconova-ext-gene-panel.md) | Name of the commercial or registered gene panel used for genomic testing. |
-| [HGVS Version](StructureDefinition-onconova-ext-hgvs-version.md) | The version of the HGVS nomenclature used for representing the variant. |
+| [Genomic Assessment Date](StructureDefinition-onconova-ext-genomic-assessment-date.md) | Date at which the genomic variant was assessed and/or reported. |
 | [Is Primary Therapy](StructureDefinition-onconova-ext-is-primary-therapy.md) | Indicates whether this medication administration is the primary therapy within a therapy line. |
 | [Molecular Tumor Board CUP Characterization](StructureDefinition-onconova-ext-molecular-tumor-board-cup-characterization.md) | A characterization of the tumor board review focused on cancer of unknown primary (CUP) origin. |
 | [Molecular Tumor Board Molecular Comparison](StructureDefinition-onconova-ext-molecular-tumor-board-molecular-comparison.md) | A comparison of molecular findings discussed during the molecular tumor board review. |
@@ -143,11 +142,14 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Adverse Event Mitigation - Procedures](ValueSet-onconova-vs-adverse-event-mitigation-procedures.md) | Procedures undertaken to mitigate the impact of an adverse event on a patient's health. |
 | [Adverse Event Mitigation - Treatment Adjustment](ValueSet-onconova-vs-adverse-event-mitigation-treatment-adjustments.md) | Adjustments made to a patient's treatment plan in response to an adverse event. |
 | [Adverse Event Mitigation Categories](ValueSet-onconova-vs-adverse-event-mitigation-categories.md) | Categories of actions taken to mitigate or manage adverse events in oncology. |
+| [Amino Acid Change Type Value Set](ValueSet-onconova-vs-amino-acid-change-type.md) | Amino acid change types due to a genomic variant. It constraints and expands the original[LOINC Answer List LL380-7](https://loinc.org/LL380-7/)to enforce Onconova-compatible codes |
 | [Antineoplastic Agents](ValueSet-onconova-vs-antineoplastic-agents.md) | A value set of antineoplastic agents. |
 | [CTC Adverse Events](ValueSet-onconova-vs-ctc-adverse-events.md) | Common Terminology Criteria for Adverse Events (CTCAE) is a standard classification and severity grading scale for adverse events in clinical trials and oncology practice. |
 | [Cancer Imaging Methods](ValueSet-onconova-vs-cancer-imaging-methods.md) | Codes representing various imaging methods used in cancer diagnosis and monitoring. |
 | [Cancer Risk Assessment Methods](ValueSet-onconova-vs-cancer-risk-assessment-methods.md) | A value set containing codes for various cancer risk assessment methods. |
 | [Cause of Death Value Set](ValueSet-onconova-vs-causes-of-death.md) | The causes of death that are relevant for a cancer patient. |
+| [Clinical Relevance Value Set](ValueSet-onconova-vs-clinical-relevance.md) | Clinical relevance of a genomic variant |
+| [Coding DNA Change Type Value Set](ValueSet-onconova-vs-dna-change-type.md) | Coding DNA change types due to a genomic variant. It constraints and expands the original[LOINC Answer List LL380-7](https://loinc.org/LL380-7/)to enforce Onconova-compatible codes |
 | [Comorbidity Panels](ValueSet-onconova-vs-comorbidity-panels.md) | A collection of comorbidity panels relevant to cancer patients. |
 | [Consent Status Value Set](ValueSet-onconova-vs-consent-status.md) | The consent status of a patient |
 | [Expected Drug Effects](ValueSet-onconova-vs-expected-drug-effects.md) | A value set of expected drug effects. |

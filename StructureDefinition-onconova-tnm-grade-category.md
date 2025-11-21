@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-grade-c
   "name" : "OnconovaTNMGradeCategory",
   "title" : "TNM Grade Category",
   "status" : "active",
-  "date" : "2025-11-21T06:40:28+00:00",
+  "date" : "2025-11-21T12:46:13+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

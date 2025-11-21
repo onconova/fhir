@@ -210,18 +210,11 @@
     "name" : "EndOfRecords"
   },
   {
-    "id" : "onconova-ext-gene-panel",
+    "id" : "onconova-ext-genomic-assessment-date",
     "type" : "StructureDefinition",
-    "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-gene-panel",
+    "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-assessment-date",
     "version" : "0.2.0",
-    "name" : "GenePanel"
-  },
-  {
-    "id" : "onconova-ext-hgvs-version",
-    "type" : "StructureDefinition",
-    "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-hgvs-version",
-    "version" : "0.2.0",
-    "name" : "HgvsVersion"
+    "name" : "GenomicAssessmentDate"
   },
   {
     "id" : "onconova-ext-is-primary-therapy",
@@ -602,6 +595,13 @@
     "name" : "AdverseEventMitigationTreatmentAdjustments"
   },
   {
+    "id" : "onconova-vs-amino-acid-change-type",
+    "type" : "ValueSet",
+    "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-amino-acid-change-type",
+    "version" : "0.2.0",
+    "name" : "AminoAcidChangeTypeVS"
+  },
+  {
     "id" : "onconova-vs-antineoplastic-agents",
     "type" : "ValueSet",
     "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents",
@@ -637,6 +637,13 @@
     "name" : "CausesOfDeath"
   },
   {
+    "id" : "onconova-vs-clinical-relevance",
+    "type" : "ValueSet",
+    "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-clinical-relevance",
+    "version" : "0.2.0",
+    "name" : "ClinicalRelevanceVS"
+  },
+  {
     "id" : "onconova-vs-comorbidity-panels",
     "type" : "ValueSet",
     "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-comorbidity-panels",
@@ -656,6 +663,13 @@
     "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-ctc-adverse-events",
     "version" : "0.2.0",
     "name" : "CTCAdverseEvents"
+  },
+  {
+    "id" : "onconova-vs-dna-change-type",
+    "type" : "ValueSet",
+    "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-dna-change-type",
+    "version" : "0.2.0",
+    "name" : "DNAChangeTypeVS"
   },
   {
     "id" : "onconova-vs-expected-drug-effects",

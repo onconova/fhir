@@ -1,17 +1,17 @@
-# Gene Panel - Onconova Implementation Guide v0.2.0
+# Genomic Assessment Date - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Gene Panel**
+* **Genomic Assessment Date**
 
-## Extension: Gene Panel 
+## Extension: Genomic Assessment Date 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-gene-panel | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:GenePanel |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-assessment-date | *Version*:0.2.0 |
+| Active as of 2025-11-21 | *Computable Name*:GenomicAssessmentDate |
 
-Name of the commercial or registered gene panel used for genomic testing.
+Date at which the genomic variant was assessed and/or reported.
 
 **Context of Use**
 
@@ -21,7 +21,7 @@ Name of the commercial or registered gene panel used for genomic testing.
 
 * Use this Extension: [Genomic Variant Profile](StructureDefinition-onconova-genomic-variant.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-ext-gene-panel)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-ext-genomic-assessment-date)
 
 ### Formal Views of Extension Content
 
@@ -29,7 +29,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
  
 
-Other representations of profile: [CSV](StructureDefinition-onconova-ext-gene-panel.csv), [Excel](StructureDefinition-onconova-ext-gene-panel.xlsx), [Schematron](StructureDefinition-onconova-ext-gene-panel.sch) 
+Other representations of profile: [CSV](StructureDefinition-onconova-ext-genomic-assessment-date.csv), [Excel](StructureDefinition-onconova-ext-genomic-assessment-date.xlsx), [Schematron](StructureDefinition-onconova-ext-genomic-assessment-date.sch) 
 
 #### Constraints
 
@@ -40,13 +40,13 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-gene-pa
 ```json
 {
   "resourceType" : "StructureDefinition",
-  "id" : "onconova-ext-gene-panel",
-  "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-gene-panel",
+  "id" : "onconova-ext-genomic-assessment-date",
+  "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-assessment-date",
   "version" : "0.2.0",
-  "name" : "GenePanel",
-  "title" : "Gene Panel",
+  "name" : "GenomicAssessmentDate",
+  "title" : "Genomic Assessment Date",
   "status" : "active",
-  "date" : "2025-11-21T06:40:28+00:00",
+  "date" : "2025-11-21T12:46:13+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -59,7 +59,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-gene-pa
       ]
     }
   ],
-  "description" : "Name of the commercial or registered gene panel used for genomic testing.",
+  "description" : "Date at which the genomic variant was assessed and/or reported.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -84,8 +84,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-gene-pa
       {
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Gene Panel",
-        "definition" : "Name of the commercial or registered gene panel used for genomic testing."
+        "short" : "Genomic Assessment Date",
+        "definition" : "Date at which the genomic variant was assessed and/or reported."
       },
       {
         "id" : "Extension.extension",
@@ -95,14 +95,14 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-gene-pa
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-gene-panel"
+        "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-assessment-date"
       },
       {
         "id" : "Extension.value[x]",
         "path" : "Extension.value[x]",
         "type" : [
           {
-            "code" : "string"
+            "code" : "dateTime"
           }
         ]
       }

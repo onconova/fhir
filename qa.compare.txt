@@ -1,7 +1,7 @@
 Onconova : Validation Results
 =========================================
 
-err = 31, warn = 215, info = 5508
+err = 34, warn = 222, info = 5557
 $--
 Generated $--. FHIR version $-- for onconova.fhir#$-- (canonical = http://onconova.github.io/fhir)
  Build Errors : 1 / 4 / 0
@@ -35,8 +35,7 @@ Generated $--. FHIR version $-- for onconova.fhir#$-- (canonical = http://oncono
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-data-completion-rate : 0 / 2 / 7
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-differentiation : 0 / 2 / 9
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-end-of-records : 0 / 2 / 7
- /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-gene-panel : 0 / 2 / 7
- /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-hgvs-version : 0 / 2 / 7
+ /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-genomic-assessment-date : 0 / 2 / 7
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-is-primary-therapy : 0 / 2 / 7
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-molecular-tumor-board-cup-characterization : 0 / 2 / 17
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-molecular-tumor-board-molecular-comparison : 0 / 2 / 21
@@ -55,7 +54,7 @@ Generated $--. FHIR version $-- for onconova.fhir#$-- (canonical = http://oncono
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-tumor-marker-analyte : 0 / 2 / 9
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-unknown-entry : 0 / 2 / 7
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-vital-status : 0 / 2 / 9
- /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-genomic-variant : 0 / 22 / 547
+ /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-genomic-variant : 0 / 24 / 600
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-homologous-recombination-deficiency : 0 / 5 / 150
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-imaging-disease-status : 0 / 1 / 128
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-lifestyle : 2 / 5 / 225
@@ -91,14 +90,17 @@ Generated $--. FHIR version $-- for onconova.fhir#$-- (canonical = http://oncono
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-adverse-event-mitigation-managements : 0 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-adverse-event-mitigation-procedures : 0 / 2 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-adverse-event-mitigation-treatment-adjustments : 0 / 1 / 1
+ /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-amino-acid-change-type : 1 / 2 / 2
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-antineoplastic-agents : 1 / 2 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-cancer-imaging-methods : 0 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-cancer-risk-assessment-methods : 1 / 1 / 3
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-cancer-risk-assessment-values : 1 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-causes-of-death : 0 / 1 / 1
+ /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-clinical-relevance : 1 / 3 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-comorbidity-panels : 0 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-consent-status : 0 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-ctc-adverse-events : 1 / 1 / 1
+ /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-dna-change-type : 1 / 2 / 2
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-expected-drug-effects : 0 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-exposure-agents : 1 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-icd-10-conditions : 0 / 1 / 1
@@ -1537,24 +1539,15 @@ INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinne
 INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 WARNING: StructureDefinition/onconova-ext-end-of-records: StructureDefinition.context[0]: Review the extension type for onconova-ext-end-of-records: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-end-of-records'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-onconova-ext-gene-panel.json ==
+== fsh-generated/resources/StructureDefinition-onconova-ext-genomic-assessment-date.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-WARNING: StructureDefinition/onconova-ext-gene-panel: StructureDefinition.context[0]: Review the extension type for onconova-ext-gene-panel: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-gene-panel'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-onconova-ext-hgvs-version.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-WARNING: StructureDefinition/onconova-ext-hgvs-version: StructureDefinition.context[0]: Review the extension type for onconova-ext-hgvs-version: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-hgvs-version'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition/onconova-ext-genomic-assessment-date: StructureDefinition.context[0]: Review the extension type for onconova-ext-genomic-assessment-date: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-assessment-date'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-onconova-ext-is-primary-therapy.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1830,530 +1823,585 @@ INFORMATION: StructureDefinition.snapshot.element[8].constraint[1].source: Pinne
 INFORMATION: StructureDefinition.snapshot.element[9].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/bodySite to 5.2.0
 INFORMATION: StructureDefinition.snapshot.element[9].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[9].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[10].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-gene-panel to 0.2.0
+INFORMATION: StructureDefinition.snapshot.element[10].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-assessment-date to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[10].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[10].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[11].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-hgvs-version to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[11].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[11].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[12].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[12].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[13].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/CarePlan to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[13].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/DeviceRequest to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[13].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[13].type[0].targetProfile[3]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationRequest to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[13].type[0].targetProfile[4]: Pinned the version of http://hl7.org/fhir/StructureDefinition/NutritionOrder to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[13].type[0].targetProfile[5]: Pinned the version of http://hl7.org/fhir/StructureDefinition/ServiceRequest to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[13].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[14].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/CarePlan to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[14].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/DeviceRequest to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[14].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[14].type[0].targetProfile[3]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationRequest to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[14].type[0].targetProfile[4]: Pinned the version of http://hl7.org/fhir/StructureDefinition/NutritionOrder to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[14].type[0].targetProfile[5]: Pinned the version of http://hl7.org/fhir/StructureDefinition/ServiceRequest to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[14].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationAdministration to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[14].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationDispense to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[14].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationStatement to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[14].type[0].targetProfile[3]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Procedure to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[14].type[0].targetProfile[4]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Immunization to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[14].type[0].targetProfile[5]: Pinned the version of http://hl7.org/fhir/StructureDefinition/ImagingStudy to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[14].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[15].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationAdministration to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[15].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationDispense to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[15].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationStatement to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[15].type[0].targetProfile[3]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Procedure to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[15].type[0].targetProfile[4]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Immunization to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[15].type[0].targetProfile[5]: Pinned the version of http://hl7.org/fhir/StructureDefinition/ImagingStudy to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[15].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[16].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[16].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-category to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[17].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[17].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-category to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[18].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[18].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-category to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[19].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[19].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[20].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[20].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[21].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[22].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[22].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[23].type[0].targetProfile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[23].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[23].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[24].type[0].targetProfile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient to 0.2.0
+INFORMATION: StructureDefinition.snapshot.element[24].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Resource to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[24].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[25].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Resource to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[25].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Encounter to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[25].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[26].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Encounter to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[26].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[27].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[28].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[29].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Practitioner to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[29].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/PractitionerRole to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[29].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[29].type[0].targetProfile[3]: Pinned the version of http://hl7.org/fhir/StructureDefinition/CareTeam to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[29].type[0].targetProfile[4]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[29].type[0].targetProfile[5]: Pinned the version of http://hl7.org/fhir/StructureDefinition/RelatedPerson to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[29].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[30].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Practitioner to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[30].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/PractitionerRole to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[30].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Organization to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[30].type[0].targetProfile[3]: Pinned the version of http://hl7.org/fhir/StructureDefinition/CareTeam to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[30].type[0].targetProfile[4]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[30].type[0].targetProfile[5]: Pinned the version of http://hl7.org/fhir/StructureDefinition/RelatedPerson to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[30].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[31].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[32].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[32].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[33].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[33].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[33].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[34].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/coded-annotation to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[34].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[34].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[35].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/coded-annotation to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[35].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[35].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/body-site to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[36].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[36].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/body-site to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[37].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-human-specimen to 4.0.0
 INFORMATION: StructureDefinition.snapshot.element[37].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[38].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-human-specimen to 4.0.0
+INFORMATION: StructureDefinition.snapshot.element[38].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Device to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[38].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/DeviceMetric to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[38].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[39].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Device to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[39].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/DeviceMetric to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[39].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[40].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[40].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Observation to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[39].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Observation to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[41].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[41].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[42].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[42].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[43].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[43].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[43].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[44].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[44].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[45].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[45].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[45].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/referencerange-meaning to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[46].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[46].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/referencerange-meaning to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[46].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/referencerange-appliesto to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[47].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[47].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/referencerange-appliesto to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[48].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[49].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Observation to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[49].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[49].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MolecularSequence to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[49].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[50].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Observation to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[50].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[50].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MolecularSequence to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[50].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/DocumentReference to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[50].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/ImagingStudy to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[50].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Media to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[50].type[0].targetProfile[3]: Pinned the version of http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[50].type[0].targetProfile[4]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Observation to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[50].type[0].targetProfile[5]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MolecularSequence to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[50].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[51].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/DocumentReference to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[51].type[0].targetProfile[1]: Pinned the version of http://hl7.org/fhir/StructureDefinition/ImagingStudy to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[51].type[0].targetProfile[2]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Media to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[51].type[0].targetProfile[3]: Pinned the version of http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[51].type[0].targetProfile[4]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Observation to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[51].type[0].targetProfile[5]: Pinned the version of http://hl7.org/fhir/StructureDefinition/MolecularSequence to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[51].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[52].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[53].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[53].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[54].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[54].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[55].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[55].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[55].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[56].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[56].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[57].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[57].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[58].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[58].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[58].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[59].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[59].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[60].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[61].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[62].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[62].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[63].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[63].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[64].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[64].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[64].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[65].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[65].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[66].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[66].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[67].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[67].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[67].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[68].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[68].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[69].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[70].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[71].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[71].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[72].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[72].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[73].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[73].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[73].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[74].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[74].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[74].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgnc-vs to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[75].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[75].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgnc-vs to 2.0.0
+INFORMATION: StructureDefinition.snapshot.element[75].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[76].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[76].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[76].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[77].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[77].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[78].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[79].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[80].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[80].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[81].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[81].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[82].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[82].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[82].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[83].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[83].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[84].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[84].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[85].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[85].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[85].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[86].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[86].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[87].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[88].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[89].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[89].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[90].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[90].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[91].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[91].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[91].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[92].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[92].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[93].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[93].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[94].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[94].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[94].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[95].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[95].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[96].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[97].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[98].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[98].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[99].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[99].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[100].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[100].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[100].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[101].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[101].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[101].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgvs-vs to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[102].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[102].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgvs-vs to 2.0.0
+INFORMATION: StructureDefinition.snapshot.element[102].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[103].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[103].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[103].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[104].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[104].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[105].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[106].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[107].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[107].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[108].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[108].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[109].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[109].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[109].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[110].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[110].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[110].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgvs-vs to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[111].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[111].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgvs-vs to 2.0.0
+INFORMATION: StructureDefinition.snapshot.element[111].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[112].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[112].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[112].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[113].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[113].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[114].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[115].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[116].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[116].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[117].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[117].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[118].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[118].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[118].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[119].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[119].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[120].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[120].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[121].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[121].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[121].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[122].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[122].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[123].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[124].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[125].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[125].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[126].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[126].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[127].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[127].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[127].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[128].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[128].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[129].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[129].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[130].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[130].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[130].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[131].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[131].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[132].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[133].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[134].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[134].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[135].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[135].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[136].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[136].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[136].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[137].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[137].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[138].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[138].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[139].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[139].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[139].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[140].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[140].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[141].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[142].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[143].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[143].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[144].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[144].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[145].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[145].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[145].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[146].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[146].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[147].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[147].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[148].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[148].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[148].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[149].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[149].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[150].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[151].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[152].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[152].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[153].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[153].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[154].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[154].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[154].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[155].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[155].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[156].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[156].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[157].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[157].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[157].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[158].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[158].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[159].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[160].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[161].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[161].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[162].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[162].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[163].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[163].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[163].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[164].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[164].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[165].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[165].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[166].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[166].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[166].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[167].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[167].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[168].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[169].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[170].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[170].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[171].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[171].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[172].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[172].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[172].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[173].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[173].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[174].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[174].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[175].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[175].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[175].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[176].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[176].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[177].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[178].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[179].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[179].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[180].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[180].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[181].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[181].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[181].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[182].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[182].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[183].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[183].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[184].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[184].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[184].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[185].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[185].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[186].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[187].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[188].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[188].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[189].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[189].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[190].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[190].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[190].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[191].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[191].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[192].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[192].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[193].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[193].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[193].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[194].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[194].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[195].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[196].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[197].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[197].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[198].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[198].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[199].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[199].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[199].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[200].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[200].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[200].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-dna-change-type to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[201].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[201].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/dna-change-type-vs to 2.0.0
+INFORMATION: StructureDefinition.snapshot.element[201].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[202].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[202].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[202].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[203].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[203].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[204].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[205].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[206].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[206].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[207].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[207].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[208].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[208].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[208].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[209].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[209].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[210].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[210].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[211].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[211].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[211].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[212].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[212].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[213].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[214].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[215].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[215].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[216].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[216].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[217].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[217].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[217].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[218].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[218].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[219].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[220].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[220].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[221].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[221].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[222].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[223].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[224].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[225].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[226].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[226].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[227].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[227].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[227].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[228].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[228].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[229].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[230].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[231].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[231].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[232].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[232].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[233].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[233].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[233].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[234].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[234].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[235].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[235].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[236].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[236].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[236].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[237].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[237].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[238].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[239].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[240].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[240].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[241].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[241].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[242].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[242].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[242].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[243].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[243].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[244].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[244].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[245].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[245].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[245].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[246].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[246].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[247].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[248].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[249].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[249].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[250].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[250].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[251].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[251].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[251].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[252].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[252].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[252].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/variant-inheritance-vs to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[253].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[253].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/variant-inheritance-vs to 2.0.0
+INFORMATION: StructureDefinition.snapshot.element[253].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[254].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[254].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[254].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[255].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[255].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[256].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[257].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[258].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[258].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[259].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[259].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[260].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[260].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[260].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[261].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[261].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[262].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[262].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[263].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[263].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[263].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[264].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[264].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[265].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[266].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[267].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[267].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[268].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[268].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[269].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[269].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[269].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[270].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[270].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[271].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[271].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[272].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[272].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[272].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[273].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[273].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[274].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[275].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[276].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[276].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[277].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[277].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[278].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[278].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[278].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[279].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[279].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[279].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgvs-vs to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[280].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[280].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgvs-vs to 2.0.0
+INFORMATION: StructureDefinition.snapshot.element[280].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[281].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[281].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[281].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[282].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[282].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[283].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[284].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[285].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[285].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[286].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[286].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[287].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[287].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[287].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[288].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[288].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[288].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-amino-acid-change-type to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[289].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[289].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[290].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[290].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[290].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[291].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[291].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[292].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[293].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[294].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[294].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[295].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[295].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[296].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[296].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[296].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[297].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[297].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[297].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/molecular-consequence-vs to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[298].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[298].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/molecular-consequence-vs to 2.0.0
+INFORMATION: StructureDefinition.snapshot.element[298].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[299].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[299].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[299].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[300].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[300].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[301].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[302].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[303].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[303].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[304].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[304].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[305].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[305].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[305].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[306].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[306].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[306].constraint[1].source: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[307].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[307].constraint[1].source: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant to 2.0.0
+INFORMATION: StructureDefinition.snapshot.element[307].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[308].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[308].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[308].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[309].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[309].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[310].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[311].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[312].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[312].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[313].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[313].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[314].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[314].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[314].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[315].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[315].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[315].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/variant-confidence-status-vs to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[316].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[316].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/genomics-reporting/ValueSet/variant-confidence-status-vs to 2.0.0
+INFORMATION: StructureDefinition.snapshot.element[316].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[317].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[317].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[317].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[318].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[318].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[319].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[320].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[321].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[321].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[322].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[322].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[323].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[323].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[323].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[324].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[324].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[324].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-clinical-relevance to 0.2.0
 INFORMATION: StructureDefinition.snapshot.element[325].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[325].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[326].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[326].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[326].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[327].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[327].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[328].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[329].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[330].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[330].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[331].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[331].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[332].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[332].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[332].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[333].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[333].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[334].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[334].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[335].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[335].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[335].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[336].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[336].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[337].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[339].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[339].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[340].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[340].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[341].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[341].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[342].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[343].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[343].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[344].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[344].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[345].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[346].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[348].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[348].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[349].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[349].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[350].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[350].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[351].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[352].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[352].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[353].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[353].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[354].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[355].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[357].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[357].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[358].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[358].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[359].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[359].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[360].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[361].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[361].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[362].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[362].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[363].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[364].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[366].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[366].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[367].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[367].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[368].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[368].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-codes to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[369].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[370].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[370].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/data-absent-reason to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[371].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[371].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/observation-interpretation to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[372].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[0].constraint[0].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant to 0.2.0
 INFORMATION: StructureDefinition.differential.element[0].constraint[1].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant to 0.2.0
 INFORMATION: StructureDefinition.differential.element[0].constraint[2].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant to 0.2.0
 INFORMATION: StructureDefinition.differential.element[0].constraint[3].source: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant to 0.2.0
-INFORMATION: StructureDefinition.differential.element[2].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-gene-panel to 0.2.0
-INFORMATION: StructureDefinition.differential.element[3].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-hgvs-version to 0.2.0
-INFORMATION: StructureDefinition.differential.element[5].type[0].targetProfile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient to 0.2.0
-WARNING: StructureDefinition/onconova-genomic-variant: StructureDefinition.snapshot.element[324].pattern.ofType(CodeableConcept).coding[0].code: Unknown Code 'C709' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
-WARNING: StructureDefinition/onconova-genomic-variant: StructureDefinition.snapshot.element[333].pattern.ofType(CodeableConcept).coding[0].code: Unknown Code 'C13445' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
-WARNING: StructureDefinition/onconova-genomic-variant: StructureDefinition.differential.element[15].pattern.ofType(CodeableConcept).coding[0].code: Unknown Code 'C709' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
-WARNING: StructureDefinition/onconova-genomic-variant: StructureDefinition.differential.element[18].pattern.ofType(CodeableConcept).coding[0].code: Unknown Code 'C13445' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
-INFORMATION: StructureDefinition/onconova-genomic-variant: StructureDefinition.snapshot.element[52].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-assessment-date to 0.2.0
+INFORMATION: StructureDefinition.differential.element[3].type[0].targetProfile[0]: Pinned the version of http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient to 0.2.0
+INFORMATION: StructureDefinition.differential.element[11].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-dna-change-type to 0.2.0
+INFORMATION: StructureDefinition.differential.element[15].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-amino-acid-change-type to 0.2.0
+INFORMATION: StructureDefinition.differential.element[18].binding.valueSet: Pinned the version of http://onconova.github.io/fhir/ValueSet/onconova-vs-clinical-relevance to 0.2.0
+WARNING: StructureDefinition/onconova-genomic-variant: StructureDefinition.snapshot.element[332].pattern.ofType(CodeableConcept).coding[0].code: Unknown Code 'C709' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+WARNING: StructureDefinition/onconova-genomic-variant: StructureDefinition.snapshot.element[341].pattern.ofType(CodeableConcept).coding[0].code: Unknown Code 'C13445' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+WARNING: StructureDefinition/onconova-genomic-variant: StructureDefinition.snapshot.element[359].pattern.ofType(CodeableConcept).coding[0].code: Unknown Code 'C165600' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+WARNING: StructureDefinition/onconova-genomic-variant: StructureDefinition.differential.element[20].pattern.ofType(CodeableConcept).coding[0].code: Unknown Code 'C709' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+WARNING: StructureDefinition/onconova-genomic-variant: StructureDefinition.differential.element[23].pattern.ofType(CodeableConcept).coding[0].code: Unknown Code 'C13445' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+WARNING: StructureDefinition/onconova-genomic-variant: StructureDefinition.differential.element[29].pattern.ofType(CodeableConcept).coding[0].code: Unknown Code 'C165600' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+INFORMATION: StructureDefinition/onconova-genomic-variant: StructureDefinition.snapshot.element[51].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition/onconova-genomic-variant: StructureDefinition.snapshot: The slice 'labCategory' on path 'Observation.category' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/onconova-genomic-variant: StructureDefinition.snapshot: The slice 'valueCodeableConcept' on path 'Observation.value[x]' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/onconova-genomic-variant: StructureDefinition.snapshot: The slice 'conclusion-string' on path 'Observation.component' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
@@ -5818,6 +5866,11 @@ WARNING: ValueSet/onconova-vs-adverse-event-mitigation-procedures: ValueSet.comp
 WARNING: ValueSet/onconova-vs-adverse-event-mitigation-procedures: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-onconova-vs-adverse-event-mitigation-treatment-adjustments.json ==
 WARNING: ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-onconova-vs-amino-acid-change-type.json ==
+WARNING: ValueSet/onconova-vs-amino-acid-change-type: ValueSet.compose.include[1].system: No definition could be found for URL value 'http://sequenceontology.org'
+INFORMATION: ValueSet/onconova-vs-amino-acid-change-type: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/onconova-vs-amino-acid-change-type: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'onconova-vs-amino-acid-change-type'): Error from https://tx.fhir.org/r4: A definition for CodeSystem 'http://sequenceontology.org' could not be found, so the value set cannot be expanded
 == fsh-generated/resources/ValueSet-onconova-vs-antineoplastic-agents.json ==
 WARNING: ValueSet/onconova-vs-antineoplastic-agents: ValueSet.compose.include[0].filter[0]: The property 'Concept_In_Subset' is not known for the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl', so may not be understood by the terminology ecosystem. Known properties for this system: concept,code,status,inactive,effectiveDate,deprecationDate,retirementDate,notSelectable,synonym,comment,itemWeight
 WARNING: ValueSet/onconova-vs-antineoplastic-agents: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -5834,6 +5887,11 @@ WARNING: ValueSet/onconova-vs-cancer-risk-assessment-values: ValueSet: Published
 ERROR: ValueSet.where(id = 'onconova-vs-cancer-risk-assessment-values'): Error from https://tx.fhir.org/r4: The code system definition for http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl is a fragment, so this expansion is not permitted unless the expansion parameter "incomplete-ok" has a value of "true"
 == fsh-generated/resources/ValueSet-onconova-vs-causes-of-death.json ==
 WARNING: ValueSet/onconova-vs-causes-of-death: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-onconova-vs-clinical-relevance.json ==
+WARNING: ValueSet/onconova-vs-clinical-relevance: ValueSet.compose.include[0].valueSet[0]: A definition could not be found for Canonical URL 'http://loinc.org/LL4034-6/'
+WARNING: ValueSet/onconova-vs-clinical-relevance: ValueSet.compose.include[0].valueSet[0]: The value set import http://loinc.org/LL4034-6/ could not be found so cannot be checked
+WARNING: ValueSet/onconova-vs-clinical-relevance: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'onconova-vs-clinical-relevance'): Unable to find included value set 'http://loinc.org/LL4034-6/'
 == fsh-generated/resources/ValueSet-onconova-vs-comorbidity-panels.json ==
 WARNING: ValueSet/onconova-vs-comorbidity-panels: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-onconova-vs-consent-status.json ==
@@ -5841,6 +5899,11 @@ WARNING: ValueSet/onconova-vs-consent-status: ValueSet: Published value sets SHO
 == fsh-generated/resources/ValueSet-onconova-vs-ctc-adverse-events.json ==
 WARNING: ValueSet/onconova-vs-ctc-adverse-events: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: ValueSet.where(id = 'onconova-vs-ctc-adverse-events'): Error from https://tx.fhir.org/r4: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/MDRAE' could not be found, so the value set cannot be expanded
+== fsh-generated/resources/ValueSet-onconova-vs-dna-change-type.json ==
+WARNING: ValueSet/onconova-vs-dna-change-type: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://sequenceontology.org'
+INFORMATION: ValueSet/onconova-vs-dna-change-type: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+WARNING: ValueSet/onconova-vs-dna-change-type: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'onconova-vs-dna-change-type'): Error from https://tx.fhir.org/r4: A definition for CodeSystem 'http://sequenceontology.org' could not be found, so the value set cannot be expanded
 == fsh-generated/resources/ValueSet-onconova-vs-expected-drug-effects.json ==
 WARNING: ValueSet/onconova-vs-expected-drug-effects: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-onconova-vs-exposure-agents.json ==

@@ -88,6 +88,15 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-amino-acid-change-type",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "AminoAcidChangeTypeVS",
+      "title" : "Amino Acid Change Type Value Set",
+      "description" : "Amino acid change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes",
+      "systems" : ["http://sequenceontology.org", "http://loinc.org"]
+    },
+    {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents",
       "version" : "0.2.0",
       "status" : "active",
@@ -136,6 +145,15 @@
       ]
     },
     {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-clinical-relevance",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "ClinicalRelevanceVS",
+      "title" : "Clinical Relevance Value Set",
+      "description" : "Clinical relevance of a genomic variant",
+      "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"]
+    },
+    {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-comorbidity-panels",
       "version" : "0.2.0",
       "status" : "active",
@@ -165,6 +183,18 @@
       "title" : "CTC Adverse Events",
       "description" : "Common Terminology Criteria for Adverse Events (CTCAE) is a standard classification and severity grading scale for adverse events in clinical trials and oncology practice.",
       "systems" : ["http://terminology.hl7.org/CodeSystem/MDRAE"]
+    },
+    {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-dna-change-type",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "DNAChangeTypeVS",
+      "title" : "Coding DNA Change Type Value Set",
+      "description" : "Coding DNA change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes",
+      "systems" : [
+        "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "http://sequenceontology.org"
+      ]
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-expected-drug-effects",

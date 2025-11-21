@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
   "name" : "OnconovaGenomicVariant",
   "title" : "Genomic Variant Profile",
   "status" : "active",
-  "date" : "2025-11-21T06:40:28+00:00",
+  "date" : "2025-11-21T12:46:13+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -132,38 +132,16 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
         ]
       },
       {
-        "id" : "Observation.extension",
+        "id" : "Observation.extension:genomic-assessment-date",
         "path" : "Observation.extension",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.extension:genePanel",
-        "path" : "Observation.extension",
-        "sliceName" : "genePanel",
-        "short" : "Gene Panel",
+        "sliceName" : "genomic-assessment-date",
         "min" : 0,
         "max" : "1",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-gene-panel|0.2.0"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Observation.extension:hgvsVersion",
-        "path" : "Observation.extension",
-        "sliceName" : "hgvsVersion",
-        "short" : "HGVS Version",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-hgvs-version|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-assessment-date|0.2.0"
             ]
           }
         ]
@@ -188,6 +166,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
       {
         "id" : "Observation.effective[x]",
         "path" : "Observation.effective[x]",
+        "short" : "Clinically-relevant date of the genomic variant (e.g. the specimen collection date)",
         "type" : [
           {
             "code" : "dateTime"
@@ -197,7 +176,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
       {
         "id" : "Observation.component",
         "path" : "Observation.component",
-        "min" : 2
+        "min" : 4
       },
       {
         "id" : "Observation.component:coding-hgvs",
@@ -207,7 +186,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
       {
         "id" : "Observation.component:coding-hgvs.value[x]",
         "path" : "Observation.component.value[x]",
-        "short" : "A valid HGVS-formatted (version >=21.1) 'c.' string, e.g. NM_005228.5:c.2369C>T"
+        "short" : "A valid HGVS-formatted (version >= {hgvsVersion component}) 'c.' string, e.g. NM_005228.5:c.2369C>T"
       },
       {
         "id" : "Observation.component:genomic-hgvs",
@@ -217,7 +196,20 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
       {
         "id" : "Observation.component:genomic-hgvs.value[x]",
         "path" : "Observation.component.value[x]",
-        "short" : "A valid HGVS-formatted (version >=21.1) 'g.' string, e.g. NC_000016.9:g.2124200_2138612dup"
+        "short" : "A valid HGVS-formatted (version >= {hgvsVersion component}) 'g.' string, e.g. NC_000016.9:g.2124200_2138612dup"
+      },
+      {
+        "id" : "Observation.component:coding-change-type",
+        "path" : "Observation.component",
+        "sliceName" : "coding-change-type"
+      },
+      {
+        "id" : "Observation.component:coding-change-type.value[x]",
+        "path" : "Observation.component.value[x]",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-dna-change-type|0.2.0"
+        }
       },
       {
         "id" : "Observation.component:protein-hgvs",
@@ -227,19 +219,69 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
       {
         "id" : "Observation.component:protein-hgvs.value[x]",
         "path" : "Observation.component.value[x]",
-        "short" : "A valid HGVS-formatted (version >=21.1) 'p.' string, e.g. NP_000050.2:p.(Asn1836Lys)"
+        "short" : "A valid HGVS-formatted (version >= {hgvsVersion component}) 'p.' string, e.g. NP_000050.2:p.(Asn1836Lys)"
       },
       {
-        "id" : "Observation.component:nucleotidesCount",
+        "id" : "Observation.component:amino-acid-change-type",
         "path" : "Observation.component",
-        "sliceName" : "nucleotidesCount",
+        "sliceName" : "amino-acid-change-type"
+      },
+      {
+        "id" : "Observation.component:amino-acid-change-type.value[x]",
+        "path" : "Observation.component.value[x]",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-amino-acid-change-type|0.2.0"
+        }
+      },
+      {
+        "id" : "Observation.component:clinical-relevance",
+        "path" : "Observation.component",
+        "sliceName" : "clinical-relevance",
+        "short" : "Clinical relevance of the genomic variant",
+        "min" : 1,
+        "max" : "1",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:clinical-relevance.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "LL4034-6",
+              "display" : "ACMG_Clinical significance of genetic variation"
+            }
+          ]
+        },
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:clinical-relevance.value[x]",
+        "path" : "Observation.component.value[x]",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ],
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-clinical-relevance|0.2.0"
+        }
+      },
+      {
+        "id" : "Observation.component:nucleotides-count",
+        "path" : "Observation.component",
+        "sliceName" : "nucleotides-count",
         "short" : "Length of of the variant in nNucleotides",
         "min" : 1,
         "max" : "1",
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:nucleotidesCount.code",
+        "id" : "Observation.component:nucleotides-count.code",
         "path" : "Observation.component.code",
         "patternCodeableConcept" : {
           "coding" : [
@@ -253,7 +295,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:nucleotidesCount.value[x]",
+        "id" : "Observation.component:nucleotides-count.value[x]",
         "path" : "Observation.component.value[x]",
         "type" : [
           {
@@ -263,16 +305,16 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:geneRegion",
+        "id" : "Observation.component:gene-region",
         "path" : "Observation.component",
-        "sliceName" : "geneRegion",
+        "sliceName" : "gene-region",
         "short" : "Region (exon, intron, etc.) of the gene affected by the variant",
         "min" : 1,
         "max" : "1",
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:geneRegion.code",
+        "id" : "Observation.component:gene-region.code",
         "path" : "Observation.component.code",
         "patternCodeableConcept" : {
           "coding" : [
@@ -286,7 +328,106 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:geneRegion.value[x]",
+        "id" : "Observation.component:gene-region.value[x]",
+        "path" : "Observation.component.value[x]",
+        "type" : [
+          {
+            "code" : "string"
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:rna-hgvs",
+        "path" : "Observation.component",
+        "sliceName" : "rna-hgvs",
+        "min" : 0,
+        "max" : "1",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:rna-hgvs.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://onconova.github.io/fhir/CodeSystem/onconova-cs-tbd",
+              "code" : "rna-hgvs",
+              "display" : "Transcript RNA change (rHGVS)"
+            }
+          ]
+        },
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:rna-hgvs.value[x]",
+        "path" : "Observation.component.value[x]",
+        "short" : "A valid HGVS-formatted (version >= {hgvsVersion component}) 'r.' string, e.g. NM_005228.5:r.2369c>t",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:gene-panel-sequencing",
+        "path" : "Observation.component",
+        "sliceName" : "gene-panel-sequencing",
+        "min" : 0,
+        "max" : "1",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:gene-panel-sequencing.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "code" : "C165600",
+              "display" : "Tumor Panel Sequencing"
+            }
+          ]
+        },
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:gene-panel-sequencing.value[x]",
+        "path" : "Observation.component.value[x]",
+        "short" : "Sequencing Gene Panel",
+        "type" : [
+          {
+            "code" : "string"
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:hgvs-version",
+        "path" : "Observation.component",
+        "sliceName" : "hgvs-version",
+        "short" : "HGVS Version",
+        "min" : 1,
+        "max" : "1",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:hgvs-version.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "81303-0",
+              "display" : "HGVS version [ID]"
+            }
+          ]
+        },
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.component:hgvs-version.value[x]",
         "path" : "Observation.component.value[x]",
         "type" : [
           {
