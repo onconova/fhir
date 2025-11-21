@@ -21,7 +21,7 @@ This profile extends the base mCODE [GenomicVariant profile](http://hl7.org/fhir
 * component[clinical-relevance] ^short = "Clinical relevance of the genomic variant"
 * component[clinical-relevance].code = $LOINC#LL4034-6 "ACMG_Clinical significance of genetic variation"
 * component[clinical-relevance].value[x] only CodeableConcept
-* component[clinical-relevance].valueCodeableConcept from https://loinc.org/LL4034-6/ (required)
+* component[clinical-relevance].valueCodeableConcept from ClinicalRelevanceVS (required)
 
 
 // Add component to record the length of the variant in nucleotides
