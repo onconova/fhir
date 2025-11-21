@@ -278,6 +278,9 @@ Supported Profiles
   "imports" : [
     "http://hl7.org/fhir/us/mcode/CapabilityStatement/mcode-sender-patient-bundle|4.0.0"
   ],
+  "software" : {
+    "name" : "Onconova"
+  },
   "fhirVersion" : "4.0.1",
   "format" : ["json"],
   "implementationGuide" : [

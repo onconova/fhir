@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-recreational-drugs | *Version*:0.2.0 |
-| Active as of 2025-11-19 | *Computable Name*:RecreationalDrugs |
+| Active as of 2025-11-21 | *Computable Name*:RecreationalDrugs |
 
  
 Substances that people use to alter their mental state, often for pleasure or leisure, with effects ranging from relaxation and euphoria to hallucinations and altered perceptions. 
@@ -54,7 +54,7 @@ This value set contains 21 concepts
   "name" : "RecreationalDrugs",
   "title" : "Recreational Drugs",
   "status" : "active",
-  "date" : "2025-11-19T14:47:01+00:00",
+  "date" : "2025-11-21T06:40:28+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

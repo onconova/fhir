@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-vital-status | *Version*:0.2.0 |
-| Active as of 2025-11-19 | *Computable Name*:VitalStatus |
+| Active as of 2025-11-21 | *Computable Name*:VitalStatus |
 
  
 The vital status of a patient 
@@ -54,7 +54,7 @@ This value set contains 3 concepts
   "name" : "VitalStatus",
   "title" : "Vital Status Value Set",
   "status" : "active",
-  "date" : "2025-11-19T14:47:01+00:00",
+  "date" : "2025-11-21T06:40:28+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

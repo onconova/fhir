@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-differentiation | *Version*:0.2.0 |
-| Active as of 2025-11-19 | *Computable Name*:ICDO3Differentiation |
+| Active as of 2025-11-21 | *Computable Name*:ICDO3Differentiation |
 
  
 A value set of ICD-O-3 differentiation codes. 
@@ -52,7 +52,7 @@ A value set of ICD-O-3 differentiation codes.
   "name" : "ICDO3Differentiation",
   "title" : "ICD-O-3 Differentiation",
   "status" : "active",
-  "date" : "2025-11-19T14:47:01+00:00",
+  "date" : "2025-11-21T06:40:28+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

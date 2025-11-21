@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-comorbidity-panels | *Version*:0.2.0 |
-| Active as of 2025-11-19 | *Computable Name*:ComorbidityPanels |
+| Active as of 2025-11-21 | *Computable Name*:ComorbidityPanels |
 
  
 A collection of comorbidity panels relevant to cancer patients. 
@@ -50,7 +50,7 @@ A collection of comorbidity panels relevant to cancer patients.
   "name" : "ComorbidityPanels",
   "title" : "Comorbidity Panels",
   "status" : "active",
-  "date" : "2025-11-19T14:47:01+00:00",
+  "date" : "2025-11-21T06:40:28+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

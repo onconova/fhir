@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-microsatellite-instability | *Version*:0.2.0 |
-| Active as of 2025-11-19 | *Computable Name*:OnconovaMicrosatelliteInstability |
+| Active as of 2025-11-21 | *Computable Name*:OnconovaMicrosatelliteInstability |
 
  
 A profile representing microsatellite instability for a cancer patient. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-microsatell
   "name" : "OnconovaMicrosatelliteInstability",
   "title" : "Microsatellite Instability Profile",
   "status" : "active",
-  "date" : "2025-11-19T14:47:01+00:00",
+  "date" : "2025-11-21T06:40:28+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
