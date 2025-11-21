@@ -13,7 +13,7 @@ The following artifacts define the specific capabilities that different types of
 
 | | |
 | :--- | :--- |
-| [Onconova FHIR REST Capability Statement](CapabilityStatement-onconova-capability-statement.md) | Supports the retrieval of the[mCODE Patient Bundle](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle)containing all relevant mCODE resources (provided by Onconova) for a given patient. It also supports CRUD interactions on all Onconova profiles defined in this Implementation Guide. |
+| [Onconova FHIR REST Server Capability Statement](CapabilityStatement-onconova-capability-statement.md) | Supports the retrieval of the[mCODE Patient Bundle](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle)containing all relevant mCODE resources (provided by Onconova) for a given patient. It also supports CRUD interactions on all Onconova profiles defined in this Implementation Guide. |
 
 ### Structures: Resource Profiles 
 

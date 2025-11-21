@@ -52,7 +52,7 @@ This profile can be used to represent the Onconova neoplastic entities of relati
 **Usages:**
 
 * Refer to this Profile: [Karnofsky Performance Status Profile](StructureDefinition-onconova-Karnofsky-performance-status.md), [Comorbidities Profile](StructureDefinition-onconova-comorbidities.md), [ECOG Performance Status Profile](StructureDefinition-onconova-ecog-performance-status.md), [Molecular Tumor Board Molecular Comparison](StructureDefinition-onconova-ext-molecular-tumor-board-molecular-comparison.md)...Show 5 more,[Imaging Disease Status Profile](StructureDefinition-onconova-imaging-disease-status.md),[Medication Administration Profile](StructureDefinition-onconova-medication-administration.md),[Secondary Cancer Condition Profile](StructureDefinition-onconova-secondary-cancer-condition.md),[Surgical Procedure Profile](StructureDefinition-onconova-surgical-procedure.md)and[Tumor Board Review](StructureDefinition-onconova-tumor-board-review.md)
-* CapabilityStatements using this Profile: [Onconova FHIR REST Capability Statement](CapabilityStatement-onconova-capability-statement.md)
+* CapabilityStatements using this Profile: [Onconova FHIR REST Server Capability Statement](CapabilityStatement-onconova-capability-statement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-primary-cancer-condition)
 
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-primary-can
   "name" : "OnconovaPrimaryCancerCondition",
   "title" : "Primary Cancer Condition Profile",
   "status" : "active",
-  "date" : "2025-11-21T12:46:13+00:00",
+  "date" : "2025-11-21T14:06:51+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

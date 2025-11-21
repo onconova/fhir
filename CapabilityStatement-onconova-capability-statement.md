@@ -1,10 +1,10 @@
-# Onconova FHIR REST Capability Statement - Onconova Implementation Guide v0.2.0
+# Onconova FHIR REST Server Capability Statement - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Onconova FHIR REST Capability Statement**
+* **Onconova FHIR REST Server Capability Statement**
 
-## CapabilityStatement: Onconova FHIR REST Capability Statement 
+## CapabilityStatement: Onconova FHIR REST Server Capability Statement 
 
 | | |
 | :--- | :--- |
@@ -16,11 +16,11 @@ Supports the retrieval of the[mCODE Patient Bundle](http://hl7.org/fhir/us/mcode
 
  [Raw OpenAPI-Swagger Definition file](onconova-capability-statement.openapi.json) | [Download](onconova-capability-statement.openapi.json) 
 
-## Onconova FHIR REST Capability Statement
+## Onconova FHIR REST Server Capability Statement
 
 * Implementation Guide Version: 0.2.0 
 * FHIR Version: 4.0.1 
-* Supported Formats: `json`
+* Supported Formats: `json`, `application/fhir+json`
 * Published on: 2025-09-25 
 * Published by: Onconova 
 
@@ -41,22 +41,21 @@ As an mCODE-compliant server, the Onconova FHIR server **SHALL**:
 1. Support all profiles defined in this Implementation Guide.
 1. Implement the RESTful behavior according to the FHIR specification.
 1. Return the following response classes:
-* (Status 400): invalid parameter
-* (Status 401/4xx): unauthorized request
-* (Status 403): insufficient scope
-* (Status 404): unknown resource
-* (Status 410): deleted resource.
+* (Status 400): Invalid parameter or data
+* (Status 401): Unauthorized request
+* (Status 403): Insufficient permissions
+* (Status 404): Unknown resource
+* (Status 405): HTTP method not allowed/supported
+* (Status 410): Deleted resource
+* (Status 500): Internal server error
 
-1. Support json source formats for all mCODE interactions.
-1. Identify the mCODE profiles supported as part of the FHIR`meta.profile`attribute for each instance.
+1. Support JSON source formats for all Onconova interactions.
+1. Identify the Onconova profiles supported as part of the FHIR`meta.profile`attribute for each instance.
 1. Support the searchParameters on each profile individually and in combination.
 
-The Onconova FHIR server does **NOT**:
+The Onconova FHIR server **MAY**:
 
-```
-1. Support xml source formats for mCODE interactions.
-
-```
+1. Support XML source formats for its interactions.
 
 **Security**
 
@@ -64,6 +63,7 @@ The Onconova FHIR server does **NOT**:
 
 1. See the[General Security Considerations](https://www.hl7.org/fhir/security.html#general)section for requirements and recommendations.
 1. A server**SHALL**reject any unauthorized requests by returning an`HTTP 401`unauthorized response code.
+1. A server**SHALL**reject any requests with insufficient permissions by returning an`HTTP 403`forbidden response code.
 
 
 Summary of System-wide Operations
@@ -258,7 +258,7 @@ Supported Profiles
   "url" : "http://onconova.github.io/fhir/CapabilityStatement/onconova-capability-statement",
   "version" : "0.2.0",
   "name" : "OnconovaCapabilityStatement",
-  "title" : "Onconova FHIR REST Capability Statement",
+  "title" : "Onconova FHIR REST Server Capability Statement",
   "status" : "draft",
   "date" : "2025-09-25",
   "publisher" : "Onconova",
@@ -282,16 +282,16 @@ Supported Profiles
     "name" : "Onconova"
   },
   "fhirVersion" : "4.0.1",
-  "format" : ["json"],
+  "format" : ["json", "application/fhir+json"],
   "implementationGuide" : [
     "http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir"
   ],
   "rest" : [
     {
       "mode" : "server",
-      "documentation" : "As an mCODE-compliant server, the Onconova FHIR server **SHALL**:\n\n1. Support all profiles defined in this Implementation Guide.\n2. Implement the RESTful behavior according to the FHIR specification.\n3. Return the following response classes:\n    - (Status 400): invalid parameter\n    - (Status 401/4xx): unauthorized request\n    - (Status 403): insufficient scope\n    - (Status 404): unknown resource\n    - (Status 410): deleted resource.\n4. Support json source formats for all mCODE interactions.\n5. Identify the mCODE  profiles supported as part of the FHIR `meta.profile` attribute for each instance.\n6. Support the searchParameters on each profile individually and in combination.\n\nThe Onconova FHIR server does **NOT**:\n\n    1. Support xml source formats for mCODE interactions.",
+      "documentation" : "As an mCODE-compliant server, the Onconova FHIR server **SHALL**:\n\n1. Support all profiles defined in this Implementation Guide.\n2. Implement the RESTful behavior according to the FHIR specification.\n3. Return the following response classes:\n    - (Status 400): Invalid parameter or data\n    - (Status 401): Unauthorized request\n    - (Status 403): Insufficient permissions\n    - (Status 404): Unknown resource\n    - (Status 405): HTTP method not allowed/supported\n    - (Status 410): Deleted resource\n    - (Status 500): Internal server error \n4. Support JSON source formats for all Onconova interactions.\n5. Identify the Onconova profiles supported as part of the FHIR `meta.profile` attribute for each instance.\n6. Support the searchParameters on each profile individually and in combination.\n\nThe Onconova FHIR server **MAY**:\n\n1. Support XML source formats for its interactions.",
       "security" : {
-        "description" : "1. See the [General Security Considerations](https://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.\n2. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."
+        "description" : "1. See the [General Security Considerations](https://www.hl7.org/fhir/security.html#general) section for requirements and recommendations.\n2. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code.\n2. A server **SHALL** reject any requests with insufficient permissions by returning an `HTTP 403` forbidden response code."
       },
       "resource" : [
         {

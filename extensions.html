@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Extensions - Onconova Implementation Guide v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Onconova Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="CapabilityStatement-onconova-capability-statement.html">Conformance</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="https://onconova.github.io/docs/latest/">Onconova Documentation</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Extensions</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Onconova Implementation Guide - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://onconova.github.io/fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Extensions</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>Extensions
+The following extensions have been defined for this implementation guide:</p>
+
+<li><a href="StructureDefinition-ext-therapy-line-reference.html">Therapy Line Reference</a> <p>A reference to the therapy line associated with this treatment.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-adjunctive-role.html">Adjunctive Role</a> <p>Indicates the role of this medication administration in the context of the overall treatment plan.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-adverse-event-mitigation.html">Adverse Event Mitigation</a> <p>Details about an action taken to mitigate or manage the adverse event.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-age-at-diagnosis.html">Age at Diagnosis</a> <p>The approximate age of the patient at the time of diagnosis of the disease.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-age.html">Age</a> <p>The approximate age of the patient.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-cancer-morphology.html">Cancer Morphology</a> <p>The morphology of the cancer, represented by a ICD-O-3 code.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-cancer-topography.html">Cancer Topography</a> <p>The topography of the cancer, represented by a ICD-O-3 code.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-cause-of-death.html">Cause of Death</a> <p>The cause of death for the patient.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-combined-with.html">Combined With</a> <p>Indicates that this medication administration was given in combination with another medication administration.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-consent-status.html">Consent status</a> <p>The status of whether the patient has given or revoked consent for reasearch use.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-contributors.html">Contributors</a> <p>The individuals or organizations that contributed to the patient's care.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-ctc-grade.html">CTCAE Grade</a> <p>The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE).</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-cycles.html">Cycles</a> <p>Indicates the total number of cycles for this medication administration.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-data-completion-rate.html">Data Completion Rate</a> <p>The percentage of data elements categories that have been completed for a patient.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-differentiation.html">Recurrence Type</a> <p>THe histological differentiation of the tumor.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-end-of-records.html">End of Records</a> <p>Indicates the last known record date of a patient.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-genomic-assessment-date.html">Genomic Assessment Date</a> <p>Date at which the genomic variant was assessed and/or reported.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-is-primary-therapy.html">Is Primary Therapy</a> <p>Indicates whether this medication administration is the primary therapy within a therapy line.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-molecular-tumor-board-cup-characterization.html">Molecular Tumor Board CUP Characterization</a> <p>A characterization of the tumor board review focused on cancer of unknown primary (CUP) origin.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-molecular-tumor-board-molecular-comparison.html">Molecular Tumor Board Molecular Comparison</a> <p>A comparison of molecular findings discussed during the molecular tumor board review.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.html">Molecular Tumor Board Therapeutic Recommendation</a> <p>A therapeutic recommendation or follow-up action resulting from a molecular tumor board review.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-overall-survival.html">Overall Survival</a> <p>The duration of time from either the date of diagnosis or the start of treatment for a disease, such as cancer, that patients diagnosed with the disease are still alive. In a clinical trial, measuring the overall survival is one way to see how well a new treatment works.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-recist-is-interpreted.html">Recist Is Interpreted</a> <p>Indicates that whether the RECIST was interpreted from a radiology report rather than extracted.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-recurrence-of.html">Recurrence Of</a> <p>Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-recurrence-type.html">Recurrence Type</a> <p>Indicates the type of recurrence for the condition (local or regional).</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-risk-assessment-score.html">Risk Assessment Score</a> <p>The numerical score of the risk assessment.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-therapy-line-intent.html">Therapy Line Intent</a> <p>The intent of the therapy line, such as curative or palliative.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-therapy-line-number.html">Therapy Line Number</a> <p>The number representing the sequence of the therapy line in the overall treatment regimen.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-therapy-line-period.html">Therapy Line Period</a> <p>The period during which the therapy line was performed.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-therapy-line-progression-date.html">Therapy Line Progression Date</a> <p>The date when disease progression was observed during or after the therapy line.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-therapy-line-progression-free-survival.html">Therapy Line Progression-Free Survival</a> <p>The progression-free survival duration for the therapy line.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-tumor-board-specialization.html">Tumor Board Specialization</a> <p>The specialization or focus area of the tumor board conducting the review, such as hematologic malignancies or solid tumors.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-tumor-marker-analyte.html">Tumor Marker Analyte</a> <p>The specific analyte or substance being measured as a tumor marker, such as PSA, CA-125, or CEA.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-unknown-entry.html">Unknown Entry</a> <p>Value is not collected and cannot be provided by Onconova.</p>
+</li>
+<li><a href="StructureDefinition-onconova-ext-vital-status.html">Vital status</a> <p>The status of whether the patient is alive or deceased or unknown.</p>
+</li>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 21, 2025 14:06+0000">2025-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -10,7 +10,7 @@
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-21T12:46:13+00:00",
+  "date" : "2025-11-21T14:06:51+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -1532,7 +1532,7 @@
       "reference" : {
         "reference" : "CapabilityStatement/onconova-capability-statement"
       },
-      "name" : "Onconova FHIR REST Capability Statement",
+      "name" : "Onconova FHIR REST Server Capability Statement",
       "description" : "Supports the retrieval of the [mCODE Patient Bundle](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle) containing all relevant mCODE resources (provided by Onconova) for a given patient. It also supports CRUD interactions on all Onconova profiles defined in this Implementation Guide.",
       "exampleBoolean" : false
     },
@@ -2199,6 +2199,33 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "extensions.html"
+        }],
+        "nameUrl" : "extensions.html",
+        "title" : "Extensions",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "profiles.html"
+        }],
+        "nameUrl" : "profiles.html",
+        "title" : "Profiles",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "terminology.html"
+        }],
+        "nameUrl" : "terminology.html",
+        "title" : "Terminology",
         "generation" : "markdown"
       }]
     },

@@ -45,8 +45,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.17"}
-    h3,h4,h5,h6{--heading-prefix:"2.17"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.17"}
+    h3,h4,h5,h6{--heading-prefix:"5.17"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -86,27 +86,23 @@
   <li>
     <a href="index.html">Home</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="artifacts.html#2">Profiles</a>
-      </li>
-      <li>
-        <a href="artifacts.html#3">Extensions</a>
-      </li>
-      <li>
-        <a href="artifacts.html#4">Value Sets</a>
-      </li>
-    </ul>
-  </li>
   <li>
     <a href="CapabilityStatement-onconova-capability-statement.html">Conformance</a>
   </li>
   <li>
-    <a href="http://hl7.org/fhir/us/example/history.html">History</a>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="https://onconova.github.io/docs/latest/">Onconova Documentation</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -249,7 +245,7 @@
 <p><b>Usages:</b></p>
 <ul>
  <li>Refer to this Profile: <a href="StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.html">Molecular Tumor Board Therapeutic Recommendation</a></li>
- <li>CapabilityStatements using this Profile: <a href="CapabilityStatement-onconova-capability-statement.html">Onconova FHIR REST Capability Statement</a></li>
+ <li>CapabilityStatements using this Profile: <a href="CapabilityStatement-onconova-capability-statement.html">Onconova FHIR REST Server Capability Statement</a></li>
 </ul>
 <p>You can also check for <a href="https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-microsatellite-instability">usages in the FHIR IG Statistics</a></p>
 
@@ -553,7 +549,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Plain text representation of the concept</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fd34d9d4-f896-4a3e-8350-69e24ef651aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // bba34708-d0a2-43f7-8dbd-08ee2000234e
 document.getElementById('cbonconova-microsatellite-instabilityK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('onconova-microsatellite-instabilityK'), 'binding', document.getElementById('cbonconova-microsatellite-instabilityK-binding').checked, document.getElementById('pponconova-microsatellite-instabilityK'));
 document.getElementById('cbonconova-microsatellite-instabilityK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -855,7 +851,7 @@ filterDesc(document.getElementById('onconova-microsatellite-instabilityK'), 'obl
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Clinically relevant time/time-period for observation</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fd34d9d4-f896-4a3e-8350-69e24ef651aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // bba34708-d0a2-43f7-8dbd-08ee2000234e
 document.getElementById('cbonconova-microsatellite-instabilityD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('onconova-microsatellite-instabilityD'), 'binding', document.getElementById('cbonconova-microsatellite-instabilityD-binding').checked, document.getElementById('pponconova-microsatellite-instabilityD'));
 document.getElementById('cbonconova-microsatellite-instabilityD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1483,7 +1479,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fd34d9d4-f896-4a3e-8350-69e24ef651aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // bba34708-d0a2-43f7-8dbd-08ee2000234e
 document.getElementById('cbonconova-microsatellite-instabilityS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('onconova-microsatellite-instabilityS'), 'binding', document.getElementById('cbonconova-microsatellite-instabilityS-binding').checked, document.getElementById('pponconova-microsatellite-instabilityS'));
 document.getElementById('cbonconova-microsatellite-instabilityS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2316,7 +2312,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Plain text representation of the concept</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fd34d9d4-f896-4a3e-8350-69e24ef651aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // bba34708-d0a2-43f7-8dbd-08ee2000234e
 document.getElementById('cbonconova-microsatellite-instabilityKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('onconova-microsatellite-instabilityKA'), 'binding', document.getElementById('cbonconova-microsatellite-instabilityKA-binding').checked, document.getElementById('pponconova-microsatellite-instabilityKA'));
 document.getElementById('cbonconova-microsatellite-instabilityKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2618,7 +2614,7 @@ filterDesc(document.getElementById('onconova-microsatellite-instabilityKA'), 'ob
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Clinically relevant time/time-period for observation</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fd34d9d4-f896-4a3e-8350-69e24ef651aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // bba34708-d0a2-43f7-8dbd-08ee2000234e
 document.getElementById('cbonconova-microsatellite-instabilityDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('onconova-microsatellite-instabilityDA'), 'binding', document.getElementById('cbonconova-microsatellite-instabilityDA-binding').checked, document.getElementById('pponconova-microsatellite-instabilityDA'));
 document.getElementById('cbonconova-microsatellite-instabilityDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3245,7 +3241,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fd34d9d4-f896-4a3e-8350-69e24ef651aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // bba34708-d0a2-43f7-8dbd-08ee2000234e
 document.getElementById('cbonconova-microsatellite-instabilitySA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('onconova-microsatellite-instabilitySA'), 'binding', document.getElementById('cbonconova-microsatellite-instabilitySA-binding').checked, document.getElementById('pponconova-microsatellite-instabilitySA'));
 document.getElementById('cbonconova-microsatellite-instabilitySA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3834,7 +3830,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 21, 2025 12:46+0000">2025-11-21</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 21, 2025 14:06+0000">2025-11-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

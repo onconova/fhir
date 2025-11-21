@@ -18,7 +18,7 @@ This profile extends the base mCODE[TNMDistantMetastasesCategory profile](http:/
 **Usages:**
 
 * Refer to this Profile: [TNM Stage Group](StructureDefinition-onconova-tnm-stage-group.md)
-* CapabilityStatements using this Profile: [Onconova FHIR REST Capability Statement](CapabilityStatement-onconova-capability-statement.md)
+* CapabilityStatements using this Profile: [Onconova FHIR REST Server Capability Statement](CapabilityStatement-onconova-capability-statement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-tnm-distant-metastases-category)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-distant
   "name" : "OnconovaTNMDistantMetastasesCategory",
   "title" : "TNM Distant Metastases Category",
   "status" : "active",
-  "date" : "2025-11-21T12:46:13+00:00",
+  "date" : "2025-11-21T14:06:51+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

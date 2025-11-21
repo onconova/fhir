@@ -19,7 +19,7 @@ If relied on the same use context as mCODE, namely for substances found in tissu
 **Usages:**
 
 * Refer to this Profile: [Molecular Tumor Board Therapeutic Recommendation](StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.md)
-* CapabilityStatements using this Profile: [Onconova FHIR REST Capability Statement](CapabilityStatement-onconova-capability-statement.md)
+* CapabilityStatements using this Profile: [Onconova FHIR REST Server Capability Statement](CapabilityStatement-onconova-capability-statement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-tumor-marker)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
   "name" : "OnconovaTumorMarker",
   "title" : "Tumor Marker Profile",
   "status" : "active",
-  "date" : "2025-11-21T12:46:13+00:00",
+  "date" : "2025-11-21T14:06:51+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

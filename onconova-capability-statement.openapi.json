@@ -1,7 +1,7 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "Onconova FHIR REST Capability Statement",
+    "title": "Onconova FHIR REST Server Capability Statement",
     "description": "Supports the retrieval of the [mCODE Patient Bundle](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle) containing all relevant mCODE resources (provided by Onconova) for a given patient. It also supports CRUD interactions on all Onconova profiles defined in this Implementation Guide.",
     "license": {
       "name": "MIT License",

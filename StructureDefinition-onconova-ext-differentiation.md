@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-differe
   "name" : "Differentiation",
   "title" : "Recurrence Type",
   "status" : "active",
-  "date" : "2025-11-21T12:46:13+00:00",
+  "date" : "2025-11-21T14:06:51+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

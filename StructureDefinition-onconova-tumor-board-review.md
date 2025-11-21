@@ -18,7 +18,7 @@ This profile extends the base FHIR`Procedure`resource since there is no equivale
 **Usages:**
 
 * Derived from this Profile: [Molecular Tumor Board Review](StructureDefinition-onconova-molecular-tumor-board-review.md)
-* CapabilityStatements using this Profile: [Onconova FHIR REST Capability Statement](CapabilityStatement-onconova-capability-statement.md)
+* CapabilityStatements using this Profile: [Onconova FHIR REST Server Capability Statement](CapabilityStatement-onconova-capability-statement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-tumor-board-review)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
   "name" : "OnconovaTumorBoardReview",
   "title" : "Tumor Board Review",
   "status" : "active",
-  "date" : "2025-11-21T12:46:13+00:00",
+  "date" : "2025-11-21T14:06:51+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

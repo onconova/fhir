@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Terminology - Onconova Implementation Guide v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Onconova Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="CapabilityStatement-onconova-capability-statement.html">Conformance</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="https://onconova.github.io/docs/latest/">Onconova Documentation</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Terminology</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Onconova Implementation Guide - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://onconova.github.io/fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Terminology</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="value-sets">Value Sets</h1>
+
+<p>The following value sets have been defined for this implementation guide:</p>
+
+<li><a href="ValueSet-onconova-tnm-lymphatic-invasion-categories.html">TNM Lymphatic Invasion Categories Value Set</a> <p>TNM Lymphatic Invasion Categories Value Set</p>
+</li>
+<li><a href="ValueSet-onconova-tnm-perineural-invasion-categories.html">TNM Perineural Invasion Categories Value Set</a> <p>TNM Perineural Invasion Categories Value Set</p>
+</li>
+<li><a href="ValueSet-onconova-tnm-residual-tumor-categories.html">TNM Residual Tumor Categories Value Set</a> <p>TNM Residual Tumor Categories Value Set</p>
+</li>
+<li><a href="ValueSet-onconova-vs-adjunctive-therapy-roles.html">Adjunctive Therapy Roles</a> <p>Codes representing roles for adjunctive therapy in oncology.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-adverse-event-mitigation-categories.html">Adverse Event Mitigation Categories</a> <p>Categories of actions taken to mitigate or manage adverse events in oncology.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-adverse-event-mitigation-drugs.html">Adverse Event Mitigation - Drugs</a> <p>Drugs or medication categories used in the mitigation process of an adverse event.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-adverse-event-mitigation-managements.html">Adverse Event Mitigation - Management</a> <p>Classification of actions to mitigate adverse events affecting a patient's health.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-adverse-event-mitigation-procedures.html">Adverse Event Mitigation - Procedures</a> <p>Procedures undertaken to mitigate the impact of an adverse event on a patient's health.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-adverse-event-mitigation-treatment-adjustments.html">Adverse Event Mitigation - Treatment Adjustment</a> <p>Adjustments made to a patient's treatment plan in response to an adverse event.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-amino-acid-change-type.html">Amino Acid Change Type Value Set</a> <p>Amino acid change types due to a genomic variant. It constraints and expands the original <a href="https://loinc.org/LL380-7/">LOINC Answer List LL380-7</a> to enforce Onconova-compatible codes</p>
+</li>
+<li><a href="ValueSet-onconova-vs-antineoplastic-agents.html">Antineoplastic Agents</a> <p>A value set of antineoplastic agents.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-cancer-imaging-methods.html">Cancer Imaging Methods</a> <p>Codes representing various imaging methods used in cancer diagnosis and monitoring.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-cancer-risk-assessment-methods.html">Cancer Risk Assessment Methods</a> <p>A value set containing codes for various cancer risk assessment methods.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-cancer-risk-assessment-values.html">Risk Assessment Values</a> <p>A non-exhaustive value set containing codes that result from risk assessments, i.e., the risk level of the cancer.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-causes-of-death.html">Cause of Death Value Set</a> <p>The causes of death that are relevant for a cancer patient.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-clinical-relevance.html">Clinical Relevance Value Set</a> <p>Clinical relevance of a genomic variant</p>
+</li>
+<li><a href="ValueSet-onconova-vs-comorbidity-panels.html">Comorbidity Panels</a> <p>A collection of comorbidity panels relevant to cancer patients.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-consent-status.html">Consent Status Value Set</a> <p>The consent status of a patient</p>
+</li>
+<li><a href="ValueSet-onconova-vs-ctc-adverse-events.html">CTC Adverse Events</a> <p>Common Terminology Criteria for Adverse Events (CTCAE) is a standard classification and severity grading scale for adverse events in clinical trials and oncology practice.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-dna-change-type.html">Coding DNA Change Type Value Set</a> <p>Coding DNA change types due to a genomic variant. It constraints and expands the original <a href="https://loinc.org/LL380-7/">LOINC Answer List LL380-7</a> to enforce Onconova-compatible codes</p>
+</li>
+<li><a href="ValueSet-onconova-vs-expected-drug-effects.html">Expected Drug Effects</a> <p>A value set of expected drug effects.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-exposure-agents.html">Exposure Agents</a> <p>Agents to which a patient may have been exposed.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-icd-10-conditions.html">ICD-10 Codes</a> <p>This value set includes sample ICD-10 codes.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-icdo3-differentiation.html">ICD-O-3 Differentiation</a> <p>A value set of ICD-O-3 differentiation codes.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-icdo3-morphology-behavior.html">ICD-O-3 Morphology Behavior</a> <p>A value set of ICD-O-3 morphology behavior codes.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-icdo3-topography.html">ICD-O-3 Topography</a> <p>A value set of ICD-O-3 topography codes.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-observation-bodysites.html">Observation Body Sites Value Set</a> <p>Bodysites related to an observation</p>
+</li>
+<li><a href="ValueSet-onconova-vs-recreational-drugs.html">Recreational Drugs</a> <p>Substances that people use to alter their mental state, often for pleasure or leisure, with effects ranging from relaxation and euphoria to hallucinations and altered perceptions.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-recurrence-type.html">Recurrence Type Value Set</a> <p>A value set representing the types of cancer recurrence, specifically local and regional recurrences.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-smoking-status.html">Smoking status</a> <p>Smoking status of a patient</p>
+</li>
+<li><a href="ValueSet-onconova-vs-tnm-distant-metastasis-categories.html">TNM Distant Metastasis Categories Value Set</a> <p>TNM Distant Metastasis Categories Value Set</p>
+</li>
+<li><a href="ValueSet-onconova-vs-tnm-grade-categories.html">TNM Grade Categories Value Set</a> <p>TNM Grade Categories Value Set</p>
+</li>
+<li><a href="ValueSet-onconova-vs-tnm-grade-category-methods.html">TNM Grade Category Methods Value Set</a> <p>TNM Grade Category Methods Value Set</p>
+</li>
+<li><a href="ValueSet-onconova-vs-tnm-primary-tumor-categories.html">TNM Primary Tumor Categories</a> <p>TNM Primary Tumor Categories Value Set</p>
+</li>
+<li><a href="ValueSet-onconova-vs-tnm-regional-nodes-categories.html">TNM Regional Nodes Categories Value Set</a> <p>TNM Regional Nodes Categories Value Set</p>
+</li>
+<li><a href="ValueSet-onconova-vs-tnm-serum-tumor-marker-level-categories.html">TNM Serum Tumor Marker Level Categories Value Set</a> <p>TNM Serum Tumor Marker Level Categories Value Set</p>
+</li>
+<li><a href="ValueSet-onconova-vs-tnm-venous-invasion-categories.html">TNM Venous Invasion Categories Value Set</a> <p>TNM Venous Invasion Categories Value Set</p>
+</li>
+<li><a href="ValueSet-onconova-vs-treatment-termination-reasons.html">Treatment Termination Reasons</a> <p>Codes representing reasons for terminating a treatment in oncology.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-tumor-board-recommendations.html">Tumor Board Recommendations</a> <p>A value set of recommendations that may be made by a tumor board for a cancer patient.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-tumor-marker-analytes.html">Tumor Marker Analytes</a> <p>Codes representing analytes for tumor markers.</p>
+</li>
+<li><a href="ValueSet-onconova-vs-vital-status.html">Vital Status Value Set</a> <p>The vital status of a patient</p>
+</li>
+
+<h1 id="code-systems">Code Systems</h1>
+
+<p>The following code systems have been defined for this implementation guide:</p>
+
+<li><a href="CodeSystem-onconova-cs-comorbidity-panels.html">Comorbidity Panels Code System</a> <p>A code system for comorbidity panels relevant to cancer patients.</p>
+</li>
+<li><a href="CodeSystem-onconova-cs-consent-status.html">Consent Status Code System</a> <p>A code system for consent status relevant to Onconova patients.</p>
+</li>
+<li><a href="CodeSystem-onconova-cs-tbd.html">To Be Determined Codes</a> <p>A code system for codes that are yet to be determined.</p>
+</li>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 21, 2025 14:06+0000">2025-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

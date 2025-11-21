@@ -17,7 +17,7 @@ It extends the base mCODE[TNMStageGroup profile](http://hl7.org/fhir/us/mcode/St
 
 **Usages:**
 
-* CapabilityStatements using this Profile: [Onconova FHIR REST Capability Statement](CapabilityStatement-onconova-capability-statement.md)
+* CapabilityStatements using this Profile: [Onconova FHIR REST Server Capability Statement](CapabilityStatement-onconova-capability-statement.md)
 * This Profile is not used by any profiles in this Implementation Guide
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-tnm-stage-group)
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
   "name" : "OnconovaTNMStageGroup",
   "title" : "TNM Stage Group",
   "status" : "active",
-  "date" : "2025-11-21T12:46:13+00:00",
+  "date" : "2025-11-21T14:06:51+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

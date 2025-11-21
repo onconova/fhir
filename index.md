@@ -10,11 +10,84 @@
 | *Official URL*:http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir | *Version*:0.2.0 |
 | Active as of 2025-11-21 | *Computable Name*:Onconova |
 
+### Introduction
+
 **Onconova** is an open-source precision oncology platform focused on enabling advanced cancer research. The FHIR interface exposes key resources, profiles, and value sets to facilitate standardized data exchange and integration with EHRs, registries, and analytics platforms.
 
 This implementation guide provides a comprehensive overview of the FHIR-based server interface to Onconova, supporting interoperability, data exchange, and integration with clinical and research systems. It complements the [OpenAPI specification](https://onconova.github.io/docs/latest/guide/api/specification/) and is designed for healthcare organizations, developers, and integrators seeking to leverage Onconova's oncology data.
 
+#### Relation to mCODE
+
 This FHIR interface is designed to align with the [**minimal Common Oncology Data Elements (mCODE)**STU4 Implementation Guide](http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode), leveraging established, community-driven standards for oncology data. The Onconova IG refines and constrains mCODE resources to ensure consistent data elements and terminology bindings. Additionally, it defines new profiles to address oncology use cases not yet covered by the mCODE IG.
+
+### Understanding this Guide
+
+The Onconova Implementation Guide (IG) serves as a “Software” IG that explains how to work with Onconova’s FHIR interface and outlines the additional constraints Onconova places on top of the mCODE standard.
+
+The page layouts and symbols are explained [in the FHIR documentation](https://www.hl7.org/fhir/formats.html). In viewing a profile page, note that there are multiple views. The "Differential Table" view represents the difference between the current profile and its base resource or profile. When interpreting this view, bear in mind that the immediate parent may not be a base FHIR resource, but could be a US Core profile or another profile in this guide. The "Snapshot Table" represents the entire profile, with all elements.
+
+Page layouts and symbols follow the conventions described in the [official FHIR documentation](https://www.hl7.org/fhir/formats.html). When you open a profile page, you’ll notice several different views:
+
+* Differential Table: This view highlights the differences between the current profile and its immediate parent (which might be a base FHIR resource, a US Core profile, or another profile defined within this guide).
+* Snapshot Table: This view shows the complete profile, listing every element in its fully expanded form.
+
+If you encounter any inconsistencies between the rendering of pages in this IG and the corresponding FHIR artifacts, treat the FHIR artifacts as the authoritative source.
+
+### Safety Considerations
+
+This Implementation Guide specifies the data elements, resources, formats, and exchange methods used to share research healthcare information. Because clinical safety is paramount, additional safety guidance for the many possible implementations can be found at the HL7 FHIR safety page: https://www.hl7.org/FHIR/safety.html.
+
+While the guide includes provisions that support adherence to data‑protection and security regulations, merely using the specification does not ensure compliance. Compliance must be achieved through appropriate safeguards applied during implementation projects and in routine operations.
+
+### Governance
+
+The Onconova FHIR IG is managed by the [Onconova development group](https://github.com/onconova/fhir/graphs/contributors).
+
+### Credits
+
+The authors thank the mCODE Working Group for their diligent effort and solid contributions, which have been essential to the project's progress.
+
+### IP Statements
+
+This document is licensed under Creative Commons "No Rights Reserved" ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)).
+
+HL7®, HEALTH LEVEL SEVEN®, FHIR® and the FHIR ![](icon-fhir-16.png)® are trademarks owned by Health Level Seven International, registered with the United States Patent and Trademark Office.
+
+This implementation guide contains and references intellectual property owned by third parties ("Third Party IP"). Acceptance of these License Terms does not grant any rights with respect to Third Party IP. The licensee alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize Third Party IP in connection with the specification or otherwise.
+
+This publication includes IP covered under the following statements.
+
+* The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
+
+* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.2.0/CodeSystem-v3-ucum.html): [OnconovaLifestyle](StructureDefinition-onconova-lifestyle.md) and [OnconovaTumorMutationalBurden](StructureDefinition-onconova-tumor-mutational-burden.md)
+
+
+* This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
+
+* [LOINC](http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html): [AminoAcidChangeTypeVS](ValueSet-onconova-vs-amino-acid-change-type.md), [OnconovaECOGPerformanceStatus](StructureDefinition-onconova-ecog-performance-status.md)...Show 10 more,[OnconovaGenomicVariant](StructureDefinition-onconova-genomic-variant.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaKarnofskyPerformanceStatus](StructureDefinition-onconova-Karnofsky-performance-status.md),[OnconovaLifestyle](StructureDefinition-onconova-lifestyle.md),[OnconovaMicrosatelliteInstability](StructureDefinition-onconova-microsatellite-instability.md),[OnconovaTumorBoardRecommendations](ValueSet-onconova-vs-tumor-board-recommendations.md),[OnconovaTumorBoardReview](StructureDefinition-onconova-tumor-board-review.md),[OnconovaTumorMutationalBurden](StructureDefinition-onconova-tumor-mutational-burden.md),[TumorMarkerAnalyte](StructureDefinition-onconova-ext-tumor-marker-analyte.md)and[TumorMarkerAnalytes](ValueSet-onconova-vs-tumor-marker-analytes.md)
+
+
+* This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
+
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AdverseEventMitigation](StructureDefinition-onconova-ext-adverse-event-mitigation.md), [AdverseEventMitigationDrugs](ValueSet-onconova-vs-adverse-event-mitigation-drugs.md)...Show 46 more,[AdverseEventMitigationManagements](ValueSet-onconova-vs-adverse-event-mitigation-managements.md),[AdverseEventMitigationProcedures](ValueSet-onconova-vs-adverse-event-mitigation-procedures.md),[AdverseEventMitigationTreatmentAdjustments](ValueSet-onconova-vs-adverse-event-mitigation-treatment-adjustments.md),[CancerImagingMethods](ValueSet-onconova-vs-cancer-imaging-methods.md),[CauseOfDeath](StructureDefinition-onconova-ext-cause-of-death.md),[CausesOfDeath](ValueSet-onconova-vs-causes-of-death.md),[ExpectedDrugEffects](ValueSet-onconova-vs-expected-drug-effects.md),[MolecularTumorBoardTherapeuticRecommendation](StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.md),[ObservationBodySites](ValueSet-onconova-vs-observation-bodysites.md),[OnconovaCancerFamilyMemberHistory](StructureDefinition-onconova-cancer-family-member-history.md),[OnconovaComorbidities](StructureDefinition-onconova-comorbidities.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaLifestyle](StructureDefinition-onconova-lifestyle.md),[OnconovaMedicationAdministration](StructureDefinition-onconova-medication-administration.md),[OnconovaMolecularTumorBoardReview](StructureDefinition-onconova-molecular-tumor-board-review.md),[OnconovaPrimaryCancerCondition](StructureDefinition-onconova-primary-cancer-condition.md),[OnconovaRadiotherapySummary](StructureDefinition-onconova-radiotherapy-summary.md),[OnconovaSecondaryCancerCondition](StructureDefinition-onconova-secondary-cancer-condition.md),[OnconovaTNMDistantMetastasesCategory](StructureDefinition-onconova-tnm-distant-metastases-category.md),[OnconovaTNMGradeCategory](StructureDefinition-onconova-tnm-grade-category.md),[OnconovaTNMLymphaticInvasionCategory](StructureDefinition-onconova-tnm-lymphatic-invasion-category.md),[OnconovaTNMPerineuralInvasionCategory](StructureDefinition-onconova-tnm-perineural-invasion-category.md),[OnconovaTNMPrimaryTumorCategory](StructureDefinition-onconova-tnm-primary-tumor-category.md),[OnconovaTNMRegionalNodesCategory](StructureDefinition-onconova-tnm-regional-nodes-category.md),[OnconovaTNMResidualTumorCategory](StructureDefinition-onconova-tnm-residual-tumor-category.md),[OnconovaTNMSerumTumorMarkerLevelCategory](StructureDefinition-onconova-serous-tumor-marker-level-category.md),[OnconovaTNMVenousInvasionCategory](StructureDefinition-onconova-venous-invasion-category.md),[OnconovaTumorBoardRecommendations](ValueSet-onconova-vs-tumor-board-recommendations.md),[OnconovaTumorBoardReview](StructureDefinition-onconova-tumor-board-review.md),[RecreationalDrugs](ValueSet-onconova-vs-recreational-drugs.md),[RecurrenceType](StructureDefinition-onconova-ext-recurrence-type.md),[RecurrenceTypeVS](ValueSet-onconova-vs-recurrence-type.md),[SmokingStatus](ValueSet-onconova-vs-smoking-status.md),[TNMDistantMetastasisCategories](ValueSet-onconova-vs-tnm-distant-metastasis-categories.md),[TNMGradeCategories](ValueSet-onconova-vs-tnm-grade-categories.md),[TNMGradeCategoryMethods](ValueSet-onconova-vs-tnm-grade-category-methods.md),[TNMLymphaticInvasionCategories](ValueSet-onconova-tnm-lymphatic-invasion-categories.md),[TNMPerineuralInvasionCategories](ValueSet-onconova-tnm-perineural-invasion-categories.md),[TNMPrimaryTumorCategories](ValueSet-onconova-vs-tnm-primary-tumor-categories.md),[TNMRegionalNodesCategories](ValueSet-onconova-vs-tnm-regional-nodes-categories.md),[TNMResidualTumorCategories](ValueSet-onconova-tnm-residual-tumor-categories.md),[TNMSerumTumorMarkerLevelCategories](ValueSet-onconova-vs-tnm-serum-tumor-marker-level-categories.md),[TNMVenousInvasionCategories](ValueSet-onconova-vs-tnm-venous-invasion-categories.md),[TherapyLineIntent](StructureDefinition-onconova-ext-therapy-line-intent.md),[TreatmentTerminationReasons](ValueSet-onconova-vs-treatment-termination-reasons.md)and[VitalStatus](ValueSet-onconova-vs-vital-status.md)
+
+
+* This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
+
+* [Observation Category Codes](http://terminology.hl7.org/7.0.0/CodeSystem-observation-category.html): [OnconovaAneuploidScore](StructureDefinition-onconova-aneuploid-score.md), [OnconovaGenomicVariant](StructureDefinition-onconova-genomic-variant.md)...Show 7 more,[OnconovaHomologousRecombinationDeficiency](StructureDefinition-onconova-homologous-recombination-deficiency.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaLossOfHeterozygosity](StructureDefinition-onconova-loss-of-heterozygosity.md),[OnconovaMicrosatelliteInstability](StructureDefinition-onconova-microsatellite-instability.md),[OnconovaTumorMarker](StructureDefinition-onconova-tumor-marker.md),[OnconovaTumorMutationalBurden](StructureDefinition-onconova-tumor-mutational-burden.md)and[OnconovaTumorNeoantigenBurden](StructureDefinition-onconova-tumor-neoantigen-burden.md)
+* [identifierType](http://terminology.hl7.org/7.0.0/CodeSystem-v2-0203.html): [OnconovaCancerPatient](StructureDefinition-onconova-cancer-patient.md)
+
+
+### Dependency Table
+
+
+
+
+
+
+
+
+
 
 -------
 
@@ -33,7 +106,7 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-21T12:46:13+00:00",
+  "date" : "2025-11-21T14:06:51+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -1824,7 +1897,7 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
         "reference" : {
           "reference" : "CapabilityStatement/onconova-capability-statement"
         },
-        "name" : "Onconova FHIR REST Capability Statement",
+        "name" : "Onconova FHIR REST Server Capability Statement",
         "description" : "Supports the retrieval of the [mCODE Patient Bundle](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-patient-bundle) containing all relevant mCODE resources (provided by Onconova) for a given patient. It also supports CRUD interactions on all Onconova profiles defined in this Implementation Guide.",
         "exampleBoolean" : false
       },
@@ -2605,6 +2678,39 @@ This FHIR interface is designed to align with the [**minimal Common Oncology Dat
           ],
           "nameUrl" : "index.html",
           "title" : "Home",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "extensions.html"
+            }
+          ],
+          "nameUrl" : "extensions.html",
+          "title" : "Extensions",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "profiles.html"
+            }
+          ],
+          "nameUrl" : "profiles.html",
+          "title" : "Profiles",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "terminology.html"
+            }
+          ],
+          "nameUrl" : "terminology.html",
+          "title" : "Terminology",
           "generation" : "markdown"
         }
       ]
