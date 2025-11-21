@@ -38,6 +38,19 @@ The Onconova FHIR IG is managed by the [Onconova development group](https://gith
 
 The authors thank the mCODE Working Group for their diligent effort and solid contributions, which have been essential to the project's progress.
 
+### IP Statements
+This document is licensed under Creative Commons "No Rights Reserved" ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)).
+
+HL7®, HEALTH LEVEL SEVEN®, FHIR® and the FHIR <img src="icon-fhir-16.png" style="float: none; margin: 0px; padding: 0px; vertical-align: bottom"/>&reg; are trademarks owned by Health Level Seven International, registered with the United States Patent and Trademark Office.
+
+This implementation guide contains and references intellectual property owned by third parties ("Third Party IP"). Acceptance of these License Terms does not grant any rights with respect to Third Party IP. The licensee alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize Third Party IP in connection with the specification or otherwise.
+
+{% include ip-statements.xhtml %}
+
+### Dependency Table
+
+{% include dependency-table.xhtml %}
+
 ---
 
 _Onconova is an open source project and welcomes all contributors. The source code for this IG is maintained in the [Onconova Github](https://github.com/onconova/fhir). All of the profiling work is done using FHIR Shorthand and SUSHI. All content is subject to change._
