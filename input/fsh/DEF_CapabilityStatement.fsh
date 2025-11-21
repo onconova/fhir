@@ -14,6 +14,7 @@ Supports the retrieval of the [mCODE Patient Bundle](http://hl7.org/fhir/us/mcod
 * date = "2025-09-25"
 * kind = #capability
 * implementationGuide = Canonical(onconova.fhir)
+* software.name = "Onconova"
 * rest[0].mode = #server
 * rest.documentation =  """
 As an mCODE-compliant server, the Onconova FHIR server **SHALL**:
