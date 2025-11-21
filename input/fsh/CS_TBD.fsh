@@ -7,3 +7,4 @@ Description: "A code system for codes that are yet to be determined."
 
 * #aneuploid-score "Aneuploid Score"
 * #tumor-neoantigen-burden "Tumor Neoantigen Burden"
+* #rna-hgvs "Transcript RNA change (rHGVS)"
