@@ -10,52 +10,61 @@ This profile extends the base mCODE [GenomicVariant profile](http://hl7.org/fhir
 
 * status = #final
 * effective[x] only dateTime
+* effective[x] ^short = "Clinically-relevant date of the genomic variant (e.g. the specimen collection date)"
 * subject only Reference(OnconovaCancerPatient)
 
-* extension contains GenePanel named genePanel 0..1
-* extension[genePanel] ^short = "Gene Panel"
+* extension contains GenomicAssessmentDate named genomic-assessment-date 0..1
 
-// Add extension to record the length of the variant in nucleotides
-* insert CreateComponent(nucleotidesCount, 1, 1) 
-* component[nucleotidesCount] ^short = "Length of of the variant in nNucleotides"
-* component[nucleotidesCount].code = $NCIT#C709 "Nucleotides"
-* component[nucleotidesCount].value[x] only integer
 
-// Add extension to record the length of the variant in nucleotides
-* insert CreateComponent(geneRegion, 1, 1)
-* component[geneRegion] ^short = "Region (exon, intron, etc.) of the gene affected by the variant"
-* component[geneRegion].code = $NCIT#C13445  "Gene Feature"
-* component[geneRegion].value[x] only string
+// Add component to record the length of the variant in nucleotides
+* insert CreateComponent(clinical-relevance, 1, 1) 
+* component[clinical-relevance] ^short = "Clinical relevance of the genomic variant"
+* component[clinical-relevance].code = $LOINC#LL4034-6 "ACMG_Clinical significance of genetic variation"
+* component[clinical-relevance].value[x] only CodeableConcept
+* component[clinical-relevance].valueCodeableConcept from ClinicalRelevanceVS (required)
+
+
+// Add component to record the length of the variant in nucleotides
+* insert CreateComponent(nucleotides-count, 1, 1) 
+* component[nucleotides-count] ^short = "Length of of the variant in nNucleotides"
+* component[nucleotides-count].code = $NCIT#C709 "Nucleotides"
+* component[nucleotides-count].value[x] only integer
+
+// Add extension to record the affected gene regions
+* insert CreateComponent(gene-region, 1, 1)
+* component[gene-region] ^short = "Region (exon, intron, etc.) of the gene affected by the variant"
+* component[gene-region].code = $NCIT#C13445  "Gene Feature"
+* component[gene-region].value[x] only string
+
+// Add extension to record the RNA HGVS expression
+* insert CreateComponent(rna-hgvs, 0, 1)
+* component[rna-hgvs].code = $TBD#rna-hgvs "Transcript RNA change (rHGVS)"
+* component[rna-hgvs].value[x] only CodeableConcept
+
+// Add extension to record the gene panel
+* insert CreateComponent(gene-panel-sequencing, 0, 1)
+* component[gene-panel-sequencing].code = $NCIT#C165600  "Tumor Panel Sequencing"
+* component[gene-panel-sequencing].value[x] ^short = "Sequencing Gene Panel"
+* component[gene-panel-sequencing].value[x] only string
 
 // Annotate the HGVS version used
-* extension contains HgvsVersion named hgvsVersion 1..1
-* extension[hgvsVersion] ^short = "HGVS Version"
-* component[coding-hgvs].value[x] ^short = "A valid HGVS-formatted (version >=21.1) 'c.' string, e.g. NM_005228.5:c.2369C>T"
-* component[protein-hgvs].value[x] ^short = "A valid HGVS-formatted (version >=21.1) 'p.' string, e.g. NP_000050.2:p.(Asn1836Lys)"
-* component[genomic-hgvs].value[x] ^short = "A valid HGVS-formatted (version >=21.1) 'g.' string, e.g. NC_000016.9:g.2124200_2138612dup"
+* insert CreateComponent(hgvs-version, 1, 1)
+* component[hgvs-version] ^short = "HGVS Version"
+* component[hgvs-version].code = $LOINC#81303-0  "HGVS version [ID]"
+* component[hgvs-version].value[x] only string
+* component[coding-hgvs].value[x] ^short = "A valid HGVS-formatted (version >= {hgvsVersion component}) 'c.' string, e.g. NM_005228.5:c.2369C>T"
+* component[rna-hgvs].value[x] ^short = "A valid HGVS-formatted (version >= {hgvsVersion component}) 'r.' string, e.g. NM_005228.5:r.2369c>t"
+* component[protein-hgvs].value[x] ^short = "A valid HGVS-formatted (version >= {hgvsVersion component}) 'p.' string, e.g. NP_000050.2:p.(Asn1836Lys)"
+* component[genomic-hgvs].value[x] ^short = "A valid HGVS-formatted (version >= {hgvsVersion component}) 'g.' string, e.g. NC_000016.9:g.2124200_2138612dup"
+
+* component[amino-acid-change-type].valueCodeableConcept from AminoAcidChangeTypeVS (required)
+* component[coding-change-type].valueCodeableConcept from DNAChangeTypeVS (required)
 
 // Constraints 
 * obeys o-var-req-1 and 
     o-var-req-2 and
     o-var-req-3 and 
     o-var-req-4
-
-//==============================
-// Extensions 
-//==============================
-
-Extension: GenePanel
-Id: onconova-ext-gene-panel
-Title: "Gene Panel"
-Description: "Name of the commercial or registered gene panel used for genomic testing."
-* value[x] only string
-
-Extension: HgvsVersion
-Id: onconova-ext-hgvs-version
-Title: "HGVS Version"
-Description: "The version of the HGVS nomenclature used for representing the variant."
-* value[x] only string  
-* valueString = ">=21.1"
 
 //==============================
 // Invariants 
@@ -82,6 +91,16 @@ Expression: "component.where(code.coding.code = '48004-6').exists() or component
 Severity: #error
 
 Invariant: o-var-req-5
-Description: "The HGVS version extension is required and must be provided."
-Expression: "extension.where(url.contains('onconova-ext-hgvs-version')).exists()"
+Description: "The HGVS version component is required and must be provided."
+Expression: "component.where(code.coding.code = '81303-0').exists()"
 Severity: #error
+
+//============================
+// Extensions
+//============================
+
+Extension: GenomicAssessmentDate
+Id: onconova-ext-genomic-assessment-date
+Title: "Genomic Assessment Date"
+Description: "Date at which the genomic variant was assessed and/or reported."
+* value[x] only dateTime
