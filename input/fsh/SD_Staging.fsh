@@ -148,7 +148,7 @@ This profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us
 Profile: OnconovaTNMSerumTumorMarkerLevelCategory
 Parent: TNMCategory 
 Id: onconova-serous-tumor-marker-level-category
-Title: "Serum Tumor Marker Level Category"
+Title: "TNM Serum Tumor Marker Level Category"
 Description: """
 A profile representing the serum tumor marker level category for a cancer patient. 
 
@@ -164,7 +164,7 @@ This profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us
 Profile: OnconovaTNMVenousInvasionCategory
 Parent: TNMCategory 
 Id: onconova-venous-invasion-category
-Title: "Venous Invasion Category"
+Title: "TNM Venous Invasion Category"
 Description: """
 A profile representing the venous invasion category for a cancer patient. 
 
