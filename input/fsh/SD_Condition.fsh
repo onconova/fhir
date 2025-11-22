@@ -18,7 +18,7 @@ Condition resources representing a primary or recurrent neoplastic entity in the
 * code = $SNOMED#363346000 "Malignant neoplastic disease"
 
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * extension[histologyMorphologyBehavior] 1..1
 * extension[histologyMorphologyBehavior].valueCodeableConcept from ICDO3MorphologyBehaviors (required)
@@ -38,7 +38,7 @@ Condition resources representing a primary or recurrent neoplastic entity in the
 * insert Obligations(clinicalStatus.extension[recurrenceOf], #SHALL:populate-if-known, #SHOULD:persist)
 
 
-* insert Obligations(extension[assertedDate], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(extension[assertedDate], #SHALL:populate, #SHOULD:persist)
 
 // Annotate unused elements to indicate they are not supported in this profile
 * insert NotUsed(stage)
@@ -78,7 +78,7 @@ Condition resources representing a metastatic neoplastic entity in the scope of 
 * code = $SNOMED#128462008 "Secondary malignant neoplastic disease"
 
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * extension[relatedPrimaryCancerCondition].valueReference only Reference(OnconovaPrimaryCancerCondition) 
 * insert Obligations(extension[relatedPrimaryCancerCondition], #SHALL:populate, #SHOULD:persist)
@@ -95,7 +95,7 @@ Condition resources representing a metastatic neoplastic entity in the scope of 
 * insert Obligations(bodySite, #SHALL:populate, #SHOULD:persist)
 * insert Obligations(bodySite.extension[lateralityQualifier], #SHOULD:populate-if-known, #SHOULD:persist)
 
-* insert Obligations(extension[assertedDate], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(extension[assertedDate], #SHALL:populate, #SHOULD:persist)
 
 * insert NotUsed(stage)
 * insert NotUsed(evidence)

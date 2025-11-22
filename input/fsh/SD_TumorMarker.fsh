@@ -15,20 +15,23 @@ Observation resources representing a tumor marker in the scope of Onconova SHALL
 """
 
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * code from TumorMarkerTests (required)
-* insert Obligations(code, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(code, #SHALL:populate, #SHOULD:persist)
 
 * code.extension contains TumorMarkerAnalyte named tumorMarkerAnalyte 1..1  MS 
 * insert Obligations(code.extension[tumorMarkerAnalyte], #SHALL:populate, #SHOULD:persist)
 
 * extension[relatedCondition] 1..* MS
 * insert Obligations(extension[relatedCondition], #SHALL:populate, #SHOULD:persist)
+
+* value[x] 1..1 MS
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
 * insert NotUsed(status)
 * insert NotUsed(focus)

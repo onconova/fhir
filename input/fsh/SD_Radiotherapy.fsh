@@ -14,10 +14,10 @@ Procedure resources representing a radiotherapy in the scope of Onconova SHALL c
 
 * subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * performedPeriod ^short = "The time period over which the radiotherapy course was performed"
-* insert Obligations(performedPeriod, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(performedPeriod, #SHALL:populate, #SHOULD:persist)
 
 * reasonReference 1..* MS
 * reasonReference ^short = "The condition(s) that motivated the radiotherapy treatment"

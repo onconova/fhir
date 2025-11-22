@@ -13,18 +13,18 @@ Observation resources representing an ECOG performance status score in the scope
 """ 
 
 * valueInteger 1..1 MS
-* insert Obligations(valueInteger, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(valueInteger, #SHALL:populate, #SHOULD:persist)
 
 * interpretation 0..1 MS
 * insert Obligations(interpretation, #SHOULD:populate, #MAY:persist)
 
 * effective[x] only dateTime
 * effectiveDateTime 1..1 MS
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 * insert Obligations(interpretation, #SHOULD:populate, #MAY:persist)
 
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * focus 1..* MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
@@ -58,17 +58,17 @@ Observation resources representing a Karnofsky performance status score in the s
 """ 
 
 * valueInteger 1..1 MS
-* insert Obligations(valueInteger, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(valueInteger, #SHALL:populate, #SHOULD:persist)
 
 * interpretation 0..1 MS
 * insert Obligations(interpretation, #SHOULD:populate, #MAY:persist)
 
 * effective[x] only dateTime
 * effectiveDateTime 1..1 MS
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * focus 1..* MS
 * focus only Reference(OnconovaPrimaryCancerCondition)

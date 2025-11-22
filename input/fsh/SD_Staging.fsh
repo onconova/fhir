@@ -26,18 +26,18 @@ Observation resources representing a cancer staging in the scope of Onconova SHA
 
 * subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * focus 1..1 MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
 * insert Obligations(focus, #SHALL:populate, #SHOULD:persist)
 
 * value[x] 1..1 MS
-* insert Obligations(value[x], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
 * method 0..1 MS
 * insert Obligations(method, #SHALL:populate-if-known, #SHOULD:persist)
@@ -61,11 +61,11 @@ Observation resources representing a cancer TNM staging in the scope of Onconova
 
 * subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * focus 1..1 MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
@@ -75,7 +75,7 @@ Observation resources representing a cancer TNM staging in the scope of Onconova
 * insert Obligations(method, #SHALL:populate-if-known, #SHOULD:persist)
 
 * value[x] 1..1 MS
-* insert Obligations(value[x], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
 * hasMember only Reference(TNMCategory)
 * insert Obligations(hasMember, #SHALL:populate-if-known, #SHOULD:persist)
@@ -125,11 +125,11 @@ Observation resources representing a TNM staging primary tumor parameter in the 
 
 * subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * focus 1..1 MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
@@ -140,7 +140,7 @@ Observation resources representing a TNM staging primary tumor parameter in the 
 
 * value[x] 1..1 MS
 * valueCodeableConcept from TNMPrimaryTumorCategories (required)
-* insert Obligations(value[x], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
 * insert StagingNotUsed
 * obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
@@ -162,11 +162,11 @@ Observation resources representing a TNM staging distant metastases parameter in
 
 * subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * focus 1..1 MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
@@ -177,7 +177,7 @@ Observation resources representing a TNM staging distant metastases parameter in
 
 * value[x] 1..1 MS
 * valueCodeableConcept from TNMDistantMetastasisCategories (required)
-* insert Obligations(value[x], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
 * insert StagingNotUsed
 * obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
@@ -198,11 +198,11 @@ Observation resources representing a TNM staging regional nodes parameter in the
 
 * subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * focus 1..1 MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
@@ -213,7 +213,7 @@ Observation resources representing a TNM staging regional nodes parameter in the
 
 * value[x] 1..1 MS
 * valueCodeableConcept from TNMRegionalNodesCategories (required)
-* insert Obligations(value[x], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
 * insert StagingNotUsed
 * obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
@@ -236,11 +236,11 @@ Observation resources representing a TNM staging lymphatic invasion parameter in
 
 * subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * focus 1..1 MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
@@ -251,7 +251,7 @@ Observation resources representing a TNM staging lymphatic invasion parameter in
 
 * value[x] 1..1 MS
 * valueCodeableConcept from TNMLymphaticInvasionCategories (required)
-* insert Obligations(value[x], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
 * insert StagingNotUsed
 * obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
@@ -274,11 +274,11 @@ Observation resources representing a TNM staging perineural invasion parameter i
 
 * subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * focus 1..1 MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
@@ -289,7 +289,7 @@ Observation resources representing a TNM staging perineural invasion parameter i
 
 * value[x] 1..1 MS
 * valueCodeableConcept from TNMPerineuralInvasionCategories (required)
-* insert Obligations(value[x], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
 * insert StagingNotUsed
 * obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
@@ -312,11 +312,11 @@ Observation resources representing a TNM staging residual tumor parameter in the
 
 * subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * focus 1..1 MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
@@ -327,7 +327,7 @@ Observation resources representing a TNM staging residual tumor parameter in the
 
 * value[x] 1..1 MS
 * valueCodeableConcept from TNMResidualTumorCategories (required)
-* insert Obligations(value[x], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
 * insert StagingNotUsed
 * obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
@@ -350,11 +350,11 @@ Observation resources representing a TNM staging serum tumor marker level parame
 
 * subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * focus 1..1 MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
@@ -365,7 +365,7 @@ Observation resources representing a TNM staging serum tumor marker level parame
 
 * value[x] 1..1 MS
 * valueCodeableConcept from TNMSerumTumorMarkerLevelCategories (required)
-* insert Obligations(value[x], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
 * insert StagingNotUsed
 * obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
@@ -388,11 +388,11 @@ Observation resources representing a TNM staging venous invasion parameter in th
 
 * subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * focus 1..1 MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
@@ -403,7 +403,7 @@ Observation resources representing a TNM staging venous invasion parameter in th
 
 * value[x] 1..1 MS
 * valueCodeableConcept from TNMVenousInvasionCategories (required)
-* insert Obligations(value[x], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
 * insert StagingNotUsed
 * obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
@@ -424,11 +424,11 @@ Observation resources representing a TNM staging grade category parameter in the
 
 * subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * focus 1..1 MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
@@ -439,10 +439,10 @@ Observation resources representing a TNM staging grade category parameter in the
 
 * value[x] 1..1 MS
 * valueCodeableConcept from TNMGradeCategories (required)   
-* insert Obligations(value[x], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
 * code from TNMGradeCategoryMethods (required)
-* insert Obligations(value[x], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
 * insert StagingNotUsed
 * obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
