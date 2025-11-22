@@ -1,62 +1,44 @@
 Profile: OnconovaPrimaryCancerCondition
+Parent: PrimaryCancerCondition
 Id: onconova-primary-cancer-condition
 Title: "Primary Cancer Condition Profile"
-Parent: PrimaryCancerCondition
 Description: """
 A profile that records the primary cancer condition, the original or first neoplasm in the body (Definition from: [NCI Dictionary of Cancer Terms](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)). Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary.
 
-It constrains the mCODE [PrimaryCancerCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition) to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.
+It constrains the mCODE [PrimaryCancerCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition) to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes. 
 
-This profile can be used to represent the Onconova neoplastic entities of relationship `primary`, `local_recurrence`, and `regional_recurrence`. Local and regional recurrences are indicated using extensions to denote that the condition is a recurrence of a previous condition, and to specify the type of recurrence (local or regional). For example, a local recurrence would be represented as a PrimaryCancerCondition with:
-```
-{
-    clinicalStatus: {
-        coding: [
-            {
-                system: "http://snomed.info/sct",
-                code: "recurrence",
-                display: "Recurrence"
-            }
-        ],
-    },
-    _clinicalStatus {
-        extension: [
-            {
-                url: "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type",
-                valueCodeableConcept: {
-                    coding: [
-                        {
-                            system: "http://snomed.info/sct",
-                            code: "255470001",
-                            display: "Local (qualifier value)"
-                        }
-                    ]
-                }
-            }
-        ]
-    },
-}
-```
+Local and regional recurrences are indicated using the `clinicalStatus` and `clinicalStatus.extension` to denote that the condition is a recurrence of a previous condition, and to specify the type of recurrence (local or regional).
+
+**Conformance:**
+
+Condition resources representing a primary or recurrent neoplastic entity in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. 
+
 """
 
-* subject only Reference(OnconovaCancerPatient)
 * code = $SNOMED#363346000 "Malignant neoplastic disease"
 
-// Constratin the cancer morphology extension to use ICD-O-3 codes and be required
+* subject only Reference(OnconovaCancerPatient)
+* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+
 * extension[histologyMorphologyBehavior] 1..1
-* extension[histologyMorphologyBehavior].valueCodeableConcept from ICDO3MorphologyBehavior (required)
+* extension[histologyMorphologyBehavior].valueCodeableConcept from ICDO3MorphologyBehaviors (required)
+* insert Obligations(extension[histologyMorphologyBehavior], #SHALL:populate, #SHOULD:persist)
 
-// Add differentiation as an extension
-* extension contains Differentiation named differentiation 0..1 
+* extension contains HistologicalDifferentiation named differentiation 0..1 MS
+* insert Obligations(extension[differentiation], #SHOULD:populate-if-known, #SHOULD:persist)
 
-// Constratin the cancer topography to use ICD-O-3 codes and be required 
-* bodySite 1..*
-* bodySite from ICDO3Topography (required)
+* bodySite 1..1
+* bodySite from ICDO3Topographies (required)
+* insert Obligations(bodySite, #SHALL:populate, #SHOULD:persist)
+* insert Obligations(bodySite.extension[lateralityQualifier], #SHOULD:populate-if-known, #SHOULD:persist)
 
-// Add extension to indicate whether the condition is a recurrence of a previous condition
-* extension contains RecurrenceOf named recurrenceOf 0..1 
-* clinicalStatus.extension contains RecurrenceType named recurrenceType 0..1
+* clinicalStatus.extension contains PrimaryCancerRecurrenceType named recurrenceType 0..1
+* insert Obligations(clinicalStatus.extension[recurrenceType], #SHALL:populate-if-known, #SHOULD:persist)
+* clinicalStatus.extension contains PrimaryCancerRecurrenceOf named recurrenceOf 0..1 MS
+* insert Obligations(clinicalStatus.extension[recurrenceOf], #SHALL:populate-if-known, #SHOULD:persist)
 
+
+* insert Obligations(extension[assertedDate], #SHALL:populate, #SHOULD:persist)
 
 // Annotate unused elements to indicate they are not supported in this profile
 * insert NotUsed(stage)
@@ -67,6 +49,7 @@ This profile can be used to represent the Onconova neoplastic entities of relati
 * insert NotUsed(recordedDate)
 * insert NotUsed(encounter)
 * insert NotUsed(severity)
+* insert NotUsed(bodySite.extension[locationQualifier])
 
 // Constraints 
 * obeys o-con-1 and 
@@ -78,7 +61,6 @@ This profile can be used to represent the Onconova neoplastic entities of relati
 
 
 
-
 Profile: OnconovaSecondaryCancerCondition
 Parent: SecondaryCancerCondition
 Id: onconova-secondary-cancer-condition
@@ -87,23 +69,34 @@ Description: """
 A profile recording the a secondary neoplasm, including location and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms).
 
 It constrains the mCODE [SecondaryCancerCCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition) to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.
+
+**Conformance:**
+
+Condition resources representing a metastatic neoplastic entity in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. 
 """
-* subject only Reference(OnconovaCancerPatient)
+
 * code = $SNOMED#128462008 "Secondary malignant neoplastic disease"
+
+* subject only Reference(OnconovaCancerPatient)
+* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+
 * extension[relatedPrimaryCancerCondition].valueReference only Reference(OnconovaPrimaryCancerCondition) 
+* insert Obligations(extension[relatedPrimaryCancerCondition], #SHALL:populate, #SHOULD:persist)
 
-// Constratin the cancer morphology extension to use ICD-O-3 codes and be required
 * extension[histologyMorphologyBehavior] 1..1
-* extension[histologyMorphologyBehavior].valueCodeableConcept from ICDO3MorphologyBehavior (required)
+* extension[histologyMorphologyBehavior].valueCodeableConcept from ICDO3MorphologyBehaviors (required)
+* insert Obligations(extension[histologyMorphologyBehavior], #SHALL:populate, #SHOULD:persist)
 
-// Add differentiation as an extension
-* extension contains Differentiation named differentiation 0..1 
+* extension contains HistologicalDifferentiation named differentiation 0..1 MS
+* insert Obligations(extension[differentiation], #SHOULD:populate-if-known, #SHOULD:persist)
 
-// Constratin the cancer topography to use ICD-O-3 codes and be required 
-* bodySite 1..*
-* bodySite from ICDO3Topography (required)
+* bodySite 1..1
+* bodySite from ICDO3Topographies (required)
+* insert Obligations(bodySite, #SHALL:populate, #SHOULD:persist)
+* insert Obligations(bodySite.extension[lateralityQualifier], #SHOULD:populate-if-known, #SHOULD:persist)
 
-// Annotate unused elements to indicate they are not supported in this profile
+* insert Obligations(extension[assertedDate], #SHALL:populate, #SHOULD:persist)
+
 * insert NotUsed(stage)
 * insert NotUsed(evidence)
 * insert NotUsed(recorder)
@@ -112,38 +105,39 @@ It constrains the mCODE [SecondaryCancerCCondition profile](http://hl7.org/fhir/
 * insert NotUsed(recordedDate)
 * insert NotUsed(encounter)
 * insert NotUsed(severity)
+* insert NotUsed(bodySite.extension[locationQualifier])
 
 // Constraints 
-* obeys o-con-req-1 and
-    o-con-req-2 and
-    o-con-req-3 and 
-    o-con-req-4
+* obeys o-con-req-1 and o-con-req-2 and o-con-req-3 and o-con-req-4
 
 // ================ 
 // Extensions
 // ================
 
 
-Extension: Differentiation
-Id: onconova-ext-differentiation
-Title: "Recurrence Type"
-Description: "THe histological differentiation of the tumor."
+Extension: HistologicalDifferentiation
+Id: onconova-ext-histological-differentiation
+Title: "Histological Differentiation"
+Description: "The histological differentiation of the tumor."
+Context: OnconovaPrimaryCancerCondition.extension, OnconovaSecondaryCancerCondition.extension
 * value[x] only CodeableConcept
-* valueCodeableConcept from ICDO3Differentiation (required)
+* valueCodeableConcept from ICDO3Differentiations (required)
 
 
-Extension: RecurrenceOf
-Id: onconova-ext-recurrence-of
-Title: "Recurrence Of"
+Extension: PrimaryCancerRecurrenceOf
+Id: onconova-ext-primary-cancer-recurrence-of
+Title: "Primary Cancer Recurrence Of"
 Description: "Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition."
-* value[x] only Reference(PrimaryCancerCondition)
+Context: OnconovaPrimaryCancerCondition.clinicalStatus.extension
+* value[x] only Reference(OnconovaPrimaryCancerCondition)
 
-Extension: RecurrenceType
-Id: onconova-ext-recurrence-type
-Title: "Recurrence Type"
+Extension: PrimaryCancerRecurrenceType
+Id: onconova-ext-primary-cancer-recurrence-type
+Title: "Primary Cancer Recurrence Type"
 Description: "Indicates the type of recurrence for the condition (local or regional)."
+Context: OnconovaPrimaryCancerCondition.clinicalStatus.extension
 * value[x] only CodeableConcept
-* valueCodeableConcept from RecurrenceTypeVS (required)
+* valueCodeableConcept from RecurrenceTypes (required)
 
 
 // ================ 

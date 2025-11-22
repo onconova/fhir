@@ -1,7 +1,7 @@
 ValueSet: TumorMarkerAnalytes
 Id: onconova-vs-tumor-marker-analytes
-Title: "Tumor Marker Analytes"
-Description: "Codes representing analytes for tumor markers."
+Title: "Tumor Marker Analytes Value Set"
+Description: "Analytes considered tumor markers."
 
 * $NCIT#C17922 "Somatostatin Receptor Type 2"
 

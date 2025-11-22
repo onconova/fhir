@@ -6,23 +6,37 @@ Description: """
 A profile representing a risk assessment performed for a cancer patient, including the method used, the resulting risk level, and an optional numerical score.
 
 It constraints the mCODE [CancerRiskAssessment profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-risk-assessment) and expands the valuesets for cancer risk assessment methods and values.
+
+**Conformance:**
+
+Observation resources representing a cancer-related risk assessment in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. 
 """
-* status = #final
+
+* category = http://terminology.hl7.org/CodeSystem/observation-category#survey 
+
 * subject only Reference(OnconovaCancerPatient)
+* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+
+* focus only Reference(OnconovaPrimaryCancerCondition)
+* insert Obligations(focus, #SHALL:populate, #SHOULD:persist)
+
+* effective[x] 1..1 MS 
+* effective[x] ^short = "Date the risk assessment was performed"
+* effective[x] only dateTime
+* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+
 * code from CancerRiskAssessmentMethods (required)
+* insert Obligations(code, #SHALL:populate, #SHOULD:persist)
+
 * valueCodeableConcept from CancerRiskAssessmentValues (required)
+* insert Obligations(valueCodeableConcept, #SHALL:populate, #SHOULD:persist)
 
-// Add extension for numerical score of the risk assessment
 * extension contains RiskAssessmentScore named riskAssessmentScore 0..1 
+* insert Obligations(extension[riskAssessmentScore], #SHALL:populate-if-known, #SHOULD:persist)
 
-// Constraints 
-* obeys o-ria-req-1 and 
-    o-ria-req-2 and 
-    o-ria-req-3 and 
-    o-ria-req-4
+* obeys o-ria-req-1 and o-ria-req-2 and o-ria-req-3 and o-ria-req-4
 
-
-// Annotate unused elements
+* insert NotUsed(status)
 * insert NotUsed(performer)
 * insert NotUsed(component)
 * insert NotUsed(interpretation)
@@ -33,14 +47,12 @@ It constraints the mCODE [CancerRiskAssessment profile](http://hl7.org/fhir/us/m
 * insert NotUsed(hasMember)
 * insert NotUsed(derivedFrom)
 
-//======================
-// Extensions
-//======================
 
 Extension: RiskAssessmentScore
 Id: onconova-ext-risk-assessment-score
 Title: "Risk Assessment Score"
 Description: "The numerical score of the risk assessment."
+Context: OnconovaCancerRiskAssessment.extension
 * value[x] only decimal or integer
 
 

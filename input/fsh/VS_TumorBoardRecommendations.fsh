@@ -1,7 +1,7 @@
 ValueSet: OnconovaTumorBoardRecommendations
 Id: onconova-vs-tumor-board-recommendations
-Title: "Tumor Board Recommendations"
-Description: "A value set of recommendations that may be made by a tumor board for a cancer patient."
+Title: "Tumor Board Recommendations Value Set"
+Description: "Recommendations that may be made by a tumor board for a cancer patient."
 
 * $SNOMED#420227002:363702006=(386053000:363702006=387713003) "Recommendation to evaluate for surgery"
 * $SNOMED#420227002:363702006=(386053000:363702006=1287742003) "Recommendation to evaluate for radiotherapy"

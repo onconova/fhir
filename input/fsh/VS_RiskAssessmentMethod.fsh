@@ -1,6 +1,6 @@
 ValueSet: CancerRiskAssessmentMethods
 Id: onconova-vs-cancer-risk-assessment-methods
-Title: "Cancer Risk Assessment Methods"
+Title: "Cancer Risk Assessment Methods Value Set"
 Description: "A value set containing codes for various cancer risk assessment methods."
 
 * $NCIT#C136962 "Follicular Lymphoma International Prognostic Index (FLIPI)"

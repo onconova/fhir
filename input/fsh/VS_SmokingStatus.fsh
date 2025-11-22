@@ -1,6 +1,6 @@
 ValueSet: SmokingStatus
 Id: onconova-vs-smoking-status
-Title: "Smoking status"
+Title: "Smoking status Value Set"
 Description: "Smoking status of a patient"
 
 * $SNOMED#266919005 "Never smoked tobacco"

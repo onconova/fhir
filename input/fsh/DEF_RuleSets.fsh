@@ -12,17 +12,16 @@ RuleSet: CreateComponent(sliceName, min, max)
 * component contains {sliceName} {min}..{max} MS
 * component[{sliceName}].code MS
 * component[{sliceName}].value[x] MS
-//* component[{sliceName}].dataAbsentReason MS
 
-RuleSet: SNOMEDCopyrightForVS
+RuleSet: SNOMEDCopyrightFor
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * ^experimental = false
 
-RuleSet: LOINCCopyrightForVS
+RuleSet: LOINCCopyrightFor
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
 * ^experimental = false
 
-RuleSet: SNOINCCopyrightForVS
+RuleSet: SNOINCCopyrightFor
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
 * ^experimental = false
 
@@ -42,3 +41,15 @@ RuleSet: ResourceCRUD(resourceType)
 
 RuleSet: ResourceSupportedProfile(profile)
 * rest[=].resource[=].supportedProfile[+] = Canonical({profile})
+
+RuleSet: Obligations(path, creatorObligation, consumerObligation)
+* {path} ^extension[0].extension[0].url = "code"
+* {path} ^extension[=].extension[=].valueCode = {creatorObligation}
+* {path} ^extension[=].extension[+].url = "actor"
+* {path} ^extension[=].extension[=].valueCanonical = Canonical(OnconovaCreator)
+* {path} ^extension[=].url = $Obligation
+* {path} ^extension[+].extension[0].url = "code"
+* {path} ^extension[=].extension[=].valueCode = {consumerObligation}
+* {path} ^extension[=].extension[+].url = "actor"
+* {path} ^extension[=].extension[=].valueCanonical = Canonical(OnconovaConsumer)
+* {path} ^extension[=].url = $Obligation

@@ -1,6 +1,6 @@
 ValueSet: RecreationalDrugs
 Id: onconova-vs-recreational-drugs
-Title: "Recreational Drugs"
+Title: "Recreational Drugs Value Set"
 Description: "Substances that people use to alter their mental state, often for pleasure or leisure, with effects ranging from relaxation and euphoria to hallucinations and altered perceptions."
 
 * $SNOMED#398705004 "Cannabis"

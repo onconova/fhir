@@ -1,7 +1,7 @@
 ValueSet: CancerImagingMethods
 Id: onconova-vs-cancer-imaging-methods
-Title: "Cancer Imaging Methods"
-Description: "Codes representing various imaging methods used in cancer diagnosis and monitoring."
+Title: "Cancer Imaging Methods Value Set"
+Description: "Imaging methods used in cancer diagnosis and monitoring."
 
 * $SNOMED#77477000 "CT - Computerized tomography"
 * $SNOMED#113091000 "MRI - Magnetic resonance imaging"

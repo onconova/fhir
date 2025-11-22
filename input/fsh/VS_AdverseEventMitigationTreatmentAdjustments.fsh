@@ -1,6 +1,6 @@
 ValueSet: AdverseEventMitigationTreatmentAdjustments
 Id: onconova-vs-adverse-event-mitigation-treatment-adjustments
-Title: "Adverse Event Mitigation - Treatment Adjustment"
+Title: "Adverse Event Mitigation Treatment Adjustments Value Set"
 Description: "Adjustments made to a patient's treatment plan in response to an adverse event."
 
 * $SNOMED#89925002 "Cancelled"
