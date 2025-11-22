@@ -14,6 +14,8 @@
  
 A profile representing a risk assessment performed for a cancer patient, including the method used, the resulting risk level, and an optional numerical score. 
 It constraints the mCODE[CancerRiskAssessment profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-risk-assessment)and expands the valuesets for cancer risk assessment methods and values. 
+**Conformance:** 
+Observation resources representing a cancer-related risk assessment in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 **Usages:**
 
@@ -43,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
   "name" : "OnconovaCancerRiskAssessment",
   "title" : "Cancer Risk Assessment Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -56,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
       ]
     }
   ],
-  "description" : "A profile representing a risk assessment performed for a cancer patient, including the method used, the resulting risk level, and an optional numerical score.\n\nIt constraints the mCODE [CancerRiskAssessment profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-risk-assessment) and expands the valuesets for cancer risk assessment methods and values.",
+  "description" : "A profile representing a risk assessment performed for a cancer patient, including the method used, the resulting risk level, and an optional numerical score.\n\nIt constraints the mCODE [CancerRiskAssessment profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-risk-assessment) and expands the valuesets for cancer risk assessment methods and values.\n\n**Conformance:**\n\nObservation resources representing a cancer-related risk assessment in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -93,7 +95,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-risk-assessment|4.0.0",
+  "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-risk-assessment",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -106,28 +108,28 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
             "severity" : "error",
             "human" : "The subject element is required and must be provided.",
             "expression" : "subject.exists() and subject.resolve().is(Patient)",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment"
           },
           {
             "key" : "o-ria-req-2",
             "severity" : "error",
             "human" : "The effectiveDateTime element is required and must be provided.",
             "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment"
           },
           {
             "key" : "o-ria-req-3",
             "severity" : "error",
             "human" : "The code element is required and must be provided.",
             "expression" : "code.exists() and code.coding.exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment"
           },
           {
             "key" : "o-ria-req-4",
             "severity" : "error",
             "human" : "The valueCodeableConcept element is required and must be provided.",
             "expression" : "valueCodeableConcept.exists() and valueCodeableConcept.coding.exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment"
           }
         ]
       },
@@ -147,6 +149,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
       },
       {
         "id" : "Observation.extension:riskAssessmentScore",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.extension",
         "sliceName" : "riskAssessmentScore",
         "min" : 0,
@@ -155,7 +185,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-risk-assessment-score|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-risk-assessment-score"
             ]
           }
         ]
@@ -175,24 +205,135 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
       {
         "id" : "Observation.status",
         "path" : "Observation.status",
-        "patternCode" : "final"
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.category",
+        "path" : "Observation.category",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+              "code" : "survey"
+            }
+          ]
+        }
       },
       {
         "id" : "Observation.code",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.code",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-methods|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-methods"
         }
       },
       {
         "id" : "Observation.subject",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.subject",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.focus",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Observation.focus",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition"
             ]
           }
         ]
@@ -204,6 +345,52 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
         "definition" : "Not used in this profile"
       },
       {
+        "id" : "Observation.effective[x]",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Observation.effective[x]",
+        "short" : "Date the risk assessment was performed",
+        "min" : 1,
+        "type" : [
+          {
+            "extension" : [
+              {
+                "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                "valueBoolean" : true
+              }
+            ],
+            "code" : "dateTime"
+          }
+        ]
+      },
+      {
         "id" : "Observation.performer",
         "path" : "Observation.performer",
         "short" : "Not used in this profile",
@@ -211,10 +398,39 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
       },
       {
         "id" : "Observation.value[x]",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.value[x]",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-values|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-values"
         }
       },
       {

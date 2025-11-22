@@ -14,10 +14,12 @@
  
 A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. 
 Due to its abstract conceptual nature, it is based on a FHIR`List`to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing Procedure and MedicationAdministration resources and are not created manually. 
+**Conformance:** 
+List resources representing a therapy line in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 **Usages:**
 
-* Refer to this Profile: [Therapy Line Reference](StructureDefinition-ext-therapy-line-reference.md)
+* Refer to this Profile: [Therapy Line Reference](StructureDefinition-onconova-ext-therapy-line-reference.md)
 * CapabilityStatements using this Profile: [Onconova FHIR REST Server Capability Statement](CapabilityStatement-onconova-capability-statement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-therapy-line)
@@ -43,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
   "name" : "OnconovaTherapyLine",
   "title" : "Therapy Line Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -56,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
       ]
     }
   ],
-  "description" : "A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. \n\nDue to its abstract conceptual nature, it is based on a FHIR `List` to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing Procedure and MedicationAdministration resources and are not created manually.",
+  "description" : "A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. \n\nDue to its abstract conceptual nature, it is based on a FHIR `List` to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing Procedure and MedicationAdministration resources and are not created manually.\n\n**Conformance:**\n\nList resources representing a therapy line in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -73,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
   "kind" : "resource",
   "abstract" : false,
   "type" : "List",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/List|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/List",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -86,21 +88,21 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
             "severity" : "error",
             "human" : "The subject element is required and must be provided.",
             "expression" : "subject.exists() and subject.resolve().is(Patient)",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line"
           },
           {
             "key" : "o-lin-req-2",
             "severity" : "error",
             "human" : "The therapyLineNumber extension is required and must be provided.",
             "expression" : "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-number').exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line"
           },
           {
             "key" : "o-lin-req-3",
             "severity" : "error",
             "human" : "The therapyLineIntent extension is required and must be provided.",
             "expression" : "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-intent').exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line"
           }
         ]
       },
@@ -129,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-period|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-period"
             ]
           }
         ]
@@ -145,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-number|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-number"
             ]
           }
         ]
@@ -161,7 +163,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-intent|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-intent"
             ]
           }
         ]
@@ -177,7 +179,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-free-survival|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-free-survival"
             ]
           }
         ]
@@ -193,7 +195,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-date|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-date"
             ]
           }
         ]
@@ -223,13 +225,41 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
       },
       {
         "id" : "List.subject",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "MAY:ignore"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "MAY:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "List.subject",
         "short" : "The patient receiving the therapy",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
             ]
           }
         ]
@@ -265,9 +295,9 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
             ]
           }
         ]

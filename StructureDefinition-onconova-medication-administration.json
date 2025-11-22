@@ -3,14 +3,14 @@
   "id" : "onconova-medication-administration",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition onconova-medication-administration</b></p><a name=\"onconova-medication-administration\"> </a><a name=\"hconconova-medication-administration\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration\">MedicationAdministration</a><a name=\"MedicationAdministration\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;; padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R4/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints ( o-med-req-1, o-med-req-2, o-med-req-3, o-med-req-4 )\">C</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/us/mcode/STU4/StructureDefinition-mcode-cancer-related-medication-administration.html\">CancerRelatedMedicationAdministration(4.0.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Administration of medication to a patient</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> Slices for extension<a name=\"MedicationAdministration.extension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Content/Rules for all slices</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.extension:combinedWith\" title=\"Extension URL = http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with\">extension:combinedWith</a><a name=\"MedicationAdministration.extension.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-medication-administration.html\">Medication Administration Profile(0.2.0)</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other medication administered in combination<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-onconova-ext-combined-with.html\">http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with</a><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.extension:cycles\" title=\"Extension URL = http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cycles\">extension:cycles</a><a name=\"MedicationAdministration.extension.3\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Total number of cycles for this medication<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-onconova-ext-cycles.html\">http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cycles</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.extension:therapyLine\" title=\"Extension URL = http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference\">extension:therapyLine</a><a name=\"MedicationAdministration.extension.4\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-therapy-line.html\">Therapy Line Profile(0.2.0)</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reference to the therapy line associated with this treatment<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-ext-therapy-line-reference.html\">http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.extension:adjunctiveRole\" title=\"Extension URL = http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adjunctive-role\">extension:adjunctiveRole</a><a name=\"MedicationAdministration.extension.5\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Role of this medication in the overall treatment plan<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-onconova-ext-adjunctive-role.html\">http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adjunctive-role</a><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-onconova-vs-adjunctive-therapy-roles.html\" title=\"http://onconova.github.io/fhir/ValueSet/onconova-vs-adjunctive-therapy-roles\" class=\"binding\">AdjunctiveTherapyRoles (0.2.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.extension:isPrimaryTherapy\" title=\"Extension URL = http://onconova.github.io/fhir/StructureDefinition/onconova-ext-is-primary-therapy\">extension:isPrimaryTherapy</a><a name=\"MedicationAdministration.extension.6\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indicates if this medication is the primary therapy within a therapy line<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-onconova-ext-is-primary-therapy.html\">http://onconova.github.io/fhir/StructureDefinition/onconova-ext-is-primary-therapy</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.partOf\" title=\"Not used in this profile\">partOf</a><a name=\"MedicationAdministration.partOf\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/medicationadministration.html\">MedicationAdministration</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/procedure.html\">Procedure</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.statusReason\">statusReason</a><a name=\"MedicationAdministration.statusReason\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Reason administration not performed</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-onconova-vs-treatment-termination-reasons.html\" title=\"http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons\" class=\"binding\">TreatmentTerminationReasons (0.2.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic; font-style: italic\" href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.medication[x]\">Slices for medication[x]</a><a name=\"MedicationAdministration.medication_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">1</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a><span style=\"opacity: 0.5; font-style: italic\">, </span><a style=\"font-style: italic; font-style: italic\" href=\"http://hl7.org/fhir/R4/references.html\">Reference</a><span style=\"font-style: italic\">(</span><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/medication.html\">Medication</a><span style=\"font-style: italic\">)</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">What was administered</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by type:$this</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.medication[x]:medicationCodeableConcept\" title=\"Slice medicationCodeableConcept\">medication[x]:medicationCodeableConcept</a><a name=\"MedicationAdministration.medication_x_.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">What was administered</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-onconova-vs-antineoplastic-agents.html\" title=\"http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents\" class=\"binding\">AntineoplasticAgents (0.2.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.subject\">subject</a><a name=\"MedicationAdministration.subject\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-cancer-patient.html\">Cancer Patient Profile(0.2.0)</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Who received medication</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.context\" title=\"Not used in this profile\">context</a><a name=\"MedicationAdministration.context\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/episodeofcare.html\">EpisodeOfCare</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.supportingInformation\" title=\"Not used in this profile\">supportingInformation</a><a name=\"MedicationAdministration.supportingInformation\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/resource.html\">Resource</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.effective[x]\">effective[x]</a><a name=\"MedicationAdministration.effective_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Start and end time of administration</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.performer\" title=\"Not used in this profile\">performer</a><a name=\"MedicationAdministration.performer\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.reasonCode\" title=\"Not used in this profile\">reasonCode</a><a name=\"MedicationAdministration.reasonCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.reasonReference\">reasonReference</a><a name=\"MedicationAdministration.reasonReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-primary-cancer-condition.html\">Primary Cancer Condition Profile(0.2.0)</a> | <a href=\"StructureDefinition-onconova-secondary-cancer-condition.html\">Secondary Cancer Condition Profile(0.2.0)</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Condition or observation that supports why the medication was administered</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.request\" title=\"Not used in this profile\">request</a><a name=\"MedicationAdministration.request\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/medicationrequest.html\">MedicationRequest</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition onconova-medication-administration</b></p><a name=\"onconova-medication-administration\"> </a><a name=\"hconconova-medication-administration\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration\">MedicationAdministration</a><a name=\"MedicationAdministration\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;; padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R4/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints ( o-med-req-1, o-med-req-2, o-med-req-3, o-med-req-4 )\">C</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/us/mcode/STU4/StructureDefinition-mcode-cancer-related-medication-administration.html\">CancerRelatedMedicationAdministration</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Administration of medication to a patient</span><br class=\"constraint\"/><span title=\"null\" class=\"constraint\">Constraints: </span><span style=\"font-weight:bold\" title=\"The subject element is required and must be provided.\" class=\"constraint\">o-med-req-1</span><span title=\"null\" class=\"constraint\">, </span><span style=\"font-weight:bold\" title=\"The effectivePeriod element is required and must be provided.\" class=\"constraint\">o-med-req-2</span><span title=\"null\" class=\"constraint\">, </span><span style=\"font-weight:bold\" title=\"The treatmentIntent extension is required and must be provided.\" class=\"constraint\">o-med-req-3</span><span title=\"null\" class=\"constraint\">, </span><span style=\"font-weight:bold\" title=\"The medicationCodeableConcept element is required and must be provided.\" class=\"constraint\">o-med-req-4</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.extension\">extension</a><a name=\"MedicationAdministration.extension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> Slices for extension<a name=\"MedicationAdministration.extension.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Content/Rules for all slices</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.extension:treatmentIntent\" title=\"Slice treatmentIntent\">extension:treatmentIntent</a><a name=\"MedicationAdministration.extension.3\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/us/mcode/STU4/StructureDefinition-mcode-procedure-intent.html\" title=\"Extension\">ProcedureIntent</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Procedure Intent Extension</span><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate-if-known\" title=\"Obligation Codes: populate if known\">populate-if-known</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.extension:normalizationBasis\" title=\"Slice normalizationBasis: Not used in this profile\">extension:normalizationBasis</a><a name=\"MedicationAdministration.extension.4\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/us/mcode/STU4/StructureDefinition-mcode-normalization-basis.html\" title=\"Extension\">NormalizationBasis</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.extension:combinedWith\" title=\"Extension URL = http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-combined-with\">extension:combinedWith</a><a name=\"MedicationAdministration.extension.5\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-medication-administration.html\">Medication Administration Profile</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other medication administered in combination<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-onconova-ext-medication-administration-combined-with.html\">http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-combined-with</a><br/><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate-if-known\" title=\"Obligation Codes: populate if known\">populate-if-known</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.extension:cycles\" title=\"Extension URL = http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-cycles\">extension:cycles</a><a name=\"MedicationAdministration.extension.6\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Total number of cycles for this medication<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-onconova-ext-medication-administration-cycles.html\">http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-cycles</a><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate\" title=\"Obligation Codes: populate\">populate</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.extension:therapyLine\" title=\"Extension URL = http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference\">extension:therapyLine</a><a name=\"MedicationAdministration.extension.7\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-therapy-line.html\">Therapy Line Profile</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reference to the therapy line associated with this treatment<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-onconova-ext-therapy-line-reference.html\">http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference</a><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>MAY</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-ignore\" title=\"Obligation Codes: ignore\">ignore</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>MAY</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.extension:adjunctiveRole\" title=\"Extension URL = http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-adjunctive-role\">extension:adjunctiveRole</a><a name=\"MedicationAdministration.extension.8\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Role of this medication in the overall treatment plan<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-onconova-ext-medication-administration-adjunctive-role.html\">http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-adjunctive-role</a><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-onconova-vs-adjunctive-therapy-roles.html\" title=\"http://onconova.github.io/fhir/ValueSet/onconova-vs-adjunctive-therapy-roles\" class=\"binding\">Adjunctive Therapy Roles Value Set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate-if-known\" title=\"Obligation Codes: populate if known\">populate-if-known</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.extension:isPrimaryTherapy\" title=\"Extension URL = http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-is-primary-therapy\">extension:isPrimaryTherapy</a><a name=\"MedicationAdministration.extension.9\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indicates if this medication is the primary therapy within a therapy line<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-onconova-ext-medication-administration-is-primary-therapy.html\">http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-is-primary-therapy</a><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate\" title=\"Obligation Codes: populate\">populate</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.partOf\" title=\"Not used in this profile\">partOf</a><a name=\"MedicationAdministration.partOf\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/medicationadministration.html\">MedicationAdministration</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/procedure.html\">Procedure</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.status\" title=\"Not used in this profile\">status</a><a name=\"MedicationAdministration.status\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.statusReason\">statusReason</a><a name=\"MedicationAdministration.statusReason\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Reason administration not performed</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-onconova-vs-treatment-termination-reasons.html\" title=\"http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons\" class=\"binding\">Treatment Termination Reasons Value Set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate-if-known\" title=\"Obligation Codes: populate if known\">populate-if-known</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.medication[x]\">medication[x]</a><a name=\"MedicationAdministration.medication_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">What was administered</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-onconova-vs-antineoplastic-agents.html\" title=\"http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents\" class=\"binding\">Antineoplastic Agents Value Set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate\" title=\"Obligation Codes: populate\">populate</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.subject\">subject</a><a name=\"MedicationAdministration.subject\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-cancer-patient.html\">Cancer Patient Profile</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Who received medication</span><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate\" title=\"Obligation Codes: populate\">populate</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.context\" title=\"Not used in this profile\">context</a><a name=\"MedicationAdministration.context\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/episodeofcare.html\">EpisodeOfCare</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.supportingInformation\" title=\"Not used in this profile\">supportingInformation</a><a name=\"MedicationAdministration.supportingInformation\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/resource.html\">Resource</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.effective[x]\">effective[x]</a><a name=\"MedicationAdministration.effective_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Start and end time of administration</span><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate\" title=\"Obligation Codes: populate\">populate</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.performer\" title=\"Not used in this profile\">performer</a><a name=\"MedicationAdministration.performer\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.reasonCode\" title=\"Not used in this profile\">reasonCode</a><a name=\"MedicationAdministration.reasonCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.reasonReference\">reasonReference</a><a name=\"MedicationAdministration.reasonReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-primary-cancer-condition.html\">Primary Cancer Condition Profile</a> | <a href=\"StructureDefinition-onconova-secondary-cancer-condition.html\">Secondary Cancer Condition Profile</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The condition(s) that motivated the medication administration<table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate\" title=\"Obligation Codes: populate\">populate</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.request\" title=\"Not used in this profile\">request</a><a name=\"MedicationAdministration.request\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/medicationrequest.html\">MedicationRequest</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-medication-administration-definitions.html#MedicationAdministration.dosage\">dosage</a><a name=\"MedicationAdministration.dosage\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Details of how medication was taken</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   },
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration",
   "version" : "0.2.0",
   "name" : "OnconovaMedicationAdministration",
   "title" : "Medication Administration Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -19,7 +19,7 @@
       "value" : "http://onconova.github.io/docs"
     }]
   }],
-  "description" : "A profile representing a medication administered to a cancer patient during a systemic therapy (e.g., chemotherapy, immunotherapy), including details about the medication and dosage. \n\nThis profile extends the base mCODE [CancerRelatedMedicationAdministration profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration) to introduce additional information about the systemic therapy (e.g. number of cycles, therapeutic role, etc.) and to introduce references to other medication administration given simultaneously to represent combination therapies.",
+  "description" : "A profile representing a medication administered to a cancer patient during a systemic therapy (e.g., chemotherapy, immunotherapy), including details about the medication and dosage. \n\nThis profile extends the base mCODE [CancerRelatedMedicationAdministration profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration) to introduce additional information about the systemic therapy (e.g. number of cycles, therapeutic role, etc.) and to introduce references to other medication administration given simultaneously to represent combination therapies.\n\nSince Onocnova treats systemic therapies involving multiple antineoplastic agents administered together or in sequence as part of a single treatment plan, this profile allows for capturing such relationships between medication administrations using the `MedicationAdministration.extension[combinedWith]` extension slices.\n\n**Conformance:**\n\nMedicationAdministration resources representing a systemic therapy in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
@@ -49,7 +49,7 @@
   "kind" : "resource",
   "abstract" : false,
   "type" : "MedicationAdministration",
-  "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration|4.0.0",
+  "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration",
   "derivation" : "constraint",
   "snapshot" : {
     "extension" : [{
@@ -74,7 +74,7 @@
         "human" : "If the resource is contained in another resource, it SHALL NOT contain nested Resources",
         "expression" : "contained.contained.empty()",
         "xpath" : "not(parent::f:contained and f:contained)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       },
       {
         "key" : "dom-3",
@@ -82,7 +82,7 @@
         "human" : "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource",
         "expression" : "contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()",
         "xpath" : "not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       },
       {
         "key" : "dom-4",
@@ -90,7 +90,7 @@
         "human" : "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated",
         "expression" : "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()",
         "xpath" : "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       },
       {
         "key" : "dom-5",
@@ -98,7 +98,7 @@
         "human" : "If a resource is contained in another resource, it SHALL NOT have a security label",
         "expression" : "contained.meta.security.empty()",
         "xpath" : "not(exists(f:contained/*/f:meta/f:security))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       },
       {
         "extension" : [{
@@ -114,56 +114,56 @@
         "human" : "A resource should have narrative for robust management",
         "expression" : "text.`div`.exists()",
         "xpath" : "exists(f:text/h:div)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       },
       {
         "key" : "mcode-reason-required",
         "severity" : "warning",
         "human" : "One of reasonCode or reasonReference SHALL be present",
         "expression" : "reasonCode.exists() or reasonReference.exists()",
-        "source" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration|4.0.0"
+        "source" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration"
       },
       {
         "key" : "termination-reason-code-invariant",
         "severity" : "error",
         "human" : "When status is stopped, only certain statusReason values are allowed",
         "expression" : "status = 'stopped' and statusReason.exists() and statusReason.coding.exists() implies statusReason.coding.exists(system = 'http://snomed.info/sct' and (code = '182992009' or code = '266721009' or code = '407563006' or code = '160932005' or code = '105480006' or code = '184081006' or code = '309846006' or code = '399307001' or code = '419620001' or code = '7058009' or code = '443729008' or code = '77386006'))",
-        "source" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration|4.0.0"
+        "source" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration"
       },
       {
         "key" : "termination-reason-invariant",
         "severity" : "error",
         "human" : "Certain statusReason values are allowed only when status is stopped",
         "expression" : "statusReason.exists() and statusReason.coding.exists(\n      system = 'http://snomed.info/sct' and (code = '182992009' or code = '266721009' or code = '407563006' or code = '160932005' or\n code = '105480006' or code = '184081006' or code = '309846006' or code = '399307001' or  code = '419620001' or code = '7058009' or code = '443729008' or code = '77386006')) implies status = 'stopped'",
-        "source" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration|4.0.0"
+        "source" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration"
       },
       {
         "key" : "o-med-req-1",
         "severity" : "error",
         "human" : "The subject element is required and must be provided.",
         "expression" : "subject.exists() and subject.resolve().is(Patient)",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration"
       },
       {
         "key" : "o-med-req-2",
         "severity" : "error",
         "human" : "The effectivePeriod element is required and must be provided.",
         "expression" : "effectivePeriod.exists() and effectivePeriod.hasValue()",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration"
       },
       {
         "key" : "o-med-req-3",
         "severity" : "error",
         "human" : "The treatmentIntent extension is required and must be provided.",
         "expression" : "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent').exists()",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration"
       },
       {
         "key" : "o-med-req-4",
         "severity" : "error",
         "human" : "The medicationCodeableConcept element is required and must be provided.",
         "expression" : "medicationCodeableConcept.exists() and medicationCodeableConcept.coding.exists()",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -224,7 +224,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true
@@ -251,7 +251,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : true,
       "isModifierReason" : "This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation",
@@ -279,14 +279,14 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
-          "valueCanonical" : "http://hl7.org/fhir/ValueSet/all-languages|4.0.1"
+          "valueCanonical" : "http://hl7.org/fhir/ValueSet/all-languages"
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
@@ -294,7 +294,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
       }
     },
     {
@@ -323,7 +323,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -371,7 +371,7 @@
       },
       "short" : "Extension",
       "definition" : "An Extension",
-      "min" : 0,
+      "min" : 1,
       "max" : "*",
       "base" : {
         "path" : "DomainResource.extension",
@@ -387,7 +387,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -395,7 +395,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -403,11 +403,41 @@
     },
     {
       "id" : "MedicationAdministration.extension:treatmentIntent",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:populate-if-known"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.extension",
       "sliceName" : "treatmentIntent",
       "short" : "Procedure Intent Extension",
       "definition" : "The purpose of a treatment, medication, or procedure.",
-      "min" : 0,
+      "min" : 1,
       "max" : "1",
       "base" : {
         "path" : "DomainResource.extension",
@@ -416,7 +446,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent|4.0.0"]
+        "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent"]
       }],
       "condition" : ["ele-1"],
       "constraint" : [{
@@ -425,7 +455,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -433,7 +463,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false
@@ -442,8 +472,8 @@
       "id" : "MedicationAdministration.extension:normalizationBasis",
       "path" : "MedicationAdministration.extension",
       "sliceName" : "normalizationBasis",
-      "short" : "Normalization Basis Extension",
-      "definition" : "The method (e.g., body weight, body surface area, flat dose, age) used to normalize the medication dosage.",
+      "short" : "Not used in this profile",
+      "definition" : "Not used in this profile",
       "min" : 0,
       "max" : "1",
       "base" : {
@@ -453,7 +483,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-normalization-basis|4.0.0"]
+        "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-normalization-basis"]
       }],
       "condition" : ["ele-1"],
       "constraint" : [{
@@ -462,7 +492,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -470,16 +500,46 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : false
     },
     {
       "id" : "MedicationAdministration.extension:combinedWith",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate-if-known"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.extension",
       "sliceName" : "combinedWith",
       "short" : "Other medication administered in combination",
-      "definition" : "Indicates that this medication administration was given in combination with another medication administration.",
+      "definition" : "Indicates which medication administrations were given in combination with the current medication administration.",
       "min" : 0,
       "max" : "*",
       "base" : {
@@ -489,7 +549,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with|0.2.0"]
+        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-combined-with"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -497,7 +557,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -505,7 +565,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -513,6 +573,36 @@
     },
     {
       "id" : "MedicationAdministration.extension:cycles",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.extension",
       "sliceName" : "cycles",
       "short" : "Total number of cycles for this medication",
@@ -526,7 +616,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cycles|0.2.0"]
+        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-cycles"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -534,7 +624,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -542,7 +632,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -550,6 +640,36 @@
     },
     {
       "id" : "MedicationAdministration.extension:therapyLine",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "MAY:ignore"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "MAY:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.extension",
       "sliceName" : "therapyLine",
       "short" : "Reference to the therapy line associated with this treatment",
@@ -563,7 +683,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.2.0"]
+        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -571,7 +691,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -579,7 +699,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -587,6 +707,36 @@
     },
     {
       "id" : "MedicationAdministration.extension:adjunctiveRole",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate-if-known"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.extension",
       "sliceName" : "adjunctiveRole",
       "short" : "Role of this medication in the overall treatment plan",
@@ -600,7 +750,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adjunctive-role|0.2.0"]
+        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-adjunctive-role"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -608,7 +758,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -616,7 +766,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -624,6 +774,36 @@
     },
     {
       "id" : "MedicationAdministration.extension:isPrimaryTherapy",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.extension",
       "sliceName" : "isPrimaryTherapy",
       "short" : "Indicates if this medication is the primary therapy within a therapy line",
@@ -637,7 +817,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-is-primary-therapy|0.2.0"]
+        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-is-primary-therapy"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -645,7 +825,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -653,7 +833,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -684,7 +864,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -692,7 +872,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : true,
       "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them",
@@ -724,7 +904,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -762,7 +942,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -789,8 +969,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Procedure|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+        "http://hl7.org/fhir/StructureDefinition/Procedure"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -798,7 +978,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -814,8 +994,8 @@
     {
       "id" : "MedicationAdministration.status",
       "path" : "MedicationAdministration.status",
-      "short" : "in-progress | not-done | on-hold | completed | entered-in-error | stopped | unknown",
-      "definition" : "Will generally be set to show that the administration has been completed.  For some long running administrations such as infusions, it is possible for an administration to be started but not completed or it may be paused while some other process is under way.",
+      "short" : "Not used in this profile",
+      "definition" : "Not used in this profile",
       "comment" : "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
       "min" : 1,
       "max" : "1",
@@ -833,7 +1013,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : true,
@@ -867,11 +1047,41 @@
     },
     {
       "id" : "MedicationAdministration.statusReason",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:populate-if-known"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.statusReason",
       "short" : "Reason administration not performed",
       "definition" : "A code indicating why the administration was not performed.",
-      "min" : 0,
-      "max" : "*",
+      "min" : 1,
+      "max" : "1",
       "base" : {
         "path" : "MedicationAdministration.statusReason",
         "min" : 0,
@@ -886,14 +1096,14 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons|0.2.0"
+        "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -929,7 +1139,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -940,7 +1150,7 @@
         }],
         "strength" : "preferred",
         "description" : "A coded concept describing where the medication administered is expected to occur.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/medication-admin-category"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -949,15 +1159,37 @@
     },
     {
       "id" : "MedicationAdministration.medication[x]",
-      "path" : "MedicationAdministration.medication[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
         }],
-        "ordered" : false,
-        "rules" : "open"
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
       },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "MedicationAdministration.medication[x]",
       "short" : "What was administered",
       "definition" : "Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.",
       "comment" : "If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example, if you require form or lot number, then you must reference the Medication resource.",
@@ -970,10 +1202,6 @@
       },
       "type" : [{
         "code" : "CodeableConcept"
-      },
-      {
-        "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Medication|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -981,63 +1209,14 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
-      }],
-      "mustSupport" : true,
-      "isModifier" : false,
-      "isSummary" : true,
-      "binding" : {
-        "strength" : "extensible",
-        "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4|20170601"
-      },
-      "mapping" : [{
-        "identity" : "workflow",
-        "map" : "Event.code"
-      },
-      {
-        "identity" : "w5",
-        "map" : "FiveWs.what[x]"
-      },
-      {
-        "identity" : "v2",
-        "map" : "RXA-5-Administered Code"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".participation[typeCode=CSM].role[classCode=ADMM]"
-      }]
-    },
-    {
-      "id" : "MedicationAdministration.medication[x]:medicationCodeableConcept",
-      "path" : "MedicationAdministration.medication[x]",
-      "sliceName" : "medicationCodeableConcept",
-      "short" : "What was administered",
-      "definition" : "Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.",
-      "comment" : "If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example, if you require form or lot number, then you must reference the Medication resource.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "MedicationAdministration.medication[x]",
-        "min" : 1,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "constraint" : [{
-        "key" : "ele-1",
-        "severity" : "error",
-        "human" : "All FHIR elements must have a @value or children",
-        "expression" : "hasValue() or (children().count() > id.count())",
-        "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents|0.2.0"
+        "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1058,6 +1237,36 @@
     },
     {
       "id" : "MedicationAdministration.subject",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.subject",
       "short" : "Who received medication",
       "definition" : "The patient receiving the medication.",
@@ -1070,7 +1279,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"]
+        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1078,7 +1287,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -1118,8 +1327,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter",
+        "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1127,7 +1336,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1162,7 +1371,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1170,7 +1379,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1185,6 +1394,36 @@
     },
     {
       "id" : "MedicationAdministration.effective[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.effective[x]",
       "short" : "Start and end time of administration",
       "definition" : "A specific date/time or interval of time during which the administration took place (or did not take place, when the 'notGiven' attribute is true). For many administrations, such as swallowing a tablet the use of dateTime is more appropriate.",
@@ -1204,7 +1443,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -1247,7 +1486,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1319,7 +1558,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -1327,7 +1566,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1362,7 +1601,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -1370,7 +1609,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : true,
       "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
@@ -1401,7 +1640,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1412,7 +1651,7 @@
         }],
         "strength" : "example",
         "description" : "A code describing the role an individual played in administering the medication.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/med-admin-perform-function|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/med-admin-perform-function"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1437,11 +1676,11 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Device|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+        "http://hl7.org/fhir/StructureDefinition/Patient",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+        "http://hl7.org/fhir/StructureDefinition/Device"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1449,7 +1688,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1483,14 +1722,14 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "http://hl7.org/fhir/us/mcode/ValueSet/mcode-cancer-disorder-vs|4.0.0"
+        "valueSet" : "http://hl7.org/fhir/us/mcode/ValueSet/mcode-cancer-disorder-vs"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1507,11 +1746,41 @@
     },
     {
       "id" : "MedicationAdministration.reasonReference",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.reasonReference",
-      "short" : "Condition or observation that supports why the medication was administered",
+      "short" : "The condition(s) that motivated the medication administration",
       "definition" : "Condition or observation that supports why the medication was administered.",
       "comment" : "This is a reference to a condition that is the reason for the medication request.  If only a code exists, use reasonCode.",
-      "min" : 0,
+      "min" : 1,
       "max" : "*",
       "base" : {
         "path" : "MedicationAdministration.reasonReference",
@@ -1520,8 +1789,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0",
-        "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"]
+        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition",
+        "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1529,7 +1798,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -1566,7 +1835,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/MedicationRequest"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1574,7 +1843,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1605,7 +1874,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1613,7 +1882,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1647,7 +1916,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1681,7 +1950,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "mad-1",
@@ -1689,8 +1958,9 @@
         "human" : "SHALL have at least one of dosage.dose or dosage.rate[x]",
         "expression" : "dose.exists() or rate.exists()",
         "xpath" : "exists(f:dose) or exists(f:*[starts-with(local-name(.), 'rate')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
       }],
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -1749,7 +2019,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -1757,7 +2027,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1792,7 +2062,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -1800,7 +2070,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : true,
       "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
@@ -1831,7 +2101,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1862,7 +2132,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1873,7 +2143,7 @@
         }],
         "strength" : "example",
         "description" : "A coded concept describing the site location the medicine enters into or onto the body.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/approach-site-codes|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/approach-site-codes"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1905,7 +2175,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1916,7 +2186,7 @@
         }],
         "strength" : "example",
         "description" : "A coded concept describing the route or physiological path of administration of a therapeutic agent into or onto the body of a subject.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/route-codes|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/route-codes"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1949,7 +2219,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1960,7 +2230,7 @@
         }],
         "strength" : "example",
         "description" : "A coded concept describing the technique by which the medicine is administered.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/administration-method-codes|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/administration-method-codes"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1986,7 +2256,7 @@
       },
       "type" : [{
         "code" : "Quantity",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1994,7 +2264,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -2025,7 +2295,7 @@
       },
       {
         "code" : "Quantity",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1"]
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/SimpleQuantity"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2033,7 +2303,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -2061,7 +2331,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Provenance|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Provenance"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2069,7 +2339,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -2088,32 +2358,94 @@
         "severity" : "error",
         "human" : "The subject element is required and must be provided.",
         "expression" : "subject.exists() and subject.resolve().is(Patient)",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration"
       },
       {
         "key" : "o-med-req-2",
         "severity" : "error",
         "human" : "The effectivePeriod element is required and must be provided.",
         "expression" : "effectivePeriod.exists() and effectivePeriod.hasValue()",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration"
       },
       {
         "key" : "o-med-req-3",
         "severity" : "error",
         "human" : "The treatmentIntent extension is required and must be provided.",
         "expression" : "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent').exists()",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration"
       },
       {
         "key" : "o-med-req-4",
         "severity" : "error",
         "human" : "The medicationCodeableConcept element is required and must be provided.",
         "expression" : "medicationCodeableConcept.exists() and medicationCodeableConcept.coding.exists()",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration"
       }]
     },
     {
+      "id" : "MedicationAdministration.extension",
+      "path" : "MedicationAdministration.extension",
+      "min" : 1
+    },
+    {
+      "id" : "MedicationAdministration.extension:treatmentIntent",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:populate-if-known"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "MedicationAdministration.extension",
+      "sliceName" : "treatmentIntent",
+      "min" : 1
+    },
+    {
+      "id" : "MedicationAdministration.extension:normalizationBasis",
+      "path" : "MedicationAdministration.extension",
+      "sliceName" : "normalizationBasis",
+      "short" : "Not used in this profile",
+      "definition" : "Not used in this profile"
+    },
+    {
       "id" : "MedicationAdministration.extension:combinedWith",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate-if-known"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.extension",
       "sliceName" : "combinedWith",
       "short" : "Other medication administered in combination",
@@ -2121,11 +2453,33 @@
       "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with|0.2.0"]
+        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-combined-with"]
       }]
     },
     {
       "id" : "MedicationAdministration.extension:cycles",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.extension",
       "sliceName" : "cycles",
       "short" : "Total number of cycles for this medication",
@@ -2133,11 +2487,33 @@
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cycles|0.2.0"]
+        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-cycles"]
       }]
     },
     {
       "id" : "MedicationAdministration.extension:therapyLine",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "MAY:ignore"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "MAY:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.extension",
       "sliceName" : "therapyLine",
       "short" : "Reference to the therapy line associated with this treatment",
@@ -2145,11 +2521,33 @@
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.2.0"]
+        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference"]
       }]
     },
     {
       "id" : "MedicationAdministration.extension:adjunctiveRole",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate-if-known"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.extension",
       "sliceName" : "adjunctiveRole",
       "short" : "Role of this medication in the overall treatment plan",
@@ -2157,11 +2555,33 @@
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adjunctive-role|0.2.0"]
+        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-adjunctive-role"]
       }]
     },
     {
       "id" : "MedicationAdministration.extension:isPrimaryTherapy",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.extension",
       "sliceName" : "isPrimaryTherapy",
       "short" : "Indicates if this medication is the primary therapy within a therapy line",
@@ -2169,7 +2589,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-is-primary-therapy|0.2.0"]
+        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-is-primary-therapy"]
       }]
     },
     {
@@ -2179,45 +2599,104 @@
       "definition" : "Not used in this profile"
     },
     {
+      "id" : "MedicationAdministration.status",
+      "path" : "MedicationAdministration.status",
+      "short" : "Not used in this profile",
+      "definition" : "Not used in this profile"
+    },
+    {
       "id" : "MedicationAdministration.statusReason",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:populate-if-known"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.statusReason",
+      "min" : 1,
+      "max" : "1",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons|0.2.0"
+        "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons"
       }
     },
     {
       "id" : "MedicationAdministration.medication[x]",
-      "path" : "MedicationAdministration.medication[x]",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "type",
-          "path" : "$this"
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
         }],
-        "ordered" : false,
-        "rules" : "open"
-      }
-    },
-    {
-      "id" : "MedicationAdministration.medication[x]:medicationCodeableConcept",
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.medication[x]",
-      "sliceName" : "medicationCodeableConcept",
-      "min" : 0,
-      "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents|0.2.0"
+        "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents"
       }
     },
     {
       "id" : "MedicationAdministration.subject",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.subject",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"]
+        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"]
       }]
     },
     {
@@ -2234,6 +2713,28 @@
     },
     {
       "id" : "MedicationAdministration.effective[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.effective[x]",
       "type" : [{
         "code" : "Period"
@@ -2253,11 +2754,35 @@
     },
     {
       "id" : "MedicationAdministration.reasonReference",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "MedicationAdministration.reasonReference",
+      "short" : "The condition(s) that motivated the medication administration",
+      "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0",
-        "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"]
+        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition",
+        "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition"]
       }]
     },
     {
@@ -2265,6 +2790,11 @@
       "path" : "MedicationAdministration.request",
       "short" : "Not used in this profile",
       "definition" : "Not used in this profile"
+    },
+    {
+      "id" : "MedicationAdministration.dosage",
+      "path" : "MedicationAdministration.dosage",
+      "mustSupport" : true
     }]
   }
 }

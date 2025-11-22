@@ -19,7 +19,7 @@ A characterization of the tumor board review focused on cancer of unknown primar
 
 **Usages:**
 
-* Use this Extension: [Molecular Tumor Board Review](StructureDefinition-onconova-molecular-tumor-board-review.md)
+* Use this Extension: [Molecular Tumor Board Review Profile](StructureDefinition-onconova-molecular-tumor-board-review.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
   "name" : "MolecularTumorBoardCUPCharacterization",
   "title" : "Molecular Tumor Board CUP Characterization",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -94,6 +94,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
       },
       {
         "id" : "Extension.extension:conducted",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "conducted",
         "short" : "CUP characterization conducted",
@@ -122,6 +150,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
       },
       {
         "id" : "Extension.extension:success",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "success",
         "short" : "CUP characterization successful",

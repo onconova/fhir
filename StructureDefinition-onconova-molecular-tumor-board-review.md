@@ -1,10 +1,10 @@
-# Molecular Tumor Board Review - Onconova Implementation Guide v0.2.0
+# Molecular Tumor Board Review Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Molecular Tumor Board Review**
+* **Molecular Tumor Board Review Profile**
 
-## Resource Profile: Molecular Tumor Board Review 
+## Resource Profile: Molecular Tumor Board Review Profile 
 
 | | |
 | :--- | :--- |
@@ -13,6 +13,8 @@
 
  
 A profile representing a specialized molecular tumor board review for a cancer patient. This profile extends the`OnconovaTumorBoardReview`profile to specify that the review is focused on molecular diagnostics and recommendations. 
+**Conformance:** 
+Procedure resources representing a molecular tumor board review in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 **Usages:**
 
@@ -40,9 +42,9 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review",
   "version" : "0.2.0",
   "name" : "OnconovaMolecularTumorBoardReview",
-  "title" : "Molecular Tumor Board Review",
+  "title" : "Molecular Tumor Board Review Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -55,7 +57,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
       ]
     }
   ],
-  "description" : "A profile representing a specialized molecular tumor board review for a cancer patient. This profile extends the `OnconovaTumorBoardReview` profile to specify that the review is focused on molecular diagnostics and recommendations.",
+  "description" : "A profile representing a specialized molecular tumor board review for a cancer patient. This profile extends the `OnconovaTumorBoardReview` profile to specify that the review is focused on molecular diagnostics and recommendations.\n\n**Conformance:**\n\nProcedure resources representing a molecular tumor board review in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -82,7 +84,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
   "kind" : "resource",
   "abstract" : false,
   "type" : "Procedure",
-  "baseDefinition" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review|0.2.0",
+  "baseDefinition" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -95,14 +97,14 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
             "severity" : "error",
             "human" : "The subject element is required and must be provided.",
             "expression" : "subject.exists() and subject.resolve().is(Patient)",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review"
           },
           {
             "key" : "o-tub-req-2",
             "severity" : "error",
             "human" : "The performedDateTime element is required and must be provided.",
             "expression" : "performedDateTime.exists() and performedDateTime.hasValue()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review"
           }
         ]
       },
@@ -118,20 +120,48 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
           ],
           "ordered" : false,
           "rules" : "open"
-        },
-        "short" : "CUP characterization(s)"
+        }
       },
       {
         "id" : "Procedure.extension:therapeuticRecommendation",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Procedure.extension",
         "sliceName" : "therapeuticRecommendation",
+        "short" : "Therapeutic recommendation(s)",
         "min" : 0,
         "max" : "*",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation"
             ]
           }
         ],
@@ -139,15 +169,44 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
       },
       {
         "id" : "Procedure.extension:molecularComparison",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Procedure.extension",
         "sliceName" : "molecularComparison",
+        "short" : "Molecular comparison(s)",
         "min" : 0,
         "max" : "1",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-molecular-comparison|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-molecular-comparison"
             ]
           }
         ],
@@ -155,15 +214,44 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
       },
       {
         "id" : "Procedure.extension:cupCharacterization",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Procedure.extension",
         "sliceName" : "cupCharacterization",
+        "short" : "CUP characterization(s)",
         "min" : 0,
         "max" : "1",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization"
             ]
           }
         ],

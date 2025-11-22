@@ -1,10 +1,10 @@
-# Risk Assessment Values - Onconova Implementation Guide v0.2.0
+# Risk Assessment Values Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Risk Assessment Values**
+* **Risk Assessment Values Value Set**
 
-## ValueSet: Risk Assessment Values 
+## ValueSet: Risk Assessment Values Value Set 
 
 | | |
 | :--- | :--- |
@@ -50,9 +50,9 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-values",
   "version" : "0.2.0",
   "name" : "CancerRiskAssessmentValues",
-  "title" : "Risk Assessment Values",
+  "title" : "Risk Assessment Values Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
   "name" : "AdverseEventMitigation",
   "title" : "Adverse Event Mitigation",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -75,11 +75,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
   "context" : [
     {
       "type" : "element",
-      "expression" : "AdverseEvent"
+      "expression" : "AdverseEvent.extension"
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -94,21 +94,21 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
             "severity" : "error",
             "human" : "If the mitigation category is 'Drug', then only mitigation drug must be specified.",
             "expression" : "extension('category').valueCodeableConcept.coding.code = 'C49158' implies (extension('drug').exists() and not extension('procedure').exists() and not extension('adjustment').exists())",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation"
           },
           {
             "key" : "adjustment-mitigation",
             "severity" : "error",
             "human" : "If the mitigation category is 'Adjustment', then only mitigation adjustment must be specified.",
             "expression" : "extension('category').valueCodeableConcept.coding.code = 'C49157' implies (extension('adjustment').exists() and not extension('procedure').exists() and not extension('drug').exists())",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation"
           },
           {
             "key" : "procedural-mitigation",
             "severity" : "error",
             "human" : "If the mitigation category is 'Procedure', then only mitigation procedure must be specified.",
             "expression" : "extension('category').valueCodeableConcept.coding.code = 'C49159' implies (extension('procedure').exists() and not extension('adjustment').exists() and not extension('drug').exists())",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation"
           }
         ]
       },
@@ -119,6 +119,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
       },
       {
         "id" : "Extension.extension:category",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "category",
         "short" : "Mitigation Category",
@@ -146,11 +174,39 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-categories|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-categories"
         }
       },
       {
         "id" : "Extension.extension:adjustment",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "adjustment",
         "short" : "Treatment Adjustment",
@@ -178,11 +234,39 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments"
         }
       },
       {
         "id" : "Extension.extension:drug",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "drug",
         "short" : "Mitigation Drug",
@@ -210,11 +294,39 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-drugs|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-drugs"
         }
       },
       {
         "id" : "Extension.extension:procedure",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "procedure",
         "short" : "Mitigation Procedure",
@@ -242,11 +354,39 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-procedures|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-procedures"
         }
       },
       {
         "id" : "Extension.extension:management",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "MAY:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "management",
         "short" : "Management",
@@ -274,7 +414,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-managements|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-managements"
         }
       },
       {

@@ -3,14 +3,14 @@
   "id" : "onconova-surgical-procedure",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition onconova-surgical-procedure</b></p><a name=\"onconova-surgical-procedure\"> </a><a name=\"hconconova-surgical-procedure\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure\">Procedure</a><a name=\"Procedure\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;; padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R4/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints ( o-sur-req-1, o-sur-req-2, o-sur-req-3, o-sur-req-4 )\">C</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/us/mcode/STU4/StructureDefinition-mcode-cancer-related-surgical-procedure.html\">CancerRelatedSurgicalProcedure(4.0.0)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An action that is being or was performed on a patient</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> Slices for extension<a name=\"Procedure.extension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Content/Rules for all slices</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.extension:therapyLine\" title=\"Extension URL = http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference\">extension:therapyLine</a><a name=\"Procedure.extension.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-therapy-line.html\">Therapy Line Profile(0.2.0)</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reference to the therapy line associated with this treatment<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-ext-therapy-line-reference.html\">http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.basedOn\" title=\"Not used in this profile\">basedOn</a><a name=\"Procedure.basedOn\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-careplan.html\">US Core CarePlan Profile(6.1.0)</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-servicerequest.html\">US Core ServiceRequest Profile(6.1.0)</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.partOf\" title=\"Not used in this profile\">partOf</a><a name=\"Procedure.partOf\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/procedure.html\">Procedure</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/medicationadministration.html\">MedicationAdministration</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.status\">status</a><a name=\"Procedure.status\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(USCDI) preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">completed</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.statusReason\" title=\"Not used in this profile\">statusReason</a><a name=\"Procedure.statusReason\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.subject\">subject</a><a name=\"Procedure.subject\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-cancer-patient.html\">Cancer Patient Profile(0.2.0)</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(USCDI) Who the procedure was performed on</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.encounter\" title=\"Not used in this profile\">encounter</a><a name=\"Procedure.encounter\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.performed[x]\">performed[x]</a><a name=\"Procedure.performed_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(USCDI) When the procedure was performed</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.recorder\" title=\"Not used in this profile\">recorder</a><a name=\"Procedure.recorder\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/relatedperson.html\">RelatedPerson</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitioner.html\">Practitioner</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.asserter\" title=\"Not used in this profile\">asserter</a><a name=\"Procedure.asserter\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/relatedperson.html\">RelatedPerson</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitioner.html\">Practitioner</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.performer\" title=\"Not used in this profile\">performer</a><a name=\"Procedure.performer\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.location\" title=\"Not used in this profile\">location</a><a name=\"Procedure.location\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/location.html\">Location</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.reasonCode\" title=\"Not used in this profile\">reasonCode</a><a name=\"Procedure.reasonCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.reasonReference\">reasonReference</a><a name=\"Procedure.reasonReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-primary-cancer-condition.html\">Primary Cancer Condition Profile(0.2.0)</a> | <a href=\"StructureDefinition-onconova-secondary-cancer-condition.html\">Secondary Cancer Condition Profile(0.2.0)</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The justification that the procedure was performed</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.report\" title=\"Not used in this profile\">report</a><a name=\"Procedure.report\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/diagnosticreport.html\">DiagnosticReport</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/documentreference.html\">DocumentReference</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/composition.html\">Composition</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.complication\" title=\"Not used in this profile\">complication</a><a name=\"Procedure.complication\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.complicationDetail\" title=\"Not used in this profile\">complicationDetail</a><a name=\"Procedure.complicationDetail\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.followUp\" title=\"Not used in this profile\">followUp</a><a name=\"Procedure.followUp\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.focalDevice\" title=\"Not used in this profile\">focalDevice</a><a name=\"Procedure.focalDevice\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.usedReference\" title=\"Not used in this profile\">usedReference</a><a name=\"Procedure.usedReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/device.html\">Device</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/medication.html\">Medication</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/substance.html\">Substance</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.usedCode\" title=\"Not used in this profile\">usedCode</a><a name=\"Procedure.usedCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition onconova-surgical-procedure</b></p><a name=\"onconova-surgical-procedure\"> </a><a name=\"hconconova-surgical-procedure\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure\">Procedure</a><a name=\"Procedure\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;; padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R4/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints ( o-sur-req-1, o-sur-req-2, o-sur-req-3, o-sur-req-4 )\">C</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/us/mcode/STU4/StructureDefinition-mcode-cancer-related-surgical-procedure.html\">CancerRelatedSurgicalProcedure</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An action that is being or was performed on a patient</span><br class=\"constraint\"/><span title=\"null\" class=\"constraint\">Constraints: </span><span style=\"font-weight:bold\" title=\"The subject element is required and must be provided.\" class=\"constraint\">o-sur-req-1</span><span title=\"null\" class=\"constraint\">, </span><span style=\"font-weight:bold\" title=\"The performedDateTime element is required and must be provided.\" class=\"constraint\">o-sur-req-2</span><span title=\"null\" class=\"constraint\">, </span><span style=\"font-weight:bold\" title=\"The code element is required and must be provided.\" class=\"constraint\">o-sur-req-3</span><span title=\"null\" class=\"constraint\">, </span><span style=\"font-weight:bold\" title=\"The treatmentIntent extension is required and must be provided.\" class=\"constraint\">o-sur-req-4</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.extension\">extension</a><a name=\"Procedure.extension\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> Slices for extension<a name=\"Procedure.extension.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Content/Rules for all slices</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.extension:treatmentIntent\" title=\"Slice treatmentIntent\">extension:treatmentIntent</a><a name=\"Procedure.extension.3\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/us/mcode/STU4/StructureDefinition-mcode-procedure-intent.html\" title=\"Extension\">ProcedureIntent</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Procedure Intent Extension</span><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate\" title=\"Obligation Codes: populate\">populate</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.extension:therapyLine\" title=\"Extension URL = http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference\">extension:therapyLine</a><a name=\"Procedure.extension.4\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-therapy-line.html\">Therapy Line Profile</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reference to the therapy line associated with this treatment<br/><span style=\"font-weight:bold\">URL: </span><a href=\"StructureDefinition-onconova-ext-therapy-line-reference.html\">http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference</a><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>MAY</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-ignore\" title=\"Obligation Codes: ignore\">ignore</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>MAY</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.basedOn\" title=\"Not used in this profile\">basedOn</a><a name=\"Procedure.basedOn\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-careplan.html\">US Core CarePlan Profile</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-servicerequest.html\">US Core ServiceRequest Profile</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.partOf\" title=\"Not used in this profile\">partOf</a><a name=\"Procedure.partOf\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/procedure.html\">Procedure</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/medicationadministration.html\">MedicationAdministration</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.status\" title=\"Not used in this profile\">status</a><a name=\"Procedure.status\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.statusReason\" title=\"Not used in this profile\">statusReason</a><a name=\"Procedure.statusReason\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.code\">code</a><a name=\"Procedure.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(USCDI) Identification of the procedure</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-onconova-vs-surgical-procedures.html\" title=\"http://onconova.github.io/fhir/ValueSet/onconova-vs-surgical-procedures\" class=\"binding\">Surgical Procedures Value Set</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate\" title=\"Obligation Codes: populate\">populate</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.subject\">subject</a><a name=\"Procedure.subject\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-cancer-patient.html\">Cancer Patient Profile</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(USCDI) Who the procedure was performed on</span><table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate\" title=\"Obligation Codes: populate\">populate</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.encounter\" title=\"Not used in this profile\">encounter</a><a name=\"Procedure.encounter\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.performed[x]\">performed[x]</a><a name=\"Procedure.performed_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The date on which the surgical procedure was performed<table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate\" title=\"Obligation Codes: populate\">populate</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.recorder\" title=\"Not used in this profile\">recorder</a><a name=\"Procedure.recorder\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/relatedperson.html\">RelatedPerson</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitioner.html\">Practitioner</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.asserter\" title=\"Not used in this profile\">asserter</a><a name=\"Procedure.asserter\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/relatedperson.html\">RelatedPerson</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitioner.html\">Practitioner</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.performer\" title=\"Not used in this profile\">performer</a><a name=\"Procedure.performer\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.location\" title=\"Not used in this profile\">location</a><a name=\"Procedure.location\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/location.html\">Location</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.reasonCode\" title=\"Not used in this profile\">reasonCode</a><a name=\"Procedure.reasonCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.reasonReference\">reasonReference</a><a name=\"Procedure.reasonReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element has obligations\">O</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-onconova-primary-cancer-condition.html\">Primary Cancer Condition Profile</a> | <a href=\"StructureDefinition-onconova-secondary-cancer-condition.html\">Secondary Cancer Condition Profile</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The condition(s) that motivated the surgical procedure<table class=\"obligation grid\"><tr><td style=\"font-size: 11px\"><b>Obligations</b></td><td style=\"font-size: 11px\"><b>Actor</b></td></tr><tr><td style=\"font-size: 11px\"><b>SHALL</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-populate\" title=\"Obligation Codes: populate\">populate</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-creator.html\">Creator (Onconova)</a></td></tr><tr><td style=\"font-size: 11px\"><b>SHOULD</b>:<a href=\"http://hl7.org/fhir/extensions/5.2.0/CodeSystem-obligation.html#obligation-persist\" title=\"Obligation Codes: persist\">persist</a></td><td style=\"font-size: 11px; opacity: 0.5;\"><a href=\"ActorDefinition-onconova-consumer.html\">Consumer (Onconova)</a></td></tr></table></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.report\" title=\"Not used in this profile\">report</a><a name=\"Procedure.report\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/diagnosticreport.html\">DiagnosticReport</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/documentreference.html\">DocumentReference</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/composition.html\">Composition</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.complication\" title=\"Not used in this profile\">complication</a><a name=\"Procedure.complication\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.complicationDetail\" title=\"Not used in this profile\">complicationDetail</a><a name=\"Procedure.complicationDetail\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.followUp\" title=\"Not used in this profile\">followUp</a><a name=\"Procedure.followUp\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.focalDevice\" title=\"Not used in this profile\">focalDevice</a><a name=\"Procedure.focalDevice\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.usedReference\" title=\"Not used in this profile\">usedReference</a><a name=\"Procedure.usedReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/device.html\">Device</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/medication.html\">Medication</a> | <a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/substance.html\">Substance</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-onconova-surgical-procedure-definitions.html#Procedure.usedCode\" title=\"Not used in this profile\">usedCode</a><a name=\"Procedure.usedCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Not used in this profile</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   },
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure",
   "version" : "0.2.0",
   "name" : "OnconovaSurgicalProcedure",
   "title" : "Surgical Procedure Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -19,7 +19,7 @@
       "value" : "http://onconova.github.io/docs"
     }]
   }],
-  "description" : "A profile representing a surgical procedure performed on a cancer patient, including details about the procedure, its intent, and relevant dates. \n\nIt extends the base mCODE [CancerRelatedSurgicalProcedure profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure) to include specific constraints and requirements for Onconova.",
+  "description" : "A profile representing a surgical procedure performed on a cancer patient, including details about the procedure, its intent, and relevant dates. \n\nIt extends the base mCODE [CancerRelatedSurgicalProcedure profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure) to include specific constraints and requirements for Onconova.\n\n**Conformance:**\n\nProcedure resources representing a surgery in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
@@ -44,7 +44,7 @@
   "kind" : "resource",
   "abstract" : false,
   "type" : "Procedure",
-  "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure|4.0.0",
+  "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure",
   "derivation" : "constraint",
   "snapshot" : {
     "extension" : [{
@@ -70,7 +70,7 @@
         "human" : "If the resource is contained in another resource, it SHALL NOT contain nested Resources",
         "expression" : "contained.contained.empty()",
         "xpath" : "not(parent::f:contained and f:contained)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       },
       {
         "key" : "dom-3",
@@ -78,7 +78,7 @@
         "human" : "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource",
         "expression" : "contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()",
         "xpath" : "not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       },
       {
         "key" : "dom-4",
@@ -86,7 +86,7 @@
         "human" : "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated",
         "expression" : "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()",
         "xpath" : "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       },
       {
         "key" : "dom-5",
@@ -94,7 +94,7 @@
         "human" : "If a resource is contained in another resource, it SHALL NOT have a security label",
         "expression" : "contained.meta.security.empty()",
         "xpath" : "not(exists(f:contained/*/f:meta/f:security))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       },
       {
         "extension" : [{
@@ -110,49 +110,49 @@
         "human" : "A resource should have narrative for robust management",
         "expression" : "text.`div`.exists()",
         "xpath" : "exists(f:text/h:div)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       },
       {
         "key" : "us-core-7",
         "severity" : "error",
         "human" : "Performed SHALL be present if the status is 'completed' or 'in-progress'",
         "expression" : "(status='completed' or status='in-progress') implies performed.exists()",
-        "source" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure|6.1.0"
+        "source" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
       },
       {
         "key" : "mcode-reason-required",
         "severity" : "warning",
         "human" : "One of reasonCode or reasonReference SHALL be present",
         "expression" : "reasonCode.exists() or reasonReference.exists()",
-        "source" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure|4.0.0"
+        "source" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure"
       },
       {
         "key" : "o-sur-req-1",
         "severity" : "error",
         "human" : "The subject element is required and must be provided.",
         "expression" : "subject.exists() and subject.resolve().is(Patient)",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
       },
       {
         "key" : "o-sur-req-2",
         "severity" : "error",
         "human" : "The performedDateTime element is required and must be provided.",
         "expression" : "performedDateTime.exists() and performedDateTime.hasValue()",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
       },
       {
         "key" : "o-sur-req-3",
         "severity" : "error",
         "human" : "The code element is required and must be provided.",
         "expression" : "code.exists() and code.coding.exists()",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
       },
       {
         "key" : "o-sur-req-4",
         "severity" : "error",
         "human" : "The treatmentIntent extension is required and must be provided.",
         "expression" : "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent').exists()",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
       }],
       "mustSupport" : false,
       "isModifier" : false,
@@ -218,7 +218,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true
@@ -245,7 +245,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : true,
       "isModifierReason" : "This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation",
@@ -273,14 +273,14 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
-          "valueCanonical" : "http://hl7.org/fhir/ValueSet/all-languages|4.0.1"
+          "valueCanonical" : "http://hl7.org/fhir/ValueSet/all-languages"
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
@@ -288,7 +288,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
       }
     },
     {
@@ -317,7 +317,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -365,7 +365,7 @@
       },
       "short" : "Extension",
       "definition" : "An Extension",
-      "min" : 0,
+      "min" : 1,
       "max" : "*",
       "base" : {
         "path" : "DomainResource.extension",
@@ -381,7 +381,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -389,7 +389,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -397,11 +397,41 @@
     },
     {
       "id" : "Procedure.extension:treatmentIntent",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "Procedure.extension",
       "sliceName" : "treatmentIntent",
       "short" : "Procedure Intent Extension",
       "definition" : "The purpose of a treatment, medication, or procedure.",
-      "min" : 0,
+      "min" : 1,
       "max" : "1",
       "base" : {
         "path" : "DomainResource.extension",
@@ -410,7 +440,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent|4.0.0"]
+        "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent"]
       }],
       "condition" : ["ele-1"],
       "constraint" : [{
@@ -419,7 +449,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -427,13 +457,43 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false
     },
     {
       "id" : "Procedure.extension:therapyLine",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "MAY:ignore"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "MAY:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "Procedure.extension",
       "sliceName" : "therapyLine",
       "short" : "Reference to the therapy line associated with this treatment",
@@ -447,7 +507,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.2.0"]
+        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -455,7 +515,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -463,7 +523,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -494,7 +554,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -502,7 +562,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : true,
       "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them",
@@ -535,7 +595,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -570,11 +630,11 @@
       },
       "type" : [{
         "code" : "canonical",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/PlanDefinition|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/ActivityDefinition|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Measure|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/OperationDefinition|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Questionnaire|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/PlanDefinition",
+        "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
+        "http://hl7.org/fhir/StructureDefinition/Measure",
+        "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
+        "http://hl7.org/fhir/StructureDefinition/Questionnaire"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -582,7 +642,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -617,7 +677,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -649,8 +709,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan|6.1.0",
-        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest|6.1.0"]
+        "targetProfile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan",
+        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -658,7 +718,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : false,
       "isModifier" : false,
@@ -688,9 +748,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Procedure|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/MedicationAdministration|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Procedure",
+        "http://hl7.org/fhir/StructureDefinition/Observation",
+        "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -698,7 +758,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -718,8 +778,8 @@
         "valueBoolean" : true
       }],
       "path" : "Procedure.status",
-      "short" : "(USCDI) preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown",
-      "definition" : "A code specifying the state of the procedure. Generally, this will be the in-progress or completed state.",
+      "short" : "Not used in this profile",
+      "definition" : "Not used in this profile",
       "comment" : "The \"unknown\" code is not to be used to convey other statuses.  The \"unknown\" code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the procedure.\n\nThis element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
       "min" : 1,
       "max" : "1",
@@ -731,7 +791,6 @@
       "type" : [{
         "code" : "code"
       }],
-      "patternCode" : "completed",
       "condition" : ["us-core-7"],
       "constraint" : [{
         "key" : "ele-1",
@@ -739,7 +798,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : true,
@@ -747,7 +806,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/event-status|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/event-status"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -790,7 +849,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -801,7 +860,7 @@
         }],
         "strength" : "example",
         "description" : "A code that identifies the reason a procedure was not performed.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-not-performed-reason|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-not-performed-reason"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -833,7 +892,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -844,7 +903,7 @@
         }],
         "strength" : "example",
         "description" : "A code that classifies a procedure for searching, sorting and display purposes.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-category|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-category"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -860,6 +919,37 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
         "valueBoolean" : true
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+        "valueBoolean" : true
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
       }],
       "path" : "Procedure.code",
       "short" : "(USCDI) Identification of the procedure",
@@ -882,14 +972,14 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "strength" : "extensible",
-        "valueSet" : "http://hl7.org/fhir/us/mcode/ValueSet/mcode-cancer-related-surgical-procedure-vs|4.0.0"
+        "strength" : "required",
+        "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-surgical-procedures"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -917,6 +1007,37 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
         "valueBoolean" : true
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+        "valueBoolean" : true
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
       }],
       "path" : "Procedure.subject",
       "short" : "(USCDI) Who the procedure was performed on",
@@ -931,7 +1052,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"]
+        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -939,7 +1060,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -984,7 +1105,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -992,7 +1113,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1018,9 +1139,40 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
         "valueBoolean" : true
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+        "valueBoolean" : true
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
       }],
       "path" : "Procedure.performed[x]",
-      "short" : "(USCDI) When the procedure was performed",
+      "short" : "The date on which the surgical procedure was performed",
       "definition" : "Estimated or actual date, date-time, period, or age when the procedure was performed.  Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured.",
       "comment" : "Age is generally used when the patient reports an age at which the procedure was performed. Range is generally used when the patient reports an age range when the procedure was performed, such as sometime between 20-25 years old.  dateTime supports a range of precision due to some procedures being reported as past procedures that might not have millisecond precision while other procedures performed and documented during the encounter might have more precise UTC timestamps with timezone.",
       "min" : 0,
@@ -1048,7 +1200,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -1088,10 +1240,10 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1099,7 +1251,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1126,10 +1278,10 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1137,7 +1289,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1171,7 +1323,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1235,7 +1387,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -1243,7 +1395,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1278,7 +1430,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -1286,7 +1438,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : true,
       "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
@@ -1318,7 +1470,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1329,7 +1481,7 @@
         }],
         "strength" : "example",
         "description" : "A code that identifies the role of a performer of the procedure.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/performer-role|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/performer-role"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1359,12 +1511,12 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Device|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+        "http://hl7.org/fhir/StructureDefinition/Organization",
+        "http://hl7.org/fhir/StructureDefinition/Patient",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+        "http://hl7.org/fhir/StructureDefinition/Device"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1372,7 +1524,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1408,7 +1560,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1416,7 +1568,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1440,7 +1592,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1448,7 +1600,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1483,14 +1635,14 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "http://hl7.org/fhir/us/mcode/ValueSet/mcode-cancer-disorder-vs|4.0.0"
+        "valueSet" : "http://hl7.org/fhir/us/mcode/ValueSet/mcode-cancer-disorder-vs"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1507,11 +1659,41 @@
     },
     {
       "id" : "Procedure.reasonReference",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        },
+        {
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
+          "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "Procedure.reasonReference",
-      "short" : "The justification that the procedure was performed",
+      "short" : "The condition(s) that motivated the surgical procedure",
       "definition" : "The justification of why the procedure was performed.",
       "comment" : "It is possible for a procedure to be a reason (such as C-Section) for another procedure (such as an epidural). Other examples include endoscopy for dilatation and biopsy (a combination of diagnostic and therapeutic use). \nUse Procedure.reasonCode when a code sufficiently describes the reason.  Use Procedure.reasonReference when referencing a resource, which allows more information to be conveyed, such as onset date. Procedure.reasonCode and Procedure.reasonReference are not meant to be duplicative.  For a single reason, either Procedure.reasonCode or Procedure.reasonReference can be used.  Procedure.reasonCode may be a summary code, or Procedure.reasonReference may be used to reference a very precise definition of the reason using Condition | Observation | Procedure | DiagnosticReport | DocumentReference.  Both Procedure.reasonCode and Procedure.reasonReference can be used if they are describing different reasons for the procedure.",
-      "min" : 0,
+      "min" : 1,
       "max" : "*",
       "base" : {
         "path" : "Procedure.reasonReference",
@@ -1520,8 +1702,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0",
-        "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"]
+        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition",
+        "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1529,7 +1711,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -1569,7 +1751,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -1581,7 +1763,7 @@
         }],
         "strength" : "example",
         "description" : "Codes describing anatomical locations. May include laterality.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/body-site|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/body-site"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1648,7 +1830,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -1656,7 +1838,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -1677,7 +1859,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier|4.0.0"]
+        "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1685,7 +1867,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -1693,7 +1875,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -1714,7 +1896,7 @@
       },
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier|4.0.0"]
+        "profile" : ["http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1722,7 +1904,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -1730,7 +1912,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
       "isModifier" : false,
@@ -1759,7 +1941,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1803,7 +1985,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1842,7 +2024,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : true,
@@ -1853,7 +2035,7 @@
         }],
         "strength" : "example",
         "description" : "An outcome of a procedure - whether it was resolved or otherwise.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-outcome|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-outcome"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1875,9 +2057,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/DocumentReference|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Composition|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+        "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+        "http://hl7.org/fhir/StructureDefinition/Composition"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1885,7 +2067,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1916,7 +2098,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1927,7 +2109,7 @@
         }],
         "strength" : "example",
         "description" : "Codes describing complications that resulted from a procedure.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-code|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-code"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1949,7 +2131,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1957,7 +2139,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1987,7 +2169,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -1998,7 +2180,7 @@
         }],
         "strength" : "example",
         "description" : "Specific follow up required for a procedure e.g. removal of sutures.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-followup|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-followup"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2026,7 +2208,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -2064,7 +2246,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -2124,7 +2306,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -2132,7 +2314,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -2167,7 +2349,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
         "key" : "ext-1",
@@ -2175,7 +2357,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : true,
       "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
@@ -2206,7 +2388,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -2217,7 +2399,7 @@
         }],
         "strength" : "preferred",
         "description" : "A kind of change that happened to the device during the procedure.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/device-action|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/device-action"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2238,7 +2420,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2246,7 +2428,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -2271,9 +2453,9 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Medication|4.0.1",
-        "http://hl7.org/fhir/StructureDefinition/Substance|4.0.1"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device",
+        "http://hl7.org/fhir/StructureDefinition/Medication",
+        "http://hl7.org/fhir/StructureDefinition/Substance"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2281,7 +2463,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -2312,7 +2494,7 @@
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
         "xpath" : "@value|f:*|h:div",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
       "isModifier" : false,
       "isSummary" : false,
@@ -2323,7 +2505,7 @@
         }],
         "strength" : "example",
         "description" : "Codes describing items used during a procedure.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/device-kind|4.0.1"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/device-kind"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2340,32 +2522,87 @@
         "severity" : "error",
         "human" : "The subject element is required and must be provided.",
         "expression" : "subject.exists() and subject.resolve().is(Patient)",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
       },
       {
         "key" : "o-sur-req-2",
         "severity" : "error",
         "human" : "The performedDateTime element is required and must be provided.",
         "expression" : "performedDateTime.exists() and performedDateTime.hasValue()",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
       },
       {
         "key" : "o-sur-req-3",
         "severity" : "error",
         "human" : "The code element is required and must be provided.",
         "expression" : "code.exists() and code.coding.exists()",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
       },
       {
         "key" : "o-sur-req-4",
         "severity" : "error",
         "human" : "The treatmentIntent extension is required and must be provided.",
         "expression" : "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent').exists()",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
       }]
     },
     {
+      "id" : "Procedure.extension",
+      "path" : "Procedure.extension",
+      "min" : 1
+    },
+    {
+      "id" : "Procedure.extension:treatmentIntent",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "Procedure.extension",
+      "sliceName" : "treatmentIntent",
+      "min" : 1
+    },
+    {
       "id" : "Procedure.extension:therapyLine",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "MAY:ignore"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "MAY:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "Procedure.extension",
       "sliceName" : "therapyLine",
       "short" : "Reference to the therapy line associated with this treatment",
@@ -2373,7 +2610,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.2.0"]
+        "profile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference"]
       }]
     },
     {
@@ -2391,7 +2628,8 @@
     {
       "id" : "Procedure.status",
       "path" : "Procedure.status",
-      "patternCode" : "completed"
+      "short" : "Not used in this profile",
+      "definition" : "Not used in this profile"
     },
     {
       "id" : "Procedure.statusReason",
@@ -2400,11 +2638,65 @@
       "definition" : "Not used in this profile"
     },
     {
+      "id" : "Procedure.code",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+        "valueBoolean" : true
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "Procedure.code",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-surgical-procedures"
+      }
+    },
+    {
       "id" : "Procedure.subject",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+        "valueBoolean" : true
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "Procedure.subject",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"]
+        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"]
       }]
     },
     {
@@ -2415,7 +2707,31 @@
     },
     {
       "id" : "Procedure.performed[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+        "valueBoolean" : true
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "Procedure.performed[x]",
+      "short" : "The date on which the surgical procedure was performed",
       "type" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
@@ -2456,11 +2772,35 @@
     },
     {
       "id" : "Procedure.reasonReference",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
       "path" : "Procedure.reasonReference",
+      "short" : "The condition(s) that motivated the surgical procedure",
+      "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0",
-        "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"]
+        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition",
+        "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition"]
       }]
     },
     {

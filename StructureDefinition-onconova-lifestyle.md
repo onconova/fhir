@@ -14,6 +14,8 @@
  
 A profile representing a (reported) observation on certain lifestyle characteristics of a cancer patient (e.g. smoking, drinking, and sleeping habits, environmental exposures, etc.). 
 It directly profiles the base FHIR`Observation`resource as this resource is not represented in mCODE, to add relevant observation components for the different lifestyle characteristics. 
+**Conformance:** 
+Observation resources representing a summary of a patient's lifestyle in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 **Usages:**
 
@@ -43,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
   "name" : "OnconovaLifestyle",
   "title" : "Lifestyle Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -56,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
       ]
     }
   ],
-  "description" : "A profile representing a (reported) observation on certain lifestyle characteristics of a cancer patient (e.g. smoking, drinking, and sleeping habits, environmental exposures, etc.). \n\nIt directly profiles the base FHIR `Observation` resource as this resource is not represented in mCODE, to add relevant observation components for the different lifestyle characteristics. ",
+  "description" : "A profile representing a (reported) observation on certain lifestyle characteristics of a cancer patient (e.g. smoking, drinking, and sleeping habits, environmental exposures, etc.). \n\nIt directly profiles the base FHIR `Observation` resource as this resource is not represented in mCODE, to add relevant observation components for the different lifestyle characteristics. \n\n**Conformance:**\n\nObservation resources representing a summary of a patient's lifestyle in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -93,7 +95,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|6.1.0",
+  "baseDefinition" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -106,21 +108,22 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
             "severity" : "error",
             "human" : "The subject element is required and must be provided.",
             "expression" : "subject.exists() and subject.resolve().is(Patient)",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-lifestyle|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-lifestyle"
           },
           {
             "key" : "o-lif-req-2",
             "severity" : "error",
             "human" : "The effectiveDateTime element is required and must be provided.",
             "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-lifestyle|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-lifestyle"
           }
         ]
       },
       {
         "id" : "Observation.status",
         "path" : "Observation.status",
-        "patternCode" : "final"
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       },
       {
         "id" : "Observation.code",
@@ -137,12 +140,41 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
       },
       {
         "id" : "Observation.subject",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.subject",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
             ]
           }
         ]
@@ -161,6 +193,35 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
       },
       {
         "id" : "Observation.effective[x]",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.effective[x]",
         "type" : [
           {
@@ -238,6 +299,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
       },
       {
         "id" : "Observation.component:smokingStatus",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.component",
         "sliceName" : "smokingStatus",
         "min" : 0,
@@ -269,11 +358,39 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-smoking-status|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-smoking-status"
         }
       },
       {
         "id" : "Observation.component:smokingPackyears",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.component",
         "sliceName" : "smokingPackyears",
         "min" : 0,
@@ -316,6 +433,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
       },
       {
         "id" : "Observation.component:smokingQuited",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.component",
         "sliceName" : "smokingQuited",
         "min" : 0,
@@ -347,11 +492,39 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/units-of-time|4.0.1"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/units-of-time"
         }
       },
       {
         "id" : "Observation.component:alcoholConsumption",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.component",
         "sliceName" : "alcoholConsumption",
         "min" : 0,
@@ -388,6 +561,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
       },
       {
         "id" : "Observation.component:nightSleep",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.component",
         "sliceName" : "nightSleep",
         "min" : 0,
@@ -419,11 +620,39 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/units-of-time|4.0.1"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/units-of-time"
         }
       },
       {
         "id" : "Observation.component:recreationalDrug",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.component",
         "sliceName" : "recreationalDrug",
         "min" : 0,
@@ -455,11 +684,39 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-recreational-drugs|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-recreational-drugs"
         }
       },
       {
         "id" : "Observation.component:exposures",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.component",
         "sliceName" : "exposures",
         "min" : 0,
@@ -491,7 +748,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-exposure-agents|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-exposure-agents"
         }
       }
     ]

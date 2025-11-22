@@ -1,10 +1,10 @@
-# Adverse Event Mitigation - Treatment Adjustment - Onconova Implementation Guide v0.2.0
+# Adverse Event Mitigation Treatment Adjustments Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Adverse Event Mitigation - Treatment Adjustment**
+* **Adverse Event Mitigation Treatment Adjustments Value Set**
 
-## ValueSet: Adverse Event Mitigation - Treatment Adjustment 
+## ValueSet: Adverse Event Mitigation Treatment Adjustments Value Set 
 
 | | |
 | :--- | :--- |
@@ -52,9 +52,9 @@ This value set contains 3 concepts
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments",
   "version" : "0.2.0",
   "name" : "AdverseEventMitigationTreatmentAdjustments",
-  "title" : "Adverse Event Mitigation - Treatment Adjustment",
+  "title" : "Adverse Event Mitigation Treatment Adjustments Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

@@ -16,7 +16,7 @@ The causes of death that are relevant for a cancer patient.
 
  **References** 
 
-* [Cause of Death](StructureDefinition-onconova-ext-cause-of-death.md)
+* [Cancer Patient Cause of Death](StructureDefinition-onconova-ext-cancer-patient-cause-of-death.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 2 concepts
   "name" : "CausesOfDeath",
   "title" : "Cause of Death Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

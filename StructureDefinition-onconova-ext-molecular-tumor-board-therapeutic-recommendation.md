@@ -19,7 +19,7 @@ A therapeutic recommendation or follow-up action resulting from a molecular tumo
 
 **Usages:**
 
-* Use this Extension: [Molecular Tumor Board Review](StructureDefinition-onconova-molecular-tumor-board-review.md)
+* Use this Extension: [Molecular Tumor Board Review Profile](StructureDefinition-onconova-molecular-tumor-board-review.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation)
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
   "name" : "MolecularTumorBoardTherapeuticRecommendation",
   "title" : "Molecular Tumor Board Therapeutic Recommendation",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -94,12 +94,40 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
             "severity" : "error",
             "human" : "Either clinical trial or medication SHALL be present",
             "expression" : "extension('clinicalTrial').exists() or extension('medication').exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation"
           }
         ]
       },
       {
         "id" : "Extension.extension:clinicalTrial",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "clinicalTrial",
         "min" : 0,
@@ -127,6 +155,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
       },
       {
         "id" : "Extension.extension:medication",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "medication",
         "min" : 0,
@@ -153,11 +209,39 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents"
         }
       },
       {
         "id" : "Extension.extension:supportingEvidence",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "supportingEvidence",
         "min" : 0,
@@ -181,20 +265,48 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-mutational-burden|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-microsatellite-instability|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-loss-of-heterozygosity|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-neoantigen-burden|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-aneuploid-score|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-mutational-burden",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-microsatellite-instability",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-loss-of-heterozygosity",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-neoantigen-burden",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-aneuploid-score"
             ]
           }
         ]
       },
       {
         "id" : "Extension.extension:expectedEffect",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "expectedEffect",
         "min" : 0,
@@ -221,11 +333,39 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-expected-drug-effects|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-expected-drug-effects"
         }
       },
       {
         "id" : "Extension.extension:offLabelUse",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "offLabelUse",
         "min" : 0,
@@ -253,6 +393,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
       },
       {
         "id" : "Extension.extension:withinSoc",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "withinSoc",
         "min" : 0,

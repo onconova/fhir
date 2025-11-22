@@ -12,11 +12,11 @@
 | Active as of 2025-11-22 | *Computable Name*:ConsentStatus |
 
  
-The consent status of a patient 
+The consent status of a patient for further use of data in research. 
 
  **References** 
 
-* [Consent status](StructureDefinition-onconova-ext-consent-status.md)
+* [Cancer Patient Consent status](StructureDefinition-onconova-ext-cancer-patient-consent-status.md)
 
 ### Logical Definition (CLD)
 
@@ -50,7 +50,7 @@ The consent status of a patient
   "name" : "ConsentStatus",
   "title" : "Consent Status Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -63,7 +63,7 @@ The consent status of a patient
       ]
     }
   ],
-  "description" : "The consent status of a patient",
+  "description" : "The consent status of a patient for further use of data in research.",
   "compose" : {
     "include" : [
       {

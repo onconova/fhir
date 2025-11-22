@@ -1,10 +1,10 @@
-# Tumor Board Review - Onconova Implementation Guide v0.2.0
+# Tumor Board Review Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Tumor Board Review**
+* **Tumor Board Review Profile**
 
-## Resource Profile: Tumor Board Review 
+## Resource Profile: Tumor Board Review Profile 
 
 | | |
 | :--- | :--- |
@@ -14,10 +14,12 @@
  
 A profile representing a tumor board review for a cancer patient. 
 This profile extends the base FHIR`Procedure`resource since there is no equivalent mCODE profile that covers the use case. 
+**Conformance:** 
+Procedure resources representing a tumor board review in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 **Usages:**
 
-* Derived from this Profile: [Molecular Tumor Board Review](StructureDefinition-onconova-molecular-tumor-board-review.md)
+* Derived from this Profile: [Molecular Tumor Board Review Profile](StructureDefinition-onconova-molecular-tumor-board-review.md)
 * CapabilityStatements using this Profile: [Onconova FHIR REST Server Capability Statement](CapabilityStatement-onconova-capability-statement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-tumor-board-review)
@@ -41,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review",
   "version" : "0.2.0",
   "name" : "OnconovaTumorBoardReview",
-  "title" : "Tumor Board Review",
+  "title" : "Tumor Board Review Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -56,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
       ]
     }
   ],
-  "description" : "A profile representing a tumor board review for a cancer patient.\n\nThis profile extends the base FHIR `Procedure` resource since there is no equivalent mCODE profile that covers the use case. ",
+  "description" : "A profile representing a tumor board review for a cancer patient.\n\nThis profile extends the base FHIR `Procedure` resource since there is no equivalent mCODE profile that covers the use case. \n\n**Conformance:**\n\nProcedure resources representing a tumor board review in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -83,7 +85,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
   "kind" : "resource",
   "abstract" : false,
   "type" : "Procedure",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Procedure|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Procedure",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -96,14 +98,14 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
             "severity" : "error",
             "human" : "The subject element is required and must be provided.",
             "expression" : "subject.exists() and subject.resolve().is(Patient)",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review"
           },
           {
             "key" : "o-tub-req-2",
             "severity" : "error",
             "human" : "The performedDateTime element is required and must be provided.",
             "expression" : "performedDateTime.exists() and performedDateTime.hasValue()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review"
           }
         ]
       },
@@ -112,11 +114,6 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
         "path" : "Procedure.basedOn",
         "short" : "Not used in this profile",
         "definition" : "Not used in this profile"
-      },
-      {
-        "id" : "Procedure.status",
-        "path" : "Procedure.status",
-        "patternCode" : "completed"
       },
       {
         "id" : "Procedure.category",
@@ -146,6 +143,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
       },
       {
         "id" : "Procedure.code.extension:specialization",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "MAY:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Procedure.code.extension",
         "sliceName" : "specialization",
         "short" : "Tumor Board Specialization, if relevant",
@@ -155,7 +180,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-board-specialization|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-board-specialization"
             ]
           }
         ],
@@ -163,19 +188,101 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
       },
       {
         "id" : "Procedure.subject",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Procedure.subject",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
             ]
           }
-        ]
+        ],
+        "mustSupport" : true
       },
       {
         "id" : "Procedure.performed[x]",
         "path" : "Procedure.performed[x]",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "type",
+              "path" : "$this"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        },
+        "min" : 1,
+        "type" : [
+          {
+            "code" : "dateTime"
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Procedure.performed[x]:performedDateTime",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Procedure.performed[x]",
+        "sliceName" : "performedDateTime",
+        "short" : "The date when the tumor board review was performed",
+        "min" : 0,
+        "max" : "1",
         "type" : [
           {
             "code" : "dateTime"
@@ -215,15 +322,18 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
       {
         "id" : "Procedure.reasonReference",
         "path" : "Procedure.reasonReference",
+        "short" : "The condition(s) that motivated the tumor board",
+        "min" : 1,
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition"
             ]
           }
-        ]
+        ],
+        "mustSupport" : true
       },
       {
         "id" : "Procedure.bodySite",
@@ -251,13 +361,41 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
       },
       {
         "id" : "Procedure.followUp",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Procedure.followUp",
         "short" : "Tumor Board Recommendation",
         "definition" : "Any recommendations or follow-up actions resulting from the tumor board.",
         "mustSupport" : true,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations"
         }
       }
     ]

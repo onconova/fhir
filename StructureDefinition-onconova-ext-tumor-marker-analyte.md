@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-tumor-m
   "name" : "TumorMarkerAnalyte",
   "title" : "Tumor Marker Analyte",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -75,11 +75,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-tumor-m
   "context" : [
     {
       "type" : "element",
-      "expression" : "Element"
+      "expression" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker#Observation.code.extension"
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -109,7 +109,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-tumor-m
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-marker-analytes|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-marker-analytes"
         }
       }
     ]

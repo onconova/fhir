@@ -1,10 +1,10 @@
-# Cancer Family Member History - Onconova Implementation Guide v0.2.0
+# Cancer Family Member History Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Cancer Family Member History**
+* **Cancer Family Member History Profile**
 
-## Resource Profile: Cancer Family Member History 
+## Resource Profile: Cancer Family Member History Profile 
 
 | | |
 | :--- | :--- |
@@ -12,8 +12,10 @@
 | Active as of 2025-11-22 | *Computable Name*:OnconovaCancerFamilyMemberHistory |
 
  
-A profile recording of a family member's history of cancer. 
+A profile recording of a patient's family member's history of cancer. 
 This profile is based on the core FHIR`FamilyMemberHistory`resource rather than the mCODE[HistoryOfMetastaticCancer profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-history-of-metastatic-cancer)to allow for a broader range of cancer history documentation (not limited to metastatic cancer). It includes constraints to ensure that at least one cancer condition is recorded, along with optional extensions for cancer morphology and topography. 
+**Conformance:** 
+FamilyMemberHistory resources representing a history of (primary or metastatic) cancer in a patient's family member in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 **Usages:**
 
@@ -41,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history",
   "version" : "0.2.0",
   "name" : "OnconovaCancerFamilyMemberHistory",
-  "title" : "Cancer Family Member History",
+  "title" : "Cancer Family Member History Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -56,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
       ]
     }
   ],
-  "description" : "A profile recording of a family member's history of cancer.\n\nThis profile is based on the core FHIR `FamilyMemberHistory` resource rather than the mCODE  [HistoryOfMetastaticCancer profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-history-of-metastatic-cancer) to allow for a broader range of cancer history documentation (not limited to metastatic cancer). It includes constraints to ensure that at least one cancer condition is recorded, along with optional extensions for cancer morphology and topography.",
+  "description" : "A profile recording of a patient's family member's history of cancer.\n\nThis profile is based on the core FHIR `FamilyMemberHistory` resource rather than the mCODE  [HistoryOfMetastaticCancer profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-history-of-metastatic-cancer) to allow for a broader range of cancer history documentation (not limited to metastatic cancer). It includes constraints to ensure that at least one cancer condition is recorded, along with optional extensions for cancer morphology and topography.\n\n**Conformance:**\n\nFamilyMemberHistory resources representing a history of (primary or metastatic) cancer in a patient's family member in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -83,7 +85,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
   "kind" : "resource",
   "abstract" : false,
   "type" : "FamilyMemberHistory",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -96,46 +98,134 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
             "severity" : "error",
             "human" : "The patient element is required and must be provided.",
             "expression" : "patient.exists() and patient.resolve().is(Patient)",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history"
           },
           {
             "key" : "o-fam-req-2",
             "severity" : "error",
             "human" : "The date element is required and must be provided.",
             "expression" : "date.exists() and date.hasValue()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history"
           },
           {
             "key" : "o-fam-req-3",
             "severity" : "error",
             "human" : "The relationship element is required and must be provided.",
             "expression" : "relationship.exists() and relationship.coding.exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history"
           }
         ]
       },
       {
-        "id" : "FamilyMemberHistory.status",
-        "path" : "FamilyMemberHistory.status",
-        "patternCode" : "completed"
-      },
-      {
         "id" : "FamilyMemberHistory.patient",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "FamilyMemberHistory.patient",
+        "short" : "The patient whose family member is the subject of this history",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
             ]
           }
         ]
+      },
+      {
+        "id" : "FamilyMemberHistory.date",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "FamilyMemberHistory.date"
       },
       {
         "id" : "FamilyMemberHistory.name",
         "path" : "FamilyMemberHistory.name",
         "short" : "Not used in this profile",
         "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "FamilyMemberHistory.relationship",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "FamilyMemberHistory.relationship"
       },
       {
         "id" : "FamilyMemberHistory.sex",
@@ -163,7 +253,36 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
       },
       {
         "id" : "FamilyMemberHistory.deceased[x]",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "FamilyMemberHistory.deceased[x]",
+        "short" : "Indicates whether the family member is deceased",
         "type" : [
           {
             "code" : "boolean"
@@ -199,6 +318,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
       },
       {
         "id" : "FamilyMemberHistory.condition:cancerCondition",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "FamilyMemberHistory.condition",
         "sliceName" : "cancerCondition",
         "min" : 1,
@@ -221,6 +368,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
       },
       {
         "id" : "FamilyMemberHistory.condition:cancerCondition.extension:morphology",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "FamilyMemberHistory.condition.extension",
         "sliceName" : "morphology",
         "min" : 0,
@@ -229,7 +404,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-morphology|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-morphology"
             ]
           }
         ],
@@ -237,6 +412,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
       },
       {
         "id" : "FamilyMemberHistory.condition:cancerCondition.extension:topography",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "FamilyMemberHistory.condition.extension",
         "sliceName" : "topography",
         "min" : 0,
@@ -245,7 +448,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-topography|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-topography"
             ]
           }
         ],
@@ -266,6 +469,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
       },
       {
         "id" : "FamilyMemberHistory.condition:cancerCondition.onset[x]",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "FamilyMemberHistory.condition.onset[x]",
         "type" : [
           {

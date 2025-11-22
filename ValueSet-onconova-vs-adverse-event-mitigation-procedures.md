@@ -1,10 +1,10 @@
-# Adverse Event Mitigation - Procedures - Onconova Implementation Guide v0.2.0
+# Adverse Event Mitigation Procedures Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Adverse Event Mitigation - Procedures**
+* **Adverse Event Mitigation Procedures Value Set**
 
-## ValueSet: Adverse Event Mitigation - Procedures 
+## ValueSet: Adverse Event Mitigation Procedures Value Set 
 
 | | |
 | :--- | :--- |
@@ -52,9 +52,9 @@ This value set contains 6 concepts
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-procedures",
   "version" : "0.2.0",
   "name" : "AdverseEventMitigationProcedures",
-  "title" : "Adverse Event Mitigation - Procedures",
+  "title" : "Adverse Event Mitigation Procedures Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

@@ -4,17 +4,10 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference",
-      "title": "Therapy Line Reference",
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade",
+      "title": "CTCAE Grade",
       "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adjunctive-role",
-      "title": "Adjunctive Role",
-      "types": [
-        "CodeableConcept"
+        "integer"
       ]
     },
     {
@@ -79,106 +72,120 @@
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age",
-      "title": "Age",
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-age",
+      "title": "Cancer Patient Age",
       "types": [
         "integer"
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age-at-diagnosis",
-      "title": "Age at Diagnosis",
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-age-at-diagnosis",
+      "title": "Cancer Patient Age at Diagnosis",
       "types": [
         "integer"
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-morphology",
-      "title": "Cancer Morphology",
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-cause-of-death",
+      "title": "Cancer Patient Cause of Death",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-topography",
-      "title": "Cancer Topography",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cause-of-death",
-      "title": "Cause of Death",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with",
-      "title": "Combined With",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-consent-status",
-      "title": "Consent status",
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-consent-status",
+      "title": "Cancer Patient Consent status",
       "types": [
         "code"
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-contributors",
-      "title": "Contributors",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-ctc-grade",
-      "title": "CTCAE Grade",
-      "types": [
-        "integer"
-      ]
-    },
-    {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cycles",
-      "title": "Cycles",
-      "types": [
-        "integer"
-      ]
-    },
-    {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-data-completion-rate",
-      "title": "Data Completion Rate",
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-data-completion-rate",
+      "title": "Cancer Patient Data Completion Rate",
       "types": [
         "decimal"
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-differentiation",
-      "title": "Recurrence Type",
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-data-contributors",
+      "title": "Cancer Patient Data Contributors",
       "types": [
-        "CodeableConcept"
+        "Reference"
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-end-of-records",
-      "title": "End of Records",
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-end-of-records",
+      "title": "Cancer Patient End of Records",
       "types": [
         "date"
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-assessment-date",
-      "title": "Genomic Assessment Date",
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-overall-survival",
+      "title": "Cancer Patient Overall Survival",
+      "types": [
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status",
+      "title": "Cancer Patient Vital status",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-morphology",
+      "title": "Family Member History Cancer Morphology",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-topography",
+      "title": "Family Member History Cancer Topography",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-variant-assessment-date",
+      "title": "Genomic Variant Assessment Date",
       "types": [
         "dateTime"
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-is-primary-therapy",
-      "title": "Is Primary Therapy",
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-histological-differentiation",
+      "title": "Histological Differentiation",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-adjunctive-role",
+      "title": "Medication Administration Adjunctive Role",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-combined-with",
+      "title": "Medication Administration Combined With",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-cycles",
+      "title": "Medication Administration Cycles",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-is-primary-therapy",
+      "title": "Medication Administration Is Primary Therapy",
       "types": [
         "boolean"
       ]
@@ -362,29 +369,15 @@
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-overall-survival",
-      "title": "Overall Survival",
-      "types": [
-        "Duration"
-      ]
-    },
-    {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recist-is-interpreted",
-      "title": "Recist Is Interpreted",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of",
-      "title": "Recurrence Of",
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-primary-cancer-recurrence-of",
+      "title": "Primary Cancer Recurrence Of",
       "types": [
         "Reference"
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type",
-      "title": "Recurrence Type",
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-primary-cancer-recurrence-type",
+      "title": "Primary Cancer Recurrence Type",
       "types": [
         "CodeableConcept"
       ]
@@ -433,6 +426,20 @@
       ]
     },
     {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference",
+      "title": "Therapy Line Reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-treatment-response-recist-is-interpreted",
+      "title": "Treatment Response RECIST Is Interpreted",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-board-specialization",
       "title": "Tumor Board Specialization",
       "types": [
@@ -445,23 +452,15 @@
       "types": [
         "CodeableConcept"
       ]
-    },
-    {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-unknown-entry",
-      "title": "Unknown Entry",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status",
-      "title": "Vital status",
-      "types": [
-        "CodeableConcept"
-      ]
     }
   ],
   "profiles": {
+    "AdverseEvent": [
+      {
+        "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event",
+        "title": "Adverse Event Profile"
+      }
+    ],
     "Observation": [
       {
         "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker",
@@ -474,22 +473,12 @@
       {
         "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-neoantigen-burden",
         "title": "Tumor Neoantigen Burden Profile"
-      },
-      {
-        "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-venous-invasion-category",
-        "title": "TNM Venous Invasion Category"
-      }
-    ],
-    "AdverseEvent": [
-      {
-        "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event",
-        "title": "Adverse Event Profile"
       }
     ],
     "FamilyMemberHistory": [
       {
         "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history",
-        "title": "Cancer Family Member History"
+        "title": "Cancer Family Member History Profile"
       }
     ],
     "Patient": [
@@ -507,7 +496,7 @@
     "Procedure": [
       {
         "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review",
-        "title": "Tumor Board Review"
+        "title": "Tumor Board Review Profile"
       }
     ],
     "Condition": [
@@ -524,19 +513,49 @@
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/StructureDefinition/bodySite|5.2.0": [
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/bodySite": [
       "Observation"
     ],
     "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
       "CapabilityStatement.rest.operation"
     ],
-    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.2.0": [
+    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate": [
       "Condition"
     ],
-    "http://hl7.org/fhir/StructureDefinition/condition-related|5.2.0": [
+    "http://hl7.org/fhir/StructureDefinition/condition-related": [
       "Condition"
     ],
-    "http://hl7.org/fhir/StructureDefinition/data-absent-reason|5.2.0": [
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
       "Patient.name"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
@@ -559,8 +578,15 @@
       "StructureDefinition.snapshot.element.type",
       "StructureDefinition.snapshot.element.type.targetProfile"
     ],
-    "http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding|5.2.0": [
+    "http://hl7.org/fhir/StructureDefinition/obligation": [
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding": [
       "Observation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
@@ -590,165 +616,165 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex|6.1.0": [
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
       "Patient"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity|6.1.0": [
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
       "Patient"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity|6.1.0": [
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity": [
       "Patient"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race|6.1.0": [
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex|6.1.0": [
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex": [
       "Patient"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation|6.1.0": [
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation": [
       "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier|4.0.0": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier": [
       "Condition.bodySite",
       "Procedure.bodySite"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status-evidence-type|4.0.0": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status-evidence-type": [
       "Observation"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-histology-morphology-behavior|4.0.0": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-histology-morphology-behavior": [
       "Condition"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier|4.0.0": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier": [
       "Condition.bodySite",
       "Procedure.bodySite"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-normalization-basis|4.0.0": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-normalization-basis": [
       "MedicationAdministration"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent|4.0.0": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent": [
       "MedicationAdministration",
       "Procedure"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume|4.0.0": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume": [
       "Procedure"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique|4.0.0": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique": [
       "Procedure"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-sessions|4.0.0": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-sessions": [
       "Procedure"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-related-condition-absent|4.0.0": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-related-condition": [
       "Observation"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-related-condition|4.0.0": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-related-condition-absent": [
       "Observation"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-termination-reason|4.0.0": [
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-termination-reason": [
       "Procedure"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.2.0": [
-      "MedicationAdministration",
-      "Procedure"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adjunctive-role|0.2.0": [
-      "MedicationAdministration"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade": [
       "AdverseEvent"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age-at-diagnosis|0.2.0": [
-      "Patient"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-age|0.2.0": [
-      "Patient"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-morphology|0.2.0": [
-      "FamilyMemberHistory.condition"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-topography|0.2.0": [
-      "FamilyMemberHistory.condition"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cause-of-death|0.2.0": [
-      "Patient"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-combined-with|0.2.0": [
-      "MedicationAdministration"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-consent-status|0.2.0": [
-      "Patient"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-contributors|0.2.0": [
-      "Patient"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-ctc-grade|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation": [
       "AdverseEvent"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cycles|0.2.0": [
-      "MedicationAdministration"
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-age": [
+      "Patient.birthDate"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-data-completion-rate|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-age-at-diagnosis": [
+      "Patient.birthDate"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-cause-of-death": [
+      "Patient.deceased[x]"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-consent-status": [
       "Patient"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-differentiation|0.2.0": [
-      "Condition"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-end-of-records|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-data-completion-rate": [
       "Patient"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-assessment-date|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-data-contributors": [
+      "Patient"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-end-of-records": [
+      "Patient"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-overall-survival": [
+      "Patient"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status": [
+      "Patient.deceased[x]"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-morphology": [
+      "FamilyMemberHistory.condition"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-topography": [
+      "FamilyMemberHistory.condition"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-variant-assessment-date": [
       "Observation"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-is-primary-therapy|0.2.0": [
-      "MedicationAdministration"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization|0.2.0": [
-      "Procedure"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-molecular-comparison|0.2.0": [
-      "Procedure"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation|0.2.0": [
-      "Procedure"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-overall-survival|0.2.0": [
-      "Patient"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-of|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-histological-differentiation": [
       "Condition"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-adjunctive-role": [
+      "MedicationAdministration"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-combined-with": [
+      "MedicationAdministration"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-cycles": [
+      "MedicationAdministration"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-is-primary-therapy": [
+      "MedicationAdministration"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization": [
+      "Procedure"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-molecular-comparison": [
+      "Procedure"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-therapeutic-recommendation": [
+      "Procedure"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-primary-cancer-recurrence-of": [
       "Condition.clinicalStatus"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-risk-assessment-score|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-primary-cancer-recurrence-type": [
+      "Condition.clinicalStatus"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-risk-assessment-score": [
       "Observation"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-intent|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-intent": [
       "List"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-number|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-number": [
       "List"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-period|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-period": [
       "List"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-date|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-date": [
       "List"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-free-survival|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-free-survival": [
       "List"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-board-specialization|0.2.0": [
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference": [
+      "MedicationAdministration",
+      "Procedure"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-board-specialization": [
       "Procedure.code"
     ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte|0.2.0": [
-      "Observation"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-vital-status|0.2.0": [
-      "Patient"
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte": [
+      "Observation.code"
     ]
   }
 }

@@ -18,86 +18,89 @@ TNM Perineural Invasion Categories Value Set
 * [TNM Residual Tumor Categories Value Set](ValueSet-onconova-tnm-residual-tumor-categories.md) 
 TNM Residual Tumor Categories Value Set 
 
-* [Adjunctive Therapy Roles](ValueSet-onconova-vs-adjunctive-therapy-roles.md) 
+* [Adjunctive Therapy Roles Value Set](ValueSet-onconova-vs-adjunctive-therapy-roles.md) 
 Codes representing roles for adjunctive therapy in oncology. 
 
-* [Adverse Event Mitigation Categories](ValueSet-onconova-vs-adverse-event-mitigation-categories.md) 
+* [Adverse Event Mitigation Categories Value Set](ValueSet-onconova-vs-adverse-event-mitigation-categories.md) 
 Categories of actions taken to mitigate or manage adverse events in oncology. 
 
-* [Adverse Event Mitigation - Drugs](ValueSet-onconova-vs-adverse-event-mitigation-drugs.md) 
+* [Adverse Event Mitigation Drugs Value Set](ValueSet-onconova-vs-adverse-event-mitigation-drugs.md) 
 Drugs or medication categories used in the mitigation process of an adverse event. 
 
-* [Adverse Event Mitigation - Management](ValueSet-onconova-vs-adverse-event-mitigation-managements.md) 
+* [Adverse Event Mitigation Managements Value Set](ValueSet-onconova-vs-adverse-event-mitigation-managements.md) 
 Classification of actions to mitigate adverse events affecting a patient's health. 
 
-* [Adverse Event Mitigation - Procedures](ValueSet-onconova-vs-adverse-event-mitigation-procedures.md) 
+* [Adverse Event Mitigation Procedures Value Set](ValueSet-onconova-vs-adverse-event-mitigation-procedures.md) 
 Procedures undertaken to mitigate the impact of an adverse event on a patient's health. 
 
-* [Adverse Event Mitigation - Treatment Adjustment](ValueSet-onconova-vs-adverse-event-mitigation-treatment-adjustments.md) 
+* [Adverse Event Mitigation Treatment Adjustments Value Set](ValueSet-onconova-vs-adverse-event-mitigation-treatment-adjustments.md) 
 Adjustments made to a patient's treatment plan in response to an adverse event. 
 
-* [Amino Acid Change Type Value Set](ValueSet-onconova-vs-amino-acid-change-type.md) 
+* [Amino Acid Change Type Value Set](ValueSet-onconova-vs-amino-acid-change-types.md) 
 Amino acid change types due to a genomic variant. It constraints and expands the original[LOINC Answer List LL380-7](https://loinc.org/LL380-7/)to enforce Onconova-compatible codes 
 
-* [Antineoplastic Agents](ValueSet-onconova-vs-antineoplastic-agents.md) 
-A value set of antineoplastic agents. 
+* [Antineoplastic Agents Value Set](ValueSet-onconova-vs-antineoplastic-agents.md) 
+Drugs and biological agents used in the treatment of neoplastic diseases. 
 
-* [Cancer Imaging Methods](ValueSet-onconova-vs-cancer-imaging-methods.md) 
-Codes representing various imaging methods used in cancer diagnosis and monitoring. 
+* [Cancer Imaging Methods Value Set](ValueSet-onconova-vs-cancer-imaging-methods.md) 
+Imaging methods used in cancer diagnosis and monitoring. 
 
-* [Cancer Risk Assessment Methods](ValueSet-onconova-vs-cancer-risk-assessment-methods.md) 
+* [Cancer Risk Assessment Methods Value Set](ValueSet-onconova-vs-cancer-risk-assessment-methods.md) 
 A value set containing codes for various cancer risk assessment methods. 
 
-* [Risk Assessment Values](ValueSet-onconova-vs-cancer-risk-assessment-values.md) 
+* [Risk Assessment Values Value Set](ValueSet-onconova-vs-cancer-risk-assessment-values.md) 
 A non-exhaustive value set containing codes that result from risk assessments, i.e., the risk level of the cancer. 
 
 * [Cause of Death Value Set](ValueSet-onconova-vs-causes-of-death.md) 
 The causes of death that are relevant for a cancer patient. 
 
-* [Clinical Relevance Value Set](ValueSet-onconova-vs-clinical-relevance.md) 
-Clinical relevance of a genomic variant 
+* [Clinical Relevance Value Set](ValueSet-onconova-vs-clinical-relevances.md) 
+Categorizations of the clinical relevance of a genomic variant 
 
-* [Comorbidity Panels](ValueSet-onconova-vs-comorbidity-panels.md) 
+* [Comorbidity Panels Value Set](ValueSet-onconova-vs-comorbidity-panels.md) 
 A collection of comorbidity panels relevant to cancer patients. 
 
 * [Consent Status Value Set](ValueSet-onconova-vs-consent-status.md) 
-The consent status of a patient 
+The consent status of a patient for further use of data in research. 
 
-* [CTC Adverse Events](ValueSet-onconova-vs-ctc-adverse-events.md) 
-Common Terminology Criteria for Adverse Events (CTCAE) is a standard classification and severity grading scale for adverse events in clinical trials and oncology practice. 
+* [CTC Adverse Events Value Set](ValueSet-onconova-vs-ctc-adverse-events.md) 
+Adverse events classified according to the Common Terminology Criteria for Adverse Events (CTCAE) 
 
-* [Coding DNA Change Type Value Set](ValueSet-onconova-vs-dna-change-type.md) 
+* [Coding DNA Change Types Value Set](ValueSet-onconova-vs-dna-change-types.md) 
 Coding DNA change types due to a genomic variant. It constraints and expands the original[LOINC Answer List LL380-7](https://loinc.org/LL380-7/)to enforce Onconova-compatible codes 
 
-* [Expected Drug Effects](ValueSet-onconova-vs-expected-drug-effects.md) 
-A value set of expected drug effects. 
+* [Expected Drug Effects Value Set](ValueSet-onconova-vs-expected-drug-effects.md) 
+Collection of expected effects when a drug is administered. 
 
-* [Exposure Agents](ValueSet-onconova-vs-exposure-agents.md) 
+* [Exposure Agents Value Set](ValueSet-onconova-vs-exposure-agents.md) 
 Agents to which a patient may have been exposed. 
 
-* [ICD-10 Codes](ValueSet-onconova-vs-icd-10-conditions.md) 
-This value set includes sample ICD-10 codes. 
+* [ICD-10 Codes Value Set](ValueSet-onconova-vs-icd-10-conditions.md) 
+All possible ICD-10 codes for conditions. 
 
-* [ICD-O-3 Differentiation](ValueSet-onconova-vs-icdo3-differentiation.md) 
-A value set of ICD-O-3 differentiation codes. 
+* [ICD-O-3 Differentiations Value Set](ValueSet-onconova-vs-icdo3-differentiations.md) 
+The subset of ICD-O-3 concepts dedicated for describing morphology differentiations. 
 
-* [ICD-O-3 Morphology Behavior](ValueSet-onconova-vs-icdo3-morphology-behavior.md) 
-A value set of ICD-O-3 morphology behavior codes. 
+* [ICD-O-3 Morphology Behavior Value Set](ValueSet-onconova-vs-icdo3-morphology-behaviors.md) 
+The subset of ICD-O-3 concepts dedicated for describing morphology behavior. 
 
-* [ICD-O-3 Topography](ValueSet-onconova-vs-icdo3-topography.md) 
-A value set of ICD-O-3 topography codes. 
+* [ICD-O-3 Topographies Value Set](ValueSet-onconova-vs-icdo3-topographies.md) 
+The subset of ICD-O-3 concepts dedicated for describing morphology topographies. 
 
 * [Observation Body Sites Value Set](ValueSet-onconova-vs-observation-bodysites.md) 
 Bodysites related to an observation 
 
-* [Recreational Drugs](ValueSet-onconova-vs-recreational-drugs.md) 
+* [Recreational Drugs Value Set](ValueSet-onconova-vs-recreational-drugs.md) 
 Substances that people use to alter their mental state, often for pleasure or leisure, with effects ranging from relaxation and euphoria to hallucinations and altered perceptions. 
 
-* [Recurrence Type Value Set](ValueSet-onconova-vs-recurrence-type.md) 
+* [Recurrence Types Value Set](ValueSet-onconova-vs-recurrence-types.md) 
 A value set representing the types of cancer recurrence, specifically local and regional recurrences. 
 
-* [Smoking status](ValueSet-onconova-vs-smoking-status.md) 
+* [Smoking status Value Set](ValueSet-onconova-vs-smoking-status.md) 
 Smoking status of a patient 
+
+* [Surgical Procedures Value Set](ValueSet-onconova-vs-surgical-procedures.md) 
+Set of surgical procedures relevant to cancer treatment in Onconova. 
 
 * [TNM Distant Metastasis Categories Value Set](ValueSet-onconova-vs-tnm-distant-metastasis-categories.md) 
 TNM Distant Metastasis Categories Value Set 
@@ -108,7 +111,7 @@ TNM Grade Categories Value Set
 * [TNM Grade Category Methods Value Set](ValueSet-onconova-vs-tnm-grade-category-methods.md) 
 TNM Grade Category Methods Value Set 
 
-* [TNM Primary Tumor Categories](ValueSet-onconova-vs-tnm-primary-tumor-categories.md) 
+* [TNM Primary Tumor Categories Value Set](ValueSet-onconova-vs-tnm-primary-tumor-categories.md) 
 TNM Primary Tumor Categories Value Set 
 
 * [TNM Regional Nodes Categories Value Set](ValueSet-onconova-vs-tnm-regional-nodes-categories.md) 
@@ -120,14 +123,17 @@ TNM Serum Tumor Marker Level Categories Value Set
 * [TNM Venous Invasion Categories Value Set](ValueSet-onconova-vs-tnm-venous-invasion-categories.md) 
 TNM Venous Invasion Categories Value Set 
 
-* [Treatment Termination Reasons](ValueSet-onconova-vs-treatment-termination-reasons.md) 
-Codes representing reasons for terminating a treatment in oncology. 
+* [Treatment Termination Reasons Value Set](ValueSet-onconova-vs-treatment-termination-reasons.md) 
+Reasons for terminating a treatment in oncology. 
 
-* [Tumor Board Recommendations](ValueSet-onconova-vs-tumor-board-recommendations.md) 
-A value set of recommendations that may be made by a tumor board for a cancer patient. 
+* [Tumor Board Recommendations Value Set](ValueSet-onconova-vs-tumor-board-recommendations.md) 
+Recommendations that may be made by a tumor board for a cancer patient. 
 
-* [Tumor Marker Analytes](ValueSet-onconova-vs-tumor-marker-analytes.md) 
-Codes representing analytes for tumor markers. 
+* [Tumor Marker Analytes Value Set](ValueSet-onconova-vs-tumor-marker-analytes.md) 
+Analytes considered tumor markers. 
+
+* [Tumor Marker Tests](ValueSet-onconova-vs-tumor-marker-tests.md) 
+ValueSet containing LOINC and NCI Thesaurus codes for tumor marker laboratory tests and measurements 
 
 * [Vital Status Value Set](ValueSet-onconova-vs-vital-status.md) 
 The vital status of a patient 

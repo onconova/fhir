@@ -14,6 +14,8 @@
  
 A profile representing a surgical procedure performed on a cancer patient, including details about the procedure, its intent, and relevant dates. 
 It extends the base mCODE[CancerRelatedSurgicalProcedure profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure)to include specific constraints and requirements for Onconova. 
+**Conformance:** 
+Procedure resources representing a surgery in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 **Usages:**
 
@@ -43,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
   "name" : "OnconovaSurgicalProcedure",
   "title" : "Surgical Procedure Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -56,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
       ]
     }
   ],
-  "description" : "A profile representing a surgical procedure performed on a cancer patient, including details about the procedure, its intent, and relevant dates. \n\nIt extends the base mCODE [CancerRelatedSurgicalProcedure profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure) to include specific constraints and requirements for Onconova.",
+  "description" : "A profile representing a surgical procedure performed on a cancer patient, including details about the procedure, its intent, and relevant dates. \n\nIt extends the base mCODE [CancerRelatedSurgicalProcedure profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure) to include specific constraints and requirements for Onconova.\n\n**Conformance:**\n\nProcedure resources representing a surgery in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -83,7 +85,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
   "kind" : "resource",
   "abstract" : false,
   "type" : "Procedure",
-  "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure|4.0.0",
+  "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -96,33 +98,100 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
             "severity" : "error",
             "human" : "The subject element is required and must be provided.",
             "expression" : "subject.exists() and subject.resolve().is(Patient)",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
           },
           {
             "key" : "o-sur-req-2",
             "severity" : "error",
             "human" : "The performedDateTime element is required and must be provided.",
             "expression" : "performedDateTime.exists() and performedDateTime.hasValue()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
           },
           {
             "key" : "o-sur-req-3",
             "severity" : "error",
             "human" : "The code element is required and must be provided.",
             "expression" : "code.exists() and code.coding.exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
           },
           {
             "key" : "o-sur-req-4",
             "severity" : "error",
             "human" : "The treatmentIntent extension is required and must be provided.",
             "expression" : "extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent').exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
           }
         ]
       },
       {
+        "id" : "Procedure.extension",
+        "path" : "Procedure.extension",
+        "min" : 1
+      },
+      {
+        "id" : "Procedure.extension:treatmentIntent",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Procedure.extension",
+        "sliceName" : "treatmentIntent",
+        "min" : 1
+      },
+      {
         "id" : "Procedure.extension:therapyLine",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "MAY:ignore"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "MAY:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Procedure.extension",
         "sliceName" : "therapyLine",
         "short" : "Reference to the therapy line associated with this treatment",
@@ -132,7 +201,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/ext-therapy-line-reference|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference"
             ]
           }
         ]
@@ -152,7 +221,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
       {
         "id" : "Procedure.status",
         "path" : "Procedure.status",
-        "patternCode" : "completed"
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       },
       {
         "id" : "Procedure.statusReason",
@@ -161,13 +231,79 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
         "definition" : "Not used in this profile"
       },
       {
+        "id" : "Procedure.code",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Procedure.code",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-surgical-procedures"
+        }
+      },
+      {
         "id" : "Procedure.subject",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Procedure.subject",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
             ]
           }
         ]
@@ -180,7 +316,37 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
       },
       {
         "id" : "Procedure.performed[x]",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Procedure.performed[x]",
+        "short" : "The date on which the surgical procedure was performed",
         "type" : [
           {
             "extension" : [
@@ -225,13 +391,43 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
       },
       {
         "id" : "Procedure.reasonReference",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Procedure.reasonReference",
+        "short" : "The condition(s) that motivated the surgical procedure",
+        "min" : 1,
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition"
             ]
           }
         ]

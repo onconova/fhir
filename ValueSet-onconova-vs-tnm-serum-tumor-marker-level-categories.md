@@ -16,7 +16,7 @@ TNM Serum Tumor Marker Level Categories Value Set
 
  **References** 
 
-* [TNM Serum Tumor Marker Level Category](StructureDefinition-onconova-serous-tumor-marker-level-category.md)
+* [TNM Serum Tumor Marker Level Category Profile](StructureDefinition-onconova-tnm-serum-tumor-marker-level-category.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 5 concepts
   "name" : "TNMSerumTumorMarkerLevelCategories",
   "title" : "TNM Serum Tumor Marker Level Categories Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

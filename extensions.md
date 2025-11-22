@@ -7,58 +7,61 @@
 
 Extensions The following extensions have been defined for this implementation guide:
 
-* [Therapy Line Reference](StructureDefinition-ext-therapy-line-reference.md) 
-A reference to the therapy line associated with this treatment. 
-
-* [Adjunctive Role](StructureDefinition-onconova-ext-adjunctive-role.md) 
-Indicates the role of this medication administration in the context of the overall treatment plan. 
+* [CTCAE Grade](StructureDefinition-onconova-ext-adverse-event-ctc-grade.md) 
+The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE). 
 
 * [Adverse Event Mitigation](StructureDefinition-onconova-ext-adverse-event-mitigation.md) 
 Details about an action taken to mitigate or manage the adverse event. 
 
-* [Age at Diagnosis](StructureDefinition-onconova-ext-age-at-diagnosis.md) 
+* [Cancer Patient Age at Diagnosis](StructureDefinition-onconova-ext-cancer-patient-age-at-diagnosis.md) 
 The approximate age of the patient at the time of diagnosis of the disease. 
 
-* [Age](StructureDefinition-onconova-ext-age.md) 
+* [Cancer Patient Age](StructureDefinition-onconova-ext-cancer-patient-age.md) 
 The approximate age of the patient. 
 
-* [Cancer Morphology](StructureDefinition-onconova-ext-cancer-morphology.md) 
-The morphology of the cancer, represented by a ICD-O-3 code. 
-
-* [Cancer Topography](StructureDefinition-onconova-ext-cancer-topography.md) 
-The topography of the cancer, represented by a ICD-O-3 code. 
-
-* [Cause of Death](StructureDefinition-onconova-ext-cause-of-death.md) 
+* [Cancer Patient Cause of Death](StructureDefinition-onconova-ext-cancer-patient-cause-of-death.md) 
 The cause of death for the patient. 
 
-* [Combined With](StructureDefinition-onconova-ext-combined-with.md) 
-Indicates that this medication administration was given in combination with another medication administration. 
+* [Cancer Patient Consent status](StructureDefinition-onconova-ext-cancer-patient-consent-status.md) 
+The status of whether the patient has given or revoked consent for research use. 
 
-* [Consent status](StructureDefinition-onconova-ext-consent-status.md) 
-The status of whether the patient has given or revoked consent for reasearch use. 
-
-* [Contributors](StructureDefinition-onconova-ext-contributors.md) 
-The individuals or organizations that contributed to the patient's care. 
-
-* [CTCAE Grade](StructureDefinition-onconova-ext-ctc-grade.md) 
-The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE). 
-
-* [Cycles](StructureDefinition-onconova-ext-cycles.md) 
-Indicates the total number of cycles for this medication administration. 
-
-* [Data Completion Rate](StructureDefinition-onconova-ext-data-completion-rate.md) 
+* [Cancer Patient Data Completion Rate](StructureDefinition-onconova-ext-cancer-patient-data-completion-rate.md) 
 The percentage of data elements categories that have been completed for a patient. 
 
-* [Recurrence Type](StructureDefinition-onconova-ext-differentiation.md) 
-THe histological differentiation of the tumor. 
+* [Cancer Patient Data Contributors](StructureDefinition-onconova-ext-cancer-patient-data-contributors.md) 
+The individuals or organizations that contributed to the patient's case data collection. 
 
-* [End of Records](StructureDefinition-onconova-ext-end-of-records.md) 
+* [Cancer Patient End of Records](StructureDefinition-onconova-ext-cancer-patient-end-of-records.md) 
 Indicates the last known record date of a patient. 
 
-* [Genomic Assessment Date](StructureDefinition-onconova-ext-genomic-assessment-date.md) 
+* [Cancer Patient Overall Survival](StructureDefinition-onconova-ext-cancer-patient-overall-survival.md) 
+The duration of time from either the date of diagnosis or the start of treatment for a disease, such as cancer, that patients diagnosed with the disease are still alive. In a clinical trial, measuring the overall survival is one way to see how well a new treatment works. 
+
+* [Cancer Patient Vital status](StructureDefinition-onconova-ext-cancer-patient-vital-status.md) 
+The status of whether the patient is alive or deceased or unknown. 
+
+* [Family Member History Cancer Morphology](StructureDefinition-onconova-ext-family-history-member-cancer-morphology.md) 
+The morphology of a historical cancer associated to a family member of a patient, represented by an ICD-O-3 code. 
+
+* [Family Member History Cancer Topography](StructureDefinition-onconova-ext-family-history-member-cancer-topography.md) 
+The topography of a historical cancer associated to a family member of a patient, represented by an ICD-O-3 code. 
+
+* [Genomic Variant Assessment Date](StructureDefinition-onconova-ext-genomic-variant-assessment-date.md) 
 Date at which the genomic variant was assessed and/or reported. 
 
-* [Is Primary Therapy](StructureDefinition-onconova-ext-is-primary-therapy.md) 
+* [Histological Differentiation](StructureDefinition-onconova-ext-histological-differentiation.md) 
+The histological differentiation of the tumor. 
+
+* [Medication Administration Adjunctive Role](StructureDefinition-onconova-ext-medication-administration-adjunctive-role.md) 
+Indicates the role of this medication administration in the context of the overall treatment plan. 
+
+* [Medication Administration Combined With](StructureDefinition-onconova-ext-medication-administration-combined-with.md) 
+Indicates which medication administrations were given in combination with the current medication administration. 
+
+* [Medication Administration Cycles](StructureDefinition-onconova-ext-medication-administration-cycles.md) 
+Indicates the total number of cycles for this medication administration. 
+
+* [Medication Administration Is Primary Therapy](StructureDefinition-onconova-ext-medication-administration-is-primary-therapy.md) 
 Indicates whether this medication administration is the primary therapy within a therapy line. 
 
 * [Molecular Tumor Board CUP Characterization](StructureDefinition-onconova-ext-molecular-tumor-board-cup-characterization.md) 
@@ -70,16 +73,10 @@ A comparison of molecular findings discussed during the molecular tumor board re
 * [Molecular Tumor Board Therapeutic Recommendation](StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.md) 
 A therapeutic recommendation or follow-up action resulting from a molecular tumor board review. 
 
-* [Overall Survival](StructureDefinition-onconova-ext-overall-survival.md) 
-The duration of time from either the date of diagnosis or the start of treatment for a disease, such as cancer, that patients diagnosed with the disease are still alive. In a clinical trial, measuring the overall survival is one way to see how well a new treatment works. 
-
-* [Recist Is Interpreted](StructureDefinition-onconova-ext-recist-is-interpreted.md) 
-Indicates that whether the RECIST was interpreted from a radiology report rather than extracted. 
-
-* [Recurrence Of](StructureDefinition-onconova-ext-recurrence-of.md) 
+* [Primary Cancer Recurrence Of](StructureDefinition-onconova-ext-primary-cancer-recurrence-of.md) 
 Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition. 
 
-* [Recurrence Type](StructureDefinition-onconova-ext-recurrence-type.md) 
+* [Primary Cancer Recurrence Type](StructureDefinition-onconova-ext-primary-cancer-recurrence-type.md) 
 Indicates the type of recurrence for the condition (local or regional). 
 
 * [Risk Assessment Score](StructureDefinition-onconova-ext-risk-assessment-score.md) 
@@ -100,15 +97,15 @@ The date when disease progression was observed during or after the therapy line.
 * [Therapy Line Progression-Free Survival](StructureDefinition-onconova-ext-therapy-line-progression-free-survival.md) 
 The progression-free survival duration for the therapy line. 
 
+* [Therapy Line Reference](StructureDefinition-onconova-ext-therapy-line-reference.md) 
+A reference to the therapy line associated with this treatment. 
+
+* [Treatment Response RECIST Is Interpreted](StructureDefinition-onconova-ext-treatment-response-recist-is-interpreted.md) 
+Indicates that whether the RECIST was interpreted from a radiology report rather than extracted. 
+
 * [Tumor Board Specialization](StructureDefinition-onconova-ext-tumor-board-specialization.md) 
 The specialization or focus area of the tumor board conducting the review, such as hematologic malignancies or solid tumors. 
 
 * [Tumor Marker Analyte](StructureDefinition-onconova-ext-tumor-marker-analyte.md) 
 The specific analyte or substance being measured as a tumor marker, such as PSA, CA-125, or CEA. 
-
-* [Unknown Entry](StructureDefinition-onconova-ext-unknown-entry.md) 
-Value is not collected and cannot be provided by Onconova. 
-
-* [Vital status](StructureDefinition-onconova-ext-vital-status.md) 
-The status of whether the patient is alive or deceased or unknown. 
 

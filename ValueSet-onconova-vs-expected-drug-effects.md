@@ -1,10 +1,10 @@
-# Expected Drug Effects - Onconova Implementation Guide v0.2.0
+# Expected Drug Effects Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Expected Drug Effects**
+* **Expected Drug Effects Value Set**
 
-## ValueSet: Expected Drug Effects 
+## ValueSet: Expected Drug Effects Value Set 
 
 | | |
 | :--- | :--- |
@@ -12,7 +12,7 @@
 | Active as of 2025-11-22 | *Computable Name*:ExpectedDrugEffects |
 
  
-A value set of expected drug effects. 
+Collection of expected effects when a drug is administered. 
 
  **References** 
 
@@ -52,9 +52,9 @@ This value set contains 2 concepts
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-expected-drug-effects",
   "version" : "0.2.0",
   "name" : "ExpectedDrugEffects",
-  "title" : "Expected Drug Effects",
+  "title" : "Expected Drug Effects Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -67,7 +67,7 @@ This value set contains 2 concepts
       ]
     }
   ],
-  "description" : "A value set of expected drug effects.",
+  "description" : "Collection of expected effects when a drug is administered.",
   "compose" : {
     "include" : [
       {

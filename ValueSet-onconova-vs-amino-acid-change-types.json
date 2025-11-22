@@ -1,0 +1,75 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "onconova-vs-amino-acid-change-types",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onconova-vs-amino-acid-change-types</b></p><a name=\"onconova-vs-amino-acid-change-types\"> </a><a name=\"hconconova-vs-amino-acid-change-types\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA6698-0/\">LA6698-0</a></td><td>Missense</td></tr><tr><td><a href=\"https://loinc.org/LA6699-8/\">LA6699-8</a></td><td>Nonsense</td></tr><tr><td><a href=\"https://loinc.org/LA9659-9/\">LA9659-9</a></td><td>Insertion and Deletion</td></tr><tr><td><a href=\"https://loinc.org/LA6687-3/\">LA6687-3</a></td><td>Insertion</td></tr><tr><td><a href=\"https://loinc.org/LA6692-3/\">LA6692-3</a></td><td>Deletion</td></tr><tr><td><a href=\"https://loinc.org/LA6686-5/\">LA6686-5</a></td><td>Duplication</td></tr><tr><td><a href=\"https://loinc.org/LA6694-9/\">LA6694-9</a></td><td>Frameshift</td></tr><tr><td><a href=\"https://loinc.org/LA6701-2/\">LA6701-2</a></td><td>Stop Codon Mutation</td></tr><tr><td><a href=\"https://loinc.org/LA6700-4/\">LA6700-4</a></td><td>Silent</td></tr></table></li><li>Include these codes as defined in <a href=\"http://sequenceontology.org\"><code>http://sequenceontology.org</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>SO:0002395</td><td>lost_polypeptide</td></tr><tr><td>SO:0001068</td><td>polypeptide_repeat</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-amino-acid-change-types",
+  "version" : "0.2.0",
+  "name" : "AminoAcidChangeTypes",
+  "title" : "Amino Acid Change Type Value Set",
+  "status" : "active",
+  "date" : "2025-11-22T09:58:04+00:00",
+  "publisher" : "Onconova",
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
+  "description" : "Amino acid change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA6698-0",
+        "display" : "Missense"
+      },
+      {
+        "code" : "LA6699-8",
+        "display" : "Nonsense"
+      },
+      {
+        "code" : "LA9659-9",
+        "display" : "Insertion and Deletion"
+      },
+      {
+        "code" : "LA6687-3",
+        "display" : "Insertion"
+      },
+      {
+        "code" : "LA6692-3",
+        "display" : "Deletion"
+      },
+      {
+        "code" : "LA6686-5",
+        "display" : "Duplication"
+      },
+      {
+        "code" : "LA6694-9",
+        "display" : "Frameshift"
+      },
+      {
+        "code" : "LA6701-2",
+        "display" : "Stop Codon Mutation"
+      },
+      {
+        "code" : "LA6700-4",
+        "display" : "Silent"
+      }]
+    },
+    {
+      "system" : "http://sequenceontology.org",
+      "concept" : [{
+        "code" : "SO:0002395",
+        "display" : "lost_polypeptide"
+      },
+      {
+        "code" : "SO:0001068",
+        "display" : "polypeptide_repeat"
+      }]
+    }]
+  }
+}

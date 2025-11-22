@@ -1,10 +1,10 @@
-# Recreational Drugs - Onconova Implementation Guide v0.2.0
+# Recreational Drugs Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Recreational Drugs**
+* **Recreational Drugs Value Set**
 
-## ValueSet: Recreational Drugs 
+## ValueSet: Recreational Drugs Value Set 
 
 | | |
 | :--- | :--- |
@@ -52,9 +52,9 @@ This value set contains 21 concepts
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-recreational-drugs",
   "version" : "0.2.0",
   "name" : "RecreationalDrugs",
-  "title" : "Recreational Drugs",
+  "title" : "Recreational Drugs Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

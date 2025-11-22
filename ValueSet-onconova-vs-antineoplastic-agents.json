@@ -8,9 +8,9 @@
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents",
   "version" : "0.2.0",
   "name" : "AntineoplasticAgents",
-  "title" : "Antineoplastic Agents",
+  "title" : "Antineoplastic Agents Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -19,7 +19,7 @@
       "value" : "http://onconova.github.io/docs"
     }]
   }],
-  "description" : "A value set of antineoplastic agents.",
+  "description" : "Drugs and biological agents used in the treatment of neoplastic diseases.",
   "compose" : {
     "include" : [{
       "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",

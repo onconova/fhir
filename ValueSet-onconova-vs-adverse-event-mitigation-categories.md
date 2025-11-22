@@ -1,10 +1,10 @@
-# Adverse Event Mitigation Categories - Onconova Implementation Guide v0.2.0
+# Adverse Event Mitigation Categories Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Adverse Event Mitigation Categories**
+* **Adverse Event Mitigation Categories Value Set**
 
-## ValueSet: Adverse Event Mitigation Categories 
+## ValueSet: Adverse Event Mitigation Categories Value Set 
 
 | | |
 | :--- | :--- |
@@ -50,9 +50,9 @@ This value set contains 0 concepts
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-categories",
   "version" : "0.2.0",
   "name" : "AdverseEventMitigationCategories",
-  "title" : "Adverse Event Mitigation Categories",
+  "title" : "Adverse Event Mitigation Categories Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

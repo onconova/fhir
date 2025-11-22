@@ -1,10 +1,10 @@
-# Tumor Board Recommendations - Onconova Implementation Guide v0.2.0
+# Tumor Board Recommendations Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Tumor Board Recommendations**
+* **Tumor Board Recommendations Value Set**
 
-## ValueSet: Tumor Board Recommendations 
+## ValueSet: Tumor Board Recommendations Value Set 
 
 | | |
 | :--- | :--- |
@@ -12,11 +12,11 @@
 | Active as of 2025-11-22 | *Computable Name*:OnconovaTumorBoardRecommendations |
 
  
-A value set of recommendations that may be made by a tumor board for a cancer patient. 
+Recommendations that may be made by a tumor board for a cancer patient. 
 
  **References** 
 
-* [Tumor Board Review](StructureDefinition-onconova-tumor-board-review.md)
+* [Tumor Board Review Profile](StructureDefinition-onconova-tumor-board-review.md)
 
 ### Logical Definition (CLD)
 
@@ -55,9 +55,9 @@ This value set contains 21 concepts
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations",
   "version" : "0.2.0",
   "name" : "OnconovaTumorBoardRecommendations",
-  "title" : "Tumor Board Recommendations",
+  "title" : "Tumor Board Recommendations Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -70,7 +70,7 @@ This value set contains 21 concepts
       ]
     }
   ],
-  "description" : "A value set of recommendations that may be made by a tumor board for a cancer patient.",
+  "description" : "Recommendations that may be made by a tumor board for a cancer patient.",
   "compose" : {
     "include" : [
       {

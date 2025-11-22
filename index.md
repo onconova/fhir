@@ -64,17 +64,17 @@ This publication includes IP covered under the following statements.
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html): [AminoAcidChangeTypeVS](ValueSet-onconova-vs-amino-acid-change-type.md), [OnconovaECOGPerformanceStatus](StructureDefinition-onconova-ecog-performance-status.md)...Show 10 more,[OnconovaGenomicVariant](StructureDefinition-onconova-genomic-variant.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaKarnofskyPerformanceStatus](StructureDefinition-onconova-Karnofsky-performance-status.md),[OnconovaLifestyle](StructureDefinition-onconova-lifestyle.md),[OnconovaMicrosatelliteInstability](StructureDefinition-onconova-microsatellite-instability.md),[OnconovaTumorBoardRecommendations](ValueSet-onconova-vs-tumor-board-recommendations.md),[OnconovaTumorBoardReview](StructureDefinition-onconova-tumor-board-review.md),[OnconovaTumorMutationalBurden](StructureDefinition-onconova-tumor-mutational-burden.md),[TumorMarkerAnalyte](StructureDefinition-onconova-ext-tumor-marker-analyte.md)and[TumorMarkerAnalytes](ValueSet-onconova-vs-tumor-marker-analytes.md)
+* [LOINC](http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html): [AminoAcidChangeTypes](ValueSet-onconova-vs-amino-acid-change-types.md), [OnconovaECOGPerformanceStatus](StructureDefinition-onconova-ecog-performance-status.md)...Show 12 more,[OnconovaGenomicVariant](StructureDefinition-onconova-genomic-variant.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaKarnofskyPerformanceStatus](StructureDefinition-onconova-karnofsky-performance-status.md),[OnconovaLifestyle](StructureDefinition-onconova-lifestyle.md),[OnconovaMicrosatelliteInstability](StructureDefinition-onconova-microsatellite-instability.md),[OnconovaTumorBoardRecommendations](ValueSet-onconova-vs-tumor-board-recommendations.md),[OnconovaTumorBoardReview](StructureDefinition-onconova-tumor-board-review.md),[OnconovaTumorMarker](StructureDefinition-onconova-tumor-marker.md),[OnconovaTumorMutationalBurden](StructureDefinition-onconova-tumor-mutational-burden.md),[TumorMarkerAnalyte](StructureDefinition-onconova-ext-tumor-marker-analyte.md),[TumorMarkerAnalytes](ValueSet-onconova-vs-tumor-marker-analytes.md)and[TumorMarkerTests](ValueSet-onconova-vs-tumor-marker-tests.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AdverseEventMitigation](StructureDefinition-onconova-ext-adverse-event-mitigation.md), [AdverseEventMitigationDrugs](ValueSet-onconova-vs-adverse-event-mitigation-drugs.md)...Show 46 more,[AdverseEventMitigationManagements](ValueSet-onconova-vs-adverse-event-mitigation-managements.md),[AdverseEventMitigationProcedures](ValueSet-onconova-vs-adverse-event-mitigation-procedures.md),[AdverseEventMitigationTreatmentAdjustments](ValueSet-onconova-vs-adverse-event-mitigation-treatment-adjustments.md),[CancerImagingMethods](ValueSet-onconova-vs-cancer-imaging-methods.md),[CauseOfDeath](StructureDefinition-onconova-ext-cause-of-death.md),[CausesOfDeath](ValueSet-onconova-vs-causes-of-death.md),[ExpectedDrugEffects](ValueSet-onconova-vs-expected-drug-effects.md),[MolecularTumorBoardTherapeuticRecommendation](StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.md),[ObservationBodySites](ValueSet-onconova-vs-observation-bodysites.md),[OnconovaCancerFamilyMemberHistory](StructureDefinition-onconova-cancer-family-member-history.md),[OnconovaComorbidities](StructureDefinition-onconova-comorbidities.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaLifestyle](StructureDefinition-onconova-lifestyle.md),[OnconovaMedicationAdministration](StructureDefinition-onconova-medication-administration.md),[OnconovaMolecularTumorBoardReview](StructureDefinition-onconova-molecular-tumor-board-review.md),[OnconovaPrimaryCancerCondition](StructureDefinition-onconova-primary-cancer-condition.md),[OnconovaRadiotherapySummary](StructureDefinition-onconova-radiotherapy-summary.md),[OnconovaSecondaryCancerCondition](StructureDefinition-onconova-secondary-cancer-condition.md),[OnconovaTNMDistantMetastasesCategory](StructureDefinition-onconova-tnm-distant-metastases-category.md),[OnconovaTNMGradeCategory](StructureDefinition-onconova-tnm-grade-category.md),[OnconovaTNMLymphaticInvasionCategory](StructureDefinition-onconova-tnm-lymphatic-invasion-category.md),[OnconovaTNMPerineuralInvasionCategory](StructureDefinition-onconova-tnm-perineural-invasion-category.md),[OnconovaTNMPrimaryTumorCategory](StructureDefinition-onconova-tnm-primary-tumor-category.md),[OnconovaTNMRegionalNodesCategory](StructureDefinition-onconova-tnm-regional-nodes-category.md),[OnconovaTNMResidualTumorCategory](StructureDefinition-onconova-tnm-residual-tumor-category.md),[OnconovaTNMSerumTumorMarkerLevelCategory](StructureDefinition-onconova-serous-tumor-marker-level-category.md),[OnconovaTNMVenousInvasionCategory](StructureDefinition-onconova-venous-invasion-category.md),[OnconovaTumorBoardRecommendations](ValueSet-onconova-vs-tumor-board-recommendations.md),[OnconovaTumorBoardReview](StructureDefinition-onconova-tumor-board-review.md),[RecreationalDrugs](ValueSet-onconova-vs-recreational-drugs.md),[RecurrenceType](StructureDefinition-onconova-ext-recurrence-type.md),[RecurrenceTypeVS](ValueSet-onconova-vs-recurrence-type.md),[SmokingStatus](ValueSet-onconova-vs-smoking-status.md),[TNMDistantMetastasisCategories](ValueSet-onconova-vs-tnm-distant-metastasis-categories.md),[TNMGradeCategories](ValueSet-onconova-vs-tnm-grade-categories.md),[TNMGradeCategoryMethods](ValueSet-onconova-vs-tnm-grade-category-methods.md),[TNMLymphaticInvasionCategories](ValueSet-onconova-tnm-lymphatic-invasion-categories.md),[TNMPerineuralInvasionCategories](ValueSet-onconova-tnm-perineural-invasion-categories.md),[TNMPrimaryTumorCategories](ValueSet-onconova-vs-tnm-primary-tumor-categories.md),[TNMRegionalNodesCategories](ValueSet-onconova-vs-tnm-regional-nodes-categories.md),[TNMResidualTumorCategories](ValueSet-onconova-tnm-residual-tumor-categories.md),[TNMSerumTumorMarkerLevelCategories](ValueSet-onconova-vs-tnm-serum-tumor-marker-level-categories.md),[TNMVenousInvasionCategories](ValueSet-onconova-vs-tnm-venous-invasion-categories.md),[TherapyLineIntent](StructureDefinition-onconova-ext-therapy-line-intent.md),[TreatmentTerminationReasons](ValueSet-onconova-vs-treatment-termination-reasons.md)and[VitalStatus](ValueSet-onconova-vs-vital-status.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AdverseEventMitigation](StructureDefinition-onconova-ext-adverse-event-mitigation.md), [AdverseEventMitigationDrugs](ValueSet-onconova-vs-adverse-event-mitigation-drugs.md)...Show 47 more,[AdverseEventMitigationManagements](ValueSet-onconova-vs-adverse-event-mitigation-managements.md),[AdverseEventMitigationProcedures](ValueSet-onconova-vs-adverse-event-mitigation-procedures.md),[AdverseEventMitigationTreatmentAdjustments](ValueSet-onconova-vs-adverse-event-mitigation-treatment-adjustments.md),[CancerImagingMethods](ValueSet-onconova-vs-cancer-imaging-methods.md),[CancerPatientCauseOfDeath](StructureDefinition-onconova-ext-cancer-patient-cause-of-death.md),[CancerPatientVitalStatus](StructureDefinition-onconova-ext-cancer-patient-vital-status.md),[CausesOfDeath](ValueSet-onconova-vs-causes-of-death.md),[ExpectedDrugEffects](ValueSet-onconova-vs-expected-drug-effects.md),[MolecularTumorBoardTherapeuticRecommendation](StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.md),[ObservationBodySites](ValueSet-onconova-vs-observation-bodysites.md),[OnconovaCancerFamilyMemberHistory](StructureDefinition-onconova-cancer-family-member-history.md),[OnconovaComorbidities](StructureDefinition-onconova-comorbidities.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaLifestyle](StructureDefinition-onconova-lifestyle.md),[OnconovaMedicationAdministration](StructureDefinition-onconova-medication-administration.md),[OnconovaMolecularTumorBoardReview](StructureDefinition-onconova-molecular-tumor-board-review.md),[OnconovaPrimaryCancerCondition](StructureDefinition-onconova-primary-cancer-condition.md),[OnconovaRadiotherapyCourseSummary](StructureDefinition-onconova-radiotherapy-summary.md),[OnconovaSecondaryCancerCondition](StructureDefinition-onconova-secondary-cancer-condition.md),[OnconovaTNMDistantMetastasesCategory](StructureDefinition-onconova-tnm-distant-metastases-category.md),[OnconovaTNMGradeCategory](StructureDefinition-onconova-tnm-grade-category.md),[OnconovaTNMLymphaticInvasionCategory](StructureDefinition-onconova-tnm-lymphatic-invasion-category.md),[OnconovaTNMPerineuralInvasionCategory](StructureDefinition-onconova-tnm-perineural-invasion-category.md),[OnconovaTNMPrimaryTumorCategory](StructureDefinition-onconova-tnm-primary-tumor-category.md),[OnconovaTNMRegionalNodesCategory](StructureDefinition-onconova-tnm-regional-nodes-category.md),[OnconovaTNMResidualTumorCategory](StructureDefinition-onconova-tnm-residual-tumor-category.md),[OnconovaTNMSerumTumorMarkerLevelCategory](StructureDefinition-onconova-tnm-serum-tumor-marker-level-category.md),[OnconovaTNMVenousInvasionCategory](StructureDefinition-onconova-tnm-venous-invasion-category.md),[OnconovaTumorBoardRecommendations](ValueSet-onconova-vs-tumor-board-recommendations.md),[OnconovaTumorBoardReview](StructureDefinition-onconova-tumor-board-review.md),[PrimaryCancerRecurrenceType](StructureDefinition-onconova-ext-primary-cancer-recurrence-type.md),[RecreationalDrugs](ValueSet-onconova-vs-recreational-drugs.md),[RecurrenceTypes](ValueSet-onconova-vs-recurrence-types.md),[SmokingStatus](ValueSet-onconova-vs-smoking-status.md),[TNMDistantMetastasisCategories](ValueSet-onconova-vs-tnm-distant-metastasis-categories.md),[TNMGradeCategories](ValueSet-onconova-vs-tnm-grade-categories.md),[TNMGradeCategoryMethods](ValueSet-onconova-vs-tnm-grade-category-methods.md),[TNMLymphaticInvasionCategories](ValueSet-onconova-tnm-lymphatic-invasion-categories.md),[TNMPerineuralInvasionCategories](ValueSet-onconova-tnm-perineural-invasion-categories.md),[TNMPrimaryTumorCategories](ValueSet-onconova-vs-tnm-primary-tumor-categories.md),[TNMRegionalNodesCategories](ValueSet-onconova-vs-tnm-regional-nodes-categories.md),[TNMResidualTumorCategories](ValueSet-onconova-tnm-residual-tumor-categories.md),[TNMSerumTumorMarkerLevelCategories](ValueSet-onconova-vs-tnm-serum-tumor-marker-level-categories.md),[TNMVenousInvasionCategories](ValueSet-onconova-vs-tnm-venous-invasion-categories.md),[TherapyLineIntent](StructureDefinition-onconova-ext-therapy-line-intent.md),[TreatmentTerminationReasons](ValueSet-onconova-vs-treatment-termination-reasons.md)and[VitalStatus](ValueSet-onconova-vs-vital-status.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [Observation Category Codes](http://terminology.hl7.org/7.0.0/CodeSystem-observation-category.html): [OnconovaAneuploidScore](StructureDefinition-onconova-aneuploid-score.md), [OnconovaGenomicVariant](StructureDefinition-onconova-genomic-variant.md)...Show 7 more,[OnconovaHomologousRecombinationDeficiency](StructureDefinition-onconova-homologous-recombination-deficiency.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaLossOfHeterozygosity](StructureDefinition-onconova-loss-of-heterozygosity.md),[OnconovaMicrosatelliteInstability](StructureDefinition-onconova-microsatellite-instability.md),[OnconovaTumorMarker](StructureDefinition-onconova-tumor-marker.md),[OnconovaTumorMutationalBurden](StructureDefinition-onconova-tumor-mutational-burden.md)and[OnconovaTumorNeoantigenBurden](StructureDefinition-onconova-tumor-neoantigen-burden.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.0.0/CodeSystem-observation-category.html): [OnconovaAneuploidScore](StructureDefinition-onconova-aneuploid-score.md), [OnconovaCancerRiskAssessment](StructureDefinition-onconova-cancer-risk-assessment.md)...Show 8 more,[OnconovaGenomicVariant](StructureDefinition-onconova-genomic-variant.md),[OnconovaHomologousRecombinationDeficiency](StructureDefinition-onconova-homologous-recombination-deficiency.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaLossOfHeterozygosity](StructureDefinition-onconova-loss-of-heterozygosity.md),[OnconovaMicrosatelliteInstability](StructureDefinition-onconova-microsatellite-instability.md),[OnconovaTumorMarker](StructureDefinition-onconova-tumor-marker.md),[OnconovaTumorMutationalBurden](StructureDefinition-onconova-tumor-mutational-burden.md)and[OnconovaTumorNeoantigenBurden](StructureDefinition-onconova-tumor-neoantigen-burden.md)
 * [identifierType](http://terminology.hl7.org/7.0.0/CodeSystem-v2-0203.html): [OnconovaCancerPatient](StructureDefinition-onconova-cancer-patient.md)
 
 
@@ -106,7 +106,7 @@ This publication includes IP covered under the following statements.
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -204,19 +204,6 @@ This publication includes IP covered under the following statements.
           {
             "url" : "value",
             "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "pin-canonicals"
-          },
-          {
-            "url" : "value",
-            "valueString" : "pin-all"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -645,19 +632,6 @@ This publication includes IP covered under the following statements.
         "extension" : [
           {
             "url" : "code",
-            "valueCode" : "pin-canonicals"
-          },
-          {
-            "url" : "value",
-            "valueString" : "pin-all"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
             "valueCode" : "excludexml"
           },
           {
@@ -1037,27 +1011,13 @@ This publication includes IP covered under the following statements.
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-adjunctive-role"
-        },
-        "name" : "Adjunctive Role",
-        "description" : "Indicates the role of this medication administration in the context of the overall treatment plan.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
         "reference" : {
           "reference" : "ValueSet/onconova-vs-adjunctive-therapy-roles"
         },
-        "name" : "Adjunctive Therapy Roles",
+        "name" : "Adjunctive Therapy Roles Value Set",
         "description" : "Codes representing roles for adjunctive therapy in oncology.",
         "exampleBoolean" : false
       },
@@ -1083,9 +1043,23 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
+          "reference" : "ValueSet/onconova-vs-adverse-event-mitigation-categories"
+        },
+        "name" : "Adverse Event Mitigation Categories Value Set",
+        "description" : "Categories of actions taken to mitigate or manage adverse events in oncology.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
           "reference" : "ValueSet/onconova-vs-adverse-event-mitigation-drugs"
         },
-        "name" : "Adverse Event Mitigation - Drugs",
+        "name" : "Adverse Event Mitigation Drugs Value Set",
         "description" : "Drugs or medication categories used in the mitigation process of an adverse event.",
         "exampleBoolean" : false
       },
@@ -1099,7 +1073,7 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-adverse-event-mitigation-managements"
         },
-        "name" : "Adverse Event Mitigation - Management",
+        "name" : "Adverse Event Mitigation Managements Value Set",
         "description" : "Classification of actions to mitigate adverse events affecting a patient's health.",
         "exampleBoolean" : false
       },
@@ -1113,7 +1087,7 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-adverse-event-mitigation-procedures"
         },
-        "name" : "Adverse Event Mitigation - Procedures",
+        "name" : "Adverse Event Mitigation Procedures Value Set",
         "description" : "Procedures undertaken to mitigate the impact of an adverse event on a patient's health.",
         "exampleBoolean" : false
       },
@@ -1127,22 +1101,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments"
         },
-        "name" : "Adverse Event Mitigation - Treatment Adjustment",
+        "name" : "Adverse Event Mitigation Treatment Adjustments Value Set",
         "description" : "Adjustments made to a patient's treatment plan in response to an adverse event.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/onconova-vs-adverse-event-mitigation-categories"
-        },
-        "name" : "Adverse Event Mitigation Categories",
-        "description" : "Categories of actions taken to mitigate or manage adverse events in oncology.",
         "exampleBoolean" : false
       },
       {
@@ -1156,35 +1116,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-adverse-event"
         },
         "name" : "Adverse Event Profile",
-        "description" : "A profile representing an adverse event experienced by a cancer patient as a result of an antineoplastic treatment, structured according to the Common Terminology Criteria for Adverse Events (CTCAE). This resource is used to capture and standardize the documentation of adverse events occurring during cancer care, including the type of event, its CTCAE grade, and any mitigation actions taken.\n\nThe profile constrains the base FHIR `AdverseEvent` resource to ensure consistent use of CTCAE codes and grades, and supports linkage to related treatments such as medications, radiotherapy, or surgical procedures documented in Onconova. The profile also provides extensions for recording mitigation strategies, supporting detailed tracking and management of adverse events in cancer patients.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-age"
-        },
-        "name" : "Age",
-        "description" : "The approximate age of the patient.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-age-at-diagnosis"
-        },
-        "name" : "Age at Diagnosis",
-        "description" : "The approximate age of the patient at the time of diagnosis of the disease.",
+        "description" : "A profile representing an adverse event experienced by a cancer patient as a result of an antineoplastic treatment, structured according to the Common Terminology Criteria for Adverse Events (CTCAE). This resource is used to capture and standardize the documentation of adverse events occurring during cancer care, including the type of event, its CTCAE grade, and any mitigation actions taken.\n\nThe profile constrains the base FHIR `AdverseEvent` resource to ensure consistent use of CTCAE codes and grades, and supports linkage to related treatments such as medications, radiotherapy, or surgical procedures documented in Onconova. The profile also provides extensions for recording mitigation strategies, supporting detailed tracking and management of adverse events in cancer patients.\n\n**Conformance:**\n\nAdverseEvent resources representing an adverse event caused by a cancer therapy in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1195,7 +1127,7 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/onconova-vs-amino-acid-change-type"
+          "reference" : "ValueSet/onconova-vs-amino-acid-change-types"
         },
         "name" : "Amino Acid Change Type Value Set",
         "description" : "Amino acid change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes",
@@ -1212,7 +1144,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-aneuploid-score"
         },
         "name" : "Aneuploid Score Profile",
-        "description" : "A profile representing aneuploid score for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.",
+        "description" : "A profile representing aneuploid score for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing an aneuploid score obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1225,8 +1157,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-antineoplastic-agents"
         },
-        "name" : "Antineoplastic Agents",
-        "description" : "A value set of antineoplastic agents.",
+        "name" : "Antineoplastic Agents Value Set",
+        "description" : "Drugs and biological agents used in the treatment of neoplastic diseases.",
         "exampleBoolean" : false
       },
       {
@@ -1239,8 +1171,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "StructureDefinition/onconova-cancer-family-member-history"
         },
-        "name" : "Cancer Family Member History",
-        "description" : "A profile recording of a family member's history of cancer.\n\nThis profile is based on the core FHIR `FamilyMemberHistory` resource rather than the mCODE  [HistoryOfMetastaticCancer profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-history-of-metastatic-cancer) to allow for a broader range of cancer history documentation (not limited to metastatic cancer). It includes constraints to ensure that at least one cancer condition is recorded, along with optional extensions for cancer morphology and topography.",
+        "name" : "Cancer Family Member History Profile",
+        "description" : "A profile recording of a patient's family member's history of cancer.\n\nThis profile is based on the core FHIR `FamilyMemberHistory` resource rather than the mCODE  [HistoryOfMetastaticCancer profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-history-of-metastatic-cancer) to allow for a broader range of cancer history documentation (not limited to metastatic cancer). It includes constraints to ensure that at least one cancer condition is recorded, along with optional extensions for cancer morphology and topography.\n\n**Conformance:**\n\nFamilyMemberHistory resources representing a history of (primary or metastatic) cancer in a patient's family member in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1253,8 +1185,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-cancer-imaging-methods"
         },
-        "name" : "Cancer Imaging Methods",
-        "description" : "Codes representing various imaging methods used in cancer diagnosis and monitoring.",
+        "name" : "Cancer Imaging Methods Value Set",
+        "description" : "Imaging methods used in cancer diagnosis and monitoring.",
         "exampleBoolean" : false
       },
       {
@@ -1265,10 +1197,108 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-cancer-morphology"
+          "reference" : "StructureDefinition/onconova-ext-cancer-patient-age"
         },
-        "name" : "Cancer Morphology",
-        "description" : "The morphology of the cancer, represented by a ICD-O-3 code.",
+        "name" : "Cancer Patient Age",
+        "description" : "The approximate age of the patient.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-cancer-patient-age-at-diagnosis"
+        },
+        "name" : "Cancer Patient Age at Diagnosis",
+        "description" : "The approximate age of the patient at the time of diagnosis of the disease.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-cancer-patient-cause-of-death"
+        },
+        "name" : "Cancer Patient Cause of Death",
+        "description" : "The cause of death for the patient.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-cancer-patient-consent-status"
+        },
+        "name" : "Cancer Patient Consent status",
+        "description" : "The status of whether the patient has given or revoked consent for research use.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-cancer-patient-data-completion-rate"
+        },
+        "name" : "Cancer Patient Data Completion Rate",
+        "description" : "The percentage of data elements categories that have been completed for a patient.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-cancer-patient-data-contributors"
+        },
+        "name" : "Cancer Patient Data Contributors",
+        "description" : "The individuals or organizations that contributed to the patient's case data collection.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-cancer-patient-end-of-records"
+        },
+        "name" : "Cancer Patient End of Records",
+        "description" : "Indicates the last known record date of a patient.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-cancer-patient-overall-survival"
+        },
+        "name" : "Cancer Patient Overall Survival",
+        "description" : "The duration of time from either the date of diagnosis or the start of treatment for a disease, such as cancer, that patients diagnosed with the disease are still alive. In a clinical trial, measuring the overall survival is one way to see how well a new treatment works.",
         "exampleBoolean" : false
       },
       {
@@ -1282,7 +1312,21 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-cancer-patient"
         },
         "name" : "Cancer Patient Profile",
-        "description" : "A profile representing a cancer patient with specific extensions and constraints for the Onconova use case.  \n\nIt constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient) to ensure anonymity of the patient information and to introduce additional Onconova-specific case information. Any `Patient` resource complying with the US Core `Patient` or mCODE `CancerPatient` profiles will also comply with this profile.",
+        "description" : "A profile representing a patient with or is receiving medical treatment for a malignant growth or tumor.\n\nIt constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient) with specific extensions and constraints for the Onconova use case. Any `Patient` resource complying with the US Core `Patient` or mCODE `CancerPatient` profiles will also comply with this profile if the `Must-Support` extensions are accounted for. \n\n**Conformance:**\n\nPatient resources representing Cancer Patients in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-cancer-patient-vital-status"
+        },
+        "name" : "Cancer Patient Vital status",
+        "description" : "The status of whether the patient is alive or deceased or unknown.",
         "exampleBoolean" : false
       },
       {
@@ -1295,7 +1339,7 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-cancer-risk-assessment-methods"
         },
-        "name" : "Cancer Risk Assessment Methods",
+        "name" : "Cancer Risk Assessment Methods Value Set",
         "description" : "A value set containing codes for various cancer risk assessment methods.",
         "exampleBoolean" : false
       },
@@ -1310,7 +1354,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-cancer-risk-assessment"
         },
         "name" : "Cancer Risk Assessment Profile",
-        "description" : "A profile representing a risk assessment performed for a cancer patient, including the method used, the resulting risk level, and an optional numerical score.\n\nIt constraints the mCODE [CancerRiskAssessment profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-risk-assessment) and expands the valuesets for cancer risk assessment methods and values.",
+        "description" : "A profile representing a risk assessment performed for a cancer patient, including the method used, the resulting risk level, and an optional numerical score.\n\nIt constraints the mCODE [CancerRiskAssessment profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-risk-assessment) and expands the valuesets for cancer risk assessment methods and values.\n\n**Conformance:**\n\nObservation resources representing a cancer-related risk assessment in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1323,36 +1367,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "StructureDefinition/onconova-cancer-stage"
         },
-        "name" : "Cancer Stage",
-        "description" : "A profile representing the cancer stage for a cancer patient. \n\nIt constrains the mCODE [CancerStage profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-stage) to include specific constraints and extensions relevant to Onconova.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-cancer-topography"
-        },
-        "name" : "Cancer Topography",
-        "description" : "The topography of the cancer, represented by a ICD-O-3 code.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-cause-of-death"
-        },
-        "name" : "Cause of Death",
-        "description" : "The cause of death for the patient.",
+        "name" : "Cancer Stage Profile",
+        "description" : "A profile representing the cancer stage for a cancer patient. \n\nIt constrains the mCODE [CancerStage profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-stage) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a cancer staging in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1377,10 +1393,10 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/onconova-vs-clinical-relevance"
+          "reference" : "ValueSet/onconova-vs-clinical-relevances"
         },
         "name" : "Clinical Relevance Value Set",
-        "description" : "Clinical relevance of a genomic variant",
+        "description" : "Categorizations of the clinical relevance of a genomic variant",
         "exampleBoolean" : false
       },
       {
@@ -1391,24 +1407,10 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/onconova-vs-dna-change-type"
+          "reference" : "ValueSet/onconova-vs-dna-change-types"
         },
-        "name" : "Coding DNA Change Type Value Set",
+        "name" : "Coding DNA Change Types Value Set",
         "description" : "Coding DNA change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-combined-with"
-        },
-        "name" : "Combined With",
-        "description" : "Indicates that this medication administration was given in combination with another medication administration.",
         "exampleBoolean" : false
       },
       {
@@ -1422,21 +1424,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-comorbidities"
         },
         "name" : "Comorbidities Profile",
-        "description" : "A profile representing comorbidities for a cancer patient, i.e. other health conditions that exist alongside the primary cancer diagnosis. Supports existing comorbidity panels such as the Charlson Comorbidity Index (CCI) and Elixhauser Comorbidity Index (ECI) with comorbidity indexes.\n\nThe profile constrains the mCODE [Comorbidities profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities) to ensure consistent use of ICD-10 codes for documenting comorbid conditions, and to link the comorbidity information to the Onconova primary cancer condition profile.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/onconova-vs-comorbidity-panels"
-        },
-        "name" : "Comorbidity Panels",
-        "description" : "A collection of comorbidity panels relevant to cancer patients.",
+        "description" : "A profile representing comorbidities for a cancer patient, i.e. other health conditions that exist alongside the primary cancer diagnosis. Supports existing comorbidity panels such as the Charlson Comorbidity Index (CCI) and Elixhauser Comorbidity Index (ECI) with comorbidity indexes.\n\nThe profile constrains the mCODE [Comorbidities profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities) to ensure consistent use of ICD-10 codes for documenting comorbid conditions, and to link the comorbidity information to the Onconova primary cancer condition profile. \n\n**Conformance:**\n\nObservation resources representing a generic or panel comorbidities assessment in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1457,14 +1445,14 @@ This publication includes IP covered under the following statements.
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
+            "valueString" : "ValueSet"
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-consent-status"
+          "reference" : "ValueSet/onconova-vs-comorbidity-panels"
         },
-        "name" : "Consent status",
-        "description" : "The status of whether the patient has given or revoked consent for reasearch use.",
+        "name" : "Comorbidity Panels Value Set",
+        "description" : "A collection of comorbidity panels relevant to cancer patients.",
         "exampleBoolean" : false
       },
       {
@@ -1492,21 +1480,35 @@ This publication includes IP covered under the following statements.
           "reference" : "ValueSet/onconova-vs-consent-status"
         },
         "name" : "Consent Status Value Set",
-        "description" : "The consent status of a patient",
+        "description" : "The consent status of a patient for further use of data in research.",
         "exampleBoolean" : false
       },
       {
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
+            "valueString" : "ActorDefinition"
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-contributors"
+          "reference" : "ActorDefinition/onconova-consumer"
         },
-        "name" : "Contributors",
-        "description" : "The individuals or organizations that contributed to the patient's care.",
+        "name" : "Consumer (Onconova)",
+        "description" : "An actor representing a data consumer that interacts with the Onconova FHIR REST server to retrieve and read patient case data.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ActorDefinition"
+          }
+        ],
+        "reference" : {
+          "reference" : "ActorDefinition/onconova-creator"
+        },
+        "name" : "Creator (Onconova)",
+        "description" : "An actor representing a data creator that interacts with the Onconova FHIR REST server to create and update patient case data.",
         "exampleBoolean" : false
       },
       {
@@ -1519,8 +1521,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-ctc-adverse-events"
         },
-        "name" : "CTC Adverse Events",
-        "description" : "Common Terminology Criteria for Adverse Events (CTCAE) is a standard classification and severity grading scale for adverse events in clinical trials and oncology practice.",
+        "name" : "CTC Adverse Events Value Set",
+        "description" : "Adverse events classified according to the Common Terminology Criteria for Adverse Events (CTCAE)",
         "exampleBoolean" : false
       },
       {
@@ -1531,38 +1533,10 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-ctc-grade"
+          "reference" : "StructureDefinition/onconova-ext-adverse-event-ctc-grade"
         },
         "name" : "CTCAE Grade",
         "description" : "The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE).",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-cycles"
-        },
-        "name" : "Cycles",
-        "description" : "Indicates the total number of cycles for this medication administration.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-data-completion-rate"
-        },
-        "name" : "Data Completion Rate",
-        "description" : "The percentage of data elements categories that have been completed for a patient.",
         "exampleBoolean" : false
       },
       {
@@ -1576,21 +1550,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-ecog-performance-status"
         },
         "name" : "ECOG Performance Status Profile",
-        "description" : "A profile representing ECOG performance status score for a cancer patient.\n\nAdds minimal constraints to the mCODE [`ECOGPerformanceStatus` profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-ecog-performance-status) to account for Onconova specifics.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-end-of-records"
-        },
-        "name" : "End of Records",
-        "description" : "Indicates the last known record date of a patient.",
+        "description" : "A profile representing the (Eastern Cooperative Oncology Group) ECOG performance status score for a cancer patient.\n\nAdds minimal constraints to the mCODE [`ECOGPerformanceStatus` profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-ecog-performance-status) to account for Onconova specifics.\n\n**Conformance:**\n\nObservation resources representing an ECOG performance status score in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1603,8 +1563,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-expected-drug-effects"
         },
-        "name" : "Expected Drug Effects",
-        "description" : "A value set of expected drug effects.",
+        "name" : "Expected Drug Effects Value Set",
+        "description" : "Collection of expected effects when a drug is administered.",
         "exampleBoolean" : false
       },
       {
@@ -1617,7 +1577,7 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-exposure-agents"
         },
-        "name" : "Exposure Agents",
+        "name" : "Exposure Agents Value Set",
         "description" : "Agents to which a patient may have been exposed.",
         "exampleBoolean" : false
       },
@@ -1629,9 +1589,37 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-genomic-assessment-date"
+          "reference" : "StructureDefinition/onconova-ext-family-history-member-cancer-morphology"
         },
-        "name" : "Genomic Assessment Date",
+        "name" : "Family Member History Cancer Morphology",
+        "description" : "The morphology of a historical cancer associated to a family member of a patient, represented by an ICD-O-3 code.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-family-history-member-cancer-topography"
+        },
+        "name" : "Family Member History Cancer Topography",
+        "description" : "The topography of a historical cancer associated to a family member of a patient, represented by an ICD-O-3 code.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-genomic-variant-assessment-date"
+        },
+        "name" : "Genomic Variant Assessment Date",
         "description" : "Date at which the genomic variant was assessed and/or reported.",
         "exampleBoolean" : false
       },
@@ -1646,7 +1634,21 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-genomic-variant"
         },
         "name" : "Genomic Variant Profile",
-        "description" : "A profile representing a genomic variant identified for a cancer patient. \n\nThis profile extends the base mCODE [GenomicVariant profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-variant) (which in turn profiles the Genomics Reporting [Variant profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant)) to include specific constraints and extensions relevant to Onconova.",
+        "description" : "A profile representing a genomic variant identified for a cancer patient. \n\nThis profile extends the base mCODE [GenomicVariant profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-variant) (which in turn profiles the Genomics Reporting [Variant profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant)) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a genomic variant in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-histological-differentiation"
+        },
+        "name" : "Histological Differentiation",
+        "description" : "The histological differentiation of the tumor.",
         "exampleBoolean" : false
       },
       {
@@ -1660,7 +1662,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-homologous-recombination-deficiency"
         },
         "name" : "Homologous Recombination Deficiency Profile",
-        "description" : "A profile representing homologous recombination deficiency for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.",
+        "description" : "A profile representing homologous recombination deficiency for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a homologous recombination deficiency obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1673,8 +1675,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-icd-10-conditions"
         },
-        "name" : "ICD-10 Codes",
-        "description" : "This value set includes sample ICD-10 codes.",
+        "name" : "ICD-10 Codes Value Set",
+        "description" : "All possible ICD-10 codes for conditions.",
         "exampleBoolean" : false
       },
       {
@@ -1685,10 +1687,10 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/onconova-vs-icdo3-differentiation"
+          "reference" : "ValueSet/onconova-vs-icdo3-differentiations"
         },
-        "name" : "ICD-O-3 Differentiation",
-        "description" : "A value set of ICD-O-3 differentiation codes.",
+        "name" : "ICD-O-3 Differentiations Value Set",
+        "description" : "The subset of ICD-O-3 concepts dedicated for describing morphology differentiations.",
         "exampleBoolean" : false
       },
       {
@@ -1699,10 +1701,10 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/onconova-vs-icdo3-morphology-behavior"
+          "reference" : "ValueSet/onconova-vs-icdo3-morphology-behaviors"
         },
-        "name" : "ICD-O-3 Morphology Behavior",
-        "description" : "A value set of ICD-O-3 morphology behavior codes.",
+        "name" : "ICD-O-3 Morphology Behavior Value Set",
+        "description" : "The subset of ICD-O-3 concepts dedicated for describing morphology behavior.",
         "exampleBoolean" : false
       },
       {
@@ -1713,10 +1715,10 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/onconova-vs-icdo3-topography"
+          "reference" : "ValueSet/onconova-vs-icdo3-topographies"
         },
-        "name" : "ICD-O-3 Topography",
-        "description" : "A value set of ICD-O-3 topography codes.",
+        "name" : "ICD-O-3 Topographies Value Set",
+        "description" : "The subset of ICD-O-3 concepts dedicated for describing morphology topographies.",
         "exampleBoolean" : false
       },
       {
@@ -1730,21 +1732,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-imaging-disease-status"
         },
         "name" : "Imaging Disease Status Profile",
-        "description" : "A profile representing the imaging-based disease status of a cancer patient.\n\nIt constrains the mCODE [CancerDiseaseStatus profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status) to restrict it to imaging-based monitoring evaluated based on RECIST criteria.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-is-primary-therapy"
-        },
-        "name" : "Is Primary Therapy",
-        "description" : "Indicates whether this medication administration is the primary therapy within a therapy line.",
+        "description" : "A profile representing the imaging-based disease status of a cancer patient.\n\nIt constrains the mCODE [CancerDiseaseStatus profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status) to restrict it to imaging-based monitoring evaluated based on RECIST criteria.\n\n**Conformance:**\n\nObservation resources representing a disease status obtained through imaging techniques in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1755,10 +1743,10 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/onconova-Karnofsky-performance-status"
+          "reference" : "StructureDefinition/onconova-karnofsky-performance-status"
         },
         "name" : "Karnofsky Performance Status Profile",
-        "description" : "A profile representing the Karnofsky performance status score for a cancer patient.\n\nAdds minimal constraints to the mCODE [KarnofskyPerformanceStatus profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-karnofsky-performance-status) to account for Onconova specifics.",
+        "description" : "A profile representing the Karnofsky performance status score for a cancer patient.\n\nAdds minimal constraints to the mCODE [`KarnofskyPerformanceStatus` profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-karnofsky-performance-status) to account for Onconova specifics.\n\n**Conformance:**\n\nObservation resources representing a Karnofsky performance status score in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1772,7 +1760,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-lifestyle"
         },
         "name" : "Lifestyle Profile",
-        "description" : "A profile representing a (reported) observation on certain lifestyle characteristics of a cancer patient (e.g. smoking, drinking, and sleeping habits, environmental exposures, etc.). \n\nIt directly profiles the base FHIR `Observation` resource as this resource is not represented in mCODE, to add relevant observation components for the different lifestyle characteristics.",
+        "description" : "A profile representing a (reported) observation on certain lifestyle characteristics of a cancer patient (e.g. smoking, drinking, and sleeping habits, environmental exposures, etc.). \n\nIt directly profiles the base FHIR `Observation` resource as this resource is not represented in mCODE, to add relevant observation components for the different lifestyle characteristics. \n\n**Conformance:**\n\nObservation resources representing a summary of a patient's lifestyle in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1786,7 +1774,63 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-loss-of-heterozygosity"
         },
         "name" : "Loss of Heterozygosity Profile",
-        "description" : "A profile representing loss of heterozygosity for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.",
+        "description" : "A profile representing loss of heterozygosity for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a loss of heterozygosity obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-medication-administration-adjunctive-role"
+        },
+        "name" : "Medication Administration Adjunctive Role",
+        "description" : "Indicates the role of this medication administration in the context of the overall treatment plan.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-medication-administration-combined-with"
+        },
+        "name" : "Medication Administration Combined With",
+        "description" : "Indicates which medication administrations were given in combination with the current medication administration.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-medication-administration-cycles"
+        },
+        "name" : "Medication Administration Cycles",
+        "description" : "Indicates the total number of cycles for this medication administration.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-medication-administration-is-primary-therapy"
+        },
+        "name" : "Medication Administration Is Primary Therapy",
+        "description" : "Indicates whether this medication administration is the primary therapy within a therapy line.",
         "exampleBoolean" : false
       },
       {
@@ -1800,7 +1844,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-medication-administration"
         },
         "name" : "Medication Administration Profile",
-        "description" : "A profile representing a medication administered to a cancer patient during a systemic therapy (e.g., chemotherapy, immunotherapy), including details about the medication and dosage. \n\nThis profile extends the base mCODE [CancerRelatedMedicationAdministration profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration) to introduce additional information about the systemic therapy (e.g. number of cycles, therapeutic role, etc.) and to introduce references to other medication administration given simultaneously to represent combination therapies.",
+        "description" : "A profile representing a medication administered to a cancer patient during a systemic therapy (e.g., chemotherapy, immunotherapy), including details about the medication and dosage. \n\nThis profile extends the base mCODE [CancerRelatedMedicationAdministration profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration) to introduce additional information about the systemic therapy (e.g. number of cycles, therapeutic role, etc.) and to introduce references to other medication administration given simultaneously to represent combination therapies.\n\nSince Onocnova treats systemic therapies involving multiple antineoplastic agents administered together or in sequence as part of a single treatment plan, this profile allows for capturing such relationships between medication administrations using the `MedicationAdministration.extension[combinedWith]` extension slices.\n\n**Conformance:**\n\nMedicationAdministration resources representing a systemic therapy in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1814,7 +1858,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-microsatellite-instability"
         },
         "name" : "Microsatellite Instability Profile",
-        "description" : "A profile representing microsatellite instability for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [MicrosatelliteInstability profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/msi) to include specific constraints and extensions relevant to Onconova.",
+        "description" : "A profile representing microsatellite instability for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [MicrosatelliteInstability profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/msi) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a microsatellite instability obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1855,8 +1899,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "StructureDefinition/onconova-molecular-tumor-board-review"
         },
-        "name" : "Molecular Tumor Board Review",
-        "description" : "A profile representing a specialized molecular tumor board review for a cancer patient. This profile extends the `OnconovaTumorBoardReview` profile to specify that the review is focused on molecular diagnostics and recommendations.",
+        "name" : "Molecular Tumor Board Review Profile",
+        "description" : "A profile representing a specialized molecular tumor board review for a cancer patient. This profile extends the `OnconovaTumorBoardReview` profile to specify that the review is focused on molecular diagnostics and recommendations.\n\n**Conformance:**\n\nProcedure resources representing a molecular tumor board review in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1905,20 +1949,6 @@ This publication includes IP covered under the following statements.
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-overall-survival"
-        },
-        "name" : "Overall Survival",
-        "description" : "The duration of time from either the date of diagnosis or the start of treatment for a disease, such as cancer, that patients diagnosed with the disease are still alive. In a clinical trial, measuring the overall survival is one way to see how well a new treatment works.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1926,7 +1956,35 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-primary-cancer-condition"
         },
         "name" : "Primary Cancer Condition Profile",
-        "description" : "A profile that records the primary cancer condition, the original or first neoplasm in the body (Definition from: [NCI Dictionary of Cancer Terms](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)). Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary.\n\nIt constrains the mCODE [PrimaryCancerCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition) to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.\n\nThis profile can be used to represent the Onconova neoplastic entities of relationship `primary`, `local_recurrence`, and `regional_recurrence`. Local and regional recurrences are indicated using extensions to denote that the condition is a recurrence of a previous condition, and to specify the type of recurrence (local or regional). For example, a local recurrence would be represented as a PrimaryCancerCondition with:\n```\n{\n    clinicalStatus: {\n        coding: [\n            {\n                system: \"http://snomed.info/sct\",\n                code: \"recurrence\",\n                display: \"Recurrence\"\n            }\n        ],\n    },\n    _clinicalStatus {\n        extension: [\n            {\n                url: \"http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type\",\n                valueCodeableConcept: {\n                    coding: [\n                        {\n                            system: \"http://snomed.info/sct\",\n                            code: \"255470001\",\n                            display: \"Local (qualifier value)\"\n                        }\n                    ]\n                }\n            }\n        ]\n    },\n}\n```",
+        "description" : "A profile that records the primary cancer condition, the original or first neoplasm in the body (Definition from: [NCI Dictionary of Cancer Terms](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)). Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary.\n\nIt constrains the mCODE [PrimaryCancerCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition) to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes. \n\nLocal and regional recurrences are indicated using the `clinicalStatus` and `clinicalStatus.extension` to denote that the condition is a recurrence of a previous condition, and to specify the type of recurrence (local or regional).\n\n**Conformance:**\n\nCondition resources representing a primary or recurrent neoplastic entity in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-primary-cancer-recurrence-of"
+        },
+        "name" : "Primary Cancer Recurrence Of",
+        "description" : "Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-primary-cancer-recurrence-type"
+        },
+        "name" : "Primary Cancer Recurrence Type",
+        "description" : "Indicates the type of recurrence for the condition (local or regional).",
         "exampleBoolean" : false
       },
       {
@@ -1940,21 +1998,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-radiotherapy-summary"
         },
         "name" : "Radiotherapy Summary Profile",
-        "description" : "A profile representing a summary of a course of radiotherapy delivered to a patient. It records the treatment intent, termination reason, modalities, techniques, number of sessions, and doses delivered to one or more body volumes. Whether the course has been fully delivered or stopped is indicated in the status element.\n\nThis profile extends the base mCODE [RadiotherapyCourseSummary profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary) to include specific constraints and requirements for Onconova.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-recist-is-interpreted"
-        },
-        "name" : "Recist Is Interpreted",
-        "description" : "Indicates that whether the RECIST was interpreted from a radiology report rather than extracted.",
+        "description" : "A profile representing a summary of a course of radiotherapy delivered to a patient. It records the treatment intent, termination reason, modalities, techniques, number of sessions, and doses delivered to one or more body volumes. Whether the course has been fully delivered or stopped is indicated in the status element.\n\nThis profile extends the base mCODE [RadiotherapyCourseSummary profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary) to include specific constraints and requirements for Onconova.\n\n**Conformance:**\n\nProcedure resources representing a radiotherapy in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -1967,50 +2011,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-recreational-drugs"
         },
-        "name" : "Recreational Drugs",
+        "name" : "Recreational Drugs Value Set",
         "description" : "Substances that people use to alter their mental state, often for pleasure or leisure, with effects ranging from relaxation and euphoria to hallucinations and altered perceptions.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-recurrence-of"
-        },
-        "name" : "Recurrence Of",
-        "description" : "Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-differentiation"
-        },
-        "name" : "Recurrence Type",
-        "description" : "THe histological differentiation of the tumor.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-recurrence-type"
-        },
-        "name" : "Recurrence Type",
-        "description" : "Indicates the type of recurrence for the condition (local or regional).",
         "exampleBoolean" : false
       },
       {
@@ -2021,9 +2023,9 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/onconova-vs-recurrence-type"
+          "reference" : "ValueSet/onconova-vs-recurrence-types"
         },
-        "name" : "Recurrence Type Value Set",
+        "name" : "Recurrence Types Value Set",
         "description" : "A value set representing the types of cancer recurrence, specifically local and regional recurrences.",
         "exampleBoolean" : false
       },
@@ -2051,7 +2053,7 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-cancer-risk-assessment-values"
         },
-        "name" : "Risk Assessment Values",
+        "name" : "Risk Assessment Values Value Set",
         "description" : "A non-exhaustive value set containing codes that result from risk assessments, i.e., the risk level of the cancer.",
         "exampleBoolean" : false
       },
@@ -2066,7 +2068,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-secondary-cancer-condition"
         },
         "name" : "Secondary Cancer Condition Profile",
-        "description" : "A profile recording the a secondary neoplasm, including location and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms).\n\nIt constrains the mCODE [SecondaryCancerCCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition) to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.",
+        "description" : "A profile recording the a secondary neoplasm, including location and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms).\n\nIt constrains the mCODE [SecondaryCancerCCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition) to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.\n\n**Conformance:**\n\nCondition resources representing a metastatic neoplastic entity in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2079,7 +2081,7 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-smoking-status"
         },
-        "name" : "Smoking status",
+        "name" : "Smoking status Value Set",
         "description" : "Smoking status of a patient",
         "exampleBoolean" : false
       },
@@ -2094,7 +2096,21 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-surgical-procedure"
         },
         "name" : "Surgical Procedure Profile",
-        "description" : "A profile representing a surgical procedure performed on a cancer patient, including details about the procedure, its intent, and relevant dates. \n\nIt extends the base mCODE [CancerRelatedSurgicalProcedure profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure) to include specific constraints and requirements for Onconova.",
+        "description" : "A profile representing a surgical procedure performed on a cancer patient, including details about the procedure, its intent, and relevant dates. \n\nIt extends the base mCODE [CancerRelatedSurgicalProcedure profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure) to include specific constraints and requirements for Onconova.\n\n**Conformance:**\n\nProcedure resources representing a surgery in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onconova-vs-surgical-procedures"
+        },
+        "name" : "Surgical Procedures Value Set",
+        "description" : "Set of surgical procedures relevant to cancer treatment in Onconova.",
         "exampleBoolean" : false
       },
       {
@@ -2150,7 +2166,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-therapy-line"
         },
         "name" : "Therapy Line Profile",
-        "description" : "A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. \n\nDue to its abstract conceptual nature, it is based on a FHIR `List` to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing Procedure and MedicationAdministration resources and are not created manually.",
+        "description" : "A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. \n\nDue to its abstract conceptual nature, it is based on a FHIR `List` to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing Procedure and MedicationAdministration resources and are not created manually.\n\n**Conformance:**\n\nList resources representing a therapy line in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2189,7 +2205,7 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/ext-therapy-line-reference"
+          "reference" : "StructureDefinition/onconova-ext-therapy-line-reference"
         },
         "name" : "Therapy Line Reference",
         "description" : "A reference to the therapy line associated with this treatment.",
@@ -2205,8 +2221,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "StructureDefinition/onconova-tnm-distant-metastases-category"
         },
-        "name" : "TNM Distant Metastases Category",
-        "description" : "A profile representing the TNM distant metastases category for a cancer patient. \n\nThis profile extends the base mCODE [TNMDistantMetastasesCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category) to include specific constraints and extensions relevant to Onconova.",
+        "name" : "TNM Distant Metastases Category Profile",
+        "description" : "A profile representing the TNM distant metastases category for a cancer patient. \n\nThis profile extends the base mCODE [TNMDistantMetastasesCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a TNM staging distant metastases parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2241,20 +2257,6 @@ This publication includes IP covered under the following statements.
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-tnm-grade-category"
-        },
-        "name" : "TNM Grade Category",
-        "description" : "A profile representing the TNM grade category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -2263,6 +2265,20 @@ This publication includes IP covered under the following statements.
         },
         "name" : "TNM Grade Category Methods Value Set",
         "description" : "TNM Grade Category Methods Value Set",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-tnm-grade-category"
+        },
+        "name" : "TNM Grade Category Profile",
+        "description" : "A profile representing the TNM grade category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.\n\n**Conformance:**\n\nObservation resources representing a TNM staging grade category parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2289,8 +2305,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "StructureDefinition/onconova-tnm-lymphatic-invasion-category"
         },
-        "name" : "TNM Lymphatic Invasion Category",
-        "description" : "A profile representing the TNM lymphatic invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.",
+        "name" : "TNM Lymphatic Invasion Category Profile",
+        "description" : "A profile representing the TNM lymphatic invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.\n\n**Conformance:**\n\nObservation resources representing a TNM staging lymphatic invasion parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2317,8 +2333,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "StructureDefinition/onconova-tnm-perineural-invasion-category"
         },
-        "name" : "TNM Perineural Invasion Category",
-        "description" : "A profile representing the TNM perineural invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.",
+        "name" : "TNM Perineural Invasion Category Profile",
+        "description" : "A profile representing the TNM perineural invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.\n\n**Conformance:**\n\nObservation resources representing a TNM staging perineural invasion parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2331,7 +2347,7 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-tnm-primary-tumor-categories"
         },
-        "name" : "TNM Primary Tumor Categories",
+        "name" : "TNM Primary Tumor Categories Value Set",
         "description" : "TNM Primary Tumor Categories Value Set",
         "exampleBoolean" : false
       },
@@ -2345,8 +2361,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "StructureDefinition/onconova-tnm-primary-tumor-category"
         },
-        "name" : "TNM Primary Tumor Category",
-        "description" : "A profile representing the TNM primary tumor category for a cancer patient. \n\nThis profile extends the base mCODE [TNMPrimaryTumorCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-primary-tumor-category) to include specific constraints and extensions relevant to Onconova.",
+        "name" : "TNM Primary Tumor Category Profile",
+        "description" : "A profile representing the TNM primary tumor category for a cancer patient. \n\nThis profile extends the base mCODE [TNMPrimaryTumorCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-primary-tumor-category) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a TNM staging primary tumor parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2373,8 +2389,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "StructureDefinition/onconova-tnm-regional-nodes-category"
         },
-        "name" : "TNM Regional Nodes Category",
-        "description" : "A profile representing the TNM regional nodes category for a cancer patient. \n\nThis profile extends the base mCODE [TNMRegionalNodesCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-regional-nodes-category) to include specific constraints and extensions relevant to Onconova.",
+        "name" : "TNM Regional Nodes Category Profile",
+        "description" : "A profile representing the TNM regional nodes category for a cancer patient. \n\nThis profile extends the base mCODE [TNMRegionalNodesCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-regional-nodes-category) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a TNM staging regional nodes parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2401,8 +2417,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "StructureDefinition/onconova-tnm-residual-tumor-category"
         },
-        "name" : "TNM Residual Tumor Category",
-        "description" : "A profile representing the TNM residual tumor category for a cancer patient.\n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.",
+        "name" : "TNM Residual Tumor Category Profile",
+        "description" : "A profile representing the TNM residual tumor category for a cancer patient.\n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.\n\n**Conformance:**\n\nObservation resources representing a TNM staging residual tumor parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2427,10 +2443,10 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/onconova-serous-tumor-marker-level-category"
+          "reference" : "StructureDefinition/onconova-tnm-serum-tumor-marker-level-category"
         },
-        "name" : "TNM Serum Tumor Marker Level Category",
-        "description" : "A profile representing the serum tumor marker level category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.",
+        "name" : "TNM Serum Tumor Marker Level Category Profile",
+        "description" : "A profile representing the TNM serum tumor marker level category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.\n\n**Conformance:**\n\nObservation resources representing a TNM staging serum tumor marker level parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2444,7 +2460,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-tnm-stage-group"
         },
         "name" : "TNM Stage Group",
-        "description" : "A profile representing the TNM stage group for a cancer patient. \n\nIt extends the base mCODE [TNMStageGroup profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-stage-group) to expand the TNM subcategories and include specific constraints and extensions relevant to Onconova.",
+        "description" : "A profile representing the TNM stage group for a cancer patient. \n\nIt extends the base mCODE [TNMStageGroup profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-stage-group) to expand the TNM subcategories and include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a cancer TNM staging in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2469,10 +2485,10 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/onconova-venous-invasion-category"
+          "reference" : "StructureDefinition/onconova-tnm-venous-invasion-category"
         },
-        "name" : "TNM Venous Invasion Category",
-        "description" : "A profile representing the venous invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.",
+        "name" : "TNM Venous Invasion Category Profile",
+        "description" : "A profile representing the TNM venous invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.\n\n**Conformance:**\n\nObservation resources representing a TNM staging venous invasion parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2493,14 +2509,28 @@ This publication includes IP covered under the following statements.
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-treatment-response-recist-is-interpreted"
+        },
+        "name" : "Treatment Response RECIST Is Interpreted",
+        "description" : "Indicates that whether the RECIST was interpreted from a radiology report rather than extracted.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
         "reference" : {
           "reference" : "ValueSet/onconova-vs-treatment-termination-reasons"
         },
-        "name" : "Treatment Termination Reasons",
-        "description" : "Codes representing reasons for terminating a treatment in oncology.",
+        "name" : "Treatment Termination Reasons Value Set",
+        "description" : "Reasons for terminating a treatment in oncology.",
         "exampleBoolean" : false
       },
       {
@@ -2513,8 +2543,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-tumor-board-recommendations"
         },
-        "name" : "Tumor Board Recommendations",
-        "description" : "A value set of recommendations that may be made by a tumor board for a cancer patient.",
+        "name" : "Tumor Board Recommendations Value Set",
+        "description" : "Recommendations that may be made by a tumor board for a cancer patient.",
         "exampleBoolean" : false
       },
       {
@@ -2527,8 +2557,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "StructureDefinition/onconova-tumor-board-review"
         },
-        "name" : "Tumor Board Review",
-        "description" : "A profile representing a tumor board review for a cancer patient.\n\nThis profile extends the base FHIR `Procedure` resource since there is no equivalent mCODE profile that covers the use case.",
+        "name" : "Tumor Board Review Profile",
+        "description" : "A profile representing a tumor board review for a cancer patient.\n\nThis profile extends the base FHIR `Procedure` resource since there is no equivalent mCODE profile that covers the use case. \n\n**Conformance:**\n\nProcedure resources representing a tumor board review in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2569,8 +2599,8 @@ This publication includes IP covered under the following statements.
         "reference" : {
           "reference" : "ValueSet/onconova-vs-tumor-marker-analytes"
         },
-        "name" : "Tumor Marker Analytes",
-        "description" : "Codes representing analytes for tumor markers.",
+        "name" : "Tumor Marker Analytes Value Set",
+        "description" : "Analytes considered tumor markers.",
         "exampleBoolean" : false
       },
       {
@@ -2584,7 +2614,21 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-tumor-marker"
         },
         "name" : "Tumor Marker Profile",
-        "description" : "A profile representing a tumor marker observation for a cancer patient, including the type of tumor marker and its value. \n\nThis profile extends the base mCODE [TumorMarkerTest profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test) to include specific constraints and requirements for Onconova.\n\nIf relied on the same use context as mCODE, namely for substances found in tissue or blood or other body fluids that may be a sign of cancer or certain benign (non-cancer) conditions measured at the levels of the protein and substance post-RNA protein synthesis (not at genomic level).",
+        "description" : "A profile representing a tumor marker observation for a cancer patient, including the type of tumor marker and its value. \n\nThis profile extends the base mCODE [TumorMarkerTest profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test) to include specific constraints and requirements for Onconova.\n\nIf relied on the same use context as mCODE, namely for substances found in tissue or blood or other body fluids that may be a sign of cancer or certain benign (non-cancer) conditions measured at the levels of the protein and substance post-RNA protein synthesis (not at genomic level).\n\n**Conformance:**\n\nObservation resources representing a tumor marker in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onconova-vs-tumor-marker-tests"
+        },
+        "name" : "Tumor Marker Tests",
+        "description" : "ValueSet containing LOINC and NCI Thesaurus codes for tumor marker laboratory tests and measurements",
         "exampleBoolean" : false
       },
       {
@@ -2598,7 +2642,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-tumor-mutational-burden"
         },
         "name" : "Tumor Mutational Burden Profile",
-        "description" : "A profile representing tumor mutational burden for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [TumorMutationalBurden profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/tmb) to include specific constraints and extensions relevant to Onconova.",
+        "description" : "A profile representing tumor mutational burden for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [TumorMutationalBurden profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/tmb) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a tumor mutational burden obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {
@@ -2612,35 +2656,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-tumor-neoantigen-burden"
         },
         "name" : "Tumor Neoantigen Burden Profile",
-        "description" : "A profile representing tumor neoantigen burden for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-unknown-entry"
-        },
-        "name" : "Unknown Entry",
-        "description" : "Value is not collected and cannot be provided by Onconova.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-vital-status"
-        },
-        "name" : "Vital status",
-        "description" : "The status of whether the patient is alive or deceased or unknown.",
+        "description" : "A profile representing tumor neoantigen burden for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a tumor neoantigen burden obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {

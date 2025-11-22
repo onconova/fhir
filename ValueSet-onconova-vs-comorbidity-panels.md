@@ -1,10 +1,10 @@
-# Comorbidity Panels - Onconova Implementation Guide v0.2.0
+# Comorbidity Panels Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Comorbidity Panels**
+* **Comorbidity Panels Value Set**
 
-## ValueSet: Comorbidity Panels 
+## ValueSet: Comorbidity Panels Value Set 
 
 | | |
 | :--- | :--- |
@@ -48,9 +48,9 @@ A collection of comorbidity panels relevant to cancer patients.
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-comorbidity-panels",
   "version" : "0.2.0",
   "name" : "ComorbidityPanels",
-  "title" : "Comorbidity Panels",
+  "title" : "Comorbidity Panels Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

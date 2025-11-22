@@ -19,7 +19,7 @@ A comparison of molecular findings discussed during the molecular tumor board re
 
 **Usages:**
 
-* Use this Extension: [Molecular Tumor Board Review](StructureDefinition-onconova-molecular-tumor-board-review.md)
+* Use this Extension: [Molecular Tumor Board Review Profile](StructureDefinition-onconova-molecular-tumor-board-review.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-ext-molecular-tumor-board-molecular-comparison)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
   "name" : "MolecularTumorBoardMolecularComparison",
   "title" : "Molecular Tumor Board Molecular Comparison",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -94,6 +94,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
       },
       {
         "id" : "Extension.extension:conducted",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "conducted",
         "short" : "Molecular comparison conducted",
@@ -122,6 +150,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
       },
       {
         "id" : "Extension.extension:matchedReference",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Extension.extension",
         "sliceName" : "matchedReference",
         "short" : "Condition matched during molecular comparison",
@@ -146,8 +202,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition"
             ]
           }
         ]

@@ -16,7 +16,7 @@ TNM Venous Invasion Categories Value Set
 
  **References** 
 
-* [TNM Venous Invasion Category](StructureDefinition-onconova-venous-invasion-category.md)
+* [TNM Venous Invasion Category Profile](StructureDefinition-onconova-tnm-venous-invasion-category.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 4 concepts
   "name" : "TNMVenousInvasionCategories",
   "title" : "TNM Venous Invasion Categories Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

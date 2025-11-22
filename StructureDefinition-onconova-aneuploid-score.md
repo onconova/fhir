@@ -14,6 +14,8 @@
  
 A profile representing aneuploid score for a cancer patient. 
 This profile extends the GenomicsReporting IG[GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base)to include specific constraints and extensions relevant to Onconova. 
+**Conformance:** 
+Observation resources representing an aneuploid score obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 **Usages:**
 
@@ -43,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-aneuploid-s
   "name" : "OnconovaAneuploidScore",
   "title" : "Aneuploid Score Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -56,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-aneuploid-s
       ]
     }
   ],
-  "description" : "A profile representing aneuploid score for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.",
+  "description" : "A profile representing aneuploid score for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing an aneuploid score obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -93,7 +95,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-aneuploid-s
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base|2.0.0",
+  "baseDefinition" : "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -106,28 +108,29 @@ Other representations of profile: [CSV](StructureDefinition-onconova-aneuploid-s
             "severity" : "error",
             "human" : "The subject element is required and must be provided.",
             "expression" : "subject.exists() and subject.resolve().is(Patient)",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-aneuploid-score|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-aneuploid-score"
           },
           {
             "key" : "o-sig-req-2",
             "severity" : "error",
             "human" : "The effectiveDateTime element is required and must be provided.",
             "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-aneuploid-score|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-aneuploid-score"
           },
           {
             "key" : "o-sig-req-3",
             "severity" : "error",
             "human" : "The valueQuantity element is required and must be provided.",
             "expression" : "valueQuantity.exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-aneuploid-score|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-aneuploid-score"
           }
         ]
       },
       {
         "id" : "Observation.status",
         "path" : "Observation.status",
-        "patternCode" : "final"
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       },
       {
         "id" : "Observation.code",
@@ -144,34 +147,148 @@ Other representations of profile: [CSV](StructureDefinition-onconova-aneuploid-s
       },
       {
         "id" : "Observation.subject",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.subject",
+        "short" : "The cancer patient associated with this signature",
+        "min" : 1,
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
             ]
           }
-        ]
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.focus",
+        "path" : "Observation.focus",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.encounter",
+        "path" : "Observation.encounter",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       },
       {
         "id" : "Observation.effective[x]",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.effective[x]",
+        "min" : 1,
         "type" : [
           {
             "code" : "dateTime"
           }
-        ]
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.issued",
+        "path" : "Observation.issued",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.performer",
+        "path" : "Observation.performer",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       },
       {
         "id" : "Observation.value[x]",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.value[x]",
         "min" : 1,
         "type" : [
           {
             "code" : "Quantity"
           }
-        ]
+        ],
+        "mustSupport" : true
       },
       {
         "id" : "Observation.value[x].system",
@@ -186,6 +303,42 @@ Other representations of profile: [CSV](StructureDefinition-onconova-aneuploid-s
       {
         "id" : "Observation.interpretation",
         "path" : "Observation.interpretation",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.bodySite",
+        "path" : "Observation.bodySite",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.specimen",
+        "path" : "Observation.specimen",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.device",
+        "path" : "Observation.device",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.referenceRange",
+        "path" : "Observation.referenceRange",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.hasMember",
+        "path" : "Observation.hasMember",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.component",
+        "path" : "Observation.component",
         "short" : "Not used in this profile",
         "definition" : "Not used in this profile"
       }

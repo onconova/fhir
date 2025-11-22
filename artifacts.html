@@ -144,19 +144,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Behavior: Capability Statements</a>
+         <a href="#1">Requirements: Actor Definitions</a>
       </li>
       <li>
-         <a href="#2">Structures: Resource Profiles</a>
+         <a href="#2">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#3">Structures: Extension Definitions</a>
+         <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Terminology: Value Sets</a>
+         <a href="#4">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#5">Terminology: Code Systems</a>
+         <a href="#5">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Code Systems</a>
       </li>
    </ul>
 </div>
@@ -165,6 +168,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Requirements: Actor Definitions </h3>
+    <p>The following artifacts define the types of individuals and/or systems that will interact as part of the use cases covered by this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-onconova-consumer.html"
+                  title="ActorDefinition/onconova-consumer">Consumer (Onconova)</a>
+            </td>
+            <td>
+<p>An actor representing a data consumer that interacts with the Onconova FHIR REST server to retrieve and read patient case data.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-onconova-creator.html"
+                  title="ActorDefinition/onconova-creator">Creator (Onconova)</a>
+            </td>
+            <td>
+<p>An actor representing a data creator that interacts with the Onconova FHIR REST server to create and update patient case data.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
    <h3>Behavior: Capability Statements </h3>
     <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
 <table class="grid">
@@ -181,7 +210,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -196,6 +225,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing an adverse event experienced by a cancer patient as a result of an antineoplastic treatment, structured according to the Common Terminology Criteria for Adverse Events (CTCAE). This resource is used to capture and standardize the documentation of adverse events occurring during cancer care, including the type of event, its CTCAE grade, and any mitigation actions taken.</p>
 
 <p>The profile constrains the base FHIR <code class="language-plaintext highlighter-rouge">AdverseEvent</code> resource to ensure consistent use of CTCAE codes and grades, and supports linkage to related treatments such as medications, radiotherapy, or surgical procedures documented in Onconova. The profile also provides extensions for recording mitigation strategies, supporting detailed tracking and management of adverse events in cancer patients.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>AdverseEvent resources representing an adverse event caused by a cancer therapy in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -207,17 +240,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing aneuploid score for a cancer patient.</p>
 
 <p>This profile extends the GenomicsReporting IG <a href="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base">GenomicsBase profile</a> to include specific constraints and extensions relevant to Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing an aneuploid score obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-onconova-cancer-family-member-history.html"
-                  title="StructureDefinition/onconova-cancer-family-member-history">Cancer Family Member History</a>
+                  title="StructureDefinition/onconova-cancer-family-member-history">Cancer Family Member History Profile</a>
             </td>
             <td>
-<p>A profile recording of a family member's history of cancer.</p>
+<p>A profile recording of a patient's family member's history of cancer.</p>
 
 <p>This profile is based on the core FHIR <code class="language-plaintext highlighter-rouge">FamilyMemberHistory</code> resource rather than the mCODE  <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-history-of-metastatic-cancer">HistoryOfMetastaticCancer profile</a> to allow for a broader range of cancer history documentation (not limited to metastatic cancer). It includes constraints to ensure that at least one cancer condition is recorded, along with optional extensions for cancer morphology and topography.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>FamilyMemberHistory resources representing a history of (primary or metastatic) cancer in a patient's family member in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -226,9 +267,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/onconova-cancer-patient">Cancer Patient Profile</a>
             </td>
             <td>
-<p>A profile representing a cancer patient with specific extensions and constraints for the Onconova use case.</p>
+<p>A profile representing a patient with or is receiving medical treatment for a malignant growth or tumor.</p>
 
-<p>It constrains the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient">CancerPatient profile</a> to ensure anonymity of the patient information and to introduce additional Onconova-specific case information. Any <code class="language-plaintext highlighter-rouge">Patient</code> resource complying with the US Core <code class="language-plaintext highlighter-rouge">Patient</code> or mCODE <code class="language-plaintext highlighter-rouge">CancerPatient</code> profiles will also comply with this profile.</p>
+<p>It constrains the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient">CancerPatient profile</a> with specific extensions and constraints for the Onconova use case. Any <code class="language-plaintext highlighter-rouge">Patient</code> resource complying with the US Core <code class="language-plaintext highlighter-rouge">Patient</code> or mCODE <code class="language-plaintext highlighter-rouge">CancerPatient</code> profiles will also comply with this profile if the <code class="language-plaintext highlighter-rouge">Must-Support</code> extensions are accounted for.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Patient resources representing Cancer Patients in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -240,17 +285,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing a risk assessment performed for a cancer patient, including the method used, the resulting risk level, and an optional numerical score.</p>
 
 <p>It constraints the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-risk-assessment">CancerRiskAssessment profile</a> and expands the valuesets for cancer risk assessment methods and values.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a cancer-related risk assessment in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-onconova-cancer-stage.html"
-                  title="StructureDefinition/onconova-cancer-stage">Cancer Stage</a>
+                  title="StructureDefinition/onconova-cancer-stage">Cancer Stage Profile</a>
             </td>
             <td>
 <p>A profile representing the cancer stage for a cancer patient.</p>
 
 <p>It constrains the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-stage">CancerStage profile</a> to include specific constraints and extensions relevant to Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a cancer staging in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -262,6 +315,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing comorbidities for a cancer patient, i.e. other health conditions that exist alongside the primary cancer diagnosis. Supports existing comorbidity panels such as the Charlson Comorbidity Index (CCI) and Elixhauser Comorbidity Index (ECI) with comorbidity indexes.</p>
 
 <p>The profile constrains the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-comorbidities">Comorbidities profile</a> to ensure consistent use of ICD-10 codes for documenting comorbid conditions, and to link the comorbidity information to the Onconova primary cancer condition profile.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a generic or panel comorbidities assessment in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -270,9 +327,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/onconova-ecog-performance-status">ECOG Performance Status Profile</a>
             </td>
             <td>
-<p>A profile representing ECOG performance status score for a cancer patient.</p>
+<p>A profile representing the (Eastern Cooperative Oncology Group) ECOG performance status score for a cancer patient.</p>
 
 <p>Adds minimal constraints to the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-ecog-performance-status"><code class="language-plaintext highlighter-rouge">ECOGPerformanceStatus</code> profile</a> to account for Onconova specifics.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing an ECOG performance status score in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -284,6 +345,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing a genomic variant identified for a cancer patient.</p>
 
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-genomic-variant">GenomicVariant profile</a> (which in turn profiles the Genomics Reporting <a href="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant">Variant profile</a>) to include specific constraints and extensions relevant to Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a genomic variant in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -295,6 +360,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing homologous recombination deficiency for a cancer patient.</p>
 
 <p>This profile extends the GenomicsReporting IG <a href="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base">GenomicsBase profile</a> to include specific constraints and extensions relevant to Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a homologous recombination deficiency obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -306,17 +375,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing the imaging-based disease status of a cancer patient.</p>
 
 <p>It constrains the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-disease-status">CancerDiseaseStatus profile</a> to restrict it to imaging-based monitoring evaluated based on RECIST criteria.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a disease status obtained through imaging techniques in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-Karnofsky-performance-status.html"
-                  title="StructureDefinition/onconova-Karnofsky-performance-status">Karnofsky Performance Status Profile</a>
+               <a href="StructureDefinition-onconova-karnofsky-performance-status.html"
+                  title="StructureDefinition/onconova-karnofsky-performance-status">Karnofsky Performance Status Profile</a>
             </td>
             <td>
 <p>A profile representing the Karnofsky performance status score for a cancer patient.</p>
 
-<p>Adds minimal constraints to the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-karnofsky-performance-status">KarnofskyPerformanceStatus profile</a> to account for Onconova specifics.</p>
+<p>Adds minimal constraints to the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-karnofsky-performance-status"><code class="language-plaintext highlighter-rouge">KarnofskyPerformanceStatus</code> profile</a> to account for Onconova specifics.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a Karnofsky performance status score in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -328,6 +405,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing a (reported) observation on certain lifestyle characteristics of a cancer patient (e.g. smoking, drinking, and sleeping habits, environmental exposures, etc.).</p>
 
 <p>It directly profiles the base FHIR <code class="language-plaintext highlighter-rouge">Observation</code> resource as this resource is not represented in mCODE, to add relevant observation components for the different lifestyle characteristics.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a summary of a patient's lifestyle in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -339,6 +420,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing loss of heterozygosity for a cancer patient.</p>
 
 <p>This profile extends the GenomicsReporting IG <a href="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base">GenomicsBase profile</a> to include specific constraints and extensions relevant to Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a loss of heterozygosity obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -350,6 +435,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing a medication administered to a cancer patient during a systemic therapy (e.g., chemotherapy, immunotherapy), including details about the medication and dosage.</p>
 
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration">CancerRelatedMedicationAdministration profile</a> to introduce additional information about the systemic therapy (e.g. number of cycles, therapeutic role, etc.) and to introduce references to other medication administration given simultaneously to represent combination therapies.</p>
+
+<p>Since Onocnova treats systemic therapies involving multiple antineoplastic agents administered together or in sequence as part of a single treatment plan, this profile allows for capturing such relationships between medication administrations using the <code class="language-plaintext highlighter-rouge">MedicationAdministration.extension[combinedWith]</code> extension slices.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>MedicationAdministration resources representing a systemic therapy in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -361,15 +452,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing microsatellite instability for a cancer patient.</p>
 
 <p>This profile extends the GenomicsReporting IG <a href="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/msi">MicrosatelliteInstability profile</a> to include specific constraints and extensions relevant to Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a microsatellite instability obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-onconova-molecular-tumor-board-review.html"
-                  title="StructureDefinition/onconova-molecular-tumor-board-review">Molecular Tumor Board Review</a>
+                  title="StructureDefinition/onconova-molecular-tumor-board-review">Molecular Tumor Board Review Profile</a>
             </td>
             <td>
 <p>A profile representing a specialized molecular tumor board review for a cancer patient. This profile extends the <code class="language-plaintext highlighter-rouge">OnconovaTumorBoardReview</code> profile to specify that the review is focused on molecular diagnostics and recommendations.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Procedure resources representing a molecular tumor board review in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -382,35 +481,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>It constrains the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition">PrimaryCancerCondition profile</a> to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.</p>
 
-<p>This profile can be used to represent the Onconova neoplastic entities of relationship <code class="language-plaintext highlighter-rouge">primary</code>, <code class="language-plaintext highlighter-rouge">local_recurrence</code>, and <code class="language-plaintext highlighter-rouge">regional_recurrence</code>. Local and regional recurrences are indicated using extensions to denote that the condition is a recurrence of a previous condition, and to specify the type of recurrence (local or regional). For example, a local recurrence would be represented as a PrimaryCancerCondition with:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-    clinicalStatus: {
-        coding: [
-            {
-                system: "http://snomed.info/sct",
-                code: "recurrence",
-                display: "Recurrence"
-            }
-        ],
-    },
-    _clinicalStatus {
-        extension: [
-            {
-                url: "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recurrence-type",
-                valueCodeableConcept: {
-                    coding: [
-                        {
-                            system: "http://snomed.info/sct",
-                            code: "255470001",
-                            display: "Local (qualifier value)"
-                        }
-                    ]
-                }
-            }
-        ]
-    },
-}
-</code></pre></div></div>
+<p>Local and regional recurrences are indicated using the <code class="language-plaintext highlighter-rouge">clinicalStatus</code> and <code class="language-plaintext highlighter-rouge">clinicalStatus.extension</code> to denote that the condition is a recurrence of a previous condition, and to specify the type of recurrence (local or regional).</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Condition resources representing a primary or recurrent neoplastic entity in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -422,6 +497,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing a summary of a course of radiotherapy delivered to a patient. It records the treatment intent, termination reason, modalities, techniques, number of sessions, and doses delivered to one or more body volumes. Whether the course has been fully delivered or stopped is indicated in the status element.</p>
 
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary">RadiotherapyCourseSummary profile</a> to include specific constraints and requirements for Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Procedure resources representing a radiotherapy in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -433,6 +512,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile recording the a secondary neoplasm, including location and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms).</p>
 
 <p>It constrains the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition">SecondaryCancerCCondition profile</a> to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Condition resources representing a metastatic neoplastic entity in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -444,94 +527,130 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing a surgical procedure performed on a cancer patient, including details about the procedure, its intent, and relevant dates.</p>
 
 <p>It extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure">CancerRelatedSurgicalProcedure profile</a> to include specific constraints and requirements for Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Procedure resources representing a surgery in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-onconova-tnm-distant-metastases-category.html"
-                  title="StructureDefinition/onconova-tnm-distant-metastases-category">TNM Distant Metastases Category</a>
+                  title="StructureDefinition/onconova-tnm-distant-metastases-category">TNM Distant Metastases Category Profile</a>
             </td>
             <td>
 <p>A profile representing the TNM distant metastases category for a cancer patient.</p>
 
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category">TNMDistantMetastasesCategory profile</a> to include specific constraints and extensions relevant to Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a TNM staging distant metastases parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-onconova-tnm-grade-category.html"
-                  title="StructureDefinition/onconova-tnm-grade-category">TNM Grade Category</a>
+                  title="StructureDefinition/onconova-tnm-grade-category">TNM Grade Category Profile</a>
             </td>
             <td>
 <p>A profile representing the TNM grade category for a cancer patient.</p>
 
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category">TNMCategory profile</a> to specify the new TNM category.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a TNM staging grade category parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-onconova-tnm-lymphatic-invasion-category.html"
-                  title="StructureDefinition/onconova-tnm-lymphatic-invasion-category">TNM Lymphatic Invasion Category</a>
+                  title="StructureDefinition/onconova-tnm-lymphatic-invasion-category">TNM Lymphatic Invasion Category Profile</a>
             </td>
             <td>
 <p>A profile representing the TNM lymphatic invasion category for a cancer patient.</p>
 
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category">TNMCategory profile</a> to specify the new TNM category.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a TNM staging lymphatic invasion parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-onconova-tnm-perineural-invasion-category.html"
-                  title="StructureDefinition/onconova-tnm-perineural-invasion-category">TNM Perineural Invasion Category</a>
+                  title="StructureDefinition/onconova-tnm-perineural-invasion-category">TNM Perineural Invasion Category Profile</a>
             </td>
             <td>
 <p>A profile representing the TNM perineural invasion category for a cancer patient.</p>
 
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category">TNMCategory profile</a> to specify the new TNM category.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a TNM staging perineural invasion parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-onconova-tnm-primary-tumor-category.html"
-                  title="StructureDefinition/onconova-tnm-primary-tumor-category">TNM Primary Tumor Category</a>
+                  title="StructureDefinition/onconova-tnm-primary-tumor-category">TNM Primary Tumor Category Profile</a>
             </td>
             <td>
 <p>A profile representing the TNM primary tumor category for a cancer patient.</p>
 
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-primary-tumor-category">TNMPrimaryTumorCategory profile</a> to include specific constraints and extensions relevant to Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a TNM staging primary tumor parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-onconova-tnm-regional-nodes-category.html"
-                  title="StructureDefinition/onconova-tnm-regional-nodes-category">TNM Regional Nodes Category</a>
+                  title="StructureDefinition/onconova-tnm-regional-nodes-category">TNM Regional Nodes Category Profile</a>
             </td>
             <td>
 <p>A profile representing the TNM regional nodes category for a cancer patient.</p>
 
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-regional-nodes-category">TNMRegionalNodesCategory profile</a> to include specific constraints and extensions relevant to Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a TNM staging regional nodes parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-onconova-tnm-residual-tumor-category.html"
-                  title="StructureDefinition/onconova-tnm-residual-tumor-category">TNM Residual Tumor Category</a>
+                  title="StructureDefinition/onconova-tnm-residual-tumor-category">TNM Residual Tumor Category Profile</a>
             </td>
             <td>
 <p>A profile representing the TNM residual tumor category for a cancer patient.</p>
 
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category">TNMCategory profile</a> to specify the new TNM category.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a TNM staging residual tumor parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-serous-tumor-marker-level-category.html"
-                  title="StructureDefinition/onconova-serous-tumor-marker-level-category">TNM Serum Tumor Marker Level Category</a>
+               <a href="StructureDefinition-onconova-tnm-serum-tumor-marker-level-category.html"
+                  title="StructureDefinition/onconova-tnm-serum-tumor-marker-level-category">TNM Serum Tumor Marker Level Category Profile</a>
             </td>
             <td>
-<p>A profile representing the serum tumor marker level category for a cancer patient.</p>
+<p>A profile representing the TNM serum tumor marker level category for a cancer patient.</p>
 
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category">TNMCategory profile</a> to specify the new TNM category.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a TNM staging serum tumor marker level parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -543,17 +662,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing the TNM stage group for a cancer patient.</p>
 
 <p>It extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-stage-group">TNMStageGroup profile</a> to expand the TNM subcategories and include specific constraints and extensions relevant to Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a cancer TNM staging in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-venous-invasion-category.html"
-                  title="StructureDefinition/onconova-venous-invasion-category">TNM Venous Invasion Category</a>
+               <a href="StructureDefinition-onconova-tnm-venous-invasion-category.html"
+                  title="StructureDefinition/onconova-tnm-venous-invasion-category">TNM Venous Invasion Category Profile</a>
             </td>
             <td>
-<p>A profile representing the venous invasion category for a cancer patient.</p>
+<p>A profile representing the TNM venous invasion category for a cancer patient.</p>
 
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category">TNMCategory profile</a> to specify the new TNM category.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a TNM staging venous invasion parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -565,17 +692,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates.</p>
 
 <p>Due to its abstract conceptual nature, it is based on a FHIR <code class="language-plaintext highlighter-rouge">List</code> to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing Procedure and MedicationAdministration resources and are not created manually.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>List resources representing a therapy line in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-onconova-tumor-board-review.html"
-                  title="StructureDefinition/onconova-tumor-board-review">Tumor Board Review</a>
+                  title="StructureDefinition/onconova-tumor-board-review">Tumor Board Review Profile</a>
             </td>
             <td>
 <p>A profile representing a tumor board review for a cancer patient.</p>
 
 <p>This profile extends the base FHIR <code class="language-plaintext highlighter-rouge">Procedure</code> resource since there is no equivalent mCODE profile that covers the use case.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Procedure resources representing a tumor board review in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -589,6 +724,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tumor-marker-test">TumorMarkerTest profile</a> to include specific constraints and requirements for Onconova.</p>
 
 <p>If relied on the same use context as mCODE, namely for substances found in tissue or blood or other body fluids that may be a sign of cancer or certain benign (non-cancer) conditions measured at the levels of the protein and substance post-RNA protein synthesis (not at genomic level).</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a tumor marker in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -600,6 +739,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing tumor mutational burden for a cancer patient.</p>
 
 <p>This profile extends the GenomicsReporting IG <a href="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/tmb">TumorMutationalBurden profile</a> to include specific constraints and extensions relevant to Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a tumor mutational burden obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
          <tr>
@@ -611,25 +754,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A profile representing tumor neoantigen burden for a cancer patient.</p>
 
 <p>This profile extends the GenomicsReporting IG <a href="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base">GenomicsBase profile</a> to include specific constraints and extensions relevant to Onconova.</p>
+
+<p><strong>Conformance:</strong></p>
+
+<p>Observation resources representing a tumor neoantigen burden obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code class="language-plaintext highlighter-rouge">meta.profile</code> accordingly.</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-adjunctive-role.html"
-                  title="StructureDefinition/onconova-ext-adjunctive-role">Adjunctive Role</a>
-            </td>
-            <td>
-<p>Indicates the role of this medication administration in the context of the overall treatment plan.</p>
-</td>
-         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-onconova-ext-adverse-event-mitigation.html"
@@ -641,26 +779,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-age.html"
-                  title="StructureDefinition/onconova-ext-age">Age</a>
-            </td>
-            <td>
-<p>The approximate age of the patient.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-age-at-diagnosis.html"
-                  title="StructureDefinition/onconova-ext-age-at-diagnosis">Age at Diagnosis</a>
-            </td>
-            <td>
-<p>The approximate age of the patient at the time of diagnosis of the disease.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-ctc-grade.html"
-                  title="StructureDefinition/onconova-ext-ctc-grade">CTCAE Grade</a>
+               <a href="StructureDefinition-onconova-ext-adverse-event-ctc-grade.html"
+                  title="StructureDefinition/onconova-ext-adverse-event-ctc-grade">CTCAE Grade</a>
             </td>
             <td>
 <p>The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE).</p>
@@ -668,26 +788,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-cancer-morphology.html"
-                  title="StructureDefinition/onconova-ext-cancer-morphology">Cancer Morphology</a>
+               <a href="StructureDefinition-onconova-ext-cancer-patient-age.html"
+                  title="StructureDefinition/onconova-ext-cancer-patient-age">Cancer Patient Age</a>
             </td>
             <td>
-<p>The morphology of the cancer, represented by a ICD-O-3 code.</p>
+<p>The approximate age of the patient.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-cancer-topography.html"
-                  title="StructureDefinition/onconova-ext-cancer-topography">Cancer Topography</a>
+               <a href="StructureDefinition-onconova-ext-cancer-patient-age-at-diagnosis.html"
+                  title="StructureDefinition/onconova-ext-cancer-patient-age-at-diagnosis">Cancer Patient Age at Diagnosis</a>
             </td>
             <td>
-<p>The topography of the cancer, represented by a ICD-O-3 code.</p>
+<p>The approximate age of the patient at the time of diagnosis of the disease.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-cause-of-death.html"
-                  title="StructureDefinition/onconova-ext-cause-of-death">Cause of Death</a>
+               <a href="StructureDefinition-onconova-ext-cancer-patient-cause-of-death.html"
+                  title="StructureDefinition/onconova-ext-cancer-patient-cause-of-death">Cancer Patient Cause of Death</a>
             </td>
             <td>
 <p>The cause of death for the patient.</p>
@@ -695,44 +815,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-combined-with.html"
-                  title="StructureDefinition/onconova-ext-combined-with">Combined With</a>
+               <a href="StructureDefinition-onconova-ext-cancer-patient-consent-status.html"
+                  title="StructureDefinition/onconova-ext-cancer-patient-consent-status">Cancer Patient Consent status</a>
             </td>
             <td>
-<p>Indicates that this medication administration was given in combination with another medication administration.</p>
+<p>The status of whether the patient has given or revoked consent for research use.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-consent-status.html"
-                  title="StructureDefinition/onconova-ext-consent-status">Consent status</a>
-            </td>
-            <td>
-<p>The status of whether the patient has given or revoked consent for reasearch use.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-contributors.html"
-                  title="StructureDefinition/onconova-ext-contributors">Contributors</a>
-            </td>
-            <td>
-<p>The individuals or organizations that contributed to the patient's care.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-cycles.html"
-                  title="StructureDefinition/onconova-ext-cycles">Cycles</a>
-            </td>
-            <td>
-<p>Indicates the total number of cycles for this medication administration.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-data-completion-rate.html"
-                  title="StructureDefinition/onconova-ext-data-completion-rate">Data Completion Rate</a>
+               <a href="StructureDefinition-onconova-ext-cancer-patient-data-completion-rate.html"
+                  title="StructureDefinition/onconova-ext-cancer-patient-data-completion-rate">Cancer Patient Data Completion Rate</a>
             </td>
             <td>
 <p>The percentage of data elements categories that have been completed for a patient.</p>
@@ -740,8 +833,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-end-of-records.html"
-                  title="StructureDefinition/onconova-ext-end-of-records">End of Records</a>
+               <a href="StructureDefinition-onconova-ext-cancer-patient-data-contributors.html"
+                  title="StructureDefinition/onconova-ext-cancer-patient-data-contributors">Cancer Patient Data Contributors</a>
+            </td>
+            <td>
+<p>The individuals or organizations that contributed to the patient's case data collection.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onconova-ext-cancer-patient-end-of-records.html"
+                  title="StructureDefinition/onconova-ext-cancer-patient-end-of-records">Cancer Patient End of Records</a>
             </td>
             <td>
 <p>Indicates the last known record date of a patient.</p>
@@ -749,8 +851,44 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-genomic-assessment-date.html"
-                  title="StructureDefinition/onconova-ext-genomic-assessment-date">Genomic Assessment Date</a>
+               <a href="StructureDefinition-onconova-ext-cancer-patient-overall-survival.html"
+                  title="StructureDefinition/onconova-ext-cancer-patient-overall-survival">Cancer Patient Overall Survival</a>
+            </td>
+            <td>
+<p>The duration of time from either the date of diagnosis or the start of treatment for a disease, such as cancer, that patients diagnosed with the disease are still alive. In a clinical trial, measuring the overall survival is one way to see how well a new treatment works.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onconova-ext-cancer-patient-vital-status.html"
+                  title="StructureDefinition/onconova-ext-cancer-patient-vital-status">Cancer Patient Vital status</a>
+            </td>
+            <td>
+<p>The status of whether the patient is alive or deceased or unknown.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onconova-ext-family-history-member-cancer-morphology.html"
+                  title="StructureDefinition/onconova-ext-family-history-member-cancer-morphology">Family Member History Cancer Morphology</a>
+            </td>
+            <td>
+<p>The morphology of a historical cancer associated to a family member of a patient, represented by an ICD-O-3 code.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onconova-ext-family-history-member-cancer-topography.html"
+                  title="StructureDefinition/onconova-ext-family-history-member-cancer-topography">Family Member History Cancer Topography</a>
+            </td>
+            <td>
+<p>The topography of a historical cancer associated to a family member of a patient, represented by an ICD-O-3 code.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onconova-ext-genomic-variant-assessment-date.html"
+                  title="StructureDefinition/onconova-ext-genomic-variant-assessment-date">Genomic Variant Assessment Date</a>
             </td>
             <td>
 <p>Date at which the genomic variant was assessed and/or reported.</p>
@@ -758,8 +896,44 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-is-primary-therapy.html"
-                  title="StructureDefinition/onconova-ext-is-primary-therapy">Is Primary Therapy</a>
+               <a href="StructureDefinition-onconova-ext-histological-differentiation.html"
+                  title="StructureDefinition/onconova-ext-histological-differentiation">Histological Differentiation</a>
+            </td>
+            <td>
+<p>The histological differentiation of the tumor.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onconova-ext-medication-administration-adjunctive-role.html"
+                  title="StructureDefinition/onconova-ext-medication-administration-adjunctive-role">Medication Administration Adjunctive Role</a>
+            </td>
+            <td>
+<p>Indicates the role of this medication administration in the context of the overall treatment plan.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onconova-ext-medication-administration-combined-with.html"
+                  title="StructureDefinition/onconova-ext-medication-administration-combined-with">Medication Administration Combined With</a>
+            </td>
+            <td>
+<p>Indicates which medication administrations were given in combination with the current medication administration.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onconova-ext-medication-administration-cycles.html"
+                  title="StructureDefinition/onconova-ext-medication-administration-cycles">Medication Administration Cycles</a>
+            </td>
+            <td>
+<p>Indicates the total number of cycles for this medication administration.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onconova-ext-medication-administration-is-primary-therapy.html"
+                  title="StructureDefinition/onconova-ext-medication-administration-is-primary-therapy">Medication Administration Is Primary Therapy</a>
             </td>
             <td>
 <p>Indicates whether this medication administration is the primary therapy within a therapy line.</p>
@@ -794,26 +968,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-overall-survival.html"
-                  title="StructureDefinition/onconova-ext-overall-survival">Overall Survival</a>
-            </td>
-            <td>
-<p>The duration of time from either the date of diagnosis or the start of treatment for a disease, such as cancer, that patients diagnosed with the disease are still alive. In a clinical trial, measuring the overall survival is one way to see how well a new treatment works.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-recist-is-interpreted.html"
-                  title="StructureDefinition/onconova-ext-recist-is-interpreted">Recist Is Interpreted</a>
-            </td>
-            <td>
-<p>Indicates that whether the RECIST was interpreted from a radiology report rather than extracted.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-recurrence-of.html"
-                  title="StructureDefinition/onconova-ext-recurrence-of">Recurrence Of</a>
+               <a href="StructureDefinition-onconova-ext-primary-cancer-recurrence-of.html"
+                  title="StructureDefinition/onconova-ext-primary-cancer-recurrence-of">Primary Cancer Recurrence Of</a>
             </td>
             <td>
 <p>Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition.</p>
@@ -821,17 +977,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-differentiation.html"
-                  title="StructureDefinition/onconova-ext-differentiation">Recurrence Type</a>
-            </td>
-            <td>
-<p>THe histological differentiation of the tumor.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-recurrence-type.html"
-                  title="StructureDefinition/onconova-ext-recurrence-type">Recurrence Type</a>
+               <a href="StructureDefinition-onconova-ext-primary-cancer-recurrence-type.html"
+                  title="StructureDefinition/onconova-ext-primary-cancer-recurrence-type">Primary Cancer Recurrence Type</a>
             </td>
             <td>
 <p>Indicates the type of recurrence for the condition (local or regional).</p>
@@ -893,11 +1040,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ext-therapy-line-reference.html"
-                  title="StructureDefinition/ext-therapy-line-reference">Therapy Line Reference</a>
+               <a href="StructureDefinition-onconova-ext-therapy-line-reference.html"
+                  title="StructureDefinition/onconova-ext-therapy-line-reference">Therapy Line Reference</a>
             </td>
             <td>
 <p>A reference to the therapy line associated with this treatment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-onconova-ext-treatment-response-recist-is-interpreted.html"
+                  title="StructureDefinition/onconova-ext-treatment-response-recist-is-interpreted">Treatment Response RECIST Is Interpreted</a>
+            </td>
+            <td>
+<p>Indicates that whether the RECIST was interpreted from a radiology report rather than extracted.</p>
 </td>
          </tr>
          <tr>
@@ -918,27 +1074,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>The specific analyte or substance being measured as a tumor marker, such as PSA, CA-125, or CEA.</p>
 </td>
          </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-unknown-entry.html"
-                  title="StructureDefinition/onconova-ext-unknown-entry">Unknown Entry</a>
-            </td>
-            <td>
-<p>Value is not collected and cannot be provided by Onconova.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-onconova-ext-vital-status.html"
-                  title="StructureDefinition/onconova-ext-vital-status">Vital status</a>
-            </td>
-            <td>
-<p>The status of whether the patient is alive or deceased or unknown.</p>
-</td>
-         </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -947,7 +1085,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-adjunctive-therapy-roles.html"
-                  title="ValueSet/onconova-vs-adjunctive-therapy-roles">Adjunctive Therapy Roles</a>
+                  title="ValueSet/onconova-vs-adjunctive-therapy-roles">Adjunctive Therapy Roles Value Set</a>
             </td>
             <td>
 <p>Codes representing roles for adjunctive therapy in oncology.</p>
@@ -955,8 +1093,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-onconova-vs-adverse-event-mitigation-categories.html"
+                  title="ValueSet/onconova-vs-adverse-event-mitigation-categories">Adverse Event Mitigation Categories Value Set</a>
+            </td>
+            <td>
+<p>Categories of actions taken to mitigate or manage adverse events in oncology.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-adverse-event-mitigation-drugs.html"
-                  title="ValueSet/onconova-vs-adverse-event-mitigation-drugs">Adverse Event Mitigation - Drugs</a>
+                  title="ValueSet/onconova-vs-adverse-event-mitigation-drugs">Adverse Event Mitigation Drugs Value Set</a>
             </td>
             <td>
 <p>Drugs or medication categories used in the mitigation process of an adverse event.</p>
@@ -965,7 +1112,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-adverse-event-mitigation-managements.html"
-                  title="ValueSet/onconova-vs-adverse-event-mitigation-managements">Adverse Event Mitigation - Management</a>
+                  title="ValueSet/onconova-vs-adverse-event-mitigation-managements">Adverse Event Mitigation Managements Value Set</a>
             </td>
             <td>
 <p>Classification of actions to mitigate adverse events affecting a patient's health.</p>
@@ -974,7 +1121,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-adverse-event-mitigation-procedures.html"
-                  title="ValueSet/onconova-vs-adverse-event-mitigation-procedures">Adverse Event Mitigation - Procedures</a>
+                  title="ValueSet/onconova-vs-adverse-event-mitigation-procedures">Adverse Event Mitigation Procedures Value Set</a>
             </td>
             <td>
 <p>Procedures undertaken to mitigate the impact of an adverse event on a patient's health.</p>
@@ -983,7 +1130,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-adverse-event-mitigation-treatment-adjustments.html"
-                  title="ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments">Adverse Event Mitigation - Treatment Adjustment</a>
+                  title="ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments">Adverse Event Mitigation Treatment Adjustments Value Set</a>
             </td>
             <td>
 <p>Adjustments made to a patient's treatment plan in response to an adverse event.</p>
@@ -991,17 +1138,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-onconova-vs-adverse-event-mitigation-categories.html"
-                  title="ValueSet/onconova-vs-adverse-event-mitigation-categories">Adverse Event Mitigation Categories</a>
-            </td>
-            <td>
-<p>Categories of actions taken to mitigate or manage adverse events in oncology.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-onconova-vs-amino-acid-change-type.html"
-                  title="ValueSet/onconova-vs-amino-acid-change-type">Amino Acid Change Type Value Set</a>
+               <a href="ValueSet-onconova-vs-amino-acid-change-types.html"
+                  title="ValueSet/onconova-vs-amino-acid-change-types">Amino Acid Change Type Value Set</a>
             </td>
             <td>
 <p>Amino acid change types due to a genomic variant. It constraints and expands the original <a href="https://loinc.org/LL380-7/">LOINC Answer List LL380-7</a> to enforce Onconova-compatible codes</p>
@@ -1010,34 +1148,34 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-antineoplastic-agents.html"
-                  title="ValueSet/onconova-vs-antineoplastic-agents">Antineoplastic Agents</a>
+                  title="ValueSet/onconova-vs-antineoplastic-agents">Antineoplastic Agents Value Set</a>
             </td>
             <td>
-<p>A value set of antineoplastic agents.</p>
+<p>Drugs and biological agents used in the treatment of neoplastic diseases.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-ctc-adverse-events.html"
-                  title="ValueSet/onconova-vs-ctc-adverse-events">CTC Adverse Events</a>
+                  title="ValueSet/onconova-vs-ctc-adverse-events">CTC Adverse Events Value Set</a>
             </td>
             <td>
-<p>Common Terminology Criteria for Adverse Events (CTCAE) is a standard classification and severity grading scale for adverse events in clinical trials and oncology practice.</p>
+<p>Adverse events classified according to the Common Terminology Criteria for Adverse Events (CTCAE)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-cancer-imaging-methods.html"
-                  title="ValueSet/onconova-vs-cancer-imaging-methods">Cancer Imaging Methods</a>
+                  title="ValueSet/onconova-vs-cancer-imaging-methods">Cancer Imaging Methods Value Set</a>
             </td>
             <td>
-<p>Codes representing various imaging methods used in cancer diagnosis and monitoring.</p>
+<p>Imaging methods used in cancer diagnosis and monitoring.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-cancer-risk-assessment-methods.html"
-                  title="ValueSet/onconova-vs-cancer-risk-assessment-methods">Cancer Risk Assessment Methods</a>
+                  title="ValueSet/onconova-vs-cancer-risk-assessment-methods">Cancer Risk Assessment Methods Value Set</a>
             </td>
             <td>
 <p>A value set containing codes for various cancer risk assessment methods.</p>
@@ -1054,17 +1192,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-onconova-vs-clinical-relevance.html"
-                  title="ValueSet/onconova-vs-clinical-relevance">Clinical Relevance Value Set</a>
+               <a href="ValueSet-onconova-vs-clinical-relevances.html"
+                  title="ValueSet/onconova-vs-clinical-relevances">Clinical Relevance Value Set</a>
             </td>
             <td>
-<p>Clinical relevance of a genomic variant</p>
+<p>Categorizations of the clinical relevance of a genomic variant</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-onconova-vs-dna-change-type.html"
-                  title="ValueSet/onconova-vs-dna-change-type">Coding DNA Change Type Value Set</a>
+               <a href="ValueSet-onconova-vs-dna-change-types.html"
+                  title="ValueSet/onconova-vs-dna-change-types">Coding DNA Change Types Value Set</a>
             </td>
             <td>
 <p>Coding DNA change types due to a genomic variant. It constraints and expands the original <a href="https://loinc.org/LL380-7/">LOINC Answer List LL380-7</a> to enforce Onconova-compatible codes</p>
@@ -1073,7 +1211,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-comorbidity-panels.html"
-                  title="ValueSet/onconova-vs-comorbidity-panels">Comorbidity Panels</a>
+                  title="ValueSet/onconova-vs-comorbidity-panels">Comorbidity Panels Value Set</a>
             </td>
             <td>
 <p>A collection of comorbidity panels relevant to cancer patients.</p>
@@ -1085,22 +1223,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/onconova-vs-consent-status">Consent Status Value Set</a>
             </td>
             <td>
-<p>The consent status of a patient</p>
+<p>The consent status of a patient for further use of data in research.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-expected-drug-effects.html"
-                  title="ValueSet/onconova-vs-expected-drug-effects">Expected Drug Effects</a>
+                  title="ValueSet/onconova-vs-expected-drug-effects">Expected Drug Effects Value Set</a>
             </td>
             <td>
-<p>A value set of expected drug effects.</p>
+<p>Collection of expected effects when a drug is administered.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-exposure-agents.html"
-                  title="ValueSet/onconova-vs-exposure-agents">Exposure Agents</a>
+                  title="ValueSet/onconova-vs-exposure-agents">Exposure Agents Value Set</a>
             </td>
             <td>
 <p>Agents to which a patient may have been exposed.</p>
@@ -1109,37 +1247,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-icd-10-conditions.html"
-                  title="ValueSet/onconova-vs-icd-10-conditions">ICD-10 Codes</a>
+                  title="ValueSet/onconova-vs-icd-10-conditions">ICD-10 Codes Value Set</a>
             </td>
             <td>
-<p>This value set includes sample ICD-10 codes.</p>
+<p>All possible ICD-10 codes for conditions.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-onconova-vs-icdo3-differentiation.html"
-                  title="ValueSet/onconova-vs-icdo3-differentiation">ICD-O-3 Differentiation</a>
+               <a href="ValueSet-onconova-vs-icdo3-differentiations.html"
+                  title="ValueSet/onconova-vs-icdo3-differentiations">ICD-O-3 Differentiations Value Set</a>
             </td>
             <td>
-<p>A value set of ICD-O-3 differentiation codes.</p>
+<p>The subset of ICD-O-3 concepts dedicated for describing morphology differentiations.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-onconova-vs-icdo3-morphology-behavior.html"
-                  title="ValueSet/onconova-vs-icdo3-morphology-behavior">ICD-O-3 Morphology Behavior</a>
+               <a href="ValueSet-onconova-vs-icdo3-morphology-behaviors.html"
+                  title="ValueSet/onconova-vs-icdo3-morphology-behaviors">ICD-O-3 Morphology Behavior Value Set</a>
             </td>
             <td>
-<p>A value set of ICD-O-3 morphology behavior codes.</p>
+<p>The subset of ICD-O-3 concepts dedicated for describing morphology behavior.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-onconova-vs-icdo3-topography.html"
-                  title="ValueSet/onconova-vs-icdo3-topography">ICD-O-3 Topography</a>
+               <a href="ValueSet-onconova-vs-icdo3-topographies.html"
+                  title="ValueSet/onconova-vs-icdo3-topographies">ICD-O-3 Topographies Value Set</a>
             </td>
             <td>
-<p>A value set of ICD-O-3 topography codes.</p>
+<p>The subset of ICD-O-3 concepts dedicated for describing morphology topographies.</p>
 </td>
          </tr>
          <tr>
@@ -1154,7 +1292,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-recreational-drugs.html"
-                  title="ValueSet/onconova-vs-recreational-drugs">Recreational Drugs</a>
+                  title="ValueSet/onconova-vs-recreational-drugs">Recreational Drugs Value Set</a>
             </td>
             <td>
 <p>Substances that people use to alter their mental state, often for pleasure or leisure, with effects ranging from relaxation and euphoria to hallucinations and altered perceptions.</p>
@@ -1162,8 +1300,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-onconova-vs-recurrence-type.html"
-                  title="ValueSet/onconova-vs-recurrence-type">Recurrence Type Value Set</a>
+               <a href="ValueSet-onconova-vs-recurrence-types.html"
+                  title="ValueSet/onconova-vs-recurrence-types">Recurrence Types Value Set</a>
             </td>
             <td>
 <p>A value set representing the types of cancer recurrence, specifically local and regional recurrences.</p>
@@ -1172,7 +1310,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-cancer-risk-assessment-values.html"
-                  title="ValueSet/onconova-vs-cancer-risk-assessment-values">Risk Assessment Values</a>
+                  title="ValueSet/onconova-vs-cancer-risk-assessment-values">Risk Assessment Values Value Set</a>
             </td>
             <td>
 <p>A non-exhaustive value set containing codes that result from risk assessments, i.e., the risk level of the cancer.</p>
@@ -1181,10 +1319,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-smoking-status.html"
-                  title="ValueSet/onconova-vs-smoking-status">Smoking status</a>
+                  title="ValueSet/onconova-vs-smoking-status">Smoking status Value Set</a>
             </td>
             <td>
 <p>Smoking status of a patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-onconova-vs-surgical-procedures.html"
+                  title="ValueSet/onconova-vs-surgical-procedures">Surgical Procedures Value Set</a>
+            </td>
+            <td>
+<p>Set of surgical procedures relevant to cancer treatment in Onconova.</p>
 </td>
          </tr>
          <tr>
@@ -1235,7 +1382,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-tnm-primary-tumor-categories.html"
-                  title="ValueSet/onconova-vs-tnm-primary-tumor-categories">TNM Primary Tumor Categories</a>
+                  title="ValueSet/onconova-vs-tnm-primary-tumor-categories">TNM Primary Tumor Categories Value Set</a>
             </td>
             <td>
 <p>TNM Primary Tumor Categories Value Set</p>
@@ -1280,28 +1427,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-treatment-termination-reasons.html"
-                  title="ValueSet/onconova-vs-treatment-termination-reasons">Treatment Termination Reasons</a>
+                  title="ValueSet/onconova-vs-treatment-termination-reasons">Treatment Termination Reasons Value Set</a>
             </td>
             <td>
-<p>Codes representing reasons for terminating a treatment in oncology.</p>
+<p>Reasons for terminating a treatment in oncology.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-tumor-board-recommendations.html"
-                  title="ValueSet/onconova-vs-tumor-board-recommendations">Tumor Board Recommendations</a>
+                  title="ValueSet/onconova-vs-tumor-board-recommendations">Tumor Board Recommendations Value Set</a>
             </td>
             <td>
-<p>A value set of recommendations that may be made by a tumor board for a cancer patient.</p>
+<p>Recommendations that may be made by a tumor board for a cancer patient.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-onconova-vs-tumor-marker-analytes.html"
-                  title="ValueSet/onconova-vs-tumor-marker-analytes">Tumor Marker Analytes</a>
+                  title="ValueSet/onconova-vs-tumor-marker-analytes">Tumor Marker Analytes Value Set</a>
             </td>
             <td>
-<p>Codes representing analytes for tumor markers.</p>
+<p>Analytes considered tumor markers.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-onconova-vs-tumor-marker-tests.html"
+                  title="ValueSet/onconova-vs-tumor-marker-tests">Tumor Marker Tests</a>
+            </td>
+            <td>
+<p>ValueSet containing LOINC and NCI Thesaurus codes for tumor marker laboratory tests and measurements</p>
 </td>
          </tr>
          <tr>
@@ -1315,7 +1471,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -1368,7 +1524,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 22, 2025 09:54+0000">2025-11-22</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 22, 2025 09:58+0000">2025-11-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

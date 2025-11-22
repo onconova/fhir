@@ -8,9 +8,9 @@
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations",
   "version" : "0.2.0",
   "name" : "OnconovaTumorBoardRecommendations",
-  "title" : "Tumor Board Recommendations",
+  "title" : "Tumor Board Recommendations Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -19,7 +19,7 @@
       "value" : "http://onconova.github.io/docs"
     }]
   }],
-  "description" : "A value set of recommendations that may be made by a tumor board for a cancer patient.",
+  "description" : "Recommendations that may be made by a tumor board for a cancer patient.",
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",

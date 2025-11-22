@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-therapy
   "name" : "TherapyLineProgressionFreeSurvival",
   "title" : "Therapy Line Progression-Free Survival",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-therapy
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [

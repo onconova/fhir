@@ -16,7 +16,7 @@ TNM Residual Tumor Categories Value Set
 
  **References** 
 
-* [TNM Residual Tumor Category](StructureDefinition-onconova-tnm-residual-tumor-category.md)
+* [TNM Residual Tumor Category Profile](StructureDefinition-onconova-tnm-residual-tumor-category.md)
 
 ### Logical Definition (CLD)
 
@@ -56,7 +56,7 @@ This value set expansion contains 4 concepts.
   "name" : "TNMResidualTumorCategories",
   "title" : "TNM Residual Tumor Categories Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

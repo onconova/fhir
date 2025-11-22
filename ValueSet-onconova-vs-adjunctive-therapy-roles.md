@@ -1,10 +1,10 @@
-# Adjunctive Therapy Roles - Onconova Implementation Guide v0.2.0
+# Adjunctive Therapy Roles Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Adjunctive Therapy Roles**
+* **Adjunctive Therapy Roles Value Set**
 
-## ValueSet: Adjunctive Therapy Roles 
+## ValueSet: Adjunctive Therapy Roles Value Set 
 
 | | |
 | :--- | :--- |
@@ -16,7 +16,7 @@ Codes representing roles for adjunctive therapy in oncology.
 
  **References** 
 
-* [Adjunctive Role](StructureDefinition-onconova-ext-adjunctive-role.md)
+* [Medication Administration Adjunctive Role](StructureDefinition-onconova-ext-medication-administration-adjunctive-role.md)
 
 ### Logical Definition (CLD)
 
@@ -50,9 +50,9 @@ This value set contains 1 concepts
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adjunctive-therapy-roles",
   "version" : "0.2.0",
   "name" : "AdjunctiveTherapyRoles",
-  "title" : "Adjunctive Therapy Roles",
+  "title" : "Adjunctive Therapy Roles Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

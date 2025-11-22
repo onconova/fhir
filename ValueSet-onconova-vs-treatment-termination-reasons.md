@@ -1,10 +1,10 @@
-# Treatment Termination Reasons - Onconova Implementation Guide v0.2.0
+# Treatment Termination Reasons Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Treatment Termination Reasons**
+* **Treatment Termination Reasons Value Set**
 
-## ValueSet: Treatment Termination Reasons 
+## ValueSet: Treatment Termination Reasons Value Set 
 
 | | |
 | :--- | :--- |
@@ -12,7 +12,7 @@
 | Active as of 2025-11-22 | *Computable Name*:TreatmentTerminationReasons |
 
  
-Codes representing reasons for terminating a treatment in oncology. 
+Reasons for terminating a treatment in oncology. 
 
  **References** 
 
@@ -51,9 +51,9 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons",
   "version" : "0.2.0",
   "name" : "TreatmentTerminationReasons",
-  "title" : "Treatment Termination Reasons",
+  "title" : "Treatment Termination Reasons Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -66,7 +66,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
       ]
     }
   ],
-  "description" : "Codes representing reasons for terminating a treatment in oncology.",
+  "description" : "Reasons for terminating a treatment in oncology.",
   "compose" : {
     "include" : [
       {

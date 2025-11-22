@@ -1,10 +1,10 @@
-# TNM Primary Tumor Categories - Onconova Implementation Guide v0.2.0
+# TNM Primary Tumor Categories Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TNM Primary Tumor Categories**
+* **TNM Primary Tumor Categories Value Set**
 
-## ValueSet: TNM Primary Tumor Categories 
+## ValueSet: TNM Primary Tumor Categories Value Set 
 
 | | |
 | :--- | :--- |
@@ -16,7 +16,7 @@ TNM Primary Tumor Categories Value Set
 
  **References** 
 
-* [TNM Primary Tumor Category](StructureDefinition-onconova-tnm-primary-tumor-category.md)
+* [TNM Primary Tumor Category Profile](StructureDefinition-onconova-tnm-primary-tumor-category.md)
 
 ### Logical Definition (CLD)
 
@@ -61,9 +61,9 @@ This value set expansion contains 197 concepts.
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-primary-tumor-categories",
   "version" : "0.2.0",
   "name" : "TNMPrimaryTumorCategories",
-  "title" : "TNM Primary Tumor Categories",
+  "title" : "TNM Primary Tumor Categories Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -81,7 +81,7 @@ This value set expansion contains 197 concepts.
     "include" : [
       {
         "valueSet" : [
-          "http://hl7.org/fhir/us/mcode/ValueSet/mcode-tnm-primary-tumor-category-vs|4.0.0"
+          "http://hl7.org/fhir/us/mcode/ValueSet/mcode-tnm-primary-tumor-category-vs"
         ]
       },
       {

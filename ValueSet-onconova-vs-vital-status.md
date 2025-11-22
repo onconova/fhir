@@ -16,7 +16,7 @@ The vital status of a patient
 
  **References** 
 
-* [Vital status](StructureDefinition-onconova-ext-vital-status.md)
+* [Cancer Patient Vital status](StructureDefinition-onconova-ext-cancer-patient-vital-status.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 3 concepts
   "name" : "VitalStatus",
   "title" : "Vital Status Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

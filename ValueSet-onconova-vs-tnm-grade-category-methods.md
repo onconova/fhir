@@ -16,7 +16,7 @@ TNM Grade Category Methods Value Set
 
  **References** 
 
-* [TNM Grade Category](StructureDefinition-onconova-tnm-grade-category.md)
+* [TNM Grade Category Profile](StructureDefinition-onconova-tnm-grade-category.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 3 concepts
   "name" : "TNMGradeCategoryMethods",
   "title" : "TNM Grade Category Methods Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

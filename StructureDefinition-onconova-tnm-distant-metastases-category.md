@@ -1,10 +1,10 @@
-# TNM Distant Metastases Category - Onconova Implementation Guide v0.2.0
+# TNM Distant Metastases Category Profile - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **TNM Distant Metastases Category**
+* **TNM Distant Metastases Category Profile**
 
-## Resource Profile: TNM Distant Metastases Category 
+## Resource Profile: TNM Distant Metastases Category Profile 
 
 | | |
 | :--- | :--- |
@@ -14,6 +14,8 @@
  
 A profile representing the TNM distant metastases category for a cancer patient. 
 This profile extends the base mCODE[TNMDistantMetastasesCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category)to include specific constraints and extensions relevant to Onconova. 
+**Conformance:** 
+Observation resources representing a TNM staging distant metastases parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 **Usages:**
 
@@ -41,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-distant
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-distant-metastases-category",
   "version" : "0.2.0",
   "name" : "OnconovaTNMDistantMetastasesCategory",
-  "title" : "TNM Distant Metastases Category",
+  "title" : "TNM Distant Metastases Category Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -56,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-distant
       ]
     }
   ],
-  "description" : "A profile representing the TNM distant metastases category for a cancer patient. \n\nThis profile extends the base mCODE [TNMDistantMetastasesCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category) to include specific constraints and extensions relevant to Onconova.",
+  "description" : "A profile representing the TNM distant metastases category for a cancer patient. \n\nThis profile extends the base mCODE [TNMDistantMetastasesCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a TNM staging distant metastases parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -93,7 +95,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-distant
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category|4.0.0",
+  "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -106,44 +108,152 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-distant
             "severity" : "error",
             "human" : "The subject element is required and must be provided.",
             "expression" : "subject.exists() and subject.resolve().is(Patient)",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-distant-metastases-category|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-distant-metastases-category"
           },
           {
             "key" : "o-stg-req-2",
             "severity" : "error",
             "human" : "The effectiveDateTime element is required and must be provided.",
             "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-distant-metastases-category|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-distant-metastases-category"
           },
           {
             "key" : "o-stg-req-3",
             "severity" : "error",
             "human" : "The valueCodeableConcept element is required and must be provided.",
             "expression" : "valueCodeableConcept.exists() and valueCodeableConcept.coding.exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-distant-metastases-category|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-distant-metastases-category"
           }
         ]
       },
       {
         "id" : "Observation.status",
         "path" : "Observation.status",
-        "patternCode" : "final"
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       },
       {
         "id" : "Observation.subject",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.subject",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
             ]
           }
         ]
       },
       {
+        "id" : "Observation.focus",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Observation.focus",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.encounter",
+        "path" : "Observation.encounter",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
         "id" : "Observation.effective[x]",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.effective[x]",
+        "min" : 1,
         "type" : [
           {
             "extension" : [
@@ -157,12 +267,110 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-distant
         ]
       },
       {
+        "id" : "Observation.issued",
+        "path" : "Observation.issued",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.performer",
+        "path" : "Observation.performer",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
         "id" : "Observation.value[x]",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.value[x]",
+        "min" : 1,
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-distant-metastasis-categories|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-distant-metastasis-categories"
         }
+      },
+      {
+        "id" : "Observation.interpretation",
+        "path" : "Observation.interpretation",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.bodySite",
+        "path" : "Observation.bodySite",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.method",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Observation.method"
+      },
+      {
+        "id" : "Observation.specimen",
+        "path" : "Observation.specimen",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.component",
+        "path" : "Observation.component",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       }
     ]
   }

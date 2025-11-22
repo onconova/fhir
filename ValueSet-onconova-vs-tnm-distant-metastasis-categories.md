@@ -16,7 +16,7 @@ TNM Distant Metastasis Categories Value Set
 
  **References** 
 
-* [TNM Distant Metastases Category](StructureDefinition-onconova-tnm-distant-metastases-category.md)
+* [TNM Distant Metastases Category Profile](StructureDefinition-onconova-tnm-distant-metastases-category.md)
 
 ### Logical Definition (CLD)
 
@@ -63,7 +63,7 @@ This value set expansion contains 64 concepts.
   "name" : "TNMDistantMetastasisCategories",
   "title" : "TNM Distant Metastasis Categories Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -81,7 +81,7 @@ This value set expansion contains 64 concepts.
     "include" : [
       {
         "valueSet" : [
-          "http://hl7.org/fhir/us/mcode/ValueSet/mcode-tnm-distant-metastases-category-vs|4.0.0"
+          "http://hl7.org/fhir/us/mcode/ValueSet/mcode-tnm-distant-metastases-category-vs"
         ]
       },
       {

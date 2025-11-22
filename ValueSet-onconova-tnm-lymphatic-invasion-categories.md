@@ -16,7 +16,7 @@ TNM Lymphatic Invasion Categories Value Set
 
  **References** 
 
-* [TNM Lymphatic Invasion Category](StructureDefinition-onconova-tnm-lymphatic-invasion-category.md)
+* [TNM Lymphatic Invasion Category Profile](StructureDefinition-onconova-tnm-lymphatic-invasion-category.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 4 concepts
   "name" : "TNMLymphaticInvasionCategories",
   "title" : "TNM Lymphatic Invasion Categories Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

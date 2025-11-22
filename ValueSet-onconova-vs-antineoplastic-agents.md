@@ -1,10 +1,10 @@
-# Antineoplastic Agents - Onconova Implementation Guide v0.2.0
+# Antineoplastic Agents Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Antineoplastic Agents**
+* **Antineoplastic Agents Value Set**
 
-## ValueSet: Antineoplastic Agents 
+## ValueSet: Antineoplastic Agents Value Set 
 
 | | |
 | :--- | :--- |
@@ -12,7 +12,7 @@
 | Active as of 2025-11-22 | *Computable Name*:AntineoplasticAgents |
 
  
-A value set of antineoplastic agents. 
+Drugs and biological agents used in the treatment of neoplastic diseases. 
 
  **References** 
 
@@ -53,9 +53,9 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents",
   "version" : "0.2.0",
   "name" : "AntineoplasticAgents",
-  "title" : "Antineoplastic Agents",
+  "title" : "Antineoplastic Agents Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -68,7 +68,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
       ]
     }
   ],
-  "description" : "A value set of antineoplastic agents.",
+  "description" : "Drugs and biological agents used in the treatment of neoplastic diseases.",
   "compose" : {
     "include" : [
       {

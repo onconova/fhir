@@ -16,7 +16,7 @@ TNM Regional Nodes Categories Value Set
 
  **References** 
 
-* [TNM Regional Nodes Category](StructureDefinition-onconova-tnm-regional-nodes-category.md)
+* [TNM Regional Nodes Category Profile](StructureDefinition-onconova-tnm-regional-nodes-category.md)
 
 ### Logical Definition (CLD)
 
@@ -63,7 +63,7 @@ This value set expansion contains 98 concepts.
   "name" : "TNMRegionalNodesCategories",
   "title" : "TNM Regional Nodes Categories Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -81,7 +81,7 @@ This value set expansion contains 98 concepts.
     "include" : [
       {
         "valueSet" : [
-          "http://hl7.org/fhir/us/mcode/ValueSet/mcode-tnm-regional-nodes-category-vs|4.0.0"
+          "http://hl7.org/fhir/us/mcode/ValueSet/mcode-tnm-regional-nodes-category-vs"
         ]
       },
       {

@@ -1,10 +1,10 @@
-# Exposure Agents - Onconova Implementation Guide v0.2.0
+# Exposure Agents Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Exposure Agents**
+* **Exposure Agents Value Set**
 
-## ValueSet: Exposure Agents 
+## ValueSet: Exposure Agents Value Set 
 
 | | |
 | :--- | :--- |
@@ -52,9 +52,9 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-exposure-agents",
   "version" : "0.2.0",
   "name" : "ExposureAgents",
-  "title" : "Exposure Agents",
+  "title" : "Exposure Agents Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

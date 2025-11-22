@@ -1,10 +1,10 @@
-# Smoking status - Onconova Implementation Guide v0.2.0
+# Smoking status Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Smoking status**
+* **Smoking status Value Set**
 
-## ValueSet: Smoking status 
+## ValueSet: Smoking status Value Set 
 
 | | |
 | :--- | :--- |
@@ -52,9 +52,9 @@ This value set contains 6 concepts
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-smoking-status",
   "version" : "0.2.0",
   "name" : "SmokingStatus",
-  "title" : "Smoking status",
+  "title" : "Smoking status Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

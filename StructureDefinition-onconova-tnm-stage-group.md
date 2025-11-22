@@ -14,6 +14,8 @@
  
 A profile representing the TNM stage group for a cancer patient. 
 It extends the base mCODE[TNMStageGroup profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-stage-group)to expand the TNM subcategories and include specific constraints and extensions relevant to Onconova. 
+**Conformance:** 
+Observation resources representing a cancer TNM staging in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 **Usages:**
 
@@ -43,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
   "name" : "OnconovaTNMStageGroup",
   "title" : "TNM Stage Group",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -56,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
       ]
     }
   ],
-  "description" : "A profile representing the TNM stage group for a cancer patient. \n\nIt extends the base mCODE [TNMStageGroup profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-stage-group) to expand the TNM subcategories and include specific constraints and extensions relevant to Onconova.",
+  "description" : "A profile representing the TNM stage group for a cancer patient. \n\nIt extends the base mCODE [TNMStageGroup profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-stage-group) to expand the TNM subcategories and include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a cancer TNM staging in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -93,7 +95,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-stage-group|4.0.0",
+  "baseDefinition" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-stage-group",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -106,44 +108,150 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
             "severity" : "error",
             "human" : "The subject element is required and must be provided.",
             "expression" : "subject.exists() and subject.resolve().is(Patient)",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-stage-group|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-stage-group"
           },
           {
             "key" : "o-stg-req-2",
             "severity" : "error",
             "human" : "The effectiveDateTime element is required and must be provided.",
             "expression" : "effectiveDateTime.exists() and effectiveDateTime.hasValue()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-stage-group|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-stage-group"
           },
           {
             "key" : "o-stg-req-3",
             "severity" : "error",
             "human" : "The valueCodeableConcept element is required and must be provided.",
             "expression" : "valueCodeableConcept.exists() and valueCodeableConcept.coding.exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-stage-group|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-stage-group"
           }
         ]
       },
       {
         "id" : "Observation.status",
         "path" : "Observation.status",
-        "patternCode" : "final"
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       },
       {
         "id" : "Observation.subject",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.subject",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
             ]
           }
         ]
       },
       {
+        "id" : "Observation.focus",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Observation.focus",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-primary-cancer-condition"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Observation.encounter",
+        "path" : "Observation.encounter",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
         "id" : "Observation.effective[x]",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.effective[x]",
+        "min" : 1,
         "type" : [
           {
             "extension" : [
@@ -157,13 +265,137 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
         ]
       },
       {
+        "id" : "Observation.issued",
+        "path" : "Observation.issued",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.performer",
+        "path" : "Observation.performer",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.value[x]",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Observation.value[x]",
+        "min" : 1
+      },
+      {
+        "id" : "Observation.interpretation",
+        "path" : "Observation.interpretation",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.bodySite",
+        "path" : "Observation.bodySite",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.method",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Observation.method"
+      },
+      {
+        "id" : "Observation.specimen",
+        "path" : "Observation.specimen",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
         "id" : "Observation.hasMember",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.hasMember",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category|4.0.0"
+              "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category"
             ]
           }
         ]
@@ -176,9 +408,9 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-primary-tumor-category|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-distant-metastases-category|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-regional-nodes-category|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-primary-tumor-category",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-distant-metastases-category",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-regional-nodes-category"
             ]
           }
         ]
@@ -193,7 +425,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-lymphatic-invasion-category|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-lymphatic-invasion-category"
             ]
           }
         ]
@@ -208,7 +440,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-perineural-invasion-category|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-perineural-invasion-category"
             ]
           }
         ]
@@ -223,7 +455,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-residual-tumor-category|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-residual-tumor-category"
             ]
           }
         ]
@@ -238,7 +470,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-serous-tumor-marker-level-category|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-serum-tumor-marker-level-category"
             ]
           }
         ]
@@ -253,7 +485,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-grade-category|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-grade-category"
             ]
           }
         ]
@@ -268,7 +500,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-venous-invasion-category|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-venous-invasion-category"
             ]
           }
         ]

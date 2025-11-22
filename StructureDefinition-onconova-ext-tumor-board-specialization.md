@@ -19,7 +19,7 @@ The specialization or focus area of the tumor board conducting the review, such 
 
 **Usages:**
 
-* Use this Extension: [Tumor Board Review](StructureDefinition-onconova-tumor-board-review.md)
+* Use this Extension: [Tumor Board Review Profile](StructureDefinition-onconova-tumor-board-review.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-ext-tumor-board-specialization)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-tumor-b
   "name" : "TumorBoardSpecialization",
   "title" : "Tumor Board Specialization",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -77,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-tumor-b
     }
   ],
   "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
     "element" : [

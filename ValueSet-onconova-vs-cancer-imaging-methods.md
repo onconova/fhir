@@ -1,10 +1,10 @@
-# Cancer Imaging Methods - Onconova Implementation Guide v0.2.0
+# Cancer Imaging Methods Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Cancer Imaging Methods**
+* **Cancer Imaging Methods Value Set**
 
-## ValueSet: Cancer Imaging Methods 
+## ValueSet: Cancer Imaging Methods Value Set 
 
 | | |
 | :--- | :--- |
@@ -12,7 +12,7 @@
 | Active as of 2025-11-22 | *Computable Name*:CancerImagingMethods |
 
  
-Codes representing various imaging methods used in cancer diagnosis and monitoring. 
+Imaging methods used in cancer diagnosis and monitoring. 
 
  **References** 
 
@@ -52,9 +52,9 @@ This value set contains 9 concepts
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-imaging-methods",
   "version" : "0.2.0",
   "name" : "CancerImagingMethods",
-  "title" : "Cancer Imaging Methods",
+  "title" : "Cancer Imaging Methods Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -67,7 +67,7 @@ This value set contains 9 concepts
       ]
     }
   ],
-  "description" : "Codes representing various imaging methods used in cancer diagnosis and monitoring.",
+  "description" : "Imaging methods used in cancer diagnosis and monitoring.",
   "compose" : {
     "include" : [
       {

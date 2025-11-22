@@ -1,10 +1,10 @@
-# Tumor Marker Analytes - Onconova Implementation Guide v0.2.0
+# Tumor Marker Analytes Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Tumor Marker Analytes**
+* **Tumor Marker Analytes Value Set**
 
-## ValueSet: Tumor Marker Analytes 
+## ValueSet: Tumor Marker Analytes Value Set 
 
 | | |
 | :--- | :--- |
@@ -12,7 +12,7 @@
 | Active as of 2025-11-22 | *Computable Name*:TumorMarkerAnalytes |
 
  
-Codes representing analytes for tumor markers. 
+Analytes considered tumor markers. 
 
  **References** 
 
@@ -52,9 +52,9 @@ This value set contains 42 concepts
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-marker-analytes",
   "version" : "0.2.0",
   "name" : "TumorMarkerAnalytes",
-  "title" : "Tumor Marker Analytes",
+  "title" : "Tumor Marker Analytes Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -67,7 +67,7 @@ This value set contains 42 concepts
       ]
     }
   ],
-  "description" : "Codes representing analytes for tumor markers.",
+  "description" : "Analytes considered tumor markers.",
   "compose" : {
     "include" : [
       {

@@ -1,10 +1,10 @@
-# ICD-10 Codes - Onconova Implementation Guide v0.2.0
+# ICD-10 Codes Value Set - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **ICD-10 Codes**
+* **ICD-10 Codes Value Set**
 
-## ValueSet: ICD-10 Codes 
+## ValueSet: ICD-10 Codes Value Set 
 
 | | |
 | :--- | :--- |
@@ -12,7 +12,7 @@
 | Active as of 2025-11-22 | *Computable Name*:ICD10Conditions |
 
  
-This value set includes sample ICD-10 codes. 
+All possible ICD-10 codes for conditions. 
 
  **References** 
 
@@ -54,9 +54,9 @@ This value set has >1000 codes in it. In order to keep the publication size mana
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions",
   "version" : "0.2.0",
   "name" : "ICD10Conditions",
-  "title" : "ICD-10 Codes",
+  "title" : "ICD-10 Codes Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -69,7 +69,7 @@ This value set has >1000 codes in it. In order to keep the publication size mana
       ]
     }
   ],
-  "description" : "This value set includes sample ICD-10 codes.",
+  "description" : "All possible ICD-10 codes for conditions.",
   "compose" : {
     "include" : [
       {

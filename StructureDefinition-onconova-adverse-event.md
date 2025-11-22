@@ -14,9 +14,12 @@
  
 A profile representing an adverse event experienced by a cancer patient as a result of an antineoplastic treatment, structured according to the Common Terminology Criteria for Adverse Events (CTCAE). This resource is used to capture and standardize the documentation of adverse events occurring during cancer care, including the type of event, its CTCAE grade, and any mitigation actions taken. 
 The profile constrains the base FHIR`AdverseEvent`resource to ensure consistent use of CTCAE codes and grades, and supports linkage to related treatments such as medications, radiotherapy, or surgical procedures documented in Onconova. The profile also provides extensions for recording mitigation strategies, supporting detailed tracking and management of adverse events in cancer patients. 
+**Conformance:** 
+AdverseEvent resources representing an adverse event caused by a cancer therapy in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 **Usages:**
 
+* CapabilityStatements using this Profile: [Onconova FHIR REST Server Capability Statement](CapabilityStatement-onconova-capability-statement.md)
 * This Profile is not used by any profiles in this Implementation Guide
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-adverse-event)
@@ -42,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
   "name" : "OnconovaAdverseEvent",
   "title" : "Adverse Event Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:54:31+00:00",
+  "date" : "2025-11-22T09:58:04+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -55,7 +58,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
       ]
     }
   ],
-  "description" : "A profile representing an adverse event experienced by a cancer patient as a result of an antineoplastic treatment, structured according to the Common Terminology Criteria for Adverse Events (CTCAE). This resource is used to capture and standardize the documentation of adverse events occurring during cancer care, including the type of event, its CTCAE grade, and any mitigation actions taken.\n\nThe profile constrains the base FHIR `AdverseEvent` resource to ensure consistent use of CTCAE codes and grades, and supports linkage to related treatments such as medications, radiotherapy, or surgical procedures documented in Onconova. The profile also provides extensions for recording mitigation strategies, supporting detailed tracking and management of adverse events in cancer patients.",
+  "description" : "A profile representing an adverse event experienced by a cancer patient as a result of an antineoplastic treatment, structured according to the Common Terminology Criteria for Adverse Events (CTCAE). This resource is used to capture and standardize the documentation of adverse events occurring during cancer care, including the type of event, its CTCAE grade, and any mitigation actions taken.\n\nThe profile constrains the base FHIR `AdverseEvent` resource to ensure consistent use of CTCAE codes and grades, and supports linkage to related treatments such as medications, radiotherapy, or surgical procedures documented in Onconova. The profile also provides extensions for recording mitigation strategies, supporting detailed tracking and management of adverse events in cancer patients.\n\n**Conformance:**\n\nAdverseEvent resources representing an adverse event caused by a cancer therapy in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -72,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
   "kind" : "resource",
   "abstract" : false,
   "type" : "AdverseEvent",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/AdverseEvent|4.0.1",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/AdverseEvent",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -85,49 +88,49 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
             "severity" : "error",
             "human" : "The subject element is required and must be provided.",
             "expression" : "subject.exists() and subject.resolve().is(Patient)",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event"
           },
           {
             "key" : "ae-req-2",
             "severity" : "error",
             "human" : "The date element is required and must be provided.",
             "expression" : "date.exists() and date.hasValue()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event"
           },
           {
             "key" : "ae-req-3",
             "severity" : "error",
             "human" : "The event element is required and must be provided.",
             "expression" : "event.exists() and event.coding.exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event"
           },
           {
             "key" : "ae-req-4",
             "severity" : "error",
             "human" : "The CTC Grade extension is required and must be provided.",
             "expression" : "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-ctc-grade').exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event"
           },
           {
             "key" : "ae-req-5",
             "severity" : "error",
             "human" : "The outcome is required and must be provided.",
             "expression" : "outcome.exists() and outcome.coding.exists()",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event"
           },
           {
             "key" : "ae-req-6",
             "severity" : "error",
             "human" : "If suspectedEntity is provided, then at least one instance must exist.",
             "expression" : "suspectEntity.exists() implies (suspectEntity.count() > 0 and suspectEntity.instance.exists())",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event"
           },
           {
             "key" : "ae-req-7",
             "severity" : "error",
             "human" : "If adverseEventMitigation extension is provided, then at least one instance must exist.",
             "expression" : "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation').exists() implies extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation').count() > 0",
-            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event|0.2.0"
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event"
           }
         ]
       },
@@ -148,6 +151,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
       },
       {
         "id" : "AdverseEvent.extension:ctcGrade",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "AdverseEvent.extension",
         "sliceName" : "ctcGrade",
         "short" : "CTCAE Grade",
@@ -157,15 +188,43 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-ctc-grade|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade"
             ]
           }
         ]
       },
       {
-        "id" : "AdverseEvent.extension:adverseEventMitigation",
+        "id" : "AdverseEvent.extension:mitigation",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "MAY:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "AdverseEvent.extension",
-        "sliceName" : "adverseEventMitigation",
+        "sliceName" : "mitigation",
         "short" : "Adverse Event Mitigation Action(s)",
         "min" : 0,
         "max" : "*",
@@ -173,7 +232,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
           {
             "code" : "Extension",
             "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation"
             ]
           }
         ]
@@ -181,7 +240,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
       {
         "id" : "AdverseEvent.actuality",
         "path" : "AdverseEvent.actuality",
-        "patternCode" : "actual"
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       },
       {
         "id" : "AdverseEvent.category",
@@ -191,20 +251,76 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
       },
       {
         "id" : "AdverseEvent.event",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "AdverseEvent.event",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-ctc-adverse-events|0.2.0"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-ctc-adverse-events"
         }
       },
       {
         "id" : "AdverseEvent.subject",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "AdverseEvent.subject",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
             ]
           }
         ]
@@ -270,14 +386,42 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
       },
       {
         "id" : "AdverseEvent.suspectEntity.instance",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "MAY:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "AdverseEvent.suspectEntity.instance",
         "type" : [
           {
             "code" : "Reference",
             "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary|0.2.0",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary",
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
             ]
           }
         ]

@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "onconova-vs-surgical-procedures",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet onconova-vs-surgical-procedures</b></p><a name=\"onconova-vs-surgical-procedures\"> </a><a name=\"hconconova-vs-surgical-procedures\"> </a><ul><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  descends from C15329</li></ul></div>"
+  },
+  "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-surgical-procedures",
+  "version" : "0.2.0",
+  "name" : "SurgicalProcedures",
+  "title" : "Surgical Procedures Value Set",
+  "status" : "active",
+  "date" : "2025-11-22T09:58:04+00:00",
+  "publisher" : "Onconova",
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
+  "description" : "Set of surgical procedures relevant to cancer treatment in Onconova.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "C15329"
+      }]
+    }]
+  }
+}
