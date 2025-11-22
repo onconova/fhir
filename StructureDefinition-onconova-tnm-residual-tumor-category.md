@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-residual-tumor-category | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:OnconovaTNMResidualTumorCategory |
+| Active as of 2025-11-22 | *Computable Name*:OnconovaTNMResidualTumorCategory |
 
  
 A profile representing the TNM residual tumor category for a cancer patient. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-residua
   "name" : "OnconovaTNMResidualTumorCategory",
   "title" : "TNM Residual Tumor Category",
   "status" : "active",
-  "date" : "2025-11-21T14:06:51+00:00",
+  "date" : "2025-11-22T09:54:31+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

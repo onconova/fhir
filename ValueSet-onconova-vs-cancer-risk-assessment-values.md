@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-values | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:CancerRiskAssessmentValues |
+| Active as of 2025-11-22 | *Computable Name*:CancerRiskAssessmentValues |
 
  
 A non-exhaustive value set containing codes that result from risk assessments, i.e., the risk level of the cancer. 
@@ -52,7 +52,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "CancerRiskAssessmentValues",
   "title" : "Risk Assessment Values",
   "status" : "active",
-  "date" : "2025-11-21T14:06:51+00:00",
+  "date" : "2025-11-22T09:54:31+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

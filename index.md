@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:Onconova |
+| Active as of 2025-11-22 | *Computable Name*:Onconova |
 
 ### Introduction
 
@@ -106,7 +106,7 @@ This publication includes IP covered under the following statements.
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-21T14:06:51+00:00",
+  "date" : "2025-11-22T09:54:31+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -2073,20 +2073,6 @@ This publication includes IP covered under the following statements.
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-serous-tumor-marker-level-category"
-        },
-        "name" : "Serum Tumor Marker Level Category",
-        "description" : "A profile representing the serum tumor marker level category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -2441,6 +2427,20 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/onconova-serous-tumor-marker-level-category"
+        },
+        "name" : "TNM Serum Tumor Marker Level Category",
+        "description" : "A profile representing the serum tumor marker level category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/onconova-tnm-stage-group"
         },
         "name" : "TNM Stage Group",
@@ -2459,6 +2459,20 @@ This publication includes IP covered under the following statements.
         },
         "name" : "TNM Venous Invasion Categories Value Set",
         "description" : "TNM Venous Invasion Categories Value Set",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-venous-invasion-category"
+        },
+        "name" : "TNM Venous Invasion Category",
+        "description" : "A profile representing the venous invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.",
         "exampleBoolean" : false
       },
       {
@@ -2613,20 +2627,6 @@ This publication includes IP covered under the following statements.
         },
         "name" : "Unknown Entry",
         "description" : "Value is not collected and cannot be provided by Onconova.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-venous-invasion-category"
-        },
-        "name" : "Venous Invasion Category",
-        "description" : "A profile representing the venous invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.",
         "exampleBoolean" : false
       },
       {

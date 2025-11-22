@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-procedures | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:AdverseEventMitigationProcedures |
+| Active as of 2025-11-22 | *Computable Name*:AdverseEventMitigationProcedures |
 
  
 Procedures undertaken to mitigate the impact of an adverse event on a patient's health. 
@@ -54,7 +54,7 @@ This value set contains 6 concepts
   "name" : "AdverseEventMitigationProcedures",
   "title" : "Adverse Event Mitigation - Procedures",
   "status" : "active",
-  "date" : "2025-11-21T14:06:51+00:00",
+  "date" : "2025-11-22T09:54:31+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

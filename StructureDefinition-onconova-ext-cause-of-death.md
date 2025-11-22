@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cause-of-death | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:CauseOfDeath |
+| Active as of 2025-11-22 | *Computable Name*:CauseOfDeath |
 
 The cause of death for the patient.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-cause-o
   "name" : "CauseOfDeath",
   "title" : "Cause of Death",
   "status" : "active",
-  "date" : "2025-11-21T14:06:51+00:00",
+  "date" : "2025-11-22T09:54:31+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

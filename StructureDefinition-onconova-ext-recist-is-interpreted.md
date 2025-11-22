@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-recist-is-interpreted | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:RecistIsInterpreted |
+| Active as of 2025-11-22 | *Computable Name*:RecistIsInterpreted |
 
 Indicates that whether the RECIST was interpreted from a radiology report rather than extracted.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-recist-
   "name" : "RecistIsInterpreted",
   "title" : "Recist Is Interpreted",
   "status" : "active",
-  "date" : "2025-11-21T14:06:51+00:00",
+  "date" : "2025-11-22T09:54:31+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

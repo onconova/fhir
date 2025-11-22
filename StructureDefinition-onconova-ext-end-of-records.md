@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-end-of-records | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:EndOfRecords |
+| Active as of 2025-11-22 | *Computable Name*:EndOfRecords |
 
 Indicates the last known record date of a patient.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-end-of-
   "name" : "EndOfRecords",
   "title" : "End of Records",
   "status" : "active",
-  "date" : "2025-11-21T14:06:51+00:00",
+  "date" : "2025-11-22T09:54:31+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

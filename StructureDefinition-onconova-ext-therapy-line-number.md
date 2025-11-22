@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-number | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:TherapyLineNumber |
+| Active as of 2025-11-22 | *Computable Name*:TherapyLineNumber |
 
 The number representing the sequence of the therapy line in the overall treatment regimen.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-therapy
   "name" : "TherapyLineNumber",
   "title" : "Therapy Line Number",
   "status" : "active",
-  "date" : "2025-11-21T14:06:51+00:00",
+  "date" : "2025-11-22T09:54:31+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

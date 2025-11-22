@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-venous-invasion-categories | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:TNMVenousInvasionCategories |
+| Active as of 2025-11-22 | *Computable Name*:TNMVenousInvasionCategories |
 
  
 TNM Venous Invasion Categories Value Set 
 
  **References** 
 
-* [Venous Invasion Category](StructureDefinition-onconova-venous-invasion-category.md)
+* [TNM Venous Invasion Category](StructureDefinition-onconova-venous-invasion-category.md)
 
 ### Logical Definition (CLD)
 
@@ -54,7 +54,7 @@ This value set contains 4 concepts
   "name" : "TNMVenousInvasionCategories",
   "title" : "TNM Venous Invasion Categories Value Set",
   "status" : "active",
-  "date" : "2025-11-21T14:06:51+00:00",
+  "date" : "2025-11-22T09:54:31+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

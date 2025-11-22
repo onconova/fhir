@@ -242,9 +242,6 @@ The following profiles have been defined for this implementation guide:</p>
 <li><a href="StructureDefinition-onconova-secondary-cancer-condition.html">Secondary Cancer Condition Profile</a> <p>A profile recording the a secondary neoplasm, including location and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms).</p>
 <p>It constrains the mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition">SecondaryCancerCCondition profile</a> to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes.</p>
 </li>
-<li><a href="StructureDefinition-onconova-serous-tumor-marker-level-category.html">Serum Tumor Marker Level Category</a> <p>A profile representing the serum tumor marker level category for a cancer patient.</p>
-<p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category">TNMCategory profile</a> to specify the new TNM category.</p>
-</li>
 <li><a href="StructureDefinition-onconova-surgical-procedure.html">Surgical Procedure Profile</a> <p>A profile representing a surgical procedure performed on a cancer patient, including details about the procedure, its intent, and relevant dates.</p>
 <p>It extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure">CancerRelatedSurgicalProcedure profile</a> to include specific constraints and requirements for Onconova.</p>
 </li>
@@ -269,8 +266,14 @@ The following profiles have been defined for this implementation guide:</p>
 <li><a href="StructureDefinition-onconova-tnm-residual-tumor-category.html">TNM Residual Tumor Category</a> <p>A profile representing the TNM residual tumor category for a cancer patient.</p>
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category">TNMCategory profile</a> to specify the new TNM category.</p>
 </li>
+<li><a href="StructureDefinition-onconova-serous-tumor-marker-level-category.html">TNM Serum Tumor Marker Level Category</a> <p>A profile representing the serum tumor marker level category for a cancer patient.</p>
+<p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category">TNMCategory profile</a> to specify the new TNM category.</p>
+</li>
 <li><a href="StructureDefinition-onconova-tnm-stage-group.html">TNM Stage Group</a> <p>A profile representing the TNM stage group for a cancer patient.</p>
 <p>It extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-stage-group">TNMStageGroup profile</a> to expand the TNM subcategories and include specific constraints and extensions relevant to Onconova.</p>
+</li>
+<li><a href="StructureDefinition-onconova-venous-invasion-category.html">TNM Venous Invasion Category</a> <p>A profile representing the venous invasion category for a cancer patient.</p>
+<p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category">TNMCategory profile</a> to specify the new TNM category.</p>
 </li>
 <li><a href="StructureDefinition-onconova-therapy-line.html">Therapy Line Profile</a> <p>A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates.</p>
 <p>Due to its abstract conceptual nature, it is based on a FHIR <code>List</code> to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing Procedure and MedicationAdministration resources and are not created manually.</p>
@@ -287,9 +290,6 @@ The following profiles have been defined for this implementation guide:</p>
 </li>
 <li><a href="StructureDefinition-onconova-tumor-neoantigen-burden.html">Tumor Neoantigen Burden Profile</a> <p>A profile representing tumor neoantigen burden for a cancer patient.</p>
 <p>This profile extends the GenomicsReporting IG <a href="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base">GenomicsBase profile</a> to include specific constraints and extensions relevant to Onconova.</p>
-</li>
-<li><a href="StructureDefinition-onconova-venous-invasion-category.html">Venous Invasion Category</a> <p>A profile representing the venous invasion category for a cancer patient.</p>
-<p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category">TNMCategory profile</a> to specify the new TNM category.</p>
 </li>
 
 
@@ -311,7 +311,7 @@ The following profiles have been defined for this implementation guide:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 21, 2025 14:06+0000">2025-11-21</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 22, 2025 09:54+0000">2025-11-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

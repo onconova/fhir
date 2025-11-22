@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-assessment-date | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:GenomicAssessmentDate |
+| Active as of 2025-11-22 | *Computable Name*:GenomicAssessmentDate |
 
 Date at which the genomic variant was assessed and/or reported.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-genomic
   "name" : "GenomicAssessmentDate",
   "title" : "Genomic Assessment Date",
   "status" : "active",
-  "date" : "2025-11-21T14:06:51+00:00",
+  "date" : "2025-11-22T09:54:31+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

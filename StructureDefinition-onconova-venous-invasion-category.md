@@ -1,15 +1,15 @@
-# Venous Invasion Category - Onconova Implementation Guide v0.2.0
+# TNM Venous Invasion Category - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Venous Invasion Category**
+* **TNM Venous Invasion Category**
 
-## Resource Profile: Venous Invasion Category 
+## Resource Profile: TNM Venous Invasion Category 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-venous-invasion-category | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:OnconovaTNMVenousInvasionCategory |
+| Active as of 2025-11-22 | *Computable Name*:OnconovaTNMVenousInvasionCategory |
 
  
 A profile representing the venous invasion category for a cancer patient. 
@@ -41,9 +41,9 @@ Other representations of profile: [CSV](StructureDefinition-onconova-venous-inva
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-venous-invasion-category",
   "version" : "0.2.0",
   "name" : "OnconovaTNMVenousInvasionCategory",
-  "title" : "Venous Invasion Category",
+  "title" : "TNM Venous Invasion Category",
   "status" : "active",
-  "date" : "2025-11-21T14:06:51+00:00",
+  "date" : "2025-11-22T09:54:31+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

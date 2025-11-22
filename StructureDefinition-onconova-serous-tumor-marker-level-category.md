@@ -1,15 +1,15 @@
-# Serum Tumor Marker Level Category - Onconova Implementation Guide v0.2.0
+# TNM Serum Tumor Marker Level Category - Onconova Implementation Guide v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Serum Tumor Marker Level Category**
+* **TNM Serum Tumor Marker Level Category**
 
-## Resource Profile: Serum Tumor Marker Level Category 
+## Resource Profile: TNM Serum Tumor Marker Level Category 
 
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-serous-tumor-marker-level-category | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:OnconovaTNMSerumTumorMarkerLevelCategory |
+| Active as of 2025-11-22 | *Computable Name*:OnconovaTNMSerumTumorMarkerLevelCategory |
 
  
 A profile representing the serum tumor marker level category for a cancer patient. 
@@ -41,9 +41,9 @@ Other representations of profile: [CSV](StructureDefinition-onconova-serous-tumo
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-serous-tumor-marker-level-category",
   "version" : "0.2.0",
   "name" : "OnconovaTNMSerumTumorMarkerLevelCategory",
-  "title" : "Serum Tumor Marker Level Category",
+  "title" : "TNM Serum Tumor Marker Level Category",
   "status" : "active",
-  "date" : "2025-11-21T14:06:51+00:00",
+  "date" : "2025-11-22T09:54:31+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

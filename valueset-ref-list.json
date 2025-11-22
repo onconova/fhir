@@ -218,8 +218,8 @@
       "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"],
       "uses" : {
       },
-      "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile",
-      "StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.html" : "Molecular Tumor Board Therapeutic Recommendation"
+      "StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.html" : "Molecular Tumor Board Therapeutic Recommendation",
+      "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-imaging-methods",
@@ -397,9 +397,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
       "uses" : {
       },
-      "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile",
       "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile",
-      "StructureDefinition-onconova-ext-cancer-morphology.html" : "Cancer Morphology"
+      "StructureDefinition-onconova-ext-cancer-morphology.html" : "Cancer Morphology",
+      "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topography",
@@ -411,9 +411,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
       "uses" : {
       },
+      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile",
       "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile",
-      "StructureDefinition-onconova-ext-cancer-topography.html" : "Cancer Topography",
-      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile"
+      "StructureDefinition-onconova-ext-cancer-topography.html" : "Cancer Topography"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-observation-bodysites",
@@ -533,7 +533,7 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-onconova-serous-tumor-marker-level-category.html" : "Serum Tumor Marker Level Category"
+      "StructureDefinition-onconova-serous-tumor-marker-level-category.html" : "TNM Serum Tumor Marker Level Category"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-venous-invasion-categories",
@@ -545,7 +545,7 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-onconova-venous-invasion-category.html" : "Venous Invasion Category"
+      "StructureDefinition-onconova-venous-invasion-category.html" : "TNM Venous Invasion Category"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons",
@@ -557,8 +557,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-onconova-radiotherapy-summary.html" : "Radiotherapy Summary Profile",
-      "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile"
+      "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile",
+      "StructureDefinition-onconova-radiotherapy-summary.html" : "Radiotherapy Summary Profile"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations",

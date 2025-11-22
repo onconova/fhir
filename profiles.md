@@ -87,10 +87,6 @@ This profile extends the base mCODE[RadiotherapyCourseSummary profile](http://hl
 A profile recording the a secondary neoplasm, including location and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms). 
 It constrains the mCODE[SecondaryCancerCCondition profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition)to constrain the terminologies of the cancer topography and morphology extensions to use exclusively ICD-O-3 codes. 
 
-* [Serum Tumor Marker Level Category](StructureDefinition-onconova-serous-tumor-marker-level-category.md) 
-A profile representing the serum tumor marker level category for a cancer patient. 
-This profile extends the base mCODE[TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category)to specify the new TNM category. 
-
 * [Surgical Procedure Profile](StructureDefinition-onconova-surgical-procedure.md) 
 A profile representing a surgical procedure performed on a cancer patient, including details about the procedure, its intent, and relevant dates. 
 It extends the base mCODE[CancerRelatedSurgicalProcedure profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure)to include specific constraints and requirements for Onconova. 
@@ -123,9 +119,17 @@ This profile extends the base mCODE[TNMRegionalNodesCategory profile](http://hl7
 A profile representing the TNM residual tumor category for a cancer patient. 
 This profile extends the base mCODE[TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category)to specify the new TNM category. 
 
+* [TNM Serum Tumor Marker Level Category](StructureDefinition-onconova-serous-tumor-marker-level-category.md) 
+A profile representing the serum tumor marker level category for a cancer patient. 
+This profile extends the base mCODE[TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category)to specify the new TNM category. 
+
 * [TNM Stage Group](StructureDefinition-onconova-tnm-stage-group.md) 
 A profile representing the TNM stage group for a cancer patient. 
 It extends the base mCODE[TNMStageGroup profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-stage-group)to expand the TNM subcategories and include specific constraints and extensions relevant to Onconova. 
+
+* [TNM Venous Invasion Category](StructureDefinition-onconova-venous-invasion-category.md) 
+A profile representing the venous invasion category for a cancer patient. 
+This profile extends the base mCODE[TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category)to specify the new TNM category. 
 
 * [Therapy Line Profile](StructureDefinition-onconova-therapy-line.md) 
 A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. 
@@ -147,8 +151,4 @@ This profile extends the GenomicsReporting IG[TumorMutationalBurden profile](htt
 * [Tumor Neoantigen Burden Profile](StructureDefinition-onconova-tumor-neoantigen-burden.md) 
 A profile representing tumor neoantigen burden for a cancer patient. 
 This profile extends the GenomicsReporting IG[GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base)to include specific constraints and extensions relevant to Onconova. 
-
-* [Venous Invasion Category](StructureDefinition-onconova-venous-invasion-category.md) 
-A profile representing the venous invasion category for a cancer patient. 
-This profile extends the base mCODE[TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category)to specify the new TNM category. 
 

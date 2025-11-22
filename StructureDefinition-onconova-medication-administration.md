@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration | *Version*:0.2.0 |
-| Active as of 2025-11-21 | *Computable Name*:OnconovaMedicationAdministration |
+| Active as of 2025-11-22 | *Computable Name*:OnconovaMedicationAdministration |
 
  
 A profile representing a medication administered to a cancer patient during a systemic therapy (e.g., chemotherapy, immunotherapy), including details about the medication and dosage. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
   "name" : "OnconovaMedicationAdministration",
   "title" : "Medication Administration Profile",
   "status" : "active",
-  "date" : "2025-11-21T14:06:51+00:00",
+  "date" : "2025-11-22T09:54:31+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
