@@ -43,7 +43,7 @@ RuleSet: ResourceSupportedProfile(profile)
 * rest[=].resource[=].supportedProfile[+] = Canonical({profile})
 
 RuleSet: Obligations(path, creatorObligation, consumerObligation)
-* {path} ^extension[0].extension[0].url = "code"
+* {path} ^extension[+].extension[0].url = "code"
 * {path} ^extension[=].extension[=].valueCode = {creatorObligation}
 * {path} ^extension[=].extension[+].url = "actor"
 * {path} ^extension[=].extension[=].valueCanonical = Canonical(OnconovaCreator)
