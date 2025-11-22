@@ -15,10 +15,10 @@ Observation resources representing a summary of a patient's lifestyle in the sco
 * code = $LOINC#LA32823-9 "Lifestyle"
 
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * insert ObservationComponentSlicingRules
 

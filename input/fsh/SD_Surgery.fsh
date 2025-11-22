@@ -14,15 +14,15 @@ Procedure resources representing a surgery in the scope of Onconova SHALL confor
 
 * subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * performed[x] only dateTime
 * performedDateTime ^short = "The date on which the surgical procedure was performed"
-* insert Obligations(performedDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(performedDateTime, #SHALL:populate, #SHOULD:persist)
 
 * code 1..1 MS    
 * code from SurgicalProcedures (required)
-* insert Obligations(code, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(code, #SHALL:populate, #SHOULD:persist)
 
 * reasonReference 1..* MS
 * reasonReference ^short = "The condition(s) that motivated the surgical procedure"

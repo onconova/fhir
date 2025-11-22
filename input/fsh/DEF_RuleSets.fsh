@@ -43,13 +43,26 @@ RuleSet: ResourceSupportedProfile(profile)
 * rest[=].resource[=].supportedProfile[+] = Canonical({profile})
 
 RuleSet: Obligations(path, creatorObligation, consumerObligation)
-* {path} ^extension[+].extension[0].url = "code"
+* {path} ^extension[+].url = $Obligation
+* {path} ^extension[=].extension[+].url = "code"
 * {path} ^extension[=].extension[=].valueCode = {creatorObligation}
 * {path} ^extension[=].extension[+].url = "actor"
 * {path} ^extension[=].extension[=].valueCanonical = Canonical(OnconovaCreator)
-* {path} ^extension[=].url = $Obligation
-* {path} ^extension[+].extension[0].url = "code"
+* {path} ^extension[+].url = $Obligation
+* {path} ^extension[=].extension[+].url = "code"
 * {path} ^extension[=].extension[=].valueCode = {consumerObligation}
 * {path} ^extension[=].extension[+].url = "actor"
 * {path} ^extension[=].extension[=].valueCanonical = Canonical(OnconovaConsumer)
-* {path} ^extension[=].url = $Obligation
+
+// Sometimes, there is already an extension on the element, so we need to specify the location to insert the obligation extension...
+RuleSet: ObligationsWithUscdi(path, creatorObligation, consumerObligation)
+* {path} ^extension[1].url = $Obligation
+* {path} ^extension[=].extension[+].url = "code"
+* {path} ^extension[=].extension[=].valueCode = {creatorObligation}
+* {path} ^extension[=].extension[+].url = "actor"
+* {path} ^extension[=].extension[=].valueCanonical = Canonical(OnconovaCreator)
+* {path} ^extension[+].url = $Obligation
+* {path} ^extension[=].extension[+].url = "code"
+* {path} ^extension[=].extension[=].valueCode = {consumerObligation}
+* {path} ^extension[=].extension[+].url = "actor"
+* {path} ^extension[=].extension[=].valueCanonical = Canonical(OnconovaConsumer)
