@@ -3,7 +3,7 @@ Alias: $CONSTCS = ConsentStatusCodeSystem
 ValueSet: ConsentStatus
 Id: onconova-vs-consent-status
 Title: "Consent Status Value Set"
-Description: "The consent status of a patient"
+Description: "The consent status of a patient for further use of data in research."
 * $CONSTCS#valid "Valid"
 * $CONSTCS#revoked "Revoked"
 * $CONSTCS#unknown "Unknown"

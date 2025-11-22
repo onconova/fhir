@@ -1,5 +1,3 @@
-Alias: $RefPolicy = http://hl7.org/fhir/reference-handling-policy
-
 Instance: onconova-capability-statement
 InstanceOf: CapabilityStatement
 Usage: #definition
@@ -100,13 +98,18 @@ The Onconova FHIR server **MAY**:
 // VERB [base]/Procedure/[id]
 * insert ResourceCRUD(Procedure)
 * insert ResourceSupportedProfile(OnconovaSurgicalProcedure)
-* insert ResourceSupportedProfile(OnconovaRadiotherapySummary)
+* insert ResourceSupportedProfile(OnconovaRadiotherapyCourseSummary)
 * insert ResourceSupportedProfile(OnconovaTumorBoardReview)
 * insert ResourceSupportedProfile(OnconovaMolecularTumorBoardReview)
 
 // VERB [base]/MedicationAdministration/[id]
 * insert ResourceCRUD(MedicationAdministration)
 * insert ResourceSupportedProfile(OnconovaMedicationAdministration)
+
+
+// VERB [base]/AdverseEvent/[id]
+* insert ResourceCRUD(AdverseEvent)
+* insert ResourceSupportedProfile(OnconovaAdverseEvent)
 
 // VERB [base]/FamilyHistory/[id]
 * insert ResourceCRUD(FamilyHistory)

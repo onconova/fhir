@@ -2,7 +2,7 @@ Alias: $COMORB = ComorbidityPanelsSystem
 
 ValueSet: ComorbidityPanels
 Id: onconova-vs-comorbidity-panels
-Title: "Comorbidity Panels"
+Title: "Comorbidity Panels Value Set"
 Description: "A collection of comorbidity panels relevant to cancer patients."
 
 * $COMORB#charlson

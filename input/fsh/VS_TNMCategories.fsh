@@ -1,6 +1,6 @@
 ValueSet: TNMPrimaryTumorCategories
 Id: onconova-vs-tnm-primary-tumor-categories
-Title: "TNM Primary Tumor Categories"
+Title: "TNM Primary Tumor Categories Value Set"
 Description: "TNM Primary Tumor Categories Value Set"
 
 * include codes from valueset http://hl7.org/fhir/us/mcode/ValueSet/mcode-tnm-primary-tumor-category-vs

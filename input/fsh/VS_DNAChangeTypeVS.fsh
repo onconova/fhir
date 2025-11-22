@@ -1,6 +1,6 @@
-ValueSet: DNAChangeTypeVS
-Id: onconova-vs-dna-change-type
-Title: "Coding DNA Change Type Value Set"
+ValueSet: DNAChangeTypes
+Id: onconova-vs-dna-change-types
+Title: "Coding DNA Change Types Value Set"
 Description: "Coding DNA change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes"
 
 * $SO#SO:1000002 "substitution"

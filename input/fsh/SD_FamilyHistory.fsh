@@ -1,35 +1,47 @@
 Profile: OnconovaCancerFamilyMemberHistory
 Parent: FamilyMemberHistory
 Id: onconova-cancer-family-member-history
-Title: "Cancer Family Member History"
+Title: "Cancer Family Member History Profile"
 Description: """
-A profile recording of a family member's history of cancer.
+A profile recording of a patient's family member's history of cancer.
 
 This profile is based on the core FHIR `FamilyMemberHistory` resource rather than the mCODE  [HistoryOfMetastaticCancer profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-history-of-metastatic-cancer) to allow for a broader range of cancer history documentation (not limited to metastatic cancer). It includes constraints to ensure that at least one cancer condition is recorded, along with optional extensions for cancer morphology and topography.
+
+**Conformance:**
+
+FamilyMemberHistory resources representing a history of (primary or metastatic) cancer in a patient's family member in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. 
 """
 
-// Basic constraints
-* status = #completed
 * deceased[x] only boolean
+* deceasedBoolean ^short = "Indicates whether the family member is deceased"
+* insert Obligations(deceasedBoolean, #SHALL:populate-if-known, #SHOULD:persist)
 
+* insert Obligations(relationship, #SHALL:populate, #SHOULD:persist)
+* insert Obligations(date, #SHALL:populate, #SHOULD:persist)
 
-// Reference Onconova resources
 * patient only Reference(OnconovaCancerPatient)
+* patient ^short = "The patient whose family member is the subject of this history"
+* insert Obligations(patient, #SHALL:populate, #SHOULD:persist)
 
-// Slice the condition element to include cancer conditions
 * condition 1..* MS
 * condition ^slicing.discriminator.type = #value
 * condition ^slicing.discriminator.path = "code"
 * condition ^slicing.rules = #open
 
-// Profile the cancer condition slice
 * condition contains cancerCondition 1..* MS
-* condition[cancerCondition].code = http://snomed.info/sct#363346000 "Malignant neoplastic disease (disorder)" 
-* condition[cancerCondition].onset[x] only Age
-* condition[cancerCondition].extension contains CancerMorphology named morphology 0..1 MS
-* condition[cancerCondition].extension contains CancerTopography named topography 0..1 MS
+* insert Obligations(condition[cancerCondition], #SHALL:populate-if-known, #SHOULD:persist)
 
-// Annotate unused inherited elements
+* condition[cancerCondition].code = http://snomed.info/sct#363346000 "Malignant neoplastic disease (disorder)" 
+
+* condition[cancerCondition].onset[x] only Age
+* insert Obligations(condition[cancerCondition].onsetAge, #SHALL:populate-if-known, #SHOULD:persist)
+
+* condition[cancerCondition].extension contains FamilyMemberHistoryCancerMorphology named morphology 0..1 MS
+* insert Obligations(condition[cancerCondition].extension[morphology], #SHALL:populate-if-known, #SHOULD:persist)
+
+* condition[cancerCondition].extension contains FamilyMemberHistoryCancerTopography named topography 0..1 MS
+* insert Obligations(condition[cancerCondition].extension[topography], #SHALL:populate, #SHOULD:persist)
+
 * insert NotUsed(name)
 * insert NotUsed(sex)
 * insert NotUsed(born[x])
@@ -38,7 +50,6 @@ This profile is based on the core FHIR `FamilyMemberHistory` resource rather tha
 * insert NotUsed(reasonCode)
 * insert NotUsed(reasonReference)
 
-// Constraints
 * obeys o-fam-req-1 and o-fam-req-2 and o-fam-req-3
 
 Invariant: o-fam-req-1

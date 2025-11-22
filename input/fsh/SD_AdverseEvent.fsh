@@ -6,29 +6,34 @@ Description: """
 A profile representing an adverse event experienced by a cancer patient as a result of an antineoplastic treatment, structured according to the Common Terminology Criteria for Adverse Events (CTCAE). This resource is used to capture and standardize the documentation of adverse events occurring during cancer care, including the type of event, its CTCAE grade, and any mitigation actions taken.
 
 The profile constrains the base FHIR `AdverseEvent` resource to ensure consistent use of CTCAE codes and grades, and supports linkage to related treatments such as medications, radiotherapy, or surgical procedures documented in Onconova. The profile also provides extensions for recording mitigation strategies, supporting detailed tracking and management of adverse events in cancer patients.
+
+**Conformance:**
+
+AdverseEvent resources representing an adverse event caused by a cancer therapy in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. 
 """
 
 * outcome MS
+* insert Obligations(subject, #SHOULD:populate-if-known, #MAY:persist)
 
-// Reference Onconova resources
 * subject only Reference(OnconovaCancerPatient)
-* suspectEntity.instance only Reference(OnconovaMedicationAdministration or OnconovaRadiotherapySummary or OnconovaSurgicalProcedure)
+* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
 
-// Only actual events are recorded
-* actuality = #actual 
+* suspectEntity.instance only Reference(OnconovaMedicationAdministration or OnconovaRadiotherapyCourseSummary or OnconovaSurgicalProcedure)
+* insert Obligations(suspectEntity.instance, #SHOULD:populate-if-known, #MAY:persist)
 
-// Use CTCAE codes for the event
 * event from CTCAdverseEvents (required)
+* insert Obligations(event, #SHALL:populate, #SHOULD:persist)
 
-// Add CTCAE grade extension
-* extension contains CTCGrade named ctcGrade 1..1 
+* extension contains AdverseEventCTCGrade named ctcGrade 1..1 
 * extension[ctcGrade] ^short = "CTCAE Grade"
+* insert Obligations(extension[ctcGrade], #SHALL:populate, #SHOULD:persist)
 
-// Add mitigation actions extension
-* extension contains AdverseEventMitigation named adverseEventMitigation 0..* // Mitigation actions taken
-* extension[adverseEventMitigation] ^short = "Adverse Event Mitigation Action(s)"
+* extension contains AdverseEventMitigation named mitigation 0..* // Mitigation actions taken
+* extension[mitigation] ^short = "Adverse Event Mitigation Action(s)"
+* insert Obligations(extension[mitigation], #SHOULD:populate-if-known, #MAY:persist)
 
 // Annotate unused elements for this profile
+* insert NotUsed(actuality)
 * insert NotUsed(category)
 * insert NotUsed(encounter)
 * insert NotUsed(detected)
@@ -41,13 +46,7 @@ The profile constrains the base FHIR `AdverseEvent` resource to ensure consisten
 * insert NotUsed(contributor)
 
 // Invariants 
-* obeys ae-req-1 and
-    ae-req-2 and
-    ae-req-3 and
-    ae-req-4 and
-    ae-req-5 and
-    ae-req-6 and
-    ae-req-7
+* obeys ae-req-1 and ae-req-2 and ae-req-3 and ae-req-4 and ae-req-5 and ae-req-6 and ae-req-7
 
 Invariant: ae-req-1
 Description: "The subject element is required and must be provided."
@@ -85,14 +84,10 @@ Expression: "extension('http://onconova.github.io/fhir/StructureDefinition/oncon
 Severity: #error
 
 
-// ============================
-// Extensions Definitions
-// ============================
-
-Extension: CTCGrade
-Id: onconova-ext-ctc-grade
+Extension: AdverseEventCTCGrade
+Id: onconova-ext-adverse-event-ctc-grade
 Title: "CTCAE Grade"
-Context: AdverseEvent
+Context: AdverseEvent.extension
 Description: "The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE)."
 * value[x] only integer
 * valueInteger ^short = "CTCAE Grade"
@@ -107,7 +102,7 @@ Severity: #error
 Extension: AdverseEventMitigation
 Id: onconova-ext-adverse-event-mitigation
 Title: "Adverse Event Mitigation"
-Context: AdverseEvent
+Context: AdverseEvent.extension
 Description: "Details about an action taken to mitigate or manage the adverse event."
 * value[x] 0..0
 * extension contains 
@@ -123,26 +118,31 @@ Description: "Details about an action taken to mitigate or manage the adverse ev
 * extension[category].valueCodeableConcept from AdverseEventMitigationCategories (required)
 * extension[category] ^short = "Mitigation Category"
 * extension[category] ^definition = "Type of mitigation action taken to address the adverse event."
+* insert Obligations(extension[category], #SHALL:populate, #SHOULD:persist)
 
 * extension[adjustment].value[x] only CodeableConcept
 * extension[adjustment].valueCodeableConcept from AdverseEventMitigationTreatmentAdjustments (required)
 * extension[adjustment] ^short = "Treatment Adjustment"
 * extension[adjustment] ^definition = "Details of any adjustments made to the treatment regimen in response to the adverse event."
+* insert Obligations(extension[adjustment], #SHALL:populate-if-known, #SHOULD:persist)
 
 * extension[drug].value[x] only CodeableConcept
 * extension[drug].valueCodeableConcept from AdverseEventMitigationDrugs (required)
 * extension[drug] ^short = "Mitigation Drug"
 * extension[drug] ^definition = "Medication administered to mitigate the adverse event."
+* insert Obligations(extension[drug], #SHALL:populate-if-known, #SHOULD:persist)
 
 * extension[procedure].value[x] only CodeableConcept
 * extension[procedure].valueCodeableConcept from AdverseEventMitigationProcedures (required)
 * extension[procedure] ^short = "Mitigation Procedure"
 * extension[procedure] ^definition = "Procedure performed to mitigate the adverse event."
+* insert Obligations(extension[procedure], #SHALL:populate-if-known, #SHOULD:persist)
 
 * extension[management].value[x] only CodeableConcept
 * extension[management].valueCodeableConcept from AdverseEventMitigationManagements (required)
 * extension[management] ^short = "Management"
 * extension[management] ^definition = "Management strategies employed to address the adverse event."
+* insert Obligations(extension[management], #SHOULD:populate-if-known, #MAY:persist)
 
 Invariant: drug-mitigation
 Description: "If the mitigation category is 'Drug', then only mitigation drug must be specified."

@@ -1,6 +1,6 @@
 ValueSet: CancerRiskAssessmentValues
 Id: onconova-vs-cancer-risk-assessment-values
-Title: "Risk Assessment Values"
+Title: "Risk Assessment Values Value Set"
 Description: "A non-exhaustive value set containing codes that result from risk assessments, i.e., the risk level of the cancer."
 
 * $NCIT#C136965 "FLIPI Score 0-1, Low Risk"

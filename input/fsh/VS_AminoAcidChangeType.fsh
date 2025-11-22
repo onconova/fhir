@@ -1,5 +1,5 @@
-ValueSet: AminoAcidChangeTypeVS
-Id: onconova-vs-amino-acid-change-type
+ValueSet: AminoAcidChangeTypes
+Id: onconova-vs-amino-acid-change-types
 Title: "Amino Acid Change Type Value Set"
 Description: "Amino acid change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes"
 

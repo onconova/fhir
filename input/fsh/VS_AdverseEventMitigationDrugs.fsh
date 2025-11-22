@@ -1,6 +1,6 @@
 ValueSet: AdverseEventMitigationDrugs
 Id: onconova-vs-adverse-event-mitigation-drugs
-Title: "Adverse Event Mitigation - Drugs"
+Title: "Adverse Event Mitigation Drugs Value Set"
 Description: "Drugs or medication categories used in the mitigation process of an adverse event."
 
 * $SNOMED#49616005 "Monoclonal antibody"

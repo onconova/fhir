@@ -1,3 +1,17 @@
+RuleSet: GenomicSignatureNotUsed
+* insert NotUsed(status)
+* insert NotUsed(focus)
+* insert NotUsed(encounter)
+* insert NotUsed(issued)
+* insert NotUsed(performer)
+* insert NotUsed(bodySite)
+* insert NotUsed(interpretation)
+* insert NotUsed(specimen)
+* insert NotUsed(device)    
+* insert NotUsed(referenceRange)
+* insert NotUsed(hasMember)
+* insert NotUsed(component)
+
 Profile: OnconovaTumorMutationalBurden  
 Parent: TMB
 Id: onconova-tumor-mutational-burden
@@ -6,11 +20,28 @@ Description: """
 A profile representing tumor mutational burden for a cancer patient. 
 
 This profile extends the GenomicsReporting IG [TumorMutationalBurden profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/tmb) to include specific constraints and extensions relevant to Onconova.
+
+**Conformance:**
+
+Observation resources representing a tumor mutational burden obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. 
 """
 
-* status = #final
+* subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
+* subject ^short = "The cancer patient associated with this signature"
+* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+
 * effective[x] only dateTime
+* effectiveDateTime 1..1 MS
+* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+
+* valueQuantity 1..1 MS
+* insert Obligations(valueQuantity, #SHALL:populate, #SHOULD:persist)
+
+* interpretation 0..1 MS
+* insert Obligations(interpretation, #SHOULD:populate-if-known, #MAY:persist)
+
+* insert GenomicSignatureNotUsed
 * obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-3
 
 Profile: OnconovaMicrosatelliteInstability
@@ -21,10 +52,25 @@ Description: """
 A profile representing microsatellite instability for a cancer patient. 
 
 This profile extends the GenomicsReporting IG [MicrosatelliteInstability profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/msi) to include specific constraints and extensions relevant to Onconova.
+
+**Conformance:**
+
+Observation resources representing a microsatellite instability obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. 
 """
-* status = #final
+
+* subject 1..1 MS
 * subject only Reference(OnconovaCancerPatient)
+* subject ^short = "The cancer patient associated with this signature"
+* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+
 * effective[x] only dateTime
+* effectiveDateTime 1..1 MS
+* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+
+* valueCodeableConcept 1..1 MS
+* insert Obligations(valueCodeableConcept, #SHALL:populate, #SHOULD:persist)
+
+* insert GenomicSignatureNotUsed
 * obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-4
 
 
@@ -36,16 +82,31 @@ Description: """
 A profile representing loss of heterozygosity for a cancer patient. 
 
 This profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.
+
+**Conformance:**
+
+Observation resources representing a loss of heterozygosity obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. 
 """
 
-* status = #final
-* subject only Reference(OnconovaCancerPatient)
+
 * code = $NCIT#C18016 "Loss of Heterozygosity"
+
+* subject 1..1 MS
+* subject only Reference(OnconovaCancerPatient)
+* subject ^short = "The cancer patient associated with this signature"
+* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+
 * effective[x] only dateTime
+* effectiveDateTime 1..1 MS
+* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+
 * value[x] only Quantity
 * valueQuantity 1..1
 * valueQuantity.system = $UCUM
-* valueQuantity.code = $UCUM#%
+* valueQuantity.code = #%
+* insert Obligations(valueQuantity, #SHALL:populate, #SHOULD:persist)
+
+* insert GenomicSignatureNotUsed
 * insert NotUsed(interpretation)
 * obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-3
 
@@ -58,16 +119,34 @@ Description: """
 A profile representing homologous recombination deficiency for a cancer patient. 
 
 This profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.
+
+**Conformance:**
+
+Observation resources representing a homologous recombination deficiency obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. 
 """
-* status = #final
-* subject only Reference(OnconovaCancerPatient)
+
 * code = $NCIT#C120465 "Homologous Recombination Deficiency"
+
+* subject 1..1 MS
+* subject only Reference(OnconovaCancerPatient)
+* subject ^short = "The cancer patient associated with this signature"
+* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+
 * effective[x] only dateTime
+* effectiveDateTime 1..1 MS
+* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+
 * value[x] only Quantity
 * valueQuantity 1..1
 * valueQuantity.system = $UCUM
-* valueQuantity.code = $UCUM#1
-* interpretation from https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL2038-9 (required)
+* valueQuantity.code = #1
+* insert Obligations(valueQuantity, #SHALL:populate, #SHOULD:persist)
+
+* interpretation 0..1 MS
+* interpretation from http://loinc.org/vs/LL2038-9 (required)
+* insert Obligations(interpretation, #SHOULD:populate-if-known, #MAY:persist)
+
+* insert GenomicSignatureNotUsed
 * obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-3
 
 
@@ -79,15 +158,30 @@ Description: """
 A profile representing tumor neoantigen burden for a cancer patient. 
 
 This profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.
+
+**Conformance:**
+
+Observation resources representing a tumor neoantigen burden obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. 
 """
-* status = #final
-* subject only Reference(OnconovaCancerPatient)
+
 * code = $TBD#tumor-neoantigen-burden "Tumor Neoantigen Burden"
+
+* subject 1..1 MS
+* subject only Reference(OnconovaCancerPatient)
+* subject ^short = "The cancer patient associated with this signature"
+* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+
 * effective[x] only dateTime
+* effectiveDateTime 1..1 MS
+* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+
 * value[x] only Quantity 
-* valueQuantity 1..1 
+* valueQuantity 1..1 MS
 * valueQuantity.system = $UCUM
-* valueQuantity.code = $UCUM#1/1000000{Neoantigen}
+* valueQuantity.code = #1/1000000{Neoantigen}
+* insert Obligations(valueQuantity, #SHALL:populate, #SHOULD:persist)
+
+* insert GenomicSignatureNotUsed
 * insert NotUsed(interpretation)
 * obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-3
 
@@ -100,22 +194,33 @@ Description: """
 A profile representing aneuploid score for a cancer patient. 
 
 This profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.
+
+**Conformance:**
+
+Observation resources representing an aneuploid score obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. 
 """
-* status = #final
-* subject only Reference(OnconovaCancerPatient)
+
 * code = $TBD#aneuploid-score "Aneuploid Score"
+
+* subject 1..1 MS
+* subject only Reference(OnconovaCancerPatient)
+* subject ^short = "The cancer patient associated with this signature"
+* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+
 * effective[x] only dateTime
+* effectiveDateTime 1..1 MS
+* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+
 * value[x] only Quantity
-* valueQuantity 1..1
+* valueQuantity 1..1 MS
 * valueQuantity.system = $UCUM
-* valueQuantity.code = $UCUM#1
+* valueQuantity.code = #1
+* insert Obligations(valueQuantity, #SHALL:populate, #SHOULD:persist)
+
+* insert GenomicSignatureNotUsed
 * insert NotUsed(interpretation)
 * obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-3
 
-
-//==============================
-// Invariants 
-//==============================
 
 Invariant: o-sig-req-1
 Description: "The subject element is required and must be provided."
