@@ -14,7 +14,8 @@ It constrains the mCODE [CancerPatient profile](http://hl7.org/fhir/us/mcode/Str
 Patient resources representing Cancer Patients in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.
 """
 
-* insert Obligations(gender, #SHALL:populate, #SHOULD:persist)
+* gender 1..1 MS
+* insert ObligationsWithUscdi(gender, #SHALL:populate, #SHOULD:persist)
 
 * identifier ^slicing.rules = #open 
 * identifier ^slicing.discriminator[0].type = #pattern 
@@ -26,7 +27,7 @@ Patient resources representing Cancer Patients in the scope of Onconova SHALL co
 * identifier[onconovaIdentifier].system = "Onconova" 
 * identifier[onconovaIdentifier].value 1..1 MS 
 * identifier[onconovaIdentifier] ^short = "Onconova Logical Pseudoidentifier"
-* insert Obligations(identifier[onconovaIdentifier], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(identifier[onconovaIdentifier], #SHALL:populate, #SHOULD:persist)
 
 * identifier contains clinicalIdentifier 1..*  MS
 * identifier[clinicalIdentifier] 1..* 
@@ -34,11 +35,11 @@ Patient resources representing Cancer Patients in the scope of Onconova SHALL co
 * identifier[clinicalIdentifier].system ^short = "Clinical center or institution assigning the identifier"
 * identifier[clinicalIdentifier].value 1..1 MS
 * identifier[clinicalIdentifier] ^short = "Clinical Identifier from Clinical Center"
-* insert Obligations(identifier[clinicalIdentifier], #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(identifier[clinicalIdentifier], #SHALL:populate, #SHOULD:persist)
     
 * birthDate 1..1 MS
 * birthDate ^short = "Date of birth of the patient normalized to the first day of the month"
-* insert Obligations(birthDate, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(birthDate, #SHALL:populate, #SHOULD:persist)
 
 * birthDate.extension contains CancerPatientAge named age 0..1
 * insert Obligations(birthDate.extension[age], #MAY:ignore, #MAY:persist)
@@ -48,7 +49,7 @@ Patient resources representing Cancer Patients in the scope of Onconova SHALL co
 * deceased[x] 1..1 MS
 * deceased[x] only dateTime
 * deceased[x] ^short = "Date of death of the patient, if applicable"
-* insert Obligations(deceased[x], #SHALL:populate-if-known, #SHOULD:persist)
+* insert ObligationsWithUscdi(deceased[x], #SHALL:populate-if-known, #SHOULD:persist)
 * deceased[x].extension contains CancerPatientVitalStatus named vitalStatus 1..1 MS
 * insert Obligations(deceased[x].extension[vitalStatus], #SHALL:populate, #SHOULD:persist)
 * deceased[x].extension contains CancerPatientCauseOfDeath named causeOfDeath 1..1 MS
@@ -69,9 +70,9 @@ Patient resources representing Cancer Patients in the scope of Onconova SHALL co
 * insert Obligations(extension[endOfRecords], #SHALL:populate-if-known, #SHOULD:persist)
 
 
-* insert Obligations(extension[race], #SHOULD:populate-if-known, #MAY:persist)
+* insert ObligationsWithUscdi(extension[race], #SHOULD:populate-if-known, #MAY:persist)
 * insert Obligations(extension[birthsex], #SHOULD:populate-if-known, #MAY:persist)
-* insert Obligations(extension[genderIdentity], #MAY:populate-if-known, #MAY:persist)
+* insert ObligationsWithUscdi(extension[genderIdentity], #MAY:populate-if-known, #MAY:persist)
 
 * obeys o-pat-req-1 and o-pat-req-2 and o-pat-req-3 and o-pat-req-4 and o-pat-req-5 and o-pat-req-6 and o-pat-req-7 and o-pat-req-8 
 

@@ -14,15 +14,15 @@ Observation resources representing a generic or panel comorbidities assessment i
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * value[x] only Quantity
 * valueQuantity.unit = "1"
 * valueQuantity ^short = "Comorbidity Index Score"
-* insert Obligations(valueQuantity, #SHOULD:populate-if-known, #SHOULD:persist)
+* insert ObligationsWithUscdi(valueQuantity, #SHOULD:populate-if-known, #SHOULD:persist)
 
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * focus only Reference(OnconovaPrimaryCancerCondition)
 * insert Obligations(focus, #SHALL:populate, #SHOULD:persist)

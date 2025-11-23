@@ -15,7 +15,7 @@ Observation resources representing a cancer-related risk assessment in the scope
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey 
 
 * subject only Reference(OnconovaCancerPatient)
-* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
 * focus only Reference(OnconovaPrimaryCancerCondition)
 * insert Obligations(focus, #SHALL:populate, #SHOULD:persist)
@@ -23,13 +23,13 @@ Observation resources representing a cancer-related risk assessment in the scope
 * effective[x] 1..1 MS 
 * effective[x] ^short = "Date the risk assessment was performed"
 * effective[x] only dateTime
-* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * code from CancerRiskAssessmentMethods (required)
-* insert Obligations(code, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(code, #SHALL:populate, #SHOULD:persist)
 
 * valueCodeableConcept from CancerRiskAssessmentValues (required)
-* insert Obligations(valueCodeableConcept, #SHALL:populate, #SHOULD:persist)
+* insert ObligationsWithUscdi(valueCodeableConcept, #SHALL:populate, #SHOULD:persist)
 
 * extension contains RiskAssessmentScore named riskAssessmentScore 0..1 
 * insert Obligations(extension[riskAssessmentScore], #SHALL:populate-if-known, #SHOULD:persist)
