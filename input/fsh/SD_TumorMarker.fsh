@@ -60,7 +60,7 @@ Severity: #error
 
 Invariant: o-tma-req-3
 Description: "The tumorMarkerAnalyte element is required and must be provided."
-Expression: "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte').exists()"
+Expression: "code.extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte').exists()"
 Severity: #error
 
 //==================
