@@ -159,7 +159,7 @@ Observation resources representing a homologous recombination deficiency obtaine
 * valueQuantity.code = #1
 * insert Obligations(valueQuantity, #SHALL:populate, #SHOULD:persist)
 
-* extension contains HomologousRecombinationDeficiencyInterpretation named interpretation
+* extension contains HomologousRecombinationDeficiencyInterpretation named interpretation 0..1 MS
 * insert Obligations(extension[interpretation], #SHOULD:populate-if-known, #MAY:persist)
 
 * insert GenomicSignatureNotUsed
