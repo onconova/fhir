@@ -788,6 +788,9 @@
       "MedicationAdministration",
       "Procedure"
     ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-treatment-response-recist-is-interpreted": [
+      "Observation.value[x]"
+    ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-board-specialization": [
       "Procedure.code"
     ],

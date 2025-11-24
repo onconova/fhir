@@ -1,9 +1,9 @@
 Onconova : Validation Results
 =========================================
 
-err = 121, warn = 239, info = 654
+err = 121, warn = 241, info = 656
 IG Publisher Version: 2.0.26
-Generated Mon Nov 24 09:37:52 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2.0 (canonical = http://onconova.github.io/fhir)
+Generated Mon Nov 24 11:26:50 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2.0 (canonical = http://onconova.github.io/fhir)
  Build Errors : 1 / 2 / 0
  /home/runner/work/fhir/fhir/fsh-generated/resources/ActorDefinition-onconova-consumer : 0 / 0 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ActorDefinition-onconova-creator : 0 / 0 / 1
@@ -58,7 +58,7 @@ Generated Mon Nov 24 09:37:52 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-tumor-mutational-burden-status : 1 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-genomic-variant : 1 / 30 / 68
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-homologous-recombination-deficiency : 2 / 5 / 11
- /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-imaging-disease-status : 2 / 1 / 14
+ /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-imaging-disease-status : 2 / 3 / 16
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-karnofsky-performance-status : 1 / 1 / 12
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-lifestyle : 3 / 5 / 20
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-loss-of-heterozygosity : 2 / 5 / 9
@@ -594,10 +594,14 @@ INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefin
 INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[23].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[26].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[26].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[30].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[30].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[31].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[31].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[26].binding.valueSet: A definition could not be found for Canonical URL 'https://loinc.org/LL4721-8/'
+INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[29].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[29].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[35].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[35].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[36].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[36].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.differential.element[12].binding.valueSet: A definition could not be found for Canonical URL 'https://loinc.org/LL4721-8/'
 ERROR: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[0].constraint[8]: Error in constraint 'o-res-req-2' with expression 'effectiveDateTime.exists() and effectiveDateTime.hasValue()': Error evaluating FHIRPath expression: The name 'effectiveDateTime' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Observation] (@char 1)
 ERROR: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[0].constraint[9]: Error in constraint 'o-res-req-3' with expression 'valueCodeableConcept.exists() and valueCodeableConcept.coding.exists()': Error evaluating FHIRPath expression: The name 'valueCodeableConcept' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Observation] (@char 1)
 INFORMATION: StructureDefinition/onconova-imaging-disease-status: StructureDefinition.snapshot.element[18].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)

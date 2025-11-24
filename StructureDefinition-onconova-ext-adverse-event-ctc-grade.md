@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
   "name" : "AdverseEventCTCGrade",
   "title" : "CTCAE Grade",
   "status" : "active",
-  "date" : "2025-11-24T09:24:28+00:00",
+  "date" : "2025-11-24T11:19:41+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

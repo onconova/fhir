@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-imaging-dis
   "name" : "OnconovaImagingDiseaseStatus",
   "title" : "Imaging Disease Status Profile",
   "status" : "active",
-  "date" : "2025-11-24T09:24:28+00:00",
+  "date" : "2025-11-24T11:19:41+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -340,7 +340,55 @@ Other representations of profile: [CSV](StructureDefinition-onconova-imaging-dis
           }
         ],
         "path" : "Observation.value[x]",
-        "min" : 1
+        "min" : 1,
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://loinc.org/LL4721-8/"
+        }
+      },
+      {
+        "id" : "Observation.value[x].extension:interpreted",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Observation.value[x].extension",
+        "sliceName" : "interpreted",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-treatment-response-recist-is-interpreted"
+            ]
+          }
+        ],
+        "mustSupport" : true
       },
       {
         "id" : "Observation.bodySite",

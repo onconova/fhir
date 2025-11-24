@@ -19,7 +19,7 @@ Indicates that whether the RECIST was interpreted from a radiology report rather
 
 **Usages:**
 
-* This Extension is not used by any profiles in this Implementation Guide
+* Use this Extension: [Imaging Disease Status Profile](StructureDefinition-onconova-imaging-disease-status.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-ext-treatment-response-recist-is-interpreted)
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-treatme
   "name" : "TreatmentResponseRecistIsInterpreted",
   "title" : "Treatment Response RECIST Is Interpreted",
   "status" : "active",
-  "date" : "2025-11-24T09:24:28+00:00",
+  "date" : "2025-11-24T11:19:41+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
