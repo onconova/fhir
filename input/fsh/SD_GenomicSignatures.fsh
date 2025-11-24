@@ -38,7 +38,7 @@ Observation resources representing a tumor mutational burden obtained through ge
 * insert Obligations(valueQuantity, #SHALL:populate, #SHOULD:persist)
 
 * extension contains TumorMutationalBurdenStatus named status 0..1 MS
-* insert Obligations(extension[status], #SHOULD: populate-if-known, #SHOULD:persist)
+* insert Obligations(extension[status], #SHOULD:populate-if-known, #SHOULD:persist)
 
 * insert GenomicSignatureNotUsed
 * insert NotUsed(interpretation)
@@ -46,7 +46,7 @@ Observation resources representing a tumor mutational burden obtained through ge
 
 ValueSet: TumorMutationalBurdenStatusInterpretations
 Id: onconova-vs-tumor-mutational-burden-status-interpretation
-Title: Tumor Mutational Burden Status Interpretation Value Set"
+Title: "Tumor Mutational Burden Status Interpretation Value Set"
 Description:  "The categorical classifications of the TMB status interpreted from its value.."
 * include codes from valueset http://hl7.org/fhir/uv/genomics-reporting/ValueSet/high-low-codes-vs
 * http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#IND "Indeterminate"
