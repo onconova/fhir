@@ -45,6 +45,41 @@ Observation resources representing a cancer staging in the scope of Onconova SHA
 * insert StagingNotUsed
 * obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
 
+
+Profile: OnconovaLymphomaStage
+Parent: LymphomaStage
+Id: onconova-lymphoma-stage
+Title: "Lymphoma Stage"
+Description: """
+Staging of lymphoma (both Hodgkins and Non-Hodgkins) by Ann Arbor, Cotswold, or Lugano staging systems. The method (required) indicates which of these related staging systems was used.
+
+**Conformance:**
+
+Observation resources representing a lymphoma staging in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. 
+"""      
+
+* subject 1..1 MS
+* subject only Reference(OnconovaCancerPatient)
+* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
+
+* effective[x] 1..1 MS
+* effective[x] only dateTime
+* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+
+* focus 1..* MS
+* focus only Reference(OnconovaPrimaryCancerCondition)
+* insert Obligations(focus, #SHALL:populate, #SHOULD:persist)
+
+* value[x] 1..1 MS
+* insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
+
+* method 0..1 MS
+* insert Obligations(method, #SHALL:populate-if-known, #SHOULD:persist)
+
+* insert StagingNotUsed
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
+
+
 Profile: OnconovaTNMStageGroup 
 Parent: TNMStageGroup
 Id: onconova-tnm-stage-group
