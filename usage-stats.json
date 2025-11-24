@@ -163,6 +163,13 @@
       ]
     },
     {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-homologous-recombination-deficiency-interpretation",
+      "title": "Homologous Recombination Deficiency Interpretation",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-adjunctive-role",
       "title": "Medication Administration Adjunctive Role",
       "types": [
@@ -728,6 +735,9 @@
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-histological-differentiation": [
       "Condition"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-homologous-recombination-deficiency-interpretation": [
+      "Observation"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-adjunctive-role": [
       "MedicationAdministration"

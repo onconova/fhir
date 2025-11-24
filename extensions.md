@@ -52,6 +52,9 @@ Date at which the genomic variant was assessed and/or reported.
 * [Histological Differentiation](StructureDefinition-onconova-ext-histological-differentiation.md) 
 The histological differentiation of the tumor. 
 
+* [Homologous Recombination Deficiency Interpretation](StructureDefinition-onconova-ext-homologous-recombination-deficiency-interpretation.md) 
+The categorical classification of the HRD status interpreted from its value. 
+
 * [Medication Administration Adjunctive Role](StructureDefinition-onconova-ext-medication-administration-adjunctive-role.md) 
 Indicates the role of this medication administration in the context of the overall treatment plan. 
 

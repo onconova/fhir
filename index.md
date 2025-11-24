@@ -69,14 +69,14 @@ This publication includes IP covered under the following statements.
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AdverseEventMitigation](StructureDefinition-onconova-ext-adverse-event-mitigation.md), [AdverseEventMitigationDrugs](ValueSet-onconova-vs-adverse-event-mitigation-drugs.md)...Show 47 more,[AdverseEventMitigationManagements](ValueSet-onconova-vs-adverse-event-mitigation-managements.md),[AdverseEventMitigationProcedures](ValueSet-onconova-vs-adverse-event-mitigation-procedures.md),[AdverseEventMitigationTreatmentAdjustments](ValueSet-onconova-vs-adverse-event-mitigation-treatment-adjustments.md),[CancerImagingMethods](ValueSet-onconova-vs-cancer-imaging-methods.md),[CancerPatientCauseOfDeath](StructureDefinition-onconova-ext-cancer-patient-cause-of-death.md),[CancerPatientVitalStatus](StructureDefinition-onconova-ext-cancer-patient-vital-status.md),[CausesOfDeath](ValueSet-onconova-vs-causes-of-death.md),[ExpectedDrugEffects](ValueSet-onconova-vs-expected-drug-effects.md),[MolecularTumorBoardTherapeuticRecommendation](StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.md),[ObservationBodySites](ValueSet-onconova-vs-observation-bodysites.md),[OnconovaCancerFamilyMemberHistory](StructureDefinition-onconova-cancer-family-member-history.md),[OnconovaComorbidities](StructureDefinition-onconova-comorbidities.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaLifestyle](StructureDefinition-onconova-lifestyle.md),[OnconovaMedicationAdministration](StructureDefinition-onconova-medication-administration.md),[OnconovaMolecularTumorBoardReview](StructureDefinition-onconova-molecular-tumor-board-review.md),[OnconovaPrimaryCancerCondition](StructureDefinition-onconova-primary-cancer-condition.md),[OnconovaRadiotherapyCourseSummary](StructureDefinition-onconova-radiotherapy-summary.md),[OnconovaSecondaryCancerCondition](StructureDefinition-onconova-secondary-cancer-condition.md),[OnconovaTNMDistantMetastasesCategory](StructureDefinition-onconova-tnm-distant-metastases-category.md),[OnconovaTNMGradeCategory](StructureDefinition-onconova-tnm-grade-category.md),[OnconovaTNMLymphaticInvasionCategory](StructureDefinition-onconova-tnm-lymphatic-invasion-category.md),[OnconovaTNMPerineuralInvasionCategory](StructureDefinition-onconova-tnm-perineural-invasion-category.md),[OnconovaTNMPrimaryTumorCategory](StructureDefinition-onconova-tnm-primary-tumor-category.md),[OnconovaTNMRegionalNodesCategory](StructureDefinition-onconova-tnm-regional-nodes-category.md),[OnconovaTNMResidualTumorCategory](StructureDefinition-onconova-tnm-residual-tumor-category.md),[OnconovaTNMSerumTumorMarkerLevelCategory](StructureDefinition-onconova-tnm-serum-tumor-marker-level-category.md),[OnconovaTNMVenousInvasionCategory](StructureDefinition-onconova-tnm-venous-invasion-category.md),[OnconovaTumorBoardRecommendations](ValueSet-onconova-vs-tumor-board-recommendations.md),[OnconovaTumorBoardReview](StructureDefinition-onconova-tumor-board-review.md),[PrimaryCancerRecurrenceType](StructureDefinition-onconova-ext-primary-cancer-recurrence-type.md),[RecreationalDrugs](ValueSet-onconova-vs-recreational-drugs.md),[RecurrenceTypes](ValueSet-onconova-vs-recurrence-types.md),[SmokingStatus](ValueSet-onconova-vs-smoking-status.md),[TNMDistantMetastasisCategories](ValueSet-onconova-vs-tnm-distant-metastasis-categories.md),[TNMGradeCategories](ValueSet-onconova-vs-tnm-grade-categories.md),[TNMGradeCategoryMethods](ValueSet-onconova-vs-tnm-grade-category-methods.md),[TNMLymphaticInvasionCategories](ValueSet-onconova-tnm-lymphatic-invasion-categories.md),[TNMPerineuralInvasionCategories](ValueSet-onconova-tnm-perineural-invasion-categories.md),[TNMPrimaryTumorCategories](ValueSet-onconova-vs-tnm-primary-tumor-categories.md),[TNMRegionalNodesCategories](ValueSet-onconova-vs-tnm-regional-nodes-categories.md),[TNMResidualTumorCategories](ValueSet-onconova-tnm-residual-tumor-categories.md),[TNMSerumTumorMarkerLevelCategories](ValueSet-onconova-vs-tnm-serum-tumor-marker-level-categories.md),[TNMVenousInvasionCategories](ValueSet-onconova-vs-tnm-venous-invasion-categories.md),[TherapyLineIntent](StructureDefinition-onconova-ext-therapy-line-intent.md),[TreatmentTerminationReasons](ValueSet-onconova-vs-treatment-termination-reasons.md)and[VitalStatus](ValueSet-onconova-vs-vital-status.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AdverseEventMitigation](StructureDefinition-onconova-ext-adverse-event-mitigation.md), [AdverseEventMitigationDrugs](ValueSet-onconova-vs-adverse-event-mitigation-drugs.md)...Show 49 more,[AdverseEventMitigationManagements](ValueSet-onconova-vs-adverse-event-mitigation-managements.md),[AdverseEventMitigationProcedures](ValueSet-onconova-vs-adverse-event-mitigation-procedures.md),[AdverseEventMitigationTreatmentAdjustments](ValueSet-onconova-vs-adverse-event-mitigation-treatment-adjustments.md),[CancerImagingMethods](ValueSet-onconova-vs-cancer-imaging-methods.md),[CancerPatientCauseOfDeath](StructureDefinition-onconova-ext-cancer-patient-cause-of-death.md),[CancerPatientVitalStatus](StructureDefinition-onconova-ext-cancer-patient-vital-status.md),[CausesOfDeath](ValueSet-onconova-vs-causes-of-death.md),[ExpectedDrugEffects](ValueSet-onconova-vs-expected-drug-effects.md),[HomologousRecombinationDeficiencyInterpretation](StructureDefinition-onconova-ext-homologous-recombination-deficiency-interpretation.md),[HomologousRecombinationDeficiencyInterpretations](ValueSet-onconova-vs-homologous-recombination-deficiency-interpretations.md),[MolecularTumorBoardTherapeuticRecommendation](StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.md),[ObservationBodySites](ValueSet-onconova-vs-observation-bodysites.md),[OnconovaCancerFamilyMemberHistory](StructureDefinition-onconova-cancer-family-member-history.md),[OnconovaComorbidities](StructureDefinition-onconova-comorbidities.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaLifestyle](StructureDefinition-onconova-lifestyle.md),[OnconovaMedicationAdministration](StructureDefinition-onconova-medication-administration.md),[OnconovaMolecularTumorBoardReview](StructureDefinition-onconova-molecular-tumor-board-review.md),[OnconovaPrimaryCancerCondition](StructureDefinition-onconova-primary-cancer-condition.md),[OnconovaRadiotherapyCourseSummary](StructureDefinition-onconova-radiotherapy-summary.md),[OnconovaSecondaryCancerCondition](StructureDefinition-onconova-secondary-cancer-condition.md),[OnconovaTNMDistantMetastasesCategory](StructureDefinition-onconova-tnm-distant-metastases-category.md),[OnconovaTNMGradeCategory](StructureDefinition-onconova-tnm-grade-category.md),[OnconovaTNMLymphaticInvasionCategory](StructureDefinition-onconova-tnm-lymphatic-invasion-category.md),[OnconovaTNMPerineuralInvasionCategory](StructureDefinition-onconova-tnm-perineural-invasion-category.md),[OnconovaTNMPrimaryTumorCategory](StructureDefinition-onconova-tnm-primary-tumor-category.md),[OnconovaTNMRegionalNodesCategory](StructureDefinition-onconova-tnm-regional-nodes-category.md),[OnconovaTNMResidualTumorCategory](StructureDefinition-onconova-tnm-residual-tumor-category.md),[OnconovaTNMSerumTumorMarkerLevelCategory](StructureDefinition-onconova-tnm-serum-tumor-marker-level-category.md),[OnconovaTNMVenousInvasionCategory](StructureDefinition-onconova-tnm-venous-invasion-category.md),[OnconovaTumorBoardRecommendations](ValueSet-onconova-vs-tumor-board-recommendations.md),[OnconovaTumorBoardReview](StructureDefinition-onconova-tumor-board-review.md),[PrimaryCancerRecurrenceType](StructureDefinition-onconova-ext-primary-cancer-recurrence-type.md),[RecreationalDrugs](ValueSet-onconova-vs-recreational-drugs.md),[RecurrenceTypes](ValueSet-onconova-vs-recurrence-types.md),[SmokingStatus](ValueSet-onconova-vs-smoking-status.md),[TNMDistantMetastasisCategories](ValueSet-onconova-vs-tnm-distant-metastasis-categories.md),[TNMGradeCategories](ValueSet-onconova-vs-tnm-grade-categories.md),[TNMGradeCategoryMethods](ValueSet-onconova-vs-tnm-grade-category-methods.md),[TNMLymphaticInvasionCategories](ValueSet-onconova-tnm-lymphatic-invasion-categories.md),[TNMPerineuralInvasionCategories](ValueSet-onconova-tnm-perineural-invasion-categories.md),[TNMPrimaryTumorCategories](ValueSet-onconova-vs-tnm-primary-tumor-categories.md),[TNMRegionalNodesCategories](ValueSet-onconova-vs-tnm-regional-nodes-categories.md),[TNMResidualTumorCategories](ValueSet-onconova-tnm-residual-tumor-categories.md),[TNMSerumTumorMarkerLevelCategories](ValueSet-onconova-vs-tnm-serum-tumor-marker-level-categories.md),[TNMVenousInvasionCategories](ValueSet-onconova-vs-tnm-venous-invasion-categories.md),[TherapyLineIntent](StructureDefinition-onconova-ext-therapy-line-intent.md),[TreatmentTerminationReasons](ValueSet-onconova-vs-treatment-termination-reasons.md)and[VitalStatus](ValueSet-onconova-vs-vital-status.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
 * [Observation Category Codes](http://terminology.hl7.org/7.0.0/CodeSystem-observation-category.html): [OnconovaAneuploidScore](StructureDefinition-onconova-aneuploid-score.md), [OnconovaCancerRiskAssessment](StructureDefinition-onconova-cancer-risk-assessment.md)...Show 8 more,[OnconovaGenomicVariant](StructureDefinition-onconova-genomic-variant.md),[OnconovaHomologousRecombinationDeficiency](StructureDefinition-onconova-homologous-recombination-deficiency.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaLossOfHeterozygosity](StructureDefinition-onconova-loss-of-heterozygosity.md),[OnconovaMicrosatelliteInstability](StructureDefinition-onconova-microsatellite-instability.md),[OnconovaTumorMarker](StructureDefinition-onconova-tumor-marker.md),[OnconovaTumorMutationalBurden](StructureDefinition-onconova-tumor-mutational-burden.md)and[OnconovaTumorNeoantigenBurden](StructureDefinition-onconova-tumor-neoantigen-burden.md)
 * [identifierType](http://terminology.hl7.org/7.0.0/CodeSystem-v2-0203.html): [OnconovaCancerPatient](StructureDefinition-onconova-cancer-patient.md)
-* [ObservationInterpretation](http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html): [TumorMutationalBurdenStatus](StructureDefinition-onconova-ext-tumor-mutational-burden-status.md) and [TumorMutationalBurdenStatusInterpretations](ValueSet-onconova-vs-tumor-mutational-burden-status-interpretation.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html): [TumorMutationalBurdenStatus](StructureDefinition-onconova-ext-tumor-mutational-burden-status.md) and [TumorMutationalBurdenStatusInterpretations](ValueSet-onconova-vs-tumor-mutational-burden-status-interpretations.md)
 
 
 ### Dependency Table
@@ -107,7 +107,7 @@ This publication includes IP covered under the following statements.
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-24T08:19:06+00:00",
+  "date" : "2025-11-24T08:55:00+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -1656,6 +1656,34 @@ This publication includes IP covered under the following statements.
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-homologous-recombination-deficiency-interpretation"
+        },
+        "name" : "Homologous Recombination Deficiency Interpretation",
+        "description" : "The categorical classification of the HRD status interpreted from its value.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onconova-vs-homologous-recombination-deficiency-interpretations"
+        },
+        "name" : "Homologous Recombination Deficiency Interpretation Value Set",
+        "description" : "The categorical classifications of the HRD status interpreted from its value..",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -2668,7 +2696,7 @@ This publication includes IP covered under the following statements.
           }
         ],
         "reference" : {
-          "reference" : "ValueSet/onconova-vs-tumor-mutational-burden-status-interpretation"
+          "reference" : "ValueSet/onconova-vs-tumor-mutational-burden-status-interpretations"
         },
         "name" : "Tumor Mutational Burden Status Interpretation Value Set",
         "description" : "The categorical classifications of the TMB status interpreted from its value..",

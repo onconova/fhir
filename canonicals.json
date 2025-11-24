@@ -208,6 +208,13 @@
     "name" : "HistologicalDifferentiation"
   },
   {
+    "id" : "onconova-ext-homologous-recombination-deficiency-interpretation",
+    "type" : "StructureDefinition",
+    "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-homologous-recombination-deficiency-interpretation",
+    "version" : "0.2.0",
+    "name" : "HomologousRecombinationDeficiencyInterpretation"
+  },
+  {
     "id" : "onconova-ext-medication-administration-adjunctive-role",
     "type" : "StructureDefinition",
     "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-adjunctive-role",
@@ -698,6 +705,13 @@
     "name" : "ExposureAgents"
   },
   {
+    "id" : "onconova-vs-homologous-recombination-deficiency-interpretations",
+    "type" : "ValueSet",
+    "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-homologous-recombination-deficiency-interpretations",
+    "version" : "0.2.0",
+    "name" : "HomologousRecombinationDeficiencyInterpretations"
+  },
+  {
     "id" : "onconova-vs-icd-10-conditions",
     "type" : "ValueSet",
     "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions",
@@ -838,9 +852,9 @@
     "name" : "TumorMarkerTests"
   },
   {
-    "id" : "onconova-vs-tumor-mutational-burden-status-interpretation",
+    "id" : "onconova-vs-tumor-mutational-burden-status-interpretations",
     "type" : "ValueSet",
-    "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-mutational-burden-status-interpretation",
+    "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-mutational-burden-status-interpretations",
     "version" : "0.2.0",
     "name" : "TumorMutationalBurdenStatusInterpretations"
   },

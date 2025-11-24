@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-tumor-m
   "name" : "TumorMutationalBurdenStatus",
   "title" : "Tumor Mutational Burden Status",
   "status" : "active",
-  "date" : "2025-11-24T08:19:06+00:00",
+  "date" : "2025-11-24T08:55:00+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -109,7 +109,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-tumor-m
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-mutational-burden-status-interpretation"
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-mutational-burden-status-interpretations"
         }
       }
     ]

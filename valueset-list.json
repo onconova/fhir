@@ -215,6 +215,15 @@
       "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"]
     },
     {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-homologous-recombination-deficiency-interpretations",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "HomologousRecombinationDeficiencyInterpretations",
+      "title" : "Homologous Recombination Deficiency Interpretation Value Set",
+      "description" : "The categorical classifications of the HRD status interpreted from its value..",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions",
       "version" : "0.2.0",
       "status" : "active",
@@ -401,7 +410,7 @@
       ]
     },
     {
-      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-mutational-burden-status-interpretation",
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-mutational-burden-status-interpretations",
       "version" : "0.2.0",
       "status" : "active",
       "name" : "TumorMutationalBurdenStatusInterpretations",

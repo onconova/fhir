@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-homologous-
   "name" : "OnconovaHomologousRecombinationDeficiency",
   "title" : "Homologous Recombination Deficiency Profile",
   "status" : "active",
-  "date" : "2025-11-24T08:19:06+00:00",
+  "date" : "2025-11-24T08:55:00+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -125,6 +125,50 @@ Other representations of profile: [CSV](StructureDefinition-onconova-homologous-
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency"
           }
         ]
+      },
+      {
+        "id" : "Observation.extension:interpretation",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "MAY:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Observation.extension",
+        "sliceName" : "interpretation",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-homologous-recombination-deficiency-interpretation"
+            ]
+          }
+        ],
+        "mustSupport" : true
       },
       {
         "id" : "Observation.status",
@@ -301,41 +345,9 @@ Other representations of profile: [CSV](StructureDefinition-onconova-homologous-
       },
       {
         "id" : "Observation.interpretation",
-        "extension" : [
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "SHOULD:populate-if-known"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:persist"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          }
-        ],
         "path" : "Observation.interpretation",
-        "max" : "1",
-        "mustSupport" : true,
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "http://loinc.org/vs/LL2038-9"
-        }
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       },
       {
         "id" : "Observation.bodySite",

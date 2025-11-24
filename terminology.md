@@ -75,6 +75,9 @@ Collection of expected effects when a drug is administered.
 * [Exposure Agents Value Set](ValueSet-onconova-vs-exposure-agents.md) 
 Agents to which a patient may have been exposed. 
 
+* [Homologous Recombination Deficiency Interpretation Value Set](ValueSet-onconova-vs-homologous-recombination-deficiency-interpretations.md) 
+The categorical classifications of the HRD status interpreted from its value.. 
+
 * [ICD-10 Codes Value Set](ValueSet-onconova-vs-icd-10-conditions.md) 
 All possible ICD-10 codes for conditions. 
 
@@ -135,7 +138,7 @@ Analytes considered tumor markers.
 * [Tumor Marker Tests](ValueSet-onconova-vs-tumor-marker-tests.md) 
 ValueSet containing LOINC and NCI Thesaurus codes for tumor marker laboratory tests and measurements 
 
-* [Tumor Mutational Burden Status Interpretation Value Set](ValueSet-onconova-vs-tumor-mutational-burden-status-interpretation.md) 
+* [Tumor Mutational Burden Status Interpretation Value Set](ValueSet-onconova-vs-tumor-mutational-burden-status-interpretations.md) 
 The categorical classifications of the TMB status interpreted from its value.. 
 
 * [Vital Status Value Set](ValueSet-onconova-vs-vital-status.md) 

@@ -10,7 +10,7 @@
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-24T08:19:06+00:00",
+  "date" : "2025-11-24T08:55:00+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -1325,6 +1325,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/onconova-ext-homologous-recombination-deficiency-interpretation"
+      },
+      "name" : "Homologous Recombination Deficiency Interpretation",
+      "description" : "The categorical classification of the HRD status interpreted from its value.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/onconova-vs-homologous-recombination-deficiency-interpretations"
+      },
+      "name" : "Homologous Recombination Deficiency Interpretation Value Set",
+      "description" : "The categorical classifications of the HRD status interpreted from its value..",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -2192,7 +2216,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/onconova-vs-tumor-mutational-burden-status-interpretation"
+        "reference" : "ValueSet/onconova-vs-tumor-mutational-burden-status-interpretations"
       },
       "name" : "Tumor Mutational Burden Status Interpretation Value Set",
       "description" : "The categorical classifications of the TMB status interpreted from its value..",

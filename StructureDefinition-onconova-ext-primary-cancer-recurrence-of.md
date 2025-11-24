@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-primary
   "name" : "PrimaryCancerRecurrenceOf",
   "title" : "Primary Cancer Recurrence Of",
   "status" : "active",
-  "date" : "2025-11-24T08:19:06+00:00",
+  "date" : "2025-11-24T08:55:00+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

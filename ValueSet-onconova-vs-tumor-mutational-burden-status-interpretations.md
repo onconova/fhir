@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-mutational-burden-status-interpretation | *Version*:0.2.0 |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-mutational-burden-status-interpretations | *Version*:0.2.0 |
 | Active as of 2025-11-24 | *Computable Name*:TumorMutationalBurdenStatusInterpretations |
 
  
@@ -46,13 +46,13 @@ This value set contains 4 concepts
 ```json
 {
   "resourceType" : "ValueSet",
-  "id" : "onconova-vs-tumor-mutational-burden-status-interpretation",
-  "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-mutational-burden-status-interpretation",
+  "id" : "onconova-vs-tumor-mutational-burden-status-interpretations",
+  "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-mutational-burden-status-interpretations",
   "version" : "0.2.0",
   "name" : "TumorMutationalBurdenStatusInterpretations",
   "title" : "Tumor Mutational Burden Status Interpretation Value Set",
   "status" : "active",
-  "date" : "2025-11-24T08:19:06+00:00",
+  "date" : "2025-11-24T08:55:00+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

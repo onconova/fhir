@@ -88,6 +88,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Family Member History Cancer Topography](StructureDefinition-onconova-ext-family-history-member-cancer-topography.md) | The topography of a historical cancer associated to a family member of a patient, represented by an ICD-O-3 code. |
 | [Genomic Variant Assessment Date](StructureDefinition-onconova-ext-genomic-variant-assessment-date.md) | Date at which the genomic variant was assessed and/or reported. |
 | [Histological Differentiation](StructureDefinition-onconova-ext-histological-differentiation.md) | The histological differentiation of the tumor. |
+| [Homologous Recombination Deficiency Interpretation](StructureDefinition-onconova-ext-homologous-recombination-deficiency-interpretation.md) | The categorical classification of the HRD status interpreted from its value. |
 | [Medication Administration Adjunctive Role](StructureDefinition-onconova-ext-medication-administration-adjunctive-role.md) | Indicates the role of this medication administration in the context of the overall treatment plan. |
 | [Medication Administration Combined With](StructureDefinition-onconova-ext-medication-administration-combined-with.md) | Indicates which medication administrations were given in combination with the current medication administration. |
 | [Medication Administration Cycles](StructureDefinition-onconova-ext-medication-administration-cycles.md) | Indicates the total number of cycles for this medication administration. |
@@ -133,6 +134,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Consent Status Value Set](ValueSet-onconova-vs-consent-status.md) | The consent status of a patient for further use of data in research. |
 | [Expected Drug Effects Value Set](ValueSet-onconova-vs-expected-drug-effects.md) | Collection of expected effects when a drug is administered. |
 | [Exposure Agents Value Set](ValueSet-onconova-vs-exposure-agents.md) | Agents to which a patient may have been exposed. |
+| [Homologous Recombination Deficiency Interpretation Value Set](ValueSet-onconova-vs-homologous-recombination-deficiency-interpretations.md) | The categorical classifications of the HRD status interpreted from its value.. |
 | [ICD-10 Codes Value Set](ValueSet-onconova-vs-icd-10-conditions.md) | All possible ICD-10 codes for conditions. |
 | [ICD-O-3 Differentiations Value Set](ValueSet-onconova-vs-icdo3-differentiations.md) | The subset of ICD-O-3 concepts dedicated for describing morphology differentiations. |
 | [ICD-O-3 Morphology Behavior Value Set](ValueSet-onconova-vs-icdo3-morphology-behaviors.md) | The subset of ICD-O-3 concepts dedicated for describing morphology behavior. |
@@ -157,7 +159,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Tumor Board Recommendations Value Set](ValueSet-onconova-vs-tumor-board-recommendations.md) | Recommendations that may be made by a tumor board for a cancer patient. |
 | [Tumor Marker Analytes Value Set](ValueSet-onconova-vs-tumor-marker-analytes.md) | Analytes considered tumor markers. |
 | [Tumor Marker Tests](ValueSet-onconova-vs-tumor-marker-tests.md) | ValueSet containing LOINC and NCI Thesaurus codes for tumor marker laboratory tests and measurements |
-| [Tumor Mutational Burden Status Interpretation Value Set](ValueSet-onconova-vs-tumor-mutational-burden-status-interpretation.md) | The categorical classifications of the TMB status interpreted from its value.. |
+| [Tumor Mutational Burden Status Interpretation Value Set](ValueSet-onconova-vs-tumor-mutational-burden-status-interpretations.md) | The categorical classifications of the TMB status interpreted from its value.. |
 | [Vital Status Value Set](ValueSet-onconova-vs-vital-status.md) | The vital status of a patient |
 
 ### Terminology: Code Systems 
