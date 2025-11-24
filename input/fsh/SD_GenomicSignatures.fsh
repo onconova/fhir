@@ -45,7 +45,7 @@ Observation resources representing a tumor mutational burden obtained through ge
 * obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-3
 
 ValueSet: TumorMutationalBurdenStatusInterpretations
-Id: onconova-vs-tumor-mutational-burden-status-interpretation
+Id: onconova-vs-tumor-mutational-burden-status-interpretations
 Title: "Tumor Mutational Burden Status Interpretation Value Set"
 Description:  "The categorical classifications of the TMB status interpreted from its value.."
 * include codes from valueset http://hl7.org/fhir/uv/genomics-reporting/ValueSet/high-low-codes-vs
@@ -159,12 +159,30 @@ Observation resources representing a homologous recombination deficiency obtaine
 * valueQuantity.code = #1
 * insert Obligations(valueQuantity, #SHALL:populate, #SHOULD:persist)
 
-* interpretation 0..1 MS
-* interpretation from http://loinc.org/vs/LL2038-9 (required)
-* insert Obligations(interpretation, #SHOULD:populate-if-known, #MAY:persist)
+* extension contains HomologousRecombinationDeficiencyInterpretation named interpretation
+* insert Obligations(extension[interpretation], #SHOULD:populate-if-known, #MAY:persist)
 
 * insert GenomicSignatureNotUsed
+* insert NotUsed(interpretation)
 * obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-3
+
+
+ValueSet: HomologousRecombinationDeficiencyInterpretations
+Id: onconova-vs-homologous-recombination-deficiency-interpretations
+Title: "Homologous Recombination Deficiency Interpretation Value Set"
+Description:  "The categorical classifications of the HRD status interpreted from its value.."
+* $SNOMED#10828004 "Positive (qualifier value)"
+* $SNOMED#260385009 "Negative (qualifier value)"
+* $SNOMED#82334004 "Indeterminate (qualifier value)"
+
+Extension: HomologousRecombinationDeficiencyInterpretation
+Id: onconova-ext-homologous-recombination-deficiency-interpretation
+Title: "Homologous Recombination Deficiency Interpretation"
+Description: "The categorical classification of the HRD status interpreted from its value."
+Context: OnconovaHomologousRecombinationDeficiency.extension
+* value[x] only CodeableConcept
+* valueCodeableConcept from HomologousRecombinationDeficiencyInterpretations (required)
+
 
 
 Profile: OnconovaTumorNeoantigenBurden
