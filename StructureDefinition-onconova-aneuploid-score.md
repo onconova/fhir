@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-aneuploid-score | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:OnconovaAneuploidScore |
+| Active as of 2025-11-24 | *Computable Name*:OnconovaAneuploidScore |
 
  
 A profile representing aneuploid score for a cancer patient. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-aneuploid-s
   "name" : "OnconovaAneuploidScore",
   "title" : "Aneuploid Score Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

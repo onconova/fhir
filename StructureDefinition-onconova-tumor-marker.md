@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:OnconovaTumorMarker |
+| Active as of 2025-11-24 | *Computable Name*:OnconovaTumorMarker |
 
  
 A profile representing a tumor marker observation for a cancer patient, including the type of tumor marker and its value. 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
   "name" : "OnconovaTumorMarker",
   "title" : "Tumor Marker Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -122,7 +122,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
             "key" : "o-tma-req-3",
             "severity" : "error",
             "human" : "The tumorMarkerAnalyte element is required and must be provided.",
-            "expression" : "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte').exists()",
+            "expression" : "code.extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte').exists()",
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker"
           }
         ]
@@ -176,6 +176,10 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
         "id" : "Observation.code",
         "extension" : [
           {
+            "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean" : true
+          },
+          {
             "extension" : [
               {
                 "url" : "code",
@@ -186,8 +190,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
                 "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
               }
             ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-            "valueBoolean" : true
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
           },
           {
             "extension" : [
@@ -262,6 +265,10 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
         "id" : "Observation.subject",
         "extension" : [
           {
+            "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean" : true
+          },
+          {
             "extension" : [
               {
                 "url" : "code",
@@ -272,8 +279,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
                 "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
               }
             ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-            "valueBoolean" : true
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
           },
           {
             "extension" : [
@@ -315,6 +321,10 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
         "id" : "Observation.effective[x]",
         "extension" : [
           {
+            "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean" : true
+          },
+          {
             "extension" : [
               {
                 "url" : "code",
@@ -325,8 +335,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
                 "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
               }
             ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-            "valueBoolean" : true
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
           },
           {
             "extension" : [
@@ -371,6 +380,42 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
         "path" : "Observation.performer",
         "short" : "Not used in this profile",
         "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "Observation.value[x]",
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean" : true
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Observation.value[x]"
       },
       {
         "id" : "Observation.interpretation",

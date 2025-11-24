@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-histological-differentiation | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:HistologicalDifferentiation |
+| Active as of 2025-11-24 | *Computable Name*:HistologicalDifferentiation |
 
 The histological differentiation of the tumor.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-histolo
   "name" : "HistologicalDifferentiation",
   "title" : "Histological Differentiation",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

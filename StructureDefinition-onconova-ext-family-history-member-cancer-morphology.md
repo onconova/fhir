@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-morphology | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:FamilyMemberHistoryCancerMorphology |
+| Active as of 2025-11-24 | *Computable Name*:FamilyMemberHistoryCancerMorphology |
 
 The morphology of a historical cancer associated to a family member of a patient, represented by an ICD-O-3 code.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-family-
   "name" : "FamilyMemberHistoryCancerMorphology",
   "title" : "Family Member History Cancer Morphology",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:OnconovaTumorBoardRecommendations |
+| Active as of 2025-11-24 | *Computable Name*:OnconovaTumorBoardRecommendations |
 
  
 Recommendations that may be made by a tumor board for a cancer patient. 
@@ -57,7 +57,7 @@ This value set contains 21 concepts
   "name" : "OnconovaTumorBoardRecommendations",
   "title" : "Tumor Board Recommendations Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

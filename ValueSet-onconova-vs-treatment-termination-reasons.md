@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:TreatmentTerminationReasons |
+| Active as of 2025-11-24 | *Computable Name*:TreatmentTerminationReasons |
 
  
 Reasons for terminating a treatment in oncology. 
@@ -53,7 +53,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "TreatmentTerminationReasons",
   "title" : "Treatment Termination Reasons Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

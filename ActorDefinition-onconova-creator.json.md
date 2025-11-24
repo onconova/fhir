@@ -8,7 +8,7 @@
 
 | |
 | :--- |
-| Active as of 2025-11-22 |
+| Active as of 2025-11-24 |
 
 [Raw json](ActorDefinition-onconova-creator.json) | [Download](ActorDefinition-onconova-creator.json)
 

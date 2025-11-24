@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:OnconovaSecondaryCancerCondition |
+| Active as of 2025-11-24 | *Computable Name*:OnconovaSecondaryCancerCondition |
 
  
 A profile recording the a secondary neoplasm, including location and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms). 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
   "name" : "OnconovaSecondaryCancerCondition",
   "title" : "Secondary Cancer Condition Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -142,6 +142,10 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
         "id" : "Condition.extension:assertedDate",
         "extension" : [
           {
+            "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean" : true
+          },
+          {
             "extension" : [
               {
                 "url" : "code",
@@ -152,8 +156,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
                 "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
               }
             ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-            "valueBoolean" : true
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
           },
           {
             "extension" : [
@@ -410,6 +413,10 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
         "id" : "Condition.subject",
         "extension" : [
           {
+            "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean" : true
+          },
+          {
             "extension" : [
               {
                 "url" : "code",
@@ -420,8 +427,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
                 "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
               }
             ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-            "valueBoolean" : true
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
           },
           {
             "extension" : [

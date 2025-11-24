@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-dna-change-types | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:DNAChangeTypes |
+| Active as of 2025-11-24 | *Computable Name*:DNAChangeTypes |
 
  
 Coding DNA change types due to a genomic variant. It constraints and expands the original[LOINC Answer List LL380-7](https://loinc.org/LL380-7/)to enforce Onconova-compatible codes 
@@ -52,7 +52,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "DNAChangeTypes",
   "title" : "Coding DNA Change Types Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

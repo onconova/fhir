@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:TherapyLineReference |
+| Active as of 2025-11-24 | *Computable Name*:TherapyLineReference |
 
 A reference to the therapy line associated with this treatment.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-therapy
   "name" : "TherapyLineReference",
   "title" : "Therapy Line Reference",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

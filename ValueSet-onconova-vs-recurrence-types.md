@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-recurrence-types | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:RecurrenceTypes |
+| Active as of 2025-11-24 | *Computable Name*:RecurrenceTypes |
 
  
 A value set representing the types of cancer recurrence, specifically local and regional recurrences. 
@@ -54,7 +54,7 @@ This value set contains 2 concepts
   "name" : "RecurrenceTypes",
   "title" : "Recurrence Types Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

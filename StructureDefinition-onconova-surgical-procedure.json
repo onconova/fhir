@@ -10,7 +10,7 @@
   "name" : "OnconovaSurgicalProcedure",
   "title" : "Surgical Procedure Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -921,6 +921,10 @@
         "valueBoolean" : true
       },
       {
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+        "valueBoolean" : true
+      },
+      {
         "extension" : [{
           "url" : "code",
           "valueCode" : "SHALL:populate"
@@ -933,8 +937,7 @@
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
           "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
         }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-        "valueBoolean" : true
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
       },
       {
         "extension" : [{
@@ -1009,6 +1012,10 @@
         "valueBoolean" : true
       },
       {
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+        "valueBoolean" : true
+      },
+      {
         "extension" : [{
           "url" : "code",
           "valueCode" : "SHALL:populate"
@@ -1021,8 +1028,7 @@
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
           "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
         }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-        "valueBoolean" : true
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
       },
       {
         "extension" : [{
@@ -1141,6 +1147,10 @@
         "valueBoolean" : true
       },
       {
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+        "valueBoolean" : true
+      },
+      {
         "extension" : [{
           "url" : "code",
           "valueCode" : "SHALL:populate"
@@ -1153,8 +1163,7 @@
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-source",
           "valueCanonical" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure|0.2.0"
         }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-        "valueBoolean" : true
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
       },
       {
         "extension" : [{
@@ -2640,6 +2649,10 @@
     {
       "id" : "Procedure.code",
       "extension" : [{
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+        "valueBoolean" : true
+      },
+      {
         "extension" : [{
           "url" : "code",
           "valueCode" : "SHALL:populate"
@@ -2648,8 +2661,7 @@
           "url" : "actor",
           "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
         }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-        "valueBoolean" : true
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
       },
       {
         "extension" : [{
@@ -2671,6 +2683,10 @@
     {
       "id" : "Procedure.subject",
       "extension" : [{
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+        "valueBoolean" : true
+      },
+      {
         "extension" : [{
           "url" : "code",
           "valueCode" : "SHALL:populate"
@@ -2679,8 +2695,7 @@
           "url" : "actor",
           "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
         }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-        "valueBoolean" : true
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
       },
       {
         "extension" : [{
@@ -2708,6 +2723,10 @@
     {
       "id" : "Procedure.performed[x]",
       "extension" : [{
+        "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+        "valueBoolean" : true
+      },
+      {
         "extension" : [{
           "url" : "code",
           "valueCode" : "SHALL:populate"
@@ -2716,8 +2735,7 @@
           "url" : "actor",
           "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
         }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-        "valueBoolean" : true
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
       },
       {
         "extension" : [{

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-board-review | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:OnconovaTumorBoardReview |
+| Active as of 2025-11-24 | *Computable Name*:OnconovaTumorBoardReview |
 
  
 A profile representing a tumor board review for a cancer patient. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
   "name" : "OnconovaTumorBoardReview",
   "title" : "Tumor Board Review Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -251,6 +251,32 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-board
       {
         "id" : "Procedure.performed[x]:performedDateTime",
         "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
           {
             "extension" : [
               {

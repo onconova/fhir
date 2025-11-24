@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:ICD10Conditions |
+| Active as of 2025-11-24 | *Computable Name*:ICD10Conditions |
 
  
 All possible ICD-10 codes for conditions. 
@@ -56,7 +56,7 @@ This value set has >1000 codes in it. In order to keep the publication size mana
   "name" : "ICD10Conditions",
   "title" : "ICD-10 Codes Value Set",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

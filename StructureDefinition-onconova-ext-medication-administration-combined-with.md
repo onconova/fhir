@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-combined-with | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:MedicationAdministrationCombinedWith |
+| Active as of 2025-11-24 | *Computable Name*:MedicationAdministrationCombinedWith |
 
 Indicates which medication administrations were given in combination with the current medication administration.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-medicat
   "name" : "MedicationAdministrationCombinedWith",
   "title" : "Medication Administration Combined With",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

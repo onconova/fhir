@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-stage | *Version*:0.2.0 |
-| Active as of 2025-11-22 | *Computable Name*:OnconovaCancerStage |
+| Active as of 2025-11-24 | *Computable Name*:OnconovaCancerStage |
 
  
 A profile representing the cancer stage for a cancer patient. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-stag
   "name" : "OnconovaCancerStage",
   "title" : "Cancer Stage Profile",
   "status" : "active",
-  "date" : "2025-11-22T09:58:04+00:00",
+  "date" : "2025-11-24T08:04:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -136,6 +136,10 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-stag
         "id" : "Observation.subject",
         "extension" : [
           {
+            "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean" : true
+          },
+          {
             "extension" : [
               {
                 "url" : "code",
@@ -146,8 +150,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-stag
                 "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
               }
             ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-            "valueBoolean" : true
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
           },
           {
             "extension" : [
@@ -225,6 +228,10 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-stag
         "id" : "Observation.effective[x]",
         "extension" : [
           {
+            "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean" : true
+          },
+          {
             "extension" : [
               {
                 "url" : "code",
@@ -235,8 +242,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-stag
                 "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
               }
             ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-            "valueBoolean" : true
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
           },
           {
             "extension" : [
@@ -282,6 +288,10 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-stag
         "id" : "Observation.value[x]",
         "extension" : [
           {
+            "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+            "valueBoolean" : true
+          },
+          {
             "extension" : [
               {
                 "url" : "code",
@@ -292,8 +302,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-stag
                 "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
               }
             ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation",
-            "valueBoolean" : true
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
           },
           {
             "extension" : [
