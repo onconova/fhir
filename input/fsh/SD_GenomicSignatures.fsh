@@ -5,7 +5,6 @@ RuleSet: GenomicSignatureNotUsed
 * insert NotUsed(issued)
 * insert NotUsed(performer)
 * insert NotUsed(bodySite)
-* insert NotUsed(interpretation)
 * insert NotUsed(specimen)
 * insert NotUsed(device)    
 * insert NotUsed(referenceRange)
@@ -71,6 +70,7 @@ Observation resources representing a microsatellite instability obtained through
 * insert Obligations(valueCodeableConcept, #SHALL:populate, #SHOULD:persist)
 
 * insert GenomicSignatureNotUsed
+* insert NotUsed(interpretation)
 * obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-4
 
 
