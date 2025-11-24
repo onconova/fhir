@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-cancer-
   "name" : "CancerPatientDataCompletionRate",
   "title" : "Cancer Patient Data Completion Rate",
   "status" : "active",
-  "date" : "2025-11-24T08:55:00+00:00",
+  "date" : "2025-11-24T09:24:28+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

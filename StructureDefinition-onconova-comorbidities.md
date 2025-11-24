@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-comorbiditi
   "name" : "OnconovaComorbidities",
   "title" : "Comorbidities Profile",
   "status" : "active",
-  "date" : "2025-11-24T08:55:00+00:00",
+  "date" : "2025-11-24T09:24:28+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -140,20 +140,6 @@ Other representations of profile: [CSV](StructureDefinition-onconova-comorbiditi
       },
       {
         "id" : "Observation.extension:comorbidConditionPresent.value[x]",
-        "path" : "Observation.extension.value[x]",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "type",
-              "path" : "$this"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Observation.extension:comorbidConditionPresent.value[x]:valueCodeableConcept",
         "extension" : [
           {
             "extension" : [
@@ -183,9 +169,6 @@ Other representations of profile: [CSV](StructureDefinition-onconova-comorbiditi
           }
         ],
         "path" : "Observation.extension.value[x]",
-        "sliceName" : "valueCodeableConcept",
-        "min" : 0,
-        "max" : "1",
         "type" : [
           {
             "code" : "CodeableConcept"
@@ -346,6 +329,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-comorbiditi
           }
         ],
         "path" : "Observation.focus",
+        "min" : 1,
+        "max" : "1",
         "type" : [
           {
             "code" : "Reference",
