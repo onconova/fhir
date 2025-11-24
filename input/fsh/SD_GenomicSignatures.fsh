@@ -37,11 +37,28 @@ Observation resources representing a tumor mutational burden obtained through ge
 * valueQuantity 1..1 MS
 * insert Obligations(valueQuantity, #SHALL:populate, #SHOULD:persist)
 
-* interpretation 0..1 MS
-* insert Obligations(interpretation, #SHOULD:populate-if-known, #MAY:persist)
+* extension contains TumorMutationalBurdenStatus named status 0..1 MS
+* insert Obligations(extension[status], #SHOULD: populate-if-known, #SHOULD:persist)
 
 * insert GenomicSignatureNotUsed
+* insert NotUsed(interpretation)
 * obeys o-sig-req-1 and o-sig-req-2 and o-sig-req-3
+
+ValueSet: TumorMutationalBurdenStatusInterpretations
+Id: onconova-vs-tumor-mutational-burden-status-interpretation
+Title: Tumor Mutational Burden Status Interpretation Value Set"
+Description:  "The categorical classifications of the TMB status interpreted from its value.."
+* include codes from valueset http://hl7.org/fhir/uv/genomics-reporting/ValueSet/high-low-codes-vs
+* http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#IND "Indeterminate"
+
+Extension: TumorMutationalBurdenStatus
+Id: onconova-ext-tumor-mutational-burden-status
+Title: "Tumor Mutational Burden Status"
+Description: "The categorical classification of the TMB status interpreted from its value."
+Context: OnconovaTumorMutationalBurden.extension
+* value[x] only CodeableConcept
+* valueCodeableConcept from TumorMutationalBurdenStatusInterpretations (required)
+
 
 Profile: OnconovaMicrosatelliteInstability
 Parent: MSI
