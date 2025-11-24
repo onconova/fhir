@@ -32,7 +32,7 @@ Observation resources representing a cancer staging in the scope of Onconova SHA
 * effective[x] only dateTime
 * insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
-* focus 1..1 MS
+* focus 1..* MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
 * insert Obligations(focus, #SHALL:populate, #SHOULD:persist)
 
