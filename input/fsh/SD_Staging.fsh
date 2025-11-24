@@ -8,7 +8,6 @@ RuleSet: StagingNotUsed
 * insert NotUsed(specimen)
 * insert NotUsed(device)    
 * insert NotUsed(referenceRange)
-* insert NotUsed(component)
 
 Profile: OnconovaCancerStage 
 Parent: CancerStage
@@ -42,9 +41,27 @@ Observation resources representing a cancer staging in the scope of Onconova SHA
 * method 0..1 MS
 * insert Obligations(method, #SHALL:populate-if-known, #SHOULD:persist)
 
-* insert StagingNotUsed
-* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3
+* insert CreateComponent(breslowDepth, 0, 1)
+* component[breslowDepth] ^short = "Breslow thickness of melanoma"
+* component[breslowDepth].code = $LOINC#92839-0 "Breslow thickness [Length] of Skin melanoma"
+* component[breslowDepth].value[x] only Quantity
+* component[breslowDepth].valueQuantity.code = #mm
+* component[breslowDepth].valueQuantity.system = http://unitsofmeasure.org
+* insert Obligations(component[breslowDepth], #SHALL:populate, #SHOULD:persist)
 
+* insert CreateComponent(ulceration, 0, 1)
+* component[ulceration] ^short = "Presence of ulceration"
+* component[ulceration].code = $LOINC#105600-1 "Ulceration status [Presence] in Tissue"
+* component[ulceration].value[x] only boolean
+* insert Obligations(component[ulceration], #SHOULD:populate-if-known, #SHOULD:persist)
+
+* insert StagingNotUsed
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3 and o-stg-breslow
+
+Invariant: o-stg-breslow
+Description: "For Breslow stagings, the Breslow depth must be provided in a component."
+Expression: "code.coding.code = '106243009' implies component.where(code.coding.code = '92839-0').valueQuantity.value.hasValue()"
+Severity: #error
 
 Profile: OnconovaLymphomaStage
 Parent: LymphomaStage
