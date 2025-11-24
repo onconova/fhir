@@ -30,7 +30,11 @@ Observation resources representing a disease status obtained through imaging tec
 * insert Obligations(bodySite, #SHALL:populate-if-known, #SHOULD:persist)
 
 * valueCodeableConcept 1..1 MS
+* valueCodeableConcept from https://loinc.org/LL4721-8/ (required)
 * insert Obligations(valueCodeableConcept, #SHALL:populate, #SHOULD:persist)
+
+* valueCodeableConcept.extension contains TreatmentResponseRecistIsInterpreted named intepreted 0..1 MS
+* insert Obligations(valueCodeableConcept.extension[interpreted], #SHOULD:populate-if-known, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
