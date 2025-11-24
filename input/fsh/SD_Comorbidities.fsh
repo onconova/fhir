@@ -24,15 +24,18 @@ Observation resources representing a generic or panel comorbidities assessment i
 * subject only Reference(OnconovaCancerPatient)
 * insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
 
+* focus 1..1 MS
 * focus only Reference(OnconovaPrimaryCancerCondition)
 * insert Obligations(focus, #SHALL:populate, #SHOULD:persist)
 
 * method from ComorbidityPanels (required)
 * insert Obligations(method, #SHALL:populate-if-known, #SHOULD:persist)
 
+* extension[comorbidConditionPresent].value[x] only CodeableConcept
 * extension[comorbidConditionPresent].valueCodeableConcept from ICD10Conditions (required)
 * insert Obligations(extension[comorbidConditionPresent].valueCodeableConcept, #SHALL:populate, #SHOULD:persist)
 
+* extension[comorbidConditionPresent].value[x] only CodeableConcept
 * extension[comorbidConditionAbsent].valueCodeableConcept from ICD10Conditions (required)
 * insert Obligations(extension[comorbidConditionAbsent].valueCodeableConcept, #SHALL:populate, #SHOULD:persist)
 
