@@ -76,6 +76,7 @@ This publication includes IP covered under the following statements.
 
 * [Observation Category Codes](http://terminology.hl7.org/7.0.0/CodeSystem-observation-category.html): [OnconovaAneuploidScore](StructureDefinition-onconova-aneuploid-score.md), [OnconovaCancerRiskAssessment](StructureDefinition-onconova-cancer-risk-assessment.md)...Show 8 more,[OnconovaGenomicVariant](StructureDefinition-onconova-genomic-variant.md),[OnconovaHomologousRecombinationDeficiency](StructureDefinition-onconova-homologous-recombination-deficiency.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaLossOfHeterozygosity](StructureDefinition-onconova-loss-of-heterozygosity.md),[OnconovaMicrosatelliteInstability](StructureDefinition-onconova-microsatellite-instability.md),[OnconovaTumorMarker](StructureDefinition-onconova-tumor-marker.md),[OnconovaTumorMutationalBurden](StructureDefinition-onconova-tumor-mutational-burden.md)and[OnconovaTumorNeoantigenBurden](StructureDefinition-onconova-tumor-neoantigen-burden.md)
 * [identifierType](http://terminology.hl7.org/7.0.0/CodeSystem-v2-0203.html): [OnconovaCancerPatient](StructureDefinition-onconova-cancer-patient.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html): [TumorMutationalBurdenStatus](StructureDefinition-onconova-ext-tumor-mutational-burden-status.md) and [TumorMutationalBurdenStatusInterpretations](ValueSet-onconova-vs-tumor-mutational-burden-status-interpretation.md)
 
 
 ### Dependency Table
@@ -106,7 +107,7 @@ This publication includes IP covered under the following statements.
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-24T08:04:46+00:00",
+  "date" : "2025-11-24T08:19:06+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -2643,6 +2644,34 @@ This publication includes IP covered under the following statements.
         },
         "name" : "Tumor Mutational Burden Profile",
         "description" : "A profile representing tumor mutational burden for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [TumorMutationalBurden profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/tmb) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a tumor mutational burden obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-tumor-mutational-burden-status"
+        },
+        "name" : "Tumor Mutational Burden Status",
+        "description" : "The categorical classification of the TMB status interpreted from its value.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/onconova-vs-tumor-mutational-burden-status-interpretation"
+        },
+        "name" : "Tumor Mutational Burden Status Interpretation Value Set",
+        "description" : "The categorical classifications of the TMB status interpreted from its value..",
         "exampleBoolean" : false
       },
       {

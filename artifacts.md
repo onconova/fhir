@@ -107,6 +107,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Treatment Response RECIST Is Interpreted](StructureDefinition-onconova-ext-treatment-response-recist-is-interpreted.md) | Indicates that whether the RECIST was interpreted from a radiology report rather than extracted. |
 | [Tumor Board Specialization](StructureDefinition-onconova-ext-tumor-board-specialization.md) | The specialization or focus area of the tumor board conducting the review, such as hematologic malignancies or solid tumors. |
 | [Tumor Marker Analyte](StructureDefinition-onconova-ext-tumor-marker-analyte.md) | The specific analyte or substance being measured as a tumor marker, such as PSA, CA-125, or CEA. |
+| [Tumor Mutational Burden Status](StructureDefinition-onconova-ext-tumor-mutational-burden-status.md) | The categorical classification of the TMB status interpreted from its value. |
 
 ### Terminology: Value Sets 
 
@@ -156,6 +157,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Tumor Board Recommendations Value Set](ValueSet-onconova-vs-tumor-board-recommendations.md) | Recommendations that may be made by a tumor board for a cancer patient. |
 | [Tumor Marker Analytes Value Set](ValueSet-onconova-vs-tumor-marker-analytes.md) | Analytes considered tumor markers. |
 | [Tumor Marker Tests](ValueSet-onconova-vs-tumor-marker-tests.md) | ValueSet containing LOINC and NCI Thesaurus codes for tumor marker laboratory tests and measurements |
+| [Tumor Mutational Burden Status Interpretation Value Set](ValueSet-onconova-vs-tumor-mutational-burden-status-interpretation.md) | The categorical classifications of the TMB status interpreted from its value.. |
 | [Vital Status Value Set](ValueSet-onconova-vs-vital-status.md) | The vital status of a patient |
 
 ### Terminology: Code Systems 

@@ -452,6 +452,13 @@
       "types": [
         "CodeableConcept"
       ]
+    },
+    {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-mutational-burden-status",
+      "title": "Tumor Mutational Burden Status",
+      "types": [
+        "CodeableConcept"
+      ]
     }
   ],
   "profiles": {
@@ -776,6 +783,9 @@
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte": [
       "Observation.code"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-mutational-burden-status": [
+      "Observation"
     ]
   }
 }

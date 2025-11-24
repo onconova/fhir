@@ -10,7 +10,7 @@
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-24T08:04:46+00:00",
+  "date" : "2025-11-24T08:19:06+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -2172,6 +2172,30 @@
       },
       "name" : "Tumor Mutational Burden Profile",
       "description" : "A profile representing tumor mutational burden for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [TumorMutationalBurden profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/tmb) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a tumor mutational burden obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/onconova-ext-tumor-mutational-burden-status"
+      },
+      "name" : "Tumor Mutational Burden Status",
+      "description" : "The categorical classification of the TMB status interpreted from its value.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/onconova-vs-tumor-mutational-burden-status-interpretation"
+      },
+      "name" : "Tumor Mutational Burden Status Interpretation Value Set",
+      "description" : "The categorical classifications of the TMB status interpreted from its value..",
       "exampleBoolean" : false
     },
     {

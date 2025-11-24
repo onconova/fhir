@@ -50,7 +50,7 @@ The consent status of a patient for further use of data in research.
   "name" : "ConsentStatus",
   "title" : "Consent Status Value Set",
   "status" : "active",
-  "date" : "2025-11-24T08:04:46+00:00",
+  "date" : "2025-11-24T08:19:06+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

@@ -341,6 +341,13 @@
     "name" : "TumorMarkerAnalyte"
   },
   {
+    "id" : "onconova-ext-tumor-mutational-burden-status",
+    "type" : "StructureDefinition",
+    "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-mutational-burden-status",
+    "version" : "0.2.0",
+    "name" : "TumorMutationalBurdenStatus"
+  },
+  {
     "id" : "onconova-genomic-variant",
     "type" : "StructureDefinition",
     "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-genomic-variant",
@@ -829,6 +836,13 @@
     "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-marker-tests",
     "version" : "0.2.0",
     "name" : "TumorMarkerTests"
+  },
+  {
+    "id" : "onconova-vs-tumor-mutational-burden-status-interpretation",
+    "type" : "ValueSet",
+    "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-mutational-burden-status-interpretation",
+    "version" : "0.2.0",
+    "name" : "TumorMutationalBurdenStatusInterpretations"
   },
   {
     "id" : "onconova-vs-vital-status",

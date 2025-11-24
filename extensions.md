@@ -109,3 +109,6 @@ The specialization or focus area of the tumor board conducting the review, such 
 * [Tumor Marker Analyte](StructureDefinition-onconova-ext-tumor-marker-analyte.md) 
 The specific analyte or substance being measured as a tumor marker, such as PSA, CA-125, or CEA. 
 
+* [Tumor Mutational Burden Status](StructureDefinition-onconova-ext-tumor-mutational-burden-status.md) 
+The categorical classification of the TMB status interpreted from its value. 
+

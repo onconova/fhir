@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-risk-as
   "name" : "RiskAssessmentScore",
   "title" : "Risk Assessment Score",
   "status" : "active",
-  "date" : "2025-11-24T08:04:46+00:00",
+  "date" : "2025-11-24T08:19:06+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

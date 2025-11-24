@@ -135,6 +135,9 @@ Analytes considered tumor markers.
 * [Tumor Marker Tests](ValueSet-onconova-vs-tumor-marker-tests.md) 
 ValueSet containing LOINC and NCI Thesaurus codes for tumor marker laboratory tests and measurements 
 
+* [Tumor Mutational Burden Status Interpretation Value Set](ValueSet-onconova-vs-tumor-mutational-burden-status-interpretation.md) 
+The categorical classifications of the TMB status interpreted from its value.. 
+
 * [Vital Status Value Set](ValueSet-onconova-vs-vital-status.md) 
 The vital status of a patient 
 

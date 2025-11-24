@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-mutat
   "name" : "OnconovaTumorMutationalBurden",
   "title" : "Tumor Mutational Burden Profile",
   "status" : "active",
-  "date" : "2025-11-24T08:04:46+00:00",
+  "date" : "2025-11-24T08:19:06+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -125,6 +125,50 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-mutat
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-mutational-burden"
           }
         ]
+      },
+      {
+        "id" : "Observation.extension:status",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Observation.extension",
+        "sliceName" : "status",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-mutational-burden-status"
+            ]
+          }
+        ],
+        "mustSupport" : true
       },
       {
         "id" : "Observation.status",
@@ -285,37 +329,9 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-mutat
       },
       {
         "id" : "Observation.interpretation",
-        "extension" : [
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "SHOULD:populate-if-known"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:persist"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          }
-        ],
         "path" : "Observation.interpretation",
-        "max" : "1",
-        "mustSupport" : true
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       },
       {
         "id" : "Observation.bodySite",
