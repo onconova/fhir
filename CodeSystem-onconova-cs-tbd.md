@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/CodeSystem/onconova-cs-tbd | *Version*:0.2.0 |
-| Active as of 2025-11-24 | *Computable Name*:ToBeDeterminedCodes |
+| Active as of 2025-11-25 | *Computable Name*:ToBeDeterminedCodes |
 
  
 A code system for codes that are yet to be determined. 
@@ -31,7 +31,7 @@ A code system for codes that are yet to be determined.
   "name" : "ToBeDeterminedCodes",
   "title" : "To Be Determined Codes",
   "status" : "active",
-  "date" : "2025-11-24T11:19:41+00:00",
+  "date" : "2025-11-25T07:35:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

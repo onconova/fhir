@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments | *Version*:0.2.0 |
-| Active as of 2025-11-24 | *Computable Name*:AdverseEventMitigationTreatmentAdjustments |
+| Active as of 2025-11-25 | *Computable Name*:AdverseEventMitigationTreatmentAdjustments |
 
  
 Adjustments made to a patient's treatment plan in response to an adverse event. 
@@ -54,7 +54,7 @@ This value set contains 3 concepts
   "name" : "AdverseEventMitigationTreatmentAdjustments",
   "title" : "Adverse Event Mitigation Treatment Adjustments Value Set",
   "status" : "active",
-  "date" : "2025-11-24T11:19:41+00:00",
+  "date" : "2025-11-25T07:35:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

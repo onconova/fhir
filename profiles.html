@@ -224,6 +224,10 @@ The following profiles have been defined for this implementation guide:</p>
 <p><strong>Conformance:</strong></p>
 <p>Observation resources representing a loss of heterozygosity obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code>meta.profile</code> accordingly.</p>
 </li>
+<li><a href="StructureDefinition-onconova-lymphoma-stage.html">Lymphoma Stage</a> <p>Staging of lymphoma (both Hodgkins and Non-Hodgkins) by Ann Arbor, Cotswold, or Lugano staging systems. The method (required) indicates which of these related staging systems was used.</p>
+<p><strong>Conformance:</strong></p>
+<p>Observation resources representing a lymphoma staging in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code>meta.profile</code> accordingly.</p>
+</li>
 <li><a href="StructureDefinition-onconova-medication-administration.html">Medication Administration Profile</a> <p>A profile representing a medication administered to a cancer patient during a systemic therapy (e.g., chemotherapy, immunotherapy), including details about the medication and dosage.</p>
 <p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration">CancerRelatedMedicationAdministration profile</a> to introduce additional information about the systemic therapy (e.g. number of cycles, therapeutic role, etc.) and to introduce references to other medication administration given simultaneously to represent combination therapies.</p>
 <p>Since Onocnova treats systemic therapies involving multiple antineoplastic agents administered together or in sequence as part of a single treatment plan, this profile allows for capturing such relationships between medication administrations using the <code>MedicationAdministration.extension[combinedWith]</code> extension slices.</p>
@@ -356,7 +360,7 @@ The following profiles have been defined for this implementation guide:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 24, 2025 11:19+0000">2025-11-24</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 25, 2025 07:35+0000">2025-11-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

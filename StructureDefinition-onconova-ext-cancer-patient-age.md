@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-age | *Version*:0.2.0 |
-| Active as of 2025-11-24 | *Computable Name*:CancerPatientAge |
+| Active as of 2025-11-25 | *Computable Name*:CancerPatientAge |
 
 The approximate age of the patient.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-cancer-
   "name" : "CancerPatientAge",
   "title" : "Cancer Patient Age",
   "status" : "active",
-  "date" : "2025-11-24T11:19:41+00:00",
+  "date" : "2025-11-25T07:35:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-mutational-burden-status | *Version*:0.2.0 |
-| Active as of 2025-11-24 | *Computable Name*:TumorMutationalBurdenStatus |
+| Active as of 2025-11-25 | *Computable Name*:TumorMutationalBurdenStatus |
 
 The categorical classification of the TMB status interpreted from its value.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-tumor-m
   "name" : "TumorMutationalBurdenStatus",
   "title" : "Tumor Mutational Burden Status",
   "status" : "active",
-  "date" : "2025-11-24T11:19:41+00:00",
+  "date" : "2025-11-25T07:35:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

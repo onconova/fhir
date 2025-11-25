@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-imaging-disease-status | *Version*:0.2.0 |
-| Active as of 2025-11-24 | *Computable Name*:OnconovaImagingDiseaseStatus |
+| Active as of 2025-11-25 | *Computable Name*:OnconovaImagingDiseaseStatus |
 
  
 A profile representing the imaging-based disease status of a cancer patient. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-imaging-dis
   "name" : "OnconovaImagingDiseaseStatus",
   "title" : "Imaging Disease Status Profile",
   "status" : "active",
-  "date" : "2025-11-24T11:19:41+00:00",
+  "date" : "2025-11-25T07:35:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

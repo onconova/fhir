@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-regional-nodes-categories | *Version*:0.2.0 |
-| Active as of 2025-11-24 | *Computable Name*:TNMRegionalNodesCategories |
+| Active as of 2025-11-25 | *Computable Name*:TNMRegionalNodesCategories |
 
  
 TNM Regional Nodes Categories Value Set 
@@ -63,7 +63,7 @@ This value set expansion contains 98 concepts.
   "name" : "TNMRegionalNodesCategories",
   "title" : "TNM Regional Nodes Categories Value Set",
   "status" : "active",
-  "date" : "2025-11-24T11:19:41+00:00",
+  "date" : "2025-11-25T07:35:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

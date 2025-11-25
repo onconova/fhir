@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-is-primary-therapy | *Version*:0.2.0 |
-| Active as of 2025-11-24 | *Computable Name*:MedicationAdministrationIsPrimaryTherapy |
+| Active as of 2025-11-25 | *Computable Name*:MedicationAdministrationIsPrimaryTherapy |
 
 Indicates whether this medication administration is the primary therapy within a therapy line.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-medicat
   "name" : "MedicationAdministrationIsPrimaryTherapy",
   "title" : "Medication Administration Is Primary Therapy",
   "status" : "active",
-  "date" : "2025-11-24T11:19:41+00:00",
+  "date" : "2025-11-25T07:35:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

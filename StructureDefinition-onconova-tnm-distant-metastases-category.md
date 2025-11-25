@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-distant-metastases-category | *Version*:0.2.0 |
-| Active as of 2025-11-24 | *Computable Name*:OnconovaTNMDistantMetastasesCategory |
+| Active as of 2025-11-25 | *Computable Name*:OnconovaTNMDistantMetastasesCategory |
 
  
 A profile representing the TNM distant metastases category for a cancer patient. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-distant
   "name" : "OnconovaTNMDistantMetastasesCategory",
   "title" : "TNM Distant Metastases Category Profile",
   "status" : "active",
-  "date" : "2025-11-24T11:19:41+00:00",
+  "date" : "2025-11-25T07:35:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -372,12 +372,6 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-distant
       {
         "id" : "Observation.specimen",
         "path" : "Observation.specimen",
-        "short" : "Not used in this profile",
-        "definition" : "Not used in this profile"
-      },
-      {
-        "id" : "Observation.component",
-        "path" : "Observation.component",
         "short" : "Not used in this profile",
         "definition" : "Not used in this profile"
       }

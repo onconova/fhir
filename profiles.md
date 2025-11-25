@@ -91,6 +91,11 @@ This profile extends the GenomicsReporting IG[GenomicsBase profile](http://hl7.o
 **Conformance:** 
 Observation resources representing a loss of heterozygosity obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
+* [Lymphoma Stage](StructureDefinition-onconova-lymphoma-stage.md) 
+Staging of lymphoma (both Hodgkins and Non-Hodgkins) by Ann Arbor, Cotswold, or Lugano staging systems. The method (required) indicates which of these related staging systems was used. 
+**Conformance:** 
+Observation resources representing a lymphoma staging in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
+
 * [Medication Administration Profile](StructureDefinition-onconova-medication-administration.md) 
 A profile representing a medication administered to a cancer patient during a systemic therapy (e.g., chemotherapy, immunotherapy), including details about the medication and dosage. 
 This profile extends the base mCODE[CancerRelatedMedicationAdministration profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-administration)to introduce additional information about the systemic therapy (e.g. number of cycles, therapeutic role, etc.) and to introduce references to other medication administration given simultaneously to represent combination therapies. 

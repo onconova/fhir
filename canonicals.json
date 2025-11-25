@@ -180,6 +180,13 @@
     "name" : "CancerPatientVitalStatus"
   },
   {
+    "id" : "onconova-ext-cancer-stage-breslow-depth",
+    "type" : "StructureDefinition",
+    "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth",
+    "version" : "0.2.0",
+    "name" : "CancerStageBreslowDepth"
+  },
+  {
     "id" : "onconova-ext-family-history-member-cancer-morphology",
     "type" : "StructureDefinition",
     "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-morphology",
@@ -395,6 +402,13 @@
     "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-loss-of-heterozygosity",
     "version" : "0.2.0",
     "name" : "OnconovaLossOfHeterozygosity"
+  },
+  {
+    "id" : "onconova-lymphoma-stage",
+    "type" : "StructureDefinition",
+    "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-lymphoma-stage",
+    "version" : "0.2.0",
+    "name" : "OnconovaLymphomaStage"
   },
   {
     "id" : "onconova-medication-administration",

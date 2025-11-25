@@ -40,6 +40,9 @@ The duration of time from either the date of diagnosis or the start of treatment
 * [Cancer Patient Vital status](StructureDefinition-onconova-ext-cancer-patient-vital-status.md) 
 The status of whether the patient is alive or deceased or unknown. 
 
+* [Cancer Stage Breslow Depth](StructureDefinition-onconova-ext-cancer-stage-breslow-depth.md) 
+The actual measured Breslow depth as a quantity 
+
 * [Family Member History Cancer Morphology](StructureDefinition-onconova-ext-family-history-member-cancer-morphology.md) 
 The morphology of a historical cancer associated to a family member of a patient, represented by an ICD-O-3 code. 
 

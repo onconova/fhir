@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-homologous-recombination-deficiency-interpretations | *Version*:0.2.0 |
-| Active as of 2025-11-24 | *Computable Name*:HomologousRecombinationDeficiencyInterpretations |
+| Active as of 2025-11-25 | *Computable Name*:HomologousRecombinationDeficiencyInterpretations |
 
  
 The categorical classifications of the HRD status interpreted from its value.. 
@@ -54,7 +54,7 @@ This value set contains 3 concepts
   "name" : "HomologousRecombinationDeficiencyInterpretations",
   "title" : "Homologous Recombination Deficiency Interpretation Value Set",
   "status" : "active",
-  "date" : "2025-11-24T11:19:41+00:00",
+  "date" : "2025-11-25T07:35:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

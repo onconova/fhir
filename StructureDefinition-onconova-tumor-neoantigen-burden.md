@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-neoantigen-burden | *Version*:0.2.0 |
-| Active as of 2025-11-24 | *Computable Name*:OnconovaTumorNeoantigenBurden |
+| Active as of 2025-11-25 | *Computable Name*:OnconovaTumorNeoantigenBurden |
 
  
 A profile representing tumor neoantigen burden for a cancer patient. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-neoan
   "name" : "OnconovaTumorNeoantigenBurden",
   "title" : "Tumor Neoantigen Burden Profile",
   "status" : "active",
-  "date" : "2025-11-24T11:19:41+00:00",
+  "date" : "2025-11-25T07:35:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

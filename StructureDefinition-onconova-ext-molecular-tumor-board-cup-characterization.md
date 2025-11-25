@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization | *Version*:0.2.0 |
-| Active as of 2025-11-24 | *Computable Name*:MolecularTumorBoardCUPCharacterization |
+| Active as of 2025-11-25 | *Computable Name*:MolecularTumorBoardCUPCharacterization |
 
 A characterization of the tumor board review focused on cancer of unknown primary (CUP) origin.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
   "name" : "MolecularTumorBoardCUPCharacterization",
   "title" : "Molecular Tumor Board CUP Characterization",
   "status" : "active",
-  "date" : "2025-11-24T11:19:41+00:00",
+  "date" : "2025-11-25T07:35:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-primary-tumor-categories | *Version*:0.2.0 |
-| Active as of 2025-11-24 | *Computable Name*:TNMPrimaryTumorCategories |
+| Active as of 2025-11-25 | *Computable Name*:TNMPrimaryTumorCategories |
 
  
 TNM Primary Tumor Categories Value Set 
@@ -63,7 +63,7 @@ This value set expansion contains 197 concepts.
   "name" : "TNMPrimaryTumorCategories",
   "title" : "TNM Primary Tumor Categories Value Set",
   "status" : "active",
-  "date" : "2025-11-24T11:19:41+00:00",
+  "date" : "2025-11-25T07:35:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

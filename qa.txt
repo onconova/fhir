@@ -1,9 +1,9 @@
 Onconova : Validation Results
 =========================================
 
-err = 121, warn = 241, info = 656
+err = 125, warn = 245, info = 671
 IG Publisher Version: 2.0.26
-Generated Mon Nov 24 11:26:50 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2.0 (canonical = http://onconova.github.io/fhir)
+Generated Tue Nov 25 07:41:07 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2.0 (canonical = http://onconova.github.io/fhir)
  Build Errors : 1 / 2 / 0
  /home/runner/work/fhir/fhir/fsh-generated/resources/ActorDefinition-onconova-consumer : 0 / 0 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ActorDefinition-onconova-creator : 0 / 0 / 1
@@ -17,7 +17,7 @@ Generated Mon Nov 24 11:26:50 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-cancer-family-member-history : 0 / 2 / 17
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-cancer-patient : 10 / 5 / 38
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-cancer-risk-assessment : 2 / 1 / 15
- /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-cancer-stage : 2 / 1 / 12
+ /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-cancer-stage : 3 / 3 / 16
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-comorbidities : 2 / 1 / 14
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ecog-performance-status : 1 / 1 / 14
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-adverse-event-ctc-grade : 1 / 1 / 1
@@ -31,6 +31,7 @@ Generated Mon Nov 24 11:26:50 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-cancer-patient-end-of-records : 1 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-cancer-patient-overall-survival : 1 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-cancer-patient-vital-status : 1 / 1 / 1
+ /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-cancer-stage-breslow-depth : 1 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-family-history-member-cancer-morphology : 1 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-family-history-member-cancer-topography : 1 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-ext-genomic-variant-assessment-date : 1 / 1 / 1
@@ -62,6 +63,7 @@ Generated Mon Nov 24 11:26:50 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-karnofsky-performance-status : 1 / 1 / 12
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-lifestyle : 3 / 5 / 20
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-loss-of-heterozygosity : 2 / 5 / 9
+ /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-lymphoma-stage : 2 / 1 / 12
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-medication-administration : 2 / 2 / 25
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-microsatellite-instability : 2 / 3 / 9
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-molecular-tumor-board-review : 0 / 6 / 17
@@ -131,7 +133,7 @@ Generated Mon Nov 24 11:26:50 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-vital-status : 0 / 1 / 1
 </table>
 == n/a ==
-ERROR: CapabilityStatement-onconova-capability-statement.html#/html/body/div/div/div/div/div/div/div/div/div/div/div/a at Line 252, column 18056: The link 'http://hl7.org/fhir/R4/familyhistory.html' for "FamilyHistory" cannot be resolved
+ERROR: CapabilityStatement-onconova-capability-statement.html#/html/body/div/div/div/div/div/div/div/div/div/div/div/a at Line 252, column 18222: The link 'http://hl7.org/fhir/R4/familyhistory.html' for "FamilyHistory" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ActorDefinition-onconova-consumer.json ==
@@ -288,10 +290,17 @@ INFORMATION: StructureDefinition/onconova-cancer-stage: StructureDefinition.snap
 INFORMATION: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[19].extension[3].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[22].extension[2].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[22].extension[3].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[27].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[27].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[25].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[25].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[32].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[32].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[56].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[56].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[61].binding.valueSet: A definition could not be found for Canonical URL 'https://loinc.org/LL4443-9'
+WARNING: StructureDefinition/onconova-cancer-stage: StructureDefinition.differential.element[17].binding.valueSet: A definition could not be found for Canonical URL 'https://loinc.org/LL4443-9'
 ERROR: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[0].constraint[8]: Error in constraint 'o-stg-req-2' with expression 'effectiveDateTime.exists() and effectiveDateTime.hasValue()': Error evaluating FHIRPath expression: The name 'effectiveDateTime' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Observation] (@char 1)
 ERROR: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[0].constraint[9]: Error in constraint 'o-stg-req-3' with expression 'valueCodeableConcept.exists() and valueCodeableConcept.coding.exists()': Error evaluating FHIRPath expression: The name 'valueCodeableConcept' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Observation] (@char 1)
+ERROR: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[0].constraint[10]: Error in constraint 'o-stg-breslow' with expression 'code.coding.code = '106243009' implies value.extension(https://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth).valueQuantity.value.hasValue()': Error @1, 62: The token : is not expected here - either a "," or a ")" expected
 INFORMATION: StructureDefinition/onconova-cancer-stage: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-stage'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onconova-comorbidities.json ==
@@ -372,6 +381,9 @@ WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/Structu
 == fsh-generated/resources/StructureDefinition-onconova-ext-cancer-patient-vital-status.json ==
 ERROR: StructureDefinition/onconova-ext-cancer-patient-vital-status: StructureDefinition.context[0]: The element http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient#Patient.deceased[x].extension is not valid
 WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-onconova-ext-cancer-stage-breslow-depth.json ==
+ERROR: StructureDefinition/onconova-ext-cancer-stage-breslow-depth: StructureDefinition.context[0]: The element http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-stage#Observation.value[x].extension is not valid
+WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-onconova-ext-family-history-member-cancer-morphology.json ==
 ERROR: StructureDefinition/onconova-ext-family-history-member-cancer-morphology: StructureDefinition.context[0]: The element http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history#FamilyMemberHistory.condition is not valid
 WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-morphology'): The Implementation Guide contains no examples for this extension
@@ -664,6 +676,21 @@ ERROR: StructureDefinition/onconova-loss-of-heterozygosity: StructureDefinition.
 INFORMATION: StructureDefinition/onconova-loss-of-heterozygosity: StructureDefinition.snapshot.element[19].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/onconova-loss-of-heterozygosity: StructureDefinition.snapshot.element[55].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-loss-of-heterozygosity'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-onconova-lymphoma-stage.json ==
+INFORMATION: StructureDefinition/onconova-lymphoma-stage: StructureDefinition.snapshot.element[16].extension[2].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-lymphoma-stage: StructureDefinition.snapshot.element[16].extension[3].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-lymphoma-stage: StructureDefinition.snapshot.element[17].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-lymphoma-stage: StructureDefinition.snapshot.element[17].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-lymphoma-stage: StructureDefinition.snapshot.element[19].extension[2].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-lymphoma-stage: StructureDefinition.snapshot.element[19].extension[3].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-lymphoma-stage: StructureDefinition.snapshot.element[22].extension[2].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-lymphoma-stage: StructureDefinition.snapshot.element[22].extension[3].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-lymphoma-stage: StructureDefinition.snapshot.element[27].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-lymphoma-stage: StructureDefinition.snapshot.element[27].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: StructureDefinition/onconova-lymphoma-stage: StructureDefinition.snapshot.element[0].constraint[8]: Error in constraint 'o-stg-req-2' with expression 'effectiveDateTime.exists() and effectiveDateTime.hasValue()': Error evaluating FHIRPath expression: The name 'effectiveDateTime' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Observation] (@char 1)
+ERROR: StructureDefinition/onconova-lymphoma-stage: StructureDefinition.snapshot.element[0].constraint[9]: Error in constraint 'o-stg-req-3' with expression 'valueCodeableConcept.exists() and valueCodeableConcept.coding.exists()': Error evaluating FHIRPath expression: The name 'valueCodeableConcept' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Observation] (@char 1)
+INFORMATION: StructureDefinition/onconova-lymphoma-stage: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-lymphoma-stage'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-onconova-medication-administration.json ==
 INFORMATION: StructureDefinition/onconova-medication-administration: StructureDefinition.snapshot.element[8].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: StructureDefinition/onconova-medication-administration: StructureDefinition.snapshot.element[8].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)

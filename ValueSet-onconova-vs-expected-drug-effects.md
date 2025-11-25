@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-expected-drug-effects | *Version*:0.2.0 |
-| Active as of 2025-11-24 | *Computable Name*:ExpectedDrugEffects |
+| Active as of 2025-11-25 | *Computable Name*:ExpectedDrugEffects |
 
  
 Collection of expected effects when a drug is administered. 
@@ -54,7 +54,7 @@ This value set contains 2 concepts
   "name" : "ExpectedDrugEffects",
   "title" : "Expected Drug Effects Value Set",
   "status" : "active",
-  "date" : "2025-11-24T11:19:41+00:00",
+  "date" : "2025-11-25T07:35:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

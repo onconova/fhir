@@ -135,6 +135,20 @@
       ]
     },
     {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth",
+      "title": "Cancer Stage Breslow Depth",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
       "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-morphology",
       "title": "Family Member History Cancer Morphology",
       "types": [
@@ -723,6 +737,9 @@
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status": [
       "Patient.deceased[x]"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth": [
+      "Observation.value[x]"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-morphology": [
       "FamilyMemberHistory.condition"
