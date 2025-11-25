@@ -38,7 +38,7 @@ Observation resources representing a cancer staging in the scope of Onconova SHA
 * value[x] 1..1 MS
 * insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
-* valueCodeableConcept.extension contains CancerStageBreslowDepth named breslowDepth
+* valueCodeableConcept.extension contains CancerStageBreslowDepth named breslowDepth 0..1 MS
 * insert Obligations(valueCodeableConcept.extension[breslowDepth], #SHALL:populate-if-known, #SHOULD:persist)
 
 * method 0..1 MS
