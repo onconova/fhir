@@ -59,7 +59,7 @@ Description: "The actual measured Breslow depth as a quantity"
 Context: CancerStage.valueCodeableConcept.extension
 * value[x] only Quantity
 * valueQuantity.code = #mm
-* valueQuantity.system = http://unitsofmeasure.org
+* valueQuantity.system = "http://unitsofmeasure.org"
 
 
 * insert StagingNotUsed
@@ -97,7 +97,7 @@ Observation resources representing a lymphoma staging in the scope of Onconova S
 * value[x] 1..1 MS
 * insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
-* method 0..1 MS
+* method 1..1 MS
 * insert Obligations(method, #SHALL:populate-if-known, #SHOULD:persist)
 
 * insert StagingNotUsed

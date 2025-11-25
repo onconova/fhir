@@ -78,7 +78,7 @@ The Onconova FHIR server **MAY**:
 * insert ResourceSupportedProfile(OnconovaECOGPerformanceStatus)
 * insert ResourceSupportedProfile(OnconovaKarnofskyPerformanceStatus)
 * insert ResourceSupportedProfile(OnconovaCancerStage)
-* insert ResourceSupportedProfile(OnconovaTNMStageGroup))
+* insert ResourceSupportedProfile(OnconovaTNMStageGroup)
 * insert ResourceSupportedProfile(OnconovaLymphomaStage)
 * insert ResourceSupportedProfile(OnconovaImagingDiseaseStatus)
 * insert ResourceSupportedProfile(OnconovaTNMPrimaryTumorCategory)
