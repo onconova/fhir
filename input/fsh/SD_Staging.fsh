@@ -38,31 +38,36 @@ Observation resources representing a cancer staging in the scope of Onconova SHA
 * value[x] 1..1 MS
 * insert ObligationsWithUscdi(value[x], #SHALL:populate, #SHOULD:persist)
 
+* valueCodeableConcept.extension contains CancerStageBreslowDepth named breslowDepth
+* insert Obligations(valueCodeableConcept.extension[breslowDepth], #SHALL:populate-if-known, #SHOULD:persist)
+
 * method 0..1 MS
 * insert Obligations(method, #SHALL:populate-if-known, #SHOULD:persist)
 
 * insert ObservationComponentSlicingRules
 
-* insert CreateComponent(breslowDepth, 0, 1)
-* component[breslowDepth] ^short = "Breslow thickness of melanoma"
-* component[breslowDepth].code = $LOINC#92839-0 "Breslow thickness [Length] of Skin melanoma"
-* component[breslowDepth].value[x] only Quantity
-* component[breslowDepth].valueQuantity.code = #mm
-* component[breslowDepth].valueQuantity.system = http://unitsofmeasure.org
-* insert Obligations(component[breslowDepth], #SHALL:populate-if-known, #SHOULD:persist)
-
 * insert CreateComponent(ulceration, 0, 1)
 * component[ulceration] ^short = "Presence of ulceration"
 * component[ulceration].code = $LOINC#105600-1 "Ulceration status [Presence] in Tissue"
-* component[ulceration].value[x] only boolean
+* component[ulceration].valueCodeableConcept from https://loinc.org/LL4443-9
 * insert Obligations(component[ulceration], #SHOULD:populate-if-known, #SHOULD:persist)
+
+Extension: CancerStageBreslowDepth
+Id: onconova-ext-cancer-stage-breslow-depth
+Title: "Cancer Stage Breslow Depth"
+Description: "The actual measured Breslow depth as a quantity"
+Context: CancerStage.valueCodeableConcept.extension
+* value[x] only Quantity
+* valueQuantity.code = #mm
+* valueQuantity.system = http://unitsofmeasure.org
+
 
 * insert StagingNotUsed
 * obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3 and o-stg-breslow
 
 Invariant: o-stg-breslow
-Description: "For Breslow stagings, the Breslow depth must be provided in a component."
-Expression: "code.coding.code = '106243009' implies component.where(code.coding.code = '92839-0').valueQuantity.value.hasValue()"
+Description: "For Breslow stages, the exact Breslow depth must be provided."
+Expression: "code.coding.code = '106243009' implies value.extension(https://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth).valueQuantity.value.hasValue()"
 Severity: #error
 
 Profile: OnconovaLymphomaStage
