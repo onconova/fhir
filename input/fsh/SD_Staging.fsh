@@ -52,6 +52,15 @@ Observation resources representing a cancer staging in the scope of Onconova SHA
 * component[ulceration].valueCodeableConcept from https://loinc.org/LL4443-9
 * insert Obligations(component[ulceration], #SHOULD:populate-if-known, #SHOULD:persist)
 
+* insert StagingNotUsed
+* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3 and o-stg-breslow
+
+Invariant: o-stg-breslow
+Description: "For Breslow stages, the exact Breslow depth must be provided."
+Expression: "code.coding.code = '106243009' implies value.extension(https://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth).valueQuantity.value.hasValue()"
+Severity: #error
+
+
 Extension: CancerStageBreslowDepth
 Id: onconova-ext-cancer-stage-breslow-depth
 Title: "Cancer Stage Breslow Depth"
@@ -61,14 +70,6 @@ Context: CancerStage.valueCodeableConcept.extension
 * valueQuantity.code = #mm
 * valueQuantity.system = "http://unitsofmeasure.org"
 
-
-* insert StagingNotUsed
-* obeys o-stg-req-1 and o-stg-req-2 and o-stg-req-3 and o-stg-breslow
-
-Invariant: o-stg-breslow
-Description: "For Breslow stages, the exact Breslow depth must be provided."
-Expression: "code.coding.code = '106243009' implies value.extension(https://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth).valueQuantity.value.hasValue()"
-Severity: #error
 
 Profile: OnconovaLymphomaStage
 Parent: LymphomaStage
