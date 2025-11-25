@@ -10,7 +10,7 @@
   "name" : "OnconovaTNMDistantMetastasesCategory",
   "title" : "TNM Distant Metastases Category Profile",
   "status" : "active",
-  "date" : "2025-11-25T07:35:44+00:00",
+  "date" : "2025-11-25T10:34:25+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -19,7 +19,7 @@
       "value" : "http://onconova.github.io/docs"
     }]
   }],
-  "description" : "A profile representing the TNM distant metastases category for a cancer patient. \n\nThis profile extends the base mCODE [TNMDistantMetastasesCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a TNM staging distant metastases parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
+  "description" : "A profile representing the TNM distant metastases category for a cancer patient. \n\nThis profile extends the base mCODE [TNMDistantMetastasesCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category) to include specific constraints and extensions relevant to Onconova. Onconova does not provide this resource as an independent resource and is expected to be provided as a contained resource in the `TNMStageGroup` profile under `Obseration.contained`.\n\n**Conformance:**\n\nObservation resources representing a TNM staging distant metastases parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",

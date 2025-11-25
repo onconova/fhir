@@ -10,7 +10,7 @@
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-25T07:35:44+00:00",
+  "date" : "2025-11-25T10:34:25+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -1859,7 +1859,7 @@
         "reference" : "StructureDefinition/onconova-tnm-distant-metastases-category"
       },
       "name" : "TNM Distant Metastases Category Profile",
-      "description" : "A profile representing the TNM distant metastases category for a cancer patient. \n\nThis profile extends the base mCODE [TNMDistantMetastasesCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a TNM staging distant metastases parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+      "description" : "A profile representing the TNM distant metastases category for a cancer patient. \n\nThis profile extends the base mCODE [TNMDistantMetastasesCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category) to include specific constraints and extensions relevant to Onconova. Onconova does not provide this resource as an independent resource and is expected to be provided as a contained resource in the `TNMStageGroup` profile under `Obseration.contained`.\n\n**Conformance:**\n\nObservation resources representing a TNM staging distant metastases parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
       "exampleBoolean" : false
     },
     {
@@ -1907,7 +1907,7 @@
         "reference" : "StructureDefinition/onconova-tnm-grade-category"
       },
       "name" : "TNM Grade Category Profile",
-      "description" : "A profile representing the TNM grade category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.\n\n**Conformance:**\n\nObservation resources representing a TNM staging grade category parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+      "description" : "A profile representing the TNM grade category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category. Onconova does not provide this resource as an independent resource and is expected to be provided as a contained resource in the `TNMStageGroup` profile under `Obseration.contained`.\n\n**Conformance:**\n\nObservation resources representing a TNM staging grade category parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
       "exampleBoolean" : false
     },
     {
@@ -1931,7 +1931,7 @@
         "reference" : "StructureDefinition/onconova-tnm-lymphatic-invasion-category"
       },
       "name" : "TNM Lymphatic Invasion Category Profile",
-      "description" : "A profile representing the TNM lymphatic invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.\n\n**Conformance:**\n\nObservation resources representing a TNM staging lymphatic invasion parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+      "description" : "A profile representing the TNM lymphatic invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category. Onconova does not provide this resource as an independent resource and is expected to be provided as a contained resource in the `TNMStageGroup` profile under `Obseration.contained`.\n\n**Conformance:**\n\nObservation resources representing a TNM staging lymphatic invasion parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
       "exampleBoolean" : false
     },
     {
@@ -1955,7 +1955,7 @@
         "reference" : "StructureDefinition/onconova-tnm-perineural-invasion-category"
       },
       "name" : "TNM Perineural Invasion Category Profile",
-      "description" : "A profile representing the TNM perineural invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.\n\n**Conformance:**\n\nObservation resources representing a TNM staging perineural invasion parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+      "description" : "A profile representing the TNM perineural invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category. Onconova does not provide this resource as an independent resource and is expected to be provided as a contained resource in the `TNMStageGroup` profile under `Obseration.contained`.\n\n**Conformance:**\n\nObservation resources representing a TNM staging perineural invasion parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
       "exampleBoolean" : false
     },
     {
@@ -1979,7 +1979,7 @@
         "reference" : "StructureDefinition/onconova-tnm-primary-tumor-category"
       },
       "name" : "TNM Primary Tumor Category Profile",
-      "description" : "A profile representing the TNM primary tumor category for a cancer patient. \n\nThis profile extends the base mCODE [TNMPrimaryTumorCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-primary-tumor-category) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a TNM staging primary tumor parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+      "description" : "A profile representing the TNM primary tumor category for a cancer patient. \n\nThis profile extends the base mCODE [TNMPrimaryTumorCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-primary-tumor-category) to include specific constraints and extensions relevant to Onconova. Onconova does not provide this resource as an independent resource and is expected to be provided as a contained resource in the `TNMStageGroup` profile under `Obseration.contained`.\n\n**Conformance:**\n\nObservation resources representing a TNM staging primary tumor parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
       "exampleBoolean" : false
     },
     {
@@ -2003,7 +2003,7 @@
         "reference" : "StructureDefinition/onconova-tnm-regional-nodes-category"
       },
       "name" : "TNM Regional Nodes Category Profile",
-      "description" : "A profile representing the TNM regional nodes category for a cancer patient. \n\nThis profile extends the base mCODE [TNMRegionalNodesCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-regional-nodes-category) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a TNM staging regional nodes parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+      "description" : "A profile representing the TNM regional nodes category for a cancer patient. \n\nThis profile extends the base mCODE [TNMRegionalNodesCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-regional-nodes-category) to include specific constraints and extensions relevant to Onconova. Onconova does not provide this resource as an independent resource and is expected to be provided as a contained resource in the `TNMStageGroup` profile under `Obseration.contained`.\n\n**Conformance:**\n\nObservation resources representing a TNM staging regional nodes parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
       "exampleBoolean" : false
     },
     {
@@ -2027,7 +2027,7 @@
         "reference" : "StructureDefinition/onconova-tnm-residual-tumor-category"
       },
       "name" : "TNM Residual Tumor Category Profile",
-      "description" : "A profile representing the TNM residual tumor category for a cancer patient.\n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.\n\n**Conformance:**\n\nObservation resources representing a TNM staging residual tumor parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+      "description" : "A profile representing the TNM residual tumor category for a cancer patient.\n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category. Onconova does not provide this resource as an independent resource and is expected to be provided as a contained resource in the `TNMStageGroup` profile under `Obseration.contained`.\n\n**Conformance:**\n\nObservation resources representing a TNM staging residual tumor parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
       "exampleBoolean" : false
     },
     {
@@ -2051,7 +2051,7 @@
         "reference" : "StructureDefinition/onconova-tnm-serum-tumor-marker-level-category"
       },
       "name" : "TNM Serum Tumor Marker Level Category Profile",
-      "description" : "A profile representing the TNM serum tumor marker level category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.\n\n**Conformance:**\n\nObservation resources representing a TNM staging serum tumor marker level parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+      "description" : "A profile representing the TNM serum tumor marker level category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category. Onconova does not provide this resource as an independent resource and is expected to be provided as a contained resource in the `TNMStageGroup` profile under `Obseration.contained`.\n\n**Conformance:**\n\nObservation resources representing a TNM staging serum tumor marker level parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
       "exampleBoolean" : false
     },
     {
@@ -2087,7 +2087,7 @@
         "reference" : "StructureDefinition/onconova-tnm-venous-invasion-category"
       },
       "name" : "TNM Venous Invasion Category Profile",
-      "description" : "A profile representing the TNM venous invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.\n\n**Conformance:**\n\nObservation resources representing a TNM staging venous invasion parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+      "description" : "A profile representing the TNM venous invasion category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category. Onconova does not provide this resource as an independent resource and is expected to be provided as a contained resource in the `TNMStageGroup` profile under `Obseration.contained`.\n\n**Conformance:**\n\nObservation resources representing a TNM staging venous invasion parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
       "exampleBoolean" : false
     },
     {

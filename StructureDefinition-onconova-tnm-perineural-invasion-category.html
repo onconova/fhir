@@ -231,7 +231,7 @@
 <p>
 <p>A profile representing the TNM perineural invasion category for a cancer patient.</p>
 
-<p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category">TNMCategory profile</a> to specify the new TNM category.</p>
+<p>This profile extends the base mCODE <a href="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category">TNMCategory profile</a> to specify the new TNM category. Onconova does not provide this resource as an independent resource and is expected to be provided as a contained resource in the <code class="language-plaintext highlighter-rouge">TNMStageGroup</code> profile under <code class="language-plaintext highlighter-rouge">Obseration.contained</code>.</p>
 
 <p><strong>Conformance:</strong></p>
 
@@ -249,7 +249,6 @@
 <p><b>Usages:</b></p>
 <ul>
  <li>Refer to this Profile: <a href="StructureDefinition-onconova-tnm-stage-group.html">TNM Stage Group</a></li>
- <li>CapabilityStatements using this Profile: <a href="CapabilityStatement-onconova-capability-statement.html">Onconova FHIR REST Server Capability Statement</a></li>
 </ul>
 <p>You can also check for <a href="https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-tnm-perineural-invasion-category">usages in the FHIR IG Statistics</a></p>
 
@@ -461,7 +460,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Not used in this profile</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // a6a9574d-c066-4f62-9f57-0ca71cc41af6
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 22a7cb3f-0d4d-4c85-9fde-fad8b4fe1796
 document.getElementById('cbonconova-tnm-perineural-invasion-categoryK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('onconova-tnm-perineural-invasion-categoryK'), 'binding', document.getElementById('cbonconova-tnm-perineural-invasion-categoryK-binding').checked, document.getElementById('pponconova-tnm-perineural-invasion-categoryK'));
 document.getElementById('cbonconova-tnm-perineural-invasion-categoryK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -877,7 +876,7 @@ filterDesc(document.getElementById('onconova-tnm-perineural-invasion-categoryK')
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Not used in this profile</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // a6a9574d-c066-4f62-9f57-0ca71cc41af6
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 22a7cb3f-0d4d-4c85-9fde-fad8b4fe1796
 document.getElementById('cbonconova-tnm-perineural-invasion-categoryD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('onconova-tnm-perineural-invasion-categoryD'), 'binding', document.getElementById('cbonconova-tnm-perineural-invasion-categoryD-binding').checked, document.getElementById('pponconova-tnm-perineural-invasion-categoryD'));
 document.getElementById('cbonconova-tnm-perineural-invasion-categoryD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1386,7 +1385,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // a6a9574d-c066-4f62-9f57-0ca71cc41af6
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 22a7cb3f-0d4d-4c85-9fde-fad8b4fe1796
 document.getElementById('cbonconova-tnm-perineural-invasion-categoryS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('onconova-tnm-perineural-invasion-categoryS'), 'binding', document.getElementById('cbonconova-tnm-perineural-invasion-categoryS-binding').checked, document.getElementById('pponconova-tnm-perineural-invasion-categoryS'));
 document.getElementById('cbonconova-tnm-perineural-invasion-categoryS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2077,7 +2076,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Not used in this profile</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // a6a9574d-c066-4f62-9f57-0ca71cc41af6
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 22a7cb3f-0d4d-4c85-9fde-fad8b4fe1796
 document.getElementById('cbonconova-tnm-perineural-invasion-categoryKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('onconova-tnm-perineural-invasion-categoryKA'), 'binding', document.getElementById('cbonconova-tnm-perineural-invasion-categoryKA-binding').checked, document.getElementById('pponconova-tnm-perineural-invasion-categoryKA'));
 document.getElementById('cbonconova-tnm-perineural-invasion-categoryKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2493,7 +2492,7 @@ filterDesc(document.getElementById('onconova-tnm-perineural-invasion-categoryKA'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Not used in this profile</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // a6a9574d-c066-4f62-9f57-0ca71cc41af6
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 22a7cb3f-0d4d-4c85-9fde-fad8b4fe1796
 document.getElementById('cbonconova-tnm-perineural-invasion-categoryDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('onconova-tnm-perineural-invasion-categoryDA'), 'binding', document.getElementById('cbonconova-tnm-perineural-invasion-categoryDA-binding').checked, document.getElementById('pponconova-tnm-perineural-invasion-categoryDA'));
 document.getElementById('cbonconova-tnm-perineural-invasion-categoryDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3001,7 +3000,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">See <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // a6a9574d-c066-4f62-9f57-0ca71cc41af6
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 22a7cb3f-0d4d-4c85-9fde-fad8b4fe1796
 document.getElementById('cbonconova-tnm-perineural-invasion-categorySA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('onconova-tnm-perineural-invasion-categorySA'), 'binding', document.getElementById('cbonconova-tnm-perineural-invasion-categorySA-binding').checked, document.getElementById('pponconova-tnm-perineural-invasion-categorySA'));
 document.getElementById('cbonconova-tnm-perineural-invasion-categorySA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3540,7 +3539,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 25, 2025 07:35+0000">2025-11-25</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 25, 2025 10:34+0000">2025-11-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

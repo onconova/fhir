@@ -13,14 +13,13 @@
 
  
 A profile representing the TNM grade category for a cancer patient. 
-This profile extends the base mCODE[TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category)to specify the new TNM category. 
+This profile extends the base mCODE[TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category)to specify the new TNM category. Onconova does not provide this resource as an independent resource and is expected to be provided as a contained resource in the`TNMStageGroup`profile under`Obseration.contained`. 
 **Conformance:** 
 Observation resources representing a TNM staging grade category parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 **Usages:**
 
 * Refer to this Profile: [TNM Stage Group](StructureDefinition-onconova-tnm-stage-group.md)
-* CapabilityStatements using this Profile: [Onconova FHIR REST Server Capability Statement](CapabilityStatement-onconova-capability-statement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-tnm-grade-category)
 
@@ -45,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-grade-c
   "name" : "OnconovaTNMGradeCategory",
   "title" : "TNM Grade Category Profile",
   "status" : "active",
-  "date" : "2025-11-25T07:35:44+00:00",
+  "date" : "2025-11-25T10:34:25+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -58,7 +57,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-grade-c
       ]
     }
   ],
-  "description" : "A profile representing the TNM grade category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category.\n\n**Conformance:**\n\nObservation resources representing a TNM staging grade category parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
+  "description" : "A profile representing the TNM grade category for a cancer patient. \n\nThis profile extends the base mCODE [TNMCategory profile](http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-category) to specify the new TNM category. Onconova does not provide this resource as an independent resource and is expected to be provided as a contained resource in the `TNMStageGroup` profile under `Obseration.contained`.\n\n**Conformance:**\n\nObservation resources representing a TNM staging grade category parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

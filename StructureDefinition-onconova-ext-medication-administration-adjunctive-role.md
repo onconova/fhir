@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-medicat
   "name" : "MedicationAdministrationAdjunctiveRole",
   "title" : "Medication Administration Adjunctive Role",
   "status" : "active",
-  "date" : "2025-11-25T07:35:44+00:00",
+  "date" : "2025-11-25T10:34:25+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

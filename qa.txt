@@ -3,7 +3,7 @@ Onconova : Validation Results
 
 err = 125, warn = 245, info = 671
 IG Publisher Version: 2.0.26
-Generated Tue Nov 25 07:41:07 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2.0 (canonical = http://onconova.github.io/fhir)
+Generated Tue Nov 25 10:39:47 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2.0 (canonical = http://onconova.github.io/fhir)
  Build Errors : 1 / 2 / 0
  /home/runner/work/fhir/fhir/fsh-generated/resources/ActorDefinition-onconova-consumer : 0 / 0 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ActorDefinition-onconova-creator : 0 / 0 / 1
@@ -133,7 +133,7 @@ Generated Tue Nov 25 07:41:07 UTC 2025. FHIR version 4.0.1 for onconova.fhir#0.2
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-vital-status : 0 / 1 / 1
 </table>
 == n/a ==
-ERROR: CapabilityStatement-onconova-capability-statement.html#/html/body/div/div/div/div/div/div/div/div/div/div/div/a at Line 252, column 18222: The link 'http://hl7.org/fhir/R4/familyhistory.html' for "FamilyHistory" cannot be resolved
+ERROR: CapabilityStatement-onconova-capability-statement.html#/html/body/div/div/div/div/div/div/div/div/div/div/div/a at Line 252, column 16060: The link 'http://hl7.org/fhir/R4/familyhistory.html' for "FamilyHistory" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ActorDefinition-onconova-consumer.json ==
