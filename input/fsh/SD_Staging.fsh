@@ -41,13 +41,15 @@ Observation resources representing a cancer staging in the scope of Onconova SHA
 * method 0..1 MS
 * insert Obligations(method, #SHALL:populate-if-known, #SHOULD:persist)
 
+* insert ObservationComponentSlicingRules
+
 * insert CreateComponent(breslowDepth, 0, 1)
 * component[breslowDepth] ^short = "Breslow thickness of melanoma"
 * component[breslowDepth].code = $LOINC#92839-0 "Breslow thickness [Length] of Skin melanoma"
 * component[breslowDepth].value[x] only Quantity
 * component[breslowDepth].valueQuantity.code = #mm
 * component[breslowDepth].valueQuantity.system = http://unitsofmeasure.org
-* insert Obligations(component[breslowDepth], #SHALL:populate, #SHOULD:persist)
+* insert Obligations(component[breslowDepth], #SHALL:populate-if-known, #SHOULD:persist)
 
 * insert CreateComponent(ulceration, 0, 1)
 * component[ulceration] ^short = "Presence of ulceration"
