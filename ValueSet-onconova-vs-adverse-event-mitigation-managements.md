@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-managements | *Version*:0.2.0 |
-| Active as of 2025-11-25 | *Computable Name*:AdverseEventMitigationManagements |
+| Active as of 2025-11-27 | *Computable Name*:AdverseEventMitigationManagements |
 
  
 Classification of actions to mitigate adverse events affecting a patient's health. 
@@ -54,7 +54,7 @@ This value set contains 2 concepts
   "name" : "AdverseEventMitigationManagements",
   "title" : "Adverse Event Mitigation Managements Value Set",
   "status" : "active",
-  "date" : "2025-11-25T10:34:25+00:00",
+  "date" : "2025-11-27T10:13:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

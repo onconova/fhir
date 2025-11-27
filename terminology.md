@@ -126,6 +126,9 @@ TNM Serum Tumor Marker Level Categories Value Set
 * [TNM Venous Invasion Categories Value Set](ValueSet-onconova-vs-tnm-venous-invasion-categories.md) 
 TNM Venous Invasion Categories Value Set 
 
+* [Treatment Intents Value Set](ValueSet-onconova-vs-treatment-intents.md) 
+A set of intents for giving a treatment to a cancer patient 
+
 * [Treatment Termination Reasons Value Set](ValueSet-onconova-vs-treatment-termination-reasons.md) 
 Reasons for terminating a treatment in oncology. 
 

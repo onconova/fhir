@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status | *Version*:0.2.0 |
-| Active as of 2025-11-25 | *Computable Name*:ConsentStatusCodeSystem |
+| Active as of 2025-11-27 | *Computable Name*:ConsentStatusCodeSystem |
 
  
 A code system for consent status relevant to Onconova patients. 
@@ -31,7 +31,7 @@ A code system for consent status relevant to Onconova patients.
   "name" : "ConsentStatusCodeSystem",
   "title" : "Consent Status Code System",
   "status" : "active",
-  "date" : "2025-11-25T10:34:25+00:00",
+  "date" : "2025-11-27T10:13:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

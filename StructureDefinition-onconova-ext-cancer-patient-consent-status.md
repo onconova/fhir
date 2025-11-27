@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-consent-status | *Version*:0.2.0 |
-| Active as of 2025-11-25 | *Computable Name*:CancerPatientConsentStatus |
+| Active as of 2025-11-27 | *Computable Name*:CancerPatientConsentStatus |
 
 The status of whether the patient has given or revoked consent for research use.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-cancer-
   "name" : "CancerPatientConsentStatus",
   "title" : "Cancer Patient Consent status",
   "status" : "active",
-  "date" : "2025-11-25T10:34:25+00:00",
+  "date" : "2025-11-27T10:13:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

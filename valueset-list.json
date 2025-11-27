@@ -368,6 +368,15 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-intents",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "TreatmentIntents",
+      "title" : "Treatment Intents Value Set",
+      "description" : "A set of intents for giving a treatment to a cancer patient",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons",
       "version" : "0.2.0",
       "status" : "active",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-free-survival | *Version*:0.2.0 |
-| Active as of 2025-11-25 | *Computable Name*:TherapyLineProgressionFreeSurvival |
+| Active as of 2025-11-27 | *Computable Name*:TherapyLineProgressionFreeSurvival |
 
 The progression-free survival duration for the therapy line.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-therapy
   "name" : "TherapyLineProgressionFreeSurvival",
   "title" : "Therapy Line Progression-Free Survival",
   "status" : "active",
-  "date" : "2025-11-25T10:34:25+00:00",
+  "date" : "2025-11-27T10:13:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

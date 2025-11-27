@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration | *Version*:0.2.0 |
-| Active as of 2025-11-25 | *Computable Name*:OnconovaMedicationAdministration |
+| Active as of 2025-11-27 | *Computable Name*:OnconovaMedicationAdministration |
 
  
 A profile representing a medication administered to a cancer patient during a systemic therapy (e.g., chemotherapy, immunotherapy), including details about the medication and dosage. 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
   "name" : "OnconovaMedicationAdministration",
   "title" : "Medication Administration Profile",
   "status" : "active",
-  "date" : "2025-11-25T10:34:25+00:00",
+  "date" : "2025-11-27T10:13:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -110,7 +110,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
             "key" : "o-med-req-2",
             "severity" : "error",
             "human" : "The effectivePeriod element is required and must be provided.",
-            "expression" : "effectivePeriod.exists() and effectivePeriod.hasValue()",
+            "expression" : "effectivePeriod.exists()",
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration"
           },
           {
@@ -193,6 +193,14 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
         "path" : "MedicationAdministration.extension",
         "sliceName" : "treatmentIntent",
         "min" : 1
+      },
+      {
+        "id" : "MedicationAdministration.extension:treatmentIntent.value[x]",
+        "path" : "MedicationAdministration.extension.value[x]",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-intents"
+        }
       },
       {
         "id" : "MedicationAdministration.extension:normalizationBasis",

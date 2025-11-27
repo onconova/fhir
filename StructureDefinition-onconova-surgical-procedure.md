@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure | *Version*:0.2.0 |
-| Active as of 2025-11-25 | *Computable Name*:OnconovaSurgicalProcedure |
+| Active as of 2025-11-27 | *Computable Name*:OnconovaSurgicalProcedure |
 
  
 A profile representing a surgical procedure performed on a cancer patient, including details about the procedure, its intent, and relevant dates. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
   "name" : "OnconovaSurgicalProcedure",
   "title" : "Surgical Procedure Profile",
   "status" : "active",
-  "date" : "2025-11-25T10:34:25+00:00",
+  "date" : "2025-11-27T10:13:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -161,6 +161,14 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
         "path" : "Procedure.extension",
         "sliceName" : "treatmentIntent",
         "min" : 1
+      },
+      {
+        "id" : "Procedure.extension:treatmentIntent.value[x]",
+        "path" : "Procedure.extension.value[x]",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-intents"
+        }
       },
       {
         "id" : "Procedure.extension:therapyLine",
@@ -440,6 +448,43 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
             ]
           }
         ]
+      },
+      {
+        "id" : "Procedure.outcome",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:populate-if-available"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "MAY:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "Procedure.outcome",
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-outcome"
+        }
       },
       {
         "id" : "Procedure.report",

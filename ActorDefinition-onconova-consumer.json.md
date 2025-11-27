@@ -8,7 +8,7 @@
 
 | |
 | :--- |
-| Active as of 2025-11-25 |
+| Active as of 2025-11-27 |
 
 [Raw json](ActorDefinition-onconova-consumer.json) | [Download](ActorDefinition-onconova-consumer.json)
 

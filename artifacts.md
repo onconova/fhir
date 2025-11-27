@@ -157,6 +157,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [TNM Residual Tumor Categories Value Set](ValueSet-onconova-tnm-residual-tumor-categories.md) | TNM Residual Tumor Categories Value Set |
 | [TNM Serum Tumor Marker Level Categories Value Set](ValueSet-onconova-vs-tnm-serum-tumor-marker-level-categories.md) | TNM Serum Tumor Marker Level Categories Value Set |
 | [TNM Venous Invasion Categories Value Set](ValueSet-onconova-vs-tnm-venous-invasion-categories.md) | TNM Venous Invasion Categories Value Set |
+| [Treatment Intents Value Set](ValueSet-onconova-vs-treatment-intents.md) | A set of intents for giving a treatment to a cancer patient |
 | [Treatment Termination Reasons Value Set](ValueSet-onconova-vs-treatment-termination-reasons.md) | Reasons for terminating a treatment in oncology. |
 | [Tumor Board Recommendations Value Set](ValueSet-onconova-vs-tumor-board-recommendations.md) | Recommendations that may be made by a tumor board for a cancer patient. |
 | [Tumor Marker Analytes Value Set](ValueSet-onconova-vs-tumor-marker-analytes.md) | Analytes considered tumor markers. |

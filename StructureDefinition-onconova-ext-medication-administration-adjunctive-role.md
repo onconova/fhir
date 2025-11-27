@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-adjunctive-role | *Version*:0.2.0 |
-| Active as of 2025-11-25 | *Computable Name*:MedicationAdministrationAdjunctiveRole |
+| Active as of 2025-11-27 | *Computable Name*:MedicationAdministrationAdjunctiveRole |
 
 Indicates the role of this medication administration in the context of the overall treatment plan.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-medicat
   "name" : "MedicationAdministrationAdjunctiveRole",
   "title" : "Medication Administration Adjunctive Role",
   "status" : "active",
-  "date" : "2025-11-25T10:34:25+00:00",
+  "date" : "2025-11-27T10:13:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

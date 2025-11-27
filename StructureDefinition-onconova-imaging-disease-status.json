@@ -10,7 +10,7 @@
   "name" : "OnconovaImagingDiseaseStatus",
   "title" : "Imaging Disease Status Profile",
   "status" : "active",
-  "date" : "2025-11-25T10:34:25+00:00",
+  "date" : "2025-11-27T10:13:46+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -167,7 +167,7 @@
         "key" : "o-res-req-4",
         "severity" : "error",
         "human" : "The method element is required and must be provided.",
-        "expression" : "method.exists() and method.hasValue()",
+        "expression" : "method.exists()",
         "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-imaging-disease-status"
       }],
       "isModifier" : false,
@@ -2900,7 +2900,7 @@
         "key" : "o-res-req-4",
         "severity" : "error",
         "human" : "The method element is required and must be provided.",
-        "expression" : "method.exists() and method.hasValue()",
+        "expression" : "method.exists()",
         "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-imaging-disease-status"
       }]
     },

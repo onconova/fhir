@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient | *Version*:0.2.0 |
-| Active as of 2025-11-25 | *Computable Name*:OnconovaCancerPatient |
+| Active as of 2025-11-27 | *Computable Name*:OnconovaCancerPatient |
 
  
 A profile representing a patient with or is receiving medical treatment for a malignant growth or tumor. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-pati
   "name" : "OnconovaCancerPatient",
   "title" : "Cancer Patient Profile",
   "status" : "active",
-  "date" : "2025-11-25T10:34:25+00:00",
+  "date" : "2025-11-27T10:13:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -130,21 +130,21 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-pati
             "key" : "o-pat-req-5",
             "severity" : "error",
             "human" : "The vital status extension is required and must be provided.",
-            "expression" : "birthDate.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.hasValue()",
+            "expression" : "birthDate.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.exists()",
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
           },
           {
             "key" : "o-pat-req-6",
             "severity" : "error",
             "human" : "The vital status extension is required and must be provided.",
-            "expression" : "deceased.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.hasValue()",
+            "expression" : "deceased.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.exists()",
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
           },
           {
             "key" : "o-pat-req-7",
             "severity" : "error",
             "human" : "If the patient is deceased, the date of death and cause of death must be provided.",
-            "expression" : "deceasedDateTime.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.coding.code = '419099009' implies (deceasedDateTime.hasValue() and deceasedDateTime.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-cause-of-death').valueCodeableConcept.hasValue())",
+            "expression" : "deceasedDateTime.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.coding.code = '419099009' implies (deceasedDateTime.hasValue() and deceasedDateTime.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-cause-of-death').valueCodeableConcept.exists())",
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
           },
           {

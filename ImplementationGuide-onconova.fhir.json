@@ -10,7 +10,7 @@
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-25T10:34:25+00:00",
+  "date" : "2025-11-27T10:13:46+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -2100,6 +2100,18 @@
       },
       "name" : "To Be Determined Codes",
       "description" : "A code system for codes that are yet to be determined.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/onconova-vs-treatment-intents"
+      },
+      "name" : "Treatment Intents Value Set",
+      "description" : "A set of intents for giving a treatment to a cancer patient",
       "exampleBoolean" : false
     },
     {

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "b338ca96-3397-43c6-9858-469de721f859",
+  "id" : "27a39e0a-8ba2-43bd-a6c2-fec5eab608c9",
   "meta" : {
-    "lastUpdated" : "2025-11-25T10:34:25.673+00:00"
+    "lastUpdated" : "2025-11-27T10:13:46.554+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,10 +18,10 @@
       "name" : "TNMLymphaticInvasionCategories",
       "title" : "TNM Lymphatic Invasion Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:c083063c-4ab2-471d-b119-8d5aeabb1464",
-        "timestamp" : "2025-11-25T10:38:10+00:00",
+        "identifier" : "urn:uuid:3cd3331b-0f94-482b-bc31-c042658f3617",
+        "timestamp" : "2025-11-27T10:17:43+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -84,10 +84,10 @@
       "name" : "TNMPerineuralInvasionCategories",
       "title" : "TNM Perineural Invasion Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:79091cb6-4438-48b4-a107-92639335bfb6",
-        "timestamp" : "2025-11-25T10:38:10+00:00",
+        "identifier" : "urn:uuid:febfe1cd-19bb-422a-a2e8-b2ca96a36c7d",
+        "timestamp" : "2025-11-27T10:17:44+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -140,14 +140,14 @@
       "name" : "TNMResidualTumorCategories",
       "title" : "TNM Residual Tumor Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:dacd3082-ee3d-4e8b-99c4-d3ecf0de94b9",
-        "timestamp" : "2025-11-25T10:38:12+00:00",
+        "identifier" : "urn:uuid:b1708812-9923-4b58-b421-0c933f4d92c5",
+        "timestamp" : "2025-11-27T10:17:46+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -209,10 +209,10 @@
       "name" : "AdjunctiveTherapyRoles",
       "title" : "Adjunctive Therapy Roles Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:02781b71-46eb-48d9-90b6-6a5be0849cf4",
-        "timestamp" : "2025-11-25T10:38:16.536Z",
+        "identifier" : "urn:uuid:33d72f65-8be1-45ca-9ac0-fcf17ba1828d",
+        "timestamp" : "2025-11-27T10:17:50.910Z",
         "total" : 1,
         "offset" : 0,
         "parameter" : [{
@@ -264,10 +264,10 @@
       "name" : "AdverseEventMitigationCategories",
       "title" : "Adverse Event Mitigation Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:947283c8-42e3-407e-9bb3-83e2656186d9",
-        "timestamp" : "2025-11-25T10:38:16.958Z",
+        "identifier" : "urn:uuid:e4dc40d6-16fc-47d5-bd5d-2889b48cd1f7",
+        "timestamp" : "2025-11-27T10:17:51.426Z",
         "total" : 0,
         "offset" : 0,
         "parameter" : [{
@@ -314,10 +314,10 @@
       "name" : "AdverseEventMitigationDrugs",
       "title" : "Adverse Event Mitigation Drugs Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:84efacc8-7943-4b1d-b352-eed594790a60",
-        "timestamp" : "2025-11-25T10:38:17.598Z",
+        "identifier" : "urn:uuid:eb6a6ae9-444a-453c-bc52-6ddb829701bb",
+        "timestamp" : "2025-11-27T10:17:52.191Z",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -388,10 +388,10 @@
       "name" : "AdverseEventMitigationManagements",
       "title" : "Adverse Event Mitigation Managements Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:386d2180-7672-47f6-acf3-a7a808deb67f",
-        "timestamp" : "2025-11-25T10:38:17+00:00",
+        "identifier" : "urn:uuid:a7941108-e98a-440f-8687-4f67ec7ccd85",
+        "timestamp" : "2025-11-27T10:17:52+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -444,10 +444,10 @@
       "name" : "AdverseEventMitigationProcedures",
       "title" : "Adverse Event Mitigation Procedures Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:7e774cbb-d658-42a1-9927-ba7c214f982c",
-        "timestamp" : "2025-11-25T10:38:18.551Z",
+        "identifier" : "urn:uuid:4fdc0db6-ae2a-4227-9b84-6c0545b2cebd",
+        "timestamp" : "2025-11-27T10:17:53.316Z",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -537,10 +537,10 @@
       "name" : "AdverseEventMitigationTreatmentAdjustments",
       "title" : "Adverse Event Mitigation Treatment Adjustments Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e4801ff1-2354-4556-9b22-a120ae3a24b6",
-        "timestamp" : "2025-11-25T10:38:18+00:00",
+        "identifier" : "urn:uuid:48cad7b7-0cde-46e4-8073-f4061aba927f",
+        "timestamp" : "2025-11-27T10:17:53+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -598,10 +598,10 @@
       "name" : "CancerImagingMethods",
       "title" : "Cancer Imaging Methods Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:646925ef-c9bc-415f-8e4c-63d218cf9e8a",
-        "timestamp" : "2025-11-25T10:37:56+00:00",
+        "identifier" : "urn:uuid:5b6df96b-d64c-4165-9d50-103e161e210d",
+        "timestamp" : "2025-11-27T10:17:27+00:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -689,10 +689,10 @@
       "name" : "CausesOfDeath",
       "title" : "Cause of Death Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:25ea1540-c6d4-47cf-81bf-dc60e2966f72",
-        "timestamp" : "2025-11-25T10:38:20.505Z",
+        "identifier" : "urn:uuid:6b54d676-eeed-4bb7-ab7e-5f5c37181b34",
+        "timestamp" : "2025-11-27T10:17:55.457Z",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -753,10 +753,10 @@
       "name" : "ComorbidityPanels",
       "title" : "Comorbidity Panels Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:66ca1133-4b05-498a-9c44-45c819d6ad11",
-        "timestamp" : "2025-11-25T10:37:49+00:00",
+        "identifier" : "urn:uuid:054120e9-6f6d-47bb-aca3-e0fd45841e3a",
+        "timestamp" : "2025-11-27T10:17:18+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -810,10 +810,10 @@
       "name" : "ConsentStatus",
       "title" : "Consent Status Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e03ba329-7ff4-4d9e-8d83-e17f4a7db575",
-        "timestamp" : "2025-11-25T10:38:20+00:00",
+        "identifier" : "urn:uuid:ef8f3913-82ce-4049-9b50-1c9f0bf24ea7",
+        "timestamp" : "2025-11-27T10:17:55+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -867,10 +867,10 @@
       "name" : "ExpectedDrugEffects",
       "title" : "Expected Drug Effects Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:33dbe6d3-c760-412a-876e-5fa59a27cea8",
-        "timestamp" : "2025-11-25T10:38:21+00:00",
+        "identifier" : "urn:uuid:9eaf80bf-a46d-420c-995e-ce111aace8bf",
+        "timestamp" : "2025-11-27T10:17:56+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -923,10 +923,10 @@
       "name" : "HomologousRecombinationDeficiencyInterpretations",
       "title" : "Homologous Recombination Deficiency Interpretation Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:808e93a7-c5cd-4c7b-9192-cb0c843949fd",
-        "timestamp" : "2025-11-25T10:38:21+00:00",
+        "identifier" : "urn:uuid:c3c5cb7e-1dd6-48b8-a7df-cbfbbe500d5a",
+        "timestamp" : "2025-11-27T10:17:56+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -984,10 +984,10 @@
       "name" : "ICD10Conditions",
       "title" : "ICD-10 Codes Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:bdc58455-14c1-4ed5-968d-858e541ba1f9",
-        "timestamp" : "2025-11-25T10:38:22.286Z",
+        "identifier" : "urn:uuid:60f513e4-def2-497b-a0c2-8f654137eb4e",
+        "timestamp" : "2025-11-27T10:17:57.551Z",
         "offset" : 0,
         "parameter" : [{
           "name" : "limitedExpansion",
@@ -6029,10 +6029,10 @@
       "name" : "ICDO3Differentiations",
       "title" : "ICD-O-3 Differentiations Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:22667d5a-0e5b-416a-96eb-79209f83d675",
-        "timestamp" : "2025-11-25T10:38:23.239Z",
+        "identifier" : "urn:uuid:b2268749-e20b-4ee4-b672-e42b2eec7ddc",
+        "timestamp" : "2025-11-27T10:17:58.598Z",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -6094,10 +6094,10 @@
       "name" : "ObservationBodySites",
       "title" : "Observation Body Sites Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:c55f290b-5741-4917-8864-cb450de34da2",
-        "timestamp" : "2025-11-25T10:37:55+00:00",
+        "identifier" : "urn:uuid:dd6416b7-3257-4a63-85dd-1f58ee63321e",
+        "timestamp" : "2025-11-27T10:17:27+00:00",
         "total" : 301,
         "offset" : 0,
         "parameter" : [{
@@ -7645,10 +7645,10 @@
       "name" : "RecreationalDrugs",
       "title" : "Recreational Drugs Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:141ece6c-380d-4d1e-8dc8-0ca2c7ab1583",
-        "timestamp" : "2025-11-25T10:37:57+00:00",
+        "identifier" : "urn:uuid:7591a9c8-c0ae-4921-b275-21697a9351e6",
+        "timestamp" : "2025-11-27T10:17:29+00:00",
         "total" : 21,
         "offset" : 0,
         "parameter" : [{
@@ -7796,10 +7796,10 @@
       "name" : "RecurrenceTypes",
       "title" : "Recurrence Types Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:264ebb40-d310-4260-b57a-f8d0b99cbadc",
-        "timestamp" : "2025-11-25T10:38:23+00:00",
+        "identifier" : "urn:uuid:ecc298da-e63f-4e93-a1db-2729f2500532",
+        "timestamp" : "2025-11-27T10:17:58+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -7852,10 +7852,10 @@
       "name" : "SmokingStatus",
       "title" : "Smoking status Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:2abcce62-ca8b-4958-893e-8ed031253d35",
-        "timestamp" : "2025-11-25T10:37:57+00:00",
+        "identifier" : "urn:uuid:e9f374df-10af-4c4b-a480-783d211deaae",
+        "timestamp" : "2025-11-27T10:17:28+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -7928,14 +7928,14 @@
       "name" : "TNMDistantMetastasisCategories",
       "title" : "TNM Distant Metastasis Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:eed3b0aa-3ad8-4d76-8894-6809f77ae3c7",
-        "timestamp" : "2025-11-25T10:38:08+00:00",
+        "identifier" : "urn:uuid:77deb8bd-c2b6-4729-9d8d-4283a314948f",
+        "timestamp" : "2025-11-27T10:17:42+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -8305,10 +8305,10 @@
       "name" : "TNMGradeCategories",
       "title" : "TNM Grade Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:2cc41bd4-7566-41f3-9351-ea208e70a798",
-        "timestamp" : "2025-11-25T10:38:09+00:00",
+        "identifier" : "urn:uuid:10963d8b-7e1a-4633-bdd1-c9364ae827a2",
+        "timestamp" : "2025-11-27T10:17:43+00:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -8396,10 +8396,10 @@
       "name" : "TNMGradeCategoryMethods",
       "title" : "TNM Grade Category Methods Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:18cd9439-32c4-40a2-be2f-52cd8dc31c5e",
-        "timestamp" : "2025-11-25T10:38:09+00:00",
+        "identifier" : "urn:uuid:96c58086-9d8a-40c6-b3b3-7b0b6b754500",
+        "timestamp" : "2025-11-27T10:17:43+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -8457,14 +8457,14 @@
       "name" : "TNMPrimaryTumorCategories",
       "title" : "TNM Primary Tumor Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:56633172-75f5-4d18-bee0-3404fde11c77",
-        "timestamp" : "2025-11-25T10:38:11+00:00",
+        "identifier" : "urn:uuid:e1ad4da2-759e-444b-a788-63e5aa39dc0e",
+        "timestamp" : "2025-11-27T10:17:44+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -9499,14 +9499,14 @@
       "name" : "TNMRegionalNodesCategories",
       "title" : "TNM Regional Nodes Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:a57adb6c-85cc-4576-bfc9-daa68b7cdf35",
-        "timestamp" : "2025-11-25T10:38:11+00:00",
+        "identifier" : "urn:uuid:b1cee24e-c3fd-4b41-bdaa-59118c0dc630",
+        "timestamp" : "2025-11-27T10:17:45+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -10046,10 +10046,10 @@
       "name" : "TNMSerumTumorMarkerLevelCategories",
       "title" : "TNM Serum Tumor Marker Level Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:3f75f2c1-d60c-47d0-ae30-064401581157",
-        "timestamp" : "2025-11-25T10:38:13+00:00",
+        "identifier" : "urn:uuid:a77c31b4-076f-4864-be4a-5b1102cbe7a9",
+        "timestamp" : "2025-11-27T10:17:46+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -10117,10 +10117,10 @@
       "name" : "TNMVenousInvasionCategories",
       "title" : "TNM Venous Invasion Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:fe5b0555-4f20-4be9-82ac-bf94baa48fd5",
-        "timestamp" : "2025-11-25T10:38:14+00:00",
+        "identifier" : "urn:uuid:e981fc52-0fc7-4545-9cf8-ecf9482d231d",
+        "timestamp" : "2025-11-27T10:17:48+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -10171,6 +10171,62 @@
     }
   },
   {
+    "fullUrl" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-intents",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-373808002\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/373808002\">373808002</a></td><td>Curative procedure</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;373808002&quot;, &quot;display&quot;: &quot;Curative procedure&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;373808002&quot;&gt;&lt;display value=&quot;Curative procedure&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-363676003\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/363676003\">363676003</a></td><td>Palliative intent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;363676003&quot;, &quot;display&quot;: &quot;Palliative intent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;363676003&quot;&gt;&lt;display value=&quot;Palliative intent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-intents",
+      "version" : "0.2.0",
+      "name" : "TreatmentIntents",
+      "title" : "Treatment Intents Value Set",
+      "status" : "active",
+      "date" : "2025-11-27T10:13:46+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:4cb0be47-7335-4860-8060-f6f3ba89e13f",
+        "timestamp" : "2025-11-27T10:17:59+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "373808002",
+          "display" : "Curative procedure"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "363676003",
+          "display" : "Palliative intent"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -10183,10 +10239,10 @@
       "name" : "OnconovaTumorBoardRecommendations",
       "title" : "Tumor Board Recommendations Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:1cde7a97-cfea-42f9-923a-1458e0417c1e",
-        "timestamp" : "2025-11-25T10:38:24+00:00",
+        "identifier" : "urn:uuid:ac8d9ef4-d699-457d-8069-124cd61bacb6",
+        "timestamp" : "2025-11-27T10:18:00+00:00",
         "total" : 21,
         "offset" : 0,
         "parameter" : [{
@@ -10342,10 +10398,10 @@
       "name" : "TumorMarkerAnalytes",
       "title" : "Tumor Marker Analytes Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:d8f6c1a1-9cae-42d4-8bca-4550e9742599",
-        "timestamp" : "2025-11-25T10:38:25.270Z",
+        "identifier" : "urn:uuid:088ba152-70d4-4d61-bc90-df8ff7897f08",
+        "timestamp" : "2025-11-27T10:18:01.207Z",
         "total" : 42,
         "offset" : 0,
         "parameter" : [{
@@ -10606,10 +10662,10 @@
       "name" : "TumorMutationalBurdenStatusInterpretations",
       "title" : "Tumor Mutational Burden Status Interpretation Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:03e57532-458c-4b76-9c6b-321884a226e2",
-        "timestamp" : "2025-11-25T10:38:25+00:00",
+        "identifier" : "urn:uuid:f79e388f-66c1-4299-8b69-98ca960dd898",
+        "timestamp" : "2025-11-27T10:18:01+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -10672,10 +10728,10 @@
       "name" : "VitalStatus",
       "title" : "Vital Status Value Set",
       "status" : "active",
-      "date" : "2025-11-25T10:34:25+00:00",
+      "date" : "2025-11-27T10:13:46+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:c0eb0df4-f654-4a32-8234-499219befed3",
-        "timestamp" : "2025-11-25T10:38:25+00:00",
+        "identifier" : "urn:uuid:3c6dffcd-b750-414e-8903-85bf6222607a",
+        "timestamp" : "2025-11-27T10:18:01+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{

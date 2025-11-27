@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary | *Version*:0.2.0 |
-| Active as of 2025-11-25 | *Computable Name*:OnconovaRadiotherapyCourseSummary |
+| Active as of 2025-11-27 | *Computable Name*:OnconovaRadiotherapyCourseSummary |
 
  
 A profile representing a summary of a course of radiotherapy delivered to a patient. It records the treatment intent, termination reason, modalities, techniques, number of sessions, and doses delivered to one or more body volumes. Whether the course has been fully delivered or stopped is indicated in the status element. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-radiotherap
   "name" : "OnconovaRadiotherapyCourseSummary",
   "title" : "Radiotherapy Summary Profile",
   "status" : "active",
-  "date" : "2025-11-25T10:34:25+00:00",
+  "date" : "2025-11-27T10:13:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -104,7 +104,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-radiotherap
             "key" : "o-rad-req-2",
             "severity" : "error",
             "human" : "The performedPeriod element is required and must be provided.",
-            "expression" : "performedPeriod.exists() and performedPeriod.hasValue()",
+            "expression" : "performedPeriod.exists()",
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary"
           },
           {
@@ -161,6 +161,14 @@ Other representations of profile: [CSV](StructureDefinition-onconova-radiotherap
         "path" : "Procedure.extension",
         "sliceName" : "treatmentIntent",
         "min" : 1
+      },
+      {
+        "id" : "Procedure.extension:treatmentIntent.value[x]",
+        "path" : "Procedure.extension.value[x]",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-intents"
+        }
       },
       {
         "id" : "Procedure.extension:terminationReason",

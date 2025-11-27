@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-serum-tumor-marker-level-categories | *Version*:0.2.0 |
-| Active as of 2025-11-25 | *Computable Name*:TNMSerumTumorMarkerLevelCategories |
+| Active as of 2025-11-27 | *Computable Name*:TNMSerumTumorMarkerLevelCategories |
 
  
 TNM Serum Tumor Marker Level Categories Value Set 
@@ -54,7 +54,7 @@ This value set contains 5 concepts
   "name" : "TNMSerumTumorMarkerLevelCategories",
   "title" : "TNM Serum Tumor Marker Level Categories Value Set",
   "status" : "active",
-  "date" : "2025-11-25T10:34:25+00:00",
+  "date" : "2025-11-27T10:13:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

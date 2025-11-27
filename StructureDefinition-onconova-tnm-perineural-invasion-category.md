@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-perineural-invasion-category | *Version*:0.2.0 |
-| Active as of 2025-11-25 | *Computable Name*:OnconovaTNMPerineuralInvasionCategory |
+| Active as of 2025-11-27 | *Computable Name*:OnconovaTNMPerineuralInvasionCategory |
 
  
 A profile representing the TNM perineural invasion category for a cancer patient. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-perineu
   "name" : "OnconovaTNMPerineuralInvasionCategory",
   "title" : "TNM Perineural Invasion Category Profile",
   "status" : "active",
-  "date" : "2025-11-25T10:34:25+00:00",
+  "date" : "2025-11-27T10:13:46+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

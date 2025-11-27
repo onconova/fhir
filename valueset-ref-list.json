@@ -1,6 +1,20 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureOutcomeCodes(SNOMEDCT)",
+      "title" : "Procedure Outcome Codes (SNOMED CT)",
+      "description" : "Procedure Outcome code: A selection of relevant SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.428"],
+      "sources" : ["2.16.840.1.113883.4.642.3.428"],
+      "uses" : {
+      },
+      "StructureDefinition-onconova-surgical-procedure.html" : "Surgical Procedure Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/units-of-time",
       "version" : "4.0.1",
       "status" : "active",
@@ -13,20 +27,6 @@
       "uses" : {
       },
       "StructureDefinition-onconova-lifestyle.html" : "Lifestyle Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/us/mcode/ValueSet/mcode-procedure-intent-vs",
-      "version" : "4.0.0",
-      "status" : "active",
-      "name" : "ProcedureIntentVS",
-      "title" : "Procedure Intent Value Set",
-      "description" : "The purpose of a procedure.",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.4.642.40.15.48.54"],
-      "sources" : ["2.16.840.1.113883.4.642.40.15.48.54"],
-      "uses" : {
-      },
-      "StructureDefinition-onconova-ext-therapy-line-intent.html" : "Therapy Line Intent"
     },
     {
       "url" : "http://hl7.org/fhir/us/mcode/ValueSet/mcode-tnm-distant-metastases-category-vs",
@@ -232,8 +232,8 @@
       "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"],
       "uses" : {
       },
-      "StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.html" : "Molecular Tumor Board Therapeutic Recommendation",
-      "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile"
+      "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile",
+      "StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.html" : "Molecular Tumor Board Therapeutic Recommendation"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-imaging-methods",
@@ -423,9 +423,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
       "uses" : {
       },
-      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile",
+      "StructureDefinition-onconova-ext-family-history-member-cancer-morphology.html" : "Family Member History Cancer Morphology",
       "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile",
-      "StructureDefinition-onconova-ext-family-history-member-cancer-morphology.html" : "Family Member History Cancer Morphology"
+      "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topographies",
@@ -437,9 +437,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
       "uses" : {
       },
+      "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile",
       "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile",
-      "StructureDefinition-onconova-ext-family-history-member-cancer-topography.html" : "Family Member History Cancer Topography",
-      "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile"
+      "StructureDefinition-onconova-ext-family-history-member-cancer-topography.html" : "Family Member History Cancer Topography"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-observation-bodysites",
@@ -584,6 +584,21 @@
       "uses" : {
       },
       "StructureDefinition-onconova-tnm-venous-invasion-category.html" : "TNM Venous Invasion Category Profile"
+    },
+    {
+      "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-intents",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "TreatmentIntents",
+      "title" : "Treatment Intents Value Set",
+      "description" : "A set of intents for giving a treatment to a cancer patient",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-onconova-surgical-procedure.html" : "Surgical Procedure Profile",
+      "StructureDefinition-onconova-radiotherapy-summary.html" : "Radiotherapy Summary Profile",
+      "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile",
+      "StructureDefinition-onconova-ext-therapy-line-intent.html" : "Therapy Line Intent"
     },
     {
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons",
