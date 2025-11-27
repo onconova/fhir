@@ -35,6 +35,7 @@ Procedure resources representing a radiotherapy in the scope of Onconova SHALL c
 * insert Obligations(extension[actualNumberOfSessions], #SHALL:populate, #SHOULD:persist)
 
 * extension[treatmentIntent] 1..1 MS
+* extension[treatmentIntent].valueCodeableConcept from TreatmentIntents (required)
 * insert Obligations(extension[treatmentIntent], #SHALL:populate, #SHOULD:persist)
 
 * insert Obligations(extension[modalityAndTechnique], #SHOULD:populate-if-known, #SHOULD:persist)
@@ -71,7 +72,7 @@ Severity: #error
 
 Invariant: o-rad-req-2
 Description: "The performedPeriod element is required and must be provided."
-Expression: "performedPeriod.exists() and performedPeriod.hasValue()"
+Expression: "performedPeriod.exists()"
 Severity: #error
 
 Invariant: o-rad-req-3

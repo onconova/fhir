@@ -33,7 +33,12 @@ Procedure resources representing a surgery in the scope of Onconova SHALL confor
 * extension[therapyLine] ^short = "Reference to the therapy line associated with this treatment"
 * insert Obligations(extension[therapyLine], #MAY:ignore, #MAY:persist)
 
+* outcome 0..1 MS 
+* outcome from http://hl7.org/fhir/ValueSet/procedure-outcome (required)
+* insert Obligations(outcome, #SHOULD:populate-if-available, #MAY:persist)
+
 * extension[treatmentIntent] 1..1 MS
+* extension[treatmentIntent].valueCodeableConcept from TreatmentIntents (required)
 * insert Obligations(extension[treatmentIntent], #SHALL:populate, #SHOULD:persist)
 
 

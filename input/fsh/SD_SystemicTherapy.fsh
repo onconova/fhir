@@ -57,6 +57,7 @@ MedicationAdministration resources representing a systemic therapy in the scope 
 * insert Obligations(extension[isPrimaryTherapy], #SHALL:populate, #SHOULD:persist)
 
 * extension[treatmentIntent] 1..1 MS
+* extension[treatmentIntent].valueCodeableConcept from TreatmentIntents (required)
 * insert Obligations(extension[treatmentIntent], #SHALL:populate, #SHOULD:persist)
 
 * dosage 0..1 MS
@@ -82,7 +83,7 @@ Severity: #error
 
 Invariant: o-med-req-2
 Description: "The effectivePeriod element is required and must be provided."
-Expression: "effectivePeriod.exists() and effectivePeriod.hasValue()"
+Expression: "effectivePeriod.exists()"
 Severity: #error
 
 Invariant: o-med-req-3

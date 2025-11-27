@@ -93,7 +93,7 @@ Id: onconova-ext-therapy-line-intent
 Title: "Therapy Line Intent"
 Description: "The intent of the therapy line, such as curative or palliative."
 * value[x] only CodeableConcept
-* valueCodeableConcept from ProcedureIntentVS (required)
+* valueCodeableConcept from TreatmentIntents (required)
 
 Extension: TherapyLineProgressionFreeSurvival
 Id: onconova-ext-therapy-line-progression-free-survival
