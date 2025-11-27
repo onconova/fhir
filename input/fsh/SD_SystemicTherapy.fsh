@@ -54,7 +54,7 @@ MedicationAdministration resources representing a systemic therapy in the scope 
 
 * extension contains MedicationAdministrationIsPrimaryTherapy named isPrimaryTherapy 0..1 
 * extension[isPrimaryTherapy] ^short = "Indicates if this medication is the primary therapy within a therapy line"
-* insert Obligations(extension[isPrimaryTherapy], #SHALL:populate, #SHOULD:persist)
+* insert Obligations(extension[isPrimaryTherapy], #MAY:ignore, #MAY:persist)
 
 * extension[treatmentIntent] 1..1 MS
 * extension[treatmentIntent].valueCodeableConcept from TreatmentIntents (required)
