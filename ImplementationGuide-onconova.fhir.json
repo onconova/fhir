@@ -10,7 +10,7 @@
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-27T10:13:46+00:00",
+  "date" : "2025-11-27T13:06:44+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -788,6 +788,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/onconova-ext-adverse-event-ctc-grade"
+      },
+      "name" : "Adverse Event CTCAE Grade",
+      "description" : "The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/onconova-ext-adverse-event-mitigation"
       },
       "name" : "Adverse Event Mitigation",
@@ -864,6 +876,18 @@
       },
       "name" : "Adverse Event Profile",
       "description" : "A profile representing an adverse event experienced by a cancer patient as a result of an antineoplastic treatment, structured according to the Common Terminology Criteria for Adverse Events (CTCAE). This resource is used to capture and standardize the documentation of adverse events occurring during cancer care, including the type of event, its CTCAE grade, and any mitigation actions taken.\n\nThe profile constrains the base FHIR `AdverseEvent` resource to ensure consistent use of CTCAE codes and grades, and supports linkage to related treatments such as medications, radiotherapy, or surgical procedures documented in Onconova. The profile also provides extensions for recording mitigation strategies, supporting detailed tracking and management of adverse events in cancer patients.\n\n**Conformance:**\n\nAdverseEvent resources representing an adverse event caused by a cancer therapy in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/onconova-ext-adverse-event-resolved-date"
+      },
+      "name" : "Adverse Event Resolved Date",
+      "description" : "The date when the adverse event was resolved (if applicable).",
       "exampleBoolean" : false
     },
     {
@@ -1224,18 +1248,6 @@
       },
       "name" : "CTC Adverse Events Value Set",
       "description" : "Adverse events classified according to the Common Terminology Criteria for Adverse Events (CTCAE)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/onconova-ext-adverse-event-ctc-grade"
-      },
-      "name" : "CTCAE Grade",
-      "description" : "The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE).",
       "exampleBoolean" : false
     },
     {

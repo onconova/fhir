@@ -5,7 +5,7 @@
   "extensions": [
     {
       "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade",
-      "title": "CTCAE Grade",
+      "title": "Adverse Event CTCAE Grade",
       "types": [
         "integer"
       ]
@@ -69,6 +69,13 @@
         "UsageContext",
         "Dosage",
         "Meta"
+      ]
+    },
+    {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-resolved-date",
+      "title": "Adverse Event Resolved Date",
+      "types": [
+        "date"
       ]
     },
     {
@@ -709,6 +716,9 @@
       "AdverseEvent"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation": [
+      "AdverseEvent"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-resolved-date": [
       "AdverseEvent"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-age": [

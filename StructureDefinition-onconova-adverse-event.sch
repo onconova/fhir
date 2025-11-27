@@ -14,6 +14,9 @@
     <sch:rule context="f:AdverseEvent">
       <sch:assert test="count(f:extension[@url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade']) &gt;= 1">extension with URL = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade']) &lt;= 1">extension with URL = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-resolved-date']) &lt;= 1">extension with URL = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-resolved-date': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:date) &gt;= 1">date: minimum cardinality of 'date' is 1</sch:assert>
+      <sch:assert test="count(f:outcome) &gt;= 1">outcome: minimum cardinality of 'outcome' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

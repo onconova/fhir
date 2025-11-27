@@ -74,8 +74,9 @@ These define constraints on FHIR data types for systems conforming to this imple
 
 | | |
 | :--- | :--- |
+| [Adverse Event CTCAE Grade](StructureDefinition-onconova-ext-adverse-event-ctc-grade.md) | The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE). |
 | [Adverse Event Mitigation](StructureDefinition-onconova-ext-adverse-event-mitigation.md) | Details about an action taken to mitigate or manage the adverse event. |
-| [CTCAE Grade](StructureDefinition-onconova-ext-adverse-event-ctc-grade.md) | The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE). |
+| [Adverse Event Resolved Date](StructureDefinition-onconova-ext-adverse-event-resolved-date.md) | The date when the adverse event was resolved (if applicable). |
 | [Cancer Patient Age](StructureDefinition-onconova-ext-cancer-patient-age.md) | The approximate age of the patient. |
 | [Cancer Patient Age at Diagnosis](StructureDefinition-onconova-ext-cancer-patient-age-at-diagnosis.md) | The approximate age of the patient at the time of diagnosis of the disease. |
 | [Cancer Patient Cause of Death](StructureDefinition-onconova-ext-cancer-patient-cause-of-death.md) | The cause of death for the patient. |

@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-tumor-m
   "name" : "TumorMarkerAnalyte",
   "title" : "Tumor Marker Analyte",
   "status" : "active",
-  "date" : "2025-11-27T10:13:46+00:00",
+  "date" : "2025-11-27T13:06:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

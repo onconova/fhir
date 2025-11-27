@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-microsatell
   "name" : "OnconovaMicrosatelliteInstability",
   "title" : "Microsatellite Instability Profile",
   "status" : "active",
-  "date" : "2025-11-27T10:13:46+00:00",
+  "date" : "2025-11-27T13:06:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

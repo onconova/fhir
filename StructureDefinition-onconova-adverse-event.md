@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
   "name" : "OnconovaAdverseEvent",
   "title" : "Adverse Event Profile",
   "status" : "active",
-  "date" : "2025-11-27T10:13:46+00:00",
+  "date" : "2025-11-27T13:06:44+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -108,7 +108,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
             "key" : "ae-req-4",
             "severity" : "error",
             "human" : "The CTC Grade extension is required and must be provided.",
-            "expression" : "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-ctc-grade').exists()",
+            "expression" : "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade').exists()",
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event"
           },
           {
@@ -191,7 +191,53 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
               "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade"
             ]
           }
-        ]
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "AdverseEvent.extension:resolvedDate",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "AdverseEvent.extension",
+        "sliceName" : "resolvedDate",
+        "short" : "Date resolved",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-resolved-date"
+            ]
+          }
+        ],
+        "mustSupport" : true
       },
       {
         "id" : "AdverseEvent.extension:mitigation",
@@ -235,7 +281,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
               "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation"
             ]
           }
-        ]
+        ],
+        "mustSupport" : true
       },
       {
         "id" : "AdverseEvent.actuality",
@@ -292,7 +339,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
             "extension" : [
               {
                 "url" : "code",
-                "valueCode" : "SHOULD:populate-if-known"
+                "valueCode" : "SHALL:populate"
               },
               {
                 "url" : "actor",
@@ -305,7 +352,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
             "extension" : [
               {
                 "url" : "code",
-                "valueCode" : "MAY:persist"
+                "valueCode" : "SHOULD:persist"
               },
               {
                 "url" : "actor",
@@ -358,6 +405,40 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
         "definition" : "Not used in this profile"
       },
       {
+        "id" : "AdverseEvent.date",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "AdverseEvent.date",
+        "min" : 1,
+        "mustSupport" : true
+      },
+      {
         "id" : "AdverseEvent.detected",
         "path" : "AdverseEvent.detected",
         "short" : "Not used in this profile",
@@ -396,6 +477,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
       {
         "id" : "AdverseEvent.outcome",
         "path" : "AdverseEvent.outcome",
+        "min" : 1,
         "mustSupport" : true
       },
       {
@@ -411,7 +493,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
         "definition" : "Not used in this profile"
       },
       {
-        "id" : "AdverseEvent.suspectEntity.instance",
+        "id" : "AdverseEvent.suspectEntity",
         "extension" : [
           {
             "extension" : [
@@ -440,6 +522,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
             "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
           }
         ],
+        "path" : "AdverseEvent.suspectEntity",
+        "mustSupport" : true
+      },
+      {
+        "id" : "AdverseEvent.suspectEntity.instance",
         "path" : "AdverseEvent.suspectEntity.instance",
         "type" : [
           {
