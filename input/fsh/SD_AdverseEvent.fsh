@@ -12,23 +12,31 @@ The profile constrains the base FHIR `AdverseEvent` resource to ensure consisten
 AdverseEvent resources representing an adverse event caused by a cancer therapy in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. 
 """
 
-* outcome MS
-* insert Obligations(subject, #SHOULD:populate-if-known, #MAY:persist)
-
 * subject only Reference(OnconovaCancerPatient)
 * insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
 
+* date 1..1 MS
+* insert Obligations(date, #SHALL:populate, #SHOULD:persist)
+
+* outcome 1..1 MS
+* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
+
+* suspectEntity MS
 * suspectEntity.instance only Reference(OnconovaMedicationAdministration or OnconovaRadiotherapyCourseSummary or OnconovaSurgicalProcedure)
-* insert Obligations(suspectEntity.instance, #SHOULD:populate-if-known, #MAY:persist)
+* insert Obligations(suspectEntity, #SHOULD:populate-if-known, #MAY:persist)
 
 * event from CTCAdverseEvents (required)
 * insert Obligations(event, #SHALL:populate, #SHOULD:persist)
 
-* extension contains AdverseEventCTCGrade named ctcGrade 1..1 
+* extension contains AdverseEventCTCGrade named ctcGrade 1..1 MS
 * extension[ctcGrade] ^short = "CTCAE Grade"
 * insert Obligations(extension[ctcGrade], #SHALL:populate, #SHOULD:persist)
 
-* extension contains AdverseEventMitigation named mitigation 0..* // Mitigation actions taken
+* extension contains AdverseEventResolvedDate named resolvedDate 0..1 MS
+* extension[resolvedDate] ^short = "Date resolved"
+* insert Obligations(extension[resolvedDate], #SHALL:populate-if-known, #SHOULD:persist)
+
+* extension contains AdverseEventMitigation named mitigation 0..* MS
 * extension[mitigation] ^short = "Adverse Event Mitigation Action(s)"
 * insert Obligations(extension[mitigation], #SHOULD:populate-if-known, #MAY:persist)
 
@@ -65,7 +73,7 @@ Severity: #error
 
 Invariant: ae-req-4
 Description: "The CTC Grade extension is required and must be provided."
-Expression: "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-ctc-grade').exists()"
+Expression: "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade').exists()"
 Severity: #error
 
 Invariant: ae-req-5
@@ -84,9 +92,19 @@ Expression: "extension('http://onconova.github.io/fhir/StructureDefinition/oncon
 Severity: #error
 
 
+
+Extension: AdverseEventResolvedDate
+Id: onconova-ext-adverse-event-resolved-date
+Title: "Adverse Event Resolved Date"
+Context: AdverseEvent.extension
+Description: "The date when the adverse event was resolved (if applicable)."
+* value[x] only date
+* valueDate ^short = "Date resolved"
+* obeys ctcae-grade
+
 Extension: AdverseEventCTCGrade
 Id: onconova-ext-adverse-event-ctc-grade
-Title: "CTCAE Grade"
+Title: "Adverse Event CTCAE Grade"
 Context: AdverseEvent.extension
 Description: "The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE)."
 * value[x] only integer
