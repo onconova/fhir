@@ -70,7 +70,7 @@ Severity: #error
 
 Invariant: o-res-req-4
 Description: "The method element is required and must be provided."
-Expression: "method.exists() and method.hasValue()"
+Expression: "method.exists()"
 Severity: #error
 
 //==================
