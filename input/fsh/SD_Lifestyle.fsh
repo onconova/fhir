@@ -81,7 +81,7 @@ Observation resources representing a summary of a patient's lifestyle in the sco
 
 Invariant: o-lif-req-1
 Description: "The subject element is required and must be provided."
-Expression: "subject.exists() and subject.resolve().is(Patient)"
+Expression: "subject.exists()"
 Severity: #error
 
 Invariant: o-lif-req-2

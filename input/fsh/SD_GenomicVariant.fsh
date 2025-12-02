@@ -121,7 +121,7 @@ Observation resources representing a genomic variant in the scope of Onconova SH
 
 Invariant: o-var-req-1
 Description: "The subject element is required and must be provided."
-Expression: "subject.exists() and subject.resolve().is(Patient)"
+Expression: "subject.exists()"
 Severity: #error
 
 Invariant: o-var-req-2

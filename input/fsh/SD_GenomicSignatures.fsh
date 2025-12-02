@@ -259,7 +259,7 @@ Observation resources representing an aneuploid score obtained through genomic t
 
 Invariant: o-sig-req-1
 Description: "The subject element is required and must be provided."
-Expression: "subject.exists() and subject.resolve().is(Patient)"
+Expression: "subject.exists()"
 Severity: #error
 
 Invariant: o-sig-req-2

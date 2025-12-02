@@ -59,7 +59,7 @@ List resources representing a therapy line in the scope of Onconova SHALL confor
 
 Invariant: o-lin-req-1
 Description: "The subject element is required and must be provided."
-Expression: "subject.exists() and subject.resolve().is(Patient)"
+Expression: "subject.exists()"
 Severity: #error
 
 Invariant: o-lin-req-2
