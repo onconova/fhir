@@ -58,7 +58,7 @@ AdverseEvent resources representing an adverse event caused by a cancer therapy 
 
 Invariant: ae-req-1
 Description: "The subject element is required and must be provided."
-Expression: "subject.exists() and subject.resolve().is(Patient)"
+Expression: "subject.exists()"
 Severity: #error
 
 Invariant: ae-req-2

@@ -67,7 +67,7 @@ Procedure resources representing a radiotherapy in the scope of Onconova SHALL c
 
 Invariant: o-rad-req-1
 Description: "The subject element is required and must be provided."
-Expression: "subject.exists() and subject.resolve().is(Patient)"
+Expression: "subject.exists()"
 Severity: #error
 
 Invariant: o-rad-req-2

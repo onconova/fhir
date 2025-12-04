@@ -66,7 +66,7 @@ Procedure resources representing a surgery in the scope of Onconova SHALL confor
 
 Invariant: o-sur-req-1
 Description: "The subject element is required and must be provided."
-Expression: "subject.exists() and subject.resolve().is(Patient)"
+Expression: "subject.exists()"
 Severity: #error
 
 Invariant: o-sur-req-2
