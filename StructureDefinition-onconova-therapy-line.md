@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
   "name" : "OnconovaTherapyLine",
   "title" : "Therapy Line Profile",
   "status" : "active",
-  "date" : "2025-12-04T10:18:27+00:00",
+  "date" : "2025-12-04T10:59:28+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -90,8 +90,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
           {
             "key" : "o-lin-req-1",
             "severity" : "error",
-            "human" : "The subject element is required and must be provided.",
-            "expression" : "subject.exists()",
+            "human" : "The patient element is required and must be provided.",
+            "expression" : "patient.exists()",
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line"
           },
           {

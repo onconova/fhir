@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-cancer-
   "name" : "CancerPatientDataContributors",
   "title" : "Cancer Patient Data Contributors",
   "status" : "active",
-  "date" : "2025-12-04T10:18:27+00:00",
+  "date" : "2025-12-04T10:59:28+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
