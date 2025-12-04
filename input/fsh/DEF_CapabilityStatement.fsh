@@ -104,7 +104,5 @@ The Onconova FHIR server **MAY**:
 * insert ResourceSupportedProfile(OnconovaCancerFamilyMemberHistory)
 
 // VERB [base]/List/[id]
-* rest[=].resource[+].type = #List
-* rest[=].resource[=].referencePolicy[+] = $RefPolicy#literal
-* rest[=].resource[=].interaction[+].code = #read
+* insert ResourceCRUD(EpisodeOfCare)
 * insert ResourceSupportedProfile(OnconovaTherapyLine)
