@@ -90,7 +90,7 @@ Procedure resources representing a molecular tumor board review in the scope of 
 
 Invariant: o-tub-req-1
 Description: "The subject element is required and must be provided."
-Expression: "subject.exists() and subject.resolve().is(Patient)"
+Expression: "subject.exists()"
 Severity: #error
 
 Invariant: o-tub-req-2

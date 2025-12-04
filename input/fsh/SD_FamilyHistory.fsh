@@ -58,7 +58,7 @@ FamilyMemberHistory resources representing a history of (primary or metastatic) 
 
 Invariant: o-fam-req-1
 Description: "The patient element is required and must be provided."
-Expression: "patient.exists() and patient.resolve().is(Patient)"
+Expression: "patient.exists()"
 Severity: #error
 
 Invariant: o-fam-req-2

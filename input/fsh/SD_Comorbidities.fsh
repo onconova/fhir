@@ -56,7 +56,7 @@ Observation resources representing a generic or panel comorbidities assessment i
 
 Invariant: com-req-1
 Description: "The subject element is required and must be provided."
-Expression: "subject.exists() and subject.resolve().is(Patient)"
+Expression: "subject.exists()"
 Severity: #error
 
 Invariant: com-req-2
@@ -66,7 +66,7 @@ Severity: #error
 
 Invariant: com-req-3
 Description: "The focus element is required and must be provided."
-Expression: "focus.exists() and focus.resolve().is(Condition)"
+Expression: "focus.exists()"
 Severity: #error
 
 Invariant: com-1

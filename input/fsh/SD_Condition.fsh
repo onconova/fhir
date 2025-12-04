@@ -146,7 +146,7 @@ Context: OnconovaPrimaryCancerCondition.clinicalStatus.extension
 
 Invariant: o-con-req-1
 Description: "The subject element is required and must be provided."
-Expression: "subject.exists() and subject.resolve().is(Patient)"
+Expression: "subject.exists()"
 Severity: #error
 
 Invariant: o-con-req-2
