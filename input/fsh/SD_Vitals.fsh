@@ -14,40 +14,40 @@ Observation resources representing a collection of vital signs in the scope of O
 """
 
 * subject only Reference(OnconovaCancerPatient)
-* insert ObligationsWithUscdi(subject, #SHALL:populate, #SHOULD:persist)
+* insert Obligations(subject, #SHALL:populate, #SHOULD:persist)
 
 * effective[x] 1..1 MS
 * effective[x] only dateTime
-* insert ObligationsWithUscdi(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
+* insert Obligations(effectiveDateTime, #SHALL:populate, #SHOULD:persist)
 
 * code = $LOINC#85353-1	
-* insert ObligationsWithUscdi(code, #SHALL:populate, #SHOULD:persist)
+* insert Obligations(code, #SHALL:populate, #SHOULD:persist)
 
 * hasMember ^slicing.discriminator.type = #profile
 * hasMember ^slicing.discriminator.path = "$this.resolve()"
 * hasMember ^slicing.rules = #open
 * hasMember ^slicing.description = "Slice based on the component.code value"
-* insert ObligationsWithUscdi(hasMember, #SHALL:populate-if-known, #SHOULD:persist)
+* insert Obligations(hasMember, #SHALL:populate-if-known, #SHOULD:persist)
 
 * hasMember contains body-temperature 0..1 MS
 * hasMember[body-temperature] only Reference(http://hl7.org/fhir/StructureDefinition/bodytemp)
-* insert ObligationsWithUscdi(hasMember[body-temperature], #SHALL:populate-if-known, #SHOULD:persist)
+* insert Obligations(hasMember[body-temperature], #SHALL:populate-if-known, #SHOULD:persist)
 
 * hasMember contains body-height 0..1 MS
 * hasMember[body-height] only Reference(http://hl7.org/fhir/StructureDefinition/bodyheight)
-* insert ObligationsWithUscdi(hasMember[body-height], #SHALL:populate-if-known, #SHOULD:persist)
+* insert Obligations(hasMember[body-height], #SHALL:populate-if-known, #SHOULD:persist)
 
 * hasMember contains body-weight 0..1 MS
 * hasMember[body-weight] only Reference(http://hl7.org/fhir/StructureDefinition/bodyweight)    
-* insert ObligationsWithUscdi(hasMember[body-weight], #SHALL:populate-if-known, #SHOULD:persist)
+* insert Obligations(hasMember[body-weight], #SHALL:populate-if-known, #SHOULD:persist)
 
 * hasMember contains bmi 0..1 MS
 * hasMember[bmi] only Reference(http://hl7.org/fhir/StructureDefinition/bmi)
-* insert ObligationsWithUscdi(hasMember[bmi], #SHALL:populate-if-known, #SHOULD:persist)
+* insert Obligations(hasMember[bmi], #SHALL:populate-if-known, #SHOULD:persist)
 
 * hasMember contains blood-pressure 0..1 MS
 * hasMember[blood-pressure] only Reference(http://hl7.org/fhir/StructureDefinition/bp)
-* insert ObligationsWithUscdi(hasMember[blood-pressure], #SHALL:populate-if-known, #SHOULD:persist)
+* insert Obligations(hasMember[blood-pressure], #SHALL:populate-if-known, #SHOULD:persist)
 
 
 * insert NotUsed(status)
