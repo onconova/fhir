@@ -100,9 +100,6 @@ The intent of the therapy line, such as curative or palliative.
 * [Therapy Line Number](StructureDefinition-onconova-ext-therapy-line-number.md) 
 The number representing the sequence of the therapy line in the overall treatment regimen. 
 
-* [Therapy Line Period](StructureDefinition-onconova-ext-therapy-line-period.md) 
-The period during which the therapy line was performed. 
-
 * [Therapy Line Progression Date](StructureDefinition-onconova-ext-therapy-line-progression-date.md) 
 The date when disease progression was observed during or after the therapy line. 
 

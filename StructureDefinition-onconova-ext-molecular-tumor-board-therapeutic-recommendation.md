@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
   "name" : "MolecularTumorBoardTherapeuticRecommendation",
   "title" : "Molecular Tumor Board Therapeutic Recommendation",
   "status" : "active",
-  "date" : "2025-12-04T07:07:35+00:00",
+  "date" : "2025-12-04T10:18:27+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

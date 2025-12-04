@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
   "name" : "OnconovaGenomicVariant",
   "title" : "Genomic Variant Profile",
   "status" : "active",
-  "date" : "2025-12-04T07:07:35+00:00",
+  "date" : "2025-12-04T10:18:27+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -324,7 +324,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
       {
         "id" : "Observation.component",
         "path" : "Observation.component",
-        "min" : 4
+        "min" : 3
       },
       {
         "id" : "Observation.component:conclusion-string",
@@ -1322,8 +1322,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-genomic-var
         "path" : "Observation.component",
         "sliceName" : "gene-region",
         "short" : "Region (exon, intron, etc.) of the gene affected by the variant",
-        "min" : 1,
-        "max" : "1",
+        "min" : 0,
+        "max" : "*",
         "mustSupport" : true
       },
       {

@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-stag
   "name" : "OnconovaCancerStage",
   "title" : "Cancer Stage Profile",
   "status" : "active",
-  "date" : "2025-12-04T07:07:35+00:00",
+  "date" : "2025-12-04T10:18:27+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -128,7 +128,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-stag
             "key" : "o-stg-breslow",
             "severity" : "error",
             "human" : "For Breslow stages, the exact Breslow depth must be provided.",
-            "expression" : "code.coding.code = '106243009' implies value.extension(https://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth).valueQuantity.value.hasValue()",
+            "expression" : "code.coding.code = '106243009' implies value.extension('https://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth').valueQuantity.value.hasValue()",
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-stage"
           }
         ]

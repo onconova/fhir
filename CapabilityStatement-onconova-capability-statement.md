@@ -91,7 +91,7 @@ The summary table lists the resources that are part of this configuration, and f
 | [MedicationAdministration](#MedicationAdministration1-5) | Supported Profiles  [Medication Administration Profile](StructureDefinition-onconova-medication-administration.md) | y |  | y | y | y |  |  |  |  |
 | [AdverseEvent](#AdverseEvent1-6) | Supported Profiles  [Adverse Event Profile](StructureDefinition-onconova-adverse-event.md) | y |  | y | y | y |  |  |  |  |
 | [FamilyHistory](#FamilyHistory1-7) | Supported Profiles  [Cancer Family Member History Profile](StructureDefinition-onconova-cancer-family-member-history.md) | y |  | y | y | y |  |  |  |  |
-| [List](#List1-8) | Supported Profiles  [Therapy Line Profile](StructureDefinition-onconova-therapy-line.md) | y |  |  |  |  |  |  |  |  |
+| [EpisodeOfCare](#EpisodeOfCare1-8) | Supported Profiles  [Therapy Line Profile](StructureDefinition-onconova-therapy-line.md) | y |  | y | y | y |  |  |  |  |
 
 -------
 
@@ -236,11 +236,11 @@ Interaction summary
 Supported Profiles
 [Cancer Family Member History Profile](StructureDefinition-onconova-cancer-family-member-history.md)
 
-#### Resource Conformance: supported List
+#### Resource Conformance: supported EpisodeOfCare
 
 Core FHIR Resource
 
-[List](http://hl7.org/fhir/R4/list.html)
+[EpisodeOfCare](http://hl7.org/fhir/R4/episodeofcare.html)
 
 Reference Policy
 
@@ -248,7 +248,7 @@ Reference Policy
 
 Interaction summary
 
-* Supports `read`.
+* Supports `create`, `read`, `update`, `delete`.
 
 Supported Profiles
 [Therapy Line Profile](StructureDefinition-onconova-therapy-line.md)
@@ -474,15 +474,25 @@ Supported Profiles
           "referencePolicy" : ["literal"]
         },
         {
-          "type" : "List",
+          "type" : "EpisodeOfCare",
           "supportedProfile" : [
             "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line"
           ],
           "interaction" : [
             {
+              "code" : "create"
+            },
+            {
               "code" : "read"
+            },
+            {
+              "code" : "update"
+            },
+            {
+              "code" : "delete"
             }
           ],
+          "updateCreate" : false,
           "referencePolicy" : ["literal"]
         }
       ],

@@ -224,7 +224,7 @@
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a>" : "OnconovaCancerStage",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a>" : "Cancer Stage Profile",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2025-12-04T07:07:35+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a>" : "2025-12-04T10:18:27+00:00",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "Onconova",
   "<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -395,7 +395,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "o-stg-breslow",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "For Breslow stages, the exact Breslow depth must be provided.",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "code.coding.code = '106243009' implies value.extension(https://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth).valueQuantity.value.hasValue()",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "code.coding.code = '106243009' implies value.extension('https://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth').valueQuantity.value.hasValue()",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-stage"
           }
         ],
@@ -4076,7 +4076,7 @@
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a>" : "o-stg-breslow",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a>" : "error",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>" : "For Breslow stages, the exact Breslow depth must be provided.",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "code.coding.code = '106243009' implies value.extension(https://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth).valueQuantity.value.hasValue()",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>" : "code.coding.code = '106243009' implies value.extension('https://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth').valueQuantity.value.hasValue()",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-stage"
           }
         ]
@@ -4472,7 +4472,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 4, 2025 07:07+0000">2025-12-04</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 4, 2025 10:18+0000">2025-12-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

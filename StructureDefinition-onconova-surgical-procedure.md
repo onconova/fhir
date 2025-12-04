@@ -19,7 +19,7 @@ Procedure resources representing a surgery in the scope of Onconova SHALL confor
 
 **Usages:**
 
-* Refer to this Profile: [Adverse Event Profile](StructureDefinition-onconova-adverse-event.md) and [Therapy Line Profile](StructureDefinition-onconova-therapy-line.md)
+* Refer to this Profile: [Adverse Event Profile](StructureDefinition-onconova-adverse-event.md)
 * CapabilityStatements using this Profile: [Onconova FHIR REST Server Capability Statement](CapabilityStatement-onconova-capability-statement.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/onconova.fhir|current/StructureDefinition/onconova-surgical-procedure)
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-surgical-pr
   "name" : "OnconovaSurgicalProcedure",
   "title" : "Surgical Procedure Profile",
   "status" : "active",
-  "date" : "2025-12-04T07:07:35+00:00",
+  "date" : "2025-12-04T10:18:27+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

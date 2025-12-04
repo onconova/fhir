@@ -1546,12 +1546,12 @@
         ]
       }
     },
-    "/List/{rid}": {
-      "summary": "Read/Write/etc resource instance of type List",
-      "description": "Access to services to manage the state of a single resource of type List",
+    "/EpisodeOfCare/{rid}": {
+      "summary": "Read/Write/etc resource instance of type EpisodeOfCare",
+      "description": "Access to services to manage the state of a single resource of type EpisodeOfCare",
       "get": {
         "summary": "Read the current state of the resource",
-        "operationId": "readList",
+        "operationId": "readEpisodeOfCare",
         "responses": {
           "default": {
             "description": "Error, with details",
@@ -1576,7 +1576,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/List"
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/EpisodeOfCare"
                 }
               }
             }
@@ -1586,6 +1586,163 @@
           {
             "$ref": "#/components/parameters/rid"
           },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      },
+      "put": {
+        "summary": "Update the current state of the resource",
+        "operationId": "updateEpisodeOfCare",
+        "requestBody": {
+          "description": "The new state of the resource",
+          "required": true,
+          "content": {
+            "application/fhir+json": {
+              "schema": {
+                "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/EpisodeOfCare"
+              }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned after being updated",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/EpisodeOfCare"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      },
+      "delete": {
+        "summary": "Delete the resource so that it no exists (no read, search etc)",
+        "operationId": "deleteEpisodeOfCare",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "If the resource is deleted - no content is returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          }
+        ]
+      }
+    },
+    "/EpisodeOfCare": {
+      "summary": "Manager for resources of type EpisodeOfCare",
+      "description": "The Manager for resources of type EpisodeOfCare: provides services to manage the collection of all the EpisodeOfCare instances",
+      "post": {
+        "summary": "Create a new resource",
+        "operationId": "createEpisodeOfCare",
+        "requestBody": {
+          "description": "The new state of the resource",
+          "required": true,
+          "content": {
+            "application/fhir+json": {
+              "schema": {
+                "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/EpisodeOfCare"
+              }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned after being updated",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/EpisodeOfCare"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
           {
             "$ref": "#/components/parameters/summary"
           },

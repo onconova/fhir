@@ -107,7 +107,7 @@ This publication includes IP covered under the following statements.
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-12-04T07:07:35+00:00",
+  "date" : "2025-12-04T10:18:27+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -2230,20 +2230,6 @@ This publication includes IP covered under the following statements.
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/onconova-ext-therapy-line-period"
-        },
-        "name" : "Therapy Line Period",
-        "description" : "The period during which the therapy line was performed.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -2251,7 +2237,7 @@ This publication includes IP covered under the following statements.
           "reference" : "StructureDefinition/onconova-therapy-line"
         },
         "name" : "Therapy Line Profile",
-        "description" : "A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. \n\nDue to its abstract conceptual nature, it is based on a FHIR `List` to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing Procedure and MedicationAdministration resources and are not created manually.\n\n**Conformance:**\n\nList resources representing a therapy line in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+        "description" : "A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. \nIt is based on a FHIR `EpisodeOfCare` to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing `Procedure` and `MedicationAdministration` resources and are not usually created manually.\n\n**Conformance:**\n\nEpisodeOfCare resources representing a therapy line in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {

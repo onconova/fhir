@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-vital-signs
   "name" : "OnconovaVitalSignsPanel",
   "title" : "Vital Signs Panel Profile",
   "status" : "active",
-  "date" : "2025-12-04T07:07:35+00:00",
+  "date" : "2025-12-04T10:18:27+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -396,6 +396,34 @@ Other representations of profile: [CSV](StructureDefinition-onconova-vital-signs
       },
       {
         "id" : "Observation.hasMember:bmi",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:ignore"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
         "path" : "Observation.hasMember",
         "sliceName" : "bmi",
         "min" : 0,

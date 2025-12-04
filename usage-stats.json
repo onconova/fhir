@@ -440,13 +440,6 @@
       ]
     },
     {
-      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-period",
-      "title": "Therapy Line Period",
-      "types": [
-        "Period"
-      ]
-    },
-    {
       "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-date",
       "title": "Therapy Line Progression Date",
       "types": [
@@ -551,7 +544,7 @@
         "title": "Secondary Cancer Condition Profile"
       }
     ],
-    "List": [
+    "EpisodeOfCare": [
       {
         "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line",
         "title": "Therapy Line Profile"
@@ -811,19 +804,16 @@
       "Observation"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-intent": [
-      "List"
+      "EpisodeOfCare"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-number": [
-      "List"
-    ],
-    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-period": [
-      "List"
+      "EpisodeOfCare"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-date": [
-      "List"
+      "EpisodeOfCare"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-free-survival": [
-      "List"
+      "EpisodeOfCare"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference": [
       "MedicationAdministration",

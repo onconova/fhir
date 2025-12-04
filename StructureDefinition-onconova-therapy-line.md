@@ -12,10 +12,9 @@
 | Active as of 2025-12-04 | *Computable Name*:OnconovaTherapyLine |
 
  
-A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. 
-Due to its abstract conceptual nature, it is based on a FHIR`List`to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing Procedure and MedicationAdministration resources and are not created manually. 
+A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. It is based on a FHIR`EpisodeOfCare`to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing`Procedure`and`MedicationAdministration`resources and are not usually created manually. 
 **Conformance:** 
-List resources representing a therapy line in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
+EpisodeOfCare resources representing a therapy line in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 **Usages:**
 
@@ -45,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
   "name" : "OnconovaTherapyLine",
   "title" : "Therapy Line Profile",
   "status" : "active",
-  "date" : "2025-12-04T07:07:35+00:00",
+  "date" : "2025-12-04T10:18:27+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -58,9 +57,14 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
       ]
     }
   ],
-  "description" : "A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. \n\nDue to its abstract conceptual nature, it is based on a FHIR `List` to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing Procedure and MedicationAdministration resources and are not created manually.\n\n**Conformance:**\n\nList resources representing a therapy line in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
+  "description" : "A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. \nIt is based on a FHIR `EpisodeOfCare` to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing `Procedure` and `MedicationAdministration` resources and are not usually created manually.\n\n**Conformance:**\n\nEpisodeOfCare resources representing a therapy line in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly. ",
   "fhirVersion" : "4.0.1",
   "mapping" : [
+    {
+      "identity" : "workflow",
+      "uri" : "http://hl7.org/fhir/workflow",
+      "name" : "Workflow Pattern"
+    },
     {
       "identity" : "rim",
       "uri" : "http://hl7.org/v3",
@@ -74,14 +78,14 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
   ],
   "kind" : "resource",
   "abstract" : false,
-  "type" : "List",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/List",
+  "type" : "EpisodeOfCare",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
       {
-        "id" : "List",
-        "path" : "List",
+        "id" : "EpisodeOfCare",
+        "path" : "EpisodeOfCare",
         "constraint" : [
           {
             "key" : "o-lin-req-1",
@@ -93,12 +97,19 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
           {
             "key" : "o-lin-req-2",
             "severity" : "error",
+            "human" : "The period element is required and must be provided.",
+            "expression" : "period.exists()",
+            "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line"
+          },
+          {
+            "key" : "o-lin-req-3",
+            "severity" : "error",
             "human" : "The therapyLineNumber extension is required and must be provided.",
             "expression" : "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-number').exists()",
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line"
           },
           {
-            "key" : "o-lin-req-3",
+            "key" : "o-lin-req-4",
             "severity" : "error",
             "human" : "The therapyLineIntent extension is required and must be provided.",
             "expression" : "extension('http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-intent').exists()",
@@ -107,8 +118,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
         ]
       },
       {
-        "id" : "List.extension",
-        "path" : "List.extension",
+        "id" : "EpisodeOfCare.extension",
+        "path" : "EpisodeOfCare.extension",
         "slicing" : {
           "discriminator" : [
             {
@@ -121,24 +132,36 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
         }
       },
       {
-        "id" : "List.extension:therapyLinePeriod",
-        "path" : "List.extension",
-        "sliceName" : "therapyLinePeriod",
-        "short" : "The period during which the therapy line was performed",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
+        "id" : "EpisodeOfCare.extension:therapyLineNumber",
+        "extension" : [
           {
-            "code" : "Extension",
-            "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-period"
-            ]
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
           }
-        ]
-      },
-      {
-        "id" : "List.extension:therapyLineNumber",
-        "path" : "List.extension",
+        ],
+        "path" : "EpisodeOfCare.extension",
         "sliceName" : "therapyLineNumber",
         "short" : "The number representing the sequence of the therapy line in the overall treatment regimen",
         "min" : 0,
@@ -153,8 +176,36 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
         ]
       },
       {
-        "id" : "List.extension:therapyLineIntent",
-        "path" : "List.extension",
+        "id" : "EpisodeOfCare.extension:therapyLineIntent",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "EpisodeOfCare.extension",
         "sliceName" : "therapyLineIntent",
         "short" : "The intent of the therapy line, such as curative or palliative",
         "min" : 0,
@@ -169,219 +220,8 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
         ]
       },
       {
-        "id" : "List.extension:therapyLineProgressionFreeSurvival",
-        "path" : "List.extension",
-        "sliceName" : "therapyLineProgressionFreeSurvival",
-        "short" : "The progression-free survival duration for the therapy line",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-free-survival"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "List.extension:therapyLineProgressionDate",
-        "path" : "List.extension",
-        "sliceName" : "therapyLineProgressionDate",
-        "short" : "The date when disease progression was observed during or after the therapy line",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-date"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "List.status",
-        "path" : "List.status",
-        "patternCode" : "current"
-      },
-      {
-        "id" : "List.mode",
-        "path" : "List.mode",
-        "patternCode" : "working"
-      },
-      {
-        "id" : "List.code",
-        "path" : "List.code",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-              "code" : "C133518",
-              "display" : "Line of Therapy"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "List.subject",
+        "id" : "EpisodeOfCare.extension:therapyLineProgressionFreeSurvival",
         "extension" : [
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:ignore"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:persist"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:ignore"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:persist"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:ignore"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:persist"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:ignore"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:persist"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:ignore"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:persist"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:ignore"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "MAY:persist"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
           {
             "extension" : [
               {
@@ -409,7 +249,126 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
             "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
           }
         ],
-        "path" : "List.subject",
+        "path" : "EpisodeOfCare.extension",
+        "sliceName" : "therapyLineProgressionFreeSurvival",
+        "short" : "The progression-free survival duration for the therapy line",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-free-survival"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "EpisodeOfCare.extension:therapyLineProgressionDate",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "EpisodeOfCare.extension",
+        "sliceName" : "therapyLineProgressionDate",
+        "short" : "The date when disease progression was observed during or after the therapy line",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-date"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "EpisodeOfCare.status",
+        "path" : "EpisodeOfCare.status",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "EpisodeOfCare.statusHistory",
+        "path" : "EpisodeOfCare.statusHistory",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "EpisodeOfCare.type",
+        "path" : "EpisodeOfCare.type",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "code" : "C133518",
+              "display" : "Line of Therapy"
+            }
+          ]
+        }
+      },
+      {
+        "id" : "EpisodeOfCare.diagnosis",
+        "path" : "EpisodeOfCare.diagnosis",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "EpisodeOfCare.patient",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "EpisodeOfCare.patient",
         "short" : "The patient receiving the therapy",
         "type" : [
           {
@@ -418,45 +377,72 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
               "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
             ]
           }
-        ]
-      },
-      {
-        "id" : "List.encounter",
-        "path" : "List.encounter",
-        "short" : "Not used in this profile",
-        "definition" : "Not used in this profile"
-      },
-      {
-        "id" : "List.date",
-        "path" : "List.date",
-        "short" : "Not used in this profile",
-        "definition" : "Not used in this profile"
-      },
-      {
-        "id" : "List.source",
-        "path" : "List.source",
-        "short" : "Not used in this profile",
-        "definition" : "Not used in this profile"
-      },
-      {
-        "id" : "List.entry",
-        "path" : "List.entry",
-        "short" : "The therapies or procedures that are part of this therapy line",
+        ],
         "mustSupport" : true
       },
       {
-        "id" : "List.entry.item",
-        "path" : "List.entry.item",
-        "type" : [
+        "id" : "EpisodeOfCare.managingOrganization",
+        "path" : "EpisodeOfCare.managingOrganization",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "EpisodeOfCare.period",
+        "extension" : [
           {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary",
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure"
-            ]
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "MAY:ignore"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "MAY:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
           }
-        ]
+        ],
+        "path" : "EpisodeOfCare.period",
+        "short" : "The period during which the therapy line was performed",
+        "mustSupport" : true
+      },
+      {
+        "id" : "EpisodeOfCare.referralRequest",
+        "path" : "EpisodeOfCare.referralRequest",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "EpisodeOfCare.careManager",
+        "path" : "EpisodeOfCare.careManager",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "EpisodeOfCare.team",
+        "path" : "EpisodeOfCare.team",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
+      },
+      {
+        "id" : "EpisodeOfCare.account",
+        "path" : "EpisodeOfCare.account",
+        "short" : "Not used in this profile",
+        "definition" : "Not used in this profile"
       }
     ]
   }

@@ -200,10 +200,9 @@ This profile extends the base mCODE[TNMCategory profile](http://hl7.org/fhir/us/
 Observation resources representing a TNM staging venous invasion parameter in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 * [Therapy Line Profile](StructureDefinition-onconova-therapy-line.md) 
-A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. 
-Due to its abstract conceptual nature, it is based on a FHIR`List`to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing Procedure and MedicationAdministration resources and are not created manually. 
+A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. It is based on a FHIR`EpisodeOfCare`to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing`Procedure`and`MedicationAdministration`resources and are not usually created manually. 
 **Conformance:** 
-List resources representing a therapy line in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
+EpisodeOfCare resources representing a therapy line in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
 * [Tumor Board Review Profile](StructureDefinition-onconova-tumor-board-review.md) 
 A profile representing a tumor board review for a cancer patient. 
