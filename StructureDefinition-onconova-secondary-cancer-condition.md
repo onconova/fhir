@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
   "name" : "OnconovaSecondaryCancerCondition",
   "title" : "Secondary Cancer Condition Profile",
   "status" : "active",
-  "date" : "2025-12-04T06:29:30+00:00",
+  "date" : "2025-12-04T06:46:00+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -107,7 +107,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
             "key" : "o-con-req-1",
             "severity" : "error",
             "human" : "The subject element is required and must be provided.",
-            "expression" : "subject.exists() and subject.resolve().is(Patient)",
+            "expression" : "subject.exists()",
             "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition"
           },
           {

@@ -54,7 +54,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "CTCAdverseEvents",
   "title" : "CTC Adverse Events Value Set",
   "status" : "active",
-  "date" : "2025-12-04T06:29:30+00:00",
+  "date" : "2025-12-04T06:46:00+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
