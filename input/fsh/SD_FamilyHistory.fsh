@@ -34,7 +34,7 @@ FamilyMemberHistory resources representing a history of (primary or metastatic) 
 * condition[cancerCondition].code = http://snomed.info/sct#363346000 "Malignant neoplastic disease (disorder)" 
 
 * condition[cancerCondition].onset[x] only Age
-* condition[cancerCondition].onsetAge.code = 'a'
+* condition[cancerCondition].onsetAge.code = #a
 * insert Obligations(condition[cancerCondition].onsetAge, #SHALL:populate-if-known, #SHOULD:persist)
 
 * condition[cancerCondition].extension contains FamilyMemberHistoryCancerMorphology named morphology 0..1 MS
@@ -43,7 +43,7 @@ FamilyMemberHistory resources representing a history of (primary or metastatic) 
 * condition[cancerCondition].extension contains FamilyMemberHistoryCancerTopography named topography 0..1 MS
 * insert Obligations(condition[cancerCondition].extension[topography], #SHALL:populate, #SHOULD:persist)
 
-* condition[cancerCondition].extension contains FamilyMemberHistoryConditionContributedToDeath named contributedToDeath 0..1 MS
+* condition[cancerCondition].extension contains FamilyMemberConditionContributedToDeath named contributedToDeath 0..1 MS
 * insert Obligations(condition[cancerCondition].extension[contributedToDeath], #SHALL:populate-if-known, #SHOULD:persist)
 
 * insert NotUsed(name)
@@ -71,8 +71,8 @@ Description: "The relationship element is required and must be provided."
 Expression: "relationship.exists() and relationship.coding.exists()"
 Severity: #error
 
-Extension: FamilyMemberHistoryConditionContributedToDeath
-Id: onconova-ext-family-member-history-condition-contributed-to-death
+Extension: FamilyMemberConditionContributedToDeath
+Id: onconova-ext-family-member-condition-contributed-to-death
 Title: "Family Member History Condition Contributed to Death"
 Description: "Whether the condition contributed to the patient's family member's death"
 Context: OnconovaCancerFamilyMemberHistory.condition.extension
