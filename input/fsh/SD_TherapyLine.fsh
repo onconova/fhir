@@ -50,8 +50,8 @@ EpisodeOfCare resources representing a therapy line in the scope of Onconova SHA
 * obeys o-lin-req-1 and o-lin-req-2 and o-lin-req-3 and o-lin-req-4
 
 Invariant: o-lin-req-1
-Description: "The subject element is required and must be provided."
-Expression: "subject.exists()"
+Description: "The patient element is required and must be provided."
+Expression: "patient.exists()"
 Severity: #error
 
 Invariant: o-lin-req-2
