@@ -81,11 +81,7 @@ The Onconova FHIR server **MAY**:
 * insert ResourceSupportedProfile(OnconovaTNMStageGroup)
 * insert ResourceSupportedProfile(OnconovaLymphomaStage)
 * insert ResourceSupportedProfile(OnconovaImagingDiseaseStatus)
-* insert ResourceSupportedProfile(http://hl7.org/fhir/StructureDefinition/bodyheight)
-* insert ResourceSupportedProfile(http://hl7.org/fhir/StructureDefinition/bodyweight)
-* insert ResourceSupportedProfile(http://hl7.org/fhir/StructureDefinition/bodytemp)
-* insert ResourceSupportedProfile(http://hl7.org/fhir/StructureDefinition/bmi)
-* insert ResourceSupportedProfile(http://hl7.org/fhir/StructureDefinition/bp)
+* insert ResourceSupportedProfile(OnconovaVitalSignsPanel)
 
 // VERB [base]/Procedure/[id]
 * insert ResourceCRUD(Procedure)
