@@ -52,6 +52,9 @@ The morphology of a historical cancer associated to a family member of a patient
 * [Family Member History Cancer Topography](StructureDefinition-onconova-ext-family-history-member-cancer-topography.md) 
 The topography of a historical cancer associated to a family member of a patient, represented by an ICD-O-3 code. 
 
+* [Family Member History Condition Contributed to Death](StructureDefinition-onconova-ext-family-member-condition-contributed-to-death.md) 
+Whether the condition contributed to the patient's family member's death 
+
 * [Genomic Variant Assessment Date](StructureDefinition-onconova-ext-genomic-variant-assessment-date.md) 
 Date at which the genomic variant was assessed and/or reported. 
 

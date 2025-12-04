@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-grade-category | *Version*:0.2.0 |
-| Active as of 2025-11-27 | *Computable Name*:OnconovaTNMGradeCategory |
+| Active as of 2025-12-04 | *Computable Name*:OnconovaTNMGradeCategory |
 
  
 A profile representing the TNM grade category for a cancer patient. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-grade-c
   "name" : "OnconovaTNMGradeCategory",
   "title" : "TNM Grade Category Profile",
   "status" : "active",
-  "date" : "2025-11-27T13:06:44+00:00",
+  "date" : "2025-12-04T06:29:30+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

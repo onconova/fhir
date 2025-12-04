@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-family-member-history | *Version*:0.2.0 |
-| Active as of 2025-11-27 | *Computable Name*:OnconovaCancerFamilyMemberHistory |
+| Active as of 2025-12-04 | *Computable Name*:OnconovaCancerFamilyMemberHistory |
 
  
 A profile recording of a patient's family member's history of cancer. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
   "name" : "OnconovaCancerFamilyMemberHistory",
   "title" : "Cancer Family Member History Profile",
   "status" : "active",
-  "date" : "2025-11-27T13:06:44+00:00",
+  "date" : "2025-12-04T06:29:30+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -455,6 +455,50 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
         "mustSupport" : true
       },
       {
+        "id" : "FamilyMemberHistory.condition:cancerCondition.extension:contributedToDeath",
+        "extension" : [
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:populate-if-known"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          {
+            "extension" : [
+              {
+                "url" : "code",
+                "valueCode" : "SHOULD:persist"
+              },
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }
+        ],
+        "path" : "FamilyMemberHistory.condition.extension",
+        "sliceName" : "contributedToDeath",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-member-condition-contributed-to-death"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
         "id" : "FamilyMemberHistory.condition:cancerCondition.code",
         "path" : "FamilyMemberHistory.condition.code",
         "patternCodeableConcept" : {
@@ -503,6 +547,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-fami
             "code" : "Age"
           }
         ]
+      },
+      {
+        "id" : "FamilyMemberHistory.condition:cancerCondition.onset[x].code",
+        "path" : "FamilyMemberHistory.condition.onset[x].code",
+        "patternCode" : "a"
       }
     ]
   }

@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir | *Version*:0.2.0 |
-| Active as of 2025-11-27 | *Computable Name*:Onconova |
+| Active as of 2025-12-04 | *Computable Name*:Onconova |
 
 ### Introduction
 
@@ -107,7 +107,7 @@ This publication includes IP covered under the following statements.
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-11-27T13:06:44+00:00",
+  "date" : "2025-12-04T06:29:30+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -1636,6 +1636,20 @@ This publication includes IP covered under the following statements.
         },
         "name" : "Family Member History Cancer Topography",
         "description" : "The topography of a historical cancer associated to a family member of a patient, represented by an ICD-O-3 code.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-ext-family-member-condition-contributed-to-death"
+        },
+        "name" : "Family Member History Condition Contributed to Death",
+        "description" : "Whether the condition contributed to the patient's family member's death",
         "exampleBoolean" : false
       },
       {

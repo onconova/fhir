@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-clinical-relevances | *Version*:0.2.0 |
-| Active as of 2025-11-27 | *Computable Name*:ClinicalRelevances |
+| Active as of 2025-12-04 | *Computable Name*:ClinicalRelevances |
 
  
 Categorizations of the clinical relevance of a genomic variant 
@@ -52,7 +52,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "ClinicalRelevances",
   "title" : "Clinical Relevance Value Set",
   "status" : "active",
-  "date" : "2025-11-27T13:06:44+00:00",
+  "date" : "2025-12-04T06:29:30+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

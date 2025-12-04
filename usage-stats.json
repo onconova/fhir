@@ -170,6 +170,13 @@
       ]
     },
     {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-member-condition-contributed-to-death",
+      "title": "Family Member History Condition Contributed to Death",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-variant-assessment-date",
       "title": "Genomic Variant Assessment Date",
       "types": [
@@ -755,6 +762,9 @@
       "FamilyMemberHistory.condition"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-topography": [
+      "FamilyMemberHistory.condition"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-member-condition-contributed-to-death": [
       "FamilyMemberHistory.condition"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-genomic-variant-assessment-date": [

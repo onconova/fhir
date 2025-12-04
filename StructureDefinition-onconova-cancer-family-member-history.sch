@@ -14,6 +14,7 @@
     <sch:rule context="f:FamilyMemberHistory/f:condition">
       <sch:assert test="count(f:extension[@url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-morphology']) &lt;= 1">extension with URL = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-morphology': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-topography']) &lt;= 1">extension with URL = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-topography': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-member-condition-contributed-to-death']) &lt;= 1">extension with URL = 'http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-member-condition-contributed-to-death': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

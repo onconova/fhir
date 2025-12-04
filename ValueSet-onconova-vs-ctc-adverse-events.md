@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-ctc-adverse-events | *Version*:0.2.0 |
-| Active as of 2025-11-27 | *Computable Name*:CTCAdverseEvents |
+| Active as of 2025-12-04 | *Computable Name*:CTCAdverseEvents |
 
  
 Adverse events classified according to the Common Terminology Criteria for Adverse Events (CTCAE) 
@@ -54,7 +54,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "CTCAdverseEvents",
   "title" : "CTC Adverse Events Value Set",
   "status" : "active",
-  "date" : "2025-11-27T13:06:44+00:00",
+  "date" : "2025-12-04T06:29:30+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

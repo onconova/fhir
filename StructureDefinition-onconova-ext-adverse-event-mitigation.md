@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation | *Version*:0.2.0 |
-| Active as of 2025-11-27 | *Computable Name*:AdverseEventMitigation |
+| Active as of 2025-12-04 | *Computable Name*:AdverseEventMitigation |
 
 Details about an action taken to mitigate or manage the adverse event.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
   "name" : "AdverseEventMitigation",
   "title" : "Adverse Event Mitigation",
   "status" : "active",
-  "date" : "2025-11-27T13:06:44+00:00",
+  "date" : "2025-12-04T06:29:30+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

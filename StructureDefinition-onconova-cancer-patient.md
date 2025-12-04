@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient | *Version*:0.2.0 |
-| Active as of 2025-11-27 | *Computable Name*:OnconovaCancerPatient |
+| Active as of 2025-12-04 | *Computable Name*:OnconovaCancerPatient |
 
  
 A profile representing a patient with or is receiving medical treatment for a malignant growth or tumor. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-pati
   "name" : "OnconovaCancerPatient",
   "title" : "Cancer Patient Profile",
   "status" : "active",
-  "date" : "2025-11-27T13:06:44+00:00",
+  "date" : "2025-12-04T06:29:30+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

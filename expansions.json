@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "5cf5ab7c-a30f-47a0-9d80-b43a689c1601",
+  "id" : "7e531d99-6cee-4cd4-910b-1229f3997b31",
   "meta" : {
-    "lastUpdated" : "2025-11-27T13:06:44.781+00:00"
+    "lastUpdated" : "2025-12-04T06:29:30.598+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,10 +18,10 @@
       "name" : "TNMLymphaticInvasionCategories",
       "title" : "TNM Lymphatic Invasion Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:61ccb4d5-417e-48fa-9b99-8d8ea9e68e88",
-        "timestamp" : "2025-11-27T13:12:06+00:00",
+        "identifier" : "urn:uuid:4437a4c6-f323-4a20-98de-ff5e28abf0f5",
+        "timestamp" : "2025-12-04T06:33:32+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -84,10 +84,10 @@
       "name" : "TNMPerineuralInvasionCategories",
       "title" : "TNM Perineural Invasion Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:2b3dcfa6-a718-47d4-ad1d-0b013e3cf395",
-        "timestamp" : "2025-11-27T13:12:06+00:00",
+        "identifier" : "urn:uuid:38cde612-dcfe-40dc-bb7c-6bda44419373",
+        "timestamp" : "2025-12-04T06:33:32+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -140,14 +140,14 @@
       "name" : "TNMResidualTumorCategories",
       "title" : "TNM Residual Tumor Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:ab583ce9-4a57-4510-942b-655009713ec9",
-        "timestamp" : "2025-11-27T13:12:10+00:00",
+        "identifier" : "urn:uuid:ec078aee-b520-401e-9438-b37c1e534480",
+        "timestamp" : "2025-12-04T06:33:34+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -209,10 +209,10 @@
       "name" : "AdjunctiveTherapyRoles",
       "title" : "Adjunctive Therapy Roles Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:cd6d3766-2282-4bc9-9306-73da1d1a5d1a",
-        "timestamp" : "2025-11-27T13:12:16.925Z",
+        "identifier" : "urn:uuid:8a2ec1cc-9dcd-4370-baec-b7e857e984a6",
+        "timestamp" : "2025-12-04T06:33:39.474Z",
         "total" : 1,
         "offset" : 0,
         "parameter" : [{
@@ -264,10 +264,10 @@
       "name" : "AdverseEventMitigationCategories",
       "title" : "Adverse Event Mitigation Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:ee8beb31-bee9-4a90-950c-70e0bf4f7e64",
-        "timestamp" : "2025-11-27T13:12:17.863Z",
+        "identifier" : "urn:uuid:e11430a3-9963-48f6-9617-b898bc68ebdf",
+        "timestamp" : "2025-12-04T06:33:40.052Z",
         "total" : 0,
         "offset" : 0,
         "parameter" : [{
@@ -314,10 +314,10 @@
       "name" : "AdverseEventMitigationDrugs",
       "title" : "Adverse Event Mitigation Drugs Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:7bc7e059-9ef6-440e-9efa-90fe984ba16f",
-        "timestamp" : "2025-11-27T13:12:19.347Z",
+        "identifier" : "urn:uuid:90ddbd28-a103-4cca-b97d-a133fc5d936b",
+        "timestamp" : "2025-12-04T06:33:40.818Z",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -388,10 +388,10 @@
       "name" : "AdverseEventMitigationManagements",
       "title" : "Adverse Event Mitigation Managements Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:7b3dd739-1553-44f9-97e7-2f827eb59716",
-        "timestamp" : "2025-11-27T13:12:19+00:00",
+        "identifier" : "urn:uuid:e1540621-9375-432b-9145-17a9ffdaefdd",
+        "timestamp" : "2025-12-04T06:33:41+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -444,10 +444,10 @@
       "name" : "AdverseEventMitigationProcedures",
       "title" : "Adverse Event Mitigation Procedures Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:d37ec335-5e2d-4b0d-b714-a1a0350e65df",
-        "timestamp" : "2025-11-27T13:12:21.347Z",
+        "identifier" : "urn:uuid:02b357ee-32e3-4adb-9a3d-015d94dc1052",
+        "timestamp" : "2025-12-04T06:33:42.209Z",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -537,10 +537,10 @@
       "name" : "AdverseEventMitigationTreatmentAdjustments",
       "title" : "Adverse Event Mitigation Treatment Adjustments Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e1411f98-912e-4ab8-93f8-f1c0d4d79569",
-        "timestamp" : "2025-11-27T13:12:21+00:00",
+        "identifier" : "urn:uuid:386b98e7-05da-46d8-a439-a4238516ec35",
+        "timestamp" : "2025-12-04T06:33:42+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -598,10 +598,10 @@
       "name" : "CancerImagingMethods",
       "title" : "Cancer Imaging Methods Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:68acf496-91ba-46da-ab5d-c2e69df269dc",
-        "timestamp" : "2025-11-27T13:11:39+00:00",
+        "identifier" : "urn:uuid:8415c627-9f6b-4765-a167-3c9702a88f10",
+        "timestamp" : "2025-12-04T06:33:15+00:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -689,10 +689,10 @@
       "name" : "CausesOfDeath",
       "title" : "Cause of Death Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:65687032-6266-4193-9bfd-a4f6a753bcf8",
-        "timestamp" : "2025-11-27T13:12:25.394Z",
+        "identifier" : "urn:uuid:8af3e682-07e0-426b-a57b-6ceba93edadd",
+        "timestamp" : "2025-12-04T06:33:44.427Z",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -746,17 +746,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-onconova-cs-comorbidity-panels.html\">codesystem Comorbidity Panels Code System v0.2.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels|0.2.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels-charlson\"> </a><code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onconova-cs-comorbidity-panels.html#onconova-cs-comorbidity-panels-charlson\">charlson</a></td><td>Charlson Comorbidity Panel</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;charlson&quot;, &quot;display&quot;: &quot;Charlson Comorbidity Panel&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;charlson&quot;&gt;&lt;display value=&quot;Charlson Comorbidity Panel&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels-elixhauser\"> </a><code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onconova-cs-comorbidity-panels.html#onconova-cs-comorbidity-panels-elixhauser\">elixhauser</a></td><td>Elixhauser Comorbidity Panel</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;elixhauser&quot;, &quot;display&quot;: &quot;Elixhauser Comorbidity Panel&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;elixhauser&quot;&gt;&lt;display value=&quot;Elixhauser Comorbidity Panel&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels-nci\"> </a><code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onconova-cs-comorbidity-panels.html#onconova-cs-comorbidity-panels-nci\">nci</a></td><td>NCI Comorbidity Panel</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;nci&quot;, &quot;display&quot;: &quot;NCI Comorbidity Panel&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;nci&quot;&gt;&lt;display value=&quot;NCI Comorbidity Panel&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-onconova-cs-comorbidity-panels.html\">codesystem Comorbidity Panels Code System v0.2.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels|0.2.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels-charlson\"> </a><code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onconova-cs-comorbidity-panels.html#onconova-cs-comorbidity-panels-charlson\">charlson</a></td><td>Charlson Comorbidity Panel</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;charlson&quot;, &quot;display&quot;: &quot;Charlson Comorbidity Panel&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;charlson&quot;&gt;&lt;display value=&quot;Charlson Comorbidity Panel&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels-elixhauser\"> </a><code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onconova-cs-comorbidity-panels.html#onconova-cs-comorbidity-panels-elixhauser\">elixhauser</a></td><td>Elixhauser Comorbidity Panel</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;elixhauser&quot;, &quot;display&quot;: &quot;Elixhauser Comorbidity Panel&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;elixhauser&quot;&gt;&lt;display value=&quot;Elixhauser Comorbidity Panel&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels-nci\"> </a><code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onconova-cs-comorbidity-panels.html#onconova-cs-comorbidity-panels-nci\">nci</a></td><td>NCI Comorbidity Panel</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;nci&quot;, &quot;display&quot;: &quot;NCI Comorbidity Panel&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;nci&quot;&gt;&lt;display value=&quot;NCI Comorbidity Panel&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-comorbidity-panels",
       "version" : "0.2.0",
       "name" : "ComorbidityPanels",
       "title" : "Comorbidity Panels Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:b97b1736-3820-45cb-a237-b1ab83d3b3b9",
-        "timestamp" : "2025-11-27T13:11:30+00:00",
+        "identifier" : "urn:uuid:3eb1337a-9da5-4f00-9a88-68bc98be09ce",
+        "timestamp" : "2025-12-04T06:33:05+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -803,17 +803,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-onconova-cs-consent-status.html\">codesystem Consent Status Code System v0.2.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status|0.2.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status-valid\"> </a><code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onconova-cs-consent-status.html#onconova-cs-consent-status-valid\">valid</a></td><td>Valid</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;valid&quot;, &quot;display&quot;: &quot;Valid&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;valid&quot;&gt;&lt;display value=&quot;Valid&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status-revoked\"> </a><code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onconova-cs-consent-status.html#onconova-cs-consent-status-revoked\">revoked</a></td><td>Revoked</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;revoked&quot;, &quot;display&quot;: &quot;Revoked&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;revoked&quot;&gt;&lt;display value=&quot;Revoked&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status-unknown\"> </a><code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onconova-cs-consent-status.html#onconova-cs-consent-status-unknown\">unknown</a></td><td>Unknown</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;unknown&quot;, &quot;display&quot;: &quot;Unknown&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;unknown&quot;&gt;&lt;display value=&quot;Unknown&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-onconova-cs-consent-status.html\">codesystem Consent Status Code System v0.2.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status|0.2.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status-valid\"> </a><code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onconova-cs-consent-status.html#onconova-cs-consent-status-valid\">valid</a></td><td>Valid</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;valid&quot;, &quot;display&quot;: &quot;Valid&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;valid&quot;&gt;&lt;display value=&quot;Valid&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status-revoked\"> </a><code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onconova-cs-consent-status.html#onconova-cs-consent-status-revoked\">revoked</a></td><td>Revoked</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;revoked&quot;, &quot;display&quot;: &quot;Revoked&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;revoked&quot;&gt;&lt;display value=&quot;Revoked&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status-unknown\"> </a><code>http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-onconova-cs-consent-status.html#onconova-cs-consent-status-unknown\">unknown</a></td><td>Unknown</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;unknown&quot;, &quot;display&quot;: &quot;Unknown&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;unknown&quot;&gt;&lt;display value=&quot;Unknown&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-consent-status",
       "version" : "0.2.0",
       "name" : "ConsentStatus",
       "title" : "Consent Status Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:8800d718-9df5-48dd-911f-15fa5b4a3650",
-        "timestamp" : "2025-11-27T13:12:25+00:00",
+        "identifier" : "urn:uuid:6b30d29b-c1a1-4cdc-b886-fd17988f2237",
+        "timestamp" : "2025-12-04T06:33:44+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -867,10 +867,10 @@
       "name" : "ExpectedDrugEffects",
       "title" : "Expected Drug Effects Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:424f2998-4025-4f42-87df-a9b292f13e77",
-        "timestamp" : "2025-11-27T13:12:27+00:00",
+        "identifier" : "urn:uuid:2480edca-b17f-4947-bff6-90282b840311",
+        "timestamp" : "2025-12-04T06:33:45+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -923,10 +923,10 @@
       "name" : "HomologousRecombinationDeficiencyInterpretations",
       "title" : "Homologous Recombination Deficiency Interpretation Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:2bb0529e-8751-4033-ad4f-fdfd763d2994",
-        "timestamp" : "2025-11-27T13:12:28+00:00",
+        "identifier" : "urn:uuid:61fb2e31-78f9-4aea-9e25-50e4b1e65f91",
+        "timestamp" : "2025-12-04T06:33:45+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -984,10 +984,10 @@
       "name" : "ICD10Conditions",
       "title" : "ICD-10 Codes Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:3e4227b6-5eff-42c7-9dfb-57ed25209b9a",
-        "timestamp" : "2025-11-27T13:12:29.425Z",
+        "identifier" : "urn:uuid:4b687412-39bf-4892-858b-018ddca8f994",
+        "timestamp" : "2025-12-04T06:33:46.740Z",
         "offset" : 0,
         "parameter" : [{
           "name" : "limitedExpansion",
@@ -6029,10 +6029,10 @@
       "name" : "ICDO3Differentiations",
       "title" : "ICD-O-3 Differentiations Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:2ce005e3-21f0-4ea4-a375-dcfa99a36d37",
-        "timestamp" : "2025-11-27T13:12:30.925Z",
+        "identifier" : "urn:uuid:60e139a4-278b-4436-8f08-0299818f7e68",
+        "timestamp" : "2025-12-04T06:33:48.662Z",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -6094,10 +6094,10 @@
       "name" : "ObservationBodySites",
       "title" : "Observation Body Sites Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:2465939e-4131-4c25-bb74-06119c48b3d7",
-        "timestamp" : "2025-11-27T13:11:38+00:00",
+        "identifier" : "urn:uuid:41202f9b-e8a4-49b4-bc5c-0fd51a48bdb6",
+        "timestamp" : "2025-12-04T06:33:14+00:00",
         "total" : 301,
         "offset" : 0,
         "parameter" : [{
@@ -7645,10 +7645,10 @@
       "name" : "RecreationalDrugs",
       "title" : "Recreational Drugs Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:ae842364-91b9-4988-9112-a28bceb0bb92",
-        "timestamp" : "2025-11-27T13:11:42+00:00",
+        "identifier" : "urn:uuid:2178880a-15a7-4a06-8c26-d2ca77f03f12",
+        "timestamp" : "2025-12-04T06:33:17+00:00",
         "total" : 21,
         "offset" : 0,
         "parameter" : [{
@@ -7796,10 +7796,10 @@
       "name" : "RecurrenceTypes",
       "title" : "Recurrence Types Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:3c2c7f69-7e24-4ce1-a128-d69a8a0c6cec",
-        "timestamp" : "2025-11-27T13:12:31+00:00",
+        "identifier" : "urn:uuid:1f533f05-69d3-4e6b-91ba-51d13c3e5a8f",
+        "timestamp" : "2025-12-04T06:33:48+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -7852,10 +7852,10 @@
       "name" : "SmokingStatus",
       "title" : "Smoking status Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e7fe92d0-5e31-43b9-8a23-d70f513615cf",
-        "timestamp" : "2025-11-27T13:11:40+00:00",
+        "identifier" : "urn:uuid:ada01343-2915-4ce9-bfbe-9dc08bdc1b11",
+        "timestamp" : "2025-12-04T06:33:16+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -7928,14 +7928,14 @@
       "name" : "TNMDistantMetastasisCategories",
       "title" : "TNM Distant Metastasis Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:dcec07e5-c6aa-44ed-b86f-c61e2d7a1c80",
-        "timestamp" : "2025-11-27T13:12:03+00:00",
+        "identifier" : "urn:uuid:3423770b-4a83-44f0-87b4-474c528f0868",
+        "timestamp" : "2025-12-04T06:33:30+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -8305,10 +8305,10 @@
       "name" : "TNMGradeCategories",
       "title" : "TNM Grade Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:c9ad079a-f9c8-44c2-a55a-f96124513ea8",
-        "timestamp" : "2025-11-27T13:12:05+00:00",
+        "identifier" : "urn:uuid:cbdf1d72-d592-447e-8fa9-fc9209d166d6",
+        "timestamp" : "2025-12-04T06:33:31+00:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -8396,10 +8396,10 @@
       "name" : "TNMGradeCategoryMethods",
       "title" : "TNM Grade Category Methods Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:4cb05e05-3e24-40e6-b7a5-a5df6e8e2cdd",
-        "timestamp" : "2025-11-27T13:12:05+00:00",
+        "identifier" : "urn:uuid:001ed41d-bd6f-4e4c-8807-8a770f24ca16",
+        "timestamp" : "2025-12-04T06:33:31+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -8457,14 +8457,14 @@
       "name" : "TNMPrimaryTumorCategories",
       "title" : "TNM Primary Tumor Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:e1e4b096-d1cb-48d2-80c0-e0de3d5cf572",
-        "timestamp" : "2025-11-27T13:12:07+00:00",
+        "identifier" : "urn:uuid:a6316621-cb0b-4f7a-b40f-f105abfb1be2",
+        "timestamp" : "2025-12-04T06:33:33+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -9499,14 +9499,14 @@
       "name" : "TNMRegionalNodesCategories",
       "title" : "TNM Regional Nodes Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:849b3254-6d78-4f66-aaaf-48cfb9130b6b",
-        "timestamp" : "2025-11-27T13:12:08+00:00",
+        "identifier" : "urn:uuid:4206f95f-5a54-41ed-b0fe-4499c7f2e319",
+        "timestamp" : "2025-12-04T06:33:33+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -10046,10 +10046,10 @@
       "name" : "TNMSerumTumorMarkerLevelCategories",
       "title" : "TNM Serum Tumor Marker Level Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:2c95572b-6716-4c6c-b487-b346390af2bc",
-        "timestamp" : "2025-11-27T13:12:11+00:00",
+        "identifier" : "urn:uuid:d3b5b10a-7471-4fce-8634-d56aeb95ab25",
+        "timestamp" : "2025-12-04T06:33:35+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -10117,10 +10117,10 @@
       "name" : "TNMVenousInvasionCategories",
       "title" : "TNM Venous Invasion Categories Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:497b9a17-12c5-48ac-9a25-f31204672cbe",
-        "timestamp" : "2025-11-27T13:12:12+00:00",
+        "identifier" : "urn:uuid:793850fd-9774-40fa-9bd1-7354a669d52f",
+        "timestamp" : "2025-12-04T06:33:36+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -10183,10 +10183,10 @@
       "name" : "TreatmentIntents",
       "title" : "Treatment Intents Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:0a599731-ad98-449d-ae2a-77e393630579",
-        "timestamp" : "2025-11-27T13:12:32+00:00",
+        "identifier" : "urn:uuid:7ae7b27c-6143-49f0-b599-77791225d7a3",
+        "timestamp" : "2025-12-04T06:33:49+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -10239,10 +10239,10 @@
       "name" : "OnconovaTumorBoardRecommendations",
       "title" : "Tumor Board Recommendations Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e140f893-a49a-4a05-b06b-b1fcd9ce87cc",
-        "timestamp" : "2025-11-27T13:12:33+00:00",
+        "identifier" : "urn:uuid:e14bf521-a02e-4dc2-9258-8b7f935b72e2",
+        "timestamp" : "2025-12-04T06:33:50+00:00",
         "total" : 21,
         "offset" : 0,
         "parameter" : [{
@@ -10398,10 +10398,10 @@
       "name" : "TumorMarkerAnalytes",
       "title" : "Tumor Marker Analytes Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:d493699f-ad72-4e1d-a8b5-4f48568c4a68",
-        "timestamp" : "2025-11-27T13:12:35.550Z",
+        "identifier" : "urn:uuid:015a5f05-ed02-4dbb-b589-e2989794fbc2",
+        "timestamp" : "2025-12-04T06:33:51.302Z",
         "total" : 42,
         "offset" : 0,
         "parameter" : [{
@@ -10655,17 +10655,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion performed internally based on:</p><ul><li><a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html\">codesystem ObservationInterpretation v3.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|3.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU2/ValueSet-high-low-codes-vs.html\">valueset High Low codes v2.0.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.org/fhir/uv/genomics-reporting/ValueSet/high-low-codes-vs|2.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-H\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-H\">H</a></td><td>High</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;H&quot;, &quot;display&quot;: &quot;High&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;H&quot;&gt;&lt;display value=&quot;High&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-L\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-L\">L</a></td><td>Low</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;L&quot;, &quot;display&quot;: &quot;Low&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;L&quot;&gt;&lt;display value=&quot;Low&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-I\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-I\">I</a></td><td>Intermediate</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;I&quot;, &quot;display&quot;: &quot;Intermediate&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;I&quot;&gt;&lt;display value=&quot;Intermediate&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-IND\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-IND\">IND</a></td><td>Indeterminate</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;IND&quot;, &quot;display&quot;: &quot;Indeterminate&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;IND&quot;&gt;&lt;display value=&quot;Indeterminate&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion performed internally based on:</p><ul><li><a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html\">codesystem ObservationInterpretation v3.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|3.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"http://hl7.org/fhir/uv/genomics-reporting/STU2/ValueSet-high-low-codes-vs.html\">valueset High Low codes v2.0.0 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.org/fhir/uv/genomics-reporting/ValueSet/high-low-codes-vs|2.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-H\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-H\">H</a></td><td>High</td><td><div><p>The result for a quantitative observation is above the upper limit of the reference range (as defined for the respective test procedure).</p>\n<p>Synonym: Above high normal</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;H&quot;, &quot;display&quot;: &quot;High&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;H&quot;&gt;&lt;display value=&quot;High&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-L\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-L\">L</a></td><td>Low</td><td><div><p>The result for a quantitative observation is below the lower limit of the reference range (as defined for the respective test procedure).</p>\n<p>Synonym: Below low normal</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;L&quot;, &quot;display&quot;: &quot;Low&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;L&quot;&gt;&lt;display value=&quot;Low&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-I\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-I\">I</a></td><td>Intermediate</td><td><div><p>Bacterial strain inhibited in vitro by a concentration of an antimicrobial agent that is associated with uncertain therapeutic effect. Reference: CLSI (http://www.clsi.org/Content/NavigationMenu/Resources/HarmonizedTerminologyDatabase/Harmonized_Terminolo.htm) Projects: ISO 20776-1, ISO 20776-2</p>\n<p>[Note 1: Bacterial strains are categorized as intermediate by applying the appropriate breakpoints in a defined phenotypic test system.]</p>\n<p>[Note 2: This class of susceptibility implies that an infection due to the isolate can be appropriately treated in body sites where the drugs are physiologically concentrated or when a high dosage of drug can be used.]</p>\n<p>[Note 3: This class also indicates a &quot;buffer zone,&quot; to prevent small, uncontrolled, technical factors from causing major discrepancies in interpretations.]</p>\n<p>[Note 4: These breakpoints can be altered due to changes in circumstances (e.g., changes in commonly used drug dosages, emergence of new resistance mechanisms).]</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;I&quot;, &quot;display&quot;: &quot;Intermediate&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;I&quot;&gt;&lt;display value=&quot;Intermediate&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation-IND\"> </a><code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://terminology.hl7.org/7.0.0/CodeSystem-v3-ObservationInterpretation.html#v3-ObservationInterpretation-IND\">IND</a></td><td>Indeterminate</td><td><div><p>The specified component / analyte, organism or clinical sign could neither be declared positive / negative nor detected / not detected by the performed test or procedure.</p>\n<p><em>Usage Note:</em> For example, if the specimen was degraded, poorly processed, or was missing the required anatomic structures, then &quot;indeterminate&quot; (i.e. &quot;cannot be determined&quot;) is the appropriate response, not &quot;equivocal&quot;.</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;IND&quot;, &quot;display&quot;: &quot;Indeterminate&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;IND&quot;&gt;&lt;display value=&quot;Indeterminate&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-mutational-burden-status-interpretations",
       "version" : "0.2.0",
       "name" : "TumorMutationalBurdenStatusInterpretations",
       "title" : "Tumor Mutational Burden Status Interpretation Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:752cf996-ea1d-4e7a-abb6-e1d8f9c96c78",
-        "timestamp" : "2025-11-27T13:12:35+00:00",
+        "identifier" : "urn:uuid:4b2e5f54-a844-453b-a849-5f4da6ab2dfc",
+        "timestamp" : "2025-12-04T06:33:51+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -10728,10 +10728,10 @@
       "name" : "VitalStatus",
       "title" : "Vital Status Value Set",
       "status" : "active",
-      "date" : "2025-11-27T13:06:44+00:00",
+      "date" : "2025-12-04T06:29:30+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:f961e656-2f84-494a-9100-3162a3ed8ed6",
-        "timestamp" : "2025-11-27T13:12:35+00:00",
+        "identifier" : "urn:uuid:9e4865fe-e16f-4217-b889-d353d74d266f",
+        "timestamp" : "2025-12-04T06:33:51+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{

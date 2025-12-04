@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-differentiations | *Version*:0.2.0 |
-| Active as of 2025-11-27 | *Computable Name*:ICDO3Differentiations |
+| Active as of 2025-12-04 | *Computable Name*:ICDO3Differentiations |
 
  
 The subset of ICD-O-3 concepts dedicated for describing morphology differentiations. 
@@ -52,7 +52,7 @@ The subset of ICD-O-3 concepts dedicated for describing morphology differentiati
   "name" : "ICDO3Differentiations",
   "title" : "ICD-O-3 Differentiations Value Set",
   "status" : "active",
-  "date" : "2025-11-27T13:06:44+00:00",
+  "date" : "2025-12-04T06:29:30+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
