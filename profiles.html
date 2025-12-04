@@ -340,6 +340,12 @@ The following profiles have been defined for this implementation guide:</p>
 <p><strong>Conformance:</strong></p>
 <p>Observation resources representing a tumor neoantigen burden obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code>meta.profile</code> accordingly.</p>
 </li>
+<li><a href="StructureDefinition-onconova-vital-signs-panel.html">Vital Signs Panel Profile</a> <p>A profile representing a collection of vital signs measurements.</p>
+<p>Since Onconova does not represent individual vital signs as separate observations, this profile aggregates multiple vital signs into a single Observation resource that can be uniquely identified.
+It extends the <a href="http://hl7.org/fhir/StructureDefinition/vitalspanel">Hl7 FHIR VitalsPanel profile</a> to include specific constraints and requirements for Onconova.</p>
+<p><strong>Conformance:</strong></p>
+<p>Observation resources representing a collection of vital signs in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate <code>meta.profile</code> accordingly.</p>
+</li>
 
 
 
@@ -360,7 +366,7 @@ The following profiles have been defined for this implementation guide:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 4, 2025 06:46+0000">2025-12-04</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://onconova.github.io/docs">Onconova</a>.  Package onconova.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 4, 2025 07:07+0000">2025-12-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

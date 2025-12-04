@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-loss-of-het
   "name" : "OnconovaLossOfHeterozygosity",
   "title" : "Loss of Heterozygosity Profile",
   "status" : "active",
-  "date" : "2025-12-04T06:46:00+00:00",
+  "date" : "2025-12-04T07:07:35+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

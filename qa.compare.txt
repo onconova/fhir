@@ -1,7 +1,7 @@
 Onconova : Validation Results
 =========================================
 
-err = 131, warn = 247, info = 680
+err = 132, warn = 248, info = 688
 $--
 Generated $--. FHIR version $-- for onconova.fhir#$-- (canonical = http://onconova.github.io/fhir)
  Build Errors : 1 / 2 / 0
@@ -88,6 +88,7 @@ Generated $--. FHIR version $-- for onconova.fhir#$-- (canonical = http://oncono
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-tumor-marker : 1 / 1 / 14
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-tumor-mutational-burden : 2 / 4 / 11
  /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-tumor-neoantigen-burden : 2 / 3 / 9
+ /home/runner/work/fhir/fhir/fsh-generated/resources/StructureDefinition-onconova-vital-signs-panel : 1 / 1 / 9
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-tnm-lymphatic-invasion-categories : 0 / 1 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-tnm-perineural-invasion-categories : 0 / 1 / 3
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-tnm-residual-tumor-categories : 0 / 1 / 1
@@ -136,7 +137,7 @@ Generated $--. FHIR version $-- for onconova.fhir#$-- (canonical = http://oncono
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-vital-status : 0 / 1 / 1
 </table>
 == n/a ==
-ERROR: CapabilityStatement-onconova-capability-statement.html#/html/body/div/div/div/div/div/div/div/div/div/div/div/a at Line 252, column 16060: The link 'http://hl7.org/fhir/R4/familyhistory.html' for "FamilyHistory" cannot be resolved
+ERROR: CapabilityStatement-onconova-capability-statement.html#/html/body/div/div/div/div/div/div/div/div/div/div/div/a at Line 252, column 15364: The link 'http://hl7.org/fhir/R4/familyhistory.html' for "FamilyHistory" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ActorDefinition-onconova-consumer.json ==
@@ -1097,6 +1098,17 @@ ERROR: StructureDefinition/onconova-tumor-neoantigen-burden: StructureDefinition
 INFORMATION: StructureDefinition/onconova-tumor-neoantigen-burden: StructureDefinition.snapshot.element[19].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/onconova-tumor-neoantigen-burden: StructureDefinition.snapshot.element[55].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-neoantigen-burden'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-onconova-vital-signs-panel.json ==
+INFORMATION: StructureDefinition/onconova-vital-signs-panel: StructureDefinition.snapshot.element[26].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-vital-signs-panel: StructureDefinition.snapshot.element[26].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-vital-signs-panel: StructureDefinition.snapshot.element[39].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-vital-signs-panel: StructureDefinition.snapshot.element[39].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-vital-signs-panel: StructureDefinition.snapshot.element[42].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-vital-signs-panel: StructureDefinition.snapshot.element[42].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-vital-signs-panel: StructureDefinition.snapshot.element[63].extension[0].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: StructureDefinition/onconova-vital-signs-panel: StructureDefinition.snapshot.element[63].extension[1].extension[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: StructureDefinition/onconova-vital-signs-panel: StructureDefinition.snapshot.element[0].constraint[9]: Error in constraint 'o-vit-req-2' with expression 'effectiveDateTime.exists() and effectiveDateTime.hasValue()': Error evaluating FHIRPath expression: The name 'effectiveDateTime' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Observation] (@char 1)
+WARNING: StructureDefinition.where(url = 'http://onconova.github.io/fhir/StructureDefinition/onconova-vital-signs-panel'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-onconova-tnm-lymphatic-invasion-categories.json ==
 WARNING: ValueSet/onconova-tnm-lymphatic-invasion-categories: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-onconova-tnm-perineural-invasion-categories.json ==

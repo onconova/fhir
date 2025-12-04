@@ -64,7 +64,7 @@ This publication includes IP covered under the following statements.
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html): [AminoAcidChangeTypes](ValueSet-onconova-vs-amino-acid-change-types.md), [OnconovaCancerStage](StructureDefinition-onconova-cancer-stage.md)...Show 13 more,[OnconovaECOGPerformanceStatus](StructureDefinition-onconova-ecog-performance-status.md),[OnconovaGenomicVariant](StructureDefinition-onconova-genomic-variant.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaKarnofskyPerformanceStatus](StructureDefinition-onconova-karnofsky-performance-status.md),[OnconovaLifestyle](StructureDefinition-onconova-lifestyle.md),[OnconovaMicrosatelliteInstability](StructureDefinition-onconova-microsatellite-instability.md),[OnconovaTumorBoardRecommendations](ValueSet-onconova-vs-tumor-board-recommendations.md),[OnconovaTumorBoardReview](StructureDefinition-onconova-tumor-board-review.md),[OnconovaTumorMarker](StructureDefinition-onconova-tumor-marker.md),[OnconovaTumorMutationalBurden](StructureDefinition-onconova-tumor-mutational-burden.md),[TumorMarkerAnalyte](StructureDefinition-onconova-ext-tumor-marker-analyte.md),[TumorMarkerAnalytes](ValueSet-onconova-vs-tumor-marker-analytes.md)and[TumorMarkerTests](ValueSet-onconova-vs-tumor-marker-tests.md)
+* [LOINC](http://terminology.hl7.org/6.2.0/CodeSystem-v3-loinc.html): [AminoAcidChangeTypes](ValueSet-onconova-vs-amino-acid-change-types.md), [OnconovaCancerStage](StructureDefinition-onconova-cancer-stage.md)...Show 14 more,[OnconovaECOGPerformanceStatus](StructureDefinition-onconova-ecog-performance-status.md),[OnconovaGenomicVariant](StructureDefinition-onconova-genomic-variant.md),[OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md),[OnconovaKarnofskyPerformanceStatus](StructureDefinition-onconova-karnofsky-performance-status.md),[OnconovaLifestyle](StructureDefinition-onconova-lifestyle.md),[OnconovaMicrosatelliteInstability](StructureDefinition-onconova-microsatellite-instability.md),[OnconovaTumorBoardRecommendations](ValueSet-onconova-vs-tumor-board-recommendations.md),[OnconovaTumorBoardReview](StructureDefinition-onconova-tumor-board-review.md),[OnconovaTumorMarker](StructureDefinition-onconova-tumor-marker.md),[OnconovaTumorMutationalBurden](StructureDefinition-onconova-tumor-mutational-burden.md),[OnconovaVitalSignsPanel](StructureDefinition-onconova-vital-signs-panel.md),[TumorMarkerAnalyte](StructureDefinition-onconova-ext-tumor-marker-analyte.md),[TumorMarkerAnalytes](ValueSet-onconova-vs-tumor-marker-analytes.md)and[TumorMarkerTests](ValueSet-onconova-vs-tumor-marker-tests.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
@@ -107,7 +107,7 @@ This publication includes IP covered under the following statements.
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-12-04T06:46:00+00:00",
+  "date" : "2025-12-04T07:07:35+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
@@ -150,7 +150,7 @@ This publication includes IP covered under the following statements.
       "version" : "5.2.0"
     },
     {
-      "id" : "hl7_fhir_uv_genomics_reporting",
+      "id" : "hl7fhiruvgenomicsreporting",
       "uri" : "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
       "packageId" : "hl7.fhir.uv.genomics-reporting",
       "version" : "2.0.0"
@@ -2784,6 +2784,20 @@ This publication includes IP covered under the following statements.
         },
         "name" : "Tumor Neoantigen Burden Profile",
         "description" : "A profile representing tumor neoantigen burden for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a tumor neoantigen burden obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/onconova-vital-signs-panel"
+        },
+        "name" : "Vital Signs Panel Profile",
+        "description" : "A profile representing a collection of vital signs measurements. \n\nSince Onconova does not represent individual vital signs as separate observations, this profile aggregates multiple vital signs into a single Observation resource that can be uniquely identified.\nIt extends the [Hl7 FHIR VitalsPanel profile](http://hl7.org/fhir/StructureDefinition/vitalspanel) to include specific constraints and requirements for Onconova.\n\n**Conformance:**\n\nObservation resources representing a collection of vital signs in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
         "exampleBoolean" : false
       },
       {

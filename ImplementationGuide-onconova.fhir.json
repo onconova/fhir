@@ -10,7 +10,7 @@
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2025-12-04T06:46:00+00:00",
+  "date" : "2025-12-04T07:07:35+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -44,7 +44,7 @@
     "version" : "5.2.0"
   },
   {
-    "id" : "hl7_fhir_uv_genomics_reporting",
+    "id" : "hl7fhiruvgenomicsreporting",
     "uri" : "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
     "packageId" : "hl7.fhir.uv.genomics-reporting",
     "version" : "2.0.0"
@@ -2292,6 +2292,18 @@
       },
       "name" : "Tumor Neoantigen Burden Profile",
       "description" : "A profile representing tumor neoantigen burden for a cancer patient. \n\nThis profile extends the GenomicsReporting IG [GenomicsBase profile](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base) to include specific constraints and extensions relevant to Onconova.\n\n**Conformance:**\n\nObservation resources representing a tumor neoantigen burden obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/onconova-vital-signs-panel"
+      },
+      "name" : "Vital Signs Panel Profile",
+      "description" : "A profile representing a collection of vital signs measurements. \n\nSince Onconova does not represent individual vital signs as separate observations, this profile aggregates multiple vital signs into a single Observation resource that can be uniquely identified.\nIt extends the [Hl7 FHIR VitalsPanel profile](http://hl7.org/fhir/StructureDefinition/vitalspanel) to include specific constraints and requirements for Onconova.\n\n**Conformance:**\n\nObservation resources representing a collection of vital signs in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate `meta.profile` accordingly.",
       "exampleBoolean" : false
     },
     {

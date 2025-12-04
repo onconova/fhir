@@ -230,3 +230,9 @@ This profile extends the GenomicsReporting IG[GenomicsBase profile](http://hl7.o
 **Conformance:** 
 Observation resources representing a tumor neoantigen burden obtained through genomic testing in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
 
+* [Vital Signs Panel Profile](StructureDefinition-onconova-vital-signs-panel.md) 
+A profile representing a collection of vital signs measurements. 
+Since Onconova does not represent individual vital signs as separate observations, this profile aggregates multiple vital signs into a single Observation resource that can be uniquely identified. It extends the[Hl7 FHIR VitalsPanel profile](http://hl7.org/fhir/StructureDefinition/vitalspanel)to include specific constraints and requirements for Onconova. 
+**Conformance:** 
+Observation resources representing a collection of vital signs in the scope of Onconova SHALL conform to this profile. Any resource intended to conform to this profile SHOULD populate`meta.profile`accordingly. 
+

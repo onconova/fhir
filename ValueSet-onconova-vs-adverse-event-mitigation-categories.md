@@ -52,7 +52,7 @@ This value set contains 0 concepts
   "name" : "AdverseEventMitigationCategories",
   "title" : "Adverse Event Mitigation Categories Value Set",
   "status" : "active",
-  "date" : "2025-12-04T06:46:00+00:00",
+  "date" : "2025-12-04T07:07:35+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {

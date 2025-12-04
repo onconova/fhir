@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ecog-perfor
   "name" : "OnconovaECOGPerformanceStatus",
   "title" : "ECOG Performance Status Profile",
   "status" : "active",
-  "date" : "2025-12-04T06:46:00+00:00",
+  "date" : "2025-12-04T07:07:35+00:00",
   "publisher" : "Onconova",
   "contact" : [
     {
