@@ -57,7 +57,7 @@ Observation resources representing a cancer staging in the scope of Onconova SHA
 
 Invariant: o-stg-breslow
 Description: "For Breslow stages, the exact Breslow depth must be provided."
-Expression: "code.coding.code = '106243009' implies value.extension(https://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth).valueQuantity.value.hasValue()"
+Expression: "code.coding.code = '106243009' implies value.extension('https://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth').valueQuantity.value.hasValue()"
 Severity: #error
 
 
