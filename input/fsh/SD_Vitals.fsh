@@ -43,7 +43,7 @@ Observation resources representing a collection of vital signs in the scope of O
 
 * hasMember contains bmi 0..1 MS
 * hasMember[bmi] only Reference(http://hl7.org/fhir/StructureDefinition/bmi)
-* insert Obligations(hasMember[bmi], #SHALL:populate-if-known, #SHOULD:persist)
+* insert Obligations(hasMember[bmi], #SHALL:ignore, #SHOULD:persist)
 
 * hasMember contains blood-pressure 0..1 MS
 * hasMember[blood-pressure] only Reference(http://hl7.org/fhir/StructureDefinition/bp)

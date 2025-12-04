@@ -15,9 +15,6 @@ List resources representing a therapy line in the scope of Onconova SHALL confor
 // Set fixed values for List attributes
 * code = $NCIT#C133518 "Line of Therapy"
 
-* status = #current 
-* mode = #working
-
 // Use Onconova profiles for references
 * subject only Reference(OnconovaCancerPatient)
 * subject ^short = "The patient receiving the therapy"
@@ -26,30 +23,32 @@ List resources representing a therapy line in the scope of Onconova SHALL confor
 * entry MS
 * entry.item only Reference(OnconovaMedicationAdministration or OnconovaRadiotherapyCourseSummary or OnconovaSurgicalProcedure)
 * entry ^short = "The therapies or procedures that are part of this therapy line"
-* insert Obligations(subject, #MAY:ignore, #MAY:persist)
+* insert Obligations(entry, #MAY:ignore, #MAY:persist)
 
 // Add extensions for therapy line details
 * extension contains TherapyLinePeriod named therapyLinePeriod 0..1
 * extension[therapyLinePeriod] ^short = "The period during which the therapy line was performed"
-* insert Obligations(subject, #MAY:ignore, #MAY:persist)
+* insert Obligations(extension[therapyLinePeriod], #MAY:ignore, #MAY:persist)
 
 * extension contains TherapyLineNumber named therapyLineNumber 0..1
 * extension[therapyLineNumber] ^short = "The number representing the sequence of the therapy line in the overall treatment regimen"
-* insert Obligations(subject, #MAY:ignore, #MAY:persist)
+* insert Obligations(extension[therapyLineNumber], #MAY:ignore, #MAY:persist)
 
 * extension contains TherapyLineIntent named therapyLineIntent 0..1
 * extension[therapyLineIntent] ^short = "The intent of the therapy line, such as curative or palliative"
-* insert Obligations(subject, #MAY:ignore, #MAY:persist)
+* insert Obligations(extension[therapyLineIntent], #MAY:ignore, #MAY:persist)
 
 * extension contains TherapyLineProgressionFreeSurvival named therapyLineProgressionFreeSurvival 0..1
 * extension[therapyLineProgressionFreeSurvival] ^short = "The progression-free survival duration for the therapy line"
-* insert Obligations(subject, #MAY:ignore, #MAY:persist)
+* insert Obligations(extension[therapyLineProgressionFreeSurvival], #MAY:ignore, #MAY:persist)
 
 * extension contains TherapyLineProgressionDate named therapyLineProgressionDate 0..1
 * extension[therapyLineProgressionDate] ^short = "The date when disease progression was observed during or after the therapy line" 
-* insert Obligations(subject, #MAY:ignore, #MAY:persist)
+* insert Obligations(extension[therapyLineProgressionDate], #MAY:ignore, #MAY:persist)
 
 // Annotate unused elements
+* insert NotUsed(mode)
+* insert NotUsed(status)
 * insert NotUsed(encounter)
 * insert NotUsed(source)
 * insert NotUsed(date)

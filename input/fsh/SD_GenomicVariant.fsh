@@ -37,7 +37,7 @@ Observation resources representing a genomic variant in the scope of Onconova SH
 * component[nucleotides-count].value[x] only integer
 * insert Obligations(component[nucleotides-count], #MAY:ignore, #MAY:persist)
 
-* insert CreateComponent(gene-region, 1, 1)
+* insert CreateComponent(gene-region, 0, *)
 * component[gene-region] ^short = "Region (exon, intron, etc.) of the gene affected by the variant"
 * component[gene-region].code = $NCIT#C13445  "Gene Feature"
 * component[gene-region].value[x] only string
