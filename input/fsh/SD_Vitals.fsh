@@ -62,25 +62,25 @@ Observation resources representing a collection of vital signs in the scope of O
 * insert NotUsed(referenceRange)
 * insert NotUsed(component)
 
-* obeys o-obs-req-1 and o-obs-req-2 and o-obs-req-3 and o-obs-req-4
+* obeys o-vit-req-1 and o-vit-req-2 and o-vit-req-3 and o-vit-req-4
 
 
-Invariant: o-obs-req-1
+Invariant: o-vit-req-1
 Description: "The subject element is required and must be provided."
 Expression: "subject.exists()"
 Severity: #error
 
-Invariant: o-obs-req-2
+Invariant: o-vit-req-2
 Description: "The effectiveDateTime element is required and must be provided."
 Expression: "effectiveDateTime.exists() and effectiveDateTime.hasValue()"
 Severity: #error
 
-Invariant: o-obs-req-3
+Invariant: o-vit-req-3
 Description: "At least one vital sign profile must be referenced."
 Expression: "hasMember.exists() and hasMember.count() > 0"
 Severity: #error
 
-Invariant: o-obs-req-4
+Invariant: o-vit-req-4
 Description: "The value[x] element must not be set for the vitals panel."
 Expression: "value.exists().not()"
 Severity: #error
