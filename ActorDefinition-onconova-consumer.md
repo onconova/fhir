@@ -9,10 +9,8 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ActorDefinition/onconova-consumer | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*: |
+| Active as of 2026-02-25 | *Computable Name*: |
 
  
 An actor representing a data consumer that interacts with the Onconova FHIR REST server to retrieve and read patient case data. 
-
-* **Actor: null**: 
 

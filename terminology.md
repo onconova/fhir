@@ -37,7 +37,7 @@ Procedures undertaken to mitigate the impact of an adverse event on a patient's 
 Adjustments made to a patient's treatment plan in response to an adverse event. 
 
 * [Amino Acid Change Type Value Set](ValueSet-onconova-vs-amino-acid-change-types.md) 
-Amino acid change types due to a genomic variant. It constraints and expands the original[LOINC Answer List LL380-7](https://loinc.org/LL380-7/)to enforce Onconova-compatible codes 
+Amino acid change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes 
 
 * [Antineoplastic Agents Value Set](ValueSet-onconova-vs-antineoplastic-agents.md) 
 Drugs and biological agents used in the treatment of neoplastic diseases. 
@@ -67,7 +67,7 @@ The consent status of a patient for further use of data in research.
 Adverse events classified according to the Common Terminology Criteria for Adverse Events (CTCAE) 
 
 * [Coding DNA Change Types Value Set](ValueSet-onconova-vs-dna-change-types.md) 
-Coding DNA change types due to a genomic variant. It constraints and expands the original[LOINC Answer List LL380-7](https://loinc.org/LL380-7/)to enforce Onconova-compatible codes 
+Coding DNA change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes 
 
 * [Expected Drug Effects Value Set](ValueSet-onconova-vs-expected-drug-effects.md) 
 Collection of expected effects when a drug is administered. 

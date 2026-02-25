@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-surgical-procedures | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:SurgicalProcedures |
+| Active as of 2026-02-25 | *Computable Name*:SurgicalProcedures |
 
  
 Set of surgical procedures relevant to cancer treatment in Onconova. 
@@ -20,13 +20,9 @@ Set of surgical procedures relevant to cancer treatment in Onconova.
 
 ### Logical Definition (CLD)
 
-* Include codes from[`http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl`](http://terminology.hl7.org/6.2.0/CodeSystem-v3-nciThesaurus.html)version Not Stated (use latest from terminology server) where concept descends from C15329
-
  
 
 ### Expansion
-
-No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -54,33 +50,25 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "SurgicalProcedures",
   "title" : "Surgical Procedures Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "Set of surgical procedures relevant to cancer treatment in Onconova.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "filter" : [
-          {
-            "property" : "concept",
-            "op" : "descendent-of",
-            "value" : "C15329"
-          }
-        ]
-      }
-    ]
+    "include" : [{
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "C15329"
+      }]
+    }]
   }
 }
 

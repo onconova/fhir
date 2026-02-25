@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-grade-category-methods | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:TNMGradeCategoryMethods |
+| Active as of 2026-02-25 | *Computable Name*:TNMGradeCategoryMethods |
 
  
 TNM Grade Category Methods Value Set 
@@ -23,10 +23,6 @@ TNM Grade Category Methods Value Set
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 3 concepts
 
 -------
 
@@ -54,37 +50,29 @@ This value set contains 3 concepts
   "name" : "TNMGradeCategoryMethods",
   "title" : "TNM Grade Category Methods Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "TNM Grade Category Methods Value Set",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1222598000"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "1222598000"
-          },
-          {
-            "code" : "1222599008"
-          },
-          {
-            "code" : "1222600006"
-          }
-        ]
-      }
-    ]
+        "code" : "1222599008"
+      },
+      {
+        "code" : "1222600006"
+      }]
+    }]
   }
 }
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-adjunctive-therapy-roles | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:AdjunctiveTherapyRoles |
+| Active as of 2026-02-25 | *Computable Name*:AdjunctiveTherapyRoles |
 
  
 Codes representing roles for adjunctive therapy in oncology. 
@@ -23,8 +23,6 @@ Codes representing roles for adjunctive therapy in oncology.
  
 
 ### Expansion
-
-This value set contains 1 concepts
 
 -------
 
@@ -52,52 +50,44 @@ This value set contains 1 concepts
   "name" : "AdjunctiveTherapyRoles",
   "title" : "Adjunctive Therapy Roles Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "Codes representing roles for adjunctive therapy in oncology.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "concept" : [{
+        "code" : "C15688",
+        "display" : "Maintenance"
+      },
       {
-        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "concept" : [
-          {
-            "code" : "C15688",
-            "display" : "Maintenance"
-          },
-          {
-            "code" : "C2140",
-            "display" : "Adjuvant"
-          },
-          {
-            "code" : "C15665",
-            "display" : "Neoadjuvant"
-          },
-          {
-            "code" : "C28374",
-            "display" : "Perioperative"
-          },
-          {
-            "code" : "C63495",
-            "display" : "Additive"
-          },
-          {
-            "code" : "C15679",
-            "display" : "Consolidation"
-          }
-        ]
-      }
-    ]
+        "code" : "C2140",
+        "display" : "Adjuvant"
+      },
+      {
+        "code" : "C15665",
+        "display" : "Neoadjuvant"
+      },
+      {
+        "code" : "C28374",
+        "display" : "Perioperative"
+      },
+      {
+        "code" : "C63495",
+        "display" : "Additive"
+      },
+      {
+        "code" : "C15679",
+        "display" : "Consolidation"
+      }]
+    }]
   }
 }
 

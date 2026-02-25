@@ -25,6 +25,9 @@ The approximate age of the patient.
 * [Cancer Patient Cause of Death](StructureDefinition-onconova-ext-cancer-patient-cause-of-death.md) 
 The cause of death for the patient. 
 
+* [Cancer Patient Clinical Center](StructureDefinition-onconova-ext-cancer-patient-clinical-center.md) 
+The center or hospital where the patient case original records were recorded. 
+
 * [Cancer Patient Consent status](StructureDefinition-onconova-ext-cancer-patient-consent-status.md) 
 The status of whether the patient has given or revoked consent for research use. 
 

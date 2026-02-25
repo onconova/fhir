@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-comorbidity-panels | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:ComorbidityPanels |
+| Active as of 2026-02-25 | *Computable Name*:ComorbidityPanels |
 
  
 A collection of comorbidity panels relevant to cancer patients. 
@@ -50,37 +50,29 @@ A collection of comorbidity panels relevant to cancer patients.
   "name" : "ComorbidityPanels",
   "title" : "Comorbidity Panels Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "A collection of comorbidity panels relevant to cancer patients.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels",
+      "concept" : [{
+        "code" : "charlson"
+      },
       {
-        "system" : "http://onconova.github.io/fhir/CodeSystem/onconova-cs-comorbidity-panels",
-        "concept" : [
-          {
-            "code" : "charlson"
-          },
-          {
-            "code" : "elixhauser"
-          },
-          {
-            "code" : "nci"
-          }
-        ]
-      }
-    ]
+        "code" : "elixhauser"
+      },
+      {
+        "code" : "nci"
+      }]
+    }]
   }
 }
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-intent | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:TherapyLineIntent |
+| Active as of 2026-02-25 | *Computable Name*:TherapyLineIntent |
 
 The intent of the therapy line, such as curative or palliative.
 
@@ -48,71 +48,59 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-therapy
   "name" : "TherapyLineIntent",
   "title" : "Therapy Line Intent",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "The intent of the therapy line, such as curative or palliative.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "EpisodeOfCare.extension"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "EpisodeOfCare.extension"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Therapy Line Intent",
-        "definition" : "The intent of the therapy line, such as curative or palliative."
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-intent"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ],
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-intents"
-        }
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Therapy Line Intent",
+      "definition" : "The intent of the therapy line, such as curative or palliative."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-intent"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-intents"
       }
-    ]
+    }]
   }
 }
 

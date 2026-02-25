@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-tnm-residual-tumor-categories | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:TNMResidualTumorCategories |
+| Active as of 2026-02-25 | *Computable Name*:TNMResidualTumorCategories |
 
  
 TNM Residual Tumor Categories Value Set 
@@ -20,15 +20,9 @@ TNM Residual Tumor Categories Value Set
 
 ### Logical Definition (CLD)
 
-* Include codes from[`http://snomed.info/sct`](http://www.snomed.org/)version Not Stated (use latest from terminology server) where concept descends from 1222601005 (American Joint Committee on Cancer residual tumour allowable value)
-
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set expansion contains 4 concepts.
 
 -------
 
@@ -56,33 +50,25 @@ This value set expansion contains 4 concepts.
   "name" : "TNMResidualTumorCategories",
   "title" : "TNM Residual Tumor Categories Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "TNM Residual Tumor Categories Value Set",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "filter" : [
-          {
-            "property" : "concept",
-            "op" : "descendent-of",
-            "value" : "1222601005"
-          }
-        ]
-      }
-    ]
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "1222601005"
+      }]
+    }]
   }
 }
 

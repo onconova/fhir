@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-venous-invasion-categories | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:TNMVenousInvasionCategories |
+| Active as of 2026-02-25 | *Computable Name*:TNMVenousInvasionCategories |
 
  
 TNM Venous Invasion Categories Value Set 
@@ -23,10 +23,6 @@ TNM Venous Invasion Categories Value Set
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 4 concepts
 
 -------
 
@@ -54,44 +50,36 @@ This value set contains 4 concepts
   "name" : "TNMVenousInvasionCategories",
   "title" : "TNM Venous Invasion Categories Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "TNM Venous Invasion Categories Value Set",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "6510002",
+        "display" : "VX stage"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "6510002",
-            "display" : "VX stage"
-          },
-          {
-            "code" : "40223008",
-            "display" : "V0 stage"
-          },
-          {
-            "code" : "67302005",
-            "display" : "V1 stage"
-          },
-          {
-            "code" : "50064003",
-            "display" : "V2 stage"
-          }
-        ]
-      }
-    ]
+        "code" : "40223008",
+        "display" : "V0 stage"
+      },
+      {
+        "code" : "67302005",
+        "display" : "V1 stage"
+      },
+      {
+        "code" : "50064003",
+        "display" : "V2 stage"
+      }]
+    }]
   }
 }
 

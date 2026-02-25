@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:ICD10Conditions |
+| Active as of 2026-02-25 | *Computable Name*:ICD10Conditions |
 
  
 All possible ICD-10 codes for conditions. 
@@ -20,15 +20,9 @@ All possible ICD-10 codes for conditions.
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://hl7.org/fhir/sid/icd-10`](http://terminology.hl7.org/6.2.0/CodeSystem-icd10.html)version Not Stated (use latest from terminology server)
-
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on codesystem ICD-10 version 2019-covid-expanded
-
-This value set has >1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown
 
 -------
 
@@ -56,26 +50,20 @@ This value set has >1000 codes in it. In order to keep the publication size mana
   "name" : "ICD10Conditions",
   "title" : "ICD-10 Codes Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "All possible ICD-10 codes for conditions.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://hl7.org/fhir/sid/icd-10"
-      }
-    ]
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10"
+    }]
   }
 }
 

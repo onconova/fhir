@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-recreational-drugs | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:RecreationalDrugs |
+| Active as of 2026-02-25 | *Computable Name*:RecreationalDrugs |
 
  
 Substances that people use to alter their mental state, often for pleasure or leisure, with effects ranging from relaxation and euphoria to hallucinations and altered perceptions. 
@@ -23,10 +23,6 @@ Substances that people use to alter their mental state, often for pleasure or le
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 21 concepts
 
 -------
 
@@ -54,112 +50,104 @@ This value set contains 21 concepts
   "name" : "RecreationalDrugs",
   "title" : "Recreational Drugs Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "Substances that people use to alter their mental state, often for pleasure or leisure, with effects ranging from relaxation and euphoria to hallucinations and altered perceptions.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "398705004",
+        "display" : "Cannabis"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "398705004",
-            "display" : "Cannabis"
-          },
-          {
-            "code" : "387085005",
-            "display" : "Cocaine"
-          },
-          {
-            "code" : "255641001",
-            "display" : "Caffeine"
-          },
-          {
-            "code" : "288459003",
-            "display" : "MDMA"
-          },
-          {
-            "code" : "15698006",
-            "display" : "LSD"
-          },
-          {
-            "code" : "53513007",
-            "display" : "Psilocybin"
-          },
-          {
-            "code" : "387499002",
-            "display" : "Methamphetamine"
-          },
-          {
-            "code" : "387341002",
-            "display" : "Heroin"
-          },
-          {
-            "code" : "372664007",
-            "display" : "Benzodiazepine"
-          },
-          {
-            "code" : "404642006",
-            "display" : "Opioid receptor agonist"
-          },
-          {
-            "code" : "373464007",
-            "display" : "Ketamine"
-          },
-          {
-            "code" : "111132001",
-            "display" : "Nitrous oxide"
-          },
-          {
-            "code" : "782540000",
-            "display" : "GHB receptor agonist"
-          },
-          {
-            "code" : "788540007",
-            "display" : "Synthetic cannabinoid"
-          },
-          {
-            "code" : "439721004",
-            "display" : "Salvia divinorum leaves"
-          },
-          {
-            "code" : "3983008",
-            "display" : "DMT"
-          },
-          {
-            "code" : "373780001",
-            "display" : "Mescaline"
-          },
-          {
-            "code" : "703842006",
-            "display" : "Amfetamine"
-          },
-          {
-            "code" : "373337007",
-            "display" : "Methylphenidate"
-          },
-          {
-            "code" : "111151007",
-            "display" : "Anabolic steroid"
-          },
-          {
-            "code" : "68540007",
-            "display" : "Nicotine"
-          }
-        ]
-      }
-    ]
+        "code" : "387085005",
+        "display" : "Cocaine"
+      },
+      {
+        "code" : "255641001",
+        "display" : "Caffeine"
+      },
+      {
+        "code" : "288459003",
+        "display" : "MDMA"
+      },
+      {
+        "code" : "15698006",
+        "display" : "LSD"
+      },
+      {
+        "code" : "53513007",
+        "display" : "Psilocybin"
+      },
+      {
+        "code" : "387499002",
+        "display" : "Methamphetamine"
+      },
+      {
+        "code" : "387341002",
+        "display" : "Heroin"
+      },
+      {
+        "code" : "372664007",
+        "display" : "Benzodiazepine"
+      },
+      {
+        "code" : "404642006",
+        "display" : "Opioid receptor agonist"
+      },
+      {
+        "code" : "373464007",
+        "display" : "Ketamine"
+      },
+      {
+        "code" : "111132001",
+        "display" : "Nitrous oxide"
+      },
+      {
+        "code" : "782540000",
+        "display" : "GHB receptor agonist"
+      },
+      {
+        "code" : "788540007",
+        "display" : "Synthetic cannabinoid"
+      },
+      {
+        "code" : "439721004",
+        "display" : "Salvia divinorum leaves"
+      },
+      {
+        "code" : "3983008",
+        "display" : "DMT"
+      },
+      {
+        "code" : "373780001",
+        "display" : "Mescaline"
+      },
+      {
+        "code" : "703842006",
+        "display" : "Amfetamine"
+      },
+      {
+        "code" : "373337007",
+        "display" : "Methylphenidate"
+      },
+      {
+        "code" : "111151007",
+        "display" : "Anabolic steroid"
+      },
+      {
+        "code" : "68540007",
+        "display" : "Nicotine"
+      }]
+    }]
   }
 }
 

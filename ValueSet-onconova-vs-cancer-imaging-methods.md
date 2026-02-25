@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-imaging-methods | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:CancerImagingMethods |
+| Active as of 2026-02-25 | *Computable Name*:CancerImagingMethods |
 
  
 Imaging methods used in cancer diagnosis and monitoring. 
@@ -23,10 +23,6 @@ Imaging methods used in cancer diagnosis and monitoring.
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 9 concepts
 
 -------
 
@@ -54,64 +50,56 @@ This value set contains 9 concepts
   "name" : "CancerImagingMethods",
   "title" : "Cancer Imaging Methods Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "Imaging methods used in cancer diagnosis and monitoring.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "77477000",
+        "display" : "CT - Computerized tomography"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "77477000",
-            "display" : "CT - Computerized tomography"
-          },
-          {
-            "code" : "113091000",
-            "display" : "MRI - Magnetic resonance imaging"
-          },
-          {
-            "code" : "16310003",
-            "display" : "US - Ultrasound"
-          },
-          {
-            "code" : "82918005",
-            "display" : "PET - Positron emission tomography"
-          },
-          {
-            "code" : "260222006",
-            "display" : "SPET - Single photon emission computed tomography"
-          },
-          {
-            "code" : "363680008",
-            "display" : "X-ray"
-          },
-          {
-            "code" : "312275004",
-            "display" : "Fluoroscopic imaging"
-          },
-          {
-            "code" : "312337001",
-            "display" : "Thermography imaging"
-          },
-          {
-            "code" : "371576000",
-            "display" : "Video imaging"
-          }
-        ]
-      }
-    ]
+        "code" : "113091000",
+        "display" : "MRI - Magnetic resonance imaging"
+      },
+      {
+        "code" : "16310003",
+        "display" : "US - Ultrasound"
+      },
+      {
+        "code" : "82918005",
+        "display" : "PET - Positron emission tomography"
+      },
+      {
+        "code" : "260222006",
+        "display" : "SPET - Single photon emission computed tomography"
+      },
+      {
+        "code" : "363680008",
+        "display" : "X-ray"
+      },
+      {
+        "code" : "312275004",
+        "display" : "Fluoroscopic imaging"
+      },
+      {
+        "code" : "312337001",
+        "display" : "Thermography imaging"
+      },
+      {
+        "code" : "371576000",
+        "display" : "Video imaging"
+      }]
+    }]
   }
 }
 

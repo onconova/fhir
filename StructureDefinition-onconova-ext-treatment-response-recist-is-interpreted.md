@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-treatment-response-recist-is-interpreted | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:TreatmentResponseRecistIsInterpreted |
+| Active as of 2026-02-25 | *Computable Name*:TreatmentResponseRecistIsInterpreted |
 
 Indicates that whether the RECIST was interpreted from a radiology report rather than extracted.
 
@@ -46,67 +46,55 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-treatme
   "name" : "TreatmentResponseRecistIsInterpreted",
   "title" : "Treatment Response RECIST Is Interpreted",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "Indicates that whether the RECIST was interpreted from a radiology report rather than extracted.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "Element"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "Element"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Treatment Response RECIST Is Interpreted",
-        "definition" : "Indicates that whether the RECIST was interpreted from a radiology report rather than extracted."
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-treatment-response-recist-is-interpreted"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "type" : [
-          {
-            "code" : "boolean"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Treatment Response RECIST Is Interpreted",
+      "definition" : "Indicates that whether the RECIST was interpreted from a radiology report rather than extracted."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-treatment-response-recist-is-interpreted"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    }]
   }
 }
 

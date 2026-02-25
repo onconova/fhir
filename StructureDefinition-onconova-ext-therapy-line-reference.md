@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:TherapyLineReference |
+| Active as of 2026-02-25 | *Computable Name*:TherapyLineReference |
 
 A reference to the therapy line associated with this treatment.
 
@@ -46,78 +46,64 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-therapy
   "name" : "TherapyLineReference",
   "title" : "Therapy Line Reference",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "A reference to the therapy line associated with this treatment.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary#Procedure.extension"
-    },
-    {
-      "type" : "element",
-      "expression" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure#Procedure.extension"
-    },
-    {
-      "type" : "element",
-      "expression" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration#MedicationAdministration.extension"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary#Procedure.extension"
+  },
+  {
+    "type" : "element",
+    "expression" : "http://onconova.github.io/fhir/StructureDefinition/onconova-surgical-procedure#Procedure.extension"
+  },
+  {
+    "type" : "element",
+    "expression" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration#MedicationAdministration.extension"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Therapy Line Reference",
-        "definition" : "A reference to the therapy line associated with this treatment."
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line"
-            ]
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Therapy Line Reference",
+      "definition" : "A reference to the therapy line associated with this treatment."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line"]
+      }]
+    }]
   }
 }
 

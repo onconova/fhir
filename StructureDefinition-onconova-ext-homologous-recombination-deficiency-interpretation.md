@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-homologous-recombination-deficiency-interpretation | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:HomologousRecombinationDeficiencyInterpretation |
+| Active as of 2026-02-25 | *Computable Name*:HomologousRecombinationDeficiencyInterpretation |
 
 The categorical classification of the HRD status interpreted from its value.
 
@@ -48,71 +48,59 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-homolog
   "name" : "HomologousRecombinationDeficiencyInterpretation",
   "title" : "Homologous Recombination Deficiency Interpretation",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "The categorical classification of the HRD status interpreted from its value.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency#Observation.extension"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "http://onconova.github.io/fhir/StructureDefinition/onconova-homologous-recombination-deficiency#Observation.extension"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Homologous Recombination Deficiency Interpretation",
-        "definition" : "The categorical classification of the HRD status interpreted from its value."
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-homologous-recombination-deficiency-interpretation"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ],
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-homologous-recombination-deficiency-interpretations"
-        }
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Homologous Recombination Deficiency Interpretation",
+      "definition" : "The categorical classification of the HRD status interpreted from its value."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-homologous-recombination-deficiency-interpretation"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-homologous-recombination-deficiency-interpretations"
       }
-    ]
+    }]
   }
 }
 

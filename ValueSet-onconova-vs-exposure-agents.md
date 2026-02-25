@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-exposure-agents | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:ExposureAgents |
+| Active as of 2026-02-25 | *Computable Name*:ExposureAgents |
 
  
 Agents to which a patient may have been exposed. 
@@ -20,13 +20,9 @@ Agents to which a patient may have been exposed.
 
 ### Logical Definition (CLD)
 
-* Include codes from[`http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl`](http://terminology.hl7.org/6.2.0/CodeSystem-v3-nciThesaurus.html)version Not Stated (use latest from terminology server) where concept is-a C19447
-
  
 
 ### Expansion
-
-No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -54,33 +50,25 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "ExposureAgents",
   "title" : "Exposure Agents Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "Agents to which a patient may have been exposed.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "filter" : [
-          {
-            "property" : "concept",
-            "op" : "is-a",
-            "value" : "C19447"
-          }
-        ]
-      }
-    ]
+    "include" : [{
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "C19447"
+      }]
+    }]
   }
 }
 

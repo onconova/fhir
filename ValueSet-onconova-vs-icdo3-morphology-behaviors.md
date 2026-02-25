@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-morphology-behaviors | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:ICDO3MorphologyBehaviors |
+| Active as of 2026-02-25 | *Computable Name*:ICDO3MorphologyBehaviors |
 
  
 The subset of ICD-O-3 concepts dedicated for describing morphology behavior. 
@@ -22,13 +22,9 @@ The subset of ICD-O-3 concepts dedicated for describing morphology behavior.
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://terminology.hl7.org/CodeSystem/icd-o-3`](http://terminology.hl7.org/6.2.0/CodeSystem-icd-o-3.html)version Not Stated (use latest from terminology server)
-
  
 
 ### Expansion
-
-No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -56,26 +52,20 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "ICDO3MorphologyBehaviors",
   "title" : "ICD-O-3 Morphology Behavior Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "The subset of ICD-O-3 concepts dedicated for describing morphology behavior.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3"
-      }
-    ]
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3"
+    }]
   }
 }
 

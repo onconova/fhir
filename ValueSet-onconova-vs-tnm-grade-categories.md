@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-grade-categories | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:TNMGradeCategories |
+| Active as of 2026-02-25 | *Computable Name*:TNMGradeCategories |
 
  
 TNM Grade Categories Value Set 
@@ -23,10 +23,6 @@ TNM Grade Categories Value Set
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 9 concepts
 
 -------
 
@@ -54,55 +50,47 @@ This value set contains 9 concepts
   "name" : "TNMGradeCategories",
   "title" : "TNM Grade Categories Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "TNM Grade Categories Value Set",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1228848004"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "1228848004"
-          },
-          {
-            "code" : "1228850007"
-          },
-          {
-            "code" : "1228851006"
-          },
-          {
-            "code" : "1228852004"
-          },
-          {
-            "code" : "1259951003"
-          },
-          {
-            "code" : "1228847009"
-          },
-          {
-            "code" : "1228845001"
-          },
-          {
-            "code" : "1228854003"
-          },
-          {
-            "code" : "1228853009"
-          }
-        ]
-      }
-    ]
+        "code" : "1228850007"
+      },
+      {
+        "code" : "1228851006"
+      },
+      {
+        "code" : "1228852004"
+      },
+      {
+        "code" : "1259951003"
+      },
+      {
+        "code" : "1228847009"
+      },
+      {
+        "code" : "1228845001"
+      },
+      {
+        "code" : "1228854003"
+      },
+      {
+        "code" : "1228853009"
+      }]
+    }]
   }
 }
 

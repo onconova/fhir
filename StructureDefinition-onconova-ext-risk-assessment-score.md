@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-risk-assessment-score | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:RiskAssessmentScore |
+| Active as of 2026-02-25 | *Computable Name*:RiskAssessmentScore |
 
 The numerical score of the risk assessment.
 
@@ -46,70 +46,58 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-risk-as
   "name" : "RiskAssessmentScore",
   "title" : "Risk Assessment Score",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "The numerical score of the risk assessment.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment#Observation.extension"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment#Observation.extension"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Risk Assessment Score",
-        "definition" : "The numerical score of the risk assessment."
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Risk Assessment Score",
+      "definition" : "The numerical score of the risk assessment."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-risk-assessment-score"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "decimal"
       },
       {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-risk-assessment-score"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "type" : [
-          {
-            "code" : "decimal"
-          },
-          {
-            "code" : "integer"
-          }
-        ]
-      }
-    ]
+        "code" : "integer"
+      }]
+    }]
   }
 }
 

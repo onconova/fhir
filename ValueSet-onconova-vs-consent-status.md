@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-consent-status | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:ConsentStatus |
+| Active as of 2026-02-25 | *Computable Name*:ConsentStatus |
 
  
 The consent status of a patient for further use of data in research. 
@@ -50,40 +50,32 @@ The consent status of a patient for further use of data in research.
   "name" : "ConsentStatus",
   "title" : "Consent Status Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "The consent status of a patient for further use of data in research.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status",
+      "concept" : [{
+        "code" : "valid",
+        "display" : "Valid"
+      },
       {
-        "system" : "http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status",
-        "concept" : [
-          {
-            "code" : "valid",
-            "display" : "Valid"
-          },
-          {
-            "code" : "revoked",
-            "display" : "Revoked"
-          },
-          {
-            "code" : "unknown",
-            "display" : "Unknown"
-          }
-        ]
-      }
-    ]
+        "code" : "revoked",
+        "display" : "Revoked"
+      },
+      {
+        "code" : "unknown",
+        "display" : "Unknown"
+      }]
+    }]
   }
 }
 

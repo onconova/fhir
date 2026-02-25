@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-dna-change-types | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:DNAChangeTypes |
+| Active as of 2026-02-25 | *Computable Name*:DNAChangeTypes |
 
  
-Coding DNA change types due to a genomic variant. It constraints and expands the original[LOINC Answer List LL380-7](https://loinc.org/LL380-7/)to enforce Onconova-compatible codes 
+Coding DNA change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes 
 
  **References** 
 
@@ -52,77 +52,67 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "DNAChangeTypes",
   "title" : "Coding DNA Change Types Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "Coding DNA change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://sequenceontology.org",
-        "concept" : [
-          {
-            "code" : "SO:1000002",
-            "display" : "substitution"
-          },
-          {
-            "code" : "SO:1000032",
-            "display" : "delins"
-          },
-          {
-            "code" : "SO:0000667",
-            "display" : "insertion"
-          },
-          {
-            "code" : "SO:0000159",
-            "display" : "deletion"
-          },
-          {
-            "code" : "SO:1000035",
-            "display" : "duplication"
-          },
-          {
-            "code" : "SO:1000036",
-            "display" : "inversion"
-          },
-          {
-            "code" : "SO:0002073",
-            "display" : "no_sequence_alteration"
-          },
-          {
-            "code" : "SO:0002096",
-            "display" : "short_tandem_repeat_variation"
-          },
-          {
-            "code" : "SO:0000199",
-            "display" : "translocation"
-          },
-          {
-            "code" : "SO:0000453",
-            "display" : "transposition"
-          }
-        ]
+    "include" : [{
+      "system" : "http://sequenceontology.org",
+      "concept" : [{
+        "code" : "SO:1000002",
+        "display" : "substitution"
       },
       {
-        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "concept" : [
-          {
-            "code" : "C17961",
-            "display" : "DNA Methylation"
-          }
-        ]
-      }
-    ]
+        "code" : "SO:1000032",
+        "display" : "delins"
+      },
+      {
+        "code" : "SO:0000667",
+        "display" : "insertion"
+      },
+      {
+        "code" : "SO:0000159",
+        "display" : "deletion"
+      },
+      {
+        "code" : "SO:1000035",
+        "display" : "duplication"
+      },
+      {
+        "code" : "SO:1000036",
+        "display" : "inversion"
+      },
+      {
+        "code" : "SO:0002073",
+        "display" : "no_sequence_alteration"
+      },
+      {
+        "code" : "SO:0002096",
+        "display" : "short_tandem_repeat_variation"
+      },
+      {
+        "code" : "SO:0000199",
+        "display" : "translocation"
+      },
+      {
+        "code" : "SO:0000453",
+        "display" : "transposition"
+      }]
+    },
+    {
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "concept" : [{
+        "code" : "C17961",
+        "display" : "DNA Methylation"
+      }]
+    }]
   }
 }
 

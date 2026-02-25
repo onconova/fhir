@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:MolecularTumorBoardCUPCharacterization |
+| Active as of 2026-02-25 | *Computable Name*:MolecularTumorBoardCUPCharacterization |
 
 A characterization of the tumor board review focused on cancer of unknown primary (CUP) origin.
 
@@ -46,175 +46,149 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
   "name" : "MolecularTumorBoardCUPCharacterization",
   "title" : "Molecular Tumor Board CUP Characterization",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "A characterization of the tumor board review focused on cancer of unknown primary (CUP) origin.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "Element"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "Element"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Molecular Tumor Board CUP Characterization",
-        "definition" : "A characterization of the tumor board review focused on cancer of unknown primary (CUP) origin."
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Molecular Tumor Board CUP Characterization",
+      "definition" : "A characterization of the tumor board review focused on cancer of unknown primary (CUP) origin."
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "min" : 1
+    },
+    {
+      "id" : "Extension.extension:conducted",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
       },
       {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "min" : 1
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "Extension.extension",
+      "sliceName" : "conducted",
+      "short" : "CUP characterization conducted",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:conducted.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:conducted.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "conducted"
+    },
+    {
+      "id" : "Extension.extension:conducted.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "Extension.extension:success",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:populate-if-known"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
       },
       {
-        "id" : "Extension.extension:conducted",
-        "extension" : [
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "SHALL:populate"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "SHOULD:persist"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          }
-        ],
-        "path" : "Extension.extension",
-        "sliceName" : "conducted",
-        "short" : "CUP characterization conducted",
-        "min" : 1,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Extension.extension:conducted.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:conducted.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "conducted"
-      },
-      {
-        "id" : "Extension.extension:conducted.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "type" : [
-          {
-            "code" : "boolean"
-          }
-        ]
-      },
-      {
-        "id" : "Extension.extension:success",
-        "extension" : [
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "SHALL:populate-if-known"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-creator"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          {
-            "extension" : [
-              {
-                "url" : "code",
-                "valueCode" : "SHOULD:persist"
-              },
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          }
-        ],
-        "path" : "Extension.extension",
-        "sliceName" : "success",
-        "short" : "CUP characterization successful",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
-      },
-      {
-        "id" : "Extension.extension:success.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:success.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "success"
-      },
-      {
-        "id" : "Extension.extension:success.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "type" : [
-          {
-            "code" : "boolean"
-          }
-        ]
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "max" : "0"
-      }
-    ]
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:persist"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "http://onconova.github.io/fhir/ActorDefinition/onconova-consumer"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "Extension.extension",
+      "sliceName" : "success",
+      "short" : "CUP characterization successful",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:success.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:success.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "success"
+    },
+    {
+      "id" : "Extension.extension:success.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "max" : "0"
+    }]
   }
 }
 

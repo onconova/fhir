@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:TreatmentTerminationReasons |
+| Active as of 2026-02-25 | *Computable Name*:TreatmentTerminationReasons |
 
  
 Reasons for terminating a treatment in oncology. 
@@ -53,37 +53,27 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "TreatmentTerminationReasons",
   "title" : "Treatment Termination Reasons Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "Reasons for terminating a treatment in oncology.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "182992009",
-            "display" : "Treatment completed"
-          }
-        ]
-      },
-      {
-        "valueSet" : [
-          "http://hl7.org/fhir/us/mcode/ValueSet/mcode-treatment-termination-reason"
-        ]
-      }
-    ]
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "182992009",
+        "display" : "Treatment completed"
+      }]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/us/mcode/ValueSet/mcode-treatment-termination-reason"]
+    }]
   }
 }
 

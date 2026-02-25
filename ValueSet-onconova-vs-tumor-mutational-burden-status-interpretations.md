@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-mutational-burden-status-interpretations | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:TumorMutationalBurdenStatusInterpretations |
+| Active as of 2026-02-25 | *Computable Name*:TumorMutationalBurdenStatusInterpretations |
 
  
 The categorical classifications of the TMB status interpreted from its value.. 
@@ -23,8 +23,6 @@ The categorical classifications of the TMB status interpreted from its value..
  
 
 ### Expansion
-
-This value set contains 4 concepts
 
 -------
 
@@ -52,37 +50,27 @@ This value set contains 4 concepts
   "name" : "TumorMutationalBurdenStatusInterpretations",
   "title" : "Tumor Mutational Burden Status Interpretation Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "The categorical classifications of the TMB status interpreted from its value..",
   "compose" : {
-    "include" : [
-      {
-        "valueSet" : [
-          "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/high-low-codes-vs"
-        ]
-      },
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
-        "concept" : [
-          {
-            "code" : "IND",
-            "display" : "Indeterminate"
-          }
-        ]
-      }
-    ]
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/uv/genomics-reporting/ValueSet/high-low-codes-vs"]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "concept" : [{
+        "code" : "IND",
+        "display" : "Indeterminate"
+      }]
+    }]
   }
 }
 

@@ -100,6 +100,13 @@
       ]
     },
     {
+      "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-clinical-center",
+      "title": "Cancer Patient Clinical Center",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-consent-status",
       "title": "Cancer Patient Consent status",
       "types": [
@@ -733,6 +740,9 @@
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-cause-of-death": [
       "Patient.deceased[x]"
+    ],
+    "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-clinical-center": [
+      "Patient"
     ],
     "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-consent-status": [
       "Patient"

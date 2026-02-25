@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-drugs | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:AdverseEventMitigationDrugs |
+| Active as of 2026-02-25 | *Computable Name*:AdverseEventMitigationDrugs |
 
  
 Drugs or medication categories used in the mitigation process of an adverse event. 
@@ -23,10 +23,6 @@ Drugs or medication categories used in the mitigation process of an adverse even
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 4 concepts
 
 -------
 
@@ -54,121 +50,111 @@ This value set contains 4 concepts
   "name" : "AdverseEventMitigationDrugs",
   "title" : "Adverse Event Mitigation Drugs Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "Drugs or medication categories used in the mitigation process of an adverse event.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "49616005",
-            "display" : "Monoclonal antibody"
-          },
-          {
-            "code" : "420693002",
-            "display" : "Tumor necrosis factor alpha inhibitor"
-          },
-          {
-            "code" : "409207001",
-            "display" : "NK-1 Receptor Antagonist"
-          },
-          {
-            "code" : "1156730006",
-            "display" : "Erythropoietin receptor agonist"
-          }
-        ]
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "49616005",
+        "display" : "Monoclonal antibody"
       },
       {
-        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "concept" : [
-          {
-            "code" : "C2356",
-            "display" : "Analgesic and Antipyretic"
-          },
-          {
-            "code" : "C257",
-            "display" : "Nonsteroidal Antiinflammatory Drug"
-          },
-          {
-            "code" : "C198",
-            "display" : "Acetaminophen"
-          },
-          {
-            "code" : "C170166",
-            "display" : "Metamizole Sodium"
-          },
-          {
-            "code" : "C29578",
-            "display" : "Histamine-1 Receptor Antagonist"
-          },
-          {
-            "code" : "C126567",
-            "display" : "Vasopressor"
-          },
-          {
-            "code" : "C163951",
-            "display" : "Anti-IL-6 Monoclonal Antibody"
-          },
-          {
-            "code" : "C128036",
-            "display" : "Anti-CTLA-4 Monoclonal Antibody"
-          },
-          {
-            "code" : "C29505",
-            "display" : "Topical Corticosteroids"
-          },
-          {
-            "code" : "C122080",
-            "display" : "Systemic Corticosteroids"
-          },
-          {
-            "code" : "C278",
-            "display" : "Anti-Thymocyte Globulin"
-          },
-          {
-            "code" : "C121331",
-            "display" : "Intravenous Immunoglobulin"
-          },
-          {
-            "code" : "C267",
-            "display" : "Antiemetics"
-          },
-          {
-            "code" : "C740",
-            "display" : "Phenothiazine"
-          },
-          {
-            "code" : "C94726",
-            "display" : "5-HT3 Receptor Antagonist"
-          },
-          {
-            "code" : "C20424",
-            "display" : "Growth Factors"
-          },
-          {
-            "code" : "C26078",
-            "display" : "Granulocyte Colony-Stimulating Factor"
-          },
-          {
-            "code" : "C20545",
-            "display" : "Granulocyte-Macrophage Colony-Stimulating Factor"
-          }
-        ]
-      }
-    ]
+        "code" : "420693002",
+        "display" : "Tumor necrosis factor alpha inhibitor"
+      },
+      {
+        "code" : "409207001",
+        "display" : "NK-1 Receptor Antagonist"
+      },
+      {
+        "code" : "1156730006",
+        "display" : "Erythropoietin receptor agonist"
+      }]
+    },
+    {
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "concept" : [{
+        "code" : "C2356",
+        "display" : "Analgesic and Antipyretic"
+      },
+      {
+        "code" : "C257",
+        "display" : "Nonsteroidal Antiinflammatory Drug"
+      },
+      {
+        "code" : "C198",
+        "display" : "Acetaminophen"
+      },
+      {
+        "code" : "C170166",
+        "display" : "Metamizole Sodium"
+      },
+      {
+        "code" : "C29578",
+        "display" : "Histamine-1 Receptor Antagonist"
+      },
+      {
+        "code" : "C126567",
+        "display" : "Vasopressor"
+      },
+      {
+        "code" : "C163951",
+        "display" : "Anti-IL-6 Monoclonal Antibody"
+      },
+      {
+        "code" : "C128036",
+        "display" : "Anti-CTLA-4 Monoclonal Antibody"
+      },
+      {
+        "code" : "C29505",
+        "display" : "Topical Corticosteroids"
+      },
+      {
+        "code" : "C122080",
+        "display" : "Systemic Corticosteroids"
+      },
+      {
+        "code" : "C278",
+        "display" : "Anti-Thymocyte Globulin"
+      },
+      {
+        "code" : "C121331",
+        "display" : "Intravenous Immunoglobulin"
+      },
+      {
+        "code" : "C267",
+        "display" : "Antiemetics"
+      },
+      {
+        "code" : "C740",
+        "display" : "Phenothiazine"
+      },
+      {
+        "code" : "C94726",
+        "display" : "5-HT3 Receptor Antagonist"
+      },
+      {
+        "code" : "C20424",
+        "display" : "Growth Factors"
+      },
+      {
+        "code" : "C26078",
+        "display" : "Granulocyte Colony-Stimulating Factor"
+      },
+      {
+        "code" : "C20545",
+        "display" : "Granulocyte-Macrophage Colony-Stimulating Factor"
+      }]
+    }]
   }
 }
 

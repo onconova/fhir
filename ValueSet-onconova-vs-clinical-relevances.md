@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-clinical-relevances | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:ClinicalRelevances |
+| Active as of 2026-02-25 | *Computable Name*:ClinicalRelevances |
 
  
 Categorizations of the clinical relevance of a genomic variant 
@@ -52,35 +52,27 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "ClinicalRelevances",
   "title" : "Clinical Relevance Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "Categorizations of the clinical relevance of a genomic variant",
   "compose" : {
-    "include" : [
-      {
-        "valueSet" : ["http://loinc.org/LL4034-6/"]
-      },
-      {
-        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "concept" : [
-          {
-            "code" : "C70429",
-            "display" : "Ambiguity"
-          }
-        ]
-      }
-    ]
+    "include" : [{
+      "valueSet" : ["http://loinc.org/LL4034-6/"]
+    },
+    {
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "concept" : [{
+        "code" : "C70429",
+        "display" : "Ambiguity"
+      }]
+    }]
   }
 }
 

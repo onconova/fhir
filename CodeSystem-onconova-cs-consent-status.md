@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/CodeSystem/onconova-cs-consent-status | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:ConsentStatusCodeSystem |
+| Active as of 2026-02-25 | *Computable Name*:ConsentStatusCodeSystem |
 
  
 A code system for consent status relevant to Onconova patients. 
@@ -31,36 +31,30 @@ A code system for consent status relevant to Onconova patients.
   "name" : "ConsentStatusCodeSystem",
   "title" : "Consent Status Code System",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "A code system for consent status relevant to Onconova patients.",
   "content" : "complete",
   "count" : 3,
-  "concept" : [
-    {
-      "code" : "valid",
-      "display" : "Valid"
-    },
-    {
-      "code" : "revoked",
-      "display" : "Revoked"
-    },
-    {
-      "code" : "unknown",
-      "display" : "Unknown"
-    }
-  ]
+  "concept" : [{
+    "code" : "valid",
+    "display" : "Valid"
+  },
+  {
+    "code" : "revoked",
+    "display" : "Revoked"
+  },
+  {
+    "code" : "unknown",
+    "display" : "Unknown"
+  }]
 }
 
 ```

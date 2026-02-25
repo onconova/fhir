@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:AntineoplasticAgents |
+| Active as of 2026-02-25 | *Computable Name*:AntineoplasticAgents |
 
  
 Drugs and biological agents used in the treatment of neoplastic diseases. 
@@ -20,8 +20,6 @@ Drugs and biological agents used in the treatment of neoplastic diseases.
 * [Medication Administration Profile](StructureDefinition-onconova-medication-administration.md)
 
 ### Logical Definition (CLD)
-
-* Include codes from[`http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl`](http://terminology.hl7.org/6.2.0/CodeSystem-v3-nciThesaurus.html)version Not Stated (use latest from terminology server) where Concept_In_Subset = C128784
 
  
 
@@ -55,33 +53,25 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "AntineoplasticAgents",
   "title" : "Antineoplastic Agents Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "Drugs and biological agents used in the treatment of neoplastic diseases.",
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "filter" : [
-          {
-            "property" : "Concept_In_Subset",
-            "op" : "=",
-            "value" : "C128784"
-          }
-        ]
-      }
-    ]
+    "include" : [{
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "filter" : [{
+        "property" : "Concept_In_Subset",
+        "op" : "=",
+        "value" : "C128784"
+      }]
+    }]
   }
 }
 

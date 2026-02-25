@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/CodeSystem/onconova-cs-tbd | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:ToBeDeterminedCodes |
+| Active as of 2026-02-25 | *Computable Name*:ToBeDeterminedCodes |
 
  
 A code system for codes that are yet to be determined. 
@@ -31,36 +31,30 @@ A code system for codes that are yet to be determined.
   "name" : "ToBeDeterminedCodes",
   "title" : "To Be Determined Codes",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "A code system for codes that are yet to be determined.",
   "content" : "complete",
   "count" : 3,
-  "concept" : [
-    {
-      "code" : "aneuploid-score",
-      "display" : "Aneuploid Score"
-    },
-    {
-      "code" : "tumor-neoantigen-burden",
-      "display" : "Tumor Neoantigen Burden"
-    },
-    {
-      "code" : "rna-hgvs",
-      "display" : "Transcript RNA change (rHGVS)"
-    }
-  ]
+  "concept" : [{
+    "code" : "aneuploid-score",
+    "display" : "Aneuploid Score"
+  },
+  {
+    "code" : "tumor-neoantigen-burden",
+    "display" : "Tumor Neoantigen Burden"
+  },
+  {
+    "code" : "rna-hgvs",
+    "display" : "Transcript RNA change (rHGVS)"
+  }]
 }
 
 ```

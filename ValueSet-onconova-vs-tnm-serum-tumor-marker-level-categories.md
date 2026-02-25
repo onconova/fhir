@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-serum-tumor-marker-level-categories | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:TNMSerumTumorMarkerLevelCategories |
+| Active as of 2026-02-25 | *Computable Name*:TNMSerumTumorMarkerLevelCategories |
 
  
 TNM Serum Tumor Marker Level Categories Value Set 
@@ -23,10 +23,6 @@ TNM Serum Tumor Marker Level Categories Value Set
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 5 concepts
 
 -------
 
@@ -54,48 +50,40 @@ This value set contains 5 concepts
   "name" : "TNMSerumTumorMarkerLevelCategories",
   "title" : "TNM Serum Tumor Marker Level Categories Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "TNM Serum Tumor Marker Level Categories Value Set",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "313139000",
+        "display" : "Stage S0"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "313139000",
-            "display" : "Stage S0"
-          },
-          {
-            "code" : "313140003",
-            "display" : "Stage S1"
-          },
-          {
-            "code" : "313141004",
-            "display" : "Stage S2"
-          },
-          {
-            "code" : "313142006",
-            "display" : "Stage S3"
-          },
-          {
-            "code" : "313138008",
-            "display" : "Stage SX"
-          }
-        ]
-      }
-    ]
+        "code" : "313140003",
+        "display" : "Stage S1"
+      },
+      {
+        "code" : "313141004",
+        "display" : "Stage S2"
+      },
+      {
+        "code" : "313142006",
+        "display" : "Stage S3"
+      },
+      {
+        "code" : "313138008",
+        "display" : "Stage SX"
+      }]
+    }]
   }
 }
 

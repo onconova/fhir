@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-homologous-recombination-deficiency-interpretations | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:HomologousRecombinationDeficiencyInterpretations |
+| Active as of 2026-02-25 | *Computable Name*:HomologousRecombinationDeficiencyInterpretations |
 
  
 The categorical classifications of the HRD status interpreted from its value.. 
@@ -23,10 +23,6 @@ The categorical classifications of the HRD status interpreted from its value..
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 3 concepts
 
 -------
 
@@ -54,40 +50,32 @@ This value set contains 3 concepts
   "name" : "HomologousRecombinationDeficiencyInterpretations",
   "title" : "Homologous Recombination Deficiency Interpretation Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "The categorical classifications of the HRD status interpreted from its value..",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "10828004",
+        "display" : "Positive (qualifier value)"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "10828004",
-            "display" : "Positive (qualifier value)"
-          },
-          {
-            "code" : "260385009",
-            "display" : "Negative (qualifier value)"
-          },
-          {
-            "code" : "82334004",
-            "display" : "Indeterminate (qualifier value)"
-          }
-        ]
-      }
-    ]
+        "code" : "260385009",
+        "display" : "Negative (qualifier value)"
+      },
+      {
+        "code" : "82334004",
+        "display" : "Indeterminate (qualifier value)"
+      }]
+    }]
   }
 }
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-managements | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:AdverseEventMitigationManagements |
+| Active as of 2026-02-25 | *Computable Name*:AdverseEventMitigationManagements |
 
  
 Classification of actions to mitigate adverse events affecting a patient's health. 
@@ -23,10 +23,6 @@ Classification of actions to mitigate adverse events affecting a patient's healt
  
 
 ### Expansion
-
-Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
-
-This value set contains 2 concepts
 
 -------
 
@@ -54,36 +50,28 @@ This value set contains 2 concepts
   "name" : "AdverseEventMitigationManagements",
   "title" : "Adverse Event Mitigation Managements Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "Classification of actions to mitigate adverse events affecting a patient's health.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "737481003",
+        "display" : "Inpatient care management"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "concept" : [
-          {
-            "code" : "737481003",
-            "display" : "Inpatient care management"
-          },
-          {
-            "code" : "737492002",
-            "display" : "Outpatient care management"
-          }
-        ]
-      }
-    ]
+        "code" : "737492002",
+        "display" : "Outpatient care management"
+      }]
+    }]
   }
 }
 

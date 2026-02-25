@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-methods | *Version*:0.2.0 |
-| Active as of 2025-12-04 | *Computable Name*:CancerRiskAssessmentMethods |
+| Active as of 2026-02-25 | *Computable Name*:CancerRiskAssessmentMethods |
 
  
 A value set containing codes for various cancer risk assessment methods. 
@@ -23,8 +23,6 @@ A value set containing codes for various cancer risk assessment methods.
  
 
 ### Expansion
-
-No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -52,88 +50,80 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "CancerRiskAssessmentMethods",
   "title" : "Cancer Risk Assessment Methods Value Set",
   "status" : "active",
-  "date" : "2025-12-04T10:59:28+00:00",
+  "date" : "2026-02-25T14:29:35+00:00",
   "publisher" : "Onconova",
-  "contact" : [
-    {
-      "name" : "Onconova",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://onconova.github.io/docs"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Onconova",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://onconova.github.io/docs"
+    }]
+  }],
   "description" : "A value set containing codes for various cancer risk assessment methods.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "concept" : [{
+        "code" : "C136962",
+        "display" : "Follicular Lymphoma International Prognostic Index (FLIPI)"
+      },
       {
-        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "concept" : [
-          {
-            "code" : "C136962",
-            "display" : "Follicular Lymphoma International Prognostic Index (FLIPI)"
-          },
-          {
-            "code" : "C181086",
-            "display" : "D'Amico Prostate Cancer Risk Classification"
-          },
-          {
-            "code" : "C127872",
-            "display" : "European Treatment Outcome Study (EUTOS) Score"
-          },
-          {
-            "code" : "C127873",
-            "display" : "Hasford Score"
-          },
-          {
-            "code" : "C127875",
-            "display" : "Sokal Score"
-          },
-          {
-            "code" : "C155843",
-            "display" : "International Metastatic Renal Cell Carcinoma Database Consortium (IMDC) Criteria"
-          },
-          {
-            "code" : "C161805",
-            "display" : "International Prognostic Index (IPI) Risk Group"
-          },
-          {
-            "code" : "C177562",
-            "display" : "European LeukemiaNet Risk Classification"
-          },
-          {
-            "code" : "C121007",
-            "display" : "Child-Pugh Clinical Classification"
-          },
-          {
-            "code" : "C181085",
-            "display" : "USCF Cancer of the Prostate Risk Assessment Score"
-          },
-          {
-            "code" : "C162781",
-            "display" : "Mantle Cell Lymphoma International Prognostic Index (MIPI)"
-          },
-          {
-            "code" : "C181084",
-            "display" : "NCCN Prostate Cancer Risk Stratification for Clinically Localized Disease"
-          },
-          {
-            "code" : "C177309",
-            "display" : "Seminoma IGCCC Risk Classification"
-          },
-          {
-            "code" : "C177308",
-            "display" : "Non-Seminomatous Germ Cell Tumor IGCCC Risk Classification"
-          },
-          {
-            "code" : "C142346",
-            "display" : "International Society of Urological Pathology Gleason Grade Group"
-          }
-        ]
-      }
-    ]
+        "code" : "C181086",
+        "display" : "D'Amico Prostate Cancer Risk Classification"
+      },
+      {
+        "code" : "C127872",
+        "display" : "European Treatment Outcome Study (EUTOS) Score"
+      },
+      {
+        "code" : "C127873",
+        "display" : "Hasford Score"
+      },
+      {
+        "code" : "C127875",
+        "display" : "Sokal Score"
+      },
+      {
+        "code" : "C155843",
+        "display" : "International Metastatic Renal Cell Carcinoma Database Consortium (IMDC) Criteria"
+      },
+      {
+        "code" : "C161805",
+        "display" : "International Prognostic Index (IPI) Risk Group"
+      },
+      {
+        "code" : "C177562",
+        "display" : "European LeukemiaNet Risk Classification"
+      },
+      {
+        "code" : "C121007",
+        "display" : "Child-Pugh Clinical Classification"
+      },
+      {
+        "code" : "C181085",
+        "display" : "USCF Cancer of the Prostate Risk Assessment Score"
+      },
+      {
+        "code" : "C162781",
+        "display" : "Mantle Cell Lymphoma International Prognostic Index (MIPI)"
+      },
+      {
+        "code" : "C181084",
+        "display" : "NCCN Prostate Cancer Risk Stratification for Clinically Localized Disease"
+      },
+      {
+        "code" : "C177309",
+        "display" : "Seminoma IGCCC Risk Classification"
+      },
+      {
+        "code" : "C177308",
+        "display" : "Non-Seminomatous Germ Cell Tumor IGCCC Risk Classification"
+      },
+      {
+        "code" : "C142346",
+        "display" : "International Society of Urological Pathology Gleason Grade Group"
+      }]
+    }]
   }
 }
 
