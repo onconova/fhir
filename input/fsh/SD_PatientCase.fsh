@@ -75,7 +75,7 @@ Patient resources representing Cancer Patients in the scope of Onconova SHALL co
 * insert Obligations(extension[birthsex], #SHOULD:populate-if-known, #MAY:persist)
 * insert ObligationsWithUscdi(extension[genderIdentity], #MAY:populate-if-known, #MAY:persist)
 
-* obeys o-pat-req-1 and o-pat-req-2 and o-pat-req-3 and o-pat-req-4 and o-pat-req-5 and o-pat-req-6 and o-pat-req-7 and o-pat-req-8 
+* obeys o-pat-req-1 and o-pat-req-2 and o-pat-req-3 and o-pat-req-4 and o-pat-req-5 and o-pat-req-6 and o-pat-req-7
 
 * insert NotUsed(name) 
 * insert NotUsed(telecom) 
