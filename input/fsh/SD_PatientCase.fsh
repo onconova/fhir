@@ -192,20 +192,15 @@ Severity: #error
 
 Invariant: o-pat-req-5
 Description: "The vital status extension is required and must be provided."
-Expression: "birthDate.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.exists()"
-Severity: #error
-
-Invariant: o-pat-req-6
-Description: "The vital status extension is required and must be provided."
 Expression: "deceased.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.exists()"
 Severity: #error
 
-Invariant: o-pat-req-7
+Invariant: o-pat-req-6
 Description: "If the patient is deceased, the date of death and cause of death must be provided."
 Expression: "deceasedDateTime.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.coding.code = '419099009' implies (deceasedDateTime.hasValue() and deceasedDateTime.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-cause-of-death').valueCodeableConcept.exists())"
 Severity: #error
 
-Invariant: o-pat-req-8
+Invariant: o-pat-req-7
 Description: "If the patient vital status is unknown, the end of records must be provided."
 Expression: "deceasedDateTime.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.coding.code = '261665006' implies extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-end-of-records').valueDate.hasValue()"
 Severity: #error
