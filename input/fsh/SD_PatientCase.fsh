@@ -32,7 +32,6 @@ Patient resources representing Cancer Patients in the scope of Onconova SHALL co
 * identifier contains clinicalIdentifier 1..*  MS
 * identifier[clinicalIdentifier] 1..* 
 * identifier[clinicalIdentifier].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR "Medical Record Number"
-* identifier[clinicalIdentifier].system ^short = "Clinical center or institution assigning the identifier"
 * identifier[clinicalIdentifier].value 1..1 MS
 * identifier[clinicalIdentifier] ^short = "Clinical Identifier from Clinical Center"
 * insert ObligationsWithUscdi(identifier[clinicalIdentifier], #SHALL:populate, #SHOULD:persist)
@@ -60,6 +59,8 @@ Patient resources representing Cancer Patients in the scope of Onconova SHALL co
 
 * extension contains CancerPatientConsentStatus named consentStatus 1..1 MS  
 * insert Obligations(extension[consentStatus], #SHALL:populate, #SHOULD:persist)
+* extension contains CancerPatientClinicalCenter named clinicalCenter 1..1 MS  
+* insert Obligations(extension[clinicalCenter], #SHALL:populate, #SHOULD:persist)
 * extension contains CancerPatientOverallSurvival named overallSurvival 0..1
 * insert Obligations(extension[overallSurvival], #MAY:ignore, #MAY:persist)
 * extension contains CancerPatientDataCompletionRate named dataCompletionRate 0..1
@@ -158,6 +159,12 @@ Description: "The individuals or organizations that contributed to the patient's
 Context: OnconovaCancerPatient.extension
 * value[x] only Reference
 
+Extension: CancerPatientClinicalCenter
+Id: onconova-ext-cancer-patient-clinical-center
+Title: "Cancer Patient Clinical Center"
+Description: "The center or hospital where the patient case original records were recorded."
+Context: OnconovaCancerPatient.extension    
+* value[x] only string
 
 //==================
 // Invariants
