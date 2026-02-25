@@ -50,7 +50,7 @@ Procedures undertaken to mitigate the impact of an adverse event on a patient's 
   "name" : "AdverseEventMitigationProcedures",
   "title" : "Adverse Event Mitigation Procedures Value Set",
   "status" : "active",
-  "date" : "2026-02-25T14:29:35+00:00",
+  "date" : "2026-02-25T15:12:31+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

@@ -225,8 +225,8 @@
     "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"],
     "uses" : {
     },
-    "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile",
-    "StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.html" : "Molecular Tumor Board Therapeutic Recommendation"
+    "StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.html" : "Molecular Tumor Board Therapeutic Recommendation",
+    "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile"
   },
   {
     "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-imaging-methods",
@@ -409,8 +409,8 @@
     "uses" : {
     },
     "StructureDefinition-onconova-primary-cancer-condition.html" : "Primary Cancer Condition Profile",
-    "StructureDefinition-onconova-ext-family-history-member-cancer-morphology.html" : "Family Member History Cancer Morphology",
-    "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile"
+    "StructureDefinition-onconova-secondary-cancer-condition.html" : "Secondary Cancer Condition Profile",
+    "StructureDefinition-onconova-ext-family-history-member-cancer-morphology.html" : "Family Member History Cancer Morphology"
   },
   {
     "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topographies",
@@ -580,10 +580,10 @@
     "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
+    "StructureDefinition-onconova-radiotherapy-summary.html" : "Radiotherapy Summary Profile",
     "StructureDefinition-onconova-ext-therapy-line-intent.html" : "Therapy Line Intent",
     "StructureDefinition-onconova-surgical-procedure.html" : "Surgical Procedure Profile",
-    "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile",
-    "StructureDefinition-onconova-radiotherapy-summary.html" : "Radiotherapy Summary Profile"
+    "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile"
   },
   {
     "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-termination-reasons",
@@ -595,8 +595,8 @@
     "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
-    "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile",
-    "StructureDefinition-onconova-radiotherapy-summary.html" : "Radiotherapy Summary Profile"
+    "StructureDefinition-onconova-radiotherapy-summary.html" : "Radiotherapy Summary Profile",
+    "StructureDefinition-onconova-medication-administration.html" : "Medication Administration Profile"
   },
   {
     "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations",

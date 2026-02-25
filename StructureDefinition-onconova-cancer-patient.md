@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-pati
   "name" : "OnconovaCancerPatient",
   "title" : "Cancer Patient Profile",
   "status" : "active",
-  "date" : "2026-02-25T14:29:35+00:00",
+  "date" : "2026-02-25T15:12:31+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -122,25 +122,18 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-pati
         "key" : "o-pat-req-5",
         "severity" : "error",
         "human" : "The vital status extension is required and must be provided.",
-        "expression" : "birthDate.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.exists()",
-        "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
-      },
-      {
-        "key" : "o-pat-req-6",
-        "severity" : "error",
-        "human" : "The vital status extension is required and must be provided.",
         "expression" : "deceased.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.exists()",
         "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
       },
       {
-        "key" : "o-pat-req-7",
+        "key" : "o-pat-req-6",
         "severity" : "error",
         "human" : "If the patient is deceased, the date of death and cause of death must be provided.",
         "expression" : "deceasedDateTime.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.coding.code = '419099009' implies (deceasedDateTime.hasValue() and deceasedDateTime.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-cause-of-death').valueCodeableConcept.exists())",
         "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-patient"
       },
       {
-        "key" : "o-pat-req-8",
+        "key" : "o-pat-req-7",
         "severity" : "error",
         "human" : "If the patient vital status is unknown, the end of records must be provided.",
         "expression" : "deceasedDateTime.extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status').valueCodeableConcept.coding.code = '261665006' implies extension('http://hl7.org/fhir/StructureDefinition/onconova-ext-cancer-patient-end-of-records').valueDate.hasValue()",

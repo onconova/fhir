@@ -50,7 +50,7 @@ Adjustments made to a patient's treatment plan in response to an adverse event.
   "name" : "AdverseEventMitigationTreatmentAdjustments",
   "title" : "Adverse Event Mitigation Treatment Adjustments Value Set",
   "status" : "active",
-  "date" : "2026-02-25T14:29:35+00:00",
+  "date" : "2026-02-25T15:12:31+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
