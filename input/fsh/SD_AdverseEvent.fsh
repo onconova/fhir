@@ -164,15 +164,15 @@ Description: "Details about an action taken to mitigate or manage the adverse ev
 
 Invariant: drug-mitigation
 Description: "If the mitigation category is 'Drug', then only mitigation drug must be specified."
-Expression: "extension('category').valueCodeableConcept.coding.code = 'C49158' implies (extension('drug').exists() and not extension('procedure').exists() and not extension('adjustment').exists())"
+Expression: "extension('category').valueCodeableConcept.coding.code = 'C49158' implies (extension('drug').exists() and extension('procedure').exists().not() and extension('adjustment').exists().not())"
 Severity: #error
 
 Invariant: adjustment-mitigation
 Description: "If the mitigation category is 'Adjustment', then only mitigation adjustment must be specified."
-Expression: "extension('category').valueCodeableConcept.coding.code = 'C49157' implies (extension('adjustment').exists() and not extension('procedure').exists() and not extension('drug').exists())"
+Expression: "extension('category').valueCodeableConcept.coding.code = 'C49157' implies (extension('adjustment').exists() and extension('procedure').exists().not() and extension('drug').exists().not())"
 Severity: #error
 
 Invariant: procedural-mitigation
 Description: "If the mitigation category is 'Procedure', then only mitigation procedure must be specified."
-Expression: "extension('category').valueCodeableConcept.coding.code = 'C49159' implies (extension('procedure').exists() and not extension('adjustment').exists() and not extension('drug').exists())"
+Expression: "extension('category').valueCodeableConcept.coding.code = 'C49159' implies (extension('procedure').exists() and extension('adjustment').exists().not() and extension('drug').exists().not())"
 Severity: #error
