@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-adjunctive-therapy-roles | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:AdjunctiveTherapyRoles |
+| Active as of 2026-03-18 | *Computable Name*:AdjunctiveTherapyRoles |
 
  
 Codes representing roles for adjunctive therapy in oncology. 
 
  **References** 
 
+* [Medication Administration Adjunctive Role](StructureDefinition-onconova-ext-medication-administration-adjunctive-role.md)
 * [Medication Administration Adjunctive Role](StructureDefinition-onconova-ext-medication-administration-adjunctive-role.md)
 
 ### Logical Definition (CLD)
@@ -50,7 +51,7 @@ Codes representing roles for adjunctive therapy in oncology.
   "name" : "AdjunctiveTherapyRoles",
   "title" : "Adjunctive Therapy Roles Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

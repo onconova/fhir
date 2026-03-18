@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-surgical-procedures | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:SurgicalProcedures |
+| Active as of 2026-03-18 | *Computable Name*:SurgicalProcedures |
 
  
 Set of surgical procedures relevant to cancer treatment in Onconova. 
 
  **References** 
 
+* [Surgical Procedure Profile](StructureDefinition-onconova-surgical-procedure.md)
 * [Surgical Procedure Profile](StructureDefinition-onconova-surgical-procedure.md)
 
 ### Logical Definition (CLD)
@@ -50,7 +51,7 @@ Set of surgical procedures relevant to cancer treatment in Onconova.
   "name" : "SurgicalProcedures",
   "title" : "Surgical Procedures Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

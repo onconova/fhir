@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-serum-tumor-marker-level-categories | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:TNMSerumTumorMarkerLevelCategories |
+| Active as of 2026-03-18 | *Computable Name*:TNMSerumTumorMarkerLevelCategories |
 
  
 TNM Serum Tumor Marker Level Categories Value Set 
 
  **References** 
 
+* [TNM Serum Tumor Marker Level Category Profile](StructureDefinition-onconova-tnm-serum-tumor-marker-level-category.md)
 * [TNM Serum Tumor Marker Level Category Profile](StructureDefinition-onconova-tnm-serum-tumor-marker-level-category.md)
 
 ### Logical Definition (CLD)
@@ -50,7 +51,7 @@ TNM Serum Tumor Marker Level Categories Value Set
   "name" : "TNMSerumTumorMarkerLevelCategories",
   "title" : "TNM Serum Tumor Marker Level Categories Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

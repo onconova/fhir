@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-vital-status | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:VitalStatus |
+| Active as of 2026-03-18 | *Computable Name*:VitalStatus |
 
  
 The vital status of a patient 
 
  **References** 
 
+* [Cancer Patient Vital status](StructureDefinition-onconova-ext-cancer-patient-vital-status.md)
 * [Cancer Patient Vital status](StructureDefinition-onconova-ext-cancer-patient-vital-status.md)
 
 ### Logical Definition (CLD)
@@ -50,7 +51,7 @@ The vital status of a patient
   "name" : "VitalStatus",
   "title" : "Vital Status Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-treatment-intents | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:TreatmentIntents |
+| Active as of 2026-03-18 | *Computable Name*:TreatmentIntents |
 
  
 A set of intents for giving a treatment to a cancer patient 
@@ -17,8 +17,12 @@ A set of intents for giving a treatment to a cancer patient
  **References** 
 
 * [Therapy Line Intent](StructureDefinition-onconova-ext-therapy-line-intent.md)
+* [Therapy Line Intent](StructureDefinition-onconova-ext-therapy-line-intent.md)
+* [Medication Administration Profile](StructureDefinition-onconova-medication-administration.md)
 * [Medication Administration Profile](StructureDefinition-onconova-medication-administration.md)
 * [Radiotherapy Summary Profile](StructureDefinition-onconova-radiotherapy-summary.md)
+* [Radiotherapy Summary Profile](StructureDefinition-onconova-radiotherapy-summary.md)
+* [Surgical Procedure Profile](StructureDefinition-onconova-surgical-procedure.md)
 * [Surgical Procedure Profile](StructureDefinition-onconova-surgical-procedure.md)
 
 ### Logical Definition (CLD)
@@ -53,7 +57,7 @@ A set of intents for giving a treatment to a cancer patient
   "name" : "TreatmentIntents",
   "title" : "Treatment Intents Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-intent | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:TherapyLineIntent |
+| Active as of 2026-03-18 | *Computable Name*:TherapyLineIntent |
 
 The intent of the therapy line, such as curative or palliative.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-therapy
   "name" : "TherapyLineIntent",
   "title" : "Therapy Line Intent",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

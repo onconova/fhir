@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:AdverseEventMitigation |
+| Active as of 2026-03-18 | *Computable Name*:AdverseEventMitigation |
 
 Details about an action taken to mitigate or manage the adverse event.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
   "name" : "AdverseEventMitigation",
   "title" : "Adverse Event Mitigation",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -83,21 +83,21 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
         "key" : "drug-mitigation",
         "severity" : "error",
         "human" : "If the mitigation category is 'Drug', then only mitigation drug must be specified.",
-        "expression" : "extension('category').valueCodeableConcept.coding.code = 'C49158' implies (extension('drug').exists() and not extension('procedure').exists() and not extension('adjustment').exists())",
+        "expression" : "extension('category').valueCodeableConcept.coding.code = 'C49158' implies (extension('drug').exists() and extension('procedure').exists().not() and extension('adjustment').exists().not())",
         "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation"
       },
       {
         "key" : "adjustment-mitigation",
         "severity" : "error",
         "human" : "If the mitigation category is 'Adjustment', then only mitigation adjustment must be specified.",
-        "expression" : "extension('category').valueCodeableConcept.coding.code = 'C49157' implies (extension('adjustment').exists() and not extension('procedure').exists() and not extension('drug').exists())",
+        "expression" : "extension('category').valueCodeableConcept.coding.code = 'C49157' implies (extension('adjustment').exists() and extension('procedure').exists().not() and extension('drug').exists().not())",
         "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation"
       },
       {
         "key" : "procedural-mitigation",
         "severity" : "error",
         "human" : "If the mitigation category is 'Procedure', then only mitigation procedure must be specified.",
-        "expression" : "extension('category').valueCodeableConcept.coding.code = 'C49159' implies (extension('procedure').exists() and not extension('adjustment').exists() and not extension('drug').exists())",
+        "expression" : "extension('category').valueCodeableConcept.coding.code = 'C49159' implies (extension('procedure').exists() and extension('adjustment').exists().not() and extension('drug').exists().not())",
         "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation"
       }]
     },

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-radiotherapy-summary | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:OnconovaRadiotherapyCourseSummary |
+| Active as of 2026-03-18 | *Computable Name*:OnconovaRadiotherapyCourseSummary |
 
  
 A profile representing a summary of a course of radiotherapy delivered to a patient. It records the treatment intent, termination reason, modalities, techniques, number of sessions, and doses delivered to one or more body volumes. Whether the course has been fully delivered or stopped is indicated in the status element. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-radiotherap
   "name" : "OnconovaRadiotherapyCourseSummary",
   "title" : "Radiotherapy Summary Profile",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

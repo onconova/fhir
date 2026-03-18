@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-distant-metastasis-categories | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:TNMDistantMetastasisCategories |
+| Active as of 2026-03-18 | *Computable Name*:TNMDistantMetastasisCategories |
 
  
 TNM Distant Metastasis Categories Value Set 
 
  **References** 
 
+* [TNM Distant Metastases Category Profile](StructureDefinition-onconova-tnm-distant-metastases-category.md)
 * [TNM Distant Metastases Category Profile](StructureDefinition-onconova-tnm-distant-metastases-category.md)
 
 ### Logical Definition (CLD)
@@ -50,7 +51,7 @@ TNM Distant Metastasis Categories Value Set
   "name" : "TNMDistantMetastasisCategories",
   "title" : "TNM Distant Metastasis Categories Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-clinical-relevances | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:ClinicalRelevances |
+| Active as of 2026-03-18 | *Computable Name*:ClinicalRelevances |
 
  
 Categorizations of the clinical relevance of a genomic variant 
 
  **References** 
 
+* [Genomic Variant Profile](StructureDefinition-onconova-genomic-variant.md)
 * [Genomic Variant Profile](StructureDefinition-onconova-genomic-variant.md)
 
 ### Logical Definition (CLD)
@@ -52,7 +53,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "ClinicalRelevances",
   "title" : "Clinical Relevance Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

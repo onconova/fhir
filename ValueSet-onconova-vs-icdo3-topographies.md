@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topographies | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:ICDO3Topographies |
+| Active as of 2026-03-18 | *Computable Name*:ICDO3Topographies |
 
  
 The subset of ICD-O-3 concepts dedicated for describing morphology topographies. 
@@ -17,7 +17,10 @@ The subset of ICD-O-3 concepts dedicated for describing morphology topographies.
  **References** 
 
 * [Family Member History Cancer Topography](StructureDefinition-onconova-ext-family-history-member-cancer-topography.md)
+* [Family Member History Cancer Topography](StructureDefinition-onconova-ext-family-history-member-cancer-topography.md)
 * [Primary Cancer Condition Profile](StructureDefinition-onconova-primary-cancer-condition.md)
+* [Primary Cancer Condition Profile](StructureDefinition-onconova-primary-cancer-condition.md)
+* [Secondary Cancer Condition Profile](StructureDefinition-onconova-secondary-cancer-condition.md)
 * [Secondary Cancer Condition Profile](StructureDefinition-onconova-secondary-cancer-condition.md)
 
 ### Logical Definition (CLD)
@@ -52,7 +55,7 @@ The subset of ICD-O-3 concepts dedicated for describing morphology topographies.
   "name" : "ICDO3Topographies",
   "title" : "ICD-O-3 Topographies Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-values | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:CancerRiskAssessmentValues |
+| Active as of 2026-03-18 | *Computable Name*:CancerRiskAssessmentValues |
 
  
 A non-exhaustive value set containing codes that result from risk assessments, i.e., the risk level of the cancer. 
 
  **References** 
 
+* [Cancer Risk Assessment Profile](StructureDefinition-onconova-cancer-risk-assessment.md)
 * [Cancer Risk Assessment Profile](StructureDefinition-onconova-cancer-risk-assessment.md)
 
 ### Logical Definition (CLD)
@@ -50,7 +51,7 @@ A non-exhaustive value set containing codes that result from risk assessments, i
   "name" : "CancerRiskAssessmentValues",
   "title" : "Risk Assessment Values Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

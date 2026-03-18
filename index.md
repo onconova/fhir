@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:Onconova |
+| Active as of 2026-03-18 | *Computable Name*:Onconova |
 
 ### Introduction
 
@@ -74,9 +74,9 @@ This publication includes IP covered under the following statements.
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [Observation Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html): [OnconovaAneuploidScore](StructureDefinition-onconova-aneuploid-score.md), [OnconovaCancerRiskAssessment](StructureDefinition-onconova-cancer-risk-assessment.md)... Show 8 more, [OnconovaGenomicVariant](StructureDefinition-onconova-genomic-variant.md), [OnconovaHomologousRecombinationDeficiency](StructureDefinition-onconova-homologous-recombination-deficiency.md), [OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md), [OnconovaLossOfHeterozygosity](StructureDefinition-onconova-loss-of-heterozygosity.md), [OnconovaMicrosatelliteInstability](StructureDefinition-onconova-microsatellite-instability.md), [OnconovaTumorMarker](StructureDefinition-onconova-tumor-marker.md), [OnconovaTumorMutationalBurden](StructureDefinition-onconova-tumor-mutational-burden.md) and [OnconovaTumorNeoantigenBurden](StructureDefinition-onconova-tumor-neoantigen-burden.md)
-* [identifierType](http://terminology.hl7.org/7.0.1/CodeSystem-v2-0203.html): [OnconovaCancerPatient](StructureDefinition-onconova-cancer-patient.md)
-* [ObservationInterpretation](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ObservationInterpretation.html): [TumorMutationalBurdenStatus](StructureDefinition-onconova-ext-tumor-mutational-burden-status.md) and [TumorMutationalBurdenStatusInterpretations](ValueSet-onconova-vs-tumor-mutational-burden-status-interpretations.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.1.0/CodeSystem-observation-category.html): [OnconovaAneuploidScore](StructureDefinition-onconova-aneuploid-score.md), [OnconovaCancerRiskAssessment](StructureDefinition-onconova-cancer-risk-assessment.md)... Show 8 more, [OnconovaGenomicVariant](StructureDefinition-onconova-genomic-variant.md), [OnconovaHomologousRecombinationDeficiency](StructureDefinition-onconova-homologous-recombination-deficiency.md), [OnconovaImagingDiseaseStatus](StructureDefinition-onconova-imaging-disease-status.md), [OnconovaLossOfHeterozygosity](StructureDefinition-onconova-loss-of-heterozygosity.md), [OnconovaMicrosatelliteInstability](StructureDefinition-onconova-microsatellite-instability.md), [OnconovaTumorMarker](StructureDefinition-onconova-tumor-marker.md), [OnconovaTumorMutationalBurden](StructureDefinition-onconova-tumor-mutational-burden.md) and [OnconovaTumorNeoantigenBurden](StructureDefinition-onconova-tumor-neoantigen-burden.md)
+* [identifierType](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0203.html): [OnconovaCancerPatient](StructureDefinition-onconova-cancer-patient.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ObservationInterpretation.html): [TumorMutationalBurdenStatus](StructureDefinition-onconova-ext-tumor-mutational-burden-status.md) and [TumorMutationalBurdenStatusInterpretations](ValueSet-onconova-vs-tumor-mutational-burden-status-interpretations.md)
 
 
 ### Dependency Table
@@ -107,7 +107,7 @@ This publication includes IP covered under the following statements.
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -128,7 +128,7 @@ This publication includes IP covered under the following statements.
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.0.1"
+    "version" : "7.1.0"
   },
   {
     "id" : "hl7ext",
@@ -513,7 +513,7 @@ This publication includes IP covered under the following statements.
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.0"
     },
     {
       "extension" : [{

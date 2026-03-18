@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-adverse-event | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:OnconovaAdverseEvent |
+| Active as of 2026-03-18 | *Computable Name*:OnconovaAdverseEvent |
 
  
 A profile representing an adverse event experienced by a cancer patient as a result of an antineoplastic treatment, structured according to the Common Terminology Criteria for Adverse Events (CTCAE). This resource is used to capture and standardize the documentation of adverse events occurring during cancer care, including the type of event, its CTCAE grade, and any mitigation actions taken. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-adverse-eve
   "name" : "OnconovaAdverseEvent",
   "title" : "Adverse Event Profile",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

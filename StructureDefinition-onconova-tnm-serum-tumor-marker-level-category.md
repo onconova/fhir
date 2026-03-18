@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-serum-tumor-marker-level-category | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:OnconovaTNMSerumTumorMarkerLevelCategory |
+| Active as of 2026-03-18 | *Computable Name*:OnconovaTNMSerumTumorMarkerLevelCategory |
 
  
 A profile representing the TNM serum tumor marker level category for a cancer patient. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-serum-t
   "name" : "OnconovaTNMSerumTumorMarkerLevelCategory",
   "title" : "TNM Serum Tumor Marker Level Category Profile",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

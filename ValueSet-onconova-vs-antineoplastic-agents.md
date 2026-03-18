@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-antineoplastic-agents | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:AntineoplasticAgents |
+| Active as of 2026-03-18 | *Computable Name*:AntineoplasticAgents |
 
  
 Drugs and biological agents used in the treatment of neoplastic diseases. 
@@ -17,6 +17,8 @@ Drugs and biological agents used in the treatment of neoplastic diseases.
  **References** 
 
 * [Molecular Tumor Board Therapeutic Recommendation](StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.md)
+* [Molecular Tumor Board Therapeutic Recommendation](StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.md)
+* [Medication Administration Profile](StructureDefinition-onconova-medication-administration.md)
 * [Medication Administration Profile](StructureDefinition-onconova-medication-administration.md)
 
 ### Logical Definition (CLD)
@@ -25,7 +27,7 @@ Drugs and biological agents used in the treatment of neoplastic diseases.
 
 ### Expansion
 
-No Expansion for this valueset (not supported by Publication Tooling)
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -53,7 +55,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "AntineoplasticAgents",
   "title" : "Antineoplastic Agents Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

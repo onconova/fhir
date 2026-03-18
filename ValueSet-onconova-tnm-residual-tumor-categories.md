@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-tnm-residual-tumor-categories | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:TNMResidualTumorCategories |
+| Active as of 2026-03-18 | *Computable Name*:TNMResidualTumorCategories |
 
  
 TNM Residual Tumor Categories Value Set 
 
  **References** 
 
+* [TNM Residual Tumor Category Profile](StructureDefinition-onconova-tnm-residual-tumor-category.md)
 * [TNM Residual Tumor Category Profile](StructureDefinition-onconova-tnm-residual-tumor-category.md)
 
 ### Logical Definition (CLD)
@@ -50,7 +51,7 @@ TNM Residual Tumor Categories Value Set
   "name" : "TNMResidualTumorCategories",
   "title" : "TNM Residual Tumor Categories Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-recurrence-types | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:RecurrenceTypes |
+| Active as of 2026-03-18 | *Computable Name*:RecurrenceTypes |
 
  
 A value set representing the types of cancer recurrence, specifically local and regional recurrences. 
 
  **References** 
 
+* [Primary Cancer Recurrence Type](StructureDefinition-onconova-ext-primary-cancer-recurrence-type.md)
 * [Primary Cancer Recurrence Type](StructureDefinition-onconova-ext-primary-cancer-recurrence-type.md)
 
 ### Logical Definition (CLD)
@@ -50,7 +51,7 @@ A value set representing the types of cancer recurrence, specifically local and 
   "name" : "RecurrenceTypes",
   "title" : "Recurrence Types Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

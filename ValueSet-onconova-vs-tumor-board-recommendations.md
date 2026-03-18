@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-board-recommendations | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:OnconovaTumorBoardRecommendations |
+| Active as of 2026-03-18 | *Computable Name*:OnconovaTumorBoardRecommendations |
 
  
 Recommendations that may be made by a tumor board for a cancer patient. 
 
  **References** 
 
+* [Tumor Board Review Profile](StructureDefinition-onconova-tumor-board-review.md)
 * [Tumor Board Review Profile](StructureDefinition-onconova-tumor-board-review.md)
 
 ### Logical Definition (CLD)
@@ -50,7 +51,7 @@ Recommendations that may be made by a tumor board for a cancer patient.
   "name" : "OnconovaTumorBoardRecommendations",
   "title" : "Tumor Board Recommendations Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

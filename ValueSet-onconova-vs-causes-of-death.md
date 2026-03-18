@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-causes-of-death | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:CausesOfDeath |
+| Active as of 2026-03-18 | *Computable Name*:CausesOfDeath |
 
  
 The causes of death that are relevant for a cancer patient. 
 
  **References** 
 
+* [Cancer Patient Cause of Death](StructureDefinition-onconova-ext-cancer-patient-cause-of-death.md)
 * [Cancer Patient Cause of Death](StructureDefinition-onconova-ext-cancer-patient-cause-of-death.md)
 
 ### Logical Definition (CLD)
@@ -50,7 +51,7 @@ The causes of death that are relevant for a cancer patient.
   "name" : "CausesOfDeath",
   "title" : "Cause of Death Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

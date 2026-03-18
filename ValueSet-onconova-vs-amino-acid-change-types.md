@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-amino-acid-change-types | *Version*:0.2.0 |
-| Active as of 2026-02-25 | *Computable Name*:AminoAcidChangeTypes |
+| Active as of 2026-03-18 | *Computable Name*:AminoAcidChangeTypes |
 
  
 Amino acid change types due to a genomic variant. It constraints and expands the original [LOINC Answer List LL380-7](https://loinc.org/LL380-7/) to enforce Onconova-compatible codes 
 
  **References** 
 
+* [Genomic Variant Profile](StructureDefinition-onconova-genomic-variant.md)
 * [Genomic Variant Profile](StructureDefinition-onconova-genomic-variant.md)
 
 ### Logical Definition (CLD)
@@ -24,7 +25,7 @@ Amino acid change types due to a genomic variant. It constraints and expands the
 
 ### Expansion
 
-No Expansion for this valueset (not supported by Publication Tooling)
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -52,7 +53,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "AminoAcidChangeTypes",
   "title" : "Amino Acid Change Type Value Set",
   "status" : "active",
-  "date" : "2026-02-25T15:12:31+00:00",
+  "date" : "2026-03-18T14:24:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
