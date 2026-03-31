@@ -2,8 +2,8 @@ Onconova : Validation Results
 =========================================
 
 err = 117, warn = 238, info = 700
-IG Publisher Version: 2.2.0
-Generated Wed Mar 18 14:30:11 UTC 2026. FHIR version 4.0.1 for onconova.fhir#0.2.0 (canonical = http://onconova.github.io/fhir)
+IG Publisher Version: 2.2.4
+Generated Tue Mar 31 06:30:14 UTC 2026. FHIR version 4.0.1 for onconova.fhir#0.2.0 (canonical = http://onconova.github.io/fhir)
  Build Errors : 1 / 2 / 0
  /home/runner/work/fhir/fhir/fsh-generated/resources/ActorDefinition-onconova-consumer : 0 / 0 / 1
  /home/runner/work/fhir/fhir/fsh-generated/resources/ActorDefinition-onconova-creator : 0 / 0 / 1
@@ -137,7 +137,7 @@ Generated Wed Mar 18 14:30:11 UTC 2026. FHIR version 4.0.1 for onconova.fhir#0.2
  /home/runner/work/fhir/fhir/fsh-generated/resources/ValueSet-onconova-vs-vital-status : 0 / 1 / 1
 </table>
 == n/a ==
-ERROR: CapabilityStatement-onconova-capability-statement.html#/html/body/div/div/div/div/div/div/div/div/div/div/div/div/a at Line 252, column 17057: The link 'http://hl7.org/fhir/R4/familyhistory.html' for "FamilyHistory" cannot be resolved
+ERROR: CapabilityStatement-onconova-capability-statement.html#/html/body/div/div/div/div/div/div/div/div/div/div/div/div/a at Line 252, column 17071: The link 'http://hl7.org/fhir/R4/familyhistory.html' for "FamilyHistory" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ActorDefinition-onconova-consumer.json ==
@@ -1127,7 +1127,7 @@ WARNING: ValueSet/onconova-vs-adverse-event-mitigation-procedures: ValueSet: Pub
 WARNING: ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-onconova-vs-amino-acid-change-types.json ==
 WARNING: ValueSet/onconova-vs-amino-acid-change-types: ValueSet.compose.include[1].system: No definition could be found for URL value 'http://sequenceontology.org'
-INFORMATION: ValueSet/onconova-vs-amino-acid-change-types: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+INFORMATION: ValueSet/onconova-vs-amino-acid-change-types: ValueSet.compose.include[1]: The concepts in the value set include have not been validated because the code system 'http://sequenceontology.org' is not known, and no terminology service supports it
 WARNING: ValueSet/onconova-vs-amino-acid-change-types: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet.where(id = 'onconova-vs-amino-acid-change-types'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'http://sequenceontology.org' could not be found, so the value set cannot be expanded
 == fsh-generated/resources/ValueSet-onconova-vs-antineoplastic-agents.json ==
@@ -1158,7 +1158,7 @@ WARNING: ValueSet/onconova-vs-ctc-adverse-events: ValueSet: Published value sets
 WARNING: ValueSet.where(id = 'onconova-vs-ctc-adverse-events'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/MDRAE' could not be found, so the value set cannot be expanded
 == fsh-generated/resources/ValueSet-onconova-vs-dna-change-types.json ==
 WARNING: ValueSet/onconova-vs-dna-change-types: ValueSet.compose.include[0].system: No definition could be found for URL value 'http://sequenceontology.org'
-INFORMATION: ValueSet/onconova-vs-dna-change-types: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
+INFORMATION: ValueSet/onconova-vs-dna-change-types: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system 'http://sequenceontology.org' is not known, and no terminology service supports it
 WARNING: ValueSet/onconova-vs-dna-change-types: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet.where(id = 'onconova-vs-dna-change-types'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'http://sequenceontology.org' could not be found, so the value set cannot be expanded
 == fsh-generated/resources/ValueSet-onconova-vs-expected-drug-effects.json ==

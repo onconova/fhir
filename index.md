@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir | *Version*:0.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:Onconova |
+| Active as of 2026-03-31 | *Computable Name*:Onconova |
 
 ### Introduction
 
@@ -107,7 +107,7 @@ This publication includes IP covered under the following statements.
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2026-03-18T14:24:59+00:00",
+  "date" : "2026-03-31T06:24:20+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -513,7 +513,7 @@ This publication includes IP covered under the following statements.
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
     {
       "extension" : [{

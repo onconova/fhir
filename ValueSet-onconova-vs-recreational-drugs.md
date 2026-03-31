@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-recreational-drugs | *Version*:0.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:RecreationalDrugs |
+| Active as of 2026-03-31 | *Computable Name*:RecreationalDrugs |
 
  
 Substances that people use to alter their mental state, often for pleasure or leisure, with effects ranging from relaxation and euphoria to hallucinations and altered perceptions. 
 
  **References** 
 
-* [Lifestyle Profile](StructureDefinition-onconova-lifestyle.md)
 * [Lifestyle Profile](StructureDefinition-onconova-lifestyle.md)
 
 ### Logical Definition (CLD)
@@ -51,7 +50,7 @@ Substances that people use to alter their mental state, often for pleasure or le
   "name" : "RecreationalDrugs",
   "title" : "Recreational Drugs Value Set",
   "status" : "active",
-  "date" : "2026-03-18T14:24:59+00:00",
+  "date" : "2026-03-31T06:24:20+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions | *Version*:0.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:ICD10Conditions |
+| Active as of 2026-03-31 | *Computable Name*:ICD10Conditions |
 
  
 All possible ICD-10 codes for conditions. 
 
  **References** 
 
-* [Comorbidities Profile](StructureDefinition-onconova-comorbidities.md)
 * [Comorbidities Profile](StructureDefinition-onconova-comorbidities.md)
 
 ### Logical Definition (CLD)
@@ -51,7 +50,7 @@ All possible ICD-10 codes for conditions.
   "name" : "ICD10Conditions",
   "title" : "ICD-10 Codes Value Set",
   "status" : "active",
-  "date" : "2026-03-18T14:24:59+00:00",
+  "date" : "2026-03-31T06:24:20+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

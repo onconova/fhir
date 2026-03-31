@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-age-at-diagnosis | *Version*:0.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:CancerPatientAgeAtDiagnosis |
+| Active as of 2026-03-31 | *Computable Name*:CancerPatientAgeAtDiagnosis |
 
 The approximate age of the patient at the time of diagnosis of the disease.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-cancer-
   "name" : "CancerPatientAgeAtDiagnosis",
   "title" : "Cancer Patient Age at Diagnosis",
   "status" : "active",
-  "date" : "2026-03-18T14:24:59+00:00",
+  "date" : "2026-03-31T06:24:20+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

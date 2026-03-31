@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-marker-analytes | *Version*:0.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:TumorMarkerAnalytes |
+| Active as of 2026-03-31 | *Computable Name*:TumorMarkerAnalytes |
 
  
 Analytes considered tumor markers. 
 
  **References** 
 
-* [Tumor Marker Analyte](StructureDefinition-onconova-ext-tumor-marker-analyte.md)
 * [Tumor Marker Analyte](StructureDefinition-onconova-ext-tumor-marker-analyte.md)
 
 ### Logical Definition (CLD)
@@ -51,7 +50,7 @@ Analytes considered tumor markers.
   "name" : "TumorMarkerAnalytes",
   "title" : "Tumor Marker Analytes Value Set",
   "status" : "active",
-  "date" : "2026-03-18T14:24:59+00:00",
+  "date" : "2026-03-31T06:24:20+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

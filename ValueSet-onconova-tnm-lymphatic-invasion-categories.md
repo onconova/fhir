@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-tnm-lymphatic-invasion-categories | *Version*:0.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:TNMLymphaticInvasionCategories |
+| Active as of 2026-03-31 | *Computable Name*:TNMLymphaticInvasionCategories |
 
  
 TNM Lymphatic Invasion Categories Value Set 
 
  **References** 
 
-* [TNM Lymphatic Invasion Category Profile](StructureDefinition-onconova-tnm-lymphatic-invasion-category.md)
 * [TNM Lymphatic Invasion Category Profile](StructureDefinition-onconova-tnm-lymphatic-invasion-category.md)
 
 ### Logical Definition (CLD)
@@ -51,7 +50,7 @@ TNM Lymphatic Invasion Categories Value Set
   "name" : "TNMLymphaticInvasionCategories",
   "title" : "TNM Lymphatic Invasion Categories Value Set",
   "status" : "active",
-  "date" : "2026-03-18T14:24:59+00:00",
+  "date" : "2026-03-31T06:24:20+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

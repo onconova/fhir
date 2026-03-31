@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-methods | *Version*:0.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:CancerRiskAssessmentMethods |
+| Active as of 2026-03-31 | *Computable Name*:CancerRiskAssessmentMethods |
 
  
 A value set containing codes for various cancer risk assessment methods. 
 
  **References** 
 
-* [Cancer Risk Assessment Profile](StructureDefinition-onconova-cancer-risk-assessment.md)
 * [Cancer Risk Assessment Profile](StructureDefinition-onconova-cancer-risk-assessment.md)
 
 ### Logical Definition (CLD)
@@ -51,7 +50,7 @@ A value set containing codes for various cancer risk assessment methods.
   "name" : "CancerRiskAssessmentMethods",
   "title" : "Cancer Risk Assessment Methods Value Set",
   "status" : "active",
-  "date" : "2026-03-18T14:24:59+00:00",
+  "date" : "2026-03-31T06:24:20+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

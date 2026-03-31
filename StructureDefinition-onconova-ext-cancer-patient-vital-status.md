@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-vital-status | *Version*:0.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:CancerPatientVitalStatus |
+| Active as of 2026-03-31 | *Computable Name*:CancerPatientVitalStatus |
 
 The status of whether the patient is alive or deceased or unknown.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-cancer-
   "name" : "CancerPatientVitalStatus",
   "title" : "Cancer Patient Vital status",
   "status" : "active",
-  "date" : "2026-03-18T14:24:59+00:00",
+  "date" : "2026-03-31T06:24:20+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

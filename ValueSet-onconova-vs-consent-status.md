@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-consent-status | *Version*:0.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:ConsentStatus |
+| Active as of 2026-03-31 | *Computable Name*:ConsentStatus |
 
  
 The consent status of a patient for further use of data in research. 
 
  **References** 
 
-* [Cancer Patient Consent status](StructureDefinition-onconova-ext-cancer-patient-consent-status.md)
 * [Cancer Patient Consent status](StructureDefinition-onconova-ext-cancer-patient-consent-status.md)
 
 ### Logical Definition (CLD)
@@ -51,7 +50,7 @@ The consent status of a patient for further use of data in research.
   "name" : "ConsentStatus",
   "title" : "Consent Status Value Set",
   "status" : "active",
-  "date" : "2026-03-18T14:24:59+00:00",
+  "date" : "2026-03-31T06:24:20+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

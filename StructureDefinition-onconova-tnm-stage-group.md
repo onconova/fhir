@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-stage-group | *Version*:0.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:OnconovaTNMStageGroup |
+| Active as of 2026-03-31 | *Computable Name*:OnconovaTNMStageGroup |
 
  
 A profile representing the TNM stage group for a cancer patient. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-stage-g
   "name" : "OnconovaTNMStageGroup",
   "title" : "TNM Stage Group",
   "status" : "active",
-  "date" : "2026-03-18T14:24:59+00:00",
+  "date" : "2026-03-31T06:24:20+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

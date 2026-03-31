@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-procedures | *Version*:0.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:AdverseEventMitigationProcedures |
+| Active as of 2026-03-31 | *Computable Name*:AdverseEventMitigationProcedures |
 
  
 Procedures undertaken to mitigate the impact of an adverse event on a patient's health. 
 
  **References** 
 
-* [Adverse Event Mitigation](StructureDefinition-onconova-ext-adverse-event-mitigation.md)
 * [Adverse Event Mitigation](StructureDefinition-onconova-ext-adverse-event-mitigation.md)
 
 ### Logical Definition (CLD)
@@ -51,7 +50,7 @@ Procedures undertaken to mitigate the impact of an adverse event on a patient's 
   "name" : "AdverseEventMitigationProcedures",
   "title" : "Adverse Event Mitigation Procedures Value Set",
   "status" : "active",
-  "date" : "2026-03-18T14:24:59+00:00",
+  "date" : "2026-03-31T06:24:20+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

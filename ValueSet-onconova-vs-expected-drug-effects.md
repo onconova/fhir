@@ -9,14 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-expected-drug-effects | *Version*:0.2.0 |
-| Active as of 2026-03-18 | *Computable Name*:ExpectedDrugEffects |
+| Active as of 2026-03-31 | *Computable Name*:ExpectedDrugEffects |
 
  
 Collection of expected effects when a drug is administered. 
 
  **References** 
 
-* [Molecular Tumor Board Therapeutic Recommendation](StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.md)
 * [Molecular Tumor Board Therapeutic Recommendation](StructureDefinition-onconova-ext-molecular-tumor-board-therapeutic-recommendation.md)
 
 ### Logical Definition (CLD)
@@ -51,7 +50,7 @@ Collection of expected effects when a drug is administered.
   "name" : "ExpectedDrugEffects",
   "title" : "Expected Drug Effects Value Set",
   "status" : "active",
-  "date" : "2026-03-18T14:24:59+00:00",
+  "date" : "2026-03-31T06:24:20+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
