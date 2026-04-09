@@ -1,4 +1,4 @@
-# Family Member History Condition Contributed to Death - Onconova Implementation Guide v0.2.0
+# Family Member History Condition Contributed to Death - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-member-condition-contributed-to-death | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:FamilyMemberConditionContributedToDeath |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-member-condition-contributed-to-death | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:FamilyMemberConditionContributedToDeath |
 
 Whether the condition contributed to the patient's family member's death
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-family-
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-family-member-condition-contributed-to-death",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-member-condition-contributed-to-death",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "FamilyMemberConditionContributedToDeath",
   "title" : "Family Member History Condition Contributed to Death",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

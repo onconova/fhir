@@ -1,4 +1,4 @@
-# Therapy Line Reference - Onconova Implementation Guide v0.2.0
+# Therapy Line Reference - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:TherapyLineReference |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:TherapyLineReference |
 
 A reference to the therapy line associated with this treatment.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-therapy
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-therapy-line-reference",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-reference",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "TherapyLineReference",
   "title" : "Therapy Line Reference",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

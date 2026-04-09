@@ -1,4 +1,4 @@
-# Tumor Board Specialization - Onconova Implementation Guide v0.2.0
+# Tumor Board Specialization - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-board-specialization | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:TumorBoardSpecialization |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-board-specialization | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:TumorBoardSpecialization |
 
 The specialization or focus area of the tumor board conducting the review, such as hematologic malignancies or solid tumors.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-tumor-b
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-tumor-board-specialization",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-board-specialization",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "TumorBoardSpecialization",
   "title" : "Tumor Board Specialization",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

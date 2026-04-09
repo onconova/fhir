@@ -1,4 +1,4 @@
-# Onconova FHIR REST Server Capability Statement - Onconova Implementation Guide v0.2.0
+# Onconova FHIR REST Server Capability Statement - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/CapabilityStatement/onconova-capability-statement | *Version*:0.2.0 |
+| *Official URL*:http://onconova.github.io/fhir/CapabilityStatement/onconova-capability-statement | *Version*:1.3.0 |
 | Draft as of 2025-09-25 | *Computable Name*:OnconovaCapabilityStatement |
 
  
@@ -25,7 +25,7 @@ Supports the retrieval of the [mCODE Patient Bundle](http://hl7.org/fhir/us/mcod
   "resourceType" : "CapabilityStatement",
   "id" : "onconova-capability-statement",
   "url" : "http://onconova.github.io/fhir/CapabilityStatement/onconova-capability-statement",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "OnconovaCapabilityStatement",
   "title" : "Onconova FHIR REST Server Capability Statement",
   "status" : "draft",

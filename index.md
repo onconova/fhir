@@ -1,4 +1,4 @@
-# Home - Onconova Implementation Guide v0.2.0
+# Home - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:Onconova |
+| *Official URL*:http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:Onconova |
 
 ### Introduction
 
@@ -103,11 +103,11 @@ This publication includes IP covered under the following statements.
   "resourceType" : "ImplementationGuide",
   "id" : "onconova.fhir",
   "url" : "http://onconova.github.io/fhir/ImplementationGuide/onconova.fhir",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "Onconova",
   "title" : "Onconova Implementation Guide",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

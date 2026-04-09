@@ -1,4 +1,4 @@
-# TNM Venous Invasion Categories Value Set - Onconova Implementation Guide v0.2.0
+# TNM Venous Invasion Categories Value Set - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-venous-invasion-categories | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:TNMVenousInvasionCategories |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-venous-invasion-categories | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:TNMVenousInvasionCategories |
 
  
 TNM Venous Invasion Categories Value Set 
@@ -46,11 +46,11 @@ TNM Venous Invasion Categories Value Set
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-tnm-venous-invasion-categories",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-venous-invasion-categories",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "TNMVenousInvasionCategories",
   "title" : "TNM Venous Invasion Categories Value Set",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

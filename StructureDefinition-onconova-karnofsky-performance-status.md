@@ -1,4 +1,4 @@
-# Karnofsky Performance Status Profile - Onconova Implementation Guide v0.2.0
+# Karnofsky Performance Status Profile - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-karnofsky-performance-status | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:OnconovaKarnofskyPerformanceStatus |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-karnofsky-performance-status | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:OnconovaKarnofskyPerformanceStatus |
 
  
 A profile representing the Karnofsky performance status score for a cancer patient. 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-karnofsky-p
   "resourceType" : "StructureDefinition",
   "id" : "onconova-karnofsky-performance-status",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-karnofsky-performance-status",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "OnconovaKarnofskyPerformanceStatus",
   "title" : "Karnofsky Performance Status Profile",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

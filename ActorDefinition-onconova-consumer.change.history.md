@@ -1,4 +1,4 @@
-#  - Onconova Implementation Guide v0.2.0
+#  - Onconova Implementation Guide v1.3.0
 
 ## : ActorDefinition/onconova-consumer - Change History
 

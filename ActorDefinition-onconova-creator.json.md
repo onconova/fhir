@@ -1,4 +1,4 @@
-# Creator (Onconova) - JSON Representation - Onconova Implementation Guide v0.2.0
+# Creator (Onconova) - JSON Representation - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | |
 | :--- |
-| Active as of 2026-03-31 |
+| Active as of 2026-04-09 |
 
 [Raw json](ActorDefinition-onconova-creator.json) | [Download](ActorDefinition-onconova-creator.json)
 

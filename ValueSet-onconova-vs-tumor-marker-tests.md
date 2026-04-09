@@ -1,4 +1,4 @@
-# Tumor Marker Tests - Onconova Implementation Guide v0.2.0
+# Tumor Marker Tests - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-marker-tests | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:TumorMarkerTests |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-marker-tests | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:TumorMarkerTests |
 
  
 ValueSet containing LOINC and NCI Thesaurus codes for tumor marker laboratory tests and measurements 
@@ -46,11 +46,11 @@ ValueSet containing LOINC and NCI Thesaurus codes for tumor marker laboratory te
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-tumor-marker-tests",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tumor-marker-tests",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "TumorMarkerTests",
   "title" : "Tumor Marker Tests",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

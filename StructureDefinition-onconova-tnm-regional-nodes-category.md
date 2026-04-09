@@ -1,4 +1,4 @@
-# TNM Regional Nodes Category Profile - Onconova Implementation Guide v0.2.0
+# TNM Regional Nodes Category Profile - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-regional-nodes-category | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:OnconovaTNMRegionalNodesCategory |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-regional-nodes-category | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:OnconovaTNMRegionalNodesCategory |
 
  
 A profile representing the TNM regional nodes category for a cancer patient. 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tnm-regiona
   "resourceType" : "StructureDefinition",
   "id" : "onconova-tnm-regional-nodes-category",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tnm-regional-nodes-category",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "OnconovaTNMRegionalNodesCategory",
   "title" : "TNM Regional Nodes Category Profile",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

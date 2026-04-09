@@ -1,4 +1,4 @@
-# Risk Assessment Values Value Set - Onconova Implementation Guide v0.2.0
+# Risk Assessment Values Value Set - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-values | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:CancerRiskAssessmentValues |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-values | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:CancerRiskAssessmentValues |
 
  
 A non-exhaustive value set containing codes that result from risk assessments, i.e., the risk level of the cancer. 
@@ -46,11 +46,11 @@ A non-exhaustive value set containing codes that result from risk assessments, i
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-cancer-risk-assessment-values",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-values",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "CancerRiskAssessmentValues",
   "title" : "Risk Assessment Values Value Set",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

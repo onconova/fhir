@@ -1,4 +1,4 @@
-# Cancer Risk Assessment Profile - Onconova Implementation Guide v0.2.0
+# Cancer Risk Assessment Profile - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:OnconovaCancerRiskAssessment |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:OnconovaCancerRiskAssessment |
 
  
 A profile representing a risk assessment performed for a cancer patient, including the method used, the resulting risk level, and an optional numerical score. 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-cancer-risk
   "resourceType" : "StructureDefinition",
   "id" : "onconova-cancer-risk-assessment",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-cancer-risk-assessment",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "OnconovaCancerRiskAssessment",
   "title" : "Cancer Risk Assessment Profile",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

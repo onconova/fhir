@@ -1,4 +1,4 @@
-# Tumor Mutational Burden Status - Onconova Implementation Guide v0.2.0
+# Tumor Mutational Burden Status - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-mutational-burden-status | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:TumorMutationalBurdenStatus |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-mutational-burden-status | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:TumorMutationalBurdenStatus |
 
 The categorical classification of the TMB status interpreted from its value.
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-tumor-m
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-tumor-mutational-burden-status",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-mutational-burden-status",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "TumorMutationalBurdenStatus",
   "title" : "Tumor Mutational Burden Status",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

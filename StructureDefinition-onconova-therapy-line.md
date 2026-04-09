@@ -1,4 +1,4 @@
-# Therapy Line Profile - Onconova Implementation Guide v0.2.0
+# Therapy Line Profile - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:OnconovaTherapyLine |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:OnconovaTherapyLine |
 
  
 A profile representing a line of therapy in a cancer treatment regimen, including details about the therapy line number, associated treatments, and relevant dates. It is based on a FHIR `EpisodeOfCare` to capture the specific resources involved in the therapy line. Therapy lines in Onconova are assigned automatically based on existing `Procedure` and `MedicationAdministration` resources and are not usually created manually. 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-therapy-lin
   "resourceType" : "StructureDefinition",
   "id" : "onconova-therapy-line",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-therapy-line",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "OnconovaTherapyLine",
   "title" : "Therapy Line Profile",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

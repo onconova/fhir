@@ -1,4 +1,4 @@
-# Medication Administration Profile - Onconova Implementation Guide v0.2.0
+# Medication Administration Profile - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:OnconovaMedicationAdministration |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:OnconovaMedicationAdministration |
 
  
 A profile representing a medication administered to a cancer patient during a systemic therapy (e.g., chemotherapy, immunotherapy), including details about the medication and dosage. 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-medication-
   "resourceType" : "StructureDefinition",
   "id" : "onconova-medication-administration",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-medication-administration",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "OnconovaMedicationAdministration",
   "title" : "Medication Administration Profile",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

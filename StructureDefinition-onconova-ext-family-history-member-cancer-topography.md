@@ -1,4 +1,4 @@
-# Family Member History Cancer Topography - Onconova Implementation Guide v0.2.0
+# Family Member History Cancer Topography - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-topography | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:FamilyMemberHistoryCancerTopography |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-topography | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:FamilyMemberHistoryCancerTopography |
 
 The topography of a historical cancer associated to a family member of a patient, represented by an ICD-O-3 code.
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-family-
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-family-history-member-cancer-topography",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-topography",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "FamilyMemberHistoryCancerTopography",
   "title" : "Family Member History Cancer Topography",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

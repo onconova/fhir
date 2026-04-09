@@ -1,4 +1,4 @@
-# Tumor Marker Profile - Onconova Implementation Guide v0.2.0
+# Tumor Marker Profile - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:OnconovaTumorMarker |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:OnconovaTumorMarker |
 
  
 A profile representing a tumor marker observation for a cancer patient, including the type of tumor marker and its value. 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-marke
   "resourceType" : "StructureDefinition",
   "id" : "onconova-tumor-marker",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-marker",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "OnconovaTumorMarker",
   "title" : "Tumor Marker Profile",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

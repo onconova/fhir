@@ -1,4 +1,4 @@
-# Tumor Mutational Burden Profile - Onconova Implementation Guide v0.2.0
+# Tumor Mutational Burden Profile - Onconova Implementation Guide v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-mutational-burden | *Version*:0.2.0 |
-| Active as of 2026-03-31 | *Computable Name*:OnconovaTumorMutationalBurden |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-mutational-burden | *Version*:1.3.0 |
+| Active as of 2026-04-09 | *Computable Name*:OnconovaTumorMutationalBurden |
 
  
 A profile representing tumor mutational burden for a cancer patient. 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-tumor-mutat
   "resourceType" : "StructureDefinition",
   "id" : "onconova-tumor-mutational-burden",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-tumor-mutational-burden",
-  "version" : "0.2.0",
+  "version" : "1.3.0",
   "name" : "OnconovaTumorMutationalBurden",
   "title" : "Tumor Mutational Burden Profile",
   "status" : "active",
-  "date" : "2026-03-31T06:24:20+00:00",
+  "date" : "2026-04-09T04:48:36+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
