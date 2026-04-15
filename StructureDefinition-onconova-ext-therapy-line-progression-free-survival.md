@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-therapy
   "name" : "TherapyLineProgressionFreeSurvival",
   "title" : "Therapy Line Progression-Free Survival",
   "status" : "active",
-  "date" : "2026-04-15T07:47:05+00:00",
+  "date" : "2026-04-15T19:05:31+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
