@@ -114,7 +114,7 @@ Description: "The grade of the adverse event as defined by the Common Terminolog
 
 Invariant: ctcae-grade
 Description: "The CTCAE grade must be between 1 and 5, inclusive."
-Expression: "valueInteger() >= 1 and valueInteger() <= 5"
+Expression: "valueInteger >= 1 and valueInteger <= 5"
 Severity: #error
 
 Extension: AdverseEventMitigation
