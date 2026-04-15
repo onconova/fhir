@@ -10,7 +10,7 @@
   "name" : "AdverseEventCTCGrade",
   "title" : "Adverse Event CTCAE Grade",
   "status" : "active",
-  "date" : "2026-04-09T04:48:36+00:00",
+  "date" : "2026-04-15T07:47:05+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -73,7 +73,7 @@
         "key" : "ctcae-grade",
         "severity" : "error",
         "human" : "The CTCAE grade must be between 1 and 5, inclusive.",
-        "expression" : "valueInteger() >= 1 and valueInteger() <= 5",
+        "expression" : "valueInteger >= 1 and valueInteger <= 5",
         "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade"
       }],
       "isModifier" : false
@@ -217,7 +217,7 @@
         "key" : "ctcae-grade",
         "severity" : "error",
         "human" : "The CTCAE grade must be between 1 and 5, inclusive.",
-        "expression" : "valueInteger() >= 1 and valueInteger() <= 5",
+        "expression" : "valueInteger >= 1 and valueInteger <= 5",
         "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade"
       }]
     },

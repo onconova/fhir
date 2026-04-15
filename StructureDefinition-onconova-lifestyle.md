@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-lifestyle | *Version*:1.3.0 |
-| Active as of 2026-04-09 | *Computable Name*:OnconovaLifestyle |
+| Active as of 2026-04-15 | *Computable Name*:OnconovaLifestyle |
 
  
 A profile representing a (reported) observation on certain lifestyle characteristics of a cancer patient (e.g. smoking, drinking, and sleeping habits, environmental exposures, etc.). 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lifestyle.c
   "name" : "OnconovaLifestyle",
   "title" : "Lifestyle Profile",
   "status" : "active",
-  "date" : "2026-04-09T04:48:36+00:00",
+  "date" : "2026-04-15T07:47:05+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

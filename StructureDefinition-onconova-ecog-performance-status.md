@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ecog-performance-status | *Version*:1.3.0 |
-| Active as of 2026-04-09 | *Computable Name*:OnconovaECOGPerformanceStatus |
+| Active as of 2026-04-15 | *Computable Name*:OnconovaECOGPerformanceStatus |
 
  
 A profile representing the (Eastern Cooperative Oncology Group) ECOG performance status score for a cancer patient. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ecog-perfor
   "name" : "OnconovaECOGPerformanceStatus",
   "title" : "ECOG Performance Status Profile",
   "status" : "active",
-  "date" : "2026-04-09T04:48:36+00:00",
+  "date" : "2026-04-15T07:47:05+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

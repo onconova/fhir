@@ -28,11 +28,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "onconova-adverse-event","AdverseEvent.extension:ctcGrade","AdverseEvent.extension","ctcGrade","","",1,1,"Y","","","Extension {[CanonicalType[http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade]]} {[]}
 ","CTCAE Grade","The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ctcae-grade:The CTCAE grade must be between 1 and 5, inclusive. {valueInteger() >= 1 and valueInteger() <= 5}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ctcae-grade:The CTCAE grade must be between 1 and 5, inclusive. {valueInteger >= 1 and valueInteger <= 5}"
 "onconova-adverse-event","AdverseEvent.extension:resolvedDate","AdverseEvent.extension","resolvedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-resolved-date]]} {[]}
 ","Date resolved","The date when the adverse event was resolved (if applicable).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ctcae-grade:The CTCAE grade must be between 1 and 5, inclusive. {valueInteger() >= 1 and valueInteger() <= 5}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ctcae-grade:The CTCAE grade must be between 1 and 5, inclusive. {valueInteger >= 1 and valueInteger <= 5}"
 "onconova-adverse-event","AdverseEvent.extension:mitigation","AdverseEvent.extension","mitigation","","",0,*,"Y","","","Extension {[CanonicalType[http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-mitigation]]} {[]}
 ","Adverse Event Mitigation Action(s)","Details about an action taken to mitigate or manage the adverse event.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1938,7 +1938,7 @@ The alternate way is to use the value element for actual observations and use th
 "onconova-ext-adverse-event-ctc-grade","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Adverse Event CTCAE Grade","The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE).","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ctcae-grade:The CTCAE grade must be between 1 and 5, inclusive. {valueInteger() >= 1 and valueInteger() <= 5}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ctcae-grade:The CTCAE grade must be between 1 and 5, inclusive. {valueInteger >= 1 and valueInteger <= 5}"
 "onconova-ext-adverse-event-ctc-grade","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "onconova-ext-adverse-event-ctc-grade","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -2038,7 +2038,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 "onconova-ext-adverse-event-resolved-date","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Adverse Event Resolved Date","The date when the adverse event was resolved (if applicable).","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ctcae-grade:The CTCAE grade must be between 1 and 5, inclusive. {valueInteger() >= 1 and valueInteger() <= 5}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}ctcae-grade:The CTCAE grade must be between 1 and 5, inclusive. {valueInteger >= 1 and valueInteger <= 5}"
 "onconova-ext-adverse-event-resolved-date","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "onconova-ext-adverse-event-resolved-date","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}

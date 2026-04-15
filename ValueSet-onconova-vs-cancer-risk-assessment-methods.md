@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-methods | *Version*:1.3.0 |
-| Active as of 2026-04-09 | *Computable Name*:CancerRiskAssessmentMethods |
+| Active as of 2026-04-15 | *Computable Name*:CancerRiskAssessmentMethods |
 
  
 A value set containing codes for various cancer risk assessment methods. 
@@ -50,7 +50,7 @@ A value set containing codes for various cancer risk assessment methods.
   "name" : "CancerRiskAssessmentMethods",
   "title" : "Cancer Risk Assessment Methods Value Set",
   "status" : "active",
-  "date" : "2026-04-09T04:48:36+00:00",
+  "date" : "2026-04-15T07:47:05+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

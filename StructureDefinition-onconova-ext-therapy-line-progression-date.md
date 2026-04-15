@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-therapy-line-progression-date | *Version*:1.3.0 |
-| Active as of 2026-04-09 | *Computable Name*:TherapyLineProgressionDate |
+| Active as of 2026-04-15 | *Computable Name*:TherapyLineProgressionDate |
 
 The date when disease progression was observed during or after the therapy line.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-therapy
   "name" : "TherapyLineProgressionDate",
   "title" : "Therapy Line Progression Date",
   "status" : "active",
-  "date" : "2026-04-09T04:48:36+00:00",
+  "date" : "2026-04-15T07:47:05+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

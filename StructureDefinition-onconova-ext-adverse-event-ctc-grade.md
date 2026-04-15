@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade | *Version*:1.3.0 |
-| Active as of 2026-04-09 | *Computable Name*:AdverseEventCTCGrade |
+| Active as of 2026-04-15 | *Computable Name*:AdverseEventCTCGrade |
 
 The grade of the adverse event as defined by the Common Terminology Criteria for Adverse Events (CTCAE).
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
   "name" : "AdverseEventCTCGrade",
   "title" : "Adverse Event CTCAE Grade",
   "status" : "active",
-  "date" : "2026-04-09T04:48:36+00:00",
+  "date" : "2026-04-15T07:47:05+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -81,7 +81,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-adverse
         "key" : "ctcae-grade",
         "severity" : "error",
         "human" : "The CTCAE grade must be between 1 and 5, inclusive.",
-        "expression" : "valueInteger() >= 1 and valueInteger() <= 5",
+        "expression" : "valueInteger >= 1 and valueInteger <= 5",
         "source" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-adverse-event-ctc-grade"
       }]
     },

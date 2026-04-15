@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-tnm-residual-tumor-categories | *Version*:1.3.0 |
-| Active as of 2026-04-09 | *Computable Name*:TNMResidualTumorCategories |
+| Active as of 2026-04-15 | *Computable Name*:TNMResidualTumorCategories |
 
  
 TNM Residual Tumor Categories Value Set 
@@ -50,7 +50,7 @@ TNM Residual Tumor Categories Value Set
   "name" : "TNMResidualTumorCategories",
   "title" : "TNM Residual Tumor Categories Value Set",
   "status" : "active",
-  "date" : "2026-04-09T04:48:36+00:00",
+  "date" : "2026-04-15T07:47:05+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

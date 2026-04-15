@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="4ca815dc-ebd0-4a2a-861e-cb50deb4f5b2"/>
+  <id value="963b5cd7-6efc-40b3-9305-f256444997cd"/>
   <meta>
-    <lastUpdated value="2026-04-09T04:48:36.491+00:00"/>
+    <lastUpdated value="2026-04-15T07:47:05.762+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -126,10 +126,10 @@
         <name value="TNMLymphaticInvasionCategories"/>
         <title value="TNM Lymphatic Invasion Categories Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:038d2296-7e47-496c-b8c3-868c0811c1b9"/>
-          <timestamp value="2026-04-09T04:53:04+00:00"/>
+          <identifier value="urn:uuid:39ae7ec4-cd83-4bf6-b023-ee10dcc50981"/>
+          <timestamp value="2026-04-15T07:50:41+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -264,10 +264,10 @@
         <name value="TNMPerineuralInvasionCategories"/>
         <title value="TNM Perineural Invasion Categories Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:d438ecd4-8fb9-45c4-a9de-720458491512"/>
-          <timestamp value="2026-04-09T04:53:05+00:00"/>
+          <identifier value="urn:uuid:03f80aa9-8ac2-4adc-bfac-322ef772c5ff"/>
+          <timestamp value="2026-04-15T07:50:41+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -432,13 +432,13 @@
         <name value="TNMResidualTumorCategories"/>
         <title value="TNM Residual Tumor Categories Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:628ae202-fd71-4f59-972f-cbb4fa00ba13"/>
-          <timestamp value="2026-04-09T04:53:06+00:00"/>
+          <identifier value="urn:uuid:0ea0a4b7-ddf8-4014-ae5b-b61a7ec2d41f"/>
+          <timestamp value="2026-04-15T07:50:42+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -501,12 +501,12 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl NCI Thesaurus version null
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on fragment NCI Thesaurus version null
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains at least 1 concepts</p>
+            <p>This value set contains 1 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -551,13 +551,13 @@
         <name value="AdjunctiveTherapyRoles"/>
         <title value="Adjunctive Therapy Roles Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:3fd690a9-fd91-46be-9c7e-098e671190d8"/>
-          <timestamp value="2026-04-09T04:53:09+00:00"/>
+          <identifier value="urn:uuid:d8daf62c-e0ab-4b66-b097-657c071640d2"/>
+          <timestamp value="2026-04-15T07:50:45+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -585,7 +585,7 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="fragment"/>
+            <name value="used-fragment"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null"/>
           </parameter>
           <parameter>
@@ -609,12 +609,12 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl NCI Thesaurus version null
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on fragment NCI Thesaurus version null
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains at least 0 concepts</p>
+            <p>This value set contains 0 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -641,13 +641,13 @@
         <name value="AdverseEventMitigationCategories"/>
         <title value="Adverse Event Mitigation Categories Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:8cd1d71b-741d-4908-98c6-d370659a8aa7"/>
-          <timestamp value="2026-04-09T04:53:10+00:00"/>
+          <identifier value="urn:uuid:cb25f0b9-0768-41bc-88da-44615c003814"/>
+          <timestamp value="2026-04-15T07:50:45+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -675,7 +675,7 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="fragment"/>
+            <name value="used-fragment"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null"/>
           </parameter>
           <parameter>
@@ -694,17 +694,22 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl NCI Thesaurus version null
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org, tx.hl7europe.eu based on SNOMED CT International edition 01-Feb 2025
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p>This value set contains at least 4 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>SNOMED CT International edition 01-Feb 2025
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>fragment NCI Thesaurus version null
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 4 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -811,13 +816,13 @@
         <name value="AdverseEventMitigationDrugs"/>
         <title value="Adverse Event Mitigation Drugs Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:c7128eeb-cec4-4452-8708-32eb3732f637"/>
-          <timestamp value="2026-04-09T04:53:11+00:00"/>
+          <identifier value="urn:uuid:74131dfe-39b9-4332-b1b2-ce5b17d1b1e9"/>
+          <timestamp value="2026-04-15T07:50:46+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -853,7 +858,7 @@
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
-            <name value="fragment"/>
+            <name value="used-fragment"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null"/>
           </parameter>
           <parameter>
@@ -964,10 +969,10 @@
         <name value="AdverseEventMitigationManagements"/>
         <title value="Adverse Event Mitigation Managements Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:88611f30-2d4f-4f8b-9be1-cd0de7080306"/>
-          <timestamp value="2026-04-09T04:53:11+00:00"/>
+          <identifier value="urn:uuid:d5cfe4a8-d727-4e77-91c1-174ff7eca1d3"/>
+          <timestamp value="2026-04-15T07:50:46+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1020,17 +1025,22 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl NCI Thesaurus version null
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org, tx.hl7europe.eu based on SNOMED CT International edition 01-Feb 2025
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p>This value set contains at least 6 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>SNOMED CT International edition 01-Feb 2025
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>fragment NCI Thesaurus version null
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 6 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -1197,13 +1207,13 @@
         <name value="AdverseEventMitigationProcedures"/>
         <title value="Adverse Event Mitigation Procedures Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:d21dff0a-7b93-40f2-8b7c-1c8f07d2fc8a"/>
-          <timestamp value="2026-04-09T04:53:11+00:00"/>
+          <identifier value="urn:uuid:8e941a76-73e3-4fbb-987b-86be044c055a"/>
+          <timestamp value="2026-04-15T07:50:46+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -1239,7 +1249,7 @@
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
-            <name value="fragment"/>
+            <name value="used-fragment"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null"/>
           </parameter>
           <parameter>
@@ -1389,10 +1399,10 @@
         <name value="AdverseEventMitigationTreatmentAdjustments"/>
         <title value="Adverse Event Mitigation Treatment Adjustments Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:ba9553c4-ec7f-4b22-8389-a9e562306b46"/>
-          <timestamp value="2026-04-09T04:53:12+00:00"/>
+          <identifier value="urn:uuid:49f009be-0cae-45b7-9a60-246c9a78bc0d"/>
+          <timestamp value="2026-04-15T07:50:47+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1662,10 +1672,10 @@
         <name value="CancerImagingMethods"/>
         <title value="Cancer Imaging Methods Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:65c4afce-4395-4090-a045-a91b225a78e3"/>
-          <timestamp value="2026-04-09T04:52:57+00:00"/>
+          <identifier value="urn:uuid:58b4c88d-da55-4015-a428-286cb05604e8"/>
+          <timestamp value="2026-04-15T07:50:33+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -1753,12 +1763,12 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl NCI Thesaurus version null
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on fragment NCI Thesaurus version null
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains at least 2 concepts</p>
+            <p>This value set contains 2 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -1821,13 +1831,13 @@
         <name value="CancerRiskAssessmentMethods"/>
         <title value="Cancer Risk Assessment Methods Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:faa33950-d255-4396-8e2e-ef4569a7b661"/>
-          <timestamp value="2026-04-09T04:52:48+00:00"/>
+          <identifier value="urn:uuid:92ccfc31-21fe-47f8-959c-ef6b0cbb2426"/>
+          <timestamp value="2026-04-15T07:50:23+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1855,7 +1865,7 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="fragment"/>
+            <name value="used-fragment"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null"/>
           </parameter>
           <parameter>
@@ -1884,12 +1894,12 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl NCI Thesaurus version null
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on fragment NCI Thesaurus version null
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains at least 1 concepts</p>
+            <p>This value set contains 1 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -1934,13 +1944,13 @@
         <name value="CancerRiskAssessmentValues"/>
         <title value="Risk Assessment Values Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:d0498a94-70f9-47d2-a1a2-4163bede05a1"/>
-          <timestamp value="2026-04-09T04:52:48+00:00"/>
+          <identifier value="urn:uuid:20e788f7-34ee-47ee-a573-bd9e4eb4704e"/>
+          <timestamp value="2026-04-15T07:50:23+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -1968,7 +1978,7 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="fragment"/>
+            <name value="used-fragment"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null"/>
           </parameter>
           <parameter>
@@ -1992,17 +2002,22 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl NCI Thesaurus version null
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org, tx.hl7europe.eu based on SNOMED CT International edition 01-Feb 2025
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p>This value set contains at least 2 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>SNOMED CT International edition 01-Feb 2025
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>fragment NCI Thesaurus version null
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 2 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -2067,13 +2082,13 @@
         <name value="CausesOfDeath"/>
         <title value="Cause of Death Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:343ad231-088e-4e59-a1b8-ba8b26e1bede"/>
-          <timestamp value="2026-04-09T04:53:14+00:00"/>
+          <identifier value="urn:uuid:850ed174-98bf-47e2-b194-509114d8e6f5"/>
+          <timestamp value="2026-04-15T07:50:47+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2101,7 +2116,7 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="fragment"/>
+            <name value="used-fragment"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null"/>
           </parameter>
           <parameter>
@@ -2231,10 +2246,10 @@
         <name value="ComorbidityPanels"/>
         <title value="Comorbidity Panels Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:40132f03-684b-47a5-ba78-d604fa1083d8"/>
-          <timestamp value="2026-04-09T04:52:52+00:00"/>
+          <identifier value="urn:uuid:7ece105f-9619-48ce-8aed-de6aac377635"/>
+          <timestamp value="2026-04-15T07:50:28+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2377,10 +2392,10 @@
         <name value="ConsentStatus"/>
         <title value="Consent Status Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0ee24b92-2c60-486b-8329-6efc273e0930"/>
-          <timestamp value="2026-04-09T04:53:14+00:00"/>
+          <identifier value="urn:uuid:22a29fc4-686c-4ad3-80dc-2059432028af"/>
+          <timestamp value="2026-04-15T07:50:48+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2502,10 +2517,10 @@
         <name value="ExpectedDrugEffects"/>
         <title value="Expected Drug Effects Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:564e6852-e631-4a31-930b-9918ed948aa8"/>
-          <timestamp value="2026-04-09T04:53:15+00:00"/>
+          <identifier value="urn:uuid:2de1a168-1460-4394-a121-c45c463d7bc0"/>
+          <timestamp value="2026-04-15T07:50:48+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2558,12 +2573,12 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl NCI Thesaurus version null
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on fragment NCI Thesaurus version null
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains at least 0 concepts</p>
+            <p>This value set contains 0 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -2590,13 +2605,13 @@
         <name value="ExposureAgents"/>
         <title value="Exposure Agents Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:ff60b57e-7ccc-40cd-b294-fc56df0d2afa"/>
-          <timestamp value="2026-04-09T04:52:58+00:00"/>
+          <identifier value="urn:uuid:b5feac55-b778-46b8-8d1e-232bd5b833d1"/>
+          <timestamp value="2026-04-15T07:50:34+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -2624,7 +2639,7 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="fragment"/>
+            <name value="used-fragment"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null"/>
           </parameter>
           <parameter>
@@ -2735,10 +2750,10 @@
         <name value="HomologousRecombinationDeficiencyInterpretations"/>
         <title value="Homologous Recombination Deficiency Interpretation Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:d721b018-cb74-4e83-8f69-59efba38d7ea"/>
-          <timestamp value="2026-04-09T04:53:15+00:00"/>
+          <identifier value="urn:uuid:1509ffaf-d5cd-4e36-bc94-c2ee5b67ef0a"/>
+          <timestamp value="2026-04-15T07:50:48+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2796,7 +2811,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.hl7europe.eu based on codesystem ICD-10 version 2019-covid-expanded
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem ICD-10 version 2019-covid-expanded
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
@@ -20828,10 +20843,10 @@
         <name value="ICD10Conditions"/>
         <title value="ICD-10 Codes Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:93ec610e-730d-4aa7-ba8e-08126cd43f83"/>
-          <timestamp value="2026-04-09T04:53:15+00:00"/>
+          <identifier value="urn:uuid:945a71e0-26fe-48fe-95a1-cbc6c12352b5"/>
+          <timestamp value="2026-04-15T07:50:49+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -25959,13 +25974,13 @@
         <name value="ICDO3Differentiations"/>
         <title value="ICD-O-3 Differentiations Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:ed721524-1a96-45d8-a021-512907b3b0e8"/>
-          <timestamp value="2026-04-09T04:53:16+00:00"/>
+          <identifier value="urn:uuid:7984a0df-c427-480b-9df0-6910e89b1ae7"/>
+          <timestamp value="2026-04-15T07:50:49+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -26113,13 +26128,13 @@
         <name value="ICDO3MorphologyBehaviors"/>
         <title value="ICD-O-3 Morphology Behavior Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:8369e5f7-a55f-41e1-a4c8-50477f2e4166"/>
-          <timestamp value="2026-04-09T04:53:02+00:00"/>
+          <identifier value="urn:uuid:70a3053a-50ef-4551-bfb2-034f72d7732b"/>
+          <timestamp value="2026-04-15T07:50:38+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -26267,13 +26282,13 @@
         <name value="ICDO3Topographies"/>
         <title value="ICD-O-3 Topographies Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:80dab9b1-7941-400f-8692-53b5bec63c06"/>
-          <timestamp value="2026-04-09T04:53:02+00:00"/>
+          <identifier value="urn:uuid:b5659ade-6af0-4596-aebf-346f82b4d3f7"/>
+          <timestamp value="2026-04-15T07:50:38+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -32387,10 +32402,10 @@
         <name value="ObservationBodySites"/>
         <title value="Observation Body Sites Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:903b845b-8a45-4cff-8b2e-d857ca2646a1"/>
-          <timestamp value="2026-04-09T04:52:57+00:00"/>
+          <identifier value="urn:uuid:1d483316-1614-49dc-a3ba-2554bdc66729"/>
+          <timestamp value="2026-04-15T07:50:32+00:00"/>
           <total value="301"/>
           <offset value="0"/>
           <parameter>
@@ -34390,10 +34405,10 @@
         <name value="RecreationalDrugs"/>
         <title value="Recreational Drugs Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:454a572e-c094-4cbd-b4c2-57d166676f53"/>
-          <timestamp value="2026-04-09T04:52:58+00:00"/>
+          <identifier value="urn:uuid:33a5aebe-8689-49cf-b94b-b550feaccd49"/>
+          <timestamp value="2026-04-15T07:50:34+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -34613,10 +34628,10 @@
         <name value="RecurrenceTypes"/>
         <title value="Recurrence Types Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:28c58c13-069b-4c78-9444-7684e7721ff4"/>
-          <timestamp value="2026-04-09T04:53:16+00:00"/>
+          <identifier value="urn:uuid:206322d5-0f65-44ba-a9bf-f2f4a0a1180d"/>
+          <timestamp value="2026-04-15T07:50:49+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -34821,10 +34836,10 @@
         <name value="SmokingStatus"/>
         <title value="Smoking status Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:bbee36cc-1a96-4332-aa32-a4045014da9f"/>
-          <timestamp value="2026-04-09T04:52:58+00:00"/>
+          <identifier value="urn:uuid:2990ccfd-94d2-4fb2-9d3a-6dbfe35d2433"/>
+          <timestamp value="2026-04-15T07:50:34+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -34897,12 +34912,12 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl NCI Thesaurus version null
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on fragment NCI Thesaurus version null
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains at least 0 concepts</p>
+            <p>This value set contains 0 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -34929,13 +34944,13 @@
         <name value="SurgicalProcedures"/>
         <title value="Surgical Procedures Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:62d679c2-34b6-4af7-8d27-1d92f257a582"/>
-          <timestamp value="2026-04-09T04:53:16+00:00"/>
+          <identifier value="urn:uuid:8ae33703-59b9-4b63-89a9-61d18fc77504"/>
+          <timestamp value="2026-04-15T07:50:49+00:00"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -34963,7 +34978,7 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="fragment"/>
+            <name value="used-fragment"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null"/>
           </parameter>
           <parameter>
@@ -36305,13 +36320,13 @@
         <name value="TNMDistantMetastasisCategories"/>
         <title value="TNM Distant Metastasis Categories Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:fd6f5fdd-c718-4c01-91fb-bbcb92b75894"/>
-          <timestamp value="2026-04-09T04:53:03+00:00"/>
+          <identifier value="urn:uuid:fcefd2a9-67ff-471b-a21d-f365239c04a5"/>
+          <timestamp value="2026-04-15T07:50:39+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -36893,10 +36908,10 @@
         <name value="TNMGradeCategories"/>
         <title value="TNM Grade Categories Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8af193d2-23f9-4eec-b41f-fd1d548a3d0e"/>
-          <timestamp value="2026-04-09T04:53:04+00:00"/>
+          <identifier value="urn:uuid:fd9b5e9c-9797-4c77-9e43-fde6c02fa790"/>
+          <timestamp value="2026-04-15T07:50:40+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -37076,10 +37091,10 @@
         <name value="TNMGradeCategoryMethods"/>
         <title value="TNM Grade Category Methods Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:614e925e-c2ee-4c25-b179-45656406c97f"/>
-          <timestamp value="2026-04-09T04:53:04+00:00"/>
+          <identifier value="urn:uuid:3dd411c5-463a-4eb1-ba06-587234640b11"/>
+          <timestamp value="2026-04-15T07:50:40+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -41120,13 +41135,13 @@
         <name value="TNMPrimaryTumorCategories"/>
         <title value="TNM Primary Tumor Categories Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:f9d7f8ca-91d1-4272-b269-65368995b3bd"/>
-          <timestamp value="2026-04-09T04:53:05+00:00"/>
+          <identifier value="urn:uuid:b84812af-a05f-4078-9a17-dee392580ef6"/>
+          <timestamp value="2026-04-15T07:50:41+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -44164,13 +44179,13 @@
         <name value="TNMRegionalNodesCategories"/>
         <title value="TNM Regional Nodes Categories Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:5add5ddc-0a45-4eb8-b07d-09b1495d017d"/>
-          <timestamp value="2026-04-09T04:53:06+00:00"/>
+          <identifier value="urn:uuid:3d6e49c1-be41-4c6a-ac69-888526804cea"/>
+          <timestamp value="2026-04-15T07:50:42+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -44842,10 +44857,10 @@
         <name value="TNMSerumTumorMarkerLevelCategories"/>
         <title value="TNM Serum Tumor Marker Level Categories Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c0496dfc-779a-4826-b65e-681971ccb8d1"/>
-          <timestamp value="2026-04-09T04:53:07+00:00"/>
+          <identifier value="urn:uuid:0fcccbac-7edb-4ece-948a-3ecc35ebaace"/>
+          <timestamp value="2026-04-15T07:50:43+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -45025,10 +45040,10 @@
         <name value="TNMVenousInvasionCategories"/>
         <title value="TNM Venous Invasion Categories Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:792dd3dd-2b9c-4de6-ae8a-359b4188be48"/>
-          <timestamp value="2026-04-09T04:53:07+00:00"/>
+          <identifier value="urn:uuid:f6a144b1-4f62-41a5-978e-f678ffa748c0"/>
+          <timestamp value="2026-04-15T07:50:43+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -45163,10 +45178,10 @@
         <name value="TreatmentIntents"/>
         <title value="Treatment Intents Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:43e5a9b1-709c-4a97-a359-e2845d64f1b6"/>
-          <timestamp value="2026-04-09T04:53:18+00:00"/>
+          <identifier value="urn:uuid:710dfb95-563f-4cdf-8485-f89ab58a7820"/>
+          <timestamp value="2026-04-15T07:50:50+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -45681,10 +45696,10 @@
         <name value="OnconovaTumorBoardRecommendations"/>
         <title value="Tumor Board Recommendations Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b6d2f483-243f-4087-b1cc-419d20dd9efa"/>
-          <timestamp value="2026-04-09T04:53:18+00:00"/>
+          <identifier value="urn:uuid:5b0d81e7-2d15-44f9-b5ed-653e261b7aa4"/>
+          <timestamp value="2026-04-15T07:50:50+00:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -45840,17 +45855,22 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl NCI Thesaurus version null
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org, tx.hl7europe.eu based on Loinc v2.82
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p>This value set contains at least 38 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>Loinc v2.82
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>fragment NCI Thesaurus version null
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 38 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -46637,13 +46657,13 @@
         <name value="TumorMarkerAnalytes"/>
         <title value="Tumor Marker Analytes Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:19bc46e6-7e0f-4475-9765-fbaa7812e671"/>
-          <timestamp value="2026-04-09T04:53:18+00:00"/>
+          <identifier value="urn:uuid:77dbcb0d-6c1e-417a-96dc-cf2ec7017b9a"/>
+          <timestamp value="2026-04-15T07:50:50+00:00"/>
           <total value="38"/>
           <offset value="0"/>
           <parameter>
@@ -46671,7 +46691,7 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="fragment"/>
+            <name value="used-fragment"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null"/>
           </parameter>
           <parameter>
@@ -46888,17 +46908,22 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl NCI Thesaurus version null
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org, tx.hl7europe.eu based on Loinc v2.82
-              <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
-              </span>
-            </p>
-            <p>This value set contains at least 58 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>Loinc v2.82
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>fragment NCI Thesaurus version null
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 58 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -48209,13 +48234,13 @@
         <name value="TumorMarkerTests"/>
         <title value="Tumor Marker Tests"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:a60eab4f-7291-401e-9a25-8ae7c8c4dbe2"/>
-          <timestamp value="2026-04-09T04:53:08+00:00"/>
+          <identifier value="urn:uuid:b6841709-5913-4b3c-962a-28000ab64f85"/>
+          <timestamp value="2026-04-15T07:50:44+00:00"/>
           <total value="58"/>
           <offset value="0"/>
           <parameter>
@@ -48251,7 +48276,7 @@
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
-            <name value="fragment"/>
+            <name value="used-fragment"/>
             <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|null"/>
           </parameter>
           <parameter>
@@ -48746,10 +48771,10 @@
         <name value="TumorMutationalBurdenStatusInterpretations"/>
         <title value="Tumor Mutational Burden Status Interpretation Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0b0cc37b-9744-42e6-9a05-ab59f9a0c658"/>
-          <timestamp value="2026-04-09T04:53:19+00:00"/>
+          <identifier value="urn:uuid:49945cb2-9b77-4495-b658-558b8d906e3f"/>
+          <timestamp value="2026-04-15T07:50:51+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -48900,10 +48925,10 @@
         <name value="VitalStatus"/>
         <title value="Vital Status Value Set"/>
         <status value="active"/>
-        <date value="2026-04-09T04:48:36+00:00"/>
+        <date value="2026-04-15T07:47:05+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:651ae784-6c5c-4d64-a27e-311a264ce735"/>
-          <timestamp value="2026-04-09T04:53:19+00:00"/>
+          <identifier value="urn:uuid:d8ac1b24-b5a0-49f3-ba8a-fa3f2667cbba"/>
+          <timestamp value="2026-04-15T07:50:51+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>

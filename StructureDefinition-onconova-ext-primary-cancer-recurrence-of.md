@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-primary-cancer-recurrence-of | *Version*:1.3.0 |
-| Active as of 2026-04-09 | *Computable Name*:PrimaryCancerRecurrenceOf |
+| Active as of 2026-04-15 | *Computable Name*:PrimaryCancerRecurrenceOf |
 
 Indicates that the condition is a recurrence of a previous condition, and provides a reference to that previous condition.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-primary
   "name" : "PrimaryCancerRecurrenceOf",
   "title" : "Primary Cancer Recurrence Of",
   "status" : "active",
-  "date" : "2026-04-09T04:48:36+00:00",
+  "date" : "2026-04-15T07:47:05+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

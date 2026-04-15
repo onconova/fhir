@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-lymphoma-stage | *Version*:1.3.0 |
-| Active as of 2026-04-09 | *Computable Name*:OnconovaLymphomaStage |
+| Active as of 2026-04-15 | *Computable Name*:OnconovaLymphomaStage |
 
  
 Staging of lymphoma (both Hodgkins and Non-Hodgkins) by Ann Arbor, Cotswold, or Lugano staging systems. The method (required) indicates which of these related staging systems was used. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-lymphoma-st
   "name" : "OnconovaLymphomaStage",
   "title" : "Lymphoma Stage",
   "status" : "active",
-  "date" : "2026-04-09T04:48:36+00:00",
+  "date" : "2026-04-15T07:47:05+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

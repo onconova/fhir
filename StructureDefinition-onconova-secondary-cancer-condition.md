@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-secondary-cancer-condition | *Version*:1.3.0 |
-| Active as of 2026-04-09 | *Computable Name*:OnconovaSecondaryCancerCondition |
+| Active as of 2026-04-15 | *Computable Name*:OnconovaSecondaryCancerCondition |
 
  
 A profile recording the a secondary neoplasm, including location and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms). 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-secondary-c
   "name" : "OnconovaSecondaryCancerCondition",
   "title" : "Secondary Cancer Condition Profile",
   "status" : "active",
-  "date" : "2026-04-09T04:48:36+00:00",
+  "date" : "2026-04-15T07:47:05+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

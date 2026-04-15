@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-patient-data-contributors | *Version*:1.3.0 |
-| Active as of 2026-04-09 | *Computable Name*:CancerPatientDataContributors |
+| Active as of 2026-04-15 | *Computable Name*:CancerPatientDataContributors |
 
 The individuals or organizations that contributed to the patient's case data collection.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-cancer-
   "name" : "CancerPatientDataContributors",
   "title" : "Cancer Patient Data Contributors",
   "status" : "active",
-  "date" : "2026-04-09T04:48:36+00:00",
+  "date" : "2026-04-15T07:47:05+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
