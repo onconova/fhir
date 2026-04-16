@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-smoking-status | *Version*:1.3.0 |
-| Active as of 2026-04-15 | *Computable Name*:SmokingStatus |
+| Active as of 2026-04-16 | *Computable Name*:SmokingStatus |
 
  
 Smoking status of a patient 
@@ -50,7 +50,7 @@ Smoking status of a patient
   "name" : "SmokingStatus",
   "title" : "Smoking status Value Set",
   "status" : "active",
-  "date" : "2026-04-15T19:05:31+00:00",
+  "date" : "2026-04-16T05:59:15+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

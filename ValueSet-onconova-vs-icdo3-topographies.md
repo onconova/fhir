@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-icdo3-topographies | *Version*:1.3.0 |
-| Active as of 2026-04-15 | *Computable Name*:ICDO3Topographies |
+| Active as of 2026-04-16 | *Computable Name*:ICDO3Topographies |
 
  
 The subset of ICD-O-3 concepts dedicated for describing morphology topographies. 
@@ -52,7 +52,7 @@ The subset of ICD-O-3 concepts dedicated for describing morphology topographies.
   "name" : "ICDO3Topographies",
   "title" : "ICD-O-3 Topographies Value Set",
   "status" : "active",
-  "date" : "2026-04-15T19:05:31+00:00",
+  "date" : "2026-04-16T05:59:15+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-primary-cancer-recurrence-type | *Version*:1.3.0 |
-| Active as of 2026-04-15 | *Computable Name*:PrimaryCancerRecurrenceType |
+| Active as of 2026-04-16 | *Computable Name*:PrimaryCancerRecurrenceType |
 
 Indicates the type of recurrence for the condition (local or regional).
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-primary
   "name" : "PrimaryCancerRecurrenceType",
   "title" : "Primary Cancer Recurrence Type",
   "status" : "active",
-  "date" : "2026-04-15T19:05:31+00:00",
+  "date" : "2026-04-16T05:59:15+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

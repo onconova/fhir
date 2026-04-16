@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-cancer-risk-assessment-values | *Version*:1.3.0 |
-| Active as of 2026-04-15 | *Computable Name*:CancerRiskAssessmentValues |
+| Active as of 2026-04-16 | *Computable Name*:CancerRiskAssessmentValues |
 
  
 A non-exhaustive value set containing codes that result from risk assessments, i.e., the risk level of the cancer. 
@@ -50,7 +50,7 @@ A non-exhaustive value set containing codes that result from risk assessments, i
   "name" : "CancerRiskAssessmentValues",
   "title" : "Risk Assessment Values Value Set",
   "status" : "active",
-  "date" : "2026-04-15T19:05:31+00:00",
+  "date" : "2026-04-16T05:59:15+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
@@ -132,60 +132,12 @@ A non-exhaustive value set containing codes that result from risk assessments, i
         "display" : "Child-Pugh Class A"
       },
       {
-        "code" : "C146790",
-        "display" : "Child-Pugh Class A5"
-      },
-      {
-        "code" : "C146791",
-        "display" : "Child-Pugh Class A6"
-      },
-      {
         "code" : "C113692",
         "display" : "Child-Pugh Class B"
       },
       {
-        "code" : "C146792",
-        "display" : "Child-Pugh Class B7"
-      },
-      {
-        "code" : "C146793",
-        "display" : "Child-Pugh Class B8"
-      },
-      {
-        "code" : "C146794",
-        "display" : "Child-Pugh Class B9"
-      },
-      {
         "code" : "C113694",
         "display" : "Child-Pugh Class C"
-      },
-      {
-        "code" : "C146795",
-        "display" : "Child-Pugh Class C10"
-      },
-      {
-        "code" : "C146796",
-        "display" : "Child-Pugh Class C11"
-      },
-      {
-        "code" : "C146797",
-        "display" : "Child-Pugh Class C12"
-      },
-      {
-        "code" : "C146798",
-        "display" : "Child-Pugh Class C13"
-      },
-      {
-        "code" : "C146799",
-        "display" : "Child-Pugh Class C14"
-      },
-      {
-        "code" : "C146801",
-        "display" : "Child-Pugh Class C15"
-      },
-      {
-        "code" : "C148151",
-        "display" : "Child-Pugh A-B7 Cirrhosis"
       },
       {
         "code" : "C192873",
