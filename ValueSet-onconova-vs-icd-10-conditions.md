@@ -1,4 +1,4 @@
-# ICD-10 Codes Value Set - Onconova Implementation Guide v1.3.0
+# ICD-10 Codes Value Set - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions | *Version*:1.3.0 |
-| Active as of 2026-04-16 | *Computable Name*:ICD10Conditions |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions | *Version*:1.4.0 |
+| Active as of 2026-04-26 | *Computable Name*:ICD10Conditions |
 
  
 All possible ICD-10 codes for conditions. 
@@ -46,11 +46,11 @@ All possible ICD-10 codes for conditions.
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-icd-10-conditions",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-icd-10-conditions",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "ICD10Conditions",
   "title" : "ICD-10 Codes Value Set",
   "status" : "active",
-  "date" : "2026-04-16T05:59:15+00:00",
+  "date" : "2026-04-26T18:09:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

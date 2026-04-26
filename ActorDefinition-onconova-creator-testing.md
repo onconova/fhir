@@ -1,4 +1,4 @@
-# Creator (Onconova) - Testing - Onconova Implementation Guide v1.3.0
+# Creator (Onconova) - Testing - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | |
 | :--- |
-| Active as of 2026-04-16 |
+| Active as of 2026-04-26 |
 
 ### Test Plans
 

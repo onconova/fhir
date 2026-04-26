@@ -1,4 +1,4 @@
-# Medication Administration Cycles - Onconova Implementation Guide v1.3.0
+# Medication Administration Cycles - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-cycles | *Version*:1.3.0 |
-| Active as of 2026-04-16 | *Computable Name*:MedicationAdministrationCycles |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-cycles | *Version*:1.4.0 |
+| Active as of 2026-04-26 | *Computable Name*:MedicationAdministrationCycles |
 
 Indicates the total number of cycles for this medication administration.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-medicat
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-medication-administration-cycles",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-medication-administration-cycles",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "MedicationAdministrationCycles",
   "title" : "Medication Administration Cycles",
   "status" : "active",
-  "date" : "2026-04-16T05:59:15+00:00",
+  "date" : "2026-04-26T18:09:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

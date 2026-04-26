@@ -1,4 +1,4 @@
-# TNM Serum Tumor Marker Level Categories Value Set - Onconova Implementation Guide v1.3.0
+# TNM Serum Tumor Marker Level Categories Value Set - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-serum-tumor-marker-level-categories | *Version*:1.3.0 |
-| Active as of 2026-04-16 | *Computable Name*:TNMSerumTumorMarkerLevelCategories |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-serum-tumor-marker-level-categories | *Version*:1.4.0 |
+| Active as of 2026-04-26 | *Computable Name*:TNMSerumTumorMarkerLevelCategories |
 
  
 TNM Serum Tumor Marker Level Categories Value Set 
@@ -46,11 +46,11 @@ TNM Serum Tumor Marker Level Categories Value Set
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-tnm-serum-tumor-marker-level-categories",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-tnm-serum-tumor-marker-level-categories",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "TNMSerumTumorMarkerLevelCategories",
   "title" : "TNM Serum Tumor Marker Level Categories Value Set",
   "status" : "active",
-  "date" : "2026-04-16T05:59:15+00:00",
+  "date" : "2026-04-26T18:09:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

@@ -1,4 +1,4 @@
-# Tumor Marker Analyte - Onconova Implementation Guide v1.3.0
+# Tumor Marker Analyte - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte | *Version*:1.3.0 |
-| Active as of 2026-04-16 | *Computable Name*:TumorMarkerAnalyte |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte | *Version*:1.4.0 |
+| Active as of 2026-04-26 | *Computable Name*:TumorMarkerAnalyte |
 
 The specific analyte or substance being measured as a tumor marker, such as PSA, CA-125, or CEA.
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-tumor-m
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-tumor-marker-analyte",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-tumor-marker-analyte",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "TumorMarkerAnalyte",
   "title" : "Tumor Marker Analyte",
   "status" : "active",
-  "date" : "2026-04-16T05:59:15+00:00",
+  "date" : "2026-04-26T18:09:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

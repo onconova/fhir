@@ -1,4 +1,4 @@
-# Homologous Recombination Deficiency Interpretation - Onconova Implementation Guide v1.3.0
+# Homologous Recombination Deficiency Interpretation - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-homologous-recombination-deficiency-interpretation | *Version*:1.3.0 |
-| Active as of 2026-04-16 | *Computable Name*:HomologousRecombinationDeficiencyInterpretation |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-homologous-recombination-deficiency-interpretation | *Version*:1.4.0 |
+| Active as of 2026-04-26 | *Computable Name*:HomologousRecombinationDeficiencyInterpretation |
 
 The categorical classification of the HRD status interpreted from its value.
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-homolog
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-homologous-recombination-deficiency-interpretation",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-homologous-recombination-deficiency-interpretation",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "HomologousRecombinationDeficiencyInterpretation",
   "title" : "Homologous Recombination Deficiency Interpretation",
   "status" : "active",
-  "date" : "2026-04-16T05:59:15+00:00",
+  "date" : "2026-04-26T18:09:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

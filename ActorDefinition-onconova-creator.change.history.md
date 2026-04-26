@@ -1,4 +1,4 @@
-#  - Onconova Implementation Guide v1.3.0
+#  - Onconova Implementation Guide v1.4.0
 
 ## : ActorDefinition/onconova-creator - Change History
 

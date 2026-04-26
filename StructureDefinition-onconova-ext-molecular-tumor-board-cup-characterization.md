@@ -1,4 +1,4 @@
-# Molecular Tumor Board CUP Characterization - Onconova Implementation Guide v1.3.0
+# Molecular Tumor Board CUP Characterization - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization | *Version*:1.3.0 |
-| Active as of 2026-04-16 | *Computable Name*:MolecularTumorBoardCUPCharacterization |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization | *Version*:1.4.0 |
+| Active as of 2026-04-26 | *Computable Name*:MolecularTumorBoardCUPCharacterization |
 
 A characterization of the tumor board review focused on cancer of unknown primary (CUP) origin.
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-molecul
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-molecular-tumor-board-cup-characterization",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-molecular-tumor-board-cup-characterization",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "MolecularTumorBoardCUPCharacterization",
   "title" : "Molecular Tumor Board CUP Characterization",
   "status" : "active",
-  "date" : "2026-04-16T05:59:15+00:00",
+  "date" : "2026-04-26T18:09:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

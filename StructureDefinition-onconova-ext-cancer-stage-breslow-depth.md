@@ -1,4 +1,4 @@
-# Cancer Stage Breslow Depth - Onconova Implementation Guide v1.3.0
+# Cancer Stage Breslow Depth - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth | *Version*:1.3.0 |
-| Active as of 2026-04-16 | *Computable Name*:CancerStageBreslowDepth |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth | *Version*:1.4.0 |
+| Active as of 2026-04-26 | *Computable Name*:CancerStageBreslowDepth |
 
 The actual measured Breslow depth as a quantity
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-cancer-
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-cancer-stage-breslow-depth",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-cancer-stage-breslow-depth",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "CancerStageBreslowDepth",
   "title" : "Cancer Stage Breslow Depth",
   "status" : "active",
-  "date" : "2026-04-16T05:59:15+00:00",
+  "date" : "2026-04-26T18:09:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

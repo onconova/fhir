@@ -1,4 +1,4 @@
-# Extensions - Onconova Implementation Guide v1.3.0
+# Extensions - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * **Extensions**

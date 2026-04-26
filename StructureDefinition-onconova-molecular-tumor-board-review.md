@@ -1,4 +1,4 @@
-# Molecular Tumor Board Review Profile - Onconova Implementation Guide v1.3.0
+# Molecular Tumor Board Review Profile - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review | *Version*:1.3.0 |
-| Active as of 2026-04-16 | *Computable Name*:OnconovaMolecularTumorBoardReview |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review | *Version*:1.4.0 |
+| Active as of 2026-04-26 | *Computable Name*:OnconovaMolecularTumorBoardReview |
 
  
 A profile representing a specialized molecular tumor board review for a cancer patient. This profile extends the `OnconovaTumorBoardReview` profile to specify that the review is focused on molecular diagnostics and recommendations. 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-molecular-t
   "resourceType" : "StructureDefinition",
   "id" : "onconova-molecular-tumor-board-review",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-molecular-tumor-board-review",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "OnconovaMolecularTumorBoardReview",
   "title" : "Molecular Tumor Board Review Profile",
   "status" : "active",
-  "date" : "2026-04-16T05:59:15+00:00",
+  "date" : "2026-04-26T18:09:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

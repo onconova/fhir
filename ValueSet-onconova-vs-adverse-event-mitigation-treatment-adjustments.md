@@ -1,4 +1,4 @@
-# Adverse Event Mitigation Treatment Adjustments Value Set - Onconova Implementation Guide v1.3.0
+# Adverse Event Mitigation Treatment Adjustments Value Set - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments | *Version*:1.3.0 |
-| Active as of 2026-04-16 | *Computable Name*:AdverseEventMitigationTreatmentAdjustments |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments | *Version*:1.4.0 |
+| Active as of 2026-04-26 | *Computable Name*:AdverseEventMitigationTreatmentAdjustments |
 
  
 Adjustments made to a patient's treatment plan in response to an adverse event. 
@@ -46,11 +46,11 @@ Adjustments made to a patient's treatment plan in response to an adverse event.
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-adverse-event-mitigation-treatment-adjustments",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-adverse-event-mitigation-treatment-adjustments",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "AdverseEventMitigationTreatmentAdjustments",
   "title" : "Adverse Event Mitigation Treatment Adjustments Value Set",
   "status" : "active",
-  "date" : "2026-04-16T05:59:15+00:00",
+  "date" : "2026-04-26T18:09:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

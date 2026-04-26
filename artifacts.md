@@ -1,4 +1,4 @@
-# Artifacts Summary - Onconova Implementation Guide v1.3.0
+# Artifacts Summary - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**

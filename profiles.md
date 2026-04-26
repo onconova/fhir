@@ -1,4 +1,4 @@
-# Profiles - Onconova Implementation Guide v1.3.0
+# Profiles - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * **Profiles**

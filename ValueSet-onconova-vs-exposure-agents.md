@@ -1,4 +1,4 @@
-# Exposure Agents Value Set - Onconova Implementation Guide v1.3.0
+# Exposure Agents Value Set - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-exposure-agents | *Version*:1.3.0 |
-| Active as of 2026-04-16 | *Computable Name*:ExposureAgents |
+| *Official URL*:http://onconova.github.io/fhir/ValueSet/onconova-vs-exposure-agents | *Version*:1.4.0 |
+| Active as of 2026-04-26 | *Computable Name*:ExposureAgents |
 
  
 Agents to which a patient may have been exposed. 
@@ -46,11 +46,11 @@ Agents to which a patient may have been exposed.
   "resourceType" : "ValueSet",
   "id" : "onconova-vs-exposure-agents",
   "url" : "http://onconova.github.io/fhir/ValueSet/onconova-vs-exposure-agents",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "ExposureAgents",
   "title" : "Exposure Agents Value Set",
   "status" : "active",
-  "date" : "2026-04-16T05:59:15+00:00",
+  "date" : "2026-04-26T18:09:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",

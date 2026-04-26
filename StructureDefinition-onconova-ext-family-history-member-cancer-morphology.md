@@ -1,4 +1,4 @@
-# Family Member History Cancer Morphology - Onconova Implementation Guide v1.3.0
+# Family Member History Cancer Morphology - Onconova Implementation Guide v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-morphology | *Version*:1.3.0 |
-| Active as of 2026-04-16 | *Computable Name*:FamilyMemberHistoryCancerMorphology |
+| *Official URL*:http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-morphology | *Version*:1.4.0 |
+| Active as of 2026-04-26 | *Computable Name*:FamilyMemberHistoryCancerMorphology |
 
 The morphology of a historical cancer associated to a family member of a patient, represented by an ICD-O-3 code.
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-onconova-ext-family-
   "resourceType" : "StructureDefinition",
   "id" : "onconova-ext-family-history-member-cancer-morphology",
   "url" : "http://onconova.github.io/fhir/StructureDefinition/onconova-ext-family-history-member-cancer-morphology",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "FamilyMemberHistoryCancerMorphology",
   "title" : "Family Member History Cancer Morphology",
   "status" : "active",
-  "date" : "2026-04-16T05:59:15+00:00",
+  "date" : "2026-04-26T18:09:59+00:00",
   "publisher" : "Onconova",
   "contact" : [{
     "name" : "Onconova",
